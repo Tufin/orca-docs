@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <MadCap:changeData>
+            <MadCap:AddChange MadCap:userName="neil.leigh" MadCap:initials="NE" MadCap:id="1" MadCap:timestamp="2019-02-06T10:29:48.0559126+02:00" />
+            <MadCap:RemoveChange MadCap:userName="neil.leigh" MadCap:initials="NE" MadCap:id="2" MadCap:timestamp="2019-02-06T10:29:48.5240443+02:00" />
+        </MadCap:changeData>
+    </head>
+    <body>
+        <p>Learning Mode lets you monitor your application so you can learn about the traffic connections between the services used in your Kubernetes cluster. You can use Learning Mode to build a <a href="Policy.htm"><MadCap:change MadCap:changes="1">p</MadCap:change>Policy</a> that is best suited to your application, without blocking traffic between services or containers. When you are satisfied that the <MadCap:change MadCap:changes="1">p</MadCap:change><MadCap:change MadCap:changes="2">P</MadCap:change>olicy meets your enforcement criteria, disable Learning Mode and <MadCap:variable name="local.Product_L" /> will start enforcing your policy. The  monitoring and visibility capabilities provided by <MadCap:variable name="local.Product_L" /> such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Pods.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the Learning Mode setting.</p>
+        <p>When Learning mode is enabled, the color of the top toolbar changes.</p>
+        <p>
+            <img src="../Resources/Images/LearningModeToolbar.png" />
+        </p>
+    </body>
+</html>

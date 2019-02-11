@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Clicking on a <MadCap:variable name="local.TufinScore" /> displays the Vulnerabilities page, which lists the <MadCap:variable name="local.TufinScore" /> and a list of known vulnerabilities associated with that service. The name of the service is displayed at the top of the page, along with a count of all CVEs, listed by severity.</p>
+        <p>
+            <img src="../Resources/Images/vulnerabilities.png" class="OrcaThumbnail" />
+        </p>
+        <p>The following additional vulnerability information is also displayed:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Column</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Severity</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows"><MadCap:variable name="local.TufinScore" /> severity for this service</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">CVE</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Hyperlink to details about that specific CVE</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Package</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Specific package which contains the vulnerability</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Fixed in Version</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Version of the package in which the vulnerability was fixed</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Description</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Description of the CVE</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
