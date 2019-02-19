@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Service Graph</h1>
+        <p>
+            <img src="../Resources/Images/WindowServiceGraph.png" class="OrcaThumbnail" /> </p>
+        <p>The Service Graph graphically displays all the active traffic between the services used in your web application, and external services outside the cluster. The specific time frame that traffic is treated as active is configurable. If traffic between two services has not occurred during the time frame selected, the services will not appear in the Services Graph. Every service displayed has an associated color-coded <MadCap:variable name="local.TufinScore" /> that shows how secure the service is.</p>
+        <h2>What can I do?</h2>
+        <ul class="Action">
+            <li>
+                <p> <a href="#SecurityScore">View <MadCap:variable name="local.TufinScore" /> details</a> - Click on the <MadCap:variable name="local.TufinScore" /> of a service for expanded details about known vulnerabilities for that service.</p>
+            </li>
+            <li>
+                <p><a href="#ServiceDetails">View Service Details</a> - Click on a service to view details about a specific service.</p>
+            </li>
+            <li>
+                <p>Configure <a href="#ServiceDetails">traffic time frame</a> - Select the desired  to traffic time frame.</p>
+                <p>
+                    <img src="../Resources/Images/RefreshRate.png" class="OrcaThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Refresh - Click <img src="../Resources/Images/iconRefresh.png" /> to for a refresh of the Service Graph.</p>
+            </li>
+            <li>
+                <p><a href="../TopicsIntro/Filtering.htm">Filter</a> - Filter by: namespace</p>
+            </li>
+        </ul>
+        <h3><a name="SecurityScore"></a>Security Score Details</h3>
+        <MadCap:snippetBlock src="TufinScore - whatIs.flsnp" /><a name="ServiceDetails"> </a>
+        <MadCap:snippetBlock src="ServiceDetails - whatIs.flsnp" />
+        <h3><a name="ConnectionHistory"></a>Traffic Time Frame</h3>
+        <p>The Traffic Time Frame is the length of time that <MadCap:variable name="local.Product_L" /> considers a connection as active. Connections are displayed in the Service Graph for services that have had active traffic during the time frame selected. If no traffic has originated from or into a service during the time frame selected, that service will not appear in the Service Graph.</p>
+        <p>
+            <img src="../Resources/Images/RefreshRate.png" class="OrcaThumbnail" />
+        </p>
+        <h2>How do I get here?</h2>
+        <p>From the menu in the left panel, click Service Graph. </p>
+    </body>
+</html>

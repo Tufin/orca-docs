@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div>
+            <p>To enable Orca vulnerability scans when a new docker image is deployed to the cluster, you need to:</p>
+            <ol>
+                <li>
+                    <p>Create a new user under Docker Trusted Registry/users (enable “Trusted Registry Admin” switch).</p>
+                </li>
+                <li>
+                    <p>Select the user you’ve just created</p>
+                </li>
+                <li>
+                    <p>Go to “Access Tokens” tab and generate a new access token</p>
+                </li>
+                <li>
+                    <p>Create file /tmp/secret with this format:</p><pre xml:space="preserve">
+{
+  "auths": {
+    "&lt;Docker EE Cluster hostname (eg dtr.int.yourcompany.com)&gt;": {
+      "auth": "&lt;base64 of username:password in Docker Trusted Registry eg: dGVzdDoxMjM0Cg== for test:1234&gt;"
+   }
+ }
+}			
+</pre>
+                </li>
+                <li>
+                    <p>Run:</p><pre xml:space="preserve">kubectl create secret generic reg --from-file=config.json=/tmp/secret --namespace tufin-system		
+</pre>
+                </li>
+                <li>
+                    <p>Edit Kite deployment as follows:</p>
+                    <p>Amend the secret under volumes</p><pre xml:space="preserve">volumes:
+- name: reg
+  secret:
+    secretName: reg		
+</pre>
+                    <p>Amend the mount under volumeMounts:</p><pre xml:space="preserve">volumeMounts:
+- mountPath: /root/.docker
+  name: reg		
+</pre>
+                </li>
+                <li>
+                    <p>Save the updated kite deployment.</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

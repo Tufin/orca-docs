@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Deploying <MadCap:variable name="local.Product_L" /></h1>
+        <p> <MadCap:variable name="General.Product_S" /> needs to be deployed separately for each project on your Kubernetes cluster(s). </p>
+        <p>To deploy <MadCap:variable name="local.Product_L" /> you must run a  bash command from your terminal window, which will add your cluster to <MadCap:variable name="local.Product_L" />. This deployment command line is included in the <a href="SignUp.htm">Sign Up</a> email you received from Tufin.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>What does the deployment command string look like?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="DeployOrca_CommandString.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Prerequisites</h2>
+        <h3>Supported Kubernetes Versions
+</h3>
+        <ul>
+            <li>
+                <p>Any standard Kubernetes platform, version 1.9 and newer
+</p>
+            </li>
+            <li>
+                <p>GKE, EKS, OpenShift and Docker EE are fully supported 
+</p>
+            </li>
+            <li>
+                <p>Non-standard Kubernetes platforms can be supported on-demand
+</p>
+            </li>
+        </ul>
+        <h3>CNI
+</h3>
+        <p>In order to enforce Kubernetes Network Policies, a suitable CNI (network) plugin must be installed (optional).
+</p>
+        <h3>Supported Container Registries
+</h3>
+        <p>All registries are supported.
+</p>
+        <h3>Roles and Permissions
+</h3>
+        <ul>
+            <li>
+                <p>The installer requires cluster admin role in Kubernetes </p>
+            </li>
+            <li>
+                <p>Kite pod requires read access on cluster entities (pods, services, etc.)
+</p>
+            </li>
+            <li>
+                <p>Conntrack network engine is a daemonset that requires:
+</p>
+                <ul>
+                    <li>
+                        <p>hostNetwork: true
+</p>
+                    </li>
+                    <li>
+                        <p>hostPID: true
+</p>
+                    </li>
+                    <li>
+                        <p>securityContext:
+  </p>
+                        <ul>
+                            <li>
+                                <p>privileged: true
+</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Required Kubernetes Components
+</h3>
+        <p>kube-dns deployment must exist in namespace kube-system (not required for OpenShift)
+</p>
+        <h3>Outbound Connections</h3>
+        <p>
+If you have a firewall between your Kubernetes cluster and the internet, allow the following connections:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Port</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Protocols</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Security</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">guru.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP/2</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">registry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">loginregistry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">orca.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">TLS</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>In <MadCap:variable name="General.Product_S" /></h3>
+        <ul>
+            <li>
+                <p>Make sure you have created an API Token in your <MadCap:variable name="General.Product_S" /> project with scope “view” </p>
+            </li>
+            <li>
+                <p>In the console, connect to your Kubernetes cluster. </p>
+            </li>
+        </ul>
+        <h2>How do I deploy <MadCap:variable name="local.Product_L" /> in my cluster?</h2>
+        <ol>
+            <li>
+                <p>Open a terminal and point kubectl to your Kubernetes cluster. See <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-context-and-configuration">Kubernetes documentation</a> for additional details.</p>
+            </li>
+            <li>
+                <p>Run the bash command string using the parameters sent to you in your <a href="SignUp.htm">Sign Up</a> email:</p>
+                <p><pre>bash &lt;(curl -s https://orca.tufin.io/api/<span class="Bold">&lt;domain&gt;/&lt;project&gt;</span>/scripts/deploy-orca -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>")</pre>
+                </p>
+            </li>
+            <li>
+                <p>Perform steps for scanning docker images:</p>
+                <ul>
+                    <li>
+                        <p>GKE - no steps required </p>
+                    </li>
+                    <li>
+                        <p>
+                            <MadCap:dropDownHead>
+                                <MadCap:dropDownHotspot>Docker Enterprise Edition</MadCap:dropDownHotspot>
+                            </MadCap:dropDownHead>
+                            <MadCap:dropDownBody>
+                                <MadCap:snippetBlock src="DeployOrca_DockerEnterprise.flsnp" />
+                            </MadCap:dropDownBody>
+                            <MadCap:dropDown>
+                                <MadCap:dropDownHead>
+                                    <MadCap:dropDownHotspot>Red Hat OpenShift</MadCap:dropDownHotspot>
+                                </MadCap:dropDownHead>
+                                <MadCap:dropDownBody>
+                                    <MadCap:snippetBlock src="DeployOrca_RedhatOpenshift.flsnp" />
+                                </MadCap:dropDownBody>
+                            </MadCap:dropDown>
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Install Kite on the Cluster</p>
+                <ul>
+                    <li>
+                        <p>For GKE only, first add the cluster role binding:</p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)
+</pre>
+                    </li>
+                    <li>
+                        <p>For all editions. Run the Kite installer script as administrator. See </p><pre xml:space="preserve">
+bash &lt;(curl -s -H "Authorization: Bearer &lt;your-token&gt;" "https://orca.tufin.io/api/&lt;your-orca-domain&gt;/&lt;your-orca-project&gt;/scripts/deploy-orca")</pre>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <div class="NoteLight">
+            <p><MadCap:variable name="local.Product_L" /> will create a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. We recommend that you retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</p>
+        </div>
+    </body>
+</html>
