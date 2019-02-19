@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="orca">orca</Variable>
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="iris">iris</Variable>
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="test">test</Variable>
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="tos2">tos2</Variable>
+</CatapultVariableSet>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAutoIndexSet>
+  <AutoIndex
+    Phrase="firewall"
+    IndexTerm="pods"
+    IgnoreCase="True" />
+  <AutoIndex
+    Phrase="Tufin orca"
+    IndexTerm="integrate"
+    IgnoreCase="True"></AutoIndex>
+</CatapultAutoIndexSet>

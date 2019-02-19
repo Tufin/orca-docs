@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+	Version="2"
+	SkinType="Component"
+	Comment="HTML5 Toolbar skin"
+	ComponentType="TopicToolbar"
+	EnableResponsiveOutput="True">
+	<Stylesheet>
+		<Styles>
+			<Style
+				Name="Toolbar">
+				<Properties>
+					<Property
+					Name="MarginBottom">33px</Property>
+					<Property
+					Name="MarginRight">-4px</Property>
+					<Property
+					Name="Float">right</Property>
+				</Properties>
+			</Style>
+			<Medium
+				Name="Mobile">
+				<Style
+					Name="Toolbar">
+					<Properties>
+						<Property
+						Name="Display">none</Property>
+					</Properties>
+				</Style>
+			</Medium>
+		</Styles>
+	</Stylesheet>
+	<TopicToolbar
+		EnableCustomLayout="true"
+	Buttons="TopicRatings|Separator|EditUserProfile|Print|ExpandAll" />
+	<Strings />
+</CatapultSkin>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultGlossary
+  conditions="">
+  <GlossaryEntry
+    glossTerm="Glossary.Term 1"
+    Terms="Copy (5) of New">
+    <Terms>
+      <Term>Term 1</Term>
+    </Terms>
+    <Definition
+      Link="">Definition for Term 1.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term 3"
+    Terms="Copy (15) of New">
+    <Terms>
+      <Term>Term 3</Term>
+    </Terms>
+    <Definition
+      Link="">Definition for Term 3.</Definition>
+  </GlossaryEntry>
+  <GlossaryEntry
+    glossTerm="Glossary.Term 2">
+    <Terms>
+      <Term>Term 2</Term>
+    </Terms>
+    <Definition
+      Link="">Definition for Term 2.</Definition>
+  </GlossaryEntry>
+</CatapultGlossary>

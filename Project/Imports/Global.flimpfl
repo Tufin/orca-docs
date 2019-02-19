@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultProject
+  Version="1"
+  xml:lang="en-us"
+  SourceControlBound="false"
+  Comment="This template is similar to the other Top Navigation Basic template, but it is even simpler. The Home page is more basic, and there is only one stylesheet and one master page."
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MasterStylesheetOverride="False"
+  ExcludePattern="local-*.*"
+  IncludePattern="*.*"
+  AutoExcludeNonTaggedFiles="false"
+  IncludeLinkedFiles="false"
+  DeleteStale="true"
+  DeleteUnreferenced="false"
+  AutoSync="true"
+  LastImport="2019-02-18T14:37:16.8745045+02:00">
+  <Files>
+    <Url
+      Source="..\..\..\Global\Global.flprj"
+      AbsoluteSource="..\..\..\Global\Global.flprj" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles>
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/MasterPage.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/MasterPage.flmsp" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Chapters.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Chapters.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/FrontMatter.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/FrontMatter.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/styles.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/styles.css" />
+    <Url
+      Source="../../../Global/Content/Resources/TableStyles/PatternedRows.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/PatternedRows.css" />
+    <Url
+      Source="../../../Global/Content/Resources/TableStyles/Simple.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/Simple.css" />
+    <Url
+      Source="../../../Global/Content/Resources/TableStyles/SimpleWithPadding.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/SimpleWithPadding.css" />
+    <Url
+      Source="../../../Global/Content/Resources/TableStyles/Standard.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/Standard.css" />
+    <Url
+      Source="../../../Global/Project/ConditionTagSets/General.flcts"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/ConditionTagSets/General.flcts" />
+    <Url
+      Source="../../../Global/Project/Glossaries/Glossary.flglo"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Glossaries/Glossary.flglo" />
+    <Url
+      Source="../../../Global/Project/Skins/HTML5 SideNav.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 SideNav.flskn" />
+    <Url
+      Source="../../../Global/Project/Skins/HTML5 TopNav.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 TopNav.flskn" />
+    <Url
+      Source="../../../Global/Project/Skins/HTML5 Tripane.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 Tripane.flskn" />
+    <Url
+      Source="../../../Global/Project/Skins/SideMenu.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/SideMenu.flskn" />
+    <Url
+      Source="../../../Global/Project/Skins/TopicToolBar.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/TopicToolBar.flskn" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default.fltar" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/custom.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom.css" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/custom.js"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom.js" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/theme.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/theme.css" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerIris.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerIris.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerOrca.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerOrca.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/logoIris.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoIris.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/logoOrca.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoOrca.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/iconAction.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/iconAction.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/iconNote.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/iconNote.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/iconWarning.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/iconWarning.png" />
+    <Url
+      Source="../../../Global/Project/VariableSets/custom.flvar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/VariableSets/custom.flvar" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/iconExternalLink.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/iconExternalLink.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/iconNoteLight.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/iconNoteLight.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerTos2.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerTos2.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/logoTos2.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoTos2.png" />
+  </CollectedSourceFiles>
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/MasterPages/MasterPage.flmsp"
+      TimeStamp="6/20/2018 9:27:48 AM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Chapters.flpgl"
+      TimeStamp="6/20/2018 9:27:48 AM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/FrontMatter.flpgl"
+      TimeStamp="6/20/2018 9:27:48 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/styles.css"
+      TimeStamp="10/23/2018 10:00:49 AM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/PatternedRows.css"
+      TimeStamp="10/16/2018 1:48:36 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/Simple.css"
+      TimeStamp="6/20/2018 9:33:02 AM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/SimpleWithPadding.css"
+      TimeStamp="6/20/2018 9:33:02 AM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/Standard.css"
+      TimeStamp="6/20/2018 9:33:02 AM" />
+    <Url
+      Source="../ConditionTagSets/General.flcts"
+      TimeStamp="6/20/2018 9:27:48 AM" />
+    <Url
+      Source="../Glossaries/Glossary.flglo"
+      TimeStamp="6/20/2018 9:27:48 AM" />
+    <Url
+      Source="../Skins/HTML5 SideNav.flskn"
+      TimeStamp="6/13/2018 12:07:24 AM" />
+    <Url
+      Source="../Skins/HTML5 TopNav.flskn"
+      TimeStamp="10/18/2018 11:27:54 AM" />
+    <Url
+      Source="../Skins/HTML5 Tripane.flskn"
+      TimeStamp="6/27/2018 4:50:44 PM" />
+    <Url
+      Source="../Skins/SideMenu.flskn"
+      TimeStamp="10/4/2018 5:45:47 PM" />
+    <Url
+      Source="../Skins/TopicToolBar.flskn"
+      TimeStamp="10/4/2018 5:14:09 PM" />
+    <Url
+      Source="../Targets/Templates/Default.fltar"
+      TimeStamp="10/4/2018 5:44:21 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/custom.css"
+      TimeStamp="10/24/2018 4:22:13 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/custom.js"
+      TimeStamp="10/24/2018 4:07:36 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/theme.css"
+      TimeStamp="10/24/2018 4:29:00 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerIris.jpg"
+      TimeStamp="10/8/2018 2:49:18 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerOrca.jpg"
+      TimeStamp="10/8/2018 3:11:29 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/logoIris.png"
+      TimeStamp="10/18/2018 11:23:16 AM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/logoOrca.png"
+      TimeStamp="10/18/2018 11:22:58 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/iconAction.png"
+      TimeStamp="10/24/2018 5:38:40 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/iconNote.png"
+      TimeStamp="10/7/2018 2:28:02 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/iconWarning.png"
+      TimeStamp="10/7/2018 2:28:11 PM" />
+    <Url
+      Source="../VariableSets/custom.flvar"
+      TimeStamp="10/24/2018 3:49:49 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/iconExternalLink.png"
+      TimeStamp="10/25/2018 1:49:19 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/iconNoteLight.png"
+      TimeStamp="10/25/2018 1:43:45 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerTos2.jpg"
+      TimeStamp="11/11/2018 11:33:54 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/logoTos2.png"
+      TimeStamp="11/11/2018 11:32:49 PM" />
+  </GeneratedFiles>
+</CatapultProject>

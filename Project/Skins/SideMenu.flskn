@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Menu skin"
+  ComponentType="Menu"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Menu">
+        <Properties>
+          <Property
+            Name="Width">100%</Property>
+          <Property
+            Name="BorderTop">solid 4px #074c7b</Property>
+          <Property
+            Name="BorderRight">solid 1px #c9c9c9</Property>
+          <Property
+            Name="BorderBottom">solid 1px #c9c9c9</Property>
+          <Property
+            Name="BorderLeft">solid 1px #c9c9c9</Property>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+          <Property
+            Name="FontFamily">Open Sans SemiBold</Property>
+          <Property
+            Name="FontSize">17px</Property>
+          <Property
+            Name="Color">#333333</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Menu Item">
+        <Properties>
+          <Property
+            Name="PaddingTop">4px</Property>
+          <Property
+            Name="PaddingBottom">4px</Property>
+          <Property
+            Name="Color">#333333</Property>
+          <Property
+            Name="BackgroundColor">#ffffff</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="PaddingBottom">6px</Property>
+              <Property
+                Name="PaddingTop">6px</Property>
+              <Property
+                Name="FontWeight">normal</Property>
+              <Property
+                Name="FontFamily">Open Sans</Property>
+              <Property
+                Name="FontSize">15px</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="PaddingTop">2px</Property>
+              <Property
+                Name="PaddingBottom">2px</Property>
+              <Property
+                Name="FontSize">0.85em</Property>
+              <Property
+                Name="FontWeight">normal</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="3rd Level">
+            <Properties>
+              <Property
+                Name="PaddingTop">2px</Property>
+              <Property
+                Name="PaddingBottom">2px</Property>
+              <Property
+                Name="FontWeight">normal</Property>
+              <Property
+                Name="FontSize">0.75em</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="4th Level">
+            <Properties>
+              <Property
+                Name="PaddingBottom">2px</Property>
+              <Property
+                Name="PaddingTop">2px</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="Selected">
+            <Properties>
+              <Property
+                Name="FontWeight">normal</Property>
+              <Property
+                Name="BackgroundColor">transparent</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Style
+        Name="Menu Item (hover)">
+        <Properties>
+          <Property
+            Name="BackgroundColor">transparent</Property>
+        </Properties>
+        <Classes>
+          <StyleClass
+            Name="2nd Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Open Sans</Property>
+            </Properties>
+          </StyleClass>
+          <StyleClass
+            Name="1st Level">
+            <Properties>
+              <Property
+                Name="FontFamily">Open Sans</Property>
+              <Property
+                Name="FontSize">15px</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Menu">
+          <Properties>
+            <Property
+              Name="Display">none</Property>
+          </Properties>
+        </Style>
+      </Medium>
+    </Styles>
+  </Stylesheet>
+  <Strings />
+</CatapultSkin>

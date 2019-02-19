@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile conditions="">
+    <Map Name="Deploy" Link="/Content/TopicsIntro/DeployOrca.htm" />
+    <Map Name="ServiceGraph" Link="/Content/TopicsFeatures/ServiceGraph.htm" />
+    <Map Name="Pods" Link="/Content/TopicsFeatures/Pods.htm" />
+    <Map Name="Services" Link="/Content/TopicsFeatures/Services.htm" />
+    <Map Name="Nodes" Link="/Content/TopicsFeatures/Nodes.htm" />
+    <Map Name="Policy" Link="/Content/TopicsFeatures/Policy.htm" />
+    <Map Name="Settings" Link="/Content/TopicsFeatures/Settings.htm" />
+    <Map Name="UnderstandingOrca" Link="/Content/TopicsIntro/UnderstandingOrca.htm" />
+    <Map Name="Vulnerabilities" Link="/Content/TopicsFeatures/VulnerabilityDetails.htm" />
+</CatapultAliasFile>
