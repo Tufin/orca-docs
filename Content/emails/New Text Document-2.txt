@@ -1,2 +1,2 @@
-﻿I am master merged
-=======
+merge is new 1
+merge is new 2
