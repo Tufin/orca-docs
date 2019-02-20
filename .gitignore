@@ -17,14 +17,4 @@
 #################################################################################
 # Add items to be ignored below                                                 #
 #################################################################################
-<<<<<<< HEAD
-# project file ignored so as to allow indpendence in switching on and off of source control
-Orca-github.flprj  
-=======
 
-<<<<<<< HEAD
-Orca-github.flprj
->>>>>>> master-neil
-=======
-
->>>>>>> master-neil
