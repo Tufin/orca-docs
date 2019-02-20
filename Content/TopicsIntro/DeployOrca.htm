@@ -13,9 +13,9 @@
         <p>This procedure is meant for deploying your <b>first </b><MadCap:variable name="General.Product_S" /> project.  You will need the <a href="SignUp.htm">Sign Up</a> email sent to you previously. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
         <h2>Deploy  Orca on the Kubernetes Cluster</h2>
         <ol>
-            <li>Open a terminal and point kubectl to your Kubernetes cluster. </li>
+            <li>Open a terminal and point kubectl to your Kubernetes cluster </li>
             <li>
-                <p>Run the bash command string included in your <a href="SignUp.htm">Sign Up</a> email, which has been created specifically for the project you specified when signing up.</p>
+                <p>Run the bash command string as cluster admin from your <a href="SignUp.htm">Sign Up</a> email; this string has been created specifically for the project you specified when signing up.</p>
             </li>
         </ol>
         <p>Your cluster has now been added to <MadCap:variable name="General.Product_S" />. Continue with <a href="TestingApp.htm">Monitoring Your Application</a>.</p>
@@ -24,15 +24,15 @@
 </h3>
         <ul>
             <li>
-                <p>Any standard Kubernetes platform, version 1.9 and newer
+                <p>Any standard Kubernetes platform, version 1.9 and newer.
 </p>
             </li>
             <li>
-                <p>Google GKE, Microsoft AKS, Amazon EKS, OpenShift and Docker EE are fully supported 
+                <p>Google GKE, Microsoft AKS, Amazon EKS, OpenShift and Docker EE are fully supported.
 </p>
             </li>
             <li>
-                <p>Non-standard Kubernetes platforms can be supported on-demand
+                <p>Non-standard Kubernetes platforms can be supported on-demand.
 </p>
             </li>
         </ul>
@@ -80,13 +80,22 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             </tbody>
         </table>
         <h3>Installation Requires 'cluster-admin' Role</h3>
-        <p>When you run the deployment bash string, you must do so as Kubernetes cluster administrator. If you are not familiar with this, you can get more information below:</p>
+        <p>The deployment bash string must be run as Kubernetes cluster administrator. More information below:</p>
         <ul>
-            <li><MadCap:variable name="General.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl </a></li>
-            <li><MadCap:variable name="General.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
-            <li><MadCap:variable name="General.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
-            <li><MadCap:variable name="General.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
-            <li><MadCap:variable name="General.Docker" />: https://docs.docker.com/ee/ucp/user-access/cli/</li>
+            <li><MadCap:variable name="General.GKE" /> (Google): kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)</li>
+            <li><MadCap:variable name="General.EKS" />: (Amazon) </li>
+            <li><MadCap:variable name="General.AKS" />: (Microsoft) </li>
+            <li><MadCap:variable name="General.Openshift" />: </li>
+            <li><MadCap:variable name="General.Docker" />: </li>
+        </ul>
+        <h3>Connecting to Your Kubernetes Cluster</h3>
+        <p>If you don't know how to connect to your Kubernetes Cluster, see:</p>
+        <ul>
+            <li><MadCap:variable name="General.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl" target="_popup">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl </a></li>
+            <li><MadCap:variable name="General.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html" target="_popup">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
+            <li><MadCap:variable name="General.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough" target="_popup">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
+            <li><MadCap:variable name="General.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html" target="_popup">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
+            <li><MadCap:variable name="General.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/" target="_popup">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
         </ul>
         <div class="NoteLight">
             <p> The deployment process creates a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</p>
