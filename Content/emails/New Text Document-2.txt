@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-﻿I am master
+﻿I am master merged
 =======
-﻿I am master-neil
->>>>>>> master-neil
