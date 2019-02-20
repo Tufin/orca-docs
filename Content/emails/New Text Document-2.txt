@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 ﻿merge is new 1
 merge is new 2
+=======
+﻿new line 1 from branch neil
+new line 2 from bn
+new line 3 from bn
+>>>>>>> master-neil
