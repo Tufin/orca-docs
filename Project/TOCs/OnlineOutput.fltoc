@@ -7,10 +7,13 @@
     Link="/Content/TopicsIntro/WhatIs.htm"></TocEntry>
   <TocEntry
     Title="Getting Started"
-    Link="/Content/TopicsIntro/GettingStarted.htm">
+    Link="/Content/TopicsIntro/Securing_Orca.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/UnderstandingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/Securing_Orca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/InstallingOrca.htm">
