@@ -1,5 +1,5 @@
-﻿newer line 1 from branch neil
+newer line 1 from branch neil
 newer line 2 from bn
 
 newer line 4 from bn
-newest line 5
+newest line 5 -
