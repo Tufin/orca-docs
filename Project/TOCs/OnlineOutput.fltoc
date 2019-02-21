@@ -32,6 +32,9 @@
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/Navigation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
