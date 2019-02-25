@@ -69,7 +69,7 @@
             </li>
         </ul>
         <h3>Kubernetes Network Policies</h3>
-        <p>A read-only view of Kubernetes-defined network policies. The screen is split into 2 tabs, Ingress and Egress. </p>
+        <p>A read-only view of Kubernetes-defined network rules. The screen is split into 2 tabs, Ingress and Egress. </p>
         <p>Under the Ingress tab, the polices are displayed in a numbered list and show the following information:</p>
         <p>
             <img src="../Resources/Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
@@ -77,76 +77,168 @@
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Description</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">#</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Display Sequence </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display Sequence </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Allow/disallow</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
+                        <p class="TableBodyText">Allow / disallow</p>
                     </td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">&#160;</p>
+                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy Name </td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy name given in Kubernetes</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Kubernetes policy containing the rule</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The namespace at which traffic may be received</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The Kubernetes cluster namespace to which traffic is destined</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Pods</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The pods in the namespace at which traffic may be received</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the cluster namespace to which traffic  is destined</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The namespace out of which traffic may pass</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The namespace outside the cluster from which traffic originates</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Pods</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The pods in the namespace out of which traffic may pass</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the namespace  outside the cluster from which traffic originates</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Subnet</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The subnet of the pods out of which traffic may pass</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The subnet of the pods  outside the cluster from which traffic originates</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
                         <p class="TableBodyText">Port</p>
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p class="TableBodyText">The port of the pods out of which traffic may pass</p>
-                    </td>
                     <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p class="TableBodyText">&#160;</p>
+                        <p class="TableBodyText">The ports of the pods  outside the cluster from which traffic originates</p>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p>&#160;</p>
+        <p>Under the Egress tab, the policies are displayed in a numbered list and show the following information:</p>
         <p>
-            <img src="../Resources/Images/PolicyKubernetesNetworkPoliciesEgress.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Egress" alt="Kubernetes Network Policies - Egress" />
+            <img src="../Resources/Images/PolicyKubernetesNetworkPoliciesEgress.png" class="ThumbnailPopup" title="Kubernetes_Network_Policies_Egress" alt="Kubernetes_Network_Policies_Egress" />
         </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">#</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display Sequence </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Allow/disallow</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy Name </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Kubernetes policy containing the rule</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The namespace in the Kubernetes cluster from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Target Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the namespace  from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Destination Namespace</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">The namespace outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Destination Pods</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">The pods outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subnet</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">The subnets outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p class="TableBodyText">Port</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
+                        <p class="TableBodyText">The ports outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Firewall Tickets</h3>
+        <p>A read-only list of tickets collected from all firewalls in the cluster. The screen is displayed below.</p>
+        <p>
+            <img src="../Resources/Images/PolicyFirewallTickets.png" class="ThumbnailPopup" />
+        </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Namespace in which the firewall resides</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Endpoints</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Device on which firewall resides</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Implementation status of ticket: Implemented, In progress, Failed</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Message</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Message describing ticket status</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Ticket</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>Ticket number</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Last Update</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Last time ticket was updated</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>How do I get here?</h2>
         <p>
             <li>From the menu in the left panel, click Policy and then choose one of the options displayed in the sub-menu:</li>
