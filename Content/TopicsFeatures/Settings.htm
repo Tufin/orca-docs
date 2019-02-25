@@ -5,37 +5,22 @@
     </head>
     <body>
         <h1>Settings</h1>
-        <p>The Settings window lets you configure <MadCap:variable name="local.Product_L" />.</p>
+        <p>The Settings window displays configuration information and lets you make configuration changes. </p>
+        <p>
+            <img src="../Resources/Images/Settings.png" class="ThumbnailPopup" />
+        </p>
         <h2>What can I do?</h2>
-        <ul class="Action">
-            <li>
-                <p><a href="#APITokens">API Tokens</a> - Create or revoke project-specific API authentication tokens.</p>
-                <ul>
-                    <li>
-                        <p>Delete a token - Hover over a token, and click <img src="../Resources/Images/ButtonX.png" />.</p>
-                        <p>
-                            <img src="../Resources/Images/Settings_APITokens_Delete.png" class="ThumbnailPopup" />
-                        </p>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p><a href="../TopicsProcedure/AddAPIToken.htm">Create an authentication token</a> - Click <img src="../Resources/Images/ButtonCreateToken.png" /> and follow the instructions.</p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <p><a href="#LearningMode">Learning Mode</a> - Toggle learning mode on or off.</p>
-                <p>Click the toggle button to enable <img src="../Resources/Images/ButtonToggleOff.png" /> or disable <img src="../Resources/Images/ButtonToggleOn.png" /> learning mode.</p>
-            </li>
-            <li>
-                <p><a href="#Slack">Slack Alerts</a> - To configure <MadCap:variable name="local.Product_L" /> to send alerts to Slack enter a Slack Incoming Webhook URL, and click Save.</p>
-                <p>
-                    <img src="../Resources/Images/Settings_Slack.png" class="ThumbnailPopup" /> E</p>
-            </li>
+        <ul>
+            <li>Manage API tokens</li>
+            <li>Get the Install Agent deployment string needed to deploy <MadCap:variable name="General.Product_S" /></li>
+            <li>Switch between operation modes Learn and Enforce. </li>
+            <li>Set up notifications </li>
         </ul>
         <h3><a name="APITokens"></a>API Tokens</h3>
-        <p><MadCap:variable name="local.Product_L" /> automatically creates four tokens for each new project. You can create as many additional authentication tokens as you require. The default tokens created for a new project are:</p>
+        <p>
+            <img src="../Resources/Images/APITokens.png" class="ThumbnailPopup" />
+        </p>
+        <p>You can view, create or delete project-specific API authentication tokens. <MadCap:variable name="local.Product_L" /> automatically creates four tokens for each new project. You can create as many additional authentication tokens as you require. The default tokens created for a new project are:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -64,14 +49,24 @@
                 </tr>
             </tbody>
         </table>
+        <h4>Delete a Token</h4>
+        <p>Hover over the line to be deleted; when the <img src="../Resources/Images/ButtonX.png" class="noborder" />appears click on it to delete the token.</p>
+        <h4>Create a New Token</h4>
+        <p>Click Create Token and follow the instructions in <a href="../TopicsProcedure/AddAPIToken.htm">Create an authentication token</a>. </p>
+        <h3>Install Agent Deployment String</h3>
+        <p>You view the bash string needed for deploying <MadCap:variable name="General.Product_S" /> on your cluster by clicking <img src="../Resources/Images/ButtonInstallAgent.png" />. Once displayed, you can copy to clipboard by clicking the button that appears in the window. Click OK to close the window.</p>
         <p>
-            <img src="../Resources/Images/Settings_APITokens.png" class="ThumbnailPopup" /> </p>
-        <h3><a name="LearningMode"></a>Learning Mode</h3>
+            <img src="../Resources/Images/InstallAgentString.png" class="ThumbnailPopup" />
+        </p>
+        <h3><a name="LearningMode"></a>Operation Mode</h3>
         <MadCap:snippetBlock src="WhatsIs_LearningMode.flsnp" />
-        <ul class="Action">
-            <li>Toggle learning mode - Click the toggle button to enable <img src="../Resources/Images/ButtonToggleOff.png" /> or disable <img src="../Resources/Images/ButtonToggleOn.png" /> learning mode.</li>
-        </ul>
-        <h3><a name="Slack"></a>Slack Alerts</h3>
-        <p><MadCap:variable name="local.Product_L" /> lets you send any messages or notifications sent to an individual or group via slack. See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for additional details.</p>
+        <h3><a name="Slack"></a>Notifications</h3>
+        <p><MadCap:variable name="local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
+        <p>
+            <p>
+                <img src="../Resources/Images/Settings_Slack.png" class="ThumbnailPopup" />
+            </p>
+            <p>See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for additional details.</p>
+        </p>
     </body>
 </html>
