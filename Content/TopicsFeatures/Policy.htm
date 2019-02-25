@@ -1,24 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>Policy</h1>
+        <p>A <MadCap:variable name="local.Product_L" /> policy is a whitelist of traffic rules describing the communication that you allow between the services in your application. Policies are enforced by <MadCap:variable name="local.Product_L" /> between services. Policy enforcement only occurs if learning mode is disabled. See <a href="Settings.htm#LearningMode">Learning Mode Settings</a> for configuration details.</p>
         <p>
-            <img src="../Resources/Images/WindowPolicy.png" class="OrcaThumbnail" />
+            <img src="../Resources/Images/WindowPolicy.png" class="OrcaThumbnail" style="width: 252px;height: 180px;" />
         </p>
-        <p> A <MadCap:variable name="local.Product_L" /> policy is a whitelist or traffic rules describing the communication that you allow between the services in your application. Policies are enforced by <MadCap:variable name="local.Product_L" /> between services. Policy enforcement only occurs if learning mode is disabled. See <a href="Settings.htm#LearningMode">Learning Mode Settings</a> for configuration details.</p>
         <h2>What can I do?</h2>
+        <ul>
+            <li>Manage allowed connections</li>
+            <li>View Kubernetes network policies</li>
+            <li>View firewall tickets</li>
+        </ul>
+        <p>Each of the options above can be selected from the sub-menu displayed when clicking on Policy.</p>
+        <h3>Allowed Connections</h3>
+        <p> The Allowed Connections screen lists rules that specify a permitted source namespace and destination domain name through which network traffic may pass. Initially the list is empty. Allowed connections must be added by the administrator.</p>
+        <h4>Allowed Connections - What Can I do?</h4>
+        <ul>
+            <li>Add an allowed connection</li>
+            <li>Delete an allowed connection</li>
+            <li>Reset allowed connections</li>
+            <li><a href="../TopicsIntro/Filtering.htm">Filter</a> - Filter by: namespace</li>
+        </ul>
+        <h4>Adding an Allowed Connection</h4>
         <ul class="Action">
             <li>
-                <p>Delete an allowed connection - Hover over a connection and click <img src="../Resources/Images/ButtonX.png" />. </p>
+                <p>Click on <img src="../Resources/Images/ButtonAddSmall.png" class="noborder" /> on the screen. The Add Allowed Connection window is displayed</p>
+                <p>
+                    <img src="../Resources/Images/PolicyAllowedConnectionsEmpty.png" class="OrcaThumbnail" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the empty namespace field under 'From' and select the appropriate namespace from the list from which to create the rule.</p>
+            </li>
+            <li>
+                <p>Click on the empty Domain Name field under 'to'. You can use a wildcard prefix * (e.g. *.example.com)</p>
+            </li>
+            <li>
+                <p>Click Add Rule.to save. The line will be added to the list.</p>
+            </li>
+        </ul>
+        <h4>Deleting Allowed Connection</h4>
+        <ul class="Action">
+            <li>
+                <p>Hover over the line for the desired connection and click <img src="../Resources/Images/ButtonX.png" class="noborder" />when it appears at the end of the line.</p>
                 <p>
                     <img src="../Resources/Images/DeleteAllowedConnection.png" class="OrcaThumbnail" />
                 </p>
             </li>
-            <li><a href="../TopicsIntro/Filtering.htm">Filter</a> - Filter by: namespace</li>
+            <li>The line will be removed.</li>
         </ul>
+        <h4>Resetting Allowed Connections</h4>
+        <ul class="Action">
+            <li>
+                <p>Click on Actions at the top of the screen to display the actions menu.</p>
+                <p>
+                    <img src="../Resources/Images/PolicyActionsResetAllowed.png" title="Reset Allowed Connections" alt="Reset Allowed Connections" />
+                </p>
+            </li>
+            <li>
+                <p>Click on Reset Allowed Connections from the actions menu.</p>
+            </li>
+            <li>
+                <p>All allowed connections will be removed.</p>
+            </li>
+        </ul>
+        <h3>Kubernetes Network Policies</h3>
+        <p>A read-only view of Kubernetes-defined network policies. The screen is split into 2 tabs, Ingress and Egress. </p>
+        <p>Under the Ingress tab, the polices are displayed in a numbered list and show the following information:</p>
+        <p>
+            <img src="../Resources/Images/PolicyKubernetesNetworkPolicies.png" class="OrcaThumbnail" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
+        </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Description</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">#</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Display Sequence </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Allow/disallow</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy Name </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy name given in Kubernetes</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The namespace at which traffic may be received</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The pods in the namespace at which traffic may be received</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The namespace out of which traffic may pass</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The pods in the namespace out of which traffic may pass</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Subnet</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The subnet of the pods out of which traffic may pass</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p class="TableBodyText">Port</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p class="TableBodyText">The port of the pods out of which traffic may pass</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <img src="../Resources/Images/PolicyKubernetesNetworkPoliciesEgress.png" class="OrcaThumbnail" title="Kubernetes Network Policies - Egress" alt="Kubernetes Network Policies - Egress" />
+        </p>
         <h2>How do I get here?</h2>
-        <p>From the menu in the left panel, click Policy. </p>
+        <p>
+            <li>From the menu in the left panel, click Policy and then choose one of the options displayed in the sub-menu:</li>
+        </p>
+        <ul>
+            <li>View allowed connections</li>
+            <li>View Kubernetes network policies</li>
+            <li>View firewall tickets</li>
+        </ul>
     </body>
 </html>

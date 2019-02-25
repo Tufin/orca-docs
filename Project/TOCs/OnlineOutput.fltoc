@@ -7,7 +7,7 @@
     Link="/Content/TopicsIntro/WhatIs.htm"></TocEntry>
   <TocEntry
     Title="Getting Started"
-    Link="/Content/TopicsIntro/Securing_Orca.htm">
+    Link="/Content/TopicsIntro/GettingStarted.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/UnderstandingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -41,7 +41,8 @@
       Link="/Content/TopicsIntro/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
-    Title="Working with Orca">
+    Title="Working with Orca"
+    Link="/Content/TopicsFeatures/ServiceGraph.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsFeatures/ServiceGraph.htm"></TocEntry>
