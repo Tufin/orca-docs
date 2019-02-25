@@ -433,13 +433,20 @@ img.noborder
 	border: none;
 }
 
-img.OrcaThumbnail
+img.ThumbnailPopup
 {
 	mc-thumbnail: popup;
 	border: dotted 2px #000000;
 	mc-thumbnail-max-height: 100px;
 }
 
+img.ThumbnailMed
+{
+   width: auto;
+   height: auto;
+   max-height: 400;
+   max-width: 400;
+}
 
 span.Code
 {
@@ -519,4 +526,3 @@ MadCap|dropDownHotspot
 {
 	
 }
-

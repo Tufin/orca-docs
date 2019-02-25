@@ -6,7 +6,7 @@
     <body>
         <p>Clicking on a <MadCap:variable name="local.TufinScore" /> displays the Vulnerabilities page, which lists the <MadCap:variable name="local.TufinScore" /> and a list of known vulnerabilities associated with that service. The name of the service is displayed at the top of the page, along with a count of all CVEs, listed by severity. <a href="SecurityScoreCalculation.htm">See how the <MadCap:variable name="General.TufinScore" /> is calculated</a>.</p>
         <p>
-            <img src="../Resources/Images/vulnerabilities.png" class="OrcaThumbnail" />
+            <img src="../Resources/Images/vulnerabilities.png" class="ThumbnailPopup" />
         </p>
         <p>The following additional vulnerability information is also displayed:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">

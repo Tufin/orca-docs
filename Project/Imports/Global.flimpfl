@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="true"
-  LastImport="2019-02-18T14:37:16.8745045+02:00">
+  LastImport="2019-02-25T10:37:43.9943237+02:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -114,6 +114,36 @@
     <Url
       Source="../../../Global/Content/Resources/Custom/Images/logoTos2.png"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoTos2.png" />
+    <Url
+      Source="../../../Global/Content/Resources/TableStyles/PatternedRows_Indent1.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/PatternedRows_Indent1.css" />
+    <Url
+      Source="../../../Global/Project/Advanced/AliasFile.flali"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AliasFile.flali" />
+    <Url
+      Source="../../../Global/Project/Advanced/AuthorFileTags.flfts"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AuthorFileTags.flfts" />
+    <Url
+      Source="../../../Global/Project/Advanced/AutoIndexSet.flaix"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AutoIndexSet.flaix" />
+    <Url
+      Source="../../../Global/Project/Advanced/English (United States) Dictionary.mcdic"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/English (United States) Dictionary.mcdic" />
+    <Url
+      Source="../../../Global/Project/Advanced/HeaderFile.h"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/HeaderFile.h" />
+    <Url
+      Source="../../../Global/Project/Advanced/IndexLinks.flixl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/IndexLinks.flixl" />
+    <Url
+      Source="../../../Global/Project/Advanced/SearchFilterSet.flsfs"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/SearchFilterSet.flsfs" />
+    <Url
+      Source="../../../Global/Project/Advanced/StatusFileTags.flfts"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/StatusFileTags.flfts" />
+    <Url
+      Source="../../../Global/Project/Skins/HTML5 - Tripane.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 - Tripane.flskn" />
   </CollectedSourceFiles>
   <SkippedSourceFiles />
   <GeneratedFiles>
@@ -210,5 +240,35 @@
     <Url
       Source="../../Content/Resources/Custom/Images/logoTos2.png"
       TimeStamp="11/11/2018 11:32:49 PM" />
+    <Url
+      Source="../../Content/Resources/TableStyles/PatternedRows_Indent1.css"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/AliasFile.flali"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/AuthorFileTags.flfts"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/AutoIndexSet.flaix"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/English (United States) Dictionary.mcdic"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/HeaderFile.h"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/IndexLinks.flixl"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/SearchFilterSet.flsfs"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Advanced/StatusFileTags.flfts"
+      TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../Skins/HTML5 - Tripane.flskn"
+      TimeStamp="2/25/2019 9:06:50 AM" />
   </GeneratedFiles>
 </CatapultProject>
