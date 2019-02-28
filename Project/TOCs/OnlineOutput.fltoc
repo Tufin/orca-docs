@@ -3,11 +3,24 @@
   Version="1"
   conditions="">
   <TocEntry
-    Title="[%=System.LinkedTitle%]"
-    Link="/Content/TopicsIntro/WhatIs.htm"></TocEntry>
+    Title="What's New"
+    Link="/Content/TopicsIntro/WhatsNew.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/WhatsNewInDocs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
   <TocEntry
     Title="Getting Started"
     Link="/Content/TopicsIntro/GettingStarted.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/GettingStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/WhatIs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/UnderstandingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -32,17 +45,20 @@
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/TopicsIntro/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/TopicsIntro/Navigation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/TopicsIntro/Navigation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      Link="/Content/TopicsIntro/SecureChangeIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Working with Orca"
-    Link="/Content/TopicsFeatures/ServiceGraph.htm">
+    Link="/Content/TopicsIntro/Working with Orca.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/Working with Orca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsFeatures/ServiceGraph.htm"></TocEntry>

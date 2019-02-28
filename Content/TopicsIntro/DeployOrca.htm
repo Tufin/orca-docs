@@ -81,13 +81,14 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
         </table>
         <h3>Installation Requires 'cluster-admin' Role</h3>
         <p>The deployment bash string must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
-        <p>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</p>
+        <p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</pre>
+        </p>
         <p>where &lt;user&gt; is dependent on your Kubernetes environment. Below are some examples:</p>
         <ul>
-            <li><MadCap:variable name="General.GKE" /> (Google): kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value account)</li>
-            <li><MadCap:variable name="General.EKS" />: (Amazon): kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(aws sts get-caller-identity --query 'Arn' --output text)</li>
-            <li><MadCap:variable name="General.AKS" />: (Microsoft): kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user  $(az account show --query user.name -o tsv)</li>
-            <li><MadCap:variable name="General.Openshift" />: kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(oc whoami)</li>
+            <li><MadCap:variable name="General.GKE" /> (Google): <pre> --user $(gcloud config get-value account)</pre></li>
+            <li><MadCap:variable name="General.EKS" />: (Amazon): <pre> --user $(aws sts get-caller-identity --query 'Arn' --output text)</pre></li>
+            <li><MadCap:variable name="General.AKS" />: (Microsoft): <pre> --user  $(az account show --query user.name -o tsv)</pre></li>
+            <li><MadCap:variable name="General.Openshift" />: <pre> --user $(oc whoami)</pre></li>
         </ul>
         <h3>Connecting to Your Kubernetes Cluster</h3>
         <p>If you don't know how to connect to your Kubernetes Cluster, see:</p>
