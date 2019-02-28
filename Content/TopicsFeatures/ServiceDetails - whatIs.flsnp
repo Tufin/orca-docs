@@ -2,7 +2,7 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <h3>Service Details </h3>
-        <p>  The service details are displayed on the right panel when you click a specific service. The details displayed include the <MadCap:variable name="local.TufinScore" />, namespace and port information, and a listing of all pods used by the service. For each pod, a listing of all containers and labels are displayed. Each container lists the name of the image and the <MadCap:variable name="local.TufinScore" /> computed for that image. <a href="SecurityScoreCalculation.htm">How is the <MadCap:variable name="General.TufinScore" /> calculated?</a></p>
+        <p>  The service details are displayed on the right panel when you click a specific service. The details displayed include the <MadCap:variable name="Local.TufinScore" />, namespace and port information, and a listing of all pods used by the service. For each pod, a listing of all containers and labels are displayed. Each container lists the name of the image and the <MadCap:variable name="Local.TufinScore" /> computed for that image. <a href="SecurityScoreCalculation.htm">How is the <MadCap:variable name="General.TufinScore" /> calculated?</a></p>
         <p>
             <img src="../Resources/Images/SubwindowServiceDetails.png" class="ThumbnailPopup" />
         </p>

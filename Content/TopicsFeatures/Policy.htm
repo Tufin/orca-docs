@@ -1,252 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>Policy</h1>
-        <p>A <MadCap:variable name="local.Product_L" /> policy is a whitelist of traffic rules describing the communication that you allow between the services in your application. Policies are enforced by <MadCap:variable name="local.Product_L" /> between services. Policy enforcement only occurs if learning mode is disabled. See <a href="Settings.htm#LearningMode">Learning Mode Settings</a> for configuration details.</p>
-        <p>
-            <img src="../Resources/Images/WindowPolicy.png" class="ThumbnailPopup" style="width: 252px;height: 180px;" />
-        </p>
-        <h2>What can I do?</h2>
+        <p>The <MadCap:variable name="Local.Product_S" /> Policy option is split into three distinct functions:</p>
         <ul>
-            <li>Manage allowed connections</li>
-            <li>View Kubernetes network policies</li>
-            <li>View firewall tickets</li>
-        </ul>
-        <p>Each of the options above can be selected from the sub-menu displayed when clicking on Policy.</p>
-        <h3>Allowed Connections</h3>
-        <p> The Allowed Connections screen lists rules that specify a permitted source namespace and destination domain name through which network traffic may pass. Initially the list is empty. Allowed connections must be added by the administrator.</p>
-        <h4>Allowed Connections - What Can I do?</h4>
-        <ul>
-            <li>Add an allowed connection</li>
-            <li>Delete an allowed connection</li>
-            <li>Reset allowed connections</li>
-            <li><a href="../TopicsIntro/Filtering.htm">Filter</a> - Filter by: namespace</li>
-        </ul>
-        <h4>Adding an Allowed Connection</h4>
-        <ul class="Action">
             <li>
-                <p>Click on <img src="../Resources/Images/ButtonAddSmall.png" class="noborder" /> on the screen. The Add Allowed Connection window is displayed</p>
-                <p>
-                    <img src="../Resources/Images/PolicyAllowedConnectionsEmpty.png" class="ThumbnailPopup" />
-                </p>
+                <p>Building and maintaining the policy</p>
+                <p>Add or remove allowed connections</p>
             </li>
             <li>
-                <p>Click on the empty namespace field under 'From' and select the appropriate namespace from the list from which to create the rule.</p>
+                <p>Viewing Kubernetes network policies</p>
+                <p>See the pod-to-pod permissions currently defined in your Kubernetes policies</p>
             </li>
             <li>
-                <p>Click on the empty Domain Name field under 'to'. You can use a wildcard prefix * (e.g. *.example.com)</p>
-            </li>
-            <li>
-                <p>Click Add Rule.to save. The line will be added to the list.</p>
+                <p>Viewing firewall tickets</p>
+                <p>See any currently open tickets from Tufin SecureChange</p>
             </li>
         </ul>
-        <h4>Deleting Allowed Connection</h4>
-        <ul class="Action">
-            <li>
-                <p>Hover over the line for the desired connection and click <img src="../Resources/Images/ButtonX.png" class="noborder" />when it appears at the end of the line.</p>
-                <p>
-                    <img src="../Resources/Images/DeleteAllowedConnection.png" class="ThumbnailPopup" />
-                </p>
-            </li>
-            <li>The line will be removed.</li>
-        </ul>
-        <h4>Resetting Allowed Connections</h4>
-        <ul class="Action">
-            <li>
-                <p>Click on Actions at the top of the screen to display the actions menu.</p>
-                <p>
-                    <img src="../Resources/Images/PolicyActionsResetAllowed.png" title="Reset Allowed Connections" alt="Reset Allowed Connections" />
-                </p>
-            </li>
-            <li>
-                <p>Click on Reset Allowed Connections from the actions menu.</p>
-            </li>
-            <li>
-                <p>All allowed connections will be removed.</p>
-            </li>
-        </ul>
-        <h3>Kubernetes Network Policies</h3>
-        <p>A read-only view of Kubernetes-defined network rules. The screen is split into two tabs, Ingress and Egress. </p>
-        <p>Under the Ingress tab, the polices are displayed in a numbered list and show the following information:</p>
-        <p>
-            <img src="../Resources/Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
-        </p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">#</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display Sequence </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Allow / disallow</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy Name </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Kubernetes policy containing the rule</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The Kubernetes cluster namespace to which traffic is destined</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Pods</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the cluster namespace to which traffic  is destined</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The namespace outside the cluster from which traffic originates</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Pods</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the namespace  outside the cluster from which traffic originates</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Subnet</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The subnet of the pods  outside the cluster from which traffic originates</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p class="TableBodyText">Port</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p class="TableBodyText">The ports of the pods  outside the cluster from which traffic originates</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Under the Egress tab, the policies are displayed in a numbered list and show the following information:</p>
-        <p>
-            <img src="../Resources/Images/PolicyKubernetesNetworkPoliciesEgress.png" class="ThumbnailPopup" title="Kubernetes_Network_Policies_Egress" alt="Kubernetes_Network_Policies_Egress" />
-        </p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">#</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display Sequence </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Allow/disallow</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Policy Name </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Kubernetes policy containing the rule</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The namespace in the Kubernetes cluster from which traffic originates</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Target Pods</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The pods in the namespace  from which traffic originates</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Destination Namespace</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">The namespace outside the cluster to which traffic is destined</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
-                        <p class="TableBodyText">Destination Pods</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <p class="TableBodyText">The pods outside the cluster to which traffic is destined</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Subnet</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">The subnets outside the cluster to which traffic is destined</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p class="TableBodyText">Port</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p class="TableBodyText">The ports outside the cluster to which traffic is destined</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Firewall Tickets</h3>
-        <p>A read-only list of tickets collected from all firewalls in the cluster. The screen is displayed below.</p>
-        <p>
-            <img src="../Resources/Images/PolicyFirewallTickets.png" class="ThumbnailPopup" />
-        </p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Field</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Description</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Namespace</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Namespace in which the firewall resides</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Endpoints</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Device on which firewall resides</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Status</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Implementation status of ticket: Implemented, In progress, Failed</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Message</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Message describing ticket status</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Ticket</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <p>Ticket number</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Last Update</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Last time ticket was updated</td>
-                </tr>
-            </tbody>
-        </table>
+        <p>When clicking on <span class="ScreenObject">Policy</span> in the main menu, a sub-menu is displayed with options for each of these functions:</p>
+        <p>Select <a href="AllowedConnections.htm">Allowed Connections</a> for building and maintaining the policy</p>
+        <p>or <a href="KubernetesNetPolicies.htm">Kubernetes Network Policies</a> for viewing the Kubernetes pod permissions</p>
+        <p>or <a href="FirewallTickets.htm">Firewall Tickets</a> for viewing currently open tickets from </p>
         <h2>How do I get here?</h2>
         <p>
-            <li>From the menu in the left panel, click Policy and then choose one of the options displayed in the sub-menu:</li>
+            <li>Click Policy from the main menu.</li>
         </p>
-        <ul>
-            <li>View allowed connections</li>
-            <li>View Kubernetes network policies</li>
-            <li>View firewall tickets</li>
-        </ul>
     </body>
 </html>

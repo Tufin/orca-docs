@@ -9,15 +9,15 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Deploying <MadCap:variable name="local.Product_L" /></h1>
+        <h1>Deploying <MadCap:variable name="Local.Product_L" /></h1>
         <p> <MadCap:variable name="General.Product_S" /> needs to be deployed separately for each project on your Kubernetes cluster(s). </p>
-        <p>To deploy <MadCap:variable name="local.Product_L" /> you must run a  bash command from your terminal window, which will add your cluster to <MadCap:variable name="local.Product_L" />. This deployment command line is included in the <a href="SignUp.htm">Sign Up</a> email you received from Tufin.</p>
+        <p>To deploy <MadCap:variable name="Local.Product_L" /> you must run a  bash command from your terminal window, which will add your cluster to <MadCap:variable name="Local.Product_L" />. This deployment command line is included in the <a href="../TopicsIntro/SignUp.htm">Sign Up</a> email you received from Tufin.</p>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
                 <MadCap:dropDownHotspot>What does the deployment command string look like?</MadCap:dropDownHotspot>
             </MadCap:dropDownHead>
             <MadCap:dropDownBody>
-                <MadCap:snippetBlock src="DeployOrca_CommandString.flsnp" />
+                <MadCap:snippetBlock src="../TopicsIntro/DeployOrca_CommandString.flsnp" />
             </MadCap:dropDownBody>
         </MadCap:dropDown>
         <h2>Prerequisites</h2>
@@ -136,13 +136,13 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                 <p>In the console, connect to your Kubernetes cluster. </p>
             </li>
         </ul>
-        <h2>How do I deploy <MadCap:variable name="local.Product_L" /> in my cluster?</h2>
+        <h2>How do I deploy <MadCap:variable name="Local.Product_L" /> in my cluster?</h2>
         <ol>
             <li>
                 <p>Open a terminal and point kubectl to your Kubernetes cluster. See <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-context-and-configuration">Kubernetes documentation</a> for additional details.</p>
             </li>
             <li>
-                <p>Run the bash command string using the parameters sent to you in your <a href="SignUp.htm">Sign Up</a> email:</p>
+                <p>Run the bash command string using the parameters sent to you in your <a href="../TopicsIntro/SignUp.htm">Sign Up</a> email:</p>
                 <p><pre>bash &lt;(curl -s https://orca.tufin.io/api/<span class="Bold">&lt;domain&gt;/&lt;project&gt;</span>/scripts/deploy-orca -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>")</pre>
                 </p>
             </li>
@@ -158,14 +158,14 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                                 <MadCap:dropDownHotspot>Docker Enterprise Edition</MadCap:dropDownHotspot>
                             </MadCap:dropDownHead>
                             <MadCap:dropDownBody>
-                                <MadCap:snippetBlock src="DeployOrca_DockerEnterprise.flsnp" />
+                                <MadCap:snippetBlock src="../TopicsIntro/DeployOrca_DockerEnterprise.flsnp" />
                             </MadCap:dropDownBody>
                             <MadCap:dropDown>
                                 <MadCap:dropDownHead>
                                     <MadCap:dropDownHotspot>Red Hat OpenShift</MadCap:dropDownHotspot>
                                 </MadCap:dropDownHead>
                                 <MadCap:dropDownBody>
-                                    <MadCap:snippetBlock src="DeployOrca_RedhatOpenshift.flsnp" />
+                                    <MadCap:snippetBlock src="../TopicsIntro/DeployOrca_RedhatOpenshift.flsnp" />
                                 </MadCap:dropDownBody>
                             </MadCap:dropDown>
                         </p>
@@ -187,7 +187,7 @@ bash &lt;(curl -s -H "Authorization: Bearer &lt;your-token&gt;" "https://orca.tu
             </li>
         </ol>
         <div class="NoteLight">
-            <p><MadCap:variable name="local.Product_L" /> will create a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. We recommend that you retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</p>
+            <p><MadCap:variable name="Local.Product_L" /> will create a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. We recommend that you retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="../TopicsIntro/RemovingOrca.htm">remove Orca from a cluster</a>.</p>
         </div>
     </body>
 </html>

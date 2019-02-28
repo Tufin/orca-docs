@@ -50,7 +50,7 @@
               </p>
             </li>
             <li>
-                <p>Converts the numerical value to the <MadCap:variable name="local.TufinScore" /> according to the table below.
+                <p>Converts the numerical value to the <MadCap:variable name="Local.TufinScore" /> according to the table below.
 </p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col style="width: 129px;" class="TableStyle-PatternedRows-Column-Regular">
