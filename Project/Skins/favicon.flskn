@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Favicon skin"
+  ComponentType="Favicon">
+  <Stylesheet>
+    <Resources>
+      <Resource
+        Name="favicon.gif">H4sIAAAAAAAEAHP3dLOwTBRgEGAoZ2BQ/MnCAAI6IAIk1p4u65sr7p8n7penGpQvE5yvFpyvEVKgEFwoG1yoGVEkF1SkF1msFl6sHl6sE1MiHlQiH1aiHlaiEVWiH1mqFVGqFVmqHVGqDSSjSnWjSvUiSg2iytRiytRjyzQjyzSjyrQiyrQiy7SiyrQjy7SjypUiypUiy5Ujy1WjytXDy9UjyzWjyjVjyrWiy7Ujy4EKtKPLdWLKdePL9WLKjaLKzeMqFMMqVGMqNGIqNOMqtCIqtKMrdGIqdOIqdGMr5UMqVWMrNWMrtWMrdWIq9WIrjeOqNKOqtGOrdGOr1SOqNeOrtWJrNBJqrOLqTOMaHLOaLDObgcgqs8Uqq8Uuvc2/sN29oNu1qCeysj+ydkJkxYTIqklR1dOSGqYntsxJb5tXNGF+fv/CkgkbZ63YPn3Vnqnrji7adXL3yfO7Dr+5+uT9nRcfX33+/OnL58+fv3z59u39129fPn8HoS/f//z5+f3Lz1+/f/7+++vXn99A1t+fv///BrL+/Pn75///v3/+/f3//98fIPXv/69//3//B/KAmGEU0BFwHGNw5uBhXNQ6SZoraM0JxaQHDlwGPRILmJ51csnwsU9yCHzSM9sh0ueMxERDFjYFk1sCi5KfHmThVk12ePGI/cI8o3ClPRqeKgwznSpeiUgxM3h6yrMcEXmkzNE7TcjaK+nBhSdn5a1DWU5oSB5ibdYs4jp7M+nwwdZJelIOjc4v+KbLu+9Y1su0/IKCDte0E7kKqn3znNKEam7M/MjazZv164mmCNtBgXW2XDWeh9N6pzPb7HgmYOTQPFnKyihE42WjZ7uco5+Hx6YHaw40MFgDAEKESHLpAwAA</Resource>
+      <Resource
+        Name="favicon.ico">H4sIAAAAAAAEAKWTQWjTYBTHI3jzMjzYi3NTadO0axVFhj0IHsSTDtrR5UuTTL1UB65rmzZNO2VomQeFFUEHIoqexIPgSZjexMNOnrx59CAiDE1cSZvk70uKDgdpD77wQvi+/L73/u99j+P20DM2xtF7kru6l+MOcBwXJ6clWhmsB0Z7+/cN/I+xRB1/XajjUnwZCl+HOtWAIhhgR3VIcQ0i3wJLV8CSNfzD7HJVIC5pIBtdhJiuQT11E+q0DjHRgJTy2RE8xc3FSlgtPsaXT99h/TRhfvuB9uV15CaXINN+GCsldcgC5Xu8hq+ftwA4sN0+fFsrPUVuvEy8ER6f+Dm+imuZ2zCtLvoYsBvPP0AUypCEQYyR/Gmf3w5Y/wiD3UP2UAVKojVU+w5/K+A9X0Gvh5Z0H7MTBtW1OZqPVbGQacOi/H1znC6arIP84QZprw7tn0R7cox6kFnGry0/fxdu30Z5ZhUXI4uYTw3RTq6kqHcHS+hoz4LYruPA6wHvNz6iQTmIR3QUkuH9U9IGZiLX8XL9TcD3bOpAzw6+Xzx6jQvjRYoRXgN5Skd+QsPKlYfwHJe0e7D7Dl49eIfKubvI89rQ/vn6lagB6YQO0zSD+ltdG0vn7yAb0cCO0RwMrR95VId60sDm201sWxY818MNtgZG2uU0xU6G10+k2ShQfpLQxGy8hOKZNjqVJ1g4uwLGEx8Pr93OGXUUEjrmhRbkaCO4d3O8f6YezKa063/uP+03FbRS8n4EAAA=</Resource>
+    </Resources>
+  </Stylesheet>
+  <Master
+    Image="favicon.gif" />
+  <Browser>
+    <SmallFavicon
+      Image="(generated)"
+      SizePx="16 px" />
+    <MediumFavicon
+      Image="favicon.ico"
+      SizePx="16 px" />
+    <LargeFavicon
+      Image="(none)"
+      SizePx="" />
+  </Browser>
+  <ShortcutIcon
+    Image="(none)" />
+  <Touch>
+    <TouchIcon
+      Image="(none)"
+      SizePx="" />
+  </Touch>
+  <Windows>
+    <MicrosoftSmallTile
+      Image="(none)" />
+    <MicrosoftMediumTile
+      Image="(none)" />
+    <MicrosoftWideTile
+      Image="(none)" />
+    <MicrosoftLargeTile
+      Image="(none)" />
+  </Windows>
+  <Strings />
+</CatapultSkin>

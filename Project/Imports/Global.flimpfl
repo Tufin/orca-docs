@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="true"
-  LastImport="2019-02-25T10:37:43.9943237+02:00">
+  LastImport="2019-02-28T08:32:18.6735166+02:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -48,9 +48,6 @@
     <Url
       Source="../../../Global/Project/ConditionTagSets/General.flcts"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/ConditionTagSets/General.flcts" />
-    <Url
-      Source="../../../Global/Project/Glossaries/Glossary.flglo"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Glossaries/Glossary.flglo" />
     <Url
       Source="../../../Global/Project/Skins/HTML5 SideNav.flskn"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 SideNav.flskn" />
@@ -118,32 +115,32 @@
       Source="../../../Global/Content/Resources/TableStyles/PatternedRows_Indent1.css"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/PatternedRows_Indent1.css" />
     <Url
-      Source="../../../Global/Project/Advanced/AliasFile.flali"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AliasFile.flali" />
-    <Url
-      Source="../../../Global/Project/Advanced/AuthorFileTags.flfts"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AuthorFileTags.flfts" />
-    <Url
-      Source="../../../Global/Project/Advanced/AutoIndexSet.flaix"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/AutoIndexSet.flaix" />
-    <Url
       Source="../../../Global/Project/Advanced/English (United States) Dictionary.mcdic"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/English (United States) Dictionary.mcdic" />
     <Url
-      Source="../../../Global/Project/Advanced/HeaderFile.h"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/HeaderFile.h" />
-    <Url
-      Source="../../../Global/Project/Advanced/IndexLinks.flixl"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/IndexLinks.flixl" />
-    <Url
-      Source="../../../Global/Project/Advanced/SearchFilterSet.flsfs"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/SearchFilterSet.flsfs" />
-    <Url
-      Source="../../../Global/Project/Advanced/StatusFileTags.flfts"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/StatusFileTags.flfts" />
-    <Url
       Source="../../../Global/Project/Skins/HTML5 - Tripane.flskn"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 - Tripane.flskn" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/local.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/local.css" />
+    <Url
+      Source="../../../Global/Project/Targets/OBSOLETE OrcaKC TriPane.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OBSOLETE OrcaKC TriPane.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/OBSOLETE OrcaKC_sidenav.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OBSOLETE OrcaKC_sidenav.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/OrcaKC TopNav Final.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OrcaKC TopNav Final.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/UserGuide to Word.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuide to Word.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/UserGuide.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuide.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/UserGuideCropRegMarks.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuideCropRegMarks.fltar" />
   </CollectedSourceFiles>
   <SkippedSourceFiles />
   <GeneratedFiles>
@@ -173,9 +170,6 @@
       TimeStamp="6/20/2018 9:33:02 AM" />
     <Url
       Source="../ConditionTagSets/General.flcts"
-      TimeStamp="6/20/2018 9:27:48 AM" />
-    <Url
-      Source="../Glossaries/Glossary.flglo"
       TimeStamp="6/20/2018 9:27:48 AM" />
     <Url
       Source="../Skins/HTML5 SideNav.flskn"
@@ -244,31 +238,31 @@
       Source="../../Content/Resources/TableStyles/PatternedRows_Indent1.css"
       TimeStamp="2/25/2019 9:06:50 AM" />
     <Url
-      Source="../Advanced/AliasFile.flali"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/AuthorFileTags.flfts"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/AutoIndexSet.flaix"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
       Source="../Advanced/English (United States) Dictionary.mcdic"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/HeaderFile.h"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/IndexLinks.flixl"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/SearchFilterSet.flsfs"
-      TimeStamp="2/25/2019 9:06:50 AM" />
-    <Url
-      Source="../Advanced/StatusFileTags.flfts"
       TimeStamp="2/25/2019 9:06:50 AM" />
     <Url
       Source="../Skins/HTML5 - Tripane.flskn"
       TimeStamp="2/25/2019 9:06:50 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/local.css"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/OBSOLETE OrcaKC TriPane.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/OBSOLETE OrcaKC_sidenav.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/OrcaKC TopNav Final.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/UserGuide to Word.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/UserGuide.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
+    <Url
+      Source="../Targets/UserGuideCropRegMarks.fltar"
+      TimeStamp="2/28/2019 8:24:04 AM" />
   </GeneratedFiles>
 </CatapultProject>
