@@ -16,41 +16,47 @@ a
 	text-decoration: underline;
 }
 
+a:visited
+{
+	
+}
+
 a:hover
 {
 	text-decoration: none;
 }
 
-/* enter color for "visited" links */
-a:visited
-{
-}
-
-/* In-page link */
-a[href^="#"] {
-	font-family: "Open Sans";
-	font-weight: 700;
-    text-decoration: none;
-}
-a[href^="#"]:hover
+a:hover[href^="#"]
 {
 	text-decoration: underline;
 }
 
-/* External link */
-a[href^="http"]
+/* enter color for "visited" links */
+/* In-page link */
+
+a[href^="#"]
 {
-	target: "_blank"
+	font-family: "Open Sans";
+	font-weight: 700;
+	text-decoration: none;
 }
 
-a[href^="http"]::after {
+/* External link */
+
+a[href^="http"]
+{
+	target: "_blank";
+}
+
+a::after[href^="http"]
+{
 	background: transparent url('Images/iconExternalLink.png') no-repeat;
-    background-position: 0px;
-    content: '';
-    height: 16px;
-    padding-left: 15px;
-    margin-left: 5px;
-    width: 16px;
+	background-position: 0px;
+	content: '';
+	height: 16px;
+	padding-left: 15px;
+	margin-left: 5px;
+	width: 16px;
 }
 
 a.MCBreadcrumbsLink
@@ -140,16 +146,17 @@ h2
 
 h2.Action
 {
+	
 }
 
 h2.Action::before
 {
 	background: transparent url(Images/iconWarning.png) no-repeat;
-    background-position: 5px 8px;
-    content: '';
-    display: inline-block;
-    height: 30px;
-    width: 40px;
+	background-position: 5px 8px;
+	content: '';
+	display: inline-block;
+	height: 30px;
+	width: 40px;
 }
 
 h3
@@ -422,7 +429,6 @@ p.TableBodyText
 	}
 }
 
-
 img
 {
 	border: solid 1px #000000;
@@ -442,10 +448,10 @@ img.ThumbnailPopup
 
 img.ThumbnailMed
 {
-   width: auto;
-   height: auto;
-   max-height: 400;
-   max-width: 400;
+	width: auto;
+	height: auto;
+	max-height: 400;
+	max-width: 400;
 }
 
 span.Code
@@ -456,7 +462,10 @@ span.Code
 
 span.ScreenObject
 {
-	font-style: italic;
+	font-weight: normal;
+	font-style: normal;
+	color: #696969;
+	background-color: #c0c0c0;
 }
 
 p.CodeSegment1
@@ -526,3 +535,4 @@ MadCap|dropDownHotspot
 {
 	
 }
+
