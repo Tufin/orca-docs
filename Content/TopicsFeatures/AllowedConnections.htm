@@ -13,11 +13,11 @@
         <h2>Actions Available on this Screen</h2>
         <ul class="Action">
             <li>Add an allowed connection by entering details yourself</li>
-            <li>Add an allowed connection using details discovered by <MadCap:variable name="local.Product_S" /></li>
             <li>Delete an allowed connection</li>
             <li>Lock / unlock an allowed connection</li>
             <li>Reset allowed connections</li>
             <li>Apply on firewall</li>
+            <li>Generic actions </li>
         </ul>
         <h3>Adding an Allowed Connection</h3>
         <p>You can specify an allowed connection from a namespace in your cluster to a domain outside of the cluster. </p>
@@ -80,7 +80,7 @@
             <li>
                 <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions</span> menu.</p>
                 <p>
-                    <img src="../Resources/Images/PolicyActionsResetAllowed.png" title="Reset Allowed Connections" alt="Reset Allowed Connections" />
+                    <img src="../Resources/Images/MenuSecurityPolicyActions.png" />
                 </p>
             </li>
             <li>
@@ -90,7 +90,7 @@
                 <p>All allowed connections will be deleted from the security policy, except those that are <a href="#Locking">locked</a>.</p>
             </li>
         </ol>
-        <h3>Apply on Firewall</h3>
+        <h3><a name="Apply"></a>Apply on Firewalls</h3>
         <p>The apply on firewalls function is available only if you have a network policy change management solution such as <MadCap:variable name="local.SC" /> integrated with <MadCap:variable name="local.Product_L" />. It applies the security policy you have defined in <MadCap:variable name="local.Product_S" /> to the devices managed by submitting one or more firewall change tickets to the network policy change management solution. A ticket will be submitted for each namespace in your policy. </p>
         <p>After the apply on firewalls process is initiated, it cannot be initiated again until all tickets have been implemented. If not all tickets have been implemented following a prior attempt, the menu option will be greyed out and followed by "(in-progress)". This status will remain until all prior tickets have been resolved and implemented or deleted in the network policy change management system.</p>
         <p>After the apply on firewalls process is initiated, the tickets created can be seen on the <a href="FirewallTickets.htm">Firewall Tickets Screen</a>, together with their status. </p>
@@ -98,7 +98,7 @@
             <li>
                 <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions Menu</span>.</p>
                 <p>
-                    <img src="../Resources/Images/PolicyActionsResetAllowed.png" title="Reset Allowed Connections" alt="Reset Allowed Connections" />
+                    <img src="../Resources/Images/MenuSecurityPolicyActions.png" />
                 </p>
             </li>
             <li>
@@ -106,6 +106,6 @@
             </li>
         </ol>
         <h2><a name="How"></a>How to Get Here</h2>
-        <p>From the <a href="../TopicsIntro/Navigation.htm">main menu</a>  select <span class="ScreenObject">Policy</span> then <span class="ScreenObject">Allowed Connections</span></p>
+        <p>From the <a href="../TopicsIntro/Navigation.htm">main menu</a>  select <a href="Policy.htm">Policy</a> then <span class="ScreenObject">Allowed Connections</span></p>
     </body>
 </html>
