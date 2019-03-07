@@ -30,10 +30,6 @@
     Comment=""
     EvaluatedDefinition="Orca">Orca</Variable>
   <Variable
-    Name="Copy of Product_L"
-    Comment=""
-    EvaluatedDefinition="Tufin Orca">Tufin Orca</Variable>
-  <Variable
     Name="AKS"
     Comment="Azure Kubernetes service"
     EvaluatedDefinition="AKS">AKS</Variable>
@@ -61,4 +57,12 @@
     Name="SC"
     Comment=""
     EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
+  <Variable
+    Name="SecureChange"
+    Comment=""
+    EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
+  <Variable
+    Name="SecureTrack"
+    Comment=""
+    EvaluatedDefinition="Tufin SecureTrack">Tufin SecureTrack</Variable>
 </CatapultVariableSet>

@@ -7,7 +7,7 @@
         <h3>Supported Kubernetes Versions</h3>
         <p><MadCap:variable name="General.Product_S" /> supports:</p>
         <p>
-</p>
+        </p>
         <ul>
             <li>
                 <p>All standard Kubernetes platforms, version 1.9 and higher</p>

@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>Deploying <MadCap:variable name="Local.Product_L" /></h1>
-        <p>This procedure is meant for deploying your <b>first </b><MadCap:variable name="General.Product_S" /> project.  You will need the <a href="SignUp.htm">Sign Up</a> email sent to you previously. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
+        <p>This procedure is meant for deploying your <b>first </b><MadCap:variable name="local.Product_S" /> project.  You will need the <a href="SignUp.htm">Sign Up</a> email sent to you previously. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
         <h2>Deploy  Orca on the Kubernetes Cluster</h2>
         <ol>
             <li>Open a terminal and point kubectl to your Kubernetes cluster </li>
@@ -18,7 +18,7 @@
                 <p>Run the bash command string as cluster admin from your <a href="SignUp.htm">Sign Up</a> email; this string has been created specifically for the project you specified when signing up.</p>
             </li>
         </ol>
-        <p>Your cluster has now been added to <MadCap:variable name="General.Product_S" />. Continue with <a href="TestingApp.htm">Monitoring Your Application</a>.</p>
+        <p>Your cluster has now been added to <MadCap:variable name="local.Product_S" />. Continue with <a href="TestingApp.htm">Monitoring Your Application</a>.</p>
         <h2><a name="Deployme"></a>Deployment Requirements</h2>
         <h3>Supported Kubernetes Versions
 </h3>
@@ -85,19 +85,19 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
         </p>
         <p>where &lt;user&gt; is dependent on your Kubernetes environment. Below are some examples:</p>
         <ul>
-            <li><MadCap:variable name="General.GKE" /> (Google): <pre> --user $(gcloud config get-value account)</pre></li>
-            <li><MadCap:variable name="General.EKS" />: (Amazon): <pre> --user $(aws sts get-caller-identity --query 'Arn' --output text)</pre></li>
-            <li><MadCap:variable name="General.AKS" />: (Microsoft): <pre> --user  $(az account show --query user.name -o tsv)</pre></li>
-            <li><MadCap:variable name="General.Openshift" />: <pre> --user $(oc whoami)</pre></li>
+            <li><MadCap:variable name="local.GKE" /> (Google): <pre> --user $(gcloud config get-value account)</pre></li>
+            <li><MadCap:variable name="local.EKS" />: (Amazon): <pre> --user $(aws sts get-caller-identity --query 'Arn' --output text)</pre></li>
+            <li><MadCap:variable name="local.AKS" />: (Microsoft): <pre> --user  $(az account show --query user.name -o tsv)</pre></li>
+            <li><MadCap:variable name="local.Openshift" />: <pre> --user $(oc whoami)</pre></li>
         </ul>
         <h3>Connecting to Your Kubernetes Cluster</h3>
         <p>If you don't know how to connect to your Kubernetes Cluster, see:</p>
         <ul>
-            <li><MadCap:variable name="General.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl" target="_popup">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl </a></li>
-            <li><MadCap:variable name="General.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html" target="_popup">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
-            <li><MadCap:variable name="General.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough" target="_popup">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
-            <li><MadCap:variable name="General.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html" target="_popup">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
-            <li><MadCap:variable name="General.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/" target="_popup">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
+            <li><MadCap:variable name="local.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl" target="_popup">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl </a></li>
+            <li><MadCap:variable name="local.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html" target="_popup">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
+            <li><MadCap:variable name="local.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough" target="_popup">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
+            <li><MadCap:variable name="local.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html" target="_popup">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
+            <li><MadCap:variable name="local.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/" target="_popup">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
         </ul>
         <div class="NoteLight">
             <p> The deployment process creates a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</p>
