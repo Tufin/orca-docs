@@ -13,12 +13,6 @@
     Name="VersionNumber"
     OriginalName="VersionNumberDot">1.0</Variable>
   <Variable
-    Name="Year"
-    Comment=""
-    Type="DateTime"
-    LastUpdated="2016-02-16T21:02:05.2617080-08:00"
-    EvaluatedDefinition="yyyy">yyyy</Variable>
-  <Variable
     Name="Product_L"
     Comment=""
     EvaluatedDefinition="Tufin Orca">Tufin Orca</Variable>
@@ -26,4 +20,49 @@
     Name="TufinScore"
     Comment=""
     EvaluatedDefinition="Security Score">Security Score</Variable>
+  <Variable
+    Name="Year"
+    Comment=""
+    Type="DateTime"
+    LastUpdated="2019-02-28T12:50:46.8315752+02:00" />
+  <Variable
+    Name="Product_S"
+    Comment=""
+    EvaluatedDefinition="Orca">Orca</Variable>
+  <Variable
+    Name="AKS"
+    Comment="Azure Kubernetes service"
+    EvaluatedDefinition="AKS">AKS</Variable>
+  <Variable
+    Name="Copy of CompanyName"
+    Comment=""
+    Definition="Some text">My Company Name, LLC</Variable>
+  <Variable
+    Name="Docker"
+    Comment=""
+    EvaluatedDefinition="Docker EE">Docker EE</Variable>
+  <Variable
+    Name="EKS"
+    Comment="amazon elastic kubernetes service"
+    EvaluatedDefinition="EKS">EKS</Variable>
+  <Variable
+    Name="GKE"
+    Comment="google kubertetes engine"
+    EvaluatedDefinition="GKE">GKE</Variable>
+  <Variable
+    Name="Openshift"
+    Comment=""
+    EvaluatedDefinition="Openshift">Openshift</Variable>
+  <Variable
+    Name="SC"
+    Comment=""
+    EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
+  <Variable
+    Name="SecureChange"
+    Comment=""
+    EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
+  <Variable
+    Name="SecureTrack"
+    Comment=""
+    EvaluatedDefinition="Tufin SecureTrack">Tufin SecureTrack</Variable>
 </CatapultVariableSet>

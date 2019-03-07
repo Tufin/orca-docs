@@ -4,10 +4,10 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h3>How is the <MadCap:variable name="General.TufinScore" /> calculated?</h3>
+        <h3>How is the <MadCap:variable name="local.TufinScore" /> calculated?</h3>
         <ol>
             <li>
-                <p><MadCap:variable name="General.Product_S" /> assigns a weighted value according to the severity of each vulnerability identified. The  severities from highest to lowest are: </p>
+                <p> <MadCap:variable name="local.Product_S" /> assigns a weighted value according to the severity of each vulnerability identified. The  severities from highest to lowest are: </p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col style="width: 101px;" class="TableStyle-PatternedRows-Column-Regular" />
                     <col style="width: 83px;" class="TableStyle-PatternedRows-Column-Regular" />
@@ -50,7 +50,7 @@
               </p>
             </li>
             <li>
-                <p>Converts the numerical value to the <MadCap:variable name="local.TufinScore" /> according to the table below.
+                <p>Converts the numerical value to the <MadCap:variable name="Local.TufinScore" /> according to the table below.
 </p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col style="width: 129px;" class="TableStyle-PatternedRows-Column-Regular">

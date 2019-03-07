@@ -1,4 +1,0 @@
-a[href^="http"]::focus
-{
-	target: "_blank"
-}

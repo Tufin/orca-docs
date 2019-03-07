@@ -277,11 +277,6 @@ p.TableBodyText
 	line-height: 20px;
 }
 
-span.state
-{
-	color: #d2691e;
-}
-
 @media print
 {
 	body
@@ -539,34 +534,5 @@ MadCap|dropDownHead
 MadCap|dropDownHotspot
 {
 	
-}
-
-.ScreenObject
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #ffffff;
-	background-color: #a9a9a9;
-}
-
-.ScreenObject1
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #ffffff;
-	background-color: #a9a9a9;
-}
-
-span.neil
-{
-	
-}
-
-span.StatusOrValue
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #593b3b;
-	background-color: #ffffff;
 }
 

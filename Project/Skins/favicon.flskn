@@ -26,15 +26,16 @@
       SizePx="" />
   </Browser>
   <ShortcutIcon
-    Image="(none)" />
+    Image="favicon.ico" />
   <Touch>
     <TouchIcon
-      Image="(none)"
-      SizePx="" />
+      Image="favicon.ico"
+      SizePx="16 px" />
   </Touch>
-  <Windows>
+  <Windows
+    WebURL="">
     <MicrosoftSmallTile
-      Image="(none)" />
+      Image="favicon.gif" />
     <MicrosoftMediumTile
       Image="(none)" />
     <MicrosoftWideTile

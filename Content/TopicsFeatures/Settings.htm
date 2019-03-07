@@ -5,22 +5,56 @@
     </head>
     <body>
         <h1>Settings</h1>
-        <p>The Settings window displays configuration information and lets you make configuration changes. </p>
+        <p>In this document:</p>
+        <ul>
+            <li><a href="#Overview">Overview</a>
+            </li>
+            <li><a href="#What">Actions Available on this Screen</a>
+            </li>
+            <li><a href="#How">How to Get Here</a>
+            </li>
+        </ul>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The Settings window displays configuration information and lets you make changes such as creating API tokens, defining notifications and switching the policy mode.</p>
         <p>
             <img src="../Resources/Images/Settings.png" class="ThumbnailPopup" />
         </p>
-        <h2><a name="What"></a>What can I do?</h2>
-        <ul>
+        <h2><a name="What"></a>Actions Available on this Screen</h2>
+        <ul class="Action">
             <li>Manage API tokens</li>
-            <li>Get the Install Agent deployment string needed to deploy <MadCap:variable name="General.Product_S" /></li>
-            <li>Switch between operation modes Learn and Enforce. </li>
+            <li>Get the deployment string needed to deploy the <MadCap:variable name="local.Product_S" /> agent (Kite)</li>
+            <li>Switch between policy modes <span class="state">Learn</span> and <span class="state">Enforce</span></li>
             <li>Set up notifications </li>
+            <li><a href="GeneralActions.htm">General actions</a>
+            </li>
         </ul>
-        <h3><a name="APITokens"></a>API Tokens</h3>
-        <p>
-            <img src="../Resources/Images/APITokens.png" class="ThumbnailPopup" />
-        </p>
-        <p>You can view, create or delete project-specific API authentication tokens. <MadCap:variable name="local.Product_L" /> automatically creates four tokens for each new project. You can create as many additional authentication tokens as you require. The default tokens created for a new project are:</p>
+        <h3><a name="APITokens"></a>Manage API Tokens</h3>
+        <p>API&#160;tokens are unique identifiers used by <MadCap:variable name="local.Product_S" /> to give other applications access to it. <MadCap:variable name="local.Product_S" /> will accept a request from another application only if the request is made with a token that matches that stored by <MadCap:variable name="local.Product_S" />. Some tokens are created automatically for the project ; others must be created manually.</p>
+        <h4>Create a New Token</h4>
+        <ol>
+            <li>
+                <p>Click <span class="ScreenObject">Create Token</span>. The Add an API Token window will be displayed. </p>
+                <p>
+                    <img src="../Resources/Images/WindowAddToken.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the Scope line to display the available scopes and select the scope most appropriate for your requirement.</p>
+                <ul>
+                    <li><span class="state">View</span> for <MadCap:variable name="Local.TufinScore" /> badge (in repositories such as GitHub)</li>
+                    <li><span class="state">Agent</span> - for the Kite pod </li>
+                    <li><span class="state">All</span> - for image scanning in build server such as Jenkins</li>
+                </ul>
+            </li>
+            <li>Enter a label.</li>
+            <li>Click <span class="ScreenObject">Add Token</span> to save.</li>
+        </ol>
+        <h4>Delete a Token</h4>
+        <p>Hover over the line to be deleted; when the <img src="../Resources/Images/IconRemove.png" class="noborder" /> appears click on it to delete the token.</p>
+        <h4>Copy a Token to the Clipboard</h4>
+        <p>Click the Copy to Clipboard icon <img src="../Resources/Images/IconCopyClipboard.png" /> on the appropriate line to copy its contents to the clipboard</p>
+        <h4>Default Tokens</h4>
+        <p> Every project is provided with a number of tokens:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -33,15 +67,15 @@
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">badge</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">authentication token to use when integrating <MadCap:variable name="local.Product_L" /> in your code repository, for displaying the Tufin badges with your Docker images</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Authentication token to use when integrating <MadCap:variable name="Local.Product_L" /> in your code repository, for displaying the Tufin badges with your Docker images</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">CI</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">authentication token to use when integrating <MadCap:variable name="local.Product_L" /> in your CI/CD pipeline</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">authentication token to use when integrating <MadCap:variable name="Local.Product_L" /> in your CI/CD pipeline</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">deploy</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">authentication token to use when deploying <MadCap:variable name="local.Product_L" /> in your cluster</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">authentication token to use when deploying <MadCap:variable name="Local.Product_L" /> in your cluster</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">kite</td>
@@ -49,24 +83,23 @@
                 </tr>
             </tbody>
         </table>
-        <h4>Delete a Token</h4>
-        <p>Hover over the line to be deleted; when the <img src="../Resources/Images/ButtonX.png" class="noborder" />appears click on it to delete the token.</p>
-        <h4>Create a New Token</h4>
-        <p>Click Create Token and follow the instructions in <a href="../TopicsProcedure/AddAPIToken.htm">Create an authentication token</a>. </p>
-        <h3>Install Agent Deployment String</h3>
-        <p>You view the bash string needed for deploying <MadCap:variable name="General.Product_S" /> on your cluster by clicking <img src="../Resources/Images/ButtonInstallAgent.png" />. Once displayed, you can copy to clipboard by clicking the button that appears in the window. Click OK to close the window.</p>
+        <h3><MadCap:variable name="local.Product_S" /> Agent (Kite) Command Line</h3>
+        <p>You can view the command line string needed for deploying <MadCap:variable name="local.Product_S" /> on your cluster by clicking <span class="ScreenObject"><img src="../Resources/Images/IconCode.png" style="width: 2%;height: 2%;" /></span> or <span class="Bold">Copy command line</span>. Once displayed, you can copy to clipboard by clicking the button that appears in the window. Click OK to close the window.</p>
         <p>
             <img src="../Resources/Images/InstallAgentString.png" class="ThumbnailPopup" />
         </p>
-        <h3><a name="LearningMode"></a>Operation Mode</h3>
+        <h3><a name="LearningMode"></a>Policy Mode</h3>
         <MadCap:snippetBlock src="WhatsIs_LearningMode.flsnp" />
+        <p>Click on the desired mode to switch.</p>
         <h3><a name="Slack"></a>Notifications</h3>
-        <p><MadCap:variable name="local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
+        <p><MadCap:variable name="Local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
         <p>
             <p>
                 <img src="../Resources/Images/Settings_Slack.png" class="ThumbnailPopup" />
             </p>
             <p>See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for additional details.</p>
+            <h2><a name="How"></a>How to Get Here</h2>
+            <p>From the <a href="../TopicsIntro/Navigation.htm">main menu</a>  select <span class="ScreenObject">Settings</span></p>
         </p>
     </body>
 </html>

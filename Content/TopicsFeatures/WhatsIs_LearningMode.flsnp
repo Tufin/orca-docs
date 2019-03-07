@@ -3,11 +3,17 @@
     <head>
     </head>
     <body>
-        <p><MadCap:variable name="General.Product_S" /> has 2 modes of operation - Learn and Enforce. Learning Mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. The  monitoring and visibility capabilities provided by <MadCap:variable name="local.Product_L" /> such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Pods.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting.</p>
+        <p> <MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="state">Learn</span> and <span class="state">Enforce</span>. <span class="state">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. The  monitoring and visibility capabilities  such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Pods.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting.</p>
         <ul class="Action">
-            <li>Use Learning Mode to build a <a href="Policy.htm">Policy</a> that is best suited to your application. </li>
-            <li>When you are satisfied that the policy meets your enforcement criteria, switch to Enforce Mode and <MadCap:variable name="General.Product_S" /> will start enforcing your policy. </li>
+            <li>Use <span class="state">Learn</span> to build a <a href="Policy.htm">Policy</a> that is best suited to your application. </li>
+            <li>When you are satisfied that the policy meets your enforcement criteria, switch to <span class="state">Enforce</span> and <MadCap:variable name="local.Product_S" /> will start enforcing your policy. </li>
         </ul>
-        <p><MadCap:variable name="General.Product_S" /> employs a theme color specific to the current mode selected. The theme color affects the top toolbar and some screen elements such as buttons. When in Learn mode, the <MadCap:variable name="General.Product_S" /> theme is colored <img src="../Resources/Images/ColorLearn.png" /> and the mode switch will appear as <img src="../Resources/Images/ButtonLearnEnforce.png" />. Clicking on Enforce will switch to Enforce mode. Similarly, when in Enforce mode, the theme is colored <img src="../Resources/Images/ColorEnforce.png" /> and the mode switch will appear as <img src="../Resources/Images/ButtonEnforceLearn.png" /> . Clicking on Learn will switch to Learn mode.</p>
+        <p><MadCap:variable name="local.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="state">Learn</span> mode, the <MadCap:variable name="local.Product_S" /> theme is colored <img src="../Resources/Images/ColorLearn.png" class="noborder" /> and  when in <span class="state">Enforce</span> mode, the theme is colored <img src="../Resources/Images/ColorEnforce.png" class="noborder" />.</p>
+        <p>
+            <img src="../Resources/Images/ScreenEnforce.png" />
+        </p>
+        <p>
+            <img src="../Resources/Images/ScreenLearn.png" />
+        </p>
     </body>
 </html>
