@@ -277,11 +277,6 @@ p.TableBodyText
 	line-height: 20px;
 }
 
-span.state
-{
-	color: #d2691e;
-}
-
 @media print
 {
 	body
@@ -473,6 +468,19 @@ span.ScreenObject
 	background-color: #a9a9a9;
 }
 
+span.Bold
+{
+	font-weight: bolder;
+}
+
+span.StatusOrValue
+{
+	font-weight: normal;
+	font-style: normal;
+	background-color: #ffffff;
+	color: #c56d22;
+}
+
 p.CodeSegment1
 {
 	font-family: 'Courier New';
@@ -511,11 +519,6 @@ html.pulseTopic .main-section .row.outer-row
 	padding: 0;
 }
 
-span.Bold
-{
-	font-weight: bolder;
-}
-
 ul.Action
 {
 	list-style-image: url('Images/iconAction.png');
@@ -539,34 +542,5 @@ MadCap|dropDownHead
 MadCap|dropDownHotspot
 {
 	
-}
-
-.ScreenObject
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #ffffff;
-	background-color: #a9a9a9;
-}
-
-.ScreenObject1
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #ffffff;
-	background-color: #a9a9a9;
-}
-
-span.neil
-{
-	
-}
-
-span.StatusOrValue
-{
-	font-weight: normal;
-	font-style: normal;
-	color: #593b3b;
-	background-color: #ffffff;
 }
 
