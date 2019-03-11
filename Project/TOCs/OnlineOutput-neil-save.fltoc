@@ -3,6 +3,16 @@
   Version="1"
   conditions="">
   <TocEntry
+<<<<<<< HEAD
+    Title="What's New"
+    Link="/Content/TopicsIntro/WhatsNew.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+=======
+>>>>>>> neil_from_feb25
     Title="Getting Started"
     Link="/Content/TopicsIntro/GettingStarted.htm">
     <TocEntry
@@ -76,6 +86,19 @@
       Link="/Content/TopicsFeatures/VulnerabilityDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+<<<<<<< HEAD
+      Link="/Content/TopicsFeatures/Features.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/TopicsFeatures/Discovery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/TopicsIntro/Filtering.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/TopicsIntro/DeployOrca_Docker_Image_Scanning.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+=======
       Link="/Content/TopicsFeatures/GeneralActions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
@@ -93,6 +116,6 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/TopicsIntro/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-
+>>>>>>> neil_from_feb25
   </TocEntry>
 </CatapultToc>
