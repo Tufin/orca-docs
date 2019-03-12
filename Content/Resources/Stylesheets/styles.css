@@ -468,11 +468,6 @@ span.ScreenObject
 	background-color: #ffffff;
 }
 
-span.Bold
-{
-	font-weight: bolder;
-}
-
 span.StatusOrValue
 {
 	font-weight: normal;
