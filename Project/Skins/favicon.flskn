@@ -12,26 +12,30 @@
         Name="favicon.ico">H4sIAAAAAAAEAKWTQWjTYBTHI3jzMjzYi3NTadO0axVFhj0IHsSTDtrR5UuTTL1UB65rmzZNO2VomQeFFUEHIoqexIPgSZjexMNOnrx59CAiDE1cSZvk70uKDgdpD77wQvi+/L73/u99j+P20DM2xtF7kru6l+MOcBwXJ6clWhmsB0Z7+/cN/I+xRB1/XajjUnwZCl+HOtWAIhhgR3VIcQ0i3wJLV8CSNfzD7HJVIC5pIBtdhJiuQT11E+q0DjHRgJTy2RE8xc3FSlgtPsaXT99h/TRhfvuB9uV15CaXINN+GCsldcgC5Xu8hq+ftwA4sN0+fFsrPUVuvEy8ER6f+Dm+imuZ2zCtLvoYsBvPP0AUypCEQYyR/Gmf3w5Y/wiD3UP2UAVKojVU+w5/K+A9X0Gvh5Z0H7MTBtW1OZqPVbGQacOi/H1znC6arIP84QZprw7tn0R7cox6kFnGry0/fxdu30Z5ZhUXI4uYTw3RTq6kqHcHS+hoz4LYruPA6wHvNz6iQTmIR3QUkuH9U9IGZiLX8XL9TcD3bOpAzw6+Xzx6jQvjRYoRXgN5Skd+QsPKlYfwHJe0e7D7Dl49eIfKubvI89rQ/vn6lagB6YQO0zSD+ltdG0vn7yAb0cCO0RwMrR95VId60sDm201sWxY818MNtgZG2uU0xU6G10+k2ShQfpLQxGy8hOKZNjqVJ1g4uwLGEx8Pr93OGXUUEjrmhRbkaCO4d3O8f6YezKa063/uP+03FbRS8n4EAAA=</Resource>
       <Resource
         Name="H_Orca_fav_icon.png">H4sIAAAAAAAEAAHsAxP8iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOBSURBVDhPJZNbUNR1FMf3rfdmSsG4CGzKLiiaaSnTQ00zylWuy15gYURhl8vCsvvf/14gM1IJwUwQHrqqGIxN1iRjo43WIEyQ02QKYTEMl1hQNiYimqmXT2eXh9/D78z5nd/3fM73aNTtFjy6MlzJFnz6cpyxRdhicwm8cITOV+o4lW5H3VVOdUwurngDfskJ56ty/MllaDYuFjkm7LFZtBc3c+/zYRYn5wjOBpmZmeX3R/P8ePUupw81UReXgz/FglfeePVWNG4p4JOAXZvFV+9c5q+lP7jz8Rd0FCkcP1DF2y9V0WXwMdR/g9XQCgOBHmyS69WZI0o0Ydm18TlcP9NHaC5E20EnNZsyaYw+zNGnD2J7NhslpgDb5gzOFbewtrgaKVIbly1KKkTB1hLaCn2sL/9JW6YLW3wxSoI5EhsZuMnXnf2495biSS2lPqqAC8YTrD1Z4a1X63AlmdDY4/IYuzbM8JVB6jbLbwL1ZJGTv5fX+P6zO8w+nGHsy2FcCQUou49QL+pGr3/L0Ic3sEfnoFF3Wgn+MkunQUUVNQ1JhXQZfVz2dlH21D5O5tiZn5hDSbMQ0JWibing/YYOpsfGUZPNaNpermZpdoE39h+j6XkT7jQzvpgSqqMO05x+jF9HJ+lzv0dtUi7+VAsNWiPtmW4eT85wfI8waN1fRXB+gVP7qmjcZsaVYiYg41G0+Yzf/oFvegepjT5EQBioeguOpBI6MxSWJqbx7ymXFiQ4LZce65t4YgpRpICy3STQjFw5+xHe16tQtcV4JO5LteKOzuOSKJoauY9zmwFN3ZZchi7e4t7gkIwvQ36yoIhJPFJ4dOA7zuQpAjAf9w6zjM0qarJ5cHuUm+9exS7QNe4EI6dfc7AeWqXb2oo9KgPvjgpakq0EDlSi7jTJQ2ltVxnVz2RxyXmB0MISLXsr8WotaAL6CurF532u8/yzuM4Hle04ZDxNArEmsRhHooGmTTnUPyc5zl7+W/6XnqOtNMbn49eJlRWxZNjbtq1ZfNJwlrXHK/ws8C56ujiXH+B8fjOf+nuZuPsToeATuitPYE8Iu3CjTdkFY2SRwpQdYqqW9GpudV/jt5EHLD2cIjg+xaPh+wx29ON9sSLys09vlkUS2HpxoioFPClCXV+6sapaMzVhRyYZaEmz4t9txZlYRL3E/ImiVlcegezWlchYjfwP8CJcisEyLKQAAAAASUVORK5CYIIcPDjp7AMAAA==</Resource>
+      <Resource
+        Name="H_Orca_fav_icon.ico">H4sIAAAAAAAEAKWT61PUZRTHt5lmetEbx5lEMC4Cm7ALhmZayvSiphnlKtdlL7gwoizL1WX3t1fIjFRCMBOEF11VDMYma5Kx0UZrECbIaTKFsBiGSywoGxMRzdSbT2d3p7+g88z5/WbOM+d8z/f7nKNSPSZn3TqVfONUlsdVqg0qlSpJXEISCcdDJnfrnwz7f6bXuDCkOCnVOinTejGqnWRvrEaXqGBOa8a83UtRgk1idRgTvJRpvJg0CiUaB3qtC738DVKjNNVHXmw9lvRmrnTd4N7wL0zeX2RyzM/doQf0tQ9Q/ryb/LgjGLUecTcGrYJRaplSvGRtruJ0w0csP1zlu5s/0uk8jy//DE35Z+nxfswPt8d55A9wrKKL7HhrKMckPZdrfeRG13HW3svawl+0VbxHTlQ9+yMbKU4QHgn15EQ0kvt0HT22Xv5e+oeWQ92hPszCRR/voP6Vk6wE1mgxd5ERaaV8qxtzcjMVe3wYnnVhFKwD2+xkPWXhnO0Ci/MBKnY2Y1K7yd1Uy43zgwwO3CEjohqT6BDUJ9jbN/0jKHmnyI+3Y9zqwCx1sqNqGLl5j8tvXxdNhYdoODU+xevmbgqjnYKlYEhS0Kc6+eD0JSpfdVOsDvbgxJzqIS/KwTuOC9wdnkS3xUbl7hbm5/xU7jqBcYtom2LHLJrkqxXRcYyBnq/YJ5jB9wlilSTWo2R0COYiZTu8WF5sZX5mkcO7X8PwTCPGNAcl0R7Rz8Lh9CYmRn4WvF5yE2uEm+ilbsCR2cb0xEPKdxzFLPrM/OTHpeugZLOLwsQGPPpOOt0X2fXEAaw5x5kdn8OUplCq8VGwyUV7w7uMjU5hTHbJzFgZujLKwKUh0aMWk3C3FR1ndelPbn3yLdP3Zxj6fJQC0fDgdoXMiDq+vjrCtfcH5Z2tgunAU9jK70tr2DNbKY6rwhivhGLX+4fp6/iS0p0O4e+kILKOY/pzLD9apfblNzAk2mXmPeTE1dB76iqB2QC2va2CUc3+qCPsXX+I7A1VFEQrZGysorn4DCsLq3T7+smOraE8OBcy/6YUD1lqKxff+oLfFv/gsw9voRS1U7nnKJUvvIlH18m1vkGWAyuh3Cy19KhxS64z5KbgDopnxVhpKm5j6NM7zE4s4J/xMzM9zdyDX7l9+Xsa950kJ7Y2PPuSb5YdMiW5wjWSw1yKYmzkxlRx8DkftS91YE0/Qdk2l+yIBV2cPbTjYVzJS/ai+p/2L2mDtKN+BAAA</Resource>
+      <Resource
+        Name="H_Orca_fav_icon_1.png">H4sIAAAAAAAEAAHsAxP8iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOBSURBVDhPJZNbUNR1FMf3rfdmSsG4CGzKLiiaaSnTQ00zylWuy15gYURhl8vCsvvf/14gM1IJwUwQHrqqGIxN1iRjo43WIEyQ02QKYTEMl1hQNiYimqmXT2eXh9/D78z5nd/3fM73aNTtFjy6MlzJFnz6cpyxRdhicwm8cITOV+o4lW5H3VVOdUwurngDfskJ56ty/MllaDYuFjkm7LFZtBc3c+/zYRYn5wjOBpmZmeX3R/P8ePUupw81UReXgz/FglfeePVWNG4p4JOAXZvFV+9c5q+lP7jz8Rd0FCkcP1DF2y9V0WXwMdR/g9XQCgOBHmyS69WZI0o0Ydm18TlcP9NHaC5E20EnNZsyaYw+zNGnD2J7NhslpgDb5gzOFbewtrgaKVIbly1KKkTB1hLaCn2sL/9JW6YLW3wxSoI5EhsZuMnXnf2495biSS2lPqqAC8YTrD1Z4a1X63AlmdDY4/IYuzbM8JVB6jbLbwL1ZJGTv5fX+P6zO8w+nGHsy2FcCQUou49QL+pGr3/L0Ic3sEfnoFF3Wgn+MkunQUUVNQ1JhXQZfVz2dlH21D5O5tiZn5hDSbMQ0JWibing/YYOpsfGUZPNaNpermZpdoE39h+j6XkT7jQzvpgSqqMO05x+jF9HJ+lzv0dtUi7+VAsNWiPtmW4eT85wfI8waN1fRXB+gVP7qmjcZsaVYiYg41G0+Yzf/oFvegepjT5EQBioeguOpBI6MxSWJqbx7ymXFiQ4LZce65t4YgpRpICy3STQjFw5+xHe16tQtcV4JO5LteKOzuOSKJoauY9zmwFN3ZZchi7e4t7gkIwvQ36yoIhJPFJ4dOA7zuQpAjAf9w6zjM0qarJ5cHuUm+9exS7QNe4EI6dfc7AeWqXb2oo9KgPvjgpakq0EDlSi7jTJQ2ltVxnVz2RxyXmB0MISLXsr8WotaAL6CurF532u8/yzuM4Hle04ZDxNArEmsRhHooGmTTnUPyc5zl7+W/6XnqOtNMbn49eJlRWxZNjbtq1ZfNJwlrXHK/ws8C56ujiXH+B8fjOf+nuZuPsToeATuitPYE8Iu3CjTdkFY2SRwpQdYqqW9GpudV/jt5EHLD2cIjg+xaPh+wx29ON9sSLys09vlkUS2HpxoioFPClCXV+6sapaMzVhRyYZaEmz4t9txZlYRL3E/ImiVlcegezWlchYjfwP8CJcisEyLKQAAAAASUVORK5CYIIcPDjp7AMAAA==</Resource>
     </Resources>
   </Stylesheet>
   <Master
-    Image="H_Orca_fav_icon.png" />
+    Image="H_Orca_fav_icon_1.png" />
   <Browser>
     <SmallFavicon
-      Image="(generated)"
+      Image="H_Orca_fav_icon.ico"
       SizePx="16 px" />
     <MediumFavicon
-      Image="favicon.ico"
+      Image="H_Orca_fav_icon.png"
       SizePx="16 px" />
     <LargeFavicon
-      Image="(none)"
-      SizePx="" />
+      Image="H_Orca_fav_icon.png"
+      SizePx="16 px" />
   </Browser>
   <ShortcutIcon
-    Image="favicon.ico" />
+    Image="H_Orca_fav_icon.png" />
   <Touch>
     <TouchIcon
-      Image="favicon.ico"
+      Image="H_Orca_fav_icon.ico"
       SizePx="16 px" />
   </Touch>
   <Windows
