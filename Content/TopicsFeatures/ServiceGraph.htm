@@ -12,13 +12,12 @@
         <h2><a name="Actions"></a>Actions Available on this Screen</h2>
         <ul class="Action">
             <li>
-                <p> <a href="#SecurityScore">View <MadCap:variable name="Local.TufinScore" /> details</a> - Click on the <MadCap:variable name="Local.TufinScore" /> of a service for expanded details about known vulnerabilities for that service.</p>
+                <p>View Service Details - Click on a service to view details about a specific service. </p>
             </li>
+            <li>View <MadCap:variable name="Local.TufinScore" /> details - Click on the <MadCap:variable name="Local.TufinScore" /> of a service for expanded details about known vulnerabilities for that service.</li>
+            <li>View reputation information for external end-points</li>
             <li>
-                <p><a href="#ServiceDetails">View Service Details</a> - Click on a service to view details about a specific service.</p>
-            </li>
-            <li>
-                <p>Configure <a href="#ServiceDetails">traffic time frame</a> - Select the desired  to traffic time frame.</p>
+                <p>Configure traffic time frame - Select the desired  to traffic time frame.</p>
                 <p>
                     <img src="../Resources/Images/RefreshRate.png" class="ThumbnailPopup" />
                 </p>
@@ -31,9 +30,14 @@
                 </p>
             </li>
         </ul>
-        <h3><a name="SecurityScore"></a>Security Score Details</h3>
-        <MadCap:snippetBlock src="TufinScore - whatIs.flsnp" /><a name="ServiceDetails"> </a>
+        <h3><a name="SecurityScore"></a><a name="ServiceDetails"></a>
+        </h3>
         <MadCap:snippetBlock src="ServiceDetails - whatIs.flsnp" />
+        <h3>Security Score Details</h3>
+        <MadCap:snippetBlock src="TufinScore - whatIs.flsnp" /><a name="ServiceDetails"> </a>
+        <h3>View Reputation Information </h3>
+        <p>Clicking on an external end-point will display an analysis of the site's reputation including information about the domain and a high-level vulnerability summary</p>
+        <p>The analysis is provided through a 3rd party called Reposify. In case Reposify doesn't have the data for the site, Orca will provide a link to talosintelligence.com</p>
         <h3><a name="ConnectionHistory"></a>Traffic Time Frame</h3>
         <p>The Traffic Time Frame is the length of time that <MadCap:variable name="Local.Product_L" /> considers a connection as active. Connections are displayed in the Service Graph for services that have had active traffic during the time frame selected. If no traffic has originated from or into a service during the time frame selected, that service will not appear in the Service Graph.</p>
         <p>

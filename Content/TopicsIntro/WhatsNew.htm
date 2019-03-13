@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>What's New in <MadCap:variable name="local.Product_L" /></h1>
-        <h2>12th Mar 2019</h2>
+        <h2>13th Mar 2019</h2>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 274px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 259px;" />
@@ -29,31 +29,37 @@
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Policy Naming</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt; Allowed Connections</a> (before rename)</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Allowed Connections submenu item renamed to Security Policy</p>
-                        <p>Allowed Connections screen title renamed to Security Policy - Allowed Connections</p>
-                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Export Policy</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt;&#160;Security Policy</a> (after rename) &gt; Actions dropdown menu</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">New item 'Export as network policies. Downloads a file to your browser named domain-cluser.yml which can be copy/pasted or imported to Kubernetes policies</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Export Policy</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt;&#160;Security Policy</a> (after rename) &gt; Actions dropdown menu</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">New item 'Export as network policies. Downloads a file to your browser named domain-cluser.yml which can be copy/pasted or imported to Kubernetes policies</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Site Reputation</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><a href="../TopicsFeatures/ServiceGraph.htm">Service Graph</a>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Clicking on an external end-point gives an analysis of that site's reputaion</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Kite Rule</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt;&#160;Security Policy</a> (after rename)</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">A single default rule from service 'Kite' (namespace 'Tufin-System') to tufin-io will be created automatically at installation time.</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">A single default rule from service 'Kite' (namespace 'Tufin-System') to orca.tufin.io will be created automatically at installation time.</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Description Column</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt;&#160;Security Policy</a> (after rename)</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">New column 'Description' added to screen. Currently used only for Kite rule and cannot be edited.</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">UI Enhancements</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><a href="../TopicsFeatures/AllowedConnections.htm">Policy &gt; Allowed Connections</a> (before rename)</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>Term "Security Policy" added</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Keyboard Shortcuts</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Throughout the UI</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Alt+G - Service Graph; Alt+P - Pods; Alt+C -Allowed Connections; Alt+S - Settings</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">&#160;</td>
                 </tr>
             </tbody>
         </table>
@@ -137,16 +143,10 @@
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Istio 1.0 </td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Internal </td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><MadCap:variable name="local.Product_S" /> has upgraded to Istio 1.0. For more information, see <a href="https://istio.io/about/notes/1.0/">https://istio.io/about/notes/1.0/</a> </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">&#160;</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Documentation </td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Documentation</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Structural improvements</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Documentation </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Documentation</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Structural improvements</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">&#160;</td>
                 </tr>
             </tbody>
         </table>
