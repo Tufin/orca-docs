@@ -11,3 +11,7 @@
 #define Settings 1007
 #define UnderstandingOrca 1008
 #define Vulnerabilities 1001
+#define WhatsNew 1009
+#define AllowedConnections 1010
+#define KubernetesNetworkPolicies 1011
+#define FirewallTickets 1012

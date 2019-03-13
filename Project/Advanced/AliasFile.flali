@@ -9,4 +9,8 @@
     <Map Name="Settings" Link="/Content/TopicsFeatures/Settings.htm" />
     <Map Name="UnderstandingOrca" Link="/Content/TopicsIntro/UnderstandingOrca.htm" />
     <Map Name="Vulnerabilities" Link="/Content/TopicsFeatures/VulnerabilityDetails.htm" />
+    <Map Name="WhatsNew" Link="/Content/TopicsIntro/WhatsNew.htm" />
+    <Map Name="AllowedConnections" Link="/Content/TopicsFeatures/AllowedConnections.htm" />
+    <Map Name="KubernetesNetworkPolicies" Link="/Content/TopicsFeatures/KubernetesNetPolicies.htm" />
+    <Map Name="FirewallTickets" Link="/Content/TopicsFeatures/FirewallTickets.htm" />
 </CatapultAliasFile>
