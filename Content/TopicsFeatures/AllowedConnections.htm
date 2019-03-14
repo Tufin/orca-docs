@@ -24,6 +24,7 @@
         <h2><a name="Actions"></a>Actions Available on this Screen</h2>
         <ul class="Action">
             <li>Add an allowed connection by entering details yourself</li>
+            <li>Add an allowed connection from the <span class="ScreenObject">New Connections</span> <span class="ScreenObject">Window</span></li>
             <li>Delete an allowed connection</li>
             <li>Lock / unlock an allowed connection</li>
             <li>Reset allowed connections</li>
@@ -32,7 +33,7 @@
             <li><a href="GeneralActions.htm">General actions</a>
             </li>
         </ul>
-        <h3>Adding an Allowed Connection</h3>
+        <h3>Adding an Allowed Connection by Entering Details Yourself</h3>
         <p>You can specify an allowed connection from a namespace in your cluster to a domain outside of the cluster. </p>
         <ol>
             <li>
@@ -73,6 +74,22 @@
                 </table>
             </li>
             <li>Click <span class="ScreenObject">Add Rule</span> to save. The rule will be added to the list.</li>
+        </ol>
+        <h3>Adding an Allowed Connection From the New Connections Window</h3>
+        <ol class="Action">
+            <li>
+                <p> Any connections have been discovered by the <a href="Discovery.htm">discovery engine</a> and do not exist as allowed connections in your security policy, are considered new. The number of new connections is displayed within the <span class="ScreenObject">New Connections Button</span> at the top of the screen. </p>
+            </li>
+            <li>
+                <p>Click <span class="ScreenObject">New Connections. </span>The <span class="ScreenObject">New Connections Window </span>is displayed.</p>
+                <p>
+                    <img src="../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>In the New Connections Window, click on the appropriate checkboxes to select specific new connections , or click <span class="ScreenObject">All</span>, and then click <span class="ScreenObject">Add to Policy</span>.</p>
+            </li>
+            <li>The selected rules will be added to your security policy and removed from the <span class="ScreenObject">New Connections Window</span>. Similarly, the number of new connections on the <span class="ScreenObject">New Connections Button </span>will be updated accordingly.</li>
         </ol>
         <h3>Deleting an Allowed Connection</h3>
         <p>Rules can be deleted from the security policy at any time. </p>

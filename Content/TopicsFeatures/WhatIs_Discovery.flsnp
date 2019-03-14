@@ -3,8 +3,8 @@
     <head>
     </head>
     <body>
-        <p>The <MadCap:variable name="Local.Product_L" /> discovery engine constantly monitors for traffic that originated from or goes into the services used by your application. Based on the traffic <MadCap:variable name="Local.Product_L" /> sees, the discovery engine builds a <span class="ScreenObject">New Connections </span>list which you can use to build a <a href="Policy.htm">Policy</a>  that best suits your enforcement requirements. If the traffic connection found is not already listed as an allowed connection in your Policy, the discovery engine adds it to the <span class="ScreenObject">New Connections</span> list as a proposed policy rule.</p>
-        <p>You can view the <span class="ScreenObject">New Connections</span> list at any time and add connections as rules to your policy.</p>
+        <p>The <MadCap:variable name="Local.Product_L" /> discovery engine is a continually running process that constantly monitors traffic to and from  the services used by your application. Any traffic found that is not already listed as an allowed connection in your policy is added to the <span class="ScreenObject">New Connections Window</span> from which you can easily add it to the policy. </p>
+        <p>You can view the <span class="ScreenObject">New Connections Window</span> by clicking <span class="ScreenObject">New Connections</span> at the top of the screen. See also <a href="AllowedConnections.htm">Security Policy</a>.</p>
         <p>
             <img src="../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
         </p>
