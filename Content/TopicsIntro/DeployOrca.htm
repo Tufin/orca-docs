@@ -36,6 +36,8 @@
 </p>
             </li>
         </ul>
+        <h3>Change in Kubernetes DNS&#160;Pod Port</h3>
+        <p>Installation of the Orca agent changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53. Therefore, if you use Kubernetes Network Policies to restrict access to the Kubernetes DNS pod on port 53, you must change this to port 54. This instruction applies to all Kubernetes platforms except <MadCap:variable name="local.Openshift" />.</p>
         <h3>Outbound Connections</h3>
         <p>
 If you have a firewall between your Kubernetes cluster and the internet, allow the following connections:</p>
