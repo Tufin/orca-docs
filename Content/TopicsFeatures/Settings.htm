@@ -5,15 +5,6 @@
     </head>
     <body>
         <h1>Settings</h1>
-        <p>In this document:</p>
-        <ul>
-            <li><a href="#Overview">Overview</a>
-            </li>
-            <li><a href="#What">Actions Available on this Screen</a>
-            </li>
-            <li><a href="#How">How to Get Here</a>
-            </li>
-        </ul>
         <h2><a name="Overview"></a>Overview</h2>
         <p>The Settings window displays configuration information and lets you make changes such as creating API tokens, defining notifications and switching the policy mode.</p>
         <p>
@@ -91,6 +82,14 @@
         <h3><a name="LearningMode"></a>Policy Mode</h3>
         <MadCap:snippetBlock src="WhatsIs_LearningMode.flsnp" />
         <p>Click on the desired mode to switch.</p>
+        <h3>Modifying Kubernetes Network Policies</h3>
+        <p>You can extend the behavior you set in your <MadCap:variable name="local.Product_S" /> security policy to your Kubernetes network policies. <MadCap:variable name="local.Product_S" /> can automatically create and remove the appropriate Kubernetes network policy rules.</p>
+        <h4>Set Kubernetes Network Policy to Allow-All in Learn Mode</h4>
+        <p>When set to <span class="StatusOrValue">enabled</span> and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, a Kubernetes network rule will be created for each namespace that allows all traffic.</p>
+        <p>When set to <span class="StatusOrValue">disabled</span> or <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>, any Kubernetes network rules previously created to allow all traffic will be removed.</p>
+        <h4>Auto-Generate Kubernetes Network Policies in Enforce Mode</h4>
+        <p>When set to <span class="StatusOrValue">enabled</span> and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>, new Kubernetes network rules will be created to reflect the policy as defined in <MadCap:variable name="local.Product_S" />.</p>
+        <p>When set to <span class="StatusOrValue"><span class="StatusOrValue">disabled</span></span> or <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, any Kubernetes network rules previously created to reflect the policy defined in <MadCap:variable name="local.Product_S" /> will be removed.</p>
         <h3><a name="Slack"></a>Notifications</h3>
         <p><MadCap:variable name="Local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
         <p>
