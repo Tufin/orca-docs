@@ -75,6 +75,11 @@ a.MCBreadcrumbsLink:hover
 	color: #BED230;
 }
 
+code.MonospaceBold
+{
+	font-weight:bolder;
+}
+
 div.GlossaryPageDefinition
 {
 	
@@ -228,6 +233,16 @@ p
 	margin-bottom: 8px;
 	margin-top: 8px;
 	font-size: 14px;
+}
+
+p.SubHeading
+{
+	font-weight: bold;
+}
+
+p.ProcedureIntro
+{
+	font-style: italic;
 }
 
 p.EmptyPageText
@@ -458,6 +473,11 @@ span.Code
 {
 	font-family: 'Courier New';
 	text-indent: 0.5in;
+}
+
+span.SpecialBold
+{
+	font-weight: bolder;
 }
 
 span.ScreenObject
