@@ -82,12 +82,8 @@
         <h3><a name="LearningMode"></a>Policy Mode</h3>
         <MadCap:snippetBlock src="WhatsIs_LearningMode.flsnp" />
         <p>Click on the desired mode to switch.</p>
-        <h3>Modifying Kubernetes Network Policies</h3>
-        <p>You can extend the behavior you set in your <MadCap:variable name="local.Product_S" /> security policy to your Kubernetes network policies. <MadCap:variable name="local.Product_S" /> can automatically create and remove the appropriate Kubernetes network policy rules.</p>
-        <h4>Set Kubernetes Network Policy to Allow-All in Learn Mode</h4>
-        <p>When set to <span class="StatusOrValue">enabled</span> and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, a Kubernetes network rule will be created for each namespace that allows all traffic.</p>
-        <h4>Auto-Generate Kubernetes Network Policies in Enforce Mode</h4>
-        <p>When set to <span class="StatusOrValue">enabled</span> and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>, new Kubernetes network rules will be created to reflect the policy as defined in <MadCap:variable name="local.Product_S" />.</p>
+        <h4>Allowing Kubernetes Network Policies</h4>
+        <p>When <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> automatically creates a Kubernetes network rule that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
         <h3><a name="Slack"></a>Notifications</h3>
         <p><MadCap:variable name="Local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
         <p>
