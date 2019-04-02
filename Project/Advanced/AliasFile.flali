@@ -5,9 +5,9 @@
     <Map Name="Pods" Link="/Content/Topics/40-Working_With/Pods.htm" />
     <Map Name="Services" Link="/Content/Topics/40-Working_With/Services.htm" />
     <Map Name="Nodes" Link="/Content/Topics/40-Working_With/Nodes.htm" />
-    <Map Name="Policy" Link="/Content/Topics/40-Working_With/Policy.htm" />
+    <Map Name="Policy" Link="/Content/Topics/20-Concepts/Policy.htm" />
     <Map Name="Settings" Link="/Content/Topics/40-Working_With/Settings.htm" />
-    <Map Name="UnderstandingOrca" Link="/Content/Topics/30-Getting_Started/UnderstandingOrca.htm" />
+    <Map Name="UnderstandingOrca" Link="/Content/Topics/20-Concepts/UnderstandingOrca.htm" />
     <Map Name="Vulnerabilities" Link="/Content/Topics/40-Working_With/VulnerabilityDetails.htm" />
     <Map Name="WhatsNew" Link="/Content/Topics/10-Whats_New/WhatsNew.htm" />
     <Map Name="AllowedConnections" Link="/Content/Topics/40-Working_With/AllowedConnections.htm" />
