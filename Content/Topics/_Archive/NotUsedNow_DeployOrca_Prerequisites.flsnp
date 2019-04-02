@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h3>Supported Kubernetes Versions</h3>
+        <p><MadCap:variable name="General.Product_S" /> supports:</p>
+        <p>
+        </p>
+        <ul>
+            <li>
+                <p>All standard Kubernetes platforms, version 1.9 and higher</p>
+            </li>
+            <li>
+                <p><MadCap:variable name="General.GKE" />, <MadCap:variable name="General.EKS" />, <MadCap:variable name="General.AKS" />, <MadCap:variable name="General.Openshift" /> and<MadCap:variable name="General.Docker" /><![CDATA[
+]]></p>
+            </li>
+            <li>
+                <p>Non-standard Kubernetes platforms, subject to disd on-demand</p>
+            </li>
+        </ul>
+        <h3>CNI
+</h3>
+        <p>In order to enforce Kubernetes Network Policies, a suitable CNI (network) plugin must be installed (optional).
+</p>
+        <h3>Supported Container Registries
+</h3>
+        <p>All registries are supported.
+</p>
+        <h3>Roles and Permissions
+</h3>
+        <ul>
+            <li>
+                <p>Your install user requires cluster admin-role in Kubernetes </p>
+                <p><MadCap:variable name="General.GKE" />: https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl </p>
+                <p><MadCap:variable name="General.EKS" />: https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</p>
+                <p><MadCap:variable name="General.AKS" />:https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</p>
+                <p><MadCap:variable name="General.Openshift" />: https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</p>
+                <p><MadCap:variable name="General.Docker" />: https://docs.docker.com/ee/ucp/user-access/cli/</p>
+            </li>
+            <li>
+                <p>Kite pod requires read access on cluster entities (pods, services, etc.)
+</p>
+            </li>
+            <li>
+                <p>Conntrack network engine is a daemonset that requires:
+</p>
+                <ul>
+                    <li>
+                        <p>hostNetwork: true
+</p>
+                    </li>
+                    <li>
+                        <p>hostPID: true
+</p>
+                    </li>
+                    <li>
+                        <p>securityContext:
+  </p>
+                        <ul>
+                            <li>
+                                <p>privileged: true
+</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Required Kubernetes Components
+</h3>
+        <ul>
+            <li>kube-dns deployment must exist in namespace kube-system (not required for OpenShift)</li>
+            <li>The Kubernetes command-line client, kubectl must be installed and connected to the relevant Kubernetes cluster. 
+</li>
+        </ul>
+        <h3>Outbound Connections</h3>
+        <p>
+If you have a firewall between your Kubernetes cluster and the internet, allow the following connections:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Port</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Protocols</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Security</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">guru.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP/2</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">registry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">loginregistry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">orca.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">TLS</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

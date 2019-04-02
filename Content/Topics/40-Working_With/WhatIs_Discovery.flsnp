@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>The <MadCap:variable name="Local.Product_L" /> discovery engine is a continually running process that constantly monitors traffic to and from  the services used by your application. Any traffic found that is not already listed as an allowed connection in your policy is added to the <span class="ScreenObject">New Connections Window</span> from which you can easily add it to the policy. </p>
+        <p>You can view the <span class="ScreenObject">New Connections Window</span> by clicking <span class="ScreenObject">New Connections</span> at the top of the screen. See also <a href="AllowedConnections.htm">Security Policy</a>.</p>
+        <p>
+            <img src="../../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
+        </p>
+    </body>
+</html>

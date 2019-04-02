@@ -6,7 +6,7 @@
   Destinations=""
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 TopNav.flskn"
-  DefaultUrl="/Content/TopicsIntro/WhatIs.htm"
+  DefaultUrl="/Content/Topics/30-Getting_Started/WhatIs.htm"
   ExcludeUnreferencedContent="true"
   MenuSkin="/Project/Skins/SideMenu.flskn"
   TopicToolbarSkin="/Project/Skins/TopicToolBar.flskn"

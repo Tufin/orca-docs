@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Firewall Tickets</h1>
+        <p>In this document:</p>
+        <ul>
+            <li><a href="#Overview">Overview</a>
+            </li>
+            <li><a href="#Actions">Actions Available on this Screen</a>
+            </li>
+            <li><a href="#How">How to Get Here</a>
+            </li>
+        </ul>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The <span class="ScreenObject">Firewall Tickets Screen</span> lists change tickets that have been created by Orca in your network policy change management solution with the purpose of applying the security policy you have defined in <MadCap:variable name="local.Product_S" /> to the devices managed by the network policy change management solution. It is available only if you have a policy change management solution such as <MadCap:variable name="local.SC" /> integrated with <MadCap:variable name="local.Product_L" />. If you do not have this integration, it will not be possible to reach this screen.</p>
+        <p>After initiating the <a href="AllowedConnections.htm#Apply">Apply on Firewalls</a> process, one or more change tickets will be created in  your network policy change management solution - one for each namespace in your policy - and they will be viewable on this screen.</p>
+        <p>
+            <img src="../../Resources/Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
+        </p>
+        <h2><a name="Actions"></a>Actions Available on this Screen</h2>
+        <ul class="Action">
+            <li>Viewing the firewall tickets</li>
+            <li>Linking to a ticket</li>
+            <li><a href="GeneralActions.htm">General actions</a>
+            </li>
+        </ul>
+        <h3>Viewing the Firewall Tickets </h3>
+        <p>View the firewall tickets that have been created by Orca in your network policy change management solution.</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The namespace in the cluster to which the rule applies</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Endpoints</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The DNS name of source or destination outside of your cluster</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">One of four statuses. Initially Pending, then Running, then either Implemented or Failed.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Message</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Optional, depending on network change management systems</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Ticket</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Unique ID&#160;provided by <MadCap:variable name="local.Product_S" />. </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Last Update</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">The date and time of the last status change your network policy change management solution</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Linking to a Ticket</h3>
+        <p>Click on a Ticket ID and you will be redirected to the appropriate ticket in your network policy change management solution.</p>
+        <h2><a name="How"></a>How to Get Here</h2>
+        <p>From the <a href="../30-Getting_Started/Navigation.htm">main menu</a>  select <a href="Policy.htm">Policy</a> then <span class="ScreenObject">Firewall Tickets</span></p>
+        <p>&#160;</p>
+    </body>
+</html>
