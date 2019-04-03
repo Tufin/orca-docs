@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<link href="../Custom/custom.css" rel="stylesheet" />
+		<script src="../Custom/custom.js">
+		</script><title></title>
+	</head>
+	<body>
+			<div id="contentBody">
+				<div>
+					<MadCap:breadcrumbsProxy />
+					<MadCap:bodyProxy />
+				</div>
+			</div>
+
+		<div style="display:none;"><MadCap:variable id="var-theme" name="custom.Theme" /></div>
+	</body>
+</html>

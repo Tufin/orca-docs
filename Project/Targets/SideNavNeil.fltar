@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target created by Neil "
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/SideNavNeil.flskn"
+  MasterPage="/Content/Resources/MasterPages/MasterPageNeil.flmsp"
+  DefaultUrl="/Content/Topics/10-Whats_New/WhatsNew.htm"
+  UseDeviceWidth="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>
