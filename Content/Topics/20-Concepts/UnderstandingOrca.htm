@@ -4,9 +4,11 @@
     </head>
     <body>
         <h1>Understanding <MadCap:variable name="Local.Product_L" /></h1>
+        <h2>How does <MadCap:variable name="Local.Product_L"></MadCap:variable> figure it all out?</h2>
+        <p><MadCap:variable name="Local.Product_L" /> is a cloud-based service, that is integrated with your Kubernetes cluster using a custom pod developed by Tufin called Kite. Kite is responsible for monitoring your Kubernetes cluster for relevant changes, such as adding or deleting services, and for maintaining ongoing communication between your cluster and the <MadCap:variable name="Local.Product_L" /> service. To protect your data during transport over the internet, Kite uses the TLS protocol for all communication between your cluster and our servers.</p>
+        <p>Tufin also developed a custom Kubernetes DNS plugin to identify and control all communication between your services, as well as to external services. The DNS plugin identifies and controls communication that is based on DNS&#160;lookups (for example crm.mycompany.com). Tufin Orca can also monitor and enforce service connectivity using <a href="https://istio.io/about/intro/">Istio.</a> Istio adds support for identification and control of communication through sidecar proxies.</p>
+        <p>Both Kite and the <MadCap:variable name="Local.Product_L" /> DNS plugin must be installed on your Kubernetes cluster. If you have any firewalls between your cluster and the Internet, you will have to allow outbound communication between your cluster and the <MadCap:variable name="Local.Product_L" /> service.</p>
         <h2>Policy Mode</h2>
         <MadCap:snippetBlock src="../../Resources/Snippets/WhatsIs_LearningMode.flsnp" />
-        <h2>Discovery</h2>
-        <MadCap:snippetBlock src="../../Resources/Snippets/WhatIs_Discovery.flsnp" />
     </body>
 </html>
