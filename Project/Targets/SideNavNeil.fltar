@@ -15,4 +15,8 @@
     GenerateTOCProxy="true"
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="custom/IncludeVersionDropdown">false</Variable>
+  </Variables>
 </CatapultTarget>

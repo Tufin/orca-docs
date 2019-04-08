@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="User Guide—Crop/Registration Marks"
+  Comment="User Guide"
   Type="PDF"
   Destinations=""
   GlossaryTermConversion="marked"
-  MasterToc="/Project/TOCs/User Guide.fltoc"
-  ConditionTagExpression="include[General.PDF] exclude[General.Online] "
+  ConditionTagExpression="include[General.PDF]exclude[General.Online]"
   PatchHeadingLevels="true"
   InjectEmptyPages="true">
   <PrintedOutput
@@ -17,7 +16,7 @@
     GenerateIndexProxy="true"
     GenerateGlossaryProxy="true" />
   <DocumentProperties
-    Title="User Guide—Crop/Registration Marks"
+    Title="User Guide"
     Author="My Name" />
   <PDF
     ShowUsedBookmarks="false"
@@ -25,6 +24,16 @@
     PageLayout="TwoColumnRight"
     TitleBar="DocumentTitle"
     CollapsedBookmarks="true"
-    CropAndRegistrationMarks="true"
+    CropAndRegistrationMarks="false"
     ConvertToCMYK="true" />
+  <Variables>
+    <Variable
+      Name="General/ContentType">User's Guide</Variable>
+    <Variable
+      Name="General/CoverPageImage">../FrontMatter/Images/product_SecureTrack.png</Variable>
+    <Variable
+      Name="General/Version">R19-2</Variable>
+    <Variable
+      Name="custom/IncludeVersionDropdown">false</Variable>
+  </Variables>
 </CatapultTarget>

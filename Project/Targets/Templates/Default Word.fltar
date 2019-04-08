@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
-  Comment="User Guide"
-  Type="PDF"
+  Comment="User Guide to Word"
+  Type="MsWord"
   Destinations=""
   GlossaryTermConversion="marked"
-  MasterToc="/Project/TOCs/User Guide.fltoc"
-  ConditionTagExpression="include[General.PDF] exclude[General.Online] "
+  MasterToc="/Project/TOCs/local-sample.fltoc"
+  ConditionTagExpression="include[General.PDF]exclude[General.Online]"
   PatchHeadingLevels="true"
   InjectEmptyPages="true">
   <PrintedOutput
@@ -27,4 +27,12 @@
     CollapsedBookmarks="true"
     CropAndRegistrationMarks="false"
     ConvertToCMYK="true" />
+  <Variables>
+    <Variable
+      Name="General/ContentType">User's Guide</Variable>
+    <Variable
+      Name="General/CoverPageImage">../FrontMatter/Images/product_SecureChange.png</Variable>
+    <Variable
+      Name="General/Version">R19-1</Variable>
+  </Variables>
 </CatapultTarget>

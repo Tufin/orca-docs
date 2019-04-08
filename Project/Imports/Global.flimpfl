@@ -12,8 +12,8 @@
   IncludeLinkedFiles="false"
   DeleteStale="true"
   DeleteUnreferenced="false"
-  AutoSync="true"
-  LastImport="2019-04-03T12:30:58.7717995+03:00">
+  AutoSync="false"
+  LastImport="2019-04-08T16:26:30.7054704+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -21,9 +21,6 @@
   </Files>
   <ExcludedFiles />
   <CollectedSourceFiles>
-    <Url
-      Source="../../../Global/Content/Resources/MasterPages/MasterPage.flmsp"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/MasterPage.flmsp" />
     <Url
       Source="../../../Global/Content/Resources/PageLayouts/Chapters.flpgl"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Chapters.flpgl" />
@@ -63,18 +60,6 @@
     <Url
       Source="../../../Global/Project/Skins/TopicToolBar.flskn"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/TopicToolBar.flskn" />
-    <Url
-      Source="../../../Global/Project/Targets/Templates/Default.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default.fltar" />
-    <Url
-      Source="../../../Global/Content/Resources/Custom/custom.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom.css" />
-    <Url
-      Source="../../../Global/Content/Resources/Custom/custom.js"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom.js" />
-    <Url
-      Source="../../../Global/Content/Resources/Custom/theme.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/theme.css" />
     <Url
       Source="../../../Global/Content/Resources/Custom/Images/headerIris.jpg"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerIris.jpg" />
@@ -118,35 +103,80 @@
       Source="../../../Global/Project/Advanced/English (United States) Dictionary.mcdic"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/English (United States) Dictionary.mcdic" />
     <Url
-      Source="../../../Global/Project/Skins/HTML5 - Tripane.flskn"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 - Tripane.flskn" />
-    <Url
       Source="../../../Global/Content/Resources/Stylesheets/local.css"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/local.css" />
     <Url
-      Source="../../../Global/Project/Targets/OBSOLETE OrcaKC TriPane.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OBSOLETE OrcaKC TriPane.fltar" />
+      Source="../../../Global/Content/Resources/Custom/custom-topnav.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-topnav.css" />
     <Url
-      Source="../../../Global/Project/Targets/OBSOLETE OrcaKC_sidenav.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OBSOLETE OrcaKC_sidenav.fltar" />
+      Source="../../../Global/Content/Resources/Custom/custom-topnav.js"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-topnav.js" />
     <Url
-      Source="../../../Global/Project/Targets/OrcaKC TopNav Final.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/OrcaKC TopNav Final.fltar" />
+      Source="../../../Global/Content/Resources/Custom/custom-tripane.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-tripane.css" />
     <Url
-      Source="../../../Global/Project/Targets/UserGuide to Word.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuide to Word.fltar" />
+      Source="../../../Global/Content/Resources/Custom/custom-tripane.js"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-tripane.js" />
     <Url
-      Source="../../../Global/Project/Targets/UserGuide.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuide.fltar" />
+      Source="../../../Global/Content/Resources/Custom/theme-topnav.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/theme-topnav.css" />
     <Url
-      Source="../../../Global/Project/Targets/UserGuideCropRegMarks.fltar"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/UserGuideCropRegMarks.fltar" />
+      Source="../../../Global/Content/Resources/Custom/theme-tripane.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/theme-tripane.css" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Cover.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Cover.htm" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/TOC.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/TOC.htm" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureApp.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureApp.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureChange.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureChange.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureTrack.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureTrack.png" />
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/Content-TopNav.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-TopNav.flmsp" />
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/Content-Tripane.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-Tripane.flmsp" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/Footer.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/Footer.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/Header.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/Header.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/PageLayout.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/PageLayout.css" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/TufinLogoforKC.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/TufinLogoforKC.png" />
+    <Url
+      Source="../../../Global/Project/ConditionTagSets/PageLayout.flcts"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/ConditionTagSets/PageLayout.flcts" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default PDF.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default PDF.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default TopNav.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default TopNav.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default Tripane.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default Tripane.fltar" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default Word.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default Word.fltar" />
+    <Url
+      Source="../../../Global/Project/VariableSets/General.flvar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/VariableSets/General.flvar" />
   </CollectedSourceFiles>
   <SkippedSourceFiles />
   <GeneratedFiles>
-    <Url
-      Source="../../Content/Resources/MasterPages/MasterPage.flmsp"
-      TimeStamp="20-Jun-18 9:27:48 AM" />
     <Url
       Source="../../Content/Resources/PageLayouts/Chapters.flpgl"
       TimeStamp="20-Jun-18 9:27:48 AM" />
@@ -186,18 +216,6 @@
     <Url
       Source="../Skins/TopicToolBar.flskn"
       TimeStamp="04-Oct-18 17:14:09 PM" />
-    <Url
-      Source="../Targets/Templates/Default.fltar"
-      TimeStamp="04-Oct-18 17:44:21 PM" />
-    <Url
-      Source="../../Content/Resources/Custom/custom.css"
-      TimeStamp="24-Oct-18 16:22:13 PM" />
-    <Url
-      Source="../../Content/Resources/Custom/custom.js"
-      TimeStamp="24-Oct-18 16:07:36 PM" />
-    <Url
-      Source="../../Content/Resources/Custom/theme.css"
-      TimeStamp="24-Oct-18 16:29:00 PM" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerIris.jpg"
       TimeStamp="08-Oct-18 14:49:18 PM" />
@@ -241,28 +259,76 @@
       Source="../Advanced/English (United States) Dictionary.mcdic"
       TimeStamp="25-Feb-19 9:06:50 AM" />
     <Url
-      Source="../Skins/HTML5 - Tripane.flskn"
-      TimeStamp="25-Feb-19 9:06:50 AM" />
-    <Url
       Source="../../Content/Resources/Stylesheets/local.css"
       TimeStamp="28-Feb-19 8:24:04 AM" />
     <Url
-      Source="../Targets/OBSOLETE OrcaKC TriPane.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/custom-topnav.css"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
     <Url
-      Source="../Targets/OBSOLETE OrcaKC_sidenav.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/custom-topnav.js"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
     <Url
-      Source="../Targets/OrcaKC TopNav Final.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/custom-tripane.css"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
     <Url
-      Source="../Targets/UserGuide to Word.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/custom-tripane.js"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
     <Url
-      Source="../Targets/UserGuide.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/theme-topnav.css"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
     <Url
-      Source="../Targets/UserGuideCropRegMarks.fltar"
-      TimeStamp="28-Feb-19 8:24:04 AM" />
+      Source="../../Content/Resources/Custom/theme-tripane.css"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Cover.htm"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/TOC.htm"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureApp.png"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureChange.png"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureTrack.png"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Content-TopNav.flmsp"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Content-Tripane.flmsp"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/Footer.flsnp"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/Header.flsnp"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/PageLayout.css"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/TufinLogoforKC.png"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../ConditionTagSets/PageLayout.flcts"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../Targets/Templates/Default PDF.fltar"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../Targets/Templates/Default TopNav.fltar"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../Targets/Templates/Default Tripane.fltar"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../Targets/Templates/Default Word.fltar"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../VariableSets/General.flvar"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
   </GeneratedFiles>
 </CatapultProject>

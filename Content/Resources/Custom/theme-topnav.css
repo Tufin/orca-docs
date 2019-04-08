@@ -14,7 +14,8 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	background-image: url('Images/logoOrca.png');
 }
 .theme-orca .search-bar.search-bar-container .search-submit {
-	background-color: #9f6a8d;
+	/* background-color: #9f6a8d; */
+	background-color: transparent;
 }
 .theme-orca ul.menu._Skins_SideMenu.mc-component {
 	border-top-color: #762a5b;

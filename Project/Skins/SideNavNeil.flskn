@@ -21,6 +21,14 @@
             Name="Stretch">no</Property>
           <Property
             Name="Width">60%</Property>
+          <Property
+            Name="BorderTopLeftRadius">14px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">14px</Property>
+          <Property
+            Name="BorderTopRightRadius">14px</Property>
+          <Property
+            Name="BorderBottomRightRadius">14px</Property>
         </Properties>
       </Style>
       <Style

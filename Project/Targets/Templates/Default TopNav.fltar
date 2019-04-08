@@ -13,7 +13,7 @@
   MenuSkin="/Project/Skins/SideMenu.flskn"
   TopicToolbarSkin="/Project/Skins/TopicToolBar.flskn"
   ExcludeUnreferencedContent="true"
-  MasterPage="/Content/Resources/MasterPages/MasterPage.flmsp">
+  MasterPage="/Content/Resources/MasterPages/Content-TopNav.flmsp">
   <Stylesheet>
     <Resources></Resources>
     <Styles>

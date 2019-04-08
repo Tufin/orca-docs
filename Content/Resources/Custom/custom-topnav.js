@@ -6,4 +6,7 @@ $(function() { //jQuery ready function
 	
 	// Remove header
 	//$('.homepage nav.title-bar').remove();
+		
+	// Add target _blank to external links
+	$('a[href^="http"]').attr('target', '_blank');
 });
