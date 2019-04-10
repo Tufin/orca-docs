@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 body
 {
@@ -28,7 +28,8 @@ a:hover
 
 a:hover[href^="#"]
 {
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	text-decoration: none;
 }
 
 /* enter color for "visited" links */
@@ -37,18 +38,14 @@ a:hover[href^="#"]
 a[href^="#"]
 {
 	font-family: "Open Sans";
-	font-weight: 700;
-	text-decoration: none;
+	/* font-weight: 700; */
+	/* text-decoration: none; */
+	text-decoration: underline;
 }
 
 /* External link */
 
-a[href^="http"]
-{
-	target: "_blank";
-}
-
-a::after[href^="http"]
+a[href^="http"]::after
 {
 	background: transparent url('Images/iconExternalLink.png') no-repeat;
 	background-position: 0px;
@@ -73,6 +70,11 @@ a.MCBreadcrumbsLink:visited
 a.MCBreadcrumbsLink:hover
 {
 	color: #BED230;
+}
+
+code
+{
+	font-family: "Courier New"
 }
 
 code.MonospaceBold
@@ -262,12 +264,10 @@ p.IndexHeading
 
 p.ManualTitle1
 {
-	
 }
 
 p.ManualTitle2
 {
-	
 }
 
 p.ManualVersionNumber
@@ -399,8 +399,11 @@ p.TableBodyText
 
 	p.ManualTitle1
 	{
+		
+		/* font-size: 36px;
+		font-weight: bolder: */
 		font-family: 'Century Gothic';
-		font-size: 9pt;
+		font-size: 36pt;
 		margin-bottom: 0;
 		margin-top: 2.00in;
 		text-align: center;
@@ -408,7 +411,9 @@ p.TableBodyText
 
 	p.ManualTitle2
 	{
-		color: #bed230;
+		/* font-size: 36px;
+		font-weight: bolder: 
+		color: #bed230;*/
 		font-family: 'Century Gothic';
 		font-size: 22pt;
 		line-height: 0;
@@ -421,7 +426,7 @@ p.TableBodyText
 	{
 		color: #b3b3b3;
 		font-family: 'Century Gothic';
-		font-size: 12pt;
+		font-size: 16pt;
 		margin-top: 12pt;
 		text-align: center;
 	}
@@ -446,7 +451,7 @@ p.TableBodyText
 
 img
 {
-	border: solid 1px #000000;
+	border: solid 1px #c9c9c9;
 }
 
 img.noborder
@@ -457,7 +462,7 @@ img.noborder
 img.ThumbnailPopup
 {
 	mc-thumbnail: popup;
-	border: dotted 2px #000000;
+	border: dotted 2px #c9c9c9;
 	mc-thumbnail-max-height: 100px;
 }
 
@@ -482,18 +487,24 @@ span.SpecialBold
 
 span.ScreenObject
 {
-	font-weight: normal;
 	font-style: normal;
-	color: #32cd32;
-	background-color: #ffffff;
+	font-weight: bolder;
+	color: #333333;
+	background-color: transparent;
 }
 
 span.StatusOrValue
 {
-	font-weight: normal;
 	font-style: normal;
-	background-color: #ffffff;
-	color: #c56d22;
+	font-weight: bolder;
+	color: #333333;
+	background-color: #f2f2f2;
+
+}
+
+span.Superscript { 
+  vertical-align: super;
+  font-size: smaller;
 }
 
 p.CodeSegment1
@@ -558,4 +569,3 @@ MadCap|dropDownHotspot
 {
 	
 }
-

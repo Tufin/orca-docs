@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="ContentType"
+    EvaluatedDefinition=""></Variable>
+  <Variable
+    Comment=""
+    Name="Version"
+    EvaluatedDefinition=""></Variable>
+  <Variable
+    Name="ContentType"
+    Comment=""
+    EvaluatedDefinition="User's Guide">User's Guide</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition=""></Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_SecureApp.png">../FrontMatter/Images/product_SecureApp.png</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-1">R19-1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-2">R19-2</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_SecureTrack.png">../FrontMatter/Images/product_SecureTrack.png</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_SecureChange.png">../FrontMatter/Images/product_SecureChange.png</Variable>
+</CatapultVariableSet>

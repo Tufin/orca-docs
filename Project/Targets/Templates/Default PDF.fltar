@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="User Guide"
+  Type="PDF"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  ConditionTagExpression="include[General.PDF]exclude[General.Online]"
+  PatchHeadingLevels="true"
+  InjectEmptyPages="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    ExpandingTextConversion="expand"
+    PopupConversion="remove-body"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <DocumentProperties
+    Title="User Guide"
+    Author="My Name" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="50"
+    PageLayout="TwoColumnRight"
+    TitleBar="DocumentTitle"
+    CollapsedBookmarks="true"
+    CropAndRegistrationMarks="false"
+    ConvertToCMYK="true" />
+  <Variables>
+    <Variable
+      Name="General/ContentType">User's Guide</Variable>
+    <Variable
+      Name="General/CoverPageImage">../FrontMatter/Images/product_SecureTrack.png</Variable>
+    <Variable
+      Name="General/Version">R19-2</Variable>
+    <Variable
+      Name="custom/IncludeVersionDropdown">false</Variable>
+  </Variables>
+</CatapultTarget>

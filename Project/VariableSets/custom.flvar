@@ -16,4 +16,12 @@
     Name="Theme"
     Comment=""
     EvaluatedDefinition="tos2">tos2</Variable>
+  <Variable
+    Name="IncludeVersionDropdown"
+    Comment=""
+    EvaluatedDefinition="true">true</Variable>
+  <Variable
+    Name="IncludeVersionDropdown"
+    Comment=""
+    EvaluatedDefinition="false">false</Variable>
 </CatapultVariableSet>

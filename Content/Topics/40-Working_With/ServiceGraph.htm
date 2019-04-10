@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Service Graph</h1>
+        <p>
+            <img src="../../Resources/Images/WindowServiceGraph.png" class="ThumbnailPopup" />
+        </p>
+        <p>The Service Graph graphically displays all the active traffic between the services used in your web application, and external services outside the cluster. The specific time frame that traffic is treated as active is configurable. If traffic between two services has not occurred during the time frame selected, the services will not appear in the Services Graph. Every service displayed has an associated color-coded <MadCap:variable name="Local.TufinScore" /> that shows how secure the service is.</p>
+        <h2><a name="Actions"></a>Actions Available on this Screen</h2>
+        <ul class="Action">
+            <li>
+                <p>View Service Details - Click on a service to view details about a specific service. </p>
+            </li>
+            <li>View <MadCap:variable name="Local.TufinScore" /> details - Click on the <MadCap:variable name="Local.TufinScore" /> of a service for expanded details about known vulnerabilities for that service.</li>
+            <li>View reputation information for external end-points</li>
+            <li>
+                <p>Configure traffic time frame - Select the desired  to traffic time frame.</p>
+                <p>
+                    <img src="../../Resources/Images/RefreshRate.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Refresh - Click <img src="../../Resources/Images/iconRefresh.png" /> to for a refresh of the Service Graph.</p>
+            </li>
+            <li>
+                <p><a href="../50-Help/GeneralActions.htm">General actions</a>
+                </p>
+            </li>
+        </ul>
+        <h3><a name="SecurityScore"></a><a name="ServiceDetails"></a>
+        </h3>
+        <MadCap:snippetBlock src="../../Resources/Snippets/ServiceDetails - whatIs.flsnp" />
+        <h3>Security Score Details</h3>
+        <p>Clicking on a <MadCap:variable name="Local.TufinScore" /> displays the <a href="VulnerabilityDetails.htm">Vulnerabilities</a> page, which gives a list of vulnerabilities associated with that service.</p><a name="ServiceDetails"></a>
+        <h3>View Reputation Information </h3>
+        <p>Clicking on an external end-point will display an analysis of the site's reputation including information about the domain and a high-level vulnerability summary.</p>
+        <p>The analysis information is provided through a 3rd party called Reposify. If Reposify doesn't have data for the site, you will be automatically redirected to the appropriate page on the Talos reputation website (<a href="http://www.talosintelligence.com/">www.talosintelligence.com</a>).</p>
+        <h3><a name="ConnectionHistory"></a>Traffic Time Frame</h3>
+        <p>The Traffic Time Frame is the length of time that <MadCap:variable name="Local.Product_L" /> considers a connection as active. Connections are displayed in the Service Graph for services that have had active traffic during the time frame selected. If no traffic has originated from or into a service during the time frame selected, that service will not appear in the Service Graph.</p>
+        <p>
+            <img src="../../Resources/Images/RefreshRate.png" class="ThumbnailPopup" />
+        </p>
+        <h2><a name="How"></a>How to Get Here</h2>
+        <p><a href="../50-Help/Navigation.htm">Main Menu</a>  &gt; <span class="ScreenObject">Service Graph</span>. </p>
+    </body>
+</html>

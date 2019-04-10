@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultAliasFile conditions="">
-    <Map Name="Deploy" Link="/Content/TopicsIntro/DeployOrca.htm" />
-    <Map Name="ServiceGraph" Link="/Content/TopicsFeatures/ServiceGraph.htm" />
-    <Map Name="Pods" Link="/Content/TopicsFeatures/Pods.htm" />
-    <Map Name="Services" Link="/Content/TopicsFeatures/Services.htm" />
-    <Map Name="Nodes" Link="/Content/TopicsFeatures/Nodes.htm" />
-    <Map Name="Policy" Link="/Content/TopicsFeatures/Policy.htm" />
-    <Map Name="Settings" Link="/Content/TopicsFeatures/Settings.htm" />
-    <Map Name="UnderstandingOrca" Link="/Content/TopicsIntro/UnderstandingOrca.htm" />
-    <Map Name="Vulnerabilities" Link="/Content/TopicsFeatures/VulnerabilityDetails.htm" />
-    <Map Name="WhatsNew" Link="/Content/TopicsIntro/WhatsNew.htm" />
-    <Map Name="AllowedConnections" Link="/Content/TopicsFeatures/AllowedConnections.htm" />
-    <Map Name="KubernetesNetworkPolicies" Link="/Content/TopicsFeatures/KubernetesNetPolicies.htm" />
-    <Map Name="FirewallTickets" Link="/Content/TopicsFeatures/FirewallTickets.htm" />
+    <Map Name="Deploy" Link="/Content/Topics/30-Getting_Started/DeployOrca.htm" />
+    <Map Name="ServiceGraph" Link="/Content/Topics/40-Working_With/ServiceGraph.htm" />
+    <Map Name="Pods" Link="/Content/Topics/40-Working_With/Pods.htm" />
+    <Map Name="Services" Link="/Content/Topics/40-Working_With/Services.htm" />
+    <Map Name="Nodes" Link="/Content/Topics/40-Working_With/Nodes.htm" />
+    <Map Name="Policy" Link="/Content/Topics/20-Concepts/Policy.htm" />
+    <Map Name="Settings" Link="/Content/Topics/40-Working_With/Settings.htm" />
+    <Map Name="UnderstandingOrca" Link="/Content/Topics/20-Concepts/UnderstandingOrca.htm" />
+    <Map Name="Vulnerabilities" Link="/Content/Topics/40-Working_With/VulnerabilityDetails.htm" />
+    <Map Name="WhatsNew" Link="/Content/Topics/10-Whats_New/WhatsNew.htm" />
+    <Map Name="AllowedConnections" Link="/Content/Topics/40-Working_With/AllowedConnections.htm" />
+    <Map Name="KubernetesNetworkPolicies" Link="/Content/Topics/40-Working_With/KubernetesNetPolicies.htm" />
+    <Map Name="FirewallTickets" Link="/Content/Topics/40-Working_With/FirewallTickets.htm" />
 </CatapultAliasFile>
