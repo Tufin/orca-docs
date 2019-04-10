@@ -5,12 +5,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link href="../Custom/custom-tripane.css" rel="stylesheet" />
-        <script src="../Custom/custom-tripane.js" />
-		<title></title>
+        <script src="../Custom/custom-tripane.js">
+        </script><title></title>
     </head>
     <body>
-		<MadCap:breadcrumbsProxy />
-        <MadCap:topicToolbarProxy />
+        <MadCap:breadcrumbsProxy />
+        <!--<MadCap:topicToolbarProxy /> -->
         <MadCap:bodyProxy />
     </body>
 </html>

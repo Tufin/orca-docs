@@ -535,7 +535,7 @@
   </Strings>
   <Toolbar
     EnableCustomLayout="true"
-    Buttons="Print|RemoveHighlight|Separator|TopicRatings|Separator|EditUserProfile|Filler|PreviousTopic|CurrentTopicIndex|NextTopic|SelectLanguage">
+    Buttons="Print">
     <Script>// On page ready
 $(function() {
   // Add custom stylesheet to skin context
