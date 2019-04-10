@@ -4,8 +4,9 @@
         <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Security Score</h1>
-        <p>The Security Score is an assessment of the vulnerability of a docker image. </p>
+        <h1><MadCap:variable name="local.TufinScore" />
+        </h1>
+        <p>The <MadCap:variable name="local.TufinScore" /> is an assessment of code vulnerability, from A+, the least vulnerable to F, the most vulnerable. It can be based on analysis of code in your repository or on the scanning of a docker image. The <MadCap:variable name="local.TufinScore" /> appears in a number of different place in <MadCap:variable name="local.Product_S" /> including Service Graph and Pods Screen.</p>
         <h2>How is the <MadCap:variable name="local.TufinScore" /> calculated?</h2>
         <ol>
             <li>
@@ -59,7 +60,7 @@
                     <col style="width: 129px;" class="TableStyle-PatternedRows-Column-Regular" />
                     <thead>
                         <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><MadCap:variable name="General.TufinScore" />
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><MadCap:variable name="local.TufinScore" />
                             </th>
                             <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Numerical Values</th>
                         </tr>

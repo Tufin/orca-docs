@@ -4,7 +4,9 @@
     </head>
     <body>
         <h1>Policy</h1>
-        <p>The <MadCap:variable name="Local.Product_S" /> Policy option is split into three distinct functions:</p>
+        <h2>Types of Policy</h2>
+        <p>There are two different kinds of policy in <MadCap:variable name="local.Product_S" /> - the <MadCap:variable name="local.Product_S" /> policy and the Kubernetes policy.</p>
+        <p>The <MadCap:variable name="Local.Product_S"></MadCap:variable> Policy option is split into three distinct functions:</p>
         <ul>
             <li>
                 <p>Building and maintaining the policy - add or remove allowed connections</p>
@@ -23,6 +25,19 @@
         <p>For building and maintaining the policy select <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a></p>
         <p>For viewing the Kubernetes pod permissions select <a href="../40-Working_With/KubernetesNetPolicies.htm">Kubernetes Network Policies</a></p>
         <p>For viewing currently open firewall tickets select <a href="../40-Working_With/FirewallTickets.htm">Firewall Tickets</a></p>
+        <h2>Policy Mode</h2>
+        <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. The  monitoring and visibility capabilities  such as <a href="../40-Working_With/ServiceGraph.htm">Service Graph</a>, <a href="../40-Working_With/Pods.htm">Pods</a>, and <a href="../40-Working_With/Services.htm">Services</a> are always available, and are independent of the mode setting.</p>
+        <ul class="Action">
+            <li>Use <span class="StatusOrValue">Learn</span> to build a <a href="Policy.htm">Policy</a> that is best suited to your application. </li>
+            <li>When you are satisfied that the policy meets your enforcement criteria, switch to <span class="StatusOrValue">Enforce</span> and <MadCap:variable name="local.Product_S" /> will start enforcing your policy. </li>
+        </ul>
+        <p><MadCap:variable name="local.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local.Product_S" /> theme is colored <img src="../../Resources/Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../../Resources/Images/ColorEnforce.png" class="noborder" />.</p>
+        <p>
+            <img src="../../Resources/Images/ScreenEnforce.png" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/ScreenLearn.png" />
+        </p>
         <h2>How do I get here?</h2>
         <p>
             <li>Click <span class="ScreenObject">Policy</span> from the main menu.</li>

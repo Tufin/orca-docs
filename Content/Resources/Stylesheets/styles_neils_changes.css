@@ -1,0 +1,40 @@
+﻿
+BEFORE
+
+span.ScreenObject
+{
+	font-weight: bolder;
+	font-style: normal;
+	color: #32cd32;
+	background-color: #ffffff;
+}
+
+AFTER
+
+span.ScreenObject
+{
+	font-style: normal;
+	font-weight: bolder;
+	color: #333333;
+	background-color: transparent;
+	}
+	
+BEFORE  
+
+span.StatusOrValue
+{
+	font-weight: normal;
+	font-style: normal;
+	background-color: #ffffff;
+	color: #c56d22;
+}
+
+AFTER
+span.StatusOrValue
+{
+	font-style: bolder;
+	font-weight: normal;
+	color: #333333;
+	background-color: #f2f2f2;
+
+}	

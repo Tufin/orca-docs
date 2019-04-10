@@ -487,18 +487,19 @@ span.SpecialBold
 
 span.ScreenObject
 {
-	font-weight: bolder;
 	font-style: normal;
-	color: #32cd32;
-	background-color: #ffffff;
+	font-weight: bolder;
+	color: #333333;
+	background-color: transparent;
 }
 
 span.StatusOrValue
 {
-	font-weight: normal;
 	font-style: normal;
-	background-color: #ffffff;
-	color: #c56d22;
+	font-weight: bolder;
+	color: #333333;
+	background-color: #f2f2f2;
+
 }
 
 span.Superscript { 

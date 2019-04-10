@@ -3,12 +3,14 @@
     <head>
     </head>
     <body>
-        <h1>Understanding <MadCap:variable name="Local.Product_L" /></h1>
-        <h2>How does <MadCap:variable name="Local.Product_L"></MadCap:variable> figure it all out?</h2>
-        <p><MadCap:variable name="Local.Product_L" /> is a cloud-based service, that is integrated with your Kubernetes cluster using a custom pod developed by Tufin called Kite. Kite is responsible for monitoring your Kubernetes cluster for relevant changes, such as adding or deleting services, and for maintaining ongoing communication between your cluster and the <MadCap:variable name="Local.Product_L" /> service. To protect your data during transport over the internet, Kite uses the TLS protocol for all communication between your cluster and our servers.</p>
-        <p>Tufin also developed a custom Kubernetes DNS plugin to identify and control all communication between your services, as well as to external services. The DNS plugin identifies and controls communication that is based on DNS&#160;lookups (for example crm.mycompany.com). Tufin Orca can also monitor and enforce service connectivity using <a href="https://istio.io/about/intro/">Istio.</a> Istio adds support for identification and control of communication through sidecar proxies.</p>
-        <p>Both Kite and the <MadCap:variable name="Local.Product_L" /> DNS plugin must be installed on your Kubernetes cluster. If you have any firewalls between your cluster and the Internet, you will have to allow outbound communication between your cluster and the <MadCap:variable name="Local.Product_L" /> service.</p>
-        <h2>Policy Mode</h2>
-        <MadCap:snippetBlock src="../../Resources/Snippets/WhatsIs_LearningMode.flsnp" />
+        <h1>How Does it Work?</h1>
+        <p><MadCap:variable name="local.Product_S" /> is a cloud-based service. It communicates with your Kubernetes cluster using a pod  called Kite, which must be installed on your cluster. See also <a href="WhatIsOrca.htm">What is Orca</a>.</p>
+        <h2>Kite</h2>
+        <p><MadCap:variable name="local.Product_S" /> Kite is responsible for monitoring your Kubernetes cluster for changes, such as adding or deleting services, and for maintaining ongoing communication between your cluster and the <MadCap:variable name="local.Product_S" /> service. It communicates information to and from the main Orca application on the cloud.</p>
+        <h2>Kubernetes DNS plugin</h2>
+        <p>The <MadCap:variable name="local.Product_S" /> Kubernetes DNS plugin identifies and controls all communication between your services, as well as to external services. It identifies and controls communication based on DNS&#160;lookups (for example crm.mycompany.com).  <MadCap:variable name="local.Product_S" /> can also monitor and enforce service connectivity using <a href="https://istio.io/about/intro/">Istio</a>, which adds support for identification and control of communication through sidecar proxies. The DNS plugin is installed together with Kite.</p>
+        <p>See <a href="../30-Getting_Started/DeployOrca.htm">Installation</a> of Kite and the  DNS plugin on your Kubernetes cluster. </p>
+        <h2>Discovery</h2>
+        <p><MadCap:variable name="local.Product_S" /> identifies network traffic in your cluster and allows you to view the traffic routes discovered. You can add any of these routes as rules to your policy. See <a href="DiscoveryEngine.htm">Discovery Engine</a></p>
     </body>
 </html>
