@@ -8,7 +8,7 @@
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/SideNavNeil.flskn"
   MasterPage="/Content/Resources/MasterPages/MasterPageNeil.flmsp"
-  DefaultUrl="/Content/Topics/10-Whats_New/WhatsNew.htm"
+  DefaultUrl="/Content/Topics/20-Concepts/WhatIsOrca.htm"
   UseDeviceWidth="true">
   <PrintedOutput
     CollapseMargins="true"

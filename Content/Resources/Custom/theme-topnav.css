@@ -33,7 +33,8 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	background-image: url('Images/logoIris.png');
 }
 .theme-iris .search-bar.search-bar-container .search-submit {
-	background-color: #92c6e8;
+/*	background-color: #92c6e8; */
+	background-color: transparent;
 }
 .theme-iris ul.menu._Skins_SideMenu.mc-component {
 	border-top-color: #0d4d7a;
@@ -51,7 +52,8 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	background-image: url('Images/logoTos2.png');
 }
 .theme-tos2 .search-bar.search-bar-container .search-submit {
-	background-color: #CF5300;
+/*	background-color: #CF5300; */
+	background-color: transparent;
 }
 .theme-tos2 ul.menu._Skins_SideMenu.mc-component {
 	border-top-color: #E06100;

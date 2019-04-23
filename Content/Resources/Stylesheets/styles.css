@@ -357,6 +357,11 @@ p.TableBodyText
 		mc-heading-level: 0;
 	}*/
 
+	/* jeff 2019 04 11 - Scale image if bigger than assumed page size */
+	img {
+		max-width: 6.5in;
+	}
+	
 	MadCap|glossaryProxy
 	{
 		border-top: none;
