@@ -26,7 +26,7 @@
         <p>For viewing the Kubernetes pod permissions select <a href="../40-Working_With/KubernetesNetPolicies.htm">Kubernetes Network Policies</a></p>
         <p>For viewing currently open firewall tickets select <a href="../40-Working_With/FirewallTickets.htm">Firewall Tickets</a></p>
         <h2>Policy Mode</h2>
-        <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. The  monitoring and visibility capabilities  such as <a href="../40-Working_With/ServiceGraph.htm">Service Graph</a>, <a href="../40-Working_With/Pods.htm">Pods</a>, and <a href="../40-Working_With/Services.htm">Services</a> are always available, and are independent of the mode setting.</p>
+        <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. The  monitoring and visibility capabilities  such as <a href="../40-Working_With/ServiceGraph.htm">Service Graph</a>, <a href="../40-Working_With/Pods.htm">Pods</a>, and <a href="../40-Working_With/Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="../40-Working_With/Settings.htm">Settings</a>.</p>
         <ul class="Action">
             <li>Use <span class="StatusOrValue">Learn</span> to build a <a href="Policy.htm">Policy</a> that is best suited to your application. </li>
             <li>When you are satisfied that the policy meets your enforcement criteria, switch to <span class="StatusOrValue">Enforce</span> and <MadCap:variable name="local.Product_S" /> will start enforcing your policy. </li>
@@ -38,6 +38,8 @@
         <p>
             <img src="../../Resources/Images/ScreenLearn.png" />
         </p>
+        <h2>Kubernetes Network Policy and Learn Mode</h2>
+        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> creates a Kubernetes network policy rule, which allows all traffic, for each monitored namespace. Any rules created are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. Enabling and disabling this feature is done in <a href="../40-Working_With/Settings.htm">Settings</a>.</p>
         <h2>How do I get here?</h2>
         <p>
             <li>Click <span class="ScreenObject">Policy</span> from the main menu.</li>

@@ -92,8 +92,12 @@
             <img src="../../Resources/Images/ScreenLearn.png" />
         </p>
         <p>Click on the desired mode to switch.</p>
-        <h4>Allowing Kubernetes Network Policies</h4>
-        <p>When <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> automatically creates a Kubernetes network rule that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
+        <h3>Kubernetes Network Policies</h3>
+        <p><MadCap:variable name="local.Product_S" /> can allow all traffic through the Kubernetes network security policy when in <span class="StatusOrValue">Learn</span> mode. This is controlled by the <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch</p>
+        <p>Enable or disable <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch. When set to enabled and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> automatically creates a Kubernetes network rule that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
+        <p>
+            <img src="../../Resources/Images/Screen_Settings_Allow_All_Rule.png" class="ThumbnailPopup" />
+        </p>
         <h3><a name="Slack"></a>Notifications</h3>
         <p> You can send notifications via Slack whenever a new connection is <a href="../20-Concepts/DiscoveryEngine.htm">discovered</a>.  To configure alerts, enter a Slack Incoming Webhook URL and click Save. This can be to an individual or group. See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for more details. This option can be toggled on or off as needed.</p>
         <p>
