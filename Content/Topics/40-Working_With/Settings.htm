@@ -95,12 +95,11 @@
         <h4>Allowing Kubernetes Network Policies</h4>
         <p>When <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> automatically creates a Kubernetes network rule that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
         <h3><a name="Slack"></a>Notifications</h3>
-        <p><MadCap:variable name="local.Product_L" /> lets you send notifications to an individual or group via Slack. To configure alerts, enter a Slack Incoming Webhook URL, and click Save.</p>
+        <p> You can send notifications via Slack whenever a new connection is <a href="../20-Concepts/DiscoveryEngine.htm">discovered</a>.  To configure alerts, enter a Slack Incoming Webhook URL and click Save. This can be to an individual or group. See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for more details. This option can be toggled on or off as needed.</p>
         <p>
             <p>
                 <img src="../../Resources/Images/Settings_Slack.png" />
             </p>
-            <p>See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for additional details.</p>
             <h2><a name="How"></a>How to Get Here</h2>
             <p><a href="../50-Help/Navigation.htm">Main Menu</a>  &gt; <span class="ScreenObject">Settings</span></p>
         </p>
