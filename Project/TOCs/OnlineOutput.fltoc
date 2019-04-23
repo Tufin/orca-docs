@@ -60,6 +60,9 @@
       Link="/Content/Topics/40-Working_With/AboutWorkingwithOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/40-Working_With/Report.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/Topics/40-Working_With/ServiceGraph.htm"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
