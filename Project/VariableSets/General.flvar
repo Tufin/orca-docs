@@ -23,11 +23,11 @@
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-1">R19-1</Variable>
+    EvaluatedDefinition="R20-1">R20-1</Variable>
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-2">R19-2</Variable>
+    EvaluatedDefinition="R19-1">R19-1</Variable>
   <Variable
     Name="CoverPageImage"
     Comment=""
@@ -36,4 +36,104 @@
     Name="CoverPageImage"
     Comment=""
     EvaluatedDefinition="../FrontMatter/Images/product_SecureChange.png">../FrontMatter/Images/product_SecureChange.png</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="" />
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="RC1.1">RC1.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="RC1">RC1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="RC2">RC2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="GA">GA</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="GA.1">GA.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="GA.2">GA.2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF1">HF1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF1.1">HF1.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF1.2">HF1.2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF2">HF2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF2.1">HF2.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF2.2">HF2.2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF3">HF3</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF3.1">HF3.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF3.2">HF3.2</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF4">HF4</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF4.1">HF4.1</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF5">HF5</Variable>
+  <Variable
+    Name="Build"
+    Comment=""
+    EvaluatedDefinition="HF5.1">HF5.1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-2">R19-2</Variable>
+  <Variable
+    Name="ContentType"
+    Comment=""
+    EvaluatedDefinition="Release Notes">Release Notes</Variable>
+  <Variable
+    Name="ContentType"
+    Comment=""
+    EvaluatedDefinition="What's New">What's New</Variable>
+  <Variable
+    Name="ContentType"
+    Comment=""
+    EvaluatedDefinition="Developer's Guide">Developer's Guide</Variable>
+  <Variable
+    Name="ContentType"
+    Comment=""
+    EvaluatedDefinition="Development Lifecycle">Development Lifecycle</Variable>
 </CatapultVariableSet>

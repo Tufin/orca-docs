@@ -20,9 +20,9 @@
     Author="My Name" />
   <PDF
     ShowUsedBookmarks="false"
-    InitialMagnification="50"
-    PageLayout="TwoColumnRight"
-    TitleBar="DocumentTitle"
+    InitialMagnification="Fit"
+    PageLayout="SinglePage"
+    TitleBar="FileName"
     CollapsedBookmarks="true"
     CropAndRegistrationMarks="false"
     ConvertToCMYK="true" />
@@ -32,7 +32,7 @@
     <Variable
       Name="General/CoverPageImage">../FrontMatter/Images/product_SecureTrack.png</Variable>
     <Variable
-      Name="General/Version">R19-2</Variable>
+      Name="General/Version">R19-1</Variable>
     <Variable
       Name="custom/IncludeVersionDropdown">false</Variable>
   </Variables>

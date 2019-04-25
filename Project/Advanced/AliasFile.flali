@@ -9,7 +9,7 @@
     <Map Name="Settings" Link="/Content/Topics/40-Working_With/Settings.htm" />
     <Map Name="UnderstandingOrca" Link="/Content/Topics/20-Concepts/UnderstandingOrca.htm" />
     <Map Name="Vulnerabilities" Link="/Content/Topics/40-Working_With/VulnerabilityDetails.htm" />
-    <Map Name="WhatsNew" Link="/Content/Topics/10-Whats_New/WhatsNew.htm" />
+    <Map Name="WhatsNew" Link="/Content/Topics/10-What_is_Orca/WhatsNew.htm" />
     <Map Name="AllowedConnections" Link="/Content/Topics/40-Working_With/AllowedConnections.htm" />
     <Map Name="KubernetesNetworkPolicies" Link="/Content/Topics/40-Working_With/KubernetesNetPolicies.htm" />
     <Map Name="FirewallTickets" Link="/Content/Topics/40-Working_With/FirewallTickets.htm" />

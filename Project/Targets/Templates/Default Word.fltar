@@ -33,6 +33,6 @@
     <Variable
       Name="General/CoverPageImage">../FrontMatter/Images/product_SecureChange.png</Variable>
     <Variable
-      Name="General/Version">R19-1</Variable>
+      Name="General/Version">R20-1</Variable>
   </Variables>
 </CatapultTarget>
