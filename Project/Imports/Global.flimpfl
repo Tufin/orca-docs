@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="true"
-  LastImport="2019-04-25T11:15:52.5513228+03:00">
+  LastImport="2019-04-28T09:52:23.1390408+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -190,9 +190,6 @@
       Source="../../../Global/Content/Resources/TopicTemplates/UL_Contents.flsnp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/UL_Contents.flsnp" />
     <Url
-      Source="../../../Global/Content/Duplicated_from_template.htm"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Duplicated_from_template.htm" />
-    <Url
       Source="../../../Global/Content/Resources/TopicTemplates/Back_to_Top.flsnp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Back_to_Top.flsnp" />
   </CollectedSourceFiles>
@@ -366,9 +363,6 @@
     <Url
       Source="../../Content/Resources/TopicTemplates/UL_Contents.flsnp"
       TimeStamp="22-Apr-19 10:37:04 AM" />
-    <Url
-      Source="../../Content/Duplicated_from_template.htm"
-      TimeStamp="24-Apr-19 16:13:34 PM" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Back_to_Top.flsnp"
       TimeStamp="24-Apr-19 15:30:00 PM" />

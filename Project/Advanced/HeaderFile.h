@@ -15,3 +15,4 @@
 #define AllowedConnections 1010
 #define KubernetesNetworkPolicies 1011
 #define FirewallTickets 1012
+#define OverlyPermissiveRpt 1013
