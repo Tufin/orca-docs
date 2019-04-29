@@ -4,12 +4,14 @@
     </head>
     <body>
         <h1>Discovery Engine</h1>
-        <p>The <MadCap:variable name="Local.Product_L" /> discovery engine is a continually running process that constantly monitors traffic to and from  the services used by your application. Any traffic found that is not already listed as an allowed connection in your policy is added to the New Connections Window and the number of new connections displayed on the screen is updated. Any connections discovered which are not listed as allowed connections in your <MadCap:variable name="local.Product_S" /> policy will be considered new connections. </p>
-        <p>You can view the <span class="ScreenObject">New Connections Window</span> by clicking <span class="ScreenObject">New Connections</span> at the top of the screen. See also <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a>.</p>
+        <p>The <MadCap:variable name="local.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
+        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local.Product_S" /> policy or as a new connection in the New Connections Window is automatically logged to the New Connections Window, where it will remain  for up to one hour. Only one entry of traffic discovered between the same two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour.</p>
         <p>
             <img src="../../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
         </p>
-        <p>The Discovery Engine is always active, and runs independently of the Policy Mode. New connections can be converted to allowed connections.</p>
+        <p>The number of connections in the New Connections Window is displayed at the top of the screen . </p>
+        <h2>From New Connections to Allowed Connections</h2>
+        <p>New connections logged in the New Connections Window can be viewed and optionally converted to allowed connections in a mouse click - see <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a>. </p>
         <h2>Notifications</h2>
         <p>A notification can be sent whenever a new connection is discovered. See <a href="../40-Working_With/Settings.htm">Settings</a>.</p>
         <p>See <a href="../40-Working_With/WorkingWithDiscovery.htm">Working With Discovery</a></p>

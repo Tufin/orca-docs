@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="true"
-  LastImport="2019-04-28T09:52:23.1390408+03:00">
+  LastImport="2019-04-29T10:54:45.6456694+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -181,17 +181,26 @@
       Source="../../../Global/Content/Resources/TopicTemplates/H2_Get_Here.flsnp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/H2_Get_Here.flsnp" />
     <Url
-      Source="../../../Global/Content/Resources/TopicTemplates/H2_Overview.flsnp"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/H2_Overview.flsnp" />
-    <Url
-      Source="../../../Global/Content/Resources/TopicTemplates/Template_Working_With_1.htm"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Template_Working_With_1.htm" />
-    <Url
-      Source="../../../Global/Content/Resources/TopicTemplates/UL_Contents.flsnp"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/UL_Contents.flsnp" />
-    <Url
       Source="../../../Global/Content/Resources/TopicTemplates/Back_to_Top.flsnp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Back_to_Top.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Template_WorkingWith.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Template_WorkingWith.htm" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Collateral/BackToTop.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Collateral/H2_Actions.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Collateral/H2_GetHere.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Collateral/H2_Overview.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
   </CollectedSourceFiles>
   <SkippedSourceFiles />
   <GeneratedFiles>
@@ -355,16 +364,25 @@
       Source="../../Content/Resources/TopicTemplates/H2_Get_Here.flsnp"
       TimeStamp="22-Apr-19 10:36:37 AM" />
     <Url
-      Source="../../Content/Resources/TopicTemplates/H2_Overview.flsnp"
-      TimeStamp="22-Apr-19 10:00:39 AM" />
-    <Url
-      Source="../../Content/Resources/TopicTemplates/Template_Working_With_1.htm"
-      TimeStamp="22-Apr-19 16:45:08 PM" />
-    <Url
-      Source="../../Content/Resources/TopicTemplates/UL_Contents.flsnp"
-      TimeStamp="22-Apr-19 10:37:04 AM" />
-    <Url
       Source="../../Content/Resources/TopicTemplates/Back_to_Top.flsnp"
       TimeStamp="24-Apr-19 15:30:00 PM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Template_WorkingWith.htm"
+      TimeStamp="29-Apr-19 10:46:58 AM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Collateral/BackToTop.flsnp"
+      TimeStamp="24-Apr-19 15:30:00 PM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Collateral/H2_Actions.flsnp"
+      TimeStamp="22-Apr-19 10:29:05 AM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Collateral/H2_GetHere.flsnp"
+      TimeStamp="22-Apr-19 10:36:37 AM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Collateral/H2_Overview.flsnp"
+      TimeStamp="22-Apr-19 10:00:39 AM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
+      TimeStamp="22-Apr-19 10:37:04 AM" />
   </GeneratedFiles>
 </CatapultProject>
