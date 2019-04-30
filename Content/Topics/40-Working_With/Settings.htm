@@ -13,7 +13,7 @@
         <h2><a name="What"></a>Actions Available on this Screen</h2>
         <ul class="Action">
             <li>Manage API tokens</li>
-            <li>Get the deployment string needed to deploy the <MadCap:variable name="local.Product_S" /> agent (Kite)</li>
+            <li>Get the deployment string needed to deploy the <MadCap:variable name="local.Kite" /></li>
             <li>Switch between policy modes <span class="state">Learn</span> and <span class="state">Enforce</span></li>
             <li>Set up notifications </li>
             <li><a href="GeneralActions.htm">General actions</a>
@@ -33,7 +33,7 @@
                 <p>Click on the Scope line to display the available scopes and select the scope most appropriate for your requirement.</p>
                 <ul>
                     <li><span class="StatusOrValue">View</span> for <MadCap:variable name="local.TufinScore" /> badge (in repositories such as GitHub)</li>
-                    <li><span class="StatusOrValue">Agent</span> - for the Kite pod </li>
+                    <li><span class="StatusOrValue">Agent</span> - for the Orca Agent pod </li>
                     <li><span class="StatusOrValue">All</span> - for image scanning in build servers such as Jenkins</li>
                 </ul>
             </li>
@@ -70,11 +70,11 @@
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">kite</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">authentication token use by the kite pod</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">authentication token use by the <MadCap:variable name="local.Kite" /> pod</td>
                 </tr>
             </tbody>
         </table>
-        <h3><MadCap:variable name="local.Product_S" /> Agent (Kite) Command Line</h3>
+        <h3> Installation Command Line</h3>
         <p>You can view the command line string needed for deploying <MadCap:variable name="local.Product_S" /> on your cluster by clicking <span class="ScreenObject"><img src="../../Resources/Images/IconCode.png" style="width: 2%; height: 2%;" class="noborder" /></span> or <span class="Bold">Copy command line</span>. Once displayed, you can copy to clipboard by clicking the button that appears in the window. Click OK to close the window.</p>
         <p>
             <img src="../../Resources/Images/InstallAgentString.png" class="ThumbnailPopup" />

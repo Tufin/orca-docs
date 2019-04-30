@@ -29,7 +29,7 @@
 </pre>
                 </li>
                 <li>
-                    <p>Edit Kite deployment as follows:</p>
+                    <p>Edit the deployment script as follows:</p>
                     <p>Amend the secret under volumes</p><pre xml:space="preserve">volumes:
 - name: reg
   secret:
@@ -41,7 +41,7 @@
 </pre>
                 </li>
                 <li>
-                    <p>Save the updated kite deployment.</p>
+                    <p>Save the updated deployment script.</p>
                 </li>
             </ol>
         </div>

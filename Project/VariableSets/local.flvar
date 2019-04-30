@@ -73,4 +73,8 @@
     Name="version2test"
     Comment=""
     EvaluatedDefinition="R18-2">R18-2</Variable>
+  <Variable
+    Name="Kite"
+    Comment=""
+    EvaluatedDefinition="Orca agent">Orca agent</Variable>
 </CatapultVariableSet>
