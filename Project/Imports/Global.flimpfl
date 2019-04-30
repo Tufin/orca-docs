@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="true"
-  LastImport="2019-04-29T10:54:45.6456694+03:00">
+  LastImport="2019-04-30T11:47:59.1069174+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -33,15 +33,6 @@
     <Url
       Source="../../../Global/Content/Resources/TableStyles/PatternedRows.css"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/PatternedRows.css" />
-    <Url
-      Source="../../../Global/Content/Resources/TableStyles/Simple.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/Simple.css" />
-    <Url
-      Source="../../../Global/Content/Resources/TableStyles/SimpleWithPadding.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/SimpleWithPadding.css" />
-    <Url
-      Source="../../../Global/Content/Resources/TableStyles/Standard.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/Standard.css" />
     <Url
       Source="../../../Global/Project/ConditionTagSets/General.flcts"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/ConditionTagSets/General.flcts" />
@@ -96,9 +87,6 @@
     <Url
       Source="../../../Global/Content/Resources/Custom/Images/logoTos2.png"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoTos2.png" />
-    <Url
-      Source="../../../Global/Content/Resources/TableStyles/PatternedRows_Indent1.css"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TableStyles/PatternedRows_Indent1.css" />
     <Url
       Source="../../../Global/Project/Advanced/English (United States) Dictionary.mcdic"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Advanced/English (United States) Dictionary.mcdic" />
@@ -217,15 +205,6 @@
       Source="../../Content/Resources/TableStyles/PatternedRows.css"
       TimeStamp="16-Oct-18 13:48:36 PM" />
     <Url
-      Source="../../Content/Resources/TableStyles/Simple.css"
-      TimeStamp="20-Jun-18 9:33:02 AM" />
-    <Url
-      Source="../../Content/Resources/TableStyles/SimpleWithPadding.css"
-      TimeStamp="20-Jun-18 9:33:02 AM" />
-    <Url
-      Source="../../Content/Resources/TableStyles/Standard.css"
-      TimeStamp="20-Jun-18 9:33:02 AM" />
-    <Url
       Source="../ConditionTagSets/General.flcts"
       TimeStamp="20-Jun-18 9:27:48 AM" />
     <Url
@@ -279,9 +258,6 @@
     <Url
       Source="../../Content/Resources/Custom/Images/logoTos2.png"
       TimeStamp="11-Nov-18 23:32:49 PM" />
-    <Url
-      Source="../../Content/Resources/TableStyles/PatternedRows_Indent1.css"
-      TimeStamp="25-Feb-19 9:06:50 AM" />
     <Url
       Source="../Advanced/English (United States) Dictionary.mcdic"
       TimeStamp="25-Feb-19 9:06:50 AM" />

@@ -65,4 +65,12 @@
     Name="SecureTrack"
     Comment=""
     EvaluatedDefinition="Tufin SecureTrack">Tufin SecureTrack</Variable>
+  <Variable
+    Name="version1test"
+    Comment=""
+    EvaluatedDefinition="R18-3">R18-3</Variable>
+  <Variable
+    Name="version2test"
+    Comment=""
+    EvaluatedDefinition="R18-2">R18-2</Variable>
 </CatapultVariableSet>
