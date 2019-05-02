@@ -9,7 +9,8 @@
   Skin="/Project/Skins/SideNavNeil.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   DefaultUrl="/Content/Topics/10-What_is_Orca/WhatIsOrca.htm"
-  UseDeviceWidth="true">
+  UseDeviceWidth="true"
+  ExcludeUnreferencedContent="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
