@@ -12,8 +12,8 @@
   IncludeLinkedFiles="false"
   DeleteStale="true"
   DeleteUnreferenced="false"
-  AutoSync="true"
-  LastImport="2019-04-30T11:47:59.1069174+03:00">
+  AutoSync="false"
+  LastImport="2019-05-01T15:42:56.9453824+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -189,8 +189,39 @@
     <Url
       Source="../../../Global/Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/custom-sidenav.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-sidenav.css" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/custom-sidenav.js"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-sidenav.js" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/theme-sidenav.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/theme-sidenav.css" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerIris_105px.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerIris_105px.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerOrca_105px.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerOrca_105px.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerOrca_84px.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerOrca_84px.jpg" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/headerTos2_105px.jpg"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/headerTos2_105px.jpg" />
+    <Url
+      Source="../../../Global/Project/Targets/Templates/Default SideNav.fltar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Targets/Templates/Default SideNav.fltar" />
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/Content-SideNav.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-SideNav.flmsp" />
   </CollectedSourceFiles>
-  <SkippedSourceFiles />
+  <SkippedSourceFiles>
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/Content-SideNav.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-SideNav.flmsp" />
+  </SkippedSourceFiles>
   <GeneratedFiles>
     <Url
       Source="../../Content/Resources/PageLayouts/Chapters.flpgl"
@@ -360,5 +391,32 @@
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
       TimeStamp="22-Apr-19 10:37:04 AM" />
+    <Url
+      Source="../../Content/Resources/Custom/custom-sidenav.css"
+      TimeStamp="01-May-19 14:51:52 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/custom-sidenav.js"
+      TimeStamp="08-Apr-19 15:32:21 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/theme-sidenav.css"
+      TimeStamp="01-May-19 14:51:47 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerIris_105px.jpg"
+      TimeStamp="28-Apr-19 16:14:07 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerOrca_105px.jpg"
+      TimeStamp="28-Apr-19 16:13:53 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerOrca_84px.jpg"
+      TimeStamp="28-Feb-19 8:24:04 AM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/headerTos2_105px.jpg"
+      TimeStamp="28-Apr-19 16:14:22 PM" />
+    <Url
+      Source="../Targets/Templates/Default SideNav.fltar"
+      TimeStamp="01-May-19 15:18:31 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Content-SideNav.flmsp"
+      TimeStamp="01-May-19 15:11:28 PM" />
   </GeneratedFiles>
 </CatapultProject>

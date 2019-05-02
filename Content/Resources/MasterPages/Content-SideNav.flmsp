@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <link href="../Custom/custom-topnav.css" rel="stylesheet" />
-        <script src="../Custom/custom-topnav.js">
+        <link href="../Custom/custom-sidenav.css" rel="stylesheet" />
+        <script src="../Custom/custom-sidenav.js">
         </script><title></title>
     </head>
     <body>
