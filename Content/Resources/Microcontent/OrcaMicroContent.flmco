@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MicroContentSet Comment="Default micro content set.">
+    <MicroContent>
+        <MicroContentPhrase>What is immutable policy?</MicroContentPhrase>
+        <MicroContentPhrase>What is meant by immutable</MicroContentPhrase>
+        <MicroContentPhrase>What is an immutable policy</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:body>
+                    <xhtml:h1>Immutable Policy </xhtml:h1>
+                    <xhtml:p>Automated application of your defined policy on newly-built container objects as part of your CI/CD pipeline. </xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+    <MicroContent>
+        <MicroContentPhrase>What is the discovery engine?</MicroContentPhrase>
+        <MicroContentPhrase>discovery engine</MicroContentPhrase>
+        <MicroContentPhrase>discovery</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:body>
+                    <xhtml:h1>Discovery Engine</xhtml:h1>
+                    <xhtml:p>Discovery Engine is the function of <MadCap:variable xhtml:name="local.Product_S" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> that identifies traffic in the cluster. For more information see <xhtml:a xhtml:href="../../Topics/20-Concepts/DiscoveryEngine.htm">Discovery Engine</xhtml:a>. </xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+</MicroContentSet>

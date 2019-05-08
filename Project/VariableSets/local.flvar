@@ -32,7 +32,7 @@
   <Variable
     Name="AKS"
     Comment="Azure Kubernetes service"
-    EvaluatedDefinition="AKS">AKS</Variable>
+    EvaluatedDefinition="Microsoft AKS">Microsoft AKS</Variable>
   <Variable
     Name="Copy of CompanyName"
     Comment=""
@@ -44,15 +44,15 @@
   <Variable
     Name="EKS"
     Comment="amazon elastic kubernetes service"
-    EvaluatedDefinition="EKS">EKS</Variable>
+    EvaluatedDefinition="Amazon EKS">Amazon EKS</Variable>
   <Variable
     Name="GKE"
     Comment="google kubertetes engine"
-    EvaluatedDefinition="GKE">GKE</Variable>
+    EvaluatedDefinition="Google GKE">Google GKE</Variable>
   <Variable
     Name="Openshift"
     Comment=""
-    EvaluatedDefinition="Openshift">Openshift</Variable>
+    EvaluatedDefinition="RedHat Openshift">RedHat Openshift</Variable>
   <Variable
     Name="SC"
     Comment=""

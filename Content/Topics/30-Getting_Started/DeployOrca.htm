@@ -10,15 +10,18 @@
     </head>
     <body>
         <h1>Deploying <MadCap:variable name="Local.Product_L" /></h1>
-        <p>This procedure is meant for deploying your <b>first </b><MadCap:variable name="Local.Product_S" /> project.  You will need the <a href="SignUp.htm">Sign Up</a> email sent to you previously. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
-        <h2>Deploy  Orca on the Kubernetes Cluster</h2>
+        <p>This procedure is meant for deploying <MadCap:variable name="Local.Product_S" /> on your <b>first </b>cluster.  You will need the <a href="SignUp.htm">Sign Up</a> email sent to you previously. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
+        <h2><a name="Deploy"></a>On <MadCap:variable name="local.GKE" />, <MadCap:variable name="local.AKS" />, <MadCap:variable name="local.EKS" /> and <MadCap:variable name="local.Docker" /> Clusters</h2>
         <ol>
             <li>Open a terminal and point kubectl to your Kubernetes cluster </li>
             <li>
                 <p>Run the bash command string as cluster admin from your <a href="SignUp.htm">Sign Up</a> email; this string has been created specifically for the project you specified when signing up.</p>
             </li>
         </ol>
-        <p>Your cluster has now been added to <MadCap:variable name="Local.Product_S" />. Now you can continue with <a href="CheckItsWorking.htm">Check It's Working</a>.</p>
+        <h2>On <MadCap:variable name="local.Openshift" /> Clusters</h2>
+        <p>Use the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described for <MadCap:variable name="local.GKE" />, <MadCap:variable name="local.AKS" />, <MadCap:variable name="local.EKS" />  and <MadCap:variable name="local.Docker" /></p>
+        <h2>Now What?</h2>
+        <p>Your cluster is now being monitored by <MadCap:variable name="Local.Product_S" />. Continue with <a href="CheckItsWorking.htm">Check It's Working</a>.</p>
         <h2><a name="Deployme"></a>Deployment Requirements</h2>
         <h3>Supported Kubernetes Versions
 </h3>
@@ -28,7 +31,7 @@
 </p>
             </li>
             <li>
-                <p>Google GKE, Microsoft AKS, Amazon EKS, OpenShift and Docker EE are fully supported.
+                <p><MadCap:variable name="local.GKE" />, <MadCap:variable name="local.AKS" />, <MadCap:variable name="local.EKS" />, <MadCap:variable name="local.Openshift" /> and <MadCap:variable name="local.Docker" /> are fully supported.
 </p>
             </li>
             <li>
@@ -108,7 +111,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             <p>Deployment makes changes to your Kubernetes cluster:</p>
             <ol>
                 <li>Creates a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</li>
-                <li>Changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53.</li>
+                <li>Changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local.Openshift" />). </li>
                 <li>Adds a CRD for <MadCap:variable name="local.Product_S" /> policies.</li>
             </ol>
         </div>

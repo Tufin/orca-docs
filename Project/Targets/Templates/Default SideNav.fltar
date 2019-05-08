@@ -6,7 +6,7 @@
   Destinations=""
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
-  Skin="/Project/Skins/HTML5 TopNav.flskn"
+  Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   UseDeviceWidth="true"
   ResolveCssVariables="false">
