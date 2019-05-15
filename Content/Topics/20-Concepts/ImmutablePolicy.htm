@@ -4,16 +4,23 @@
     </head>
     <body>
         <h1>Immutable Policy</h1>
-        <p><MadCap:variable name="local.Product_S" /> provides you with a way to implement your security policy automatically and the Base mechanism employed for this is the creation of an immutable security policy. Immutable means fixed and unchangeable. That doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your security policy, you introduce a new improved one then dispose of the old one.</p>
+        <p><MadCap:variable name="local.Product_S" /> provides you with a way to implement your security policy automatically and the base mechanism employed for this is the creation of an immutable security policy. Immutable means fixed and unchangeable. That doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your security policy, you introduce a new improved one then dispose of the old one, ideally keeping a copy in history for future reference.</p>
         <h2>Advantages of an Immutable Security Policy</h2>
-        <p>&#160;</p>
-        <h2>Immutable Security Policy Workflow</h2>
+        <ol>
+            <li>Can be partially automated (partially and not fully because newly discovered vulnerabilities will still require some degree of integration into the process)</li>
+            <li>Can be created automatically based on results of your predefined test cases that serve both as QA and also as the blueprint for the next immutable policy to be deployed</li>
+            <li>Security policy can be integrated into the CI/CD pipeline, making secops part of devops</li>
+            <li>Facilitates version control for security policy. Copies of decomissioned policies can be kept for comparison.</li>
+        </ol>
+        <h2>Related Concepts</h2>
         <p>This basic concept of immutability, replacement and disposal is central to automating a security policy but there are other related processes that need to be employed for the desired result to be achieved. </p>
         <ol>
             <li>
+                <p>Infrastructure as code</p>
                 <p>&#160;</p>
             </li>
         </ol>
+        <h2>Immutable Security Policy Workflow</h2>
         <p>Production-Like Environment</p>
         <p>You will need an environment </p>
         <p>Reset Policy</p>
