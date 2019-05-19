@@ -6,11 +6,12 @@
   Destinations=""
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
-  Skin="/Project/Skins/SideNavNeil.flskn"
+  Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   DefaultUrl="/Content/Topics/10-What_is_Orca/WhatIsOrca.htm"
   UseDeviceWidth="true"
-  ExcludeUnreferencedContent="true">
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

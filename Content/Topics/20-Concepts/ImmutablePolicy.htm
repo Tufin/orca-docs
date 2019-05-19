@@ -4,41 +4,74 @@
     </head>
     <body>
         <h1>Immutable Policy</h1>
-        <p><MadCap:variable name="local.Product_S" /> provides you with a way to implement your security policy automatically and the base mechanism employed for this is the creation of an immutable security policy. Immutable means fixed and unchangeable. That doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your security policy, you introduce a new improved one then dispose of the old one, ideally keeping a copy in history for future reference.</p>
-        <h2>Advantages of an Immutable Security Policy</h2>
+        <p><a href="#Advantages">Advantages</a>
+        </p>
+        <p><a href="#Related Concepts">Related Concepts</a>
+        </p>
+        <p>&#160;</p>
+        <p><MadCap:variable name="local.Product_S" /> provides you with a way to implement your security policy automatically using a mechanism called immutable security policy. Immutable means fixed and unchangeable; that doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your existing security policy, you replace it with a new one. </p>
+        <p>You introduce a new improved policy then dispose of the old one, keeping a copy in history for future reference.</p>
+        <h2><a name="Advantages"></a>Advantages of an Immutable Security Policy</h2>
+        <p>Allows you to better control your security policy by reducing configuration errors, speeding up deployment of that policy, viewing previous configurations and allowing rollback to them. All this is facilitated by the following characteristics:</p>
         <ol>
-            <li>Can be partially automated (partially and not fully because newly discovered vulnerabilities will still require some degree of integration into the process)</li>
-            <li>Can be created automatically based on results of your predefined test cases that serve both as QA and also as the blueprint for the next immutable policy to be deployed</li>
-            <li>Security policy can be integrated into the CI/CD pipeline, making secops part of devops</li>
-            <li>Facilitates version control for security policy. Copies of decomissioned policies can be kept for comparison.</li>
+            <li>Can be created automatically based on  traffic discovered in the cluster.</li>
+            <li>Can be recreated automatically at any time based on results of your predefined test cases that serve both your QA and also as the blueprint for the next immutable policy to be deployed.</li>
+            <li>Security policy can be integrated into the CI/CD pipeline, making secops part of devops. </li>
+            <li>Provides version control for security policy. Copies of decomissioned policies can be kept for comparison and rollback.</li>
+            <li>By building a new policy each time from scratch, based only on desired traffic, old and forgotten rules that might constitute a risk today are eliminated.</li>
         </ol>
-        <h2>Related Concepts</h2>
-        <p>This basic concept of immutability, replacement and disposal is central to automating a security policy but there are other related processes that need to be employed for the desired result to be achieved. </p>
+        <h2><a name="Related Concepts"></a>Related Concepts</h2>
+        <p>This basic concept of immutability, replacement and disposal is central to automating a security policy but there are other related processes that should be understood.</p>
         <ol>
             <li>
-                <p>Infrastructure as code</p>
-                <p>&#160;</p>
+                <p>Infrastructure as code (IaC)</p>
+                <p>Despite its name, the infrastructure itself doesn't really reside in code, but rather what is needed to build the infrastructure as part of an automated process. The code may be in the form of scripts, definitions, markup language, data serialization language and other means in a repository where it can used in an automated build process. Code that defines your security policy can be kept in your application source code repository and deployed along with the application.</p>
+            </li>
+            <li>
+                <p>Immutable infrastructure</p>
+                <ul>
+                    <li>Entire servers are replaced rather than modified</li>
+                    <li>git - entire libraries of source files are replaced rather than modified</li>
+                </ul>
+            </li>
+            <li>
+                <p>Discovery</p>
+                <p> Orca discovers all traffic in the cluster, therefore in a controlled environment you can run your application so it generates traffic that would be desired  in the production environment. This can then become the basis of the new policy rules. By re-running following changes to the application, you will ensure your policy is always optimized for security and connectivity</p>
             </li>
         </ol>
-        <h2>Immutable Security Policy Workflow</h2>
-        <p>Production-Like Environment</p>
-        <p>You will need an environment </p>
-        <p>Reset Policy</p>
-        <p>Policy as Code</p>
-        <p>Developer:</p>
-        <p>1.	Develop</p>
-        <p>2.	Commit code</p>
-        <p>Build System:</p>
-        <p>3.	Check out code</p>
-        <p>4.	Build</p>
-        <p>5.	Reset policy</p>
-        <p>6.	Run tests: unit, integration, system...</p>
-        <p>7.	Fetch auto-generated Policy</p>
-        <p>8.	Commit auto-generated policy to github as YAML</p>
-        <p>9.	Check policy for compliance</p>
-        <p>10.	Deploy the app and the auto-generated policy to a run-time environment (staging or production)</p>
-        <p>&#160;</p>
-        <p>But there is in fact much more to it than that</p>
-        <p>it and replace it The idea is that instead of modifying the existing While at first sight this may appear to conflict with the reality of a fast-changing threat landscape that requires equally rapid changes to security rules, </p>
+        <h2><a name="CI/CD Implementation"></a>Implementation (manually or built into the CI/CD Pipeline)</h2>
+        <p>Integrate the immutable security policy concept into the CI/CD pipleline and get a greater degree of automation than with manual implementation. Just integrate some simple scripts into the pipleline.</p>
+        <h3>Development and QA</h3>
+        <ul>
+            <li>Develop and commit code as usual</li>
+            <li>Devise tests to generate all desired traffic paths in your application</li>
+        </ul>
+        <h3>Build System:</h3>
+        <ol>
+            <li>
+                <p>Check out your code</p>
+            </li>
+            <li>
+                <p>Build your code</p>
+            </li>
+            <li>
+                <p>Reset policy using provided <MadCap:variable name="local.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Run tests: unit, integration, system...</p>
+            </li>
+            <li>
+                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Check policy for compliance</p>
+            </li>
+            <li>
+                <p>Deploy your app and the auto-generated policy to your run-time environment (staging or production)</p>
+            </li>
+        </ol>
     </body>
 </html>
