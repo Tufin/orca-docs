@@ -4,11 +4,15 @@
     </head>
     <body>
         <h1>Immutable Policy</h1>
+        <p><a href="#overview">Overview</a>
+        </p>
         <p><a href="#Advantages">Advantages</a>
         </p>
         <p><a href="#Related Concepts">Related Concepts</a>
         </p>
-        <p>&#160;</p>
+        <p><a href="#CI/CD Implementation">Implementation</a>
+        </p>
+        <h2><a name="overview"></a>Overview</h2>
         <p><MadCap:variable name="local.Product_S" /> provides you with a way to implement your security policy automatically using a mechanism called immutable security policy. Immutable means fixed and unchangeable; that doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your existing security policy, you replace it with a new one. </p>
         <p>You introduce a new improved policy then dispose of the old one, keeping a copy in history for future reference.</p>
         <h2><a name="Advantages"></a>Advantages of an Immutable Security Policy</h2>
@@ -39,39 +43,7 @@
                 <p> Orca discovers all traffic in the cluster, therefore in a controlled environment you can run your application so it generates traffic that would be desired  in the production environment. This can then become the basis of the new policy rules. By re-running following changes to the application, you will ensure your policy is always optimized for security and connectivity</p>
             </li>
         </ol>
-        <h2><a name="CI/CD Implementation"></a>Implementation (manually or built into the CI/CD Pipeline)</h2>
-        <p>Integrate the immutable security policy concept into the CI/CD pipleline and get a greater degree of automation than with manual implementation. Just integrate some simple scripts into the pipleline.</p>
-        <h3>Development and QA</h3>
-        <ul>
-            <li>Develop and commit code as usual</li>
-            <li>Devise tests to generate all desired traffic paths in your application</li>
-        </ul>
-        <h3>Build System:</h3>
-        <ol>
-            <li>
-                <p>Check out your code</p>
-            </li>
-            <li>
-                <p>Build your code</p>
-            </li>
-            <li>
-                <p>Reset policy using provided <MadCap:variable name="local.Product_S" /> script</p>
-            </li>
-            <li>
-                <p>Run tests: unit, integration, system...</p>
-            </li>
-            <li>
-                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local.Product_S" /> script</p>
-            </li>
-            <li>
-                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local.Product_S" /> script</p>
-            </li>
-            <li>
-                <p>Check policy for compliance</p>
-            </li>
-            <li>
-                <p>Deploy your app and the auto-generated policy to your run-time environment (staging or production)</p>
-            </li>
-        </ol>
+        <h2><a name="CI/CD Implementation"></a>Implementation</h2>
+        <p>See <a href="../40-Working_With/WorkingWithImmutable.htm">Working With Immutable Policies</a></p>
     </body>
 </html>
