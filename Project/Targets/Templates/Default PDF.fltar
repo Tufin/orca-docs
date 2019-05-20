@@ -7,7 +7,8 @@
   GlossaryTermConversion="marked"
   ConditionTagExpression="include[General.PDF]exclude[General.Online]"
   PatchHeadingLevels="true"
-  InjectEmptyPages="true">
+  InjectEmptyPages="true"
+  InjectBookHeadings="true">
   <PrintedOutput
     CollapseMargins="true"
     ExpandingTextConversion="expand"
@@ -32,7 +33,7 @@
     <Variable
       Name="General/CoverPageImage">../FrontMatter/Images/product_SecureTrack.png</Variable>
     <Variable
-      Name="General/Version">R19-1</Variable>
+      Name="General/Version">R19-3</Variable>
     <Variable
       Name="custom/IncludeVersionDropdown">false</Variable>
   </Variables>

@@ -8,7 +8,8 @@
   MasterToc="/Project/TOCs/local-sample.fltoc"
   ConditionTagExpression="include[General.PDF]exclude[General.Online]"
   PatchHeadingLevels="true"
-  InjectEmptyPages="true">
+  InjectEmptyPages="true"
+  InjectBookHeadings="true">
   <PrintedOutput
     CollapseMargins="true"
     ExpandingTextConversion="expand"

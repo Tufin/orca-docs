@@ -15,7 +15,8 @@
   UseBrowserDefaultSize="True"
   UseDefaultBrowserSetup="True"
   EnableResponsiveOutput="true"
-  AutoSyncTOC="true">
+  AutoSyncTOC="true"
+  Title="[%=custom.HeaderCaption%]">
   <Stylesheet>
     <Resources>
       <Resource
@@ -564,7 +565,19 @@ function addVersionDropdown() {
       .append($version[0])
       .insertAfter('.search-bar');
   });
-}</Script>
+}
+
+//add Caption (from General Tab in skin) to header (jhk 2019-05-12)
+//based on https://ukauthor.wordpress.com/2014/08/08/customising-the-flare-html5-skin/
+$(document).ready(function(){
+	$("#header&gt;a").after('&lt;div id="header-title"&gt;&lt;/div&gt;');
+	$("#header-title").text(document.title);
+});
+
+$(document).ready(function(){
+	$("#responsiveHeader&gt;a").after('&lt;div id="responsive-header-title"&gt;&lt;/div&gt;');
+	$("#responsive-header-title").text(document.title);
+});</Script>
   </Toolbar>
   <WebHelpOptions />
 </CatapultSkin>

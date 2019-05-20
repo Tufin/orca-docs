@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2019-05-05T15:33:08.6642765+03:00">
+  LastImport="2019-05-20T13:02:52.7626126+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -217,8 +217,8 @@
       Source="../../../Global/Content/Resources/MasterPages/Content-SideNav.flmsp"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-SideNav.flmsp" />
     <Url
-      Source="../../../Global/Project/Skins/OLD HTML5 SideNav.flskn"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/OLD HTML5 SideNav.flskn" />
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_TufinOrchestrationSuite.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_TufinOrchestrationSuite.png" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -422,7 +422,7 @@
       Source="../../Content/Resources/MasterPages/Content-SideNav.flmsp"
       TimeStamp="01-May-19 15:11:28 PM" />
     <Url
-      Source="../Skins/OLD HTML5 SideNav.flskn"
-      TimeStamp="05-May-19 15:05:41 PM" />
+      Source="../../Content/Resources/FrontMatter/Images/product_TufinOrchestrationSuite.png"
+      TimeStamp="19-May-19 14:11:08 PM" />
   </GeneratedFiles>
 </CatapultProject>

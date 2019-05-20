@@ -27,7 +27,7 @@
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-1">R19-1</Variable>
+    EvaluatedDefinition="R19-3">R19-3</Variable>
   <Variable
     Name="CoverPageImage"
     Comment=""
@@ -136,4 +136,36 @@
     Name="ContentType"
     Comment=""
     EvaluatedDefinition="Development Lifecycle">Development Lifecycle</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-1">R19-1</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_TufinOrchestrationSuite.png">../FrontMatter/Images/product_TufinOrchestrationSuite.png</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R18-3">R18-3</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R18-2">R18-2</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R18-1">R18-1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R17-3">R17-3</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R17-2">R17-2</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R17-1">R17-1</Variable>
 </CatapultVariableSet>

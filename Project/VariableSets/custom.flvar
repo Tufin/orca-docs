@@ -24,4 +24,8 @@
     Name="IncludeVersionDropdown"
     Comment=""
     EvaluatedDefinition="false">false</Variable>
+  <Variable
+    Name="HeaderCaption"
+    Comment=""
+    EvaluatedDefinition="" />
 </CatapultVariableSet>
