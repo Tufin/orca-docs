@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1><a name="top"></a>Working With Badges</h1>
+        <ul>
+            <li>
+                <p><a href="#overview">Overview</a>
+                </p>
+            </li>
+            <li>
+                <p><a href="#Implementing">Implementing the Badge</a>
+                </p>
+            </li>
+        </ul>
+        <h2><a name="overview"></a>Overview</h2>
+        <p><MadCap:variable name="local.Product_S" />An<MadCap:variable name="local.Product_S" /> badge  shows the <MadCap:variable name="local.Product_S" /> <a href="../20-Concepts/SecurityScore.htm">security score</a> of a single container in real time (the image, not the source code).  See <a href="../20-Concepts/Badges.htm">Badge Concepts</a>.</p>
+        <h2><a name="Implementing"></a>Implementing the Badge</h2>
+        <p>Inserting badges into repository readme files is a popular and  convenient way of making the <MadCap:variable name="local.TufinScore" /> available in a prominent position. Just enter the <MadCap:variable name="local.Product_S" /> API string with the appropriate parameters.</p>
+        <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+        <h3>Format:</h3>
+        <p class="CodeSegment1">![Tufin](https://orca.tufin.io/api/&lt;domain&gt;/&lt;project&gt;/badges/security-score?image=&lt;docker-image-name&gt;:cia-latest&amp;token=&lt;view token&gt;)](https://orca.tufin.io/ui/#/&lt;domain&gt;/&lt;project&gt;/grid/scans?image=&lt;docker-image name&gt;)</p>
+        <p>Where:</p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 494px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Parameter</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Source of Value </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&lt;domain&gt;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows"><MadCap:variable name="local.Product_S" /> &gt; at top of most  screens</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">&lt;project&gt;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows"><MadCap:variable name="local.Product_S" /> &gt; at top of most  screens</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&lt;docker-image-name&gt;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Container name as displayed in pod</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">&lt;view token&gt;</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows"><MadCap:variable name="local.Product_S" /> &gt; Settings &gt;&#160;API&#160;Tokens &gt;&#160;Token value for [Scope=view Label=badge]</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Example:</h3>
+        <p class="CodeSegment1">![Tufin](https://orca.tufin.io/api/MyCompany/MyProject/badges/security-score?image=k8s.gcr.io/event-exporter:05:cia-latest&amp;token=8440d55d-97a9-47c8-928a-20963cf14b14)](https://orca.tufin.io/ui/#/MyCompany/MyProject/grid/scans?image=k8s.gcr.io/event-exporter:05)</p>
+        <h2>Live Example:</h2>
+        <p>You can see a live example of badges here:&#160;<a href="https://github.com/Tufin/orca-docs/blob/master/badges.md">https://github.com/Tufin/orca-docs/blob/master/badges.md</a></p>
+        <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+    </body>
+</html>
