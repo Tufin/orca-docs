@@ -112,6 +112,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             <ol>
                 <li>Creates a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="RemovingOrca.htm">remove Orca from a cluster</a>.</li>
                 <li>Changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local.Openshift" />). </li>
+                <li>Injects the Orca DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local.Openshift" />)</li>
                 <li>Adds a CRD for <MadCap:variable name="local.Product_S" /> policies.</li>
             </ol>
         </div>

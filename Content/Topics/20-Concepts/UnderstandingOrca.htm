@@ -3,14 +3,37 @@
     <head>
     </head>
     <body>
-        <h1>How Does it Work?</h1>
-        <p>See also <a href="../10-What_is_Orca/WhatIsOrca.htm">What is Orca</a>.</p>
-        <p><MadCap:variable name="local.Product_S" /> is a cloud service that requires some components to be installed on your Kubernetes cluster.</p>
-        <h2>The Orca Agent</h2>
-        <p>The <MadCap:variable name="local.Kite" /> is responsible for monitoring your Kubernetes cluster for changes, such as adding or deleting services, and for maintaining ongoing communication between your cluster and the <MadCap:variable name="local.Product_S" /> service. It communicates information to and from the main Orca application on the cloud.</p>
-        <h2>Kubernetes DNS plugin</h2>
-        <p>The <MadCap:variable name="local.Product_S" /> Kubernetes DNS plugin identifies and controls all communication between your services, as well as to external services. It identifies and controls communication based on DNS&#160;lookups (for example crm.mycompany.com).  <MadCap:variable name="local.Product_S" /> can also monitor and enforce service connectivity using <a href="https://istio.io/about/intro/">Istio</a>, which adds support for identification and control of communication through sidecar proxies. T</p>
-        <h2>Discovery Engine</h2>
-        <p><MadCap:variable name="local.Product_S" /> identifies network traffic in your cluster. You can create policy rules easily, based on the traffic discovered. See <a href="DiscoveryEngine.htm">Discovery Engine</a></p>
+        <h1>Architecture</h1>
+        <h2>The <MadCap:variable name="local.Product_S" /> Application</h2>
+        <p>The user interface for visualizing cluster security information such as network traffic, vulnerabilities, Kubernetes network policies and the <MadCap:variable name="local.Product_S" /> security policy and for taking actions such as switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
+        <h2>The <MadCap:variable name="local.Product_S" /> Agent</h2>
+        <p>The <MadCap:variable name="local.Kite" /> monitors traffic in your cluster, enforces your policy and communicates with the Orca application. The agent consists of the following primary services:</p>
+        <h3><MadCap:variable name="local.Product_S" /> Kite</h3>
+        <p>Communicates between the <MadCap:variable name="local.Kite" /> plugins and the <MadCap:variable name="local.Product_S" /> application.</p>
+        <h3><MadCap:variable name="local.Product_S" /> DNS plugin</h3>
+        <ul>
+            <li>Acts as a proxy, processing all DNS queries before passing them to the Kubernetes DNS pod.</li>
+            <li> Identifies traffic in the cluster between your services, as well as to external services. </li>
+            <li> Blocks DNS requests that are not part of the <MadCap:variable name="local.Product_S" /> security policy.  </li>
+        </ul>
+        <h3><MadCap:variable name="local.Product_S" /> IP  Plugin </h3>
+        <ul>
+            <li>Employs the Conntrack daemon set </li>
+            <li>Discovers IP connection requests, including ingress</li>
+            <li>Discovers UDP connection requests</li>
+            <li>Works for <MadCap:variable name="local.Openshift" /> only - soon to be extended to all implementations </li>
+            <li>Works at the node level</li>
+        </ul>
+        <h3><MadCap:variable name="local.Product_S" /> Istio Plugin</h3>
+        <p>Applies the Orca security policy to the cluster through Istio. Istio must be installed prior to <MadCap:variable name="local.Product_S" /> installation.</p>
+        <h3>Discovery Engine</h3>
+        <p>Not a service in itself but rather a concept in <MadCap:variable name="local.Product_S" /> that represents the identification mechanism of network traffic in your cluster. Comprised of other <MadCap:variable name="local.Kite" /> plugins.  See <a href="DiscoveryEngine.htm">Discovery Engine</a>.</p>
+        <p>See also:</p>
+        <ul>
+            <li><a href="../10-What_is_Orca/WhatIsOrca.htm">What is Orca</a>
+            </li>
+            <li><a href="Enforcement.htm">Enforcement</a>
+            </li>
+        </ul>
     </body>
 </html>

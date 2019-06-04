@@ -21,14 +21,19 @@
         <p>Your policy will always be in one of two Policy Modes - <span class="StatusOrValue">Learn</span> or <span class="StatusOrValue">Enforce</span> . When in <span class="StatusOrValue">Learn</span> mode, <MadCap:variable name="local.Product_S" /> will not apply any limitations on traffic in the cluster. When in <span class="StatusOrValue">Enforce</span> mode, <MadCap:variable name="local.Product_S" /> will apply limitations on the traffic. Switching modes is done in <a href="Settings.htm">Settings</a>. </p>
         <h2><a name="Actions"></a>Actions Available on this Screen</h2>
         <ul class="Action">
-            <li>Add an allowed connection by entering details yourself</li>
-            <li>Add an allowed connection from the New Connections Window</li>
-            <li>Delete an allowed connection</li>
-            <li>Lock / unlock an allowed connection</li>
-            <li>Reset allowed connections</li>
-            <li>Export the security policy</li>
-            <li>Apply on firewalls</li>
-            <li><a href="GeneralActions.htm">General actions</a>
+            <li><a href="#Adding2">Add an allowed connection by entering details yourself</a>
+            </li>
+            <li><a href="#Adding">Add an allowed connection from the New Connections Window</a>
+            </li>
+            <li><a href="#Deleting">Delete an allowed connection</a>
+            </li>
+            <li><a href="#Locking">Lock / unlock an allowed connection</a>
+            </li>
+            <li><a href="#Resettin">Reset allowed connections</a>
+            </li>
+            <li><a href="#Apply">Export the security policy</a>
+            </li>
+            <li><a href="#Apply2">Apply on firewalls</a>
             </li>
         </ul>
         <h3><a name="Adding2"></a>Adding an Allowed Connection by Entering Details Yourself</h3>
@@ -89,7 +94,7 @@
             </li>
             <li>The selected rules will be added to your security policy and removed from the <span class="ScreenObject">New Connections Window</span>. The number of new connections on the <span class="ScreenObject">New Connections Button </span>will be updated accordingly.</li>
         </ol>
-        <h3>Deleting an Allowed Connection</h3>
+        <h3><a name="Deleting"></a>Deleting an Allowed Connection</h3>
         <p>Rules can be deleted from the security policy at any time. </p>
         <ol>
             <li>Hover over the line for the appropriate rule and click <img src="../../Resources/Images/IconRemove.png" class="noborder" /> when it appears on the line.</li>
@@ -107,7 +112,7 @@
             <li>Click the <span class="ScreenObject">Locked icon</span> <img src="../../Resources/Images/IconLocked.png" class="noborder" /> on the desired line.</li>
             <li>The <span class="ScreenObject">Locked icon</span> will be removed from the line.</li>
         </ol>
-        <h3>Resetting Allowed Connections</h3>
+        <h3><a name="Resettin"></a>Resetting Allowed Connections</h3>
         <p>Resetting allowed connections restores your policy to a base-line of allowed rules. All rules that have been locked constitute your base-line and if no rules have been locked, your base-line is a policy with no rules whatsoever.</p>
         <ol>
             <li>
@@ -124,7 +129,7 @@
             </li>
         </ol>
         <h3><a name="Apply"></a>Export as Network Policies</h3>
-        <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create rules in your Kubernetes cluster. </p>
+        <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create rules in your Kubernetes network policy. </p>
         <ol>
             <li>
                 <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions</span> menu.</p>
@@ -147,7 +152,7 @@
         <div class="Warning">
              This mechanism uses the namespace selector in combination with podSelector. Therefore, for the export action to work:
             <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>
-        <h3>Apply on Firewalls</h3>
+        <h3><a name="Apply2"></a>Apply on Firewalls</h3>
         <p>Apply on firewalls applies the security policy you have defined in <MadCap:variable name="local.Product_S" /> to the devices managed by submitting one or more firewall change tickets to your network policy change management solution. The 'apply on firewalls' function is available <span class="Bold">only</span> if you have a network policy change management solution such as <MadCap:variable name="local.SC" /> integrated with <MadCap:variable name="local.Product_L" />. Currently, <MadCap:variable name="local.SC" /> is the only application that can be integrated in this way. If there is no integration, the Apply on Firewalls option in the menu will be greyed out and unclickable, and it will show as "Apply on Firewalls (Disabled)".</p>
         <p>A ticket will be submitted for each namespace in your policy. </p>
         <p>After the apply on firewalls process is initiated, it cannot be initiated again until all tickets have been successfully implemented. If not all tickets have been implemented following a prior attempt, the menu option will be greyed out and it will show as "Apply on Firewalls (in-progress)". This status will remain until all prior tickets have been resolved and implemented or deleted in the network policy change management system.</p>
@@ -163,7 +168,7 @@
                 <p>Click on <span class="ScreenObject">Apply on Firewalls</span> from the menu. This will initiate the process and change the option in the <span class="ScreenObject">Actions Menu</span> to be greyed out and followed by "(in-progress)". You cannot initiate the process again until the menu option is restored to its normal state. This will happen automatically when the last ticket is implemented successfully, or deleted in the change management system. Change system management tickets cannot be deleted within <MadCap:variable name="local.Product_S" />.</p>
             </li>
         </ol>
-        <h2><a name="How"></a>How to Get Here</h2>
+        <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <p><a href="Navigation.htm">Main Menu</a>  &gt; <a href="../20-Concepts/Policy.htm">Policy</a> &gt;<span class="ScreenObject">Security Policy</span></p>
     </body>
 </html>
