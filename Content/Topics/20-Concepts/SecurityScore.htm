@@ -4,9 +4,16 @@
         <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1><MadCap:variable name="local.TufinScore" />
-        </h1>
-        <p>The <MadCap:variable name="local.TufinScore" /> is an assessment of code vulnerability, from A+, the least vulnerable to F, the most vulnerable. It can be based on analysis of code in your repository or on the scanning of a docker image. The <MadCap:variable name="local.TufinScore" /> appears in a number of different place in <MadCap:variable name="local.Product_S" /> including Service Graph and Pods Screen.</p>
+        <h1>Image Scanning and Security Score</h1>
+        <p>The <MadCap:variable name="local.TufinScore" /> is an assessment of code vulnerability  based on the scanning of a Docker image. It is presented as a value from A+, the least vulnerable to F, the most vulnerable. A score of A+ indicates no vulnerabilities were detected whatsoever. The <MadCap:variable name="local.TufinScore" /> appears in a number of different places in <MadCap:variable name="local.Product_S" /> including the <a href="../40-Working_With/ServiceGraph.htm">Service Graph</a> and <a href="../40-Working_With/Pods.htm">Pods Screen</a> and additionally can be displayed in your code repository in the form of a <a href="Badges.htm">badge</a>.</p>
+        <h2>When does the image scan take place?</h2>
+        <p>There are two ways an image scan can be initiated:</p>
+        <ol>
+            <li>Every time a container is deployed to your cluster. Orca detects this event automatically.</li>
+            <li>As part of your CI/CD pipeline. This requires the addition of commands to the CI/CD script.</li>
+        </ol>
+        <h2>Which image does the security score refer to?</h2>
+        <p>In the <MadCap:variable name="local.Product_S" /> application screens, the <MadCap:variable name="local.TufinScore" /> always refers to the last image scanned, regardless of what triggered the scan. Badges also refer to the last image scanned unless the image tag is included in the path.</p>
         <h2>How is the <MadCap:variable name="local.TufinScore" /> calculated?</h2>
         <ol>
             <li>
