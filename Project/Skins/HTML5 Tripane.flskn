@@ -16,7 +16,8 @@
   UseDefaultBrowserSetup="True"
   EnableResponsiveOutput="true"
   AutoSyncTOC="true"
-  Title="[%=custom.HeaderCaption%]">
+  Title="[%=custom.HeaderCaption%]"
+  NavigationLinkTop="true">
   <Stylesheet>
     <Resources>
       <Resource
@@ -55,6 +56,8 @@
         Name="logoOrca.png">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</Resource>
       <Resource
         Name="logoBlank.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0tOBWIGDDUjKB7zaAqQ4CzwiixkY+I6AMONUbT5poCB7iaevK/tjFnZOYY38G/1CYCHXiBLH0pKM/CKGlevOeACFeEBCLqnFyUWZBSWZ+XkMwpyKykBxLpC4c35BZVFmekYJwxr+M1ZAUT6waFFqIkipQklmbiqD6Xd+TpATQDLB+Wkl5YlFqQyxBf9ByrnBhmcWJ+ckApUWMWw/sKUfKMwBEg5PLMrLzEtnOCD9rB3mtOD80qLkVIav/5tfw5Q55+fmpuaVMHw7M20/UIwNJBaSWZKTyrDi3SV1oEiep4tjSMWct5cceRkUBA4YHNj/3Pmok1MUa3XO+TNNhyplD+w/43osJoU6hN6RbmbbvwuVIoA2M3i6+rmsc0poAgBp9mZDowEAAA==</Resource>
+      <Resource
+        Name="icon_email16.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0gIgzMEGJOU//08EUozFQe5ODOvOybwEcljSHX0dGRg29nP/SWQF8jkLPCKLGRj4DoMw4/H8FSlAwe2eLo4hFv5nJ1oLNRmIuF6OjNrF4u3Fxe09/aGQxk1GVe8CyWnT9A5eiuPervA9pYKRyaJG6vyZk+yTpOMK6g9G14n/mlRXMNlycuecp7GbrptLR55YfeeUYUX5ylQZpp7JNScWzy/1VFletOsid8PcJSr7TpxQmf297pqBREKBes6iNUFBaWcmp+kwBHlG5vKVyv8QFXD+uyb//uEnDGaFv9cs51csZjpw7TyfQdVr+0ntzp+skyv2dZ1jXXdkJ9ehTza73IRirIBeYPB09XNZ55TQBAAp1gK4IgEAAA==</Resource>
     </Resources>
     <Styles>
       <Style
@@ -184,6 +187,25 @@
             Name="BackgroundColor">#cccccc</Property>
         </Properties>
       </Style>
+      <Style
+        Name="ToolbarItem">
+        <Classes>
+          <StyleClass
+            Name="DocteamFeedback"
+            Custom="true">
+            <Properties>
+              <Property
+                Name="BackgroundRepeat">no-repeat</Property>
+              <Property
+                Name="BackgroundPosition">center center</Property>
+              <Property
+                Name="BackgroundImage">url('icon_email16.png')</Property>
+              <Property
+                Name="Click">SendMyFeedback()</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
       <Medium
         Name="Tablet">
         <Style
@@ -269,6 +291,37 @@
             <Property
               Name="BackgroundImage">url('ResponsiveMenuButton_light.png')</Property>
           </Properties>
+        </Style>
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="DocteamFeedback">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="DocteamFeedback">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
         </Style>
       </Medium>
     </Styles>
@@ -529,6 +582,18 @@
               </Properties>
             </Style>
           </Medium>
+          <Style
+            Name="ToolbarItem">
+            <Classes>
+              <StyleClass
+                Name="DocteamFeedback">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Send us feedback</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+          </Style>
         </Styles>
         <Stylesheet></Stylesheet>
       </Stylesheet>
@@ -536,7 +601,7 @@
   </Strings>
   <Toolbar
     EnableCustomLayout="true"
-    Buttons="Print">
+    Buttons="DocteamFeedback|Print">
     <Script>// On page ready
 $(function() {
   // Add custom stylesheet to skin context
@@ -577,7 +642,15 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#responsiveHeader&gt;a").after('&lt;div id="responsive-header-title"&gt;&lt;/div&gt;');
 	$("#responsive-header-title").text(document.title);
-});</Script>
+});
+
+function SendMyFeedback() {
+	//var aHref = top.frames['topic'].location.href;
+	var aPath = top.frames['topic'].location.pathname;
+	var myText = "mailto:Docs@tufin.com?subject=Knowledge Center Feedback (" + aPath + ")&amp;body=%0D%0A%0D%0Apage link: " + aPath;
+	
+	window.location.href=myText;
+}</Script>
   </Toolbar>
   <WebHelpOptions />
 </CatapultSkin>
