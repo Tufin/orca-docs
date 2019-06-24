@@ -77,4 +77,8 @@
     Name="Kite"
     Comment=""
     EvaluatedDefinition="Orca agent">Orca agent</Variable>
+  <Variable
+    Name="OrcaEmail"
+    Comment=""
+    EvaluatedDefinition="orca@tufin.com">orca@tufin.com</Variable>
 </CatapultVariableSet>

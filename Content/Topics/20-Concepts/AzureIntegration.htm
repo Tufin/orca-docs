@@ -4,9 +4,18 @@
         <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Azure Integration</h1>
-        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local.Product_S" /> to modify your Azure firewall with the <MadCap:variable name="local.Product_S" /> security policy. </p>
+        <h1>Azure Firewall</h1>
+        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local.Product_S" /> to modify your Azure firewall with the <MadCap:variable name="local.Product_S" /> security policy. <a href="Firewalls.htm">Why should I let <MadCap:variable name="local.Product_S" /> modify my firewalls?</a></p>
         <ol>
+            <li>
+                <p>Log in to Azure as Azure subscription owner:</p>
+                <p class="CodeSegment1">az login</p>
+            </li>
+            <li>
+                <p>Note the parameters returned in the output, e.g.:</p>
+                <p class="CodeSegment1">id=&lt;subscriptionID&gt;</p>
+                <p>where &lt;subscriptionID&gt; identifies your Azure subscription. </p>
+            </li>
             <li>
                 <p>Create a service principal user in Azure, e.g.:</p>
                 <p class="CodeSegment1">az ad sp create-for-rbac --name http://&lt;user&gt; --skip-assignment</p>
@@ -25,7 +34,7 @@
                 <p>where &lt;appId&gt; is taken from the service principal creation output above.</p>
             </li>
             <li>
-                <p>Contact the <MadCap:variable name="local.Product_S" /> integration team and request Orca-Azure integration. Provide four parameters:</p>
+                <p>Contact the <MadCap:variable name="local.Product_S" /> integration team (<MadCap:variable name="local.OrcaEmail" />) and request Orca-Azure integration. Provide four parameters:</p>
                 <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col class="TableStyle-PatternedRows-Column-Regular" />
                     <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -38,7 +47,7 @@
                     <tbody>
                         <tr class="TableStyle-PatternedRows-Body-LightRows">
                             <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">SubscriptionID</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Displayed on your console after logging into Azure using <code>az login</code> (Key - “id”)</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&lt;subscriptionID&gt; displayed on your console after logging into Azure using <code>az login</code> (Key - “id”)</td>
                         </tr>
                         <tr class="TableStyle-PatternedRows-Body-DarkRows">
                             <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">TenantID</td>
@@ -58,7 +67,7 @@
             <li>
                 <p>Add a tag on the firewall for every <MadCap:variable name="local.Product_S" /> project (Kubernetes cluster) that needs to update the firewall policy. Use the format:</p>
                 <p class="CodeSegment1">key=tufin, value=orca.&lt;domain&gt;.&lt;project&gt; </p>
-                <p>If the same firewall is associated with more than one <MadCap:variable name="local.Product_S" /> project (see <a href="../40-Working_With/Navigation.htm#Domain,">Domains, Projects and Namespaces</a>),  add a separate tag for each project e.g.</p>
+                <p>where &lt;domain&gt; and &lt;project&gt; refer to the Orca project that represents your cluster (see <a href="../40-Working_With/Navigation.htm#Domain,">Domains, Projects and Namespaces)</a>. If the same firewall is associated with more than one <MadCap:variable name="local.Product_S" /> project,  add a separate tag for each project e.g.</p>
                 <p class="CodeSegment1">orca.&lt;mydomain&gt;.&lt;myproject1&gt;,orca.&lt;mydomain&gt;.&lt;myproject2&gt;</p>
                 <p>Repeat for all other required firewalls.</p>
             </li>
