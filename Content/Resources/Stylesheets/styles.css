@@ -506,6 +506,13 @@ span.StatusOrValue
 	background-color: #f2f2f2;
 }
 
+span.MenuItem
+{
+	font-style: normal;
+	font-weight: bolder;
+	color: #333333;
+	background-color: transparent;
+}
 span.Superscript { 
   vertical-align: super;
   font-size: smaller;

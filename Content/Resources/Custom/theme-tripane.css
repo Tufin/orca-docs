@@ -15,6 +15,12 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	background-image: url('Images/logoOrca.png');
 }
 
+/* jeff June 19 2019 - manually force background img for email feedback button */
+.theme-orca .button.docteam-feedback-button {
+	background-image: url('Images/icon_email16.png');
+}
+
+
 /*
 .theme-orca .search-bar.search-bar-container .search-submit {
 	background-color: #9f6a8d;
@@ -35,6 +41,12 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 .theme-iris #responsiveHeader .logo {
 	background-image: url('Images/logoIris.png');
 }
+
+/* jeff June 19 2019 - manually force background img for email feedback button */
+.theme-iris .button.docteam-feedback-button {
+	background-image: url('Images/icon_email16.png');
+}
+
 /*
 .theme-iris .search-bar.search-bar-container .search-submit {
 	background-color: #92c6e8;
@@ -55,6 +67,12 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 .theme-tos2 #responsiveHeader .logo {
 	background-image: url('Images/logoTos2.png');
 }
+
+/* jeff June 19 2019 - manually force background img for email feedback button */
+.theme-tos2 .button.docteam-feedback-button {
+	background-image: url('Images/icon_email16.png');
+}
+
 
 /*
 .theme-tos2 .search-bar.search-bar-container .search-submit {

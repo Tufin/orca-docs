@@ -7,32 +7,16 @@
         <p>You can apply the Orca security policy to firewalls using any of the following methods:</p>
         <ul>
             <li>On a firewall managed by <MadCap:variable name="local.SC" /></li>
-            <li>On a Microsoft Azure firewall</li>
+            <li>On one or more Microsoft Azure firewalls. Currently only egress rules are supported. </li>
         </ul>
-        <p>Currently only egress rules are supported.</p>
-        <p>Each method requires a one-time integration setup, which enables the <span class="ScreenObject">Apply on firewalls</span> option on the <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a> screen.</p>
-        <p>Apply your security policy  to the appropriate firewall devices by clicking on the 'apply on firewalls' function. This will submit one or more firewall change tickets to the device. These tickets can then be viewed on the <a href="../40-Working_With/FirewallTickets.htm">Firewall Tickets Screen</a>.</p>
-        <p>&#160;</p>
+        <p>Each method requires a one-time integration setup, which enables the <a href="../40-Working_With/AllowedConnections.htm#Apply2">Apply on firewalls</a> option on the <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a> screen.</p>
+        <p>Apply your security policy  to the appropriate firewall devices by clicking on the 'apply on firewalls' function. This will submit one or more firewall change requests or tickets to the device. The status of these tickets can then be viewed on the <a href="../40-Working_With/FirewallTickets.htm">Firewall Tickets Screen</a>.</p>
         <p>See also:</p>
         <ul>
-            <li><a href="SecureChangeIntegration.htm">SecureChange integration</a>
+            <li><a href="SecureChangeIntegration.htm">SecureChange Integration</a>
+            </li>
+            <li><a href="AzureIntegration.htm">Microsoft Azure Integration</a>
             </li>
         </ul>
-        <p>&#160;</p>
-        <h2>Steps Required on Microsoft Azure</h2>
-        <ol>
-            <li>
-                <p>Create a tag for the asset:</p>
-                <p>Key = <MadCap:variable name="local.Product_S" /></p>
-                <p>Value = &lt;domain1&gt;.&lt;project1&gt;, &lt;domain2&gt;.&lt;project2&gt;...</p>
-            </li>
-            <li>
-                <p>Add application rule collection:</p>
-                <p>Name = tufin.orca.&lt;domain&gt;.&lt;project&gt;, where</p>
-                <p>Action = Allow</p>
-                <p>Add a separate rule for every Orca project </p>
-            </li>
-        </ol>
-        <p>&#160;</p>
     </body>
 </html>

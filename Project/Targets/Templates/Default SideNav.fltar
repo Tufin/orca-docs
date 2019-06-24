@@ -9,7 +9,8 @@
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   UseDeviceWidth="true"
-  ResolveCssVariables="false">
+  ResolveCssVariables="false"
+  ExcludeUnreferencedContent="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
