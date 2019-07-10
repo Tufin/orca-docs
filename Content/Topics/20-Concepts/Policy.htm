@@ -25,7 +25,7 @@
         <p>For building and maintaining the policy select <a href="../40-Working_With/AllowedConnections.htm">Security Policy</a></p>
         <p>For viewing the Kubernetes pod permissions select <a href="../40-Working_With/KubernetesNetPolicies.htm">Kubernetes Network Policies</a></p>
         <p>For viewing currently open firewall tickets select <a href="../40-Working_With/FirewallTickets.htm">Firewall Tickets</a></p>
-        <h2>Policy Mode</h2>
+        <h2 name="policymode">Policy Mode</h2>
         <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the Orca policy rules. The  monitoring and visibility capabilities  such as <a href="../40-Working_With/ServiceGraph.htm">Service Graph</a>, <a href="../40-Working_With/Pods.htm">Pods</a>, and <a href="../40-Working_With/Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="../40-Working_With/Settings.htm">Settings</a>.</p>
         <div class="Note">Enforce mode is not currently supported for <MadCap:variable name="local.Openshift" />.</div>
         <ul>

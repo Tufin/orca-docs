@@ -14,4 +14,7 @@
     <Map Name="KubernetesNetworkPolicies" Link="/Content/Topics/40-Working_With/KubernetesNetPolicies.htm" />
     <Map Name="FirewallTickets" Link="/Content/Topics/40-Working_With/FirewallTickets.htm" />
     <Map Name="OverlyPermissiveRpt" Link="/Content/Topics/40-Working_With/OverlyPermissiveRpt.htm" />
+    <Map Name="SecurityScore" Link="/Content/Topics/20-Concepts/SecurityScore.htm" />
+    <Map Name="FilteringGeneral" Link="/Content/Topics/40-Working_With/GeneralActions.htm" />
+    <Map Name="DiscoveryEngine" Link="/Content/Topics/20-Concepts/DiscoveryEngine.htm" />
 </CatapultAliasFile>

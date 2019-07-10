@@ -16,3 +16,6 @@
 #define KubernetesNetworkPolicies 1011
 #define FirewallTickets 1012
 #define OverlyPermissiveRpt 1013
+#define SecurityScore 1014
+#define FilteringGeneral 1015
+#define DiscoveryEngine 1016
