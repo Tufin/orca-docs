@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <h2><a name="get_here"></a>How Do I Get Here?</h2>
+        <p class="h2"><a name="get_here"></a>How Do I Get Here?</p>
     </body>
 </html>

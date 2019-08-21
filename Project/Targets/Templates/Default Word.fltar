@@ -6,7 +6,7 @@
   Destinations=""
   GlossaryTermConversion="marked"
   MasterToc="/Project/TOCs/local-sample.fltoc"
-  ConditionTagExpression="include[General.PDF]exclude[General.Online]"
+  ConditionTagExpression="include[General.PDF] exclude[General.Exclude or General.Online] "
   PatchHeadingLevels="true"
   InjectEmptyPages="true"
   InjectBookHeadings="true">

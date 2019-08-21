@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
   <Variable
-    Comment=""
+    Comment="DocTYpe - for use on print cover page"
     Name="ContentType"
     EvaluatedDefinition=""></Variable>
   <Variable
-    Comment=""
+    Comment="TOS versions"
     Name="Version"
     EvaluatedDefinition=""></Variable>
   <Variable
@@ -14,7 +14,7 @@
     EvaluatedDefinition="User's Guide">User's Guide</Variable>
   <Variable
     Name="CoverPageImage"
-    Comment=""
+    Comment="images for use on print cover page"
     EvaluatedDefinition=""></Variable>
   <Variable
     Name="CoverPageImage"
@@ -168,4 +168,48 @@
     Name="Version"
     Comment=""
     EvaluatedDefinition="R17-1">R17-1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-2">R20-2</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment="for when a TOS2 topic needs to reference a TOS1 topic"
+    EvaluatedDefinition="" />
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R19-2">R19-2</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R19-3">R19-3</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R20-1">R20-1</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
 </CatapultVariableSet>

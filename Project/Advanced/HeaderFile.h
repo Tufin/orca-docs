@@ -19,3 +19,5 @@
 #define SecurityScore 1014
 #define FilteringGeneral 1015
 #define DiscoveryEngine 1016
+
+#define AddingConnection 1017

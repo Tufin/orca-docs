@@ -13,7 +13,8 @@
   MenuSkin="/Project/Skins/SideMenu.flskn"
   TopicToolbarSkin="/Project/Skins/TopicToolBar.flskn"
   ExcludeUnreferencedContent="true"
-  MasterPage="/Content/Resources/MasterPages/Content-TopNav.flmsp">
+  MasterPage="/Content/Resources/MasterPages/Content-TopNav.flmsp"
+  ConditionTagExpression="include[General.Online] exclude[General.Exclude or General.PDF] ">
   <Stylesheet>
     <Resources></Resources>
     <Styles>

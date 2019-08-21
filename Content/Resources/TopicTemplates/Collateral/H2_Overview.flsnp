@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <h2><a name="overview"></a>Overview</h2>
+        <p class="h2"><a name="overview"></a>Overview</p>
     </body>
 </html>

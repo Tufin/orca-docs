@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2019-06-23T13:13:02.0247154+03:00">
+  LastImport="2019-08-07T17:41:02.6400415+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -222,6 +222,9 @@
     <Url
       Source="../../../Global/Content/Resources/Custom/Images/icon_email16.png"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/icon_email16.png" />
+    <Url
+      Source="../../../Global/Content/Resources/TopicTemplates/Template_Concepts.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Template_Concepts.htm" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -430,5 +433,8 @@
     <Url
       Source="../../Content/Resources/Custom/Images/icon_email16.png"
       TimeStamp="18-Jun-19 10:56:10 AM" />
+    <Url
+      Source="../../Content/Resources/TopicTemplates/Template_Concepts.htm"
+      TimeStamp="18-Jul-19 12:03:48 PM" />
   </GeneratedFiles>
 </CatapultProject>

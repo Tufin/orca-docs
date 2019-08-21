@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultConditionTagSet
   Comment="My set of condition tags"
   conditions="">
   <ConditionTag
-    Comment=""
+    Comment="Print only content"
     Name="PDF"
     BackgroundColor="Red" />
   <ConditionTag
     BackgroundColor="#98fb98"
     Name="Online"
-    Comment=""
+    Comment="Online only content"
     Color="Normal"
     OriginalName="Online" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="Exclude"
+    Comment="Always exclude this content" />
 </CatapultConditionTagSet>

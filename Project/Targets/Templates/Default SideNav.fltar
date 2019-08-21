@@ -10,7 +10,8 @@
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   UseDeviceWidth="true"
   ResolveCssVariables="false"
-  ExcludeUnreferencedContent="true">
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="include[General.Online] exclude[General.Exclude or General.PDF] ">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

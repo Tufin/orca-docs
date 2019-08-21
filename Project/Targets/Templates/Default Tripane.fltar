@@ -16,7 +16,7 @@
   MasterPage="/Content/Resources/MasterPages/Content-Tripane.flmsp"
   MasterToc="/Project/TOCs/local-sample.fltoc"
   TopNavTocPath="true"
-  ConditionTagExpression="include[General.Online] exclude[General.PDF] ">
+  ConditionTagExpression="include[General.Online] exclude[General.Exclude or General.PDF] ">
   <Stylesheet>
     <Resources></Resources>
     <Styles>

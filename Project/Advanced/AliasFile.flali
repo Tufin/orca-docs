@@ -17,4 +17,5 @@
     <Map Name="SecurityScore" Link="/Content/Topics/20-Concepts/SecurityScore.htm" />
     <Map Name="FilteringGeneral" Link="/Content/Topics/40-Working_With/GeneralActions.htm" />
     <Map Name="DiscoveryEngine" Link="/Content/Topics/20-Concepts/DiscoveryEngine.htm" />
+    <Map Name="AddingConnection" Link="/Content/Topics/40-Working_With/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
 </CatapultAliasFile>

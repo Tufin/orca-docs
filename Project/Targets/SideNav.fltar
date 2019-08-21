@@ -11,7 +11,8 @@
   DefaultUrl="/Content/Topics/10-What_is_Orca/WhatIsOrca.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
-  ConditionTagExpression="">
+  ConditionTagExpression=""
+  OutputFile="index.htm">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

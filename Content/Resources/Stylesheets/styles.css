@@ -242,6 +242,41 @@ p.SubHeading
 	font-weight: bold;
 }
 
+p.h2
+{
+	color: #333333;
+	font-size: 1.6em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	mc-next-tag: p;
+	mc-next-class: normal;
+}
+
+p.h3
+{
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 1.3em;
+	font-weight: 700;
+	margin-bottom: 4px;
+	margin-top: 16px;
+	mc-next-tag: p;
+	mc-next-class: normal;
+}
+
+p.h4
+{
+	color: #333333;
+	font-family: "Open Sans";
+	font-size: 1.1em;
+	font-weight: 700;
+	margin-bottom: 4px;
+	margin-top: 16px;
+	mc-next-tag: p;
+	mc-next-class: normal;
+}
+
 p.ProcedureIntro
 {
 	font-style: italic;
