@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ObjectList>
+    <Object Value="local.Product_S" />
+    <Object Value="local.TufinScore" />
+    <Object Value="local.OrcaEmail" />
+    <Object Value="local.SecureChange" />
+    <Object Value="local.SC" />
+    <Object Value="local.Openshift" />
+    <Object Value="local.Kite" />
+    <Object Value="custom.Theme" />
+    <Object Value="local.GKE" />
+    <Object Value="local.Docker" />
+    <Object Value="local.EKS" />
+    <Object Value="local.AKS" />
+    <Object Value="local.version2test" />
+    <Object Value="local.version1test" />
+    <Object Value="local.Product_L" />
+    <Object Value="Local.Product_L" />
+    <Object Value="Local.Product_S" />
+</ObjectList>

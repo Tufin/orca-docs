@@ -12,7 +12,7 @@
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression=""
-  OutputFile="index.htm">
+  OutputFile="Default.htm">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UrlList>
+    <Url Source="Resources/Images/Screen_Topbar2.png" />
+    <Url Source="Resources/Images/Screen_Topbar.png" />
+    <Url Source="Resources/Images/Window_Namespace_Select.png" />
+    <Url Source="Resources/Images/Screen_Vulnerability_Badge_Code.png" />
+    <Url Source="Resources/Images/yaml_network_policies.png" />
+    <Url Source="Resources/Images/icon_Badge_F.png" />
+    <Url Source="Resources/Images/Icon_Badge_A.png" />
+    <Url Source="Resources/Images/Icon_Badge_A_plus.png" />
+    <Url Source="Resources/Images/Screen_Badges.png" />
+    <Url Source="Resources/Images/external_overview_badges.png" />
+    <Url Source="Resources/Images/Screen_Settings.png" />
+    <Url Source="Resources/Images/Screen_Settings_Allow_All_Rule.png" />
+    <Url Source="Resources/Images/screen_Permissive_Rules_Report_Detail.png" />
+    <Url Source="Resources/Images/Screen_Permissive_Rules_Report_Summary.png" />
+    <Url Source="Resources/Images/Screen_Permissive_Rules_Report.png" />
+    <Url Source="Resources/Images/Logout.png" />
+    <Url Source="Resources/Images/Icon_User.png" />
+    <Url Source="Resources/Images/MenuWithSubMenu.png" />
+    <Url Source="Resources/Images/MenuPolicySubMenu.png" />
+    <Url Source="Resources/Images/Icon_Sync.png" />
+</UrlList>

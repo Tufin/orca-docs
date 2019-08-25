@@ -40,7 +40,7 @@
             <img src="../../Resources/Images/ScreenLearn.png" />
         </p>
         <h2>Kubernetes Network Policy and Learn Mode</h2>
-        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> creates a Kubernetes network policy rule, which allows all traffic, for each monitored namespace. Any rules created are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. Enabling and disabling this feature is done in <a href="../40-Working_With/Settings.htm">Settings</a>.</p>
+        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled (<a href="../40-Working_With/Settings.htm">Settings</a>) and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> creates an Any-Any-Allow Kubernetes network  policy (marked with a label), which allows all traffic, for each monitored namespace. These policies are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. </p>
         <h2>How do I get here?</h2>
         <p>
             <li>Click <span class="ScreenObject">Policy</span> from the main menu.</li>

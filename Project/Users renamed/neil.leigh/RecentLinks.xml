@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="C:\TufinDocs\orca-docs\Content\Topics\40-Working_With\WorkingWithDiscovery.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="C:\Users\neil.leigh\AppData\Local\Temp\MadCap Software\Flare\SkinEditor\_6B40EB06\H_Orca_fav_icon_transp.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog" />
+    <Dialog Name="B3.CatapultProjectUserInterfaceKit.InsertSnippetDialog">
+        <Link Value="C:\TufinDocs\orca-docs\Content\Resources\TopicTemplates\Collateral\H2_GetHere.flsnp" />
+    </Dialog>
+</RecentLinks>
