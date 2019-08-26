@@ -130,7 +130,7 @@
         <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create your Kubernetes network policy.</p>
         <ul>
             <li>Every service that appears in your allowed connections will appear once in the export file and so will create a single Kubernetes network policy for both ingress and egress.</li>
-            <li>An appropriate cleanup policy will be added for every namespace.</li>
+            <li>A cleanup policy will be added for every namespace.</li>
             <li>For discovered connections within the cluster, the Kubernetes network policies will be label-based.</li>
             <li>For discovered connections coming from outside the cluster (ingress via a load balancer), the Kubernetes network policies will allow traffic from any source IP.</li>
             <li>For discovered connections going outside of the cluster,  the Kubernetes network policies will allow traffic to all monitored destination IPs.</li>
