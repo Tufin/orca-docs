@@ -24,7 +24,7 @@
             </li>
             <li><a href="#Resettin">Reset allowed connections</a>
             </li>
-            <li><a href="#Export">Export as network policies</a>
+            <li><a href="#Export">Export as Kubernetes network policies</a>
             </li>
             <li><a href="#ApplyOnFW">Apply on firewalls</a>
             </li>
@@ -126,7 +126,10 @@
             </li>
         </ol>
         <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
-        <h3><a name="Export"></a>Export as Network Policies</h3>
+        <h3><a name="Export"></a>Export as Kubernetes Network Policies</h3>
+        <p>Information security requires tight network segmentation in order to minimize the attack surface, prevent lateral movement of malicious code and enable compliance with policies.</p>
+        <p>Kubernetes network policies provide a good means for network segmentation, but they are difficult to operate, especially in the highly dynamic environment of micro-services and DevOps.</p>
+        <p><MadCap:variable name="local.Product_S" /> allows you to automate the creation of Kubernetes network policies based on the application connectivity.</p>
         <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create your Kubernetes network policy.</p>
         <ul>
             <li>Every service that appears in your allowed connections will appear once in the export file and so will create a single Kubernetes network policy for both ingress and egress.</li>
@@ -146,15 +149,13 @@
             <li>
                 <p>Click on <span class="ScreenObject">Export as network policies </span>from the menu. </p>
             </li>
-            <li>
-                <p>A file named domain-&lt;your cluster name&gt;.yml will be downloaded via the browser. The security policy will be exported for all namespaces. Any screen filtering on namespace is ignored in this action.</p>
-                <p>Sample format:</p>
-                <p>
-                    <img src="../../Resources/Images/yaml_network_policies.png" class="ThumbnailPopup" />
-                </p>
-            </li>
-            <li>Take the appropriate actions described in your Kubernetes documentation to create the policies on your cluster.</li>
         </ol>
+        <p>The security policy will be exported for all namespaces - any screen filtering on namespace is ignored in this action. A file named &lt;domain&gt;-&lt;project&gt;.yml will be downloaded via the browser.</p>
+        <p>Sample format:</p>
+        <p>
+            <img src="../../Resources/Images/yaml_network_policies.png" class="ThumbnailPopup" /> See <a href="KubernetesNetworkPolicyExample.txt">Example</a>.</p>
+        <p>To apply the policies, run kubectl apply -f &lt;yaml file name&gt;.</p>
+        <p> For more information on kubectl, see the Kubernetes documentation. </p>
         <div class="Warning">
              This mechanism uses the namespace selector in combination with podSelector. Therefore, for the export action to work:
             <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>

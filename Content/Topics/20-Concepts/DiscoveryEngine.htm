@@ -8,10 +8,12 @@
         <p>The <MadCap:variable name="local.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
         <p class="h2">What Type of Connections Does <MadCap:variable name="local.Product_S" /> discover?</p>
         <ul>
-            <li>TCP and UDP connections only</li>
-            <li>Connections from pods assigned to services via a selector</li>
+            <li>TCP and UDP connections </li>
+            <li>Connections between service pods</li>
+            <li>Connections from ingress to service pods</li>
+            <li>Connections from service pods to external end-points</li>
         </ul>
-        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local.Product_S" /> policy or as a new connection in the New Connections Window is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. The source IP addresses are saved by <MadCap:variable name="local.Product_S" />.</p>
+        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local.Product_S" /> policy  is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
         <p>
             <img src="../../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
         </p>
