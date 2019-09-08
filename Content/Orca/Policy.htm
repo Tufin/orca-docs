@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Policy</h1>
+        <h2>Types of Policy</h2>
+        <p>There are two different kinds of policy in <MadCap:variable name="local.Product_S" /> - the <MadCap:variable name="local.Product_S" /> policy and the Kubernetes policy.</p>
+        <p>The Main Menu Policy option is split into three distinct functions:</p>
+        <ul>
+            <li>
+                <p>Building and maintaining the policy - add or remove allowed connections</p>
+            </li>
+            <li>
+                <p>Viewing Kubernetes network policies - see the pod-to-pod permissions currently defined in your Kubernetes policies</p>
+            </li>
+            <li>
+                <p>Viewing firewall tickets - see any currently open tickets from Tufin SecureChange</p>
+            </li>
+        </ul>
+        <p>When clicking on <span class="ScreenObject">Policy</span> in the main menu, a sub-menu is displayed with options for each of these functions:</p>
+        <p>
+            <img src="../Resources/Images/MenuPolicySubMenu.png" class="ThumbnailPopup" />
+        </p>
+        <p>For building and maintaining the policy select <a href="AllowedConnections.htm">Security Policy</a></p>
+        <p>For viewing the Kubernetes pod permissions select <a href="KubernetesNetPolicies.htm">Kubernetes Network Policies</a></p>
+        <p>For viewing currently open firewall tickets select <a href="FirewallTickets.htm">Firewall Tickets</a></p>
+        <h2 name="policymode">Policy Mode</h2>
+        <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the Orca policy rules. The  monitoring and visibility capabilities  such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Pods.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="Settings.htm">Settings</a>.</p>
+        <div class="Note">Enforce mode is not currently supported for <MadCap:variable name="local.Openshift" />.</div>
+        <ul>
+            <li>Use <span class="StatusOrValue">Learn</span> to build a <a href="Policy.htm">Policy</a> that is best suited to your environment. </li>
+            <li> Switch to <span class="StatusOrValue">Enforce</span> when you are satisfied that the policy meets your enforcement criteria.</li>
+        </ul>
+        <p><MadCap:variable name="local.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local.Product_S" /> theme is colored <img src="../Resources/Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../Resources/Images/ColorEnforce.png" class="noborder" />.</p>
+        <p>
+            <img src="../Resources/Images/ScreenEnforce.png" />
+        </p>
+        <p>
+            <img src="../Resources/Images/ScreenLearn.png" />
+        </p>
+        <h2>Kubernetes Network Policy and Learn Mode</h2>
+        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled (<a href="Settings.htm">Settings</a>) and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> creates an Any-Any-Allow Kubernetes network  policy (marked with a label), which allows all traffic, for each monitored namespace. These policies are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. </p>
+        <h2>How do I get here?</h2>
+        <p>
+            <li>Click <span class="ScreenObject">Policy</span> from the main menu.</li>
+        </p>
+    </body>
+</html>

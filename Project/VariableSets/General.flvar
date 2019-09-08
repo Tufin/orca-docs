@@ -212,4 +212,20 @@
     Name="VersionSibling"
     Comment=""
     EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment="Version of TufinOS - includes both 2.x and 3.x"
+    EvaluatedDefinition="" />
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="2.19">2.19</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="2.18">2.18</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_TufinOS.png">../FrontMatter/Images/product_TufinOS.png</Variable>
 </CatapultVariableSet>

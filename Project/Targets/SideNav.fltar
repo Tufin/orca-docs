@@ -8,7 +8,7 @@
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/Topics/10-What_is_Orca/WhatIsOrca.htm"
+  DefaultUrl="/Content/Orca/WhatIsOrca.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression=""
@@ -22,4 +22,5 @@
     <Variable
       Name="custom/IncludeVersionDropdown">false</Variable>
   </Variables>
+  <PostBuild></PostBuild>
 </CatapultTarget>

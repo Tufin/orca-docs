@@ -111,9 +111,5 @@
     <Variable
       Name="custom/Theme">iris</Variable>
   </Variables>
-  <Destinations>
-    <Destination
-      Link="/Project/Destinations/local-xampp.fldes"
-      Publish="true" />
-  </Destinations>
+  <Destinations></Destinations>
 </CatapultSkin>

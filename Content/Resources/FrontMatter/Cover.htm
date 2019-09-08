@@ -9,6 +9,7 @@
         <p class="ManualTitle2">by <img src="../PageLayouts/Assets/TufinLogoforKC.png" class="noborder" /></p>
         <p class="ManualTitle1"><MadCap:variable name="General.ContentType" />
         </p>
-        <p class="ManualVersionNumber">Version <MadCap:variable name="General.Version" /></p>
+        <p class="ManualVersionNumber" MadCap:conditions="Which.TOS1,Which.TOS2">Version <MadCap:variable name="General.Version" /></p>
+        <p class="ManualVersionNumber" MadCap:conditions="Which.TufinOS2,Which.TufinOS3">TufinOS <MadCap:variable name="General.VersionTufinOS" /></p>
     </body>
 </html>

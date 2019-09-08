@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultAliasFile conditions="">
-    <Map Name="Deploy" Link="/Content/Topics/30-Getting_Started/DeployOrca.htm" />
-    <Map Name="ServiceGraph" Link="/Content/Topics/40-Working_With/ServiceGraph.htm" />
-    <Map Name="Pods" Link="/Content/Topics/40-Working_With/Pods.htm" />
-    <Map Name="Services" Link="/Content/Topics/40-Working_With/Services.htm" />
-    <Map Name="Nodes" Link="/Content/Topics/40-Working_With/Nodes.htm" />
-    <Map Name="Policy" Link="/Content/Topics/20-Concepts/Policy.htm" />
-    <Map Name="Settings" Link="/Content/Topics/40-Working_With/Settings.htm" />
-    <Map Name="UnderstandingOrca" Link="/Content/Topics/20-Concepts/UnderstandingOrca.htm" />
-    <Map Name="Vulnerabilities" Link="/Content/Topics/40-Working_With/VulnerabilityDetails.htm" />
-    <Map Name="WhatsNew" Link="/Content/Topics/10-What_is_Orca/WhatsNew.htm" />
-    <Map Name="AllowedConnections" Link="/Content/Topics/40-Working_With/AllowedConnections.htm" />
-    <Map Name="KubernetesNetworkPolicies" Link="/Content/Topics/40-Working_With/KubernetesNetPolicies.htm" />
-    <Map Name="FirewallTickets" Link="/Content/Topics/40-Working_With/FirewallTickets.htm" />
-    <Map Name="OverlyPermissiveRpt" Link="/Content/Topics/40-Working_With/OverlyPermissiveRpt.htm" />
-    <Map Name="SecurityScore" Link="/Content/Topics/20-Concepts/SecurityScore.htm" />
-    <Map Name="FilteringGeneral" Link="/Content/Topics/40-Working_With/GeneralActions.htm" />
-    <Map Name="DiscoveryEngine" Link="/Content/Topics/20-Concepts/DiscoveryEngine.htm" />
-    <Map Name="AddingConnection" Link="/Content/Topics/40-Working_With/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
+    <Map Name="Deploy" Link="/Content/Orca/DeployOrca.htm" />
+    <Map Name="ServiceGraph" Link="/Content/Orca/ServiceGraph.htm" />
+    <Map Name="Pods" Link="/Content/Orca/Pods.htm" />
+    <Map Name="Services" Link="/Content/Orca/Services.htm" />
+    <Map Name="Nodes" Link="/Content/Orca/Nodes.htm" />
+    <Map Name="Policy" Link="/Content/Orca/Policy.htm" />
+    <Map Name="Settings" Link="/Content/Orca/Settings.htm" />
+    <Map Name="UnderstandingOrca" Link="/Content/Orca/UnderstandingOrca.htm" />
+    <Map Name="Vulnerabilities" Link="/Content/Orca/VulnerabilityDetails.htm" />
+    <Map Name="WhatsNew" Link="/Content/Orca/WhatsNew.htm" />
+    <Map Name="AllowedConnections" Link="/Content/Orca/AllowedConnections.htm" />
+    <Map Name="KubernetesNetworkPolicies" Link="/Content/Orca/KubernetesNetPolicies.htm" />
+    <Map Name="FirewallTickets" Link="/Content/Orca/FirewallTickets.htm" />
+    <Map Name="OverlyPermissiveRpt" Link="/Content/Orca/OverlyPermissiveRpt.htm" />
+    <Map Name="SecurityScore" Link="/Content/Orca/SecurityScore.htm" />
+    <Map Name="FilteringGeneral" Link="/Content/Orca/GeneralActions.htm" />
+    <Map Name="DiscoveryEngine" Link="/Content/Orca/DiscoveryEngine.htm" />
+    <Map Name="AddingConnection" Link="/Content/Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
+    <Map Name="Notifications" Link="/Content/Orca/SettingsNotifications.htm" />
 </CatapultAliasFile>

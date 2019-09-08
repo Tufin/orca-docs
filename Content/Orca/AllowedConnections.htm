@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Security Policy -  Allowed Connections</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>Allowed connections are connection rules for cluster network traffic and together they constitute a security policy that can be enforced on your cluster. These rules can define namespaces, services and DNS names. IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local.Product_S" /> and later used to create Kubernetes network policies.</p>
+        <p>
+            <img src="../Resources/Images/ScreenPolicyAllowedConnections.png" class="ThumbnailPopup" />
+        </p>
+        <p>Initially the list contains two allowed connections:</p>
+        <ol>
+            <li>
+                <p>One from the <MadCap:variable name="local.Kite" /> (Kite) to tufin.io</p>
+            </li>
+            <li>
+                <p>One from all namespaces to the Kubernetes DNS</p>
+            </li>
+        </ol>
+        <p>The <MadCap:variable name="local.Kite" /> rule should not be deleted or changed. However, if deleted it can be recreated manually or selected from the <a href="#Adding">New Connections Window</a>. New allowed connections are added by selecting them from the new connections discovered or defined manually. </p>
+        <p>Your policy will always be in one of two Policy Modes - <span class="StatusOrValue">Learn</span> or <span class="StatusOrValue">Enforce</span> . When in <span class="StatusOrValue">Learn</span> mode, <MadCap:variable name="local.Product_S" /> will not apply any limitations on traffic in the cluster. When in <span class="StatusOrValue">Enforce</span> mode, <MadCap:variable name="local.Product_S" /> will apply limitations on the traffic. Switching modes is done in <a href="Settings.htm">Settings</a>. </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li><a href="#Adding_an_Allowed_Connection_Manually">Add an allowed connection by entering details yourself</a>
+            </li>
+            <li><a href="#AddingFromNewConnectionsWindow">Add an allowed connection from the New Connections Window</a>
+            </li>
+            <li><a href="#Deleting">Delete an allowed connection</a>
+            </li>
+            <li><a href="#Locking">Lock / unlock an allowed connection</a>
+            </li>
+            <li><a href="#Resettin">Reset allowed connections</a>
+            </li>
+            <li><a href="#Export">Export as Kubernetes network policies</a>
+            </li>
+            <li><a href="#ApplyOnFW">Apply on firewalls</a>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+        <p><a name="Adding_an_Allowed_Connection_Manually"></a>
+        </p>
+        <p class="h3">Adding an Allowed Connection by Entering Details Yourself</p>
+        <p>To specify an allowed connection from a namespace in your cluster to a domain outside of the cluster. </p>
+        <ol>
+            <li>
+                <p>Click on the <span class="ScreenObject">Add</span> icon (<img src="../Resources/Images/IconAddEnforce.png" class="noborder" /> or <img src="../Resources/Images/IconAddLearning.png" class="noborder" /> depending on the currently selected policy mode). The <span class="ScreenObject">Add Allowed Connection</span> window is displayed. </p>
+                <p>
+                    <img src="../Resources/Images/WindowAddAllowedConnection.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the details:</p>
+                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                    <caption>Fields on the Screen</caption>
+                    <col class="TableStyle-PatternedRows-Column-Regular" style="width: 477px;" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-PatternedRows-Head-Header1">
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                                <p class="TableHeading">Field Name</p>
+                            </th>
+                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                                <p class="TableHeading">Value</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">From</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Click in the field to display the list of available namespaces and then click on the required value</td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">To </td>
+                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
+                                <p>Type a valid domain name (DNS). Optionally use the wildcard character on the left of the name. This will allow multiple protocols and/or sub-domains to be included in the same rule.</p>
+                                <p>Examples:&#160;api.example.io, *.example.com</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click <span class="ScreenObject">Add Rule</span> . The rule will be added to the list.</li>
+        </ol>
+        <p class="h3"><a name="AddingFromNewConnectionsWindow"></a>Adding an Allowed Connection From the New Connections Window</p>
+        <ol class="Action">
+            <li>
+                <p> Any connections that have been discovered by the <a href="DiscoveryEngine.htm">Discovery Engine</a> and do not exist as allowed connections in your security policy, are considered new. The number of new connections is displayed within the <span class="ScreenObject">New Connections Button</span> at the top of the screen. </p>
+            </li>
+            <li>
+                <p>Click <span class="ScreenObject">New Connections. </span>The New Connections Window<span class="ScreenObject"> </span>is displayed.</p>
+                <p>
+                    <img src="../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>In the New Connections Window, click on the appropriate checkboxes to select specific new connections , or click <span class="ScreenObject">All</span>, and then click <span class="ScreenObject">Add to Policy</span>.</p>
+            </li>
+            <li>The selected rules will be added to your security policy and removed from the <span class="ScreenObject">New Connections Window</span>. The number of new connections on the <span class="ScreenObject">New Connections Button </span>will be updated accordingly.</li>
+        </ol>
+        <p class="h3"><a name="Deleting"></a>Deleting an Allowed Connection</p>
+        <p>Rules can be deleted from the security policy at any time. </p>
+        <ol>
+            <li>Hover over the line for the appropriate rule and click <img src="../Resources/Images/IconRemove.png" class="noborder" /> when it appears on the line.</li>
+            <li>The allowed connection will be removed.</li>
+        </ol>
+        <p class="h3"><a name="Locking"></a>Locking / Unlocking an Allowed Connection</p>
+        <p>The purpose of locking rules is to prevent them from being deleted when resetting allowed connections. However, a locked rule can individually be deleted in the same way as an unlocked rule. Rules can be locked and unlocked in the security policy at any time. </p>
+        <p>To lock a rule:</p>
+        <ol>
+            <li>Hover over the line for the appropriate rule and click the <span class="ScreenObject">Lock icon <img src="../Resources/Images/IconUnlock.png" class="noborder"></img></span> when it appears on the line.</li>
+            <li>Thereafter, the rule will display the <span class="ScreenObject">Locked icon</span> <img src="../Resources/Images/IconLocked.png" class="noborder" /> all the time.</li>
+        </ol>
+        <p>To unlock a rule:</p>
+        <ol>
+            <li>Click the <span class="ScreenObject">Locked icon</span> <img src="../Resources/Images/IconLocked.png" class="noborder" /> on the desired line.</li>
+            <li>The <span class="ScreenObject">Locked icon</span> will be removed from the line.</li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+        <p class="h3"><a name="Resettin"></a>Resetting Allowed Connections</p>
+        <p>Resetting allowed connections restores your policy to a base-line of allowed rules. All rules that have been locked constitute your base-line and if no rules have been locked, your base-line is a policy with no rules whatsoever.</p>
+        <ol>
+            <li>
+                <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions</span> menu.</p>
+                <p>
+                    <img src="../Resources/Images/MenuSecurityPolicyActions.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click on <span class="ScreenObject">Reset Allowed Connections</span> from the menu.</p>
+            </li>
+            <li>
+                <p>All allowed connections will be deleted from the security policy, except those that are <a href="#Locking">locked</a>.</p>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+        <p class="h3"><a name="Export"></a>Export as Kubernetes Network Policies</p>
+        <p>Information security requires tight network segmentation in order to minimize the attack surface, prevent lateral movement of malicious code and enable compliance with policies.</p>
+        <p>Kubernetes network policies provide a good means for network segmentation, but they are difficult to operate, especially in the highly dynamic environment of micro-services and DevOps.</p>
+        <p><MadCap:variable name="local.Product_S" /> allows you to automate the creation of Kubernetes network policies based on the application connectivity.</p>
+        <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create your Kubernetes network policy.</p>
+        <ul>
+            <li>
+                <p>For every k8s service that appears in "Allowed Connections", as source or destination, will have a corresponding k8s policy. </p>
+            </li>
+            <li>
+                <p>Each service policy consists of all ingress and egress connections for the service.</p>
+            </li>
+            <li>
+                <p>A cleanup policy will be added for every namespace.</p>
+            </li>
+            <li>
+                <p>For discovered connections within the cluster, the Kubernetes network policies will be label-based.</p>
+            </li>
+            <li>
+                <p>For discovered connections coming from outside the cluster (ingress via a load balancer), the Kubernetes network policies will allow traffic from any source IP.</p>
+            </li>
+            <li>
+                <p>Where the service has egress to external end-points, the egress policy will contain the IPs that were discovered by Orca as "ipBlock/cidr" entities with a comment describing the origin:</p><pre xml:space="preserve">
+egress:
+ - to:
+  - ipBlock:
+     cidr: 192.210.214.132/32 # api.timezonedb.com	
+</pre>
+            </li>
+            <li>
+                <p>For manually added allowed connections from a namespace to an external domain, the Kubernetes network policies will allow traffic to any destination IP.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>External services with many IPs (like cloudimageupdate-pa.googleapis.com) may only be partially covered because Orca could only monitor IP's accessed from the cluster and there may be other IPs not yet seen. In this case, you can allow for any IP by creating a manual rule allowing access from the relevant namespace to the domain name; the policy will then be generated with egress to 0.0.0.0/0: Example:</p>
+                <p>
+                    <img src="../Resources/Images/Screen_connection_egress_to_domain.png">
+                    </img>
+                </p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Services that require ingress access (i.e. accept connections from an external source) have ingress with 0.0.0.0/0. Example:</p><pre xml:space="preserve">
+ingress:
+  - from:
+    - ipBlock:
+       cidr: 0.0.0.0/0 # ingress
+</pre>
+            </li>
+            <li>
+                <p>For each namespace, a corresponding "cleanup policy" will be added, which denies all inbound and outbound traffic except for access that was allowed to a namespace through a manually added rule.</p>
+            </li>
+            <li>
+                <p>If not deleted by the user, the output will include the rule for all namespaces to access the Kubernetes DNS service:</p>
+                <p>
+                    <img src="../Resources/Images/Screen_connection_allnamespacess_to_kubedns.png" />
+                </p>
+            </li>
+        </ul>
+        <ol>
+            <li>
+                <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions</span> menu.</p>
+                <p>
+                    <img src="../Resources/Images/MenuSecurityPolicyActions.png" />
+                </p>
+            </li>
+            <li>
+                <p>Click on <span class="ScreenObject">Export as network policies </span>from the menu. </p>
+            </li>
+        </ol>
+        <p>The security policy will be exported for all namespaces - any screen filtering on namespace is ignored in this action. A file named &lt;domain&gt;-&lt;project&gt;.yml will be downloaded via the browser.</p>
+        <p>To apply the policies, run kubectl apply -f &lt;yaml file name&gt;. For more information on kubectl, see the Kubernetes documentation. </p>
+        <p>Sample format:</p>
+        <p>
+            <img src="../Resources/Images/yaml_network_policies.png" class="ThumbnailPopup" /> </p>
+        <p>See full <a href="KubernetesNetworkPolicyExample.txt">Example</a>. </p>
+        <div class="Warning">
+             This mechanism uses the namespace selector in combination with podSelector. Therefore, for the export action to work:
+            <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>
+        <p class="h3"><a name="ApplyOnFW"></a>Apply on Firewalls</p>
+        <p>Apply on firewalls applies your <MadCap:variable name="local.Product_S" /> security policy to any firewalls you have integrated previously with <MadCap:variable name="local.Product_S" /> (see <a href="Firewalls.htm">Firewalls</a>). Currently, <MadCap:variable name="local.SC" /> and Microsoft Azure are the only supported applications and Microsoft Azure only works for egress rules. </p>
+        <p>After the apply on firewalls process is initiated, the tickets created can be seen on the <a href="FirewallTickets.htm">Firewall Tickets Screen</a>, together with their status. </p>
+        <ol>
+            <li>
+                <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions Menu</span>.</p>
+                <p>
+                    <img src="../Resources/Images/MenuSecurityPolicyActions.png" />
+                </p>
+                <p><MadCap:variable name="local.Product_S" /> recognizes whether the integration is set up. If there is no integration, the <span class="MenuItem">Apply on Firewalls</span> option in the menu will be greyed out and unclickable, and it will show as <span class="MenuItem">Apply on Firewalls (Disabled)</span>. </p>
+            </li>
+            <li>
+                <p>Click on <span class="ScreenObject">Apply on Firewalls</span> from the menu. This will initiate the process and change the option in the <span class="ScreenObject">Actions Menu</span> to be greyed out and show as <span class="MenuItem">Apply on Firewalls (in-progress)</span>. This status will remain until all requests (tickets) have been resolved and implemented or deleted in the network policy change management system. You cannot initiate the process again while there are requests still in progress.  A separate request (ticket) will be submitted for each namespace in your current filter (see <a href="GeneralActions.htm#Filter">Filter by Namespace</a>). Requests that have been submitted cannot be deleted within <MadCap:variable name="local.Product_S" />. </p>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <p><a href="Navigation.htm">Main Menu</a>  &gt; <a href="Policy.htm">Policy</a> &gt;<span class="ScreenObject"> Security Policy</span></p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
+    </body>
+</html>

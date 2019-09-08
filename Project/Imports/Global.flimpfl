@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2019-08-25T16:51:13.1599590+03:00">
+  LastImport="2019-09-05T14:18:56.5841759+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -225,6 +225,15 @@
     <Url
       Source="../../../Global/Content/Resources/TopicTemplates/Template_Concepts.htm"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Template_Concepts.htm" />
+    <Url
+      Source="../../../Global/Content/HowDoI.docx"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/HowDoI.docx" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_TufinOS.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_TufinOS.png" />
+    <Url
+      Source="../../../Global/Project/ConditionTagSets/Which.flcts"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/ConditionTagSets/Which.flcts" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -436,5 +445,14 @@
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_Concepts.htm"
       TimeStamp="18-Jul-19 12:03:48 PM" />
+    <Url
+      Source="../../Content/HowDoI.docx"
+      TimeStamp="05-Sep-19 14:18:27 PM" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_TufinOS.png"
+      TimeStamp="05-Sep-19 14:18:27 PM" />
+    <Url
+      Source="../ConditionTagSets/Which.flcts"
+      TimeStamp="05-Sep-19 14:18:27 PM" />
   </GeneratedFiles>
 </CatapultProject>

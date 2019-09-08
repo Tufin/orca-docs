@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    BackgroundColor="#d2691e"
+    Name="TOS1"
+    Comment="TOS1 topics or text" />
+  <ConditionTag
+    BackgroundColor="#00ffff"
+    Name="TOS2"
+    Comment="TOS2 topics or text" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="TufinOS2"
+    Comment="TufinOS 2.x topics" />
+  <ConditionTag
+    BackgroundColor="#ff0000"
+    Name="TufinOS3"
+    Comment="TufinOS 3.x topics" />
+</CatapultConditionTagSet>

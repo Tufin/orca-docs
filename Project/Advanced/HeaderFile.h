@@ -21,3 +21,4 @@
 #define DiscoveryEngine 1016
 
 #define AddingConnection 1017
+#define Notifications 1018
