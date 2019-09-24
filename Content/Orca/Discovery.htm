@@ -4,9 +4,11 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Discovery Engine</h1>
+        <h1>Discover New Connections</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <p>The <MadCap:variable name="local.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
-        <p class="h2">What Type of Connections Does <MadCap:variable name="local.Product_S" /> discover?</p>
+        <p class="h3">What Type of Connections Does <MadCap:variable name="local.Product_S" /> discover?</p>
         <ul>
             <li>TCP and UDP connections </li>
             <li>Connections between service pods</li>
@@ -44,10 +46,21 @@
                 </tr>
             </tbody>
         </table>
-        <h2>From New Connections to Allowed Connections</h2>
-        <p>New connections  in the New Connections Window can be viewed and optionally converted to allowed connections in a mouse click - see <a href="AllowedConnections.htm">Security Policy</a>. </p>
-        <h2>Notifications</h2>
-        <p>A notification can be sent whenever a new connection is discovered. See <a href="Settings.htm">Settings</a>.</p>
-        <p>See <a href="WorkingWithDiscovery.htm">Working With Discovery</a></p>
+        <p class="h3">Notifications</p>
+        <p>A notification can be sent whenever a new connection is discovered. See <a href="SettingsNotifications.htm">Notifications and Alerts</a>.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p>Turn a new connection into a policy rule (allowed connection). - Select one or more rules in the <span class="ScreenObject">New Connections List</span> and click <span class="ScreenObject">Add to Policy</span>.</p>
+            </li>
+        </ul>
+        <p class="h3">Turn a New Connection Into a Policy Rule</p>
+        <p> Any connections  discovered  that don't exist as allowed connections in your security policy, are considered new. The number of new connections is displayed  at the top of the screen. </p>
+        <ul>
+            <li>Select one or more new connections  and click <span class="ScreenObject">Add to Policy</span>.</li>
+        </ul>
+        <p>The selected rules will be added to your security policy and removed from the <span class="ScreenObject">New Connections Window</span>. The number of new connections displayed will be updated accordingly.</p>
+        <p class="h2">How do I get here?</p>
+        <p>From most screens, click <span class="Bold">on <span class="ScreenObject">New Connections</span> at the top of the screen.</span></p>
     </body>
 </html>

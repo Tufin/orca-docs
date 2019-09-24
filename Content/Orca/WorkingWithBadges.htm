@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1><a name="top"></a>Working With Badges</h1>
+        <h1><a name="top"></a>Implement Badges</h1>
         <ul>
             <li>
                 <p><a href="#overview">Overview</a>
@@ -18,14 +18,13 @@
             </li>
         </ul>
         <h2><a name="overview"></a>Overview</h2>
-        <p class="ManualTitle1">An <MadCap:variable name="local.Product_S" /> badge  shows the <MadCap:variable name="local.Product_S" /> <a href="../SecurityScore.htm"><MadCap:variable name="local.TufinScore" /></a> of a single container  (the <b>image</b>, not the source code) in real time.  See <a href="../Badges.htm">Badge Concepts</a>.</p>
+        <p class="ManualTitle1">An <MadCap:variable name="local.Product_S" /> badge  shows the <MadCap:variable name="local.Product_S" /> <a href="SecurityScore.htm"><MadCap:variable name="local.TufinScore" /></a> of a single container  image in real time.  See <a href="Badges.htm">Badge Concepts</a>.</p>
         <h2><a name="Implementing"></a>Implementing the Badge</h2>
         <p>Inserting badges into repository readme files is a popular and  convenient way of making the <MadCap:variable name="local.TufinScore" /> available in a prominent position. Just enter the <MadCap:variable name="local.Product_S" /> API string with the appropriate parameters.</p>
-        <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
         <h3>Format:</h3>
         <p class="CodeSegment1">![Tufin](https://orca.tufin.io/api/&lt;domain&gt;/&lt;project&gt;/badges/security-score?image=&lt;pod-image-name&gt;:&lt;image-tag&gt;&amp;token=&lt;view token&gt;)](https://orca.tufin.io/ui/#/&lt;domain&gt;/&lt;project&gt;/grid/scans?image=&lt;pod-image name&gt;:&lt;image-tag&gt;)</p>
         <p>Where,</p>
-        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col style="width: 494px;" class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <thead>
@@ -60,7 +59,7 @@
         <h3>Example:</h3>
         <p class="CodeSegment1">![Tufin](https://orca.tufin.io/api/MyCompany/MyProject/badges/security-score?image=k8s.gcr.io/event-exporter:05&amp;token=6440d59a-97a9-47c8-92a-20963fc47b11)](https://orca.tufin.io/ui/#/MyCompany/MyProject/grid/scans?image=k8s.gcr.io/event-exporter:05)</p>
         <p>Where,</p>
-        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col style="width: 494px;" class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <thead>
@@ -94,6 +93,5 @@
         </table>
         <h2><a name="Live"></a>Live Example:</h2>
         <p>You can see a live example of badges here:&#160;<a href="https://github.com/Tufin/orca-docs/blob/master/badges.md">https://github.com/Tufin/orca-docs/blob/master/badges.md</a></p>
-        <MadCap:snippetBlock src="../../Resources/TopicTemplates/Collateral/BackToTop.flsnp" />
     </body>
 </html>

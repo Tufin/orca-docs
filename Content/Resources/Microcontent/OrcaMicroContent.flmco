@@ -24,7 +24,7 @@
           <xhtml:h1>Discovery Engine</xhtml:h1>
           <xhtml:p>Discovery Engine is the function of <MadCap:variable
               xhtml:name="local.Product_S" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> that identifies traffic in the cluster. For more information see <xhtml:a
-              xhtml:href="../../Orca/DiscoveryEngine.htm">Discovery Engine</xhtml:a>. </xhtml:p>
+              xhtml:href="../../Orca/Discovery.htm">Discovery Engine</xhtml:a>. </xhtml:p>
         </xhtml:body>
       </xhtml:html>
     </MicroContentResponse>

@@ -45,7 +45,7 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 
 /* TOS2 */
 .theme-tos2 nav.title-bar {
-	background-color: #E06100;
+	background-color: #EA7600;
 	background-image: url('Images/headerTos2_105px.jpg');
 }
 .theme-tos2 .title-bar-layout a.logo {
@@ -56,10 +56,10 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	background-color: transparent;
 }
 .theme-tos2 ul.menu._Skins_SideMenu.mc-component {
-	border-top-color: #E06100;
+	border-top-color: #EA7600;
 }
 .theme-tos2 ul.menu._Skins_SideMenu.mc-component li > a.selected {
-    border-left-color: #E06100;
+    border-left-color: #EA7600;
 }
 
 /* Test */

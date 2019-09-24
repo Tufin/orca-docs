@@ -4,10 +4,10 @@
     </head>
     <body>
         <h1>Architecture</h1>
-        <h2>The <MadCap:variable name="local.Product_S" /> Application</h2>
-        <p>The user interface for visualizing cluster security information such as network traffic, vulnerabilities, Kubernetes network policies and the <MadCap:variable name="local.Product_S" /> security policy and for taking actions such as switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
+        <h2>The <MadCap:variable name="local.Product_S" /> Cloud Application</h2>
+        <p>This is the cloud-based user interface you log into from your browser. Used for visualizing cluster security information such as network traffic, vulnerabilities, Kubernetes network policies and the <MadCap:variable name="local.Product_S" /> security policy and for taking actions such as switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
         <h2>The <MadCap:variable name="local.Product_S" /> Agent</h2>
-        <p>The <MadCap:variable name="local.Kite" /> monitors traffic in your cluster, enforces your policy and communicates with the Orca application. The agent consists of the following primary services:</p>
+        <p>The <MadCap:variable name="local.Kite" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, enforces your policy and communicates with the <MadCap:variable name="local.Product_S" /> cloud application. The agent consists of the following primary services:</p>
         <h3><MadCap:variable name="local.Product_S" /> Kite</h3>
         <p>Communicates between the <MadCap:variable name="local.Kite" /> plugins and the <MadCap:variable name="local.Product_S" /> application.</p>
         <h3><MadCap:variable name="local.Product_S" /> DNS plugin</h3>
@@ -18,16 +18,15 @@
         </ul>
         <h3><MadCap:variable name="local.Product_S" /> IP  Plugin </h3>
         <ul>
-            <li>Employs the Conntrack daemon set </li>
-            <li>Discovers IP connection requests, including ingress</li>
-            <li>Discovers UDP connection requests</li>
-            <li>Works for <MadCap:variable name="local.Openshift" /> only - soon to be extended to all implementations </li>
-            <li>Works at the node level</li>
+            <li>Employs the Conntrack daemon set. </li>
+            <li>Discovers IP connection requests, including ingress.</li>
+            <li>Discovers UDP connection requests.</li>
+            <li>Works at the node level.</li>
         </ul>
         <h3><MadCap:variable name="local.Product_S" /> Istio Plugin</h3>
         <p>Applies the Orca security policy to the cluster through Istio. Istio must be installed prior to <MadCap:variable name="local.Product_S" /> installation.</p>
-        <h3>Discovery Engine</h3>
-        <p>Not a service in itself but rather a concept in <MadCap:variable name="local.Product_S" /> that represents the identification mechanism of network traffic in your cluster. Comprised of other <MadCap:variable name="local.Kite" /> plugins.  See <a href="DiscoveryEngine.htm">Discovery Engine</a>.</p>
+        <h3><MadCap:variable name="local.Product_S" /> Discovery (Discovery Engine)</h3>
+        <p>The discovery engine is comprised of a subset of the <MadCap:variable name="local.Kite" /> plugins described above. It monitors your cluster and identifies the initiation of network connections.  See <a href="Discovery.htm">Discovery Engine</a>.</p>
         <p>See also:</p>
         <ul>
             <li><a href="WhatIsOrca.htm">What is Orca</a>

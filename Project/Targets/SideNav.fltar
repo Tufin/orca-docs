@@ -11,8 +11,9 @@
   DefaultUrl="/Content/Orca/WhatIsOrca.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
-  ConditionTagExpression=""
-  OutputFile="Default.htm">
+  ConditionTagExpression="exclude[General.Exclude] "
+  OutputFile="index.htm"
+  MasterToc="/Project/TOCs/OnlineOutput.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

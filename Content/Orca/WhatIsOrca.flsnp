@@ -3,6 +3,11 @@
     <head>
     </head>
     <body>
-        <p> <MadCap:variable name="local.Product_S" /> is a cloud-based security monitoring and enforcement platform for Kubernetes clusters, containers and microservices. </p>
+        <p> <MadCap:variable name="local.Product_S" /> is a cloud-based security monitoring and enforcement platform for Kubernetes clusters, containers and microservices that provides visibility  into cluster security and lets you create and implement your security policy in the cluster. <MadCap:variable name="local.Product_S" /> gives you:</p>
+        <ul>
+            <li>Visibility: See the actual network traffic in the cluster, Kubernetes network policies in a clear and intuitive way and vulnerabilities in containers, pods and services.</li>
+            <li>Enforcement: Set a security policy of allowed connections and apply it to the cluster as Kubernetes network policies and other mechanisms of protection.</li>
+            <li>Advanced capabilities such as building Kubernetes security into the CI/CD pipeline and applying your policy on firewalls.</li>
+        </ul>
     </body>
 </html>

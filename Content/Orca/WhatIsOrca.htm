@@ -5,22 +5,23 @@
     <body>
         <h1>What is <MadCap:variable name="local.Product_S" />?</h1>
         <MadCap:snippetBlock src="WhatIsOrca.flsnp" />
-        <p><a name="The"></a>The main functions provided by  <MadCap:variable name="local.Product_S" /> are:</p>
+        <p><a name="The"></a>
+        </p>
+        <p class="h2">What Does <MadCap:variable name="local.Product_S" /> do?</p>
+        <p>The main capabilities of  <MadCap:variable name="local.Product_S" /> are:</p>
         <ol>
-            <li>Discovery and learning of network traffic movements in your cluster.</li>
-            <li>Visibility of the network traffic movements in your cluster.</li>
-            <li>Visibility of your Kubernetes network policy.</li>
-            <li>Visibility of non-compliance of the actual network traffic in your cluster with your defined policy. </li>
-            <li>Automated application of your security policy to your Kubernetes cluster. Implementation of an additional level of access control to and from the pods in your cluster over and above Kubernetes native network policy.</li>
-            <li>Immutable policy control - automated application of your defined policy on newly-built container objects as part of your CI/CD pipeline. </li>
-            <li>Scanning of Docker container images for vulnerabilities and giving an appropriate <MadCap:variable name="local.TufinScore" /> to each container. <MadCap:variable name="local.Product_L" /> computes a <MadCap:variable name="local.TufinScore" /> for each active service, based on a vulnerability scan of the underlying containers. The <MadCap:variable name="local.TufinScore" /> gives you instant insight into the security of the services you utilize in your application. This can be added as a step to your CI/CD pipeline.</li>
-            <li>Integration of vulnerability scans into your code repository, implemented as a badge in your readme file.The Tufin badges are an effective way to highlight security issues to the application developers as they develop the application.</li>
-            <li>Integration with <MadCap:variable name="local.SC" /> to apply your policy to firewalls in an automated fashion.</li>
+            <li>Cluster visibility - pods, services, nodes, Kubernetes network policies and network traffic in your cluster.</li>
+            <li>Identifying traffic  that is not compliant with your defined policy. </li>
+            <li>Enforcement of your security policy to your Kubernetes cluster as Kubernetes network policies and as other mechanisms of access control to and from the pods in your cluster.</li>
+            <li>Immutable policy control - automated policy creation built into your CI/CD pipeline. </li>
+            <li>Scanning of Docker container images for vulnerabilities and giving an appropriate <MadCap:variable name="local.TufinScore" /> to each container. <MadCap:variable name="local.Product_L" /> computes a <MadCap:variable name="local.TufinScore" /> for each active service. The <MadCap:variable name="local.TufinScore" /> gives you instant insight into the security of the services you utilize in your application. This can be added as a step to your CI/CD pipeline.</li>
+            <li>Integration of vulnerability scans into your code repository, implemented as a badge in your readme file. The Tufin badges are an effective way to highlight security issues to the application developers as they develop the application.</li>
+            <li>Application of your policy to firewalls via <MadCap:variable name="local.SC" /> and directly on Microsoft's Azure Firewall.</li>
         </ol>
         <p><MadCap:variable name="local.Product_S" /> integrates into any Kubernetes platform, any build server, and any code repository. Your application can be deployed on any public cloud platform that supports Kubernetes, including AWS, Azure, GCP, OpenShift, Docker Enterprise, Minikube, or on your own private on-premises cloud platform.</p>
         <p>See also:</p>
         <ul>
-            <li><a href="UnderstandingOrca.htm">Architecture</a>
+            <li><a href="Architecture.htm">Architecture</a>
             </li>
             <li><a href="Enforcement.htm">Enforcement</a>
             </li>

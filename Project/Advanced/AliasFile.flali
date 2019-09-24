@@ -7,7 +7,7 @@
     <Map Name="Nodes" Link="/Content/Orca/Nodes.htm" />
     <Map Name="Policy" Link="/Content/Orca/Policy.htm" />
     <Map Name="Settings" Link="/Content/Orca/Settings.htm" />
-    <Map Name="UnderstandingOrca" Link="/Content/Orca/UnderstandingOrca.htm" />
+    <Map Name="UnderstandingOrca" Link="/Content/Orca/Architecture.htm" />
     <Map Name="Vulnerabilities" Link="/Content/Orca/VulnerabilityDetails.htm" />
     <Map Name="WhatsNew" Link="/Content/Orca/WhatsNew.htm" />
     <Map Name="AllowedConnections" Link="/Content/Orca/AllowedConnections.htm" />
@@ -15,8 +15,8 @@
     <Map Name="FirewallTickets" Link="/Content/Orca/FirewallTickets.htm" />
     <Map Name="OverlyPermissiveRpt" Link="/Content/Orca/OverlyPermissiveRpt.htm" />
     <Map Name="SecurityScore" Link="/Content/Orca/SecurityScore.htm" />
-    <Map Name="FilteringGeneral" Link="/Content/Orca/GeneralActions.htm" />
-    <Map Name="DiscoveryEngine" Link="/Content/Orca/DiscoveryEngine.htm" />
+    <Map Name="FilteringGeneral" Link="/Content/Orca/NavigatingOrca.htm" />
+    <Map Name="DiscoveryEngine" Link="/Content/Orca/Discovery.htm" />
     <Map Name="AddingConnection" Link="/Content/Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
     <Map Name="Notifications" Link="/Content/Orca/SettingsNotifications.htm" />
 </CatapultAliasFile>

@@ -22,6 +22,7 @@
 		<title></title>
     </head>
     <body>
+		<a name="top"></a>
         <div id="contentBody">
             <div>
                 <MadCap:breadcrumbsProxy />
