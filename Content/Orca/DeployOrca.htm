@@ -9,7 +9,7 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Deploying <MadCap:variable name="Local.Product_L" /></h1>
+        <h1>Deploying <MadCap:variable name="local.Product_S" /> </h1>
         <p>These guidelines are for deploying <MadCap:variable name="Local.Product_S" /> on your first cluster, according to the instructions in <a href="SignUp.htm">Sign Up</a>. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
         <p class="h2"><a name="Deploy"></a>On <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" /> and <MadCap:variable name="Local.Docker" /> Clusters</p>
         <ol>
@@ -26,17 +26,15 @@ https://orca.tufin.io/api/<span class="Bold">&lt;domain&gt;/&lt;project&gt;</spa
                 <p>The command string will be displayed when logging in until you run the command and appears also in the  email, if requested. </p>
             </li>
         </ol>
-        <h2>On <MadCap:variable name="Local.Openshift" /> Clusters</h2>
+        <p class="h2">On <MadCap:variable name="Local.Openshift" /> Clusters</p>
         <p>Use the <MadCap:variable name="Local.Product_S" /> <MadCap:variable name="Local.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described for <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" />  and <MadCap:variable name="Local.Docker" /></p>
         <p class="h2">Now What?</p>
         <p><MadCap:variable name="local.Product_L" /> has now been deployed on your cluster and your cluster is now being monitored. Check as follows:</p>
         <p>
             <ol>
                 <li>Log in to <MadCap:variable name="local.Product_S" />. </li>
-                <li>Go to Services. If the services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local.Product_S" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed.</li>
-                <li>
-                    <p>The service graph will show traffic as soon as it is generated in the cluster.</p>
-                </li>
+                <li>Go to Services. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local.Product_S" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show traffic as soon as it is generated in the cluster.</li>
+                <li>Continue with <a href="UsingOrca.htm">Using <MadCap:variable name="local.Product_S" /></a>.</li>
             </ol>
         </p>
         <p class="h2"><a name="Deployme"></a>Deployment Requirements</p>
@@ -52,7 +50,7 @@ https://orca.tufin.io/api/<span class="Bold">&lt;domain&gt;/&lt;project&gt;</spa
 </p>
             </li>
             <li>
-                <p>Non-standard Kubernetes platforms can be supported on-demand.
+                <p>Additional Kubernetes platforms can be supported on-demand.
 </p>
             </li>
         </ul>

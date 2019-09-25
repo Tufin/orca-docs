@@ -29,9 +29,6 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Orca/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/Orca/Securing_Orca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Getting Started">
@@ -44,9 +41,6 @@
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Orca/UsingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/Orca/RemovingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Working with Orca">
@@ -126,6 +120,9 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Orca/WorkingWithBadges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Orca/RemovingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
   </TocEntry>
   <TocEntry

@@ -26,10 +26,10 @@
         <p class="h3">Why Manage Policy in Orca?</p>
         <ol>
             <li>To have a clear and documented set of security rules for your cluster that you can review and present whenever needed.</li>
-            <li>To know about connections made that you haven't accounted for in advance; you can get instant alerts too.</li>
             <li>To apply your security rules to your cluster as Kubernetes network policies.</li>
+            <li>To know about connections made that you haven't accounted for; you can get instant alerts too.</li>
         </ol>
-        <p>Adding allowed connections can be done either from this page or from the <a href="Discovery.htm">New Connections Window</a>.</p>
+        <p>Adding allowed connections can also be done  from the <a href="Discovery.htm">New Connections Window</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#Adding_an_Allowed_Connection_Manually">Add an allowed connection</a>
@@ -126,66 +126,7 @@
             </li>
         </ol>
         <p class="h3"><a name="Export"></a>Export as Kubernetes Network Policies</p>
-        <p>Information security requires tight network segmentation in order to minimize the attack surface, prevent lateral movement of malicious code and enable compliance with policies.</p>
-        <p>Kubernetes network policies provide a good means for network segmentation, but they are difficult to operate, especially in the highly dynamic environment of micro-services and DevOps.</p>
-        <p><MadCap:variable name="local.Product_S" /> allows you to automate the creation of Kubernetes network policies based on the application connectivity.</p>
-        <p>The set of allowed connections - your network policy - can be exported as a YAML file which can be used to create your Kubernetes network policy.</p>
-        <ul>
-            <li>
-                <p>For every k8s service that appears in "Allowed Connections", as source or destination, will have a corresponding k8s policy. </p>
-            </li>
-            <li>
-                <p>Each service policy consists of all ingress and egress connections for the service.</p>
-            </li>
-            <li>
-                <p>A cleanup policy will be added for every namespace.</p>
-            </li>
-            <li>
-                <p>For discovered connections within the cluster, the Kubernetes network policies will be label-based.</p>
-            </li>
-            <li>
-                <p>For discovered connections coming from outside the cluster (ingress via a load balancer), the Kubernetes network policies will allow traffic from any source IP.</p>
-            </li>
-            <li>
-                <p>Where the service has egress to external end-points, the egress policy will contain the IPs that were discovered by Orca as "ipBlock/cidr" entities with a comment describing the origin:</p><pre xml:space="preserve">
-egress:
- - to:
-  - ipBlock:
-     cidr: 192.210.214.132/32 # api.timezonedb.com	
-</pre>
-            </li>
-            <li>
-                <p>For manually added allowed connections from a namespace to an external domain, the Kubernetes network policies will allow traffic to any destination IP.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <p>External services with many IPs (like cloudimageupdate-pa.googleapis.com) may only be partially covered because Orca could only monitor IP's accessed from the cluster and there may be other IPs not yet seen. In this case, you can allow for any IP by creating a manual rule allowing access from the relevant namespace to the domain name; the policy will then be generated with egress to 0.0.0.0/0: Example:</p>
-                <p>
-                    <img src="../Resources/Images/Screen_connection_egress_to_domain.png">
-                    </img>
-                </p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <p>Services that require ingress access (i.e. accept connections from an external source) have ingress with 0.0.0.0/0. Example:</p><pre xml:space="preserve">
-ingress:
-  - from:
-    - ipBlock:
-       cidr: 0.0.0.0/0 # ingress
-</pre>
-            </li>
-            <li>
-                <p>For each namespace, a corresponding "cleanup policy" will be added, which denies all inbound and outbound traffic except for access that was allowed to a namespace through a manually added rule.</p>
-            </li>
-            <li>
-                <p>If not deleted by the user, the output will include the rule for all namespaces to access the Kubernetes DNS service:</p>
-                <p>
-                    <img src="../Resources/Images/Screen_connection_allnamespacess_to_kubedns.png" />
-                </p>
-            </li>
-        </ul>
+        <p class="normal">The security policy will be exported for all namespaces - any screen filtering on namespace is ignored. A file named &lt;domain&gt;-&lt;project&gt;.yml will be downloaded via the browser. See Enforcement to learn how <MadCap:variable name="local.Product_S" /> </p>
         <ol>
             <li>
                 <p>Click on <span class="ScreenObject">Actions</span>  to display the <span class="ScreenObject">Actions</span> menu.</p>
@@ -196,13 +137,10 @@ ingress:
             <li>
                 <p>Click on <span class="ScreenObject">Export as network policies </span>from the menu. </p>
             </li>
+            <li>
+                <p>Apply the policies by running kubectl apply -f &lt;yaml file name&gt;. For more information on kubectl, see the Kubernetes documentation. </p>
+            </li>
         </ol>
-        <p>The security policy will be exported for all namespaces - any screen filtering on namespace is ignored in this action. A file named &lt;domain&gt;-&lt;project&gt;.yml will be downloaded via the browser.</p>
-        <p>To apply the policies, run kubectl apply -f &lt;yaml file name&gt;. For more information on kubectl, see the Kubernetes documentation. </p>
-        <p>Sample format:</p>
-        <p>
-            <img src="../Resources/Images/yaml_network_policies.png" class="ThumbnailPopup" /> </p>
-        <p>See full <a href="KubernetesNetworkPolicyExample.txt">Example</a>. </p>
         <div class="Warning">
              This mechanism uses the namespace selector in combination with podSelector. Therefore, for the export action to work:
             <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>
