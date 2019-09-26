@@ -11,7 +11,7 @@
     <body>
         <h1>Deploying <MadCap:variable name="local.Product_S" /> </h1>
         <p>These guidelines are for deploying <MadCap:variable name="Local.Product_S" /> on your first cluster, according to the instructions in <a href="SignUp.htm">Sign Up</a>. First make sure you understand the <a href="#Deployme">Deployment Requirements</a>.</p>
-        <p class="h2"><a name="Deploy"></a>On <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" /> and <MadCap:variable name="Local.Docker" /> Clusters</p>
+        <p class="h2"><a name="Deploy"></a>On <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" />, <MadCap:variable name="Local.Docker" /> and <MadCap:variable name="local.pks" /> Clusters</p>
         <ol>
             <li>Open a terminal and point kubectl to your Kubernetes cluster.</li>
             <li>
@@ -27,7 +27,7 @@ https://orca.tufin.io/api/<span class="Bold">&lt;domain&gt;/&lt;project&gt;</spa
             </li>
         </ol>
         <p class="h2">On <MadCap:variable name="Local.Openshift" /> Clusters</p>
-        <p>Use the <MadCap:variable name="Local.Product_S" /> <MadCap:variable name="Local.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described for <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" />  and <MadCap:variable name="Local.Docker" /></p>
+        <p>Use the <MadCap:variable name="Local.Product_S" /> <MadCap:variable name="Local.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described for <MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" />, <MadCap:variable name="Local.Docker" /> and <MadCap:variable name="local.pks" />.</p>
         <p class="h2">Now What?</p>
         <p><MadCap:variable name="local.Product_L" /> has now been deployed on your cluster and your cluster is now being monitored. Check as follows:</p>
         <p>
@@ -120,6 +120,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             <li><MadCap:variable name="Local.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
             <li><MadCap:variable name="Local.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
             <li><MadCap:variable name="Local.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
+            <li><MadCap:variable name="local.pks" />: <a href="https://docs.pivotal.io/pks/1-3/control-plane.html">https://docs.pivotal.io/pks/1-3/control-plane.html</a> </li>
         </ul>
         <div class="NoteLight">
             <h2><a name="Changes"></a>Changes in your Cluster</h2>

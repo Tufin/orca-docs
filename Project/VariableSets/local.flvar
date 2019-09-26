@@ -81,4 +81,8 @@
     Name="OrcaEmail"
     Comment=""
     EvaluatedDefinition="orca@tufin.com">orca@tufin.com</Variable>
+  <Variable
+    Name="pks"
+    Comment=""
+    EvaluatedDefinition="Enterprise PKS">Enterprise PKS</Variable>
 </CatapultVariableSet>
