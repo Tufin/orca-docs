@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <p>The <MadCap:variable name="local.Product_S" /> Security Policy is a collection of rules called Allowed Connections; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a 'from' and 'to' location, where location is defined by namespace alone or namespace with service. To' locations can additionally contain a domain name, which can be generic.</p>
-        <p> <MadCap:variable name="local.Product_S" /> policy is separate from Kubernetes network policies, but you can enforce the <MadCap:variable name="local.Product_S" /> policy in the cluster as  Kubernetes network policies. Additionally, <MadCap:variable name="local.Product_S" /> provides visibility into to your Kubernetes network policies, making them visually more intuitive, clearer and easier to understand than YAML code. </p>
+        <p>The <MadCap:variable name="local.Product_S" /> Security Policy is a collection of rules called <a href="AllowedConnections.htm">Allowed Connections</a>; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a 'from' and 'to' location, where location is defined by namespace alone or namespace with service. To' locations can additionally contain a domain name, which can be generic.</p>
+        <p> <MadCap:variable name="local.Product_S" /> policy is separate from <a href="KubernetesNetPolicies.htm">Kubernetes network policies</a>, but you can enforce the <MadCap:variable name="local.Product_S" /> policy in the cluster as  Kubernetes network policies. Additionally, <MadCap:variable name="local.Product_S" /> provides visibility into your Kubernetes network policies, making them visually more intuitive, clearer and easier to understand than YAML code. </p>
     </body>
 </html>

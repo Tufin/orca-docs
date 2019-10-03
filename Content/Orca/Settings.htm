@@ -92,10 +92,7 @@
             <img src="../Resources/Images/InstallAgentString.png" class="ThumbnailPopup" />
         </p>
         <p class="h3"><a name="LearningMode"></a>Policy Mode</p>
-        <p>First see <a href="Policy.htm">Policy</a>. </p>
-        <ul class="Action">
-            <li>Toggle between <span class="StatusOrValue">Enforce mode</span> and <span class="StatusOrValue">Learn Mode</span>.</li>
-        </ul>
+        <p>Click on the desired mode to switch between  <a href="Policy.htm#policymode">policy modes</a> - <span class="StatusOrValue">Enforce mode</span> and <span class="StatusOrValue">Learn Mode</span>.</p>
         <p><MadCap:variable name="local.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local.Product_S" /> theme is colored <img src="../Resources/Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../Resources/Images/ColorEnforce.png" class="noborder" />.</p>
         <p>
             <img src="../Resources/Images/ScreenEnforce.png" />
@@ -103,11 +100,10 @@
         <p>
             <img src="../Resources/Images/ScreenLearn.png" />
         </p>
-        <p>Click on the desired mode to switch.</p>
         <h3><a name="Kubernet"></a>
         </h3>
         <p class="h3">Kubernetes Network Policies</p>
-        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. This is controlled by the <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch</p>
+        <p><MadCap:variable name="local.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. This is controlled by the <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch.</p>
         <p>Enable or disable <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch. When set to enabled and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.Product_S" /> automatically creates an Any-Any-Allow Kubernetes network  policy that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
         <p>
             <img src="../Resources/Images/Screen_Settings_Allow_All_Rule.png" class="ThumbnailPopup" />
