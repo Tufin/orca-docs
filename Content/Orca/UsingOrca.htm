@@ -4,15 +4,16 @@
     </head>
     <body>
         <h1>What Next? Using <MadCap:variable name="local.Product_S" /></h1>
-        <p>You've just <a href="DeployOrca.htm"> installed</a> <MadCap:variable name="local.Product_S" /> on your cluster and you've seen there are <a href="Services.htm">services</a> listed, so  everything is working OK. Now it's time to get <MadCap:variable name="local.Product_S" /> working for you. To see traffic, make sure there has been activity in your cluster for an hour at least. </p>
+        <p>You've just <a href="DeployOrca.htm"> installed</a> <MadCap:variable name="local.Product_S" /> on your cluster and you've seen there are <a href="Services.htm">services</a> listed, so  everything is working OK. Now it's time to get <MadCap:variable name="local.Product_S" /> working for you. Start with the main <MadCap:variable name="local.Product_S" /> tasks and when you're ready you can look at <MadCap:variable name="local.Product_S" />'s automation and integration capabilities.</p>
         <p class="h2">Main <MadCap:variable name="local.Product_S" /> Tasks</p>
-        <p>These are the primary tasks you'll be handling:</p>
+        <p>These are the more frequent tasks you'll be handling:</p>
         <ul>
-            <li>Review the cluster and its activity. Each of the following will give you visibility into different levels of the cluster and expose vulnerabilities: <a href="ServiceGraph.htm">Service Graph,</a> <a href="Services.htm">Services</a>, <a href="Nodes.htm">Nodes</a>, <a href="Pods.htm">Pods</a>, <a href="Services.htm">Services</a>, <a href="Nodes.htm">Nodes</a>, <a href="Discovery.htm">New Connections</a>, <a href="KubernetesNetPolicies.htm">Kubernetes Network Policies</a>, <a href="OverlyPermissiveRpt.htm">Overly Permissive Rules Report</a>.</li>
+            <li><a href="Settings.htm#invite">Add users</a> to your project.</li>
+            <li>Review the cluster and its activity. To see traffic, make sure there has been activity in your cluster for an hour at least. Each of the following will give you visibility into different levels of the cluster and expose vulnerabilities: <a href="ServiceGraph.htm">Service Graph,</a> <a href="Services.htm">Services</a>, <a href="Nodes.htm">Nodes</a>, <a href="Pods.htm">Pods</a>, <a href="Services.htm">Services</a>, <a href="Nodes.htm">Nodes</a>, <a href="Discovery.htm">New Connections</a>, <a href="KubernetesNetPolicies.htm">Kubernetes Network Policies</a>, <a href="OverlyPermissiveRpt.htm">Overly Permissive Rules Report</a>.</li>
             <li>Build and maintain a security policy. <a href="Discovery.htm">Review connections discovered</a> by <MadCap:variable name="local.Product_S" /> that you haven't allowed in the policy, add <a href="AllowedConnections.htm">allowed connections</a> to the policy and fine tune the policy  by adding / removing as required.</li>
             <li><a href="Enforcement.htm">Enforce</a> the policy on Kubernetes. See <a href="AllowedConnections.htm#Export">Export as Network Policies</a>.</li>
         </ul>
-        <p class="h2"><MadCap:variable name="local.Product_S" />'s Advanced Capabilities</p>
+        <p class="h2"><MadCap:variable name="local.Product_S" /> Automation and Integration</p>
         <p>After getting to grips with the primary tasks, check out <MadCap:variable name="local.Product_S" />'s advanced capabilities:</p>
         <ul>
             <li>Set up <a href="ImmutablePolicy.htm">immutable policy</a> control - security policy creation built into your CI/CD pipeline.</li>
