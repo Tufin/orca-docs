@@ -4,16 +4,26 @@
     </head>
     <body>
         <h1>Architecture</h1>
-        <h2>The <MadCap:variable name="local.Product_S" /> Cloud Application</h2>
+        <p class="h2">The <MadCap:variable name="local.Product_S" /> Cloud Application</p>
         <p>This is the cloud-based user interface you log into from your browser. It provides you visualization of cluster security information such as network traffic, vulnerabilities, Kubernetes network policies and the <MadCap:variable name="local.Product_S" /> security policy and for taking actions such as switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
-        <h2>The <MadCap:variable name="local.Product_S" /> Agent</h2>
-        <p>The <MadCap:variable name="local.Kite" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, enforces your policy and communicates with the <MadCap:variable name="local.Product_S" /> cloud application. <MadCap:variable name="local.Product_S" />'s capability of discovering new connections is referred to as <a href="Discovery.htm">Discovery</a>.The agent contains the following services:</p>
-        <h3><MadCap:variable name="local.Product_S" /> Kite</h3>
-        <p>Kite communicates between the <MadCap:variable name="local.Kite" /> plugins and the <MadCap:variable name="local.Product_S" /> application. It is installed on one node in the cluster</p>
+        <p class="h2">The <MadCap:variable name="local.Product_S" /> Agent</p>
+        <p>The <MadCap:variable name="local.Kite" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, enforces your policy and communicates with the <MadCap:variable name="local.Product_S" /> cloud application. <MadCap:variable name="local.Product_S" />'s capability of discovering new connections is referred to as <a href="Discovery.htm">Discovery</a>.</p>
+        <p><MadCap:variable name="local.Product_S" /> services are deployed on your cluster in the Kube-System namespace and in a newly created namespace called Tufin-system. No Orca services are placed in user or application namespaces.</p>
+        <p>
+            <img src="../Resources/Images/Diagram_Architecture1.PNG" />
+        </p>
+        <p>At installation time, Kubernetes determines one node on which to deploy the Kite pod. Kubernetes deploys the Network Monitor daemonset (conntrack) on every node in the cluster, where permissions allow.</p>
+        <p>
+            <img src="../Resources/Images/Diagram_Architecture2.PNG" />
+        </p>
+        <p>The agent contains the following services:</p>
+        <p class="h3"><MadCap:variable name="local.Product_S" /> Kite</p>
+        <p>Kite is a pod that communicates between the <MadCap:variable name="local.Kite" /> plugins and the <MadCap:variable name="local.Product_S" /> application. It is installed on one node in the cluster, as determined by Kubernetes.</p>
+        <p>&#160;</p>
         <p class="h3"><MadCap:variable name="local.Product_S" /> DNS Plugin</p>
         <p>The <MadCap:variable name="local.Product_S" /> DNS plugin identifies traffic in the cluster between services and to external services and  blocks DNS requests that are not part of the <MadCap:variable name="local.Product_S" /> security policy.  It acts as a proxy, processing all DNS queries before passing them to the Kubernetes DNS pod.</p>
-        <p class="h3"><MadCap:variable name="local.Product_S" /> Network Monitor </p>
-        <p>The <MadCap:variable name="local.Product_S" /> network monitor discovers IP and UDP connection requests, including IP ingress. It works at the node level and employes the Conntrack daemon set.</p>
+        <p class="h3"><MadCap:variable name="local.Product_S" /> Network Monitor (Conntrack)</p>
+        <p>The <MadCap:variable name="local.Product_S" /> network monitor discovers IP and UDP connection requests, including IP ingress. It is deployed as a daemon set, on every node.</p>
         <p MadCap:conditions="General.Exclude" class="h3"><MadCap:variable name="local.Product_S" /> Istio Plugin</p>
         <p MadCap:conditions="General.Exclude">Applies the Orca security policy to the cluster through Istio. Istio must be installed prior to <MadCap:variable name="local.Product_S" /> installation.</p>
     </body>
