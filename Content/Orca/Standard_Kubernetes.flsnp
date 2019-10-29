@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p><MadCap:variable name="Local.GKE" />, <MadCap:variable name="Local.AKS" />, <MadCap:variable name="Local.EKS" />, <MadCap:variable name="Local.Docker" /> and <MadCap:variable name="local.pks" /> (VMware / Pivotal)</p>
+    </body>
+</html>
