@@ -10,25 +10,19 @@
             <img src="../Resources/Images/Screen_Orca_Dashboard.png" class="ThumbnailPopup">
             </img>
         </p>
-        <p>The <MadCap:variable name="local.Product_S" /> dashboard gives you a snapshot of your Kubernetes vulnerabilities through charts:</p>
+        <p>The <MadCap:variable name="local.Product_S" /> dashboard gives you a snapshot of your Kubernetes security issues vulnerabilities through charts:</p>
         <p class="h3">Network Policy Namespace Coverage</p>
         <p class="normal">This chart compares the number of namespaces having at least one Kubernetes network policy with namespaces that  have no network policies. The number of k8s network policies is not reflected here.</p>
         <p class="h3">Namespace Vulnerabilities</p>
         <p class="normal">This chart shows the number of namespaces for which vulnerabilities were found against the highest severity of vulnerability found. The number of vulnerabilities found in each namespace is not reflected here. The vulnerability level for a namespace is the largest <a href="SecurityScore.htm">vulnerability</a> found in any of its containers.  </p>
-        <p class="h3">Privileged Access</p>
-        <p>This is a list of containers and pods with privileged access. It comprises:</p>
+        <p class="h3">Privileged Containers</p>
+        <p>This is a list of containers for which privileged is set to true (privileged=true), therefore giving it access to all devices on the host.</p>
+        <p class="h3">Pod Security</p>
+        <p>This is a list of pods with a permissive pod security policy that will:</p>
         <ul>
-            <li>
-                <p> Containers for which privileged is set to true (privileged=true), therefore giving it access to all devices on the host.</p>
-            </li>
-            <li>
-                <p>Pods with a permissive pod security policy that will:</p>
-                <ul style="list-style-type: circle;">
-                    <li>Let its containers share the host process ID namespace (HostPID=true) or</li>
-                    <li>Let its containers share the host IPC namespace (HostIPC=true) or</li>
-                    <li>Let the pod use the node network namespace (HostNetwork=true)</li>
-                </ul>
-            </li>
+            <li>Let its containers share the host process ID namespace (HostPID=true) or</li>
+            <li>Let its containers share the host IPC namespace (HostIPC=true) or</li>
+            <li>Let the pod use the node network namespace (HostNetwork=true)</li>
         </ul>
         <p class="h3">Kubernetes Vulnerabilities</p>
         <p class="normal">This is a list of published vulnerabilities for your current k8s implementation, showing the CVE number and the version in which the vulnerability was fixed.</p>
