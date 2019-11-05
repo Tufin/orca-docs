@@ -22,3 +22,4 @@
 
 #define AddingConnection 1017
 #define Notifications 1018
+#define Dashboard 1019

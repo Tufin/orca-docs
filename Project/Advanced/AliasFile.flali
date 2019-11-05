@@ -19,4 +19,5 @@
     <Map Name="DiscoveryEngine" Link="/Content/Orca/Discovery.htm" />
     <Map Name="AddingConnection" Link="/Content/Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
     <Map Name="Notifications" Link="/Content/Orca/SettingsNotifications.htm" />
+    <Map Name="Dashboard" Link="/Content/Orca/Dashboard.htm" />
 </CatapultAliasFile>

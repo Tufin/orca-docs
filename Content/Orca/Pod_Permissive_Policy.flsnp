@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>A permissive pod security policy contains one or more of the following values set to true:</p>
+        <ul>
+            <li>HostPID: The pod's containers can share the host process ID namespace</li>
+            <li>HostIPC: The pod's containers can share the host IPC namespace </li>
+            <li>HostNetwork: The pod can use the node network namespace</li>
+        </ul>
+    </body>
+</html>
