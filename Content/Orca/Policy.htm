@@ -14,12 +14,17 @@
                 <p><a href="FirewallTickets.htm">Firewall Tickets</a> - see any currently open <MadCap:variable name="local.SecureChange" /> tickets previously submitted from <MadCap:variable name="local.Product_S" />.</p>
             </li>
         </ul>
-        <p class="h2"><a name="policymode"></a> Mode</p>
+        <p class="h2"><a name="policymode"></a>Policy Mode</p>
         <p><MadCap:variable name="local.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the Orca policy rules. The  monitoring and visibility capabilities  such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Pods.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="Settings.htm">Settings</a>.</p>
         <div class="Note">Enforce mode is not currently supported for <MadCap:variable name="local.Openshift" />.</div>
         <ul>
-            <li>Use <span class="StatusOrValue">Learn</span> to build a <a href="Policy.htm">Policy</a> that is best suited to your environment. </li>
-            <li> Switch to <span class="StatusOrValue">Enforce</span> when you are satisfied that the policy meets your enforcement criteria.</li>
+            <li>
+                <p>Use <span class="StatusOrValue">Learn</span> while you are building a <a href="Policy.htm">Policy</a> for your organization. </p>
+            </li>
+            <li>
+                <p> Switch to <span class="StatusOrValue">Enforce</span> when you are satisfied that the policy meets your enforcement criteria.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
+            </li>
         </ul>
         <p><MadCap:variable name="local.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local.Product_S" /> theme is colored <img src="../Resources/Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../Resources/Images/ColorEnforce.png" class="noborder" />.</p>
         <p>

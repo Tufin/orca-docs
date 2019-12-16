@@ -5,9 +5,16 @@
     <body>
         <p>A permissive pod security policy contains one or more of the following values set to true:</p>
         <ul>
-            <li>HostPID: The pod's containers can share the host process ID namespace</li>
-            <li>HostIPC: The pod's containers can share the host IPC namespace </li>
-            <li>HostNetwork: The pod can use the node network namespace</li>
+            <li>
+                <p>HostPID: The pod's containers can share the host process ID namespace</p>
+            </li>
+            <li>
+                <p>HostIPC: The pod's containers can share the host IPC namespace </p>
+            </li>
+            <li>
+                <p>HostNetwork: The pod can use the node network namespace</p>
+                <MadCap:snippetBlock src="WhatIsHostNetwork.flsnp" />
+            </li>
         </ul>
     </body>
 </html>

@@ -13,7 +13,9 @@
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/OnlineOutput.fltoc">
+  MasterToc="/Project/TOCs/OnlineOutput.fltoc"
+  EnableSitemap="true"
+  SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

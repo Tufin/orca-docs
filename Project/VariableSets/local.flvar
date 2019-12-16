@@ -85,4 +85,8 @@
     Name="pks"
     Comment=""
     EvaluatedDefinition="Enterprise PKS">Enterprise PKS</Variable>
+  <Variable
+    Name="Agent"
+    Comment=""
+    EvaluatedDefinition="Cluster Module">Cluster Module</Variable>
 </CatapultVariableSet>

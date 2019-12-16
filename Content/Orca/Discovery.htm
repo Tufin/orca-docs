@@ -14,13 +14,13 @@
             <li>Connections between service pods</li>
             <li>Connections from ingress to service pods</li>
             <li>Connections from service pods to external end-points</li>
+            <li>Connections from the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> to pull your container images for analysis</li>
         </ul>
         <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local.Product_S" /> policy  is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
         <p>
             <img src="../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
         </p>
-        <p>The number of connections in the New Connections Window is displayed at the top of the screen . </p>
-        <p>The window displays the following information:</p>
+        <p>The number of connections in the New Connections Window is displayed at the top of the screen. The window contains the following information:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 88px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -46,6 +46,8 @@
                 </tr>
             </tbody>
         </table>
+        <p class="h3">Connections - Allowed or Blocked?</p>
+        <p>When the <a href="Policy.htm#policymode">Policy Mode</a> is set to <span class="StatusOrValue">Learn</span>, all new connections listed in the New Connections window are allowed and when the <span class="StatusOrValue">Policy Mode</span> is set to <span class="StatusOrValue">Enforce </span>all new connections are blocked. </p>
         <p class="h3">Notifications</p>
         <p>A notification can be sent whenever a new connection is discovered. See <a href="SettingsNotifications.htm">Notifications and Alerts</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />

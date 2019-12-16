@@ -47,7 +47,7 @@
                         <p>The intended use for the token:</p>
                         <ul>
                             <li>VIEW - used for getting the information needed to display the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.TufinScore" /> badge in your git repository.</li>
-                            <li>AGENT - used only by <MadCap:variable name="local.Product_S" /> agents. Currently the <MadCap:variable name="local.Product_S" /> Agent and <MadCap:variable name="local.Product_S" /> SecureTrack integration.</li>
+                            <li>AGENT - used to by internal components such as the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> and <MadCap:variable name="local.SecureTrack" /> integration.</li>
                             <li>ALL - used to make all other API requests to Orca. One example is for image scanning in build servers such as Jenkins. Contact <MadCap:variable name="local.Product_S" /> support for more information.</li>
                         </ul>
                     </td>
@@ -88,7 +88,7 @@
             <li>Hover over the line to be deleted </li>
             <li>When the <img src="../Resources/Images/IconRemove.png" class="noborder" /> icon appears, click on it to delete the token.</li>
         </ul>
-        <p class="h3"><a name="Agent"></a><MadCap:variable name="local.Product_S" /> Agent Installation Command</p>
+        <p class="h3"><a name="Agent"></a><MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> Installation Command</p>
         <p>You can view the command line string needed for deploying <MadCap:variable name="local.Product_S" /> on your cluster by clicking <span class="ScreenObject"><img src="../Resources/Images/IconCode.png" style="width: 2%; height: 2%;" class="noborder" /></span> or <span class="Bold">Copy command line</span>. Your deploy token is built into the command line. Once displayed, you can copy to clipboard by clicking the button that appears in the window. Click OK to close the window.</p>
         <p>
             <img src="../Resources/Images/InstallAgentString.png" class="ThumbnailPopup" />
@@ -102,6 +102,7 @@
         <p>
             <img src="../Resources/Images/ScreenLearn.png" />
         </p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
         <h3><a name="Kubernet"></a>
         </h3>
         <p class="h3">Kubernetes Network Policies</p>
