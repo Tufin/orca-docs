@@ -16,7 +16,7 @@
         <h3>Development and QA Phase</h3>
         <ul>
             <li>Develop and commit code as usual.</li>
-            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local.Product_S" /> to create the list of allowed connections in the security policy. </li>
+            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local-orca.Product_S" /> to create the list of allowed connections in the security policy. </li>
         </ul>
         <h3>Build Phase</h3>
         <p>You can run these steps manually or build them into your CI/CD Pipeline. </p>
@@ -28,16 +28,16 @@
                 <p>Build your code</p>
             </li>
             <li>
-                <p>Reset policy using provided <MadCap:variable name="local.Product_S" /> script</p>
+                <p>Reset policy using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
             </li>
             <li>
                 <p>Run tests: unit, integration, system...</p>
             </li>
             <li>
-                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local.Product_S" /> script</p>
+                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
             </li>
             <li>
-                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local.Product_S" /> script</p>
+                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
             </li>
             <li>
                 <p>Check policy for compliance</p>
@@ -48,9 +48,9 @@
         </ol>
         <h2>Scripts</h2>
         <p>Use these parameters:</p>
-        <p>{TOKEN}:&#160;<MadCap:variable name="local.Product_S" /> &gt; Settings &gt; <a href="Settings.htm#Viewing%20and%20Copying%20Tokens">API Tokens</a>: Use the value of any token with Scope=all, label=CI</p>
+        <p>{TOKEN}:&#160;<MadCap:variable name="local-orca.Product_S" /> &gt; Settings &gt; <a href="Settings.htm#Viewing%20and%20Copying%20Tokens">API Tokens</a>: Use the value of any token with Scope=all, label=CI</p>
         <p>{URL}: https://orca.tufin.io/api</p>
-        <p>{DOMAIN}: As displayed on most <MadCap:variable name="local.Product_S" /> screens at the top of the screen</p>
+        <p>{DOMAIN}: As displayed on most <MadCap:variable name="local-orca.Product_S" /> screens at the top of the screen</p>
         <p>{PROJECT} As displayed on most <MadCap:variable name="custom.Theme" /> screens at the top of the screen</p>
         <h3>Reset Policy </h3>
         <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{DOMAIN}/{PROJECT}/scripts/reset-policy")</p>

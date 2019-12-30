@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Oris topics">
+    <TocEntry
+      Title="New Entry" />
+  </TocEntry>
+  <TocEntry
+    Title="Orca topics"
+    ReplaceMergeNode="false">
+    <TocEntry
+      Title="Master-Orca (Master)"
+      Link="/Project/TOCs/Master-Orca.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+  <TocEntry
+    Title="Iris Topics">
+    <TocEntry
+      Title="Master-iris"
+      Link="/Project/TOCs/Master-iris.fltoc"
+      ReplaceMergeNode="true" />
+  </TocEntry>
+</CatapultToc>

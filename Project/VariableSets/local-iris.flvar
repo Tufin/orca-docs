@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="ProductName"
+    Comment="Excluding company name"
+    EvaluatedDefinition="SecureCloud">SecureCloud</Variable>
+  <Variable
+    Name="ProductName_Long"
+    Comment="Including company name"
+    EvaluatedDefinition="Tufin SecureCloud">Tufin SecureCloud</Variable>
+  <Variable
+    Name="GlobalMap"
+    Comment="Menu item and main screen"
+    EvaluatedDefinition="Application Graph">Application Graph</Variable>
+  <Variable
+    Name="Assetsscreen"
+    Comment="A main screen"
+    EvaluatedDefinition="Assets Screen">Assets Screen</Variable>
+  <Variable
+    Name="ApplicationsScreen"
+    Comment="A main screen"
+    EvaluatedDefinition="Application List">Application List</Variable>
+  <Variable
+    Name="application"
+    Comment=""
+    EvaluatedDefinition="application">application</Variable>
+  <Variable
+    Name="asset"
+    Comment=""
+    EvaluatedDefinition="asset">asset</Variable>
+  <Variable
+    Name="Assets"
+    Comment=""
+    EvaluatedDefinition="Assets">Assets</Variable>
+  <Variable
+    Name="ViolationDefinition"
+    Comment=""
+    EvaluatedDefinition="security group rule exists but there is no appropriate Iris policy rule">security group rule exists but there is no appropriate Iris policy rule</Variable>
+  <Variable
+    Name="Doc Version"
+    Comment="Update this before each build"
+    EvaluatedDefinition="1.2.1">1.2.1</Variable>
+  <Variable
+    Name="ApplicationAssetMap"
+    Comment=""
+    EvaluatedDefinition="Application Asset Map">Application Asset Map</Variable>
+</CatapultVariableSet>

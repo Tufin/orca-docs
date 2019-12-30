@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Azure Firewall</h1>
-        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local.Product_S" /> to modify your Azure firewall with the <MadCap:variable name="local.Product_S" /> security policy. <a href="Firewalls.htm">Why should I let <MadCap:variable name="local.Product_S" /> modify my firewalls?</a></p>
+        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local-orca.Product_S" /> to modify your Azure firewall with the <MadCap:variable name="local-orca.Product_S" /> security policy. <a href="Firewalls.htm">Why should I let <MadCap:variable name="local-orca.Product_S" /> modify my firewalls?</a></p>
         <ol>
             <li>
                 <p>Log in to Azure as Azure subscription owner:</p>
@@ -34,7 +34,7 @@
                 <p>where &lt;appId&gt; is taken from the service principal creation output above.</p>
             </li>
             <li>
-                <p>Contact the <MadCap:variable name="local.Product_S" /> integration team (<MadCap:variable name="local.OrcaEmail" />) and request Orca-Azure integration. Provide four parameters:</p>
+                <p>Contact the <MadCap:variable name="local-orca.Product_S" /> integration team (<MadCap:variable name="local-orca.OrcaEmail" />) and request <MadCap:variable name="local-orca.Product_S" />-Azure integration. Provide four parameters:</p>
                 <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col class="TableStyle-PatternedRows-Column-Regular" />
                     <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -65,9 +65,9 @@
                 </table>
             </li>
             <li>
-                <p>Add a tag on the firewall for every <MadCap:variable name="local.Product_S" /> project (Kubernetes cluster) that needs to update the firewall policy. Use the format:</p>
+                <p>Add a tag on the firewall for every <MadCap:variable name="local-orca.Product_S" /> project (Kubernetes cluster) that needs to update the firewall policy. Use the format:</p>
                 <p class="CodeSegment1">key=tufin, value=orca.&lt;domain&gt;.&lt;project&gt; </p>
-                <p>where &lt;domain&gt; and &lt;project&gt; refer to the Orca project that represents your cluster (see <a href="NavigatingOrca.htm#Domain,">Domains, Projects and Namespaces)</a>. If the same firewall is associated with more than one <MadCap:variable name="local.Product_S" /> project,  add a separate tag for each project e.g.</p>
+                <p>where &lt;domain&gt; and &lt;project&gt; refer to the <MadCap:variable name="local-orca.Product_S" /> project that represents your cluster (see <a href="NavigatingOrca.htm#Domain,">Domains, Projects and Namespaces)</a>. If the same firewall is associated with more than one <MadCap:variable name="local-orca.Product_S" /> project,  add a separate tag for each project e.g.</p>
                 <p class="CodeSegment1">orca.&lt;mydomain&gt;.&lt;myproject1&gt;,orca.&lt;mydomain&gt;.&lt;myproject2&gt;</p>
                 <p>Repeat for all other required firewalls.</p>
             </li>

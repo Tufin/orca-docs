@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileProperties>
+    <ImageOverlay>
+        <OriginalImage Type="Image" ShapeTimeSpan="10000" EnableCropRectangle="false" CropRectangle="0,0,0,0" EnableGrayScaleFormat="false" ExportFormat="png" DPI="96" medium_print_ExportFormat="png" OutputScaleFactor="0.833" ComputedWidth="12" ComputedHeight="15" Format="tiff">SUkqAAIBAACAP+BP8AQWDQeCvBbmwADIlJUAN8ACEAGtbM4AJQkhCER2CwOCR6DsdBgEADo/R5BMYAP8+jmRQiQTGDPhoRApkmGLYAEqMrdWxUYAiaQaZ0WkUmPUelU2k0ykuhoL4ANYACoAEIYBinS2B0h0KstgAYlZTAB0ACuFpVM8AKUq1ykVCRM9DhmGnq0wcMIaMOc8jGn1+kOCeHQ3IQASwdAA+JJGT0QUq6V3LQfK5fL5mPPAAM9TqXFycAFss4KOZTCTRvp8lgARGKeQccpKrMY2inBwKkM9HjKGnK3QcYo6MM444K56uaPRrgBXI9GgCeT45nEpAAUgylQEEAD+AAQAAQAAAAAAAAAAAQQAAQAAAAwAAAABAQQAAQAAAA8AAAACAQMABAAAAMgBAAADAQMAAQAAAAUAAAAGAQMAAQAAAAIAAAARAQQAAQAAAAgAAAAVAQMAAQAAAAQAAAAWAQQAAQAAAA8AAAAXAQQAAQAAAPoAAAAaAQUAAQAAANABAAAbAQUAAQAAANgBAAAcAQMAAQAAAAEAAAAoAQMAAQAAAAIAAAA9AQMAAQAAAAIAAABSAQMAAQAAAAIAAAAAAAAACAAIAAgACAAAdwEA6AMAAAB3AQDoAwAA</OriginalImage>
+        <Variables />
+        <Shapes />
+        <Shapes IsResourceLayer="true" Name="Resources" />
+        <ConditionTagSet />
+    </ImageOverlay>
+</fileProperties>

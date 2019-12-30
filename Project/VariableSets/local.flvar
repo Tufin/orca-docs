@@ -1,92 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultVariableSet
-  conditions="">
-  <Variable
-    Name="CompanyName"
-    Comment=""
-    Definition="Some text">My Company Name, LLC</Variable>
-  <Variable
-    Name="PDFGuideTitle"
-    Comment=""
-    OriginalName="PDFGuideTitle">User Guide</Variable>
-  <Variable
-    Name="VersionNumber"
-    OriginalName="VersionNumberDot">1.0</Variable>
-  <Variable
-    Name="Product_L"
-    Comment=""
-    EvaluatedDefinition="Tufin Orca">Tufin Orca</Variable>
-  <Variable
-    Name="TufinScore"
-    Comment=""
-    EvaluatedDefinition="Security Score">Security Score</Variable>
-  <Variable
-    Name="Year"
-    Comment=""
-    Type="DateTime"
-    LastUpdated="2019-02-28T12:50:46.8315752+02:00" />
-  <Variable
-    Name="Product_S"
-    Comment=""
-    EvaluatedDefinition="Orca">Orca</Variable>
-  <Variable
-    Name="AKS"
-    Comment="Azure Kubernetes service"
-    EvaluatedDefinition="Microsoft AKS">Microsoft AKS</Variable>
-  <Variable
-    Name="Copy of CompanyName"
-    Comment=""
-    Definition="Some text">My Company Name, LLC</Variable>
-  <Variable
-    Name="Docker"
-    Comment=""
-    EvaluatedDefinition="Docker EE">Docker EE</Variable>
-  <Variable
-    Name="EKS"
-    Comment="amazon elastic kubernetes service"
-    EvaluatedDefinition="Amazon EKS">Amazon EKS</Variable>
-  <Variable
-    Name="GKE"
-    Comment="google kubertetes engine"
-    EvaluatedDefinition="Google GKE">Google GKE</Variable>
-  <Variable
-    Name="Openshift"
-    Comment=""
-    EvaluatedDefinition="RedHat Openshift">RedHat Openshift</Variable>
-  <Variable
-    Name="SC"
-    Comment=""
-    EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
-  <Variable
-    Name="SecureChange"
-    Comment=""
-    EvaluatedDefinition="Tufin SecureChange">Tufin SecureChange</Variable>
-  <Variable
-    Name="SecureTrack"
-    Comment=""
-    EvaluatedDefinition="Tufin SecureTrack">Tufin SecureTrack</Variable>
-  <Variable
-    Name="version1test"
-    Comment=""
-    EvaluatedDefinition="R18-3">R18-3</Variable>
-  <Variable
-    Name="version2test"
-    Comment=""
-    EvaluatedDefinition="R18-2">R18-2</Variable>
-  <Variable
-    Name="Kite"
-    Comment=""
-    EvaluatedDefinition="Orca agent">Orca agent</Variable>
-  <Variable
-    Name="OrcaEmail"
-    Comment=""
-    EvaluatedDefinition="orca@tufin.com">orca@tufin.com</Variable>
-  <Variable
-    Name="pks"
-    Comment=""
-    EvaluatedDefinition="Enterprise PKS">Enterprise PKS</Variable>
-  <Variable
-    Name="Agent"
-    Comment=""
-    EvaluatedDefinition="Cluster Module">Cluster Module</Variable>
+<CatapultVariableSet>
+	<Variable
+		Name="ProductName"
+		Comment="Excluding company name"
+	EvaluatedDefinition="SecureCloud">SecureCloud</Variable>
+	<Variable
+		Name="ProductName_Long"
+		Comment="Including company name"
+	EvaluatedDefinition="Tufin SecureCloud">Tufin SecureCloud</Variable>
+	<Variable
+		Name="GlobalMap"
+		Comment="Menu item and main screen"
+	EvaluatedDefinition="Application Graph">Application Graph</Variable>
+	<Variable
+		Name="Assetsscreen"
+		Comment="A main screen"
+	EvaluatedDefinition="Assets Screen">Assets Screen</Variable>
+	<Variable
+		Name="ApplicationsScreen"
+		Comment="A main screen"
+	EvaluatedDefinition="Application List">Application List</Variable>
+	<Variable
+		Name="application"
+		Comment=""
+	EvaluatedDefinition="application">application</Variable>
+	<Variable
+		Name="asset"
+		Comment=""
+	EvaluatedDefinition="asset">asset</Variable>
+	<Variable
+		Name="Assets"
+		Comment=""
+	EvaluatedDefinition="Assets">Assets</Variable>
+	<Variable
+		Name="ViolationDefinition"
+		Comment=""
+	EvaluatedDefinition="security group rule exists but there is no appropriate Iris policy rule">security group rule exists but there is no appropriate Iris policy rule</Variable>
+	<Variable
+		Name="Doc Version"
+		Comment="Update this before each build"
+	EvaluatedDefinition="1.2.1">1.2.1</Variable>
+	<Variable
+		Name="ApplicationAssetMap"
+		Comment=""
+	EvaluatedDefinition="Application Asset Map">Application Asset Map</Variable>
 </CatapultVariableSet>

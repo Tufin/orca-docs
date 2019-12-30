@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>An account in <MadCap:variable name="local-iris.ProductName" /> is a cloud vendor account  such as AWS and Azure, whose credentials you have provided to <MadCap:variable name="local-iris.ProductName" />. <MadCap:variable name="local-iris.ProductName" /> can then monitor the account and the entities within it providing visibility and other functions. See also <a href="../Iris/AccountManager.htm">Managing Monitored Accounts</a>.</p>
+    </body>
+</html>

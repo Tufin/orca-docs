@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="New Target created by Neil "
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 SideNav-iris.flskn"
+  UseDeviceWidth="true"
+  ResolveCssVariables="false"
+  EquationsOutputType="PNG"
+  MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
+  DefaultUrl="/Content/Iris/WhatIs.htm"
+  ConditionTagExpression="exclude[General.Exclude]"
+  ExcludeUnreferencedContent="true"
+  OutputFile="index.htm"
+  MasterToc="/Project/TOCs/Master-iris.fltoc">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="custom/IncludeVersionDropdown">false</Variable>
+    <Variable
+      Name="custom/Theme">iris</Variable>
+  </Variables>
+</CatapultTarget>

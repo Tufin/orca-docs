@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Comment=""
+    Name="Overview"
+    EvaluatedDefinition="Overview">Overview</Variable>
+  <Variable
+    Comment=""
+    Name="WhatCanIdo"
+    EvaluatedDefinition="What Can I do Here?">What Can I do Here?</Variable>
+  <Variable
+    Name="HowDoIgetHere"
+    Comment=""
+    EvaluatedDefinition="How do I Get Here?">How do I Get Here?</Variable>
+  <Variable
+    Name="BackToTop"
+    Comment=""
+    EvaluatedDefinition="Back to Top">Back to Top</Variable>
+</CatapultVariableSet>

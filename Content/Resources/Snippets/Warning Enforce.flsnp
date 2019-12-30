@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <div class="Warning">About Enforce: <ul><li>Be aware that your application could fail after you switch to Enforce due to blocking of connections outside of your policy</li><li>Test your application extensively after Enforce has been applied</li><li>Container image scans  will only take place after you have allowed the connection between the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> and the image registry.</li></ul></div>
+        <div class="Warning">About Enforce: <ul><li>Be aware that your application could fail after you switch to Enforce due to blocking of connections outside of your policy</li><li>Test your application extensively after Enforce has been applied</li><li>Container image scans  will only take place after you have allowed the connection between <MadCap:variable name="local-orca.Kite" /> and the image registry.</li></ul></div>
     </body>
 </html>

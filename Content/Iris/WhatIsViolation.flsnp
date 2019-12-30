@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>A violation in <MadCap:variable name="local-iris.ProductName" /> is a case where access is allowed  by both security access and network connectivity but there is no appropriate <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
+    </body>
+</html>

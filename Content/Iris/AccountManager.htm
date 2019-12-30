@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Link to Your Accounts</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>The Monitored Accounts Screen displays the cloud service provider accounts  <MadCap:variable name="local-iris.ProductName" /> is currently monitoring, and their credentials. The information is separated into two different tabs, <span class="ScreenObject">Accounts</span> and <span class="ScreenObject">Credentials</span>.</p>
+        <p>
+            <img src="../Iris-images/Screen_Account_Manager.png" class="ThumbnailPopup" />
+        </p>
+        <p>Each line represents one vendor account. The line displays account information and also an indication of the synchronization status for that account. </p>
+        <p>Credentials containing access information  must be provided for all accounts. Access information can be provided separately for each account added or in one place for multiple accounts using cross-account credentials. Cross-account credentials are defined separately from accounts and their use simplifies the management of multiple accounts from the same vendor.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li><a href="#AddAnAccount">Add an account</a>
+            </li>
+            <li><a href="#RemoveAnAccount">Remove an account</a>
+            </li>
+            <li><a href="#EditAnAccount">Edit an account</a>
+            </li>
+            <li><a href="#Sync_an_Account">Sync an account</a>
+            </li>
+            <li><a href="#Add_a_Credential">Add a credential</a>
+            </li>
+            <li><a href="#Remove_a_Credential">Remove a credential</a>
+            </li>
+            <li><a href="#Edit_a_Credential">Edit a credential</a>
+            </li>
+        </ul>
+        <p class="h3"><a name="AddAnAccount"></a>Add an Account</p>
+        <p>The required account must already exist on the cloud environment. </p>
+        <ol>
+            <li>Make sure the <span class="ScreenObject">Accounts Tab</span> is selected</li>
+            <li>Click <img src="../Iris-images/icon_Plus.png" class="noborder" /> to display the Choose Vendor Window </li>
+            <li>
+                <p>Click on the vendor for which the account is to be added. The Add Account Window is displayed.</p>
+            </li>
+            <li>Enter Account Display Name. This is for convenience only and can be any value you choose.</li>
+            <li>Choose the type of credentials to provide - Credentials (the default) or Cross-Account Credentials. If you leave the default - Credentials - you will need to enter the account access information. If you select Cross-Account Credentials, you can choose the credential name to use from a credential you have previously added to <MadCap:variable name="local-iris.ProductName" /> under Credentials.</li>
+            <li>
+                <p>Enter the remaining fields according to your vendor and whether you want to use a saved secret.</p>
+                <ul>
+                    <li><a href="#Add_AWS_Account_With_Secret">Add AWS account using access key with secret</a>
+                    </li>
+                    <li><a href="#Add_AWS_Account_Using_Saved_Secret">Add AWS account using account ID and saved secret</a>
+                    </li>
+                    <li><a href="#Add_Azure_Account_With_Secret">Add Azure account with secret</a>
+                    </li>
+                    <li><a href="#Add_Azure_Account_Using_Saved_Secret">Add Azure account using saved secret</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Click <span class="ScreenObject">Add </span>to save. </p>
+            </li>
+        </ol>
+        <p class="h4"><a name="Add_AWS_Account_With_Secret"></a>Add AWS Account Using Access Key ID With Secret</p>
+        <p>This option requires knowing the access key information for the account to be added.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Access key ID</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>From your AWS account details</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Secret Access Key</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your AWS account details</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h4"><a name="Add_AWS_Account_Using_Saved_Secret"></a>Add AWS Account Using Account ID and Saved Secret</p>
+        <p>This option can only be used if you have already saved cross-account credentials appropriate to the account to be added.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Account ID</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>From your AWS account details</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">ARN Role</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your AWS account details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Credential Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">As defined in <MadCap:variable name="local-iris.ProductName" /> under credentials</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h4">AWS User Requirements </p>
+        <p>There are four different levels of user permissions required for <MadCap:variable name="local-iris.ProductName" />&#160;to access the API, defined by the policy attached to the user. The policies are listed below from the most permissive to the least permissive;  the requirements could change with the addition of new features in the future.</p>
+        <ol>
+            <li>
+                <p>ReadOnlyAccess policy</p>
+            </li>
+            <li>
+                <p>SecurityAudit policy</p>
+            </li>
+            <li>
+                <p>Custom policy as defined below:</p><pre xml:space="preserve">
+{
+ "Version": "2012-10-17",
+ "Statement": [
+	 {
+		"Sid": "Statement1",
+		"Effect": "Allow",
+		"Action": [
+			"ec2:Describe*",
+			"elasticloadbalancing:Describe*",
+			"iam:List*",
+			"iam:Get*",
+			"s3:Get*",
+			"s3:List*"
+			],
+		"Resource": "*"
+	}
+   ]
+}</pre>
+            </li>
+            <li>
+                <p>Custom policy as defined below:</p><pre xml:space="preserve">
+{
+ "Version": "2012-10-17",
+ "Statement": [
+	 {
+		"Sid": "Statement1",
+		"Effect": "Allow",
+		"Action": [
+			"ec2:DescribeInstances",
+			"ec2:DescribeRegions",
+			"ec2:DescribeSecurityGroups",
+			"ec2:DescribeVpcs",
+			"ec2:DescribeVpcPeeringConnections",
+			"ec2:DescribeSubnets",
+			"ec2:DescribeRouteTables",
+			"elasticloadbalancing:DescribeLoadBalancers",
+			"elasticloadbalancing:DescribeListeners",
+			"elasticloadbalancing:DescribeTargetHealth",
+			"elasticloadbalancing:DescribeTargetGroups",
+			"iam:ListInstanceProfiles",
+			"iam:GetAccountAuthorizationDetails",
+			"s3:GetBucketTagging",
+			"s3:GetBucketWebsite",
+			"s3:GetBucketLogging",
+			"s3:GetBucketVersioning",
+			"s3:GetBucketAcl",
+			"s3:GetBucketPolicy",
+			"s3:GetEncryptionConfiguration",
+			"s3:ListAllMyBuckets",
+			"s3:GetBucketLocation"
+			],
+		"Resource": "*"
+	}
+   ]
+}</pre>
+            </li>
+        </ol>
+        <p class="h4"><a name="Add_Azure_Account_With_Secret"></a>Add Azure Account With Secret</p>
+        <p>This option requires knowing the access information for the account to be added.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subscription ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>From your Azure account details</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Tenant</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your Azure account details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Application ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">From your Azure account details</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Application Secret</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your Azure account details</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h4"><a name="Add_Azure_Account_Using_Saved_Secret"></a>Add Azure Account Using Saved Secret</p>
+        <p>This option can only be used if you have already saved cross-account credentials appropriate to the account to be added.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subscription ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>From your Azure account details</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Tenant</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your Azure account details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Credential Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">As defined in <MadCap:variable name="local-iris.ProductName" /> under credentials</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h4">Azure Account Information </p>
+        <p>To create the required permissions for <MadCap:variable name="local-iris.ProductName" /> to monitor your subscription:</p>
+        <ol>
+            <li>
+                <p>In Azure Active Directory create a new application registration where:</p>
+                <p>Name=&lt;Your name&gt;</p>
+                <p><span class="ScreenObject">Application Type</span> = <span class="StatusOrValue">Web app / API</span></p>
+                <p><span class="ScreenObject">Sign-on URL</span> = <span class="StatusOrValue">https://iris.tufin.io</span></p>
+            </li>
+            <li>
+                <p>For the required subscription, under Access control (IAM), add a role assignment to the application registration created in the previous step where:</p>
+                <p><span class="ScreenObject">Role</span>=<span class="StatusOrValue">Reader</span></p>
+                <p><span class="ScreenObject">Assign access to</span>=<span class="StatusOrValue">Azure AD user, group or service principal</span></p>
+            </li>
+        </ol>
+        <p>For additional information see <a href="https://docs.microsoft.com/he-il/azure/role-based-access-control/overview">What is role-based access control (RBAC) in Azure</a>.</p>
+        <p class="h3"><a name="RemoveAnAccount"></a>Remove an Account</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../Iris-images/Button_Ellipsis.png" class="noborder" style="width: 10px;height: 13px;"></img> for the tag you want to remove. </li>
+            <li>Click <span class="ScreenObject">Remove Account</span> from the pop-up menu.</li>
+            <li>The Tag will be removed from the display.</li>
+        </ol>
+        <p class="h3"><a name="EditAnAccount"></a>Edit an Account</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../Iris-images/Button_Ellipsis.png" class="noborder"></img> for the tag you want to remove. </li>
+            <li>Click <span class="ScreenObject">Edit Account</span> from the pop-up menu.</li>
+            <li>The Edit Account Window will be  displayed. See <a href="#AddAnAccount">Add an Account</a> for more information.</li>
+            <li>Make changes as necessary and click <span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <p><a name="Sync_an_Account"></a>
+        </p>
+        <p class="h3">Sync an Account</p>
+        <p>The sync function brings up-to-date cloud environment information for a specific account into <MadCap:variable name="local-iris.ProductName" />.</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../Iris-images/Button_Ellipsis.png" class="noborder"></img> for the tag you want to remove. </li>
+            <li>Click <span class="ScreenObject">Sync account</span> from the pop-up menu.</li>
+            <li>The status tag icon on the account line will change to a syncing icon and once completed, the OK icon will be  displayed. See <a href="#AddAnAccount">Add an Account</a> for more information.</li>
+        </ol>
+        <p class="h3"><a name="Add_a_Credential"></a>Add a Credential</p>
+        <ol>
+            <li>Make sure the <span class="ScreenObject">Credentials Tab</span> is selected</li>
+            <li>Click <img src="../Iris-images/icon_Plus.png" class="noborder" /> to display the Choose Vendor Window </li>
+            <li>
+                <p>Click on the vendor for which the account is to be added. The Add Credential Window is displayed.</p>
+            </li>
+            <li>Enter Credentials Display Name. This is for convenience only and can be any value you choose.</li>
+            <li>
+                <p>Enter the remaining fields according to your vendor.</p>
+                <h4>AWS</h4>
+                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                    <col class="TableStyle-PatternedRows-Column-Regular" style="width: 371px;" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-PatternedRows-Head-Header1">
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Access key ID</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                <p>From your AWS account details</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Secret Access Key</td>
+                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your AWS account details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>Azure</h4>
+                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-PatternedRows-Head-Header1">
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                                <p class="TableBodyText">Application ID</p>
+                            </td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                                <p class="TableBodyText">From your Azure account details</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Application Secret</td>
+                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your Azure account details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>Click <span class="ScreenObject">Add</span> to save.</li>
+        </ol>
+        <p class="h3"><a name="Remove_a_Credential"></a>Remove a Credential</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../Iris-images/Button_Ellipsis.png" class="noborder" /> for the credential you want to remove. </li>
+            <li>Click <span class="ScreenObject">Remove Rule</span> from the pop-up menu.</li>
+            <li>The credential will be removed from the display.</li>
+        </ol>
+        <p class="h3"><a name="Edit_a_Credential"></a>Edit a Credential</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../Iris-images/Button_Ellipsis.png" class="noborder" /> for the credential you want to change. </li>
+            <li>Click <span class="ScreenObject">Edit Rule</span> from the pop-up menu.</li>
+            <li>The Edit Credential Window will be  displayed. See <a href="#Add_a_Credential">Add a Credential</a> for more information.</li>
+            <li>Make changes as necessary and click <span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <h3><a name="Azure"></a>
+        </h3>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <p>From the menu, click <span class="MenuItem">Settings</span> &gt; <span class="MenuItem">Account Manager</span>.</p>
+    </body>
+</html>

@@ -13,9 +13,11 @@
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/OnlineOutput.fltoc"
+  MasterToc="/Project/TOCs/Oris.fltoc"
   EnableSitemap="true"
-  SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/">
+  SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MasterStylesheetOverride="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

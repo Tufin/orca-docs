@@ -4,19 +4,19 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Image Scanning and <MadCap:variable name="local.TufinScore" /></h1>
-        <p>The <MadCap:variable name="local.TufinScore" /> is an assessment of code vulnerability  based on the scanning of a Docker image. It is presented as a value from A+, the least vulnerable to F, the most vulnerable. A score of A+ indicates no vulnerabilities were detected whatsoever. The <MadCap:variable name="local.TufinScore" /> appears in a number of different places in <MadCap:variable name="local.Product_S" /> including the <a href="ServiceGraph.htm">Service Graph</a> and <a href="Pods.htm">Pods Screen</a> and additionally can be displayed in your code repository in the form of a <a href="Badges.htm">badge</a>.</p>
+        <h1>Image Scanning and <MadCap:variable name="local-orca.TufinScore" /></h1>
+        <p>The <MadCap:variable name="local-orca.TufinScore" /> is an assessment of code vulnerability  based on the scanning of a Docker image. It is presented as a value from A+, the least vulnerable to F, the most vulnerable. A score of A+ indicates no vulnerabilities were detected whatsoever. The <MadCap:variable name="local-orca.TufinScore" /> appears in a number of different places in <MadCap:variable name="local-orca.Product_S" /> including the <a href="ServiceGraph.htm">Service Graph</a> and <a href="Pods.htm">Pods Screen</a> and additionally can be displayed in your code repository in the form of a <a href="Badges.htm">badge</a>.</p>
         <p>An image scan is initiated:</p>
         <ol>
-            <li>Every time a container is deployed to your cluster. Orca detects this event automatically.</li>
+            <li>Every time a container is deployed to your cluster. <MadCap:variable name="local-orca.Product_S" /> detects this event automatically.</li>
             <li>As part of your CI/CD pipeline. This requires the addition of <a href="ImageScansCICD.htm">commands</a> to the CI/CD script.</li>
         </ol>
-        <p>To perform the analysis, <MadCap:variable name="local.Product_S" /> pulls the container images from their registry and the connection from the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> to the registry is just like any other new connection; it will show up in the New Connections window and you will need to add it to your policy to allow future pulls to work.</p>
-        <p>The <MadCap:variable name="local.TufinScore" /> displayed is always for the last image scanned, regardless of what triggered the scan. Badges also refer to the last image scanned unless the image tag is included in the path.</p>
-        <p class="h2"><MadCap:variable name="local.TufinScore" /> Calculation</p>
+        <p>To perform the analysis, <MadCap:variable name="local-orca.Product_S" /> pulls the container images from their registry and the connection from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to the registry is just like any other new connection; it will show up in the New Connections window and you will need to add it to your policy to allow future pulls to work.</p>
+        <p>The <MadCap:variable name="local-orca.TufinScore" /> displayed is always for the last image scanned, regardless of what triggered the scan. Badges also refer to the last image scanned unless the image tag is included in the path.</p>
+        <p class="h2"><MadCap:variable name="local-orca.TufinScore" /> Calculation</p>
         <ol>
             <li>
-                <p><MadCap:variable name="local.Product_S" /> assigns a weighted value according to the severity of each vulnerability identified. The  severities from highest to lowest are: </p>
+                <p><MadCap:variable name="local-orca.Product_S" /> assigns a weighted value according to the severity of each vulnerability identified. The  severities from highest to lowest are: </p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col style="width: 101px;" class="TableStyle-PatternedRows-Column-Regular" />
                     <col style="width: 83px;" class="TableStyle-PatternedRows-Column-Regular" />
@@ -67,14 +67,14 @@
               </p>
             </li>
             <li>
-                <p>The calculated numerical value is converted to the <MadCap:variable name="local.TufinScore" /> according to the table below.
+                <p>The calculated numerical value is converted to the <MadCap:variable name="local-orca.TufinScore" /> according to the table below.
 </p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col style="width: 129px;" class="TableStyle-PatternedRows-Column-Regular" />
                     <col style="width: 129px;" class="TableStyle-PatternedRows-Column-Regular" />
                     <thead>
                         <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><MadCap:variable name="local.TufinScore" />
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><MadCap:variable name="local-orca.TufinScore" />
                             </th>
                             <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Numerical Values</th>
                         </tr>

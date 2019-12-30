@@ -7,18 +7,18 @@
         <h1>Discover New Connections</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>The <MadCap:variable name="local.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
-        <p class="h3">What Type of Connections Does <MadCap:variable name="local.Product_S" /> discover?</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
+        <p class="h3">What Type of Connections Does <MadCap:variable name="local-orca.Product_S" /> discover?</p>
         <ul>
             <li>TCP and UDP connections </li>
             <li>Connections between service pods</li>
             <li>Connections from ingress to service pods</li>
             <li>Connections from service pods to external end-points</li>
-            <li>Connections from the <MadCap:variable name="local.Product_S" /> <MadCap:variable name="local.Agent" /> to pull your container images for analysis</li>
+            <li>Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis</li>
         </ul>
-        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local.Product_S" /> policy  is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
+        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
         <p>
-            <img src="../Resources/Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
+            <img src="../Orca-Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
         </p>
         <p>The number of connections in the New Connections Window is displayed at the top of the screen. The window contains the following information:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">

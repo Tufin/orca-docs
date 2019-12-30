@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>An asset in <MadCap:variable name="local-iris.ProductName" /> is a server or cloud service in your cloud account such as a virtual machine or bucket storage. These entities can be seen and understood by <MadCap:variable name="local-iris.ProductName" /> when you provide your cloud account credentials. Regardless of the cloud vendor, <MadCap:variable name="local-iris.ProductName" /> shows each asset as either VM&#160;(virtual machine) or storage.  Multiple VM assets connected by a load balancer are sometimes represented by a single load balancer node, such as on the application map.  <MadCap:variable name="local-iris.ProductName" /> lets you  define applications from assets using tags and other asset properties.</p>
+    </body>
+</html>

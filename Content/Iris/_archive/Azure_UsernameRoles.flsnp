@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>For additional information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html?icmpid=docs_iam_console">Managing IAM Users - AWS Identity and Access Management</a>.</p><pre>
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			Sid": "VisualEditor0",
+			Effect": "Allow",
+			Action": [
+				"s3:GetBucketTagging",
+				"ec2:DescribeInstances",
+				"s3:GetBucketWebsite",
+				"s3:GetBucketLogging",
+				"ec2:DescribeRegions",
+				"s3:GetBucketVersioning",
+				"iam:ListInstanceProfiles",
+				"s3:GetBucketAcl",
+				"s3:GetBucketPolicy",
+				"ec2:DescribeSecurityGroups",
+				"s3:GetEncryptionConfiguration",
+				"s3:ListAllMyBuckets",
+				"ec2:DescribeVpcs",
+				"iam:GetAccountAuthorizationDetails",
+				"s3:GetBucketLocation"
+			],
+			"Resource": "*"
+		}
+	]
+}</pre>
+    </body>
+</html>
