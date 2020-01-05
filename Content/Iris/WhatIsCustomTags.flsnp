@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <body>
-        <p>Custom tags are entities you can create in <MadCap:variable name="local-iris.ProductName" />  to identify assets having common characteristics. They are based on <a href="../Iris/AssetProperties.htm">asset properties</a> and their purpose is to augment the native asset tags supported by your cloud vendor, giving you a way of defining your applications if your cloud assets do not currently use tags consistently or you cannot rely on them alone. They are treated by <MadCap:variable name="local-iris.ProductName" /> just like any other vendor-provided asset tag. Custom tags are calculated values, based on a <a href="../Iris/Regex.htm">regex condition</a> matching an asset property. Therefore, a defined custom tag may change following any changes in the asset property on which it is based.</p>
-        <p>For more information on how tags are used to define your applications, see <a href="../Iris/Global_View.htm">Global Application View</a>.  </p>
-    </body>
-</html>

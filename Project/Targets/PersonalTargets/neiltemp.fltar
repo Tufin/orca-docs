@@ -11,7 +11,7 @@
   ResolveCssVariables="false"
   EquationsOutputType="PNG"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/Iris/WhatIs.htm"
+  DefaultUrl="/Content/_Iris/WhatIs.htm"
   ConditionTagExpression="exclude[General.Exclude]"
   ExcludeUnreferencedContent="true"
   OutputFile="index.htm"

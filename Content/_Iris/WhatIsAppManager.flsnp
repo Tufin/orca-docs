@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>
+            <img src="../Iris-images/Screen_App_Manager.png" class="ThumbnailPopup" />
+        </p>
+        <p>The App Manager specifies the tags <MadCap:variable name="local-iris.ProductName" /> will use to identify your applications. <MadCap:variable name="local-iris.ProductName" /> will name your applications according to the tags from left to right. Names of tags that are not defined on your assets or in the <a href="WorkingWithTagManager.htm">Tag Manager</a> will be ignored. See also <a href="Global_View.htm">Global Application View</a>. </p>
+    </body>
+</html>

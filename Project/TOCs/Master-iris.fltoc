@@ -3,79 +3,79 @@
   Version="1">
   <TocEntry
     Title="What is Iris"
-    Link="/Content/Iris/WhatIs.htm"
+    Link="/Content/_Iris/WhatIs.htm"
     ReplaceMergeNode="false">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/GettingStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/GettingStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Concepts">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/Global_View.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/Global_View.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/Policy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/Policy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Working With Iris">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      Link="/Content/_Iris/MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="View Your Cloud">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        Link="/Content/_Iris/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/ApplicationAssetMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/ApplicationAssetMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="Configure Iris">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        Link="/Content/_Iris/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        Link="/Content/_Iris/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="../../Content/Iris/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/_Iris/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="../../Content/Iris/PolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/PolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Iris/NotificationSettings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/NotificationSettings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
   </TocEntry>
   <TocEntry
     Title="Help"
-    Link="../../Content/Iris/UsingHelp.htm">
+    Link="/Content/_Iris/UsingHelp.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Iris/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
 </CatapultToc>

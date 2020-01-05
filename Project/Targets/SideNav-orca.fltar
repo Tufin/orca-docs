@@ -8,7 +8,7 @@
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/Orca/WhatIsOrca.htm"
+  DefaultUrl="/Content/_Orca/WhatIsOrca.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
@@ -16,7 +16,8 @@
   MasterToc="/Project/TOCs/Master-Orca.fltoc"
   EnableSitemap="true"
   SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
-  MasterStylesheet="/Content/Resources/Custom/custom-sidenav.css">
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MasterStylesheetOverride="true">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -25,6 +26,10 @@
   <Variables>
     <Variable
       Name="custom/IncludeVersionDropdown">false</Variable>
+    <Variable
+      Name="local-orca/Product_L">Tufin SecureCloud</Variable>
+    <Variable
+      Name="local-orca/Product_S">SecureCloud</Variable>
   </Variables>
   <PostBuild>copy "$(OutputDirectory)\index.htm" "$(OutputDirectory)\Default.htm"
 cd $(OutputDirectory)

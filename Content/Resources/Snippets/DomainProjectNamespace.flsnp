@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>When you <a href="../../Orca/SignUp.htm">sign up</a> for a <MadCap:variable name="local-orca.Product_L" /> account, a domain is assigned to you, based on  your email address. Additionally, you set a project name, which represents your first Kubernetes cluster. An <MadCap:variable name="local-orca.Product_S" /> user can have access to one or more domains and each domain can contain  one or more projects, but only one project can be displayed at a time. The currently selected domain and project are displayed in the top bar of the application.</p>
+        <p>When you <a href="../../_Orca/SignUp.htm">sign up</a> for a <MadCap:variable name="local-orca.Product_L" /> account, a domain is assigned to you, based on  your email address. Additionally, you set a project name, which represents your first Kubernetes cluster. An <MadCap:variable name="local-orca.Product_S" /> user can have access to one or more domains and each domain can contain  one or more projects, but only one project can be displayed at a time. The currently selected domain and project are displayed in the top bar of the application.</p>
         <p>A Kubernetes cluster can contain multiple namespaces. The data displayed in <MadCap:variable name="local-orca.Product_S" /> can be aggregated from any number of these.</p>
         <p>
             <img src="../../Orca-Images/Screen_Topbar2.png" />

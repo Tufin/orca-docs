@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body><a name="topofpage"></a>
+        <h1><MadCap:variable name="local-iris.GlobalMap" />
+        </h1>
+        <ul>
+            <li><a href="#overview"><MadCap:variable name="Topic Templates.Overview" /></a>
+            </li>
+            <li><a href="#whatcanido"><MadCap:variable name="Topic Templates.WhatCanIdo" /></a>
+            </li>
+            <li><a href="#get_here"><MadCap:variable name="Topic Templates.HowDoIgetHere" /></a>
+            </li>
+        </ul>
+        <p class="h2"><a name="overview"></a><MadCap:variable name="Topic Templates.Overview" />
+        </p>
+        <p>The <MadCap:variable name="local-iris.GlobalMap" /> is a birds-eye view  of your cloud. It shows the topology across multiple cloud accounts, including connections between applications, to the internet and to data centers.</p>
+        <p> <img src="../Iris-Images/GlobalMap.png" class="ThumbnailPopup" /></p>
+        <p class="h4">Entities on the <MadCap:variable name="local-iris.GlobalMap"></MadCap:variable></p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 288px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Item</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <img src="../Iris-images/Icon_App.png" style="width: 34px;height: 31px;" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">An application in the scope of the monitored <a href="Whatis_Account.htm">cloud accounts</a></td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <img src="../Iris-images/Icon_Globe40x40.png" class="noborder" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">A web location outside of the monitored <a href="Whatis_Account.htm">cloud accounts</a> as defined in the cloud account routing definitions</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>
+                            <img src="../Iris-images/Icon_Datacenter.png" style="width: 44px; height: 44px;" class="noborder" />
+                        </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Data center (sometimes referred to as VPC or subnet) as defined in the cloud account routing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <img src="../Iris-images/arrow_black.png" class="noborder" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">Permitted traffic flow. Single or dual directional</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h3"><a name="violations"></a>View Policy Violations</p>
+        <p>If one or more assets used by the application violates a policy listed in <a href="PolicyRules.htm">Policy Rules</a> the border and the directional communication arrow will be red.</p>
+        <p class="h2"><a name="whatcanido"></a><MadCap:variable name="Topic Templates.WhatCanIdo" />
+        </p>
+        <ul>
+            <li><a href="#Display">Reposition icons </a>
+            </li>
+            <li><a href="#node">View node information</a>
+            </li>
+            <li><a href="#assets">View assets</a>
+            </li>
+            <li>Drill down to an application - double click on the application icon</li>
+        </ul>
+        <p class="h3"><a name="assets"></a><a name="node"></a>Reposition Icons</p>
+        <p class="normal">To make viewing easier, icons can be moved around the screen using the mouse.
+The default layout is restored whenever the screen is redisplayed.</p>
+        <p class="h3">View Node Information</p>
+        <p>View details of an application or other node in your VPCs. Click on the desired item and its properties are displayed according to the type of node:</p>
+        <ul>
+            <li>
+                <p>For applications, details include warnings, network connectivity and tags defined for all its associated assets. </p>
+                <p>
+                    <img src="../Iris-images/Screen_Map_Application_Details.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>For data centers, the participating IP&#160;addresses are displayed:</p>
+                <p>
+                    <img src="../Iris-images/Screen_Map_Datacenter_Details.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+        </ul>
+        <p class="h3"><a name="assets"></a>View Assets</p>
+        <p>If the application has warnings, click on <span class="ScreenObject">View asset list</span> from the <a href="#node">node information window</a> to view the assets with warnings.</p>
+        <p class="h2"><a name="get_here"></a><MadCap:variable name="Topic Templates.HowDoIgetHere" />
+        </p>
+        <p>From the menu, click <span class="MenuItem">Applications</span> &gt; <span class="MenuItem"><MadCap:variable name="local-iris.GlobalMap" /></span></p>
+        <p><a href="#topofpage"><MadCap:variable name="Topic Templates.BackToTop" /></a>
+        </p>
+    </body>
+</html>
