@@ -13,7 +13,7 @@
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/Master-Orca.fltoc"
+  MasterToc="/Project/TOCs/Original-Orca.fltoc"
   EnableSitemap="true"
   SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
   MasterStylesheet="/Content/Resources/Stylesheets/styles.css"

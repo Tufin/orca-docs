@@ -15,7 +15,7 @@
   ConditionTagExpression="exclude[General.Exclude]"
   ExcludeUnreferencedContent="true"
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/Master-iris.fltoc">
+  MasterToc="/Project/TOCs/Original-Iris.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

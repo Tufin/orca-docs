@@ -3,7 +3,60 @@
     <head>
     </head>
     <body>
-        <h1>GetStarted</h1>
-        <p>Delete this text and replace it with your own content.</p>
+        <h1><MadCap:variable name="local.ProductName" /> in a Nutshell</h1>
+        <p>How to get up and running fast with <MadCap:variable name="local.ProductName" />:</p>
+        <ol>
+            <li>
+                <p><a href="SignUp.htm">Sign up</a>.</p>
+            </li>
+            <li>
+                <p>Perform <a href="InitialSetup.htm">initial setup</a>.</p>
+            </li>
+            <li>
+                <p>Read and understand the main concepts of <a href="../_Iris/Global_View.htm">global application visibility</a> and <a href="../_Iris/Policy.htm">policy.</a></p>
+            </li>
+            <li>
+                <p>Monitor your public cloud security:</p>
+                <ul>
+                    <li>Make sure all your assets have asset tags or <a href="../_Iris/WorkingWithTagManager.htm">Custom Tags</a> that identify your public cloud applications.</li>
+                    <li><span class="SetOffFirstLevel">Tell <MadCap:variable name="local-iris.ProductName"></MadCap:variable> how to identify your applications, using</span><a href="../_Iris/WorkingWithAppManager.htm">App Manager</a>.</li>
+                    <li>Get visibility and identify security risks by reviewing the <a href="../_Iris/Dashboard.htm">Dashboard</a>, </li>
+                    <li><span class="SetOffFirstLevel">Configure </span><a href="../_Iris/PolicyRules.htm">Policy Rules</a> to specify the communication that should be allowed between assets.</li>
+                    <li>Discover violations and other features of <MadCap:variable name="local.ProductName" /> such as <MadCap:variable name="local-iris.GlobalMap" />, <a href="../_Iris/Applications.htm">Application List</a> and <a href="../_Iris/Assets.htm">Assets</a>.</li>
+                </ul>
+                <div class="NoteLight"><MadCap:variable name="local-iris.ProductName" /> has a built-in onboarding 'wizard' that gets you through the first steps. It is popped up automatically the first time you log in to the system. Thereafter, you can run it whenever you like. Click on the Help icon at the top of the screen and select <span class="MenuItem">On-boarding</span> from the menu.</div>
+            </li>
+            <li>
+                <p>Monitor your Kubernetes clusters:</p>
+                <ul>
+                    <li>
+                        <p>Review the cluster and its activity. </p>
+                        <p>(To start seeing traffic, there must be activity in your cluster for at least an hour). Use these tools to get visibility into different levels of the cluster and expose vulnerabilities: <a href="../_Orca/Dashboard.htm">Dashboard</a>, <a href="../_Orca/ServiceGraph.htm">Service Graph,</a><a href="../_Orca/Services.htm">Services</a>, <a href="../_Orca/Nodes.htm">Nodes</a>, <a href="../_Orca/Pods.htm">Pods</a>, <a href="../_Orca/Services.htm">Services</a>, <a href="../_Orca/Nodes.htm">Nodes</a>, <a href="../_Orca/Discovery.htm">New Connections</a>, <a href="../_Orca/KubernetesNetPolicies.htm">Kubernetes Network Policies</a>, <a href="../_Orca/OverlyPermissiveRpt.htm">Overly Permissive Rules Report</a>.</p>
+                    </li>
+                    <li>
+                        <p><a href="../_Orca/Settings.htm#invite">Add users</a> to your project.</p>
+                    </li>
+                    <li>
+                        <p>Build and maintain a security policy. <a href="../_Orca/Discovery.htm">Review connections discovered</a> by <MadCap:variable name="local-orca.Product_S" /> that you haven't allowed in the policy, add <a href="../_Orca/AllowedConnections.htm">allowed connections</a> to the policy and fine tune the policy  by adding / removing as required.</p>
+                    </li>
+                    <li>
+                        <p><a href="../_Orca/Enforcement.htm">Enforce</a> the policy on Kubernetes. See <a href="../_Orca/AllowedConnections.htm#Export">Export as Network Policies</a>.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Discover advanced Kubernetes features  including automation and integration:</p>
+                <ul>
+                    <li>Set up <a href="../_Orca/ImmutablePolicy.htm">immutable policy</a> control - security policy creation built into your CI/CD pipeline.</li>
+                    <li><a href="../_Orca/Docker_Image_Scanning.htm">Scanning</a> of Docker container images for vulnerabilities.</li>
+                    <li>Apply your policy on firewalls via integration with <a href="../_Orca/SecureChangeIntegration.htm"><MadCap:variable name="local-orca.SC" /></a>.</li>
+                    <li>Apply your policy to <a href="../_Orca/AzureIntegration.htm">Microsoft's Azure</a> Firewall.</li>
+                    <li>Put a <a href="../_Orca/Badges.htm">badge</a> on your repo to display the security score of your container.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Use the reference guide as needed or better still, spend an hour reading it all.</p>
+            </li>
+        </ol>
     </body>
 </html>
