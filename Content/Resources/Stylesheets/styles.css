@@ -6,6 +6,7 @@ body
 	font-family: "Open Sans";
 	font-size: 14px;
 	line-height: 24px;
+	mc-hyphenate: never;
 }
 
 a
@@ -219,16 +220,20 @@ MadCap|tocProxy
 
 MadCap|xref
 {
-	color: #2D8DCC;
+/*	color: #2D8DCC;
 	font-weight: bold;
 	mc-format: '{para}';
 	text-decoration: underline;
-}
+*/
+	color: #762a5b;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+	text-decoration: underline;}
 
 MadCap|xref:hover
 {
-	color: #BED230;
-}
+	/*color: #BED230;*/
+	text-decoration: none;}
 
 p
 {
@@ -277,7 +282,7 @@ p.h4
 	mc-next-class: normal;
 }
 
-p.ProcedureIntro
+p.ProcedureIntro, p.procedureintro
 {
 	font-style: italic;
 }
@@ -541,6 +546,12 @@ span.StatusOrValue
 	background-color: #f2f2f2;
 }
 
+span.superscript
+{
+	font-size: 65%;
+	vertical-align: super;
+}
+
 span.MenuItem
 {
 	font-style: normal;
@@ -551,6 +562,12 @@ span.MenuItem
 span.Superscript { 
   vertical-align: super;
   font-size: smaller;
+}
+
+span.SpanCodeSegment1
+{
+	font-family: 'Courier New';
+	background: #f2f2f2;
 }
 
 p.CodeSegment1

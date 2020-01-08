@@ -1,0 +1,65 @@
+﻿/* Version: 1.0 */
+
+/* Default */
+ul.menu._Skins_SideMenu.mc-component li > a {
+    border-left: solid 3px transparent;
+}
+
+/* Orca */
+.theme-orca nav.title-bar {
+	background-color: #762a5b;
+	background-image: url('Images/headerOrca_105px.jpg');
+}
+.theme-orca .title-bar-layout a.logo {
+	background-image: url('Images/logoOrca.png');
+}
+.theme-orca .search-bar.search-bar-container .search-submit {
+	/* background-color: #9f6a8d; */
+	background-color: transparent;
+}
+.theme-orca ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #762a5b;
+}
+.theme-orca ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #762a5b;
+}
+
+/* Iris */
+.theme-iris nav.title-bar {
+	background-color: #074c7b;
+	background-image: url('Images/headerIris_105px.jpg');
+}
+.theme-iris .title-bar-layout a.logo {
+	background-image: url('Images/logoIris.png');
+}
+.theme-iris .search-bar.search-bar-container .search-submit {
+/*	background-color: #92c6e8; */
+	background-color: transparent;
+}
+.theme-iris ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #0d4d7a;
+}
+.theme-iris ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #0d4d7a;
+}
+
+/* TOS2 */
+.theme-tos2 nav.title-bar {
+	background-color: #EA7600;
+	background-image: url('Images/headerTos2_105px.jpg');
+}
+.theme-tos2 .title-bar-layout a.logo {
+	background-image: url('Images/logoTos2.png');
+}
+.theme-tos2 .search-bar.search-bar-container .search-submit {
+/*	background-color: #CF5300; */
+	background-color: transparent;
+}
+.theme-tos2 ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #EA7600;
+}
+.theme-tos2 ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #EA7600;
+}
+
+/* Test */

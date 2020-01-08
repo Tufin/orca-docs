@@ -228,4 +228,28 @@
     Name="CoverPageImage"
     Comment=""
     EvaluatedDefinition="../FrontMatter/Images/product_TufinOS.png">../FrontMatter/Images/product_TufinOS.png</Variable>
+  <Variable
+    Name="SecureTrack"
+    Comment=""
+    EvaluatedDefinition="SecureTrack">SecureTrack</Variable>
+  <Variable
+    Name="SecureChange"
+    Comment=""
+    EvaluatedDefinition="SecureChange">SecureChange</Variable>
+  <Variable
+    Name="SecureApp"
+    Comment=""
+    EvaluatedDefinition="SecureApp">SecureApp</Variable>
+  <Variable
+    Name="SecureTrack 2"
+    Comment=""
+    EvaluatedDefinition="SecureTrack 2.0">SecureTrack 2.0</Variable>
+  <Variable
+    Name="SecureChange2"
+    Comment=""
+    EvaluatedDefinition="SecureChange 2.0">SecureChange 2.0</Variable>
+  <Variable
+    Name="SecureApp2"
+    Comment=""
+    EvaluatedDefinition="SecureApp 2.0">SecureApp 2.0</Variable>
 </CatapultVariableSet>

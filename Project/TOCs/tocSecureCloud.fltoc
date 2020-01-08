@@ -5,10 +5,14 @@
     Title="[%=System.LinkedTitle%]"
     Link="/Content/__SecureCloud/WhatIsSecureCloud.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <TocEntry
-      Title="what's new" />
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/__SecureCloud/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/_Orca/Architecture.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/_Orca/Securing_Orca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="Concepts">
       <TocEntry
@@ -42,6 +46,9 @@
   </TocEntry>
   <TocEntry
     Title="Reference Guide">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/__SecureCloud/UserManagement.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="Public Cloud Functions">
       <TocEntry
@@ -179,32 +186,6 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/_Orca/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-  </TocEntry>
-  <TocEntry
-    Title="Original topics for reference - to be removed later">
-    <TocEntry
-      Title="Original-Orca"
-      Link="/Project/TOCs/Original-Orca.fltoc" />
-    <TocEntry
-      Title="Original-Iris"
-      Link="/Project/TOCs/Original-Iris.fltoc" />
-  </TocEntry>
-  <TocEntry
-    Title="Topics excluded for reference - to be removed later">
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/_Iris/MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/_Iris/FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="Help"
-      Link="/Content/_Iris/UsingHelp.htm">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/_Iris/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
   </TocEntry>
 </CatapultToc>

@@ -1,0 +1,108 @@
+/*<meta />*/
+
+/* Version: 1.0 */
+/* Default */
+
+ul.menu._Skins_SideMenu.mc-component li > a
+{
+	border-left: solid 3px transparent;
+}
+
+/* Orca */
+
+.theme-orca,
+.theme-orca #responsiveHeader
+{
+	background-color: #762a5b;
+}
+
+.theme-orca #header .logo,
+.theme-orca #responsiveHeader .logo
+{
+	background-image: url('../../Resources/Custom/Images/logoOrca.png');
+}
+
+/* jeff June 19 2019 - manually force background img for email feedback button */
+
+.theme-orca .button.docteam-feedback-button
+{
+	background-image: url('../../Resources/Custom/Images/icon_email16.png');
+}
+
+/*
+.theme-orca .search-bar.search-bar-container .search-submit {
+	background-color: #9f6a8d;
+}
+.theme-orca ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #762a5b;
+}
+.theme-orca ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #762a5b;
+}*/
+
+/* Iris */
+
+.theme-iris,
+.theme-iris #responsiveHeader
+{
+	background-color: #92c6e8;
+}
+
+.theme-iris #header .logo,
+.theme-iris #responsiveHeader .logo
+{
+	background-image: url('../../Resources/Custom/Images/logoIris.png');
+}
+
+/* jeff June 19 2019 - manually force background img for email feedback button */
+
+.theme-iris .button.docteam-feedback-button
+{
+	background-image: url('../../Resources/Custom/Images/icon_email16.png');
+}
+
+/*
+.theme-iris .search-bar.search-bar-container .search-submit {
+	background-color: #92c6e8;
+}
+.theme-iris ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #0d4d7a;
+}
+.theme-iris ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #0d4d7a;
+}*/
+
+/* TOS2 */
+
+.theme-tos2,
+.theme-tos2 #responsiveHeader
+{
+	background-color: #EA7600;
+}
+
+.theme-tos2 #header .logo,
+.theme-tos2 #responsiveHeader .logo
+{
+	background-image: url('../../Resources/Custom/Images/logoTos2.png');
+}
+
+/* jeff June 19 2019 - manually force background img for email feedback button */
+
+.theme-tos2 .button.docteam-feedback-button
+{
+	background-image: url('../../Resources/Custom/Images/icon_email16.png');
+}
+
+/*
+.theme-tos2 .search-bar.search-bar-container .search-submit {
+	background-color: #CF5300;
+}
+.theme-tos2 ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #E06100;
+}
+.theme-tos2 ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #E06100;
+}*/
+
+/* Test */
+

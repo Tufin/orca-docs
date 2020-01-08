@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="New Target created by Neil "
@@ -15,7 +15,7 @@
   ConditionTagExpression="exclude[General.Exclude]"
   ExcludeUnreferencedContent="true"
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/Original-Iris.fltoc">
+  MasterToc="/Project/TOCs/DEPRECATED_Original-Iris.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

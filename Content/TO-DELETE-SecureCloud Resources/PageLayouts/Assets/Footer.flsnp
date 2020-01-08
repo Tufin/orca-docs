@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="PageLayout.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="width: 100%;mc-table-style: url('../Assets/PageLayout.css');" class="TableStyle-PageLayout" cellspacing="0">
+            <col class="TableStyle-PageLayout-Column-LeftAligned" />
+            <col class="TableStyle-PageLayout-Column-RightAligned" />
+            <tbody>
+                <tr class="TableStyle-PageLayout-Body-Body1">
+                    <td class="TableStyle-PageLayout-BodyB-LeftAligned-Body1">Copyright 2003-2019, Tufin Software Technologies Ltd.</td>
+                    <td class="TableStyle-PageLayout-BodyA-RightAligned-Body1"><MadCap:variable name="System.PageNumber" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
