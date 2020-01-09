@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <p>A permissive pod security policy contains one or more of the following values set to true:</p>
+        <p>A permissive pod security policy contains one or more of the following values set to true, giving the pod access to all devices on the host:</p>
         <ul>
             <li>
                 <p>HostPID: The pod's containers can share the host process ID namespace</p>

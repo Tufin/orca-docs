@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Dashboard</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>The <MadCap:variable name="local-iris.ProductName" /> dashboard is a snapshot of your compliance with security policy and best practices  in your cloud account settings and k8s clusters. It is made up of widgets representing common risks, each showing a compliance score indicating your robustness against the risk. </p>
+        <p>
+            <img src="../SecureCloud-Images/Dashboard.png" class="ThumbnailPopup" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>Filter the display - click <span class="ScreenObject">All</span>, <span class="ScreenObject"><MadCap:variable name="local.Public Cloud" /></span> or <span class="ScreenObject">Kubernetes </span></li>
+            <li>Drill down to see <MadCap:xref href="#detail">detail</MadCap:xref> of the risk - click on the desired <MadCap:variable name="local.Widget" /></li>
+        </ul>
+        <p class="h3"><a name="detail"></a>Detail</p>
+        <p>Click on a <MadCap:variable name="local.Widget" /> to drill down to the relevant detail.</p>
+        <p class="h4">Risky Ports</p>
+        <p>The Risky Ports <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to high-risk ports - the fewer   high-risk ports you have, the higher the compliance score. </p>
+        <p>Port 23, 110, 135-139, 445 and 3389 are considered high risk for various different reasons and allowing traffic to reach your assets from any of these could leave it open to attack. Click on the <MadCap:variable name="local.Widget" /> to display all applications that allow access through these ports.</p>
+        <p>Recommended best practice: In your cloud account security definitions, do not allow ingress from any of the ports listed above. </p>
+        <p class="h4">Permissive Access</p>
+        <p>The Permissive access <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to ingress from an unlimited sources. The fewer   instances of permissive access you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all applications that  have permissive access. </p>
+        <p>Permissive access is where UDP&#160;or TCP ingress is allowed in any of the following circumstances:</p>
+        <ul>
+            <li>From any port (Min=0, Max=65535)</li>
+            <li>Via transport access  from an unlimited range of IPs (class A subnet mask  e.g. 255.0.0.0/8)</li>
+            <li>From any source (Source=ANY)</li>
+        </ul>
+        <p>Recommended best practice: In your cloud account security definitions, avoid the use of unlimited ranges; allow traffic to assets only through well-defined ports and IP addresses.</p>
+        <p class="h4">Policy Violations</p>
+        <p>The policy violations <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to  your security policy. The closer your cloud vendor security definitions match your <MadCap:variable name="local.ProductName" /> policy, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all applications  with policy violations.</p>
+        <p>
+            <MadCap:snippetText src="../_Iris/WhatIsViolation.flsnp" /> </p>
+        <p>Recommended best practice:&#160;Review your applications and assets and <a href="../_Iris/Assets.htm#Resolve">resolve</a> all violations.</p>
+        <p class="h4">Internet Access</p>
+        <p>The internet access <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to  access to or from the internet. The fewer the connectivity possibilities with the internet, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all applications that  have access to the internet.</p>
+        <p>Recommended best practice: Limit internet access to as few devices as possible and ensure only approved assets have such access.</p>
+        <p class="h4">Tag Usage</p>
+        <p>The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to usage of tags on your assets. The fewer assets you have without tags, the higher the compliance score. </p>
+        <p>&#160;</p>
+        <p>The tag usage <MadCap:variable name="local.Widget" /> shows the compliance of your assets </p>
+        <p>&#160;</p>
+        <p>based on the premise that all of your assets should have tags for your security policy to be sound.</p>
+        <p>presents a comparison between applications or assets  that have asset tags associated with them and those that do not. Click on the <MadCap:variable name="local.Widget" /> to display all assets that  have no tags.</p>
+        <p>Recommended best practice: Use tags to define important asset characteristics such as application and environment, as described in <a href="../_Iris/Global_View.htm">Global Application Visibility</a>.</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> dashboard gives you a snapshot of your Kubernetes security issues vulnerabilities through charts:</p>
+        <p class="h4" MadCap:conditions="General.Exclude">Network Policy Namespace Coverage</p>
+        <p class="normal" MadCap:conditions="General.Exclude">This chart compares the number of namespaces having at least one Kubernetes network policy with namespaces that  have no network policies. The number of k8s network policies is not reflected here.</p>
+        <p class="h4" MadCap:conditions="General.Exclude">Namespace Vulnerabilities</p>
+        <p class="normal" MadCap:conditions="General.Exclude">This chart shows the number of namespaces for which container vulnerabilities were found against the highest severity of vulnerability found. The number of vulnerabilities found in each namespace is not reflected here. The vulnerability level for a namespace is the largest <a href="../_Orca/SecurityScore.htm">vulnerability</a> found in any of its containers.  </p>
+        <p class="h4">Privileged Workloads</p>
+        <p>The Privileged Workload <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to privileged workloads - the fewer  privileged workloads you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters containing privileged workloads.</p>
+        <p>A privileged workload can be a pod with a permissive pod security policy or a container that has its privileged parameter set to true. </p>
+        <MadCap:snippetBlock src="../_Orca/Pod_Permissive_Policy.flsnp" />
+        <p class="h4">Kubernetes Vulnerabilities</p>
+        <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to known vulnerabilities in your Kubernetes environment- the fewer vulnerabilities you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters containing known Kubernetes vulnerabilities.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
+        </MadCap:snippetBlock>
+        <p>Main Menu  &gt; <span class="MenuItem">Dashboard</span></p>
+    </body>
+</html>
