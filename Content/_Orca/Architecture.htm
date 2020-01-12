@@ -6,7 +6,7 @@
         <h1>Architecture</h1>
         <p MadCap:conditions="General.Exclude">Currently Based only on k8s</p>
         <p>
-            <img src="../SecureCloud-Images/SecureCloud_kubernetes.jpg" class="ThumbnailPopup" />
+            <img src="../__SecureCloud-Images/SecureCloud_kubernetes.jpg" class="ThumbnailPopup" />
         </p>
         <p class="h2">The <MadCap:variable name="local-orca.Product_S" /> Cloud Application</p>
         <p>This is the cloud-based user interface you log into from your browser. It provides you visualization of cluster security information such as network traffic, vulnerabilities, Kubernetes network policies and the <MadCap:variable name="local-orca.Product_S" /> security policy and for taking actions such as switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
@@ -14,11 +14,11 @@
         <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, enforces your policy and communicates with the <MadCap:variable name="local-orca.Product_S" /> cloud application. <MadCap:variable name="local-orca.Product_S" />'s capability of discovering new connections is referred to as <a href="Discovery.htm">Discovery</a>.</p>
         <p><MadCap:variable name="local-orca.Product_S" /> services are deployed on your cluster in the Kube-System namespace and in a newly created namespace called Tufin-system. No <MadCap:variable name="local-orca.Product_S" /> services are placed in user or application namespaces.</p>
         <p>
-            <img src="../Orca-Images/Diagram_Architecture1.PNG" />
+            <img src="../_Orca-Images/Diagram_Architecture1.PNG" />
         </p>
         <p>At installation time, Kubernetes determines one node on which to deploy the Kite pod. Kubernetes deploys the Network Monitor daemonset on every node in the cluster, where permissions allow.</p>
         <p>
-            <img src="../Orca-Images/Diagram_Architecture2.PNG" />
+            <img src="../_Orca-Images/Diagram_Architecture2.PNG" />
         </p>
         <p>The <MadCap:variable name="local-orca.Agent" /> contains the following services:</p>
         <p class="h3"><MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Kite" /></p>

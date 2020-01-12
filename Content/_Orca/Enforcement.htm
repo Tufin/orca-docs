@@ -41,7 +41,7 @@ egress:
             <li>
                 <p>External services with many IPs (like cloudimageupdate-pa.googleapis.com) may only be partially covered because <MadCap:variable name="local-orca.Product_S" /> could only monitor IP's accessed from the cluster and there may be other IPs not yet seen. In this case, you can allow for any IP by creating a manual rule allowing access from the relevant namespace to the domain name; the policy will then be generated with egress to 0.0.0.0/0: Example:</p>
                 <p>
-                    <img src="../Orca-Images/Screen_connection_egress_to_domain.png">
+                    <img src="../_Orca-Images/Screen_connection_egress_to_domain.png">
                     </img>
                 </p>
             </li>
@@ -61,13 +61,13 @@ ingress:
             <li>
                 <p>If not deleted by the user, the output will include the rule for all namespaces to access the Kubernetes DNS service:</p>
                 <p>
-                    <img src="../Orca-Images/Screen_connection_allnamespacess_to_kubedns.png" />
+                    <img src="../_Orca-Images/Screen_connection_allnamespacess_to_kubedns.png" />
                 </p>
             </li>
         </ul>
         <p>Sample format:</p>
         <p>
-            <img src="../Orca-Images/yaml_network_policies.png" class="ThumbnailPopup">
+            <img src="../_Orca-Images/yaml_network_policies.png" class="ThumbnailPopup">
             </img>
         </p>
         <p>See full <a href="KubernetesNetworkPolicyExample.txt">Example</a>. </p>

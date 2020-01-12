@@ -8,12 +8,12 @@
             <li>Use <span class="state">Learn</span> to build a <a href="../../_Orca/AllowedConnections.htm">Policy</a> that is best suited to your application. </li>
             <li>When you are satisfied that the policy meets your enforcement criteria, switch to <span class="StatusOrValue">Enforce</span> and <MadCap:variable name="local-orca.Product_S" /> will start enforcing your policy. </li>
         </ul>
-        <p><MadCap:variable name="local-orca.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local-orca.Product_S" /> theme is colored <img src="../../Orca-Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../../Orca-Images/ColorEnforce.png" class="noborder" />.</p>
+        <p><MadCap:variable name="local-orca.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local-orca.Product_S" /> theme is colored <img src="../../_Orca-Images/ColorLearn.png" class="noborder" /> and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored <img src="../../_Orca-Images/ColorEnforce.png" class="noborder" />.</p>
         <p>
-            <img src="../../Orca-Images/ScreenEnforce.png" />
+            <img src="../../_Orca-Images/ScreenEnforce.png" />
         </p>
         <p>
-            <img src="../../Orca-Images/ScreenLearn.png" />
+            <img src="../../_Orca-Images/ScreenLearn.png" />
         </p>
     </body>
 </html>

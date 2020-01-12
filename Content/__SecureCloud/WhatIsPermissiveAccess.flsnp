@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>
+            <p>Permissive access is where UDP&#160;or TCP ingress is allowed in any of the following circumstances:</p>
+            <ul style="list-style-type: square;">
+                <li>From any port (Min=0, Max=65535)</li>
+                <li>Via transport access  from an unlimited range of IPs (class A subnet mask  e.g. 255.0.0.0/8)</li>
+                <li>From any source (Source=ANY)</li>
+            </ul>
+        </p>
+    </body>
+</html>
