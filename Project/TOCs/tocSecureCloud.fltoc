@@ -50,17 +50,66 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/__SecureCloud/Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/__SecureCloud/RiskyPorts-Apps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Title="Risky Ports"
+        Link="/Content/__SecureCloud/RiskyPorts-Apps.htm"
+        ReplaceMergeNode="false">
+        <TocEntry
+          Title="Applications"
+          Link="/Content/__SecureCloud/RiskyPorts-Apps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Assets"
+          Link="/Content/__SecureCloud/RiskyPorts-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Permissive Access"
+        Link="/Content/__SecureCloud/PermissiveAccess-Apps.htm">
+        <TocEntry
+          Title="Applications"
+          Link="/Content/__SecureCloud/PermissiveAccess-Apps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Assets"
+          Link="/Content/__SecureCloud/PermissiveAccess-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Policy Violations"
+        Link="/Content/__SecureCloud/PolicyViolations-Apps.htm">
+        <TocEntry
+          Title="Applications"
+          Link="/Content/__SecureCloud/PolicyViolations-Apps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Assets"
+          Link="/Content/__SecureCloud/PolicyViolations-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/__SecureCloud/RiskyPorts-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/__SecureCloud/TagUsage-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/__SecureCloud/PermissiveAccess-Apps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Title="Kubernetes Vulnerabilities"
+        Link="/Content/__SecureCloud/K8sVulnerabilities-Clusters.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sVulnerabilities-Clusters.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sVulnerabilities-in-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
       <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/__SecureCloud/PermissiveAccess-Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Title="Privileged Workloads"
+        Link="/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Cluster.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Namespace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Container Vulnerabilities" />
+      <TocEntry
+        Title="Permissive Policies" />
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
@@ -69,9 +118,6 @@
       Title="Public Cloud Functions">
       <TocEntry
         Title="View Your Cloud">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/_Iris/SUPERSEDED_Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/_Iris/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -112,9 +158,6 @@
       Title="Kubernetes Functions">
       <TocEntry
         Title="Visibility">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/__SecureCloud/Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/_Orca/Discovery.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

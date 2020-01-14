@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+            <li>
+                <p><span class="ScreenObject">Asset name</span>
+                </p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Account</span>. The name of the cloud account with the vendor's icon e.g. AWS, Azure</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Internet access</span>:</p>
+                <p><span class="StatusOrValue">Exposed</span>-the asset has access to the internet</p>
+                <p><span class="StatusOrValue">blank</span>-the asset doesn't have access to the internet</p>
+            </li>
+    </body>
+</html>

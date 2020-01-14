@@ -34,7 +34,7 @@
             <li>In your cloud account security definitions, avoid the use of unlimited ranges; allow traffic to assets only through well-defined ports and IP addresses.</li>
         </ul>
         <p class="h4">Policy Violations</p>
-        <p>The policy violations <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to  your security policy. The closer your cloud vendor security definitions match your <MadCap:variable name="local.ProductName" /> policy, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all applications  with policy violations.</p>
+        <p>The policy violations <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to  your security policy. The closer your cloud vendor security definitions match your <MadCap:variable name="local.ProductName" /> policy, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="PolicyViolations-Apps.htm">applications  with policy violations</a>.</p>
         <p style="font-weight: bold;">What is a policy violation?</p>
         <ul>
             <li>
@@ -60,7 +60,9 @@
         <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to known vulnerabilities in your Kubernetes environment - the fewer vulnerabilities you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters containing known Kubernetes vulnerabilities.</p>
         <p class="normal" style="font-weight: bold;">What are Kubernetes Vulnerabilities?</p>
         <ul>
-            <li>Kubernetes Vulnerabilities are known vulnerabilities in Kubernetes implementations, published by 'CVE Details' https://www.cvedetails.com </li>
+            <li>
+                <MadCap:snippetText src="WhatIsK8sVulnerabilities.flsnp" />
+            </li>
         </ul>
         <p class="normal" style="font-weight: bold;">Recommended best practice: </p>
         <ul>
@@ -70,19 +72,15 @@
         <p>The Privileged Workload <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to privileged workloads - the fewer  privileged workloads you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters containing privileged workloads.</p>
         <p style="font-weight: bold;">
             <p>What are Privileged Workloads?</p>
-            <ul>
-                <li style="font-weight: normal;">
-                    <p>A privileged workload can be a pod with a permissive pod security policy or a container that has its privileged parameter set to true.</p>
-                    <MadCap:snippetBlock src="../_Orca/Pod_Permissive_Policy.flsnp" />
-                </li>
-            </ul>
+            <MadCap:snippetBlock src="../_Orca/WhatIsK8sPrivilegedWorkload.flsnp" />
         </p>
         <p><b>Recommended best practice:</b> </p>
         <ul>
             <li>Wherever possible, remove the above privileges from pods and containers.</li>
         </ul>
-        <p class="h4">Container Vulnerabilities</p>
-        <p>The Container Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to the  vulnerabilities found in your containers. The fewer the container vulnerabilities, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters with container vulnerabilities. </p>
+        <p class="h4"><MadCap:variable name="local.ContainerVulnerabilities" />
+        </p>
+        <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to the  vulnerabilities found in your containers. The fewer the <MadCap:variable name="local.containervulnerabilities" />, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters with <MadCap:variable name="local.Containervulnerabilities" />. </p>
         <p style="font-weight: bold;">What are container vulnerabilities?</p>
         <ul>
             <li><MadCap:variable name="local.ProductName" /> scans your containers and gives each one a <a href="../_Orca/SecurityScore.htm">security score</a> from A to F, where A is lowest risk and F is the highest.</li>

@@ -252,4 +252,12 @@
     Name="SecureApp2"
     Comment=""
     EvaluatedDefinition="SecureApp 2.0">SecureApp 2.0</Variable>
+  <Variable
+    Name="SecureTrackFreemium"
+    Comment=""
+    EvaluatedDefinition="SecureTrack Free Edition">SecureTrack Free Edition</Variable>
+  <Variable
+    Name="TOS"
+    Comment=""
+    EvaluatedDefinition="Tufin Orchestration Suite">Tufin Orchestration Suite</Variable>
 </CatapultVariableSet>

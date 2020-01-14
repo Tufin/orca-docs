@@ -52,4 +52,32 @@
     Name="Widget"
     Comment=""
     EvaluatedDefinition="widget">widget</Variable>
+  <Variable
+    Name="RiskType"
+    Comment=""
+    EvaluatedDefinition="Risk Type">Risk Type</Variable>
+  <Variable
+    Name="RiskType"
+    Comment="for title"
+    EvaluatedDefinition="Container Vulnerabilities">Container Vulnerabilities</Variable>
+  <Variable
+    Name="RiskType"
+    Comment="for mid sentence"
+    EvaluatedDefinition="container vulnerabilities">container vulnerabilities</Variable>
+  <Variable
+    Name="RiskType"
+    Comment="Start of sentence"
+    EvaluatedDefinition="Container vulnerabilities">Container vulnerabilities</Variable>
+  <Variable
+    Name="ContainerVulnerabilities"
+    Comment="for title"
+    EvaluatedDefinition="Container Vulnerabilities">Container Vulnerabilities</Variable>
+  <Variable
+    Name="containervulnerabilities"
+    Comment="for mid sentence"
+    EvaluatedDefinition="container vulnerabilities">container vulnerabilities</Variable>
+  <Variable
+    Name="Containervulnerabilities"
+    Comment=""
+    EvaluatedDefinition="container vulnerabilities">container vulnerabilities</Variable>
 </CatapultVariableSet>
