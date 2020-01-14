@@ -3,16 +3,15 @@
     <head>
     </head>
     <body>
-        <h1><MadCap:variable name="local.ContainerVulnerabilities" /> by Cluster</h1>
+        <h1>by Cluster</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
-        <p> </p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>This screen displays all clusters containing privileged workloads.sec</p>
+        <p>This screen displays all clusters containing <MadCap:variable name="local.containervulnerabilities" />.</p>
         <p>
             <img src="../__SecureCloud-Images/Screen_K8s_ContainerVulnerabilities_Clusters.png" class="ThumbnailPopup" />
         </p>
         <p class="h3">What are <MadCap:variable name="local.Containervulnerabilities" />?</p>
-        <MadCap:snippetBlock src="../_Orca/WhatIsK8sPrivilegedWorkload.flsnp" />
+        <MadCap:snippetBlock src="WhatIsK8sContainerVulnerabilities.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p class="normal">The main screen section is a list of clusters showing:</p>
         <ul>
@@ -21,28 +20,25 @@
                 </p>
             </li>
             <li>
-                <p><span class="ScreenObject">Total namespaces</span>. The number of all namespaces in the cluster</p>
+                <p><span class="ScreenObject">Total namespaces</span>. The number of namespaces in the cluster</p>
             </li>
             <li>
-                <p><span class="ScreenObject">Affected namespaces</span>. The number of namespaces in the cluster that contain privileged workloads.</p>
+                <p><span class="ScreenObject">Affected namespaces</span>. The number of namespaces in the cluster with <MadCap:variable name="local.containervulnerabilities" /></p>
             </li>
             <li>
-                <p><span class="ScreenObject">Host Access</span>. The number of pods with a permissive pod security policy</p>
-            </li>
-            <li>
-                <p><span class="ScreenObject">Privileged mode</span>. The number of containers with privileged parameter set to true</p>
+                <p><span class="ScreenObject">Lowest Score</span>. The <MadCap:variable name="local-orca.TufinScore" /> of the most vulnerable container found</p>
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p><b>Drill down</b> to see the <a href="K8sPrivilegedWorkloads-by-Namespace.htm">privileged workloads in namespaces</a>. </p>
+                <p><b>Drill down</b> to see <MadCap:xref href="K8sContainerVulnerabilities-by-Namespace.htm">[%=local.ContainerVulnerabilities%] by Namespace</MadCap:xref></p>
                 <p>Click on the desired cluster. </p>
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
         </MadCap:snippetBlock>
         <p>
-            <MadCap:snippetText src="../Resources/Snippets/NavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref></span> &gt; <span class="MenuItem">Kubernetes Privileged Workloads <MadCap:variable name="local.Widget" /></span></p>
+            <MadCap:snippetText src="../Resources/Snippets/NavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref></span> &gt; <span class="MenuItem"><MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /></span></p>
     </body>
 </html>
