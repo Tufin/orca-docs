@@ -123,7 +123,18 @@
           Link="/Content/_Orca/VulnerabilityDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
-        Title="Permissive Policies" />
+        Title="Permissive Policies"
+        Link="/Content/__SecureCloud/K8sPermissivePolicies-by-Cluster.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPermissivePolicies-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPermissivePolicies-by-Namespace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/__SecureCloud/K8sPermissive-Policies-in-Namespace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"

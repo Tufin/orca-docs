@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultAliasFile>
+	<Map Name="SCL_Deploy" Link="/Content/_Orca/DeployOrca.htm" />
+	<Map Name="SCL_ServiceGraph" Link="/Content/_Orca/ServiceGraph.htm" />
+	<Map Name="SCL_Pods" Link="/Content/_Orca/Pods.htm" />
+	<Map Name="SCL_Services" Link="/Content/_Orca/Services.htm" />
+	<Map Name="SCL_Nodes" Link="/Content/_Orca/Nodes.htm" />
+	<Map Name="SCL_Policy" Link="/Content/_Orca/Policy.htm" />
+	<Map Name="SCL_Settings" Link="/Content/_Orca/Settings.htm" />
+	<Map Name="SCL_UnderstandingOrca" Link="/Content/_Orca/Architecture.htm" />
+	<Map Name="SCL_Vulnerabilities" Link="/Content/_Orca/VulnerabilityDetails.htm" />
+	<Map Name="SCL_WhatsNew" Link="/Content/__SecureCloud/WhatsNew.htm" />
+	<Map Name="SCL_AllowedConnections" Link="/Content/_Orca/AllowedConnections.htm" />
+	<Map Name="SCL_KubernetesNetworkPolicies" Link="/Content/_Orca/KubernetesNetPolicies.htm" />
+	<Map Name="SCL_FirewallTickets" Link="/Content/_Orca/FirewallTickets.htm" />
+	<Map Name="SCL_OverlyPermissiveRpt" Link="/Content/_Orca/OverlyPermissiveRpt.htm" />
+	<Map Name="SCL_SecurityScore" Link="/Content/_Orca/SecurityScore.htm" />
+	<Map Name="SCL_FilteringGeneral" Link="/Content/_Orca/NavigatingOrca.htm" />
+	<Map Name="SCL_DiscoveryEngine" Link="/Content/_Orca/Discovery.htm" />
+	<Map Name="SCL_AddingConnection" Link="/Content/_Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
+	<Map Name="SCL_Notifications" Link="/Content/_Orca/SettingsNotifications.htm" />
+	<Map Name="SCL_Dashboard" Link="/Content/__SecureCloud/Dashboard.htm" />
+	<Map Name="SCL_AppManager" Link="/Content/_Iris/WorkingWithAppManager.htm" />
+	<Map Name="SCL_Applications" Link="/Content/_Iris/Applications.htm" />
+	<Map Name="SCL_Assets" Link="/Content/_Iris/Assets.htm" />
+	<Map Name="SCL_Global" Link="/Content/_Iris/GlobalMap.htm" />
+	<Map Name="SCL_TagManager" Link="/Content/_Iris/WorkingWithTagManager.htm" />
+	<Map Name="SCL_Policy" Link="/Content/_Iris/PolicyRules.htm" />
+	<Map Name="SCL_Notifications" Link="/Content/_Iris/NotificationSettings.htm" />
+</CatapultAliasFile>

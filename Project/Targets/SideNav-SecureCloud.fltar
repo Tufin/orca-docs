@@ -17,7 +17,11 @@
   EnableSitemap="true"
   SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
   MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
-  MasterStylesheetOverride="true">
+  MasterStylesheetOverride="true"
+  EquationsOutputType="PNG"
+  AliasFile="/Project/Advanced/CSH/SCL.flali"
+  Medium="print"
+  SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"
@@ -30,4 +34,6 @@
   <PostBuild>copy "$(OutputDirectory)\index.htm" "$(OutputDirectory)\Default.htm"
 cd $(OutputDirectory)
 7z a docbuild.zip *</PostBuild>
+  <PreBuild>cd $(ProjectDirectory)\Project\Advanced\CSH\
+node "$(ProjectDirectory)\Content\InternalOnly\splitit.js" CloudAlias SCL SCL</PreBuild>
 </CatapultTarget>
