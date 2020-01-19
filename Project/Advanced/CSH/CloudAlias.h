@@ -25,5 +25,5 @@
 #define SCL_Assets 5022
 #define SCL_Global 5023
 #define SCL_TagManager 5024
-#define SCL_Policy 5025
+#define SCL_CloudPolicy 5025
 #define SCL_Notifications 5026

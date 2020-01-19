@@ -25,6 +25,6 @@
 	<Map Name="SCL_Assets" Link="/Content/_Iris/Assets.htm" />
 	<Map Name="SCL_Global" Link="/Content/_Iris/GlobalMap.htm" />
 	<Map Name="SCL_TagManager" Link="/Content/_Iris/WorkingWithTagManager.htm" />
-	<Map Name="SCL_Policy" Link="/Content/_Iris/PolicyRules.htm" />
+	<Map Name="SCL_CloudPolicy" Link="/Content/_Iris/PolicyRules.htm" />
 	<Map Name="SCL_Notifications" Link="/Content/_Iris/NotificationSettings.htm" />
 </CatapultAliasFile>
