@@ -62,4 +62,25 @@ ul.menu._Skins_SideMenu.mc-component li > a {
     border-left-color: #EA7600;
 }
 
+/* SecureCloud */
+.theme-securecloud nav.title-bar {
+	background-color: #074c7b;
+	background-image: url('Images/headerSecureCloud_105px.jpg');
+}
+.theme-securecloud .title-bar-layout a.logo {
+	background-image: url('Images/logoSecureCloud.png');
+	width: 310px;	
+}
+.theme-securecloud .search-bar.search-bar-container .search-submit {
+/*	background-color: #92c6e8; */
+	background-color: transparent;
+}
+.theme-securecloud ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #0d4d7a;
+}
+.theme-securecloud ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #0d4d7a;
+}
+
+
 /* Test */

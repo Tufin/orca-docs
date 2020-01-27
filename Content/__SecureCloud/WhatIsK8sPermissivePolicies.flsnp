@@ -3,20 +3,7 @@
     <head>
     </head>
     <body>
-        <p><MadCap:variable name="local.Permissivepolicies" /> are  Kubernetes network policy  specifications with a value of 'ANY' for one or more of the following:</p>
-        <p>Ingress:</p>
-        <ul>
-            <li>Source namespace</li>
-            <li>Source pod</li>
-            <li>Source subnet</li>
-            <li>Source port</li>
-        </ul>
-        <p>Egress:</p>
-        <ul>
-            <li>Target namespace</li>
-            <li>Target pod</li>
-            <li>Target subnet</li>
-            <li>Target port</li>
-        </ul>
+        <p><MadCap:variable name="local.Permissivepolicies" /> are  Kubernetes network policy  specifications that permit ingress access from a wide range of  services, IP addresses or ports.</p>
+        <p>&#160;</p>
     </body>
 </html>

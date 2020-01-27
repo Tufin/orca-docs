@@ -17,4 +17,8 @@
     BackgroundColor="#ff0000"
     Name="TufinOS3"
     Comment="TufinOS 3.x topics" />
+  <ConditionTag
+    BackgroundColor="#ff00bc"
+    Name="STFree"
+    Comment="Freemium (Firewall Change Tracker)" />
 </CatapultConditionTagSet>

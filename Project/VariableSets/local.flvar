@@ -76,4 +76,72 @@
     Name="Permissivepolicies"
     Comment="Begin sentence"
     EvaluatedDefinition="Permissive policies">Permissive policies</Variable>
+  <Variable
+    Name="PUBLIC CLOUD"
+    Comment="Menu"
+    EvaluatedDefinition="PUBLIC CLOUD">PUBLIC CLOUD</Variable>
+  <Variable
+    Name="KUBERNETES"
+    Comment="Menu"
+    EvaluatedDefinition="KUBERNETES">KUBERNETES</Variable>
+  <Variable
+    Name="Main Menu"
+    Comment=""
+    EvaluatedDefinition="Main Menu">Main Menu</Variable>
+  <Variable
+    Name="Dashboard"
+    Comment=""
+    EvaluatedDefinition="Dashboard">Dashboard</Variable>
+  <Variable
+    Name="Settings"
+    Comment="Menu"
+    EvaluatedDefinition="Settings">Settings</Variable>
+  <Variable
+    Name="Notifications"
+    Comment="Menu"
+    EvaluatedDefinition="Notifications">Notifications</Variable>
+  <Variable
+    Name="Cloud Policy"
+    Comment="Menu"
+    EvaluatedDefinition="Cloud Policy">Cloud Policy</Variable>
+  <Variable
+    Name="Account Manager"
+    Comment="Menu"
+    EvaluatedDefinition="Account Manager">Account Manager</Variable>
+  <Variable
+    Name="App Manager"
+    Comment="Menu"
+    EvaluatedDefinition="App Manager">App Manager</Variable>
+  <Variable
+    Name="Tag Manager"
+    Comment="Menu"
+    EvaluatedDefinition="Tag Manager">Tag Manager</Variable>
+  <Variable
+    Name="Cluster Policy"
+    Comment="Menu"
+    EvaluatedDefinition="Cluster Policy">Cluster Policy</Variable>
+  <Variable
+    Name="Allowed Connections"
+    Comment="Menu"
+    EvaluatedDefinition="Allowed Connections">Allowed Connections</Variable>
+  <Variable
+    Name="Resources"
+    Comment="Menu"
+    EvaluatedDefinition="Resources">Resources</Variable>
+  <Variable
+    Name="Services"
+    Comment="Menu"
+    EvaluatedDefinition="Services">Services</Variable>
+  <Variable
+    Name="Pods"
+    Comment="Menu"
+    EvaluatedDefinition="Pods">Pods</Variable>
+  <Variable
+    Name="Nodes"
+    Comment="Menu"
+    EvaluatedDefinition="Nodes">Nodes</Variable>
+  <Variable
+    Name="Network Policies"
+    Comment="Menu"
+    EvaluatedDefinition="Network Policies">Network Policies</Variable>
 </CatapultVariableSet>

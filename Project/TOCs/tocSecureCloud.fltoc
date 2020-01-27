@@ -142,7 +142,7 @@
     <TocEntry
       Title="Public Cloud Functions">
       <TocEntry
-        Title="View Your Cloud">
+        Title="Visibility">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/_Iris/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -157,7 +157,7 @@
           Link="/Content/_Iris/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
-        Title="Configure Public Cloud">
+        Title="Settings">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/_Iris/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -229,7 +229,7 @@
           Link="/Content/_Orca/SecureChangeIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
-        Title="Configuration">
+        Title="Settings">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/_Orca/Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>

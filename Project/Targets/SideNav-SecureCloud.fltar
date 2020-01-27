@@ -30,6 +30,8 @@
   <Variables>
     <Variable
       Name="custom/IncludeVersionDropdown">false</Variable>
+    <Variable
+      Name="custom/Theme">securecloud</Variable>
   </Variables>
   <PostBuild>copy "$(OutputDirectory)\index.htm" "$(OutputDirectory)\Default.htm"
 cd $(OutputDirectory)

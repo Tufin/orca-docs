@@ -255,7 +255,7 @@
   <Variable
     Name="SecureTrackFreemium"
     Comment=""
-    EvaluatedDefinition="SecureTrack Free Edition">SecureTrack Free Edition</Variable>
+    EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
   <Variable
     Name="TOS"
     Comment=""

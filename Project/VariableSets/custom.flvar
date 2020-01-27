@@ -28,4 +28,8 @@
     Name="HeaderCaption"
     Comment=""
     EvaluatedDefinition="" />
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="securecloud">securecloud</Variable>
 </CatapultVariableSet>

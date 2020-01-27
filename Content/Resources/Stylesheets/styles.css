@@ -632,3 +632,83 @@ MadCap|dropDownHotspot
 {
 	
 }
+
+
+
+/* Mini-Toc (Added By Michael Sedley, 13-Jan-2020) */
+
+MadCap|miniTocProxy
+	{
+		mc-output-support: all;
+		border-top-width: 0px;
+		padding-top: 0;
+		padding-left: 0;
+	}
+
+
+p.MiniTOC1
+	{
+		mc-heading-level: 1;
+		mc-leader-format: ' ';
+		mc-pagenum-display: none;
+		font-weight: normal;
+		mc-auto-number-offset: 0pt;
+		margin: 4pt;
+		margin-left: 0pt;
+		color: #0000ff;
+	}
+	
+	a.MiniTOC1::before
+	{
+		content: ' \25CF';
+		font-family: 'Arial';
+		padding-right: 10px;
+		color: #000000;
+		/*This is bullet before MiniToc Item*/
+	}
+	
+	a.MiniTOC2::before
+	{
+		content: ' \25CB';
+		font-family: 'Arial';
+		padding-right: 10px;
+		color: #000000;
+	}
+	
+	a.MiniTOC3::before
+	{
+		content: ' \25AA';
+		font-family: 'Arial';
+		padding-right: 10px;
+		color: #000000;
+	}
+	p.MiniTOC2
+	{
+		mc-leader-format: ' ';
+		mc-pagenum-display: none;
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 0pt;
+		color: #0000ff;
+		margin: 2pt;
+		padding-left: 18pt;
+	}
+	
+	p.MiniTOC3
+	{
+		mc-leader-format: ' ';
+		mc-pagenum-display: none;
+		mc-auto-number-position: outside-head;
+		mc-auto-number-offset: 0pt;
+		color: #0000ff;
+		margin: 2pt;
+		padding-left: 36pt;
+	}
+	
+	p.MiniTOC4,
+	p.MiniTOC5
+	{
+		mc-pagenum-display: none;
+		mc-leader-format: ' ';
+		color: #0000ff;
+	/*	Level 4 Header and lower are not currently supported */
+	}
