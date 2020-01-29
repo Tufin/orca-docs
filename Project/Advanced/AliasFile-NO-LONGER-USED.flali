@@ -6,7 +6,7 @@
     <Map Name="Services" Link="/Content/_Orca/Services.htm" />
     <Map Name="Nodes" Link="/Content/_Orca/Nodes.htm" />
     <Map Name="Policy" Link="/Content/_Orca/Policy.htm" />
-    <Map Name="Settings" Link="/Content/_Orca/Settings.htm" />
+    <Map Name="Settings" Link="/Content/_Orca/OrcaSettingsGeneral.htm" />
     <Map Name="UnderstandingOrca" Link="/Content/_Orca/Architecture.htm" />
     <Map Name="Vulnerabilities" Link="/Content/_Orca/VulnerabilityDetails.htm" />
     <Map Name="WhatsNew" Link="/Content/__SecureCloud/WhatsNew.htm" />
@@ -18,6 +18,6 @@
     <Map Name="FilteringGeneral" Link="/Content/_Orca/NavigatingOrca.htm" />
     <Map Name="DiscoveryEngine" Link="/Content/_Orca/Discovery.htm" />
     <Map Name="AddingConnection" Link="/Content/_Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
-    <Map Name="Notifications" Link="/Content/_Orca/SettingsNotifications.htm" />
+    <Map Name="Notifications" Link="/Content/_Orca/OrcaSettingsNotifications.htm" />
     <Map Name="Dashboard" Link="/Content/__SecureCloud/Dashboard.htm" />
 </CatapultAliasFile>

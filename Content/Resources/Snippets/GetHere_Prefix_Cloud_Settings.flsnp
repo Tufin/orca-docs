@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.PUBLICCLOUD" /> - </span> <span class="MenuItem"><MadCap:variable name="local.Settings"></MadCap:variable></span> &gt; </p>
+    </body>
+</html>

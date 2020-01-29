@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <h1>by Cluster</h1>
+        <h1><MadCap:variable name="local.ContainerVulnerabilities" /> by Cluster</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <p>This screen displays all clusters containing <MadCap:variable name="local.containervulnerabilities" />.</p>
@@ -32,13 +32,12 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p><b>Drill down</b> to see <MadCap:xref href="K8sContainerVulnerabilities-by-Namespace.htm">[%=local.ContainerVulnerabilities%] by Namespace</MadCap:xref></p>
-                <p>Click on the desired cluster. </p>
+                <p><b>Drill down</b> to <MadCap:xref href="K8sContainerVulnerabilities-by-Namespace.htm">[%=local.ContainerVulnerabilities%] by Namespace</MadCap:xref></p>
+                <p>- Click on the desired cluster. </p>
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
         </MadCap:snippetBlock>
-        <p>
-            <MadCap:snippetText src="../Resources/Snippets/GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref></span> &gt; <span class="MenuItem"><MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /></span></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ContainerVulnerabilities-by-Cluster.flsnp" />
     </body>
 </html>

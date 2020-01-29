@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="WebHelp2"
+  Destinations=""
+  ShowMadCapBacklink="false"
+  GlossaryTermConversion="marked"
+  Skin="/Project/Skins/HTML5 SideNav-iris.flskn"
+  MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
+  DefaultUrl="/Content/__SecureCloud/WhatIsSecureCloud.htm"
+  UseDeviceWidth="true"
+  ExcludeUnreferencedContent="true"
+  ConditionTagExpression="exclude[General.Exclude] "
+  OutputFile="index.htm"
+  MasterToc="/Project/TOCs/tocSecureCloud.fltoc"
+  EnableSitemap="true"
+  SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
+  MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
+  MasterStylesheetOverride="true"
+  EquationsOutputType="PNG"
+  AliasFile="/Project/Advanced/CSH/SCL.flali"
+  Medium="print"
+  SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+  <Variables>
+    <Variable
+      Name="custom/IncludeVersionDropdown">false</Variable>
+    <Variable
+      Name="custom/Theme">securecloud</Variable>
+  </Variables>
+  <PostBuild>copy "$(OutputDirectory)\index.htm" "$(OutputDirectory)\Default.htm"
+cd $(OutputDirectory)
+7z a docbuild.zip *</PostBuild>
+  <PreBuild>cd $(ProjectDirectory)\Project\Advanced\CSH\
+node "$(ProjectDirectory)\Content\InternalOnly\splitit.js" CloudAlias SCL SCL</PreBuild>
+</CatapultTarget>

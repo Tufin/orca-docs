@@ -6,7 +6,7 @@
   Destinations=""
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
-  Skin="/Project/Skins/HTML5 SideNav.flskn"
+  Skin="/Project/Skins/HTML5 SideNav-iris.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   DefaultUrl="/Content/__SecureCloud/WhatIsSecureCloud.htm"
   UseDeviceWidth="true"
@@ -20,7 +20,6 @@
   MasterStylesheetOverride="true"
   EquationsOutputType="PNG"
   AliasFile="/Project/Advanced/CSH/SCL.flali"
-  Medium="print"
   SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs">
   <PrintedOutput
     CollapseMargins="true"

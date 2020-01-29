@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultTarget
   Version="2"
   Comment="New Target created by Neil "
@@ -11,11 +11,10 @@
   ResolveCssVariables="false"
   EquationsOutputType="PNG"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/_Iris/WhatIs.htm"
   ConditionTagExpression="exclude[General.Exclude]"
   ExcludeUnreferencedContent="true"
   OutputFile="index.htm"
-  MasterToc="/Project/TOCs/PersonalTOCs/neiltemp.fltoc">
+  MasterToc="/Project/TOCs/PersonalTOCs/Tester-neil.fltoc">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

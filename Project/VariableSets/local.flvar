@@ -30,7 +30,7 @@
     EvaluatedDefinition="asset">asset</Variable>
   <Variable
     Name="Assets"
-    Comment=""
+    Comment="Menu and title"
     EvaluatedDefinition="Assets">Assets</Variable>
   <Variable
     Name="ViolationDefinition"
@@ -66,7 +66,7 @@
     EvaluatedDefinition="Container vulnerabilities">Container vulnerabilities</Variable>
   <Variable
     Name="PermissivePolicies"
-    Comment="Title"
+    Comment="Menu and title"
     EvaluatedDefinition="Permissive Policies">Permissive Policies</Variable>
   <Variable
     Name="permissivepolicies"
@@ -77,7 +77,7 @@
     Comment="Begin sentence"
     EvaluatedDefinition="Permissive policies">Permissive policies</Variable>
   <Variable
-    Name="PUBLIC CLOUD"
+    Name="PUBLICCLOUD"
     Comment="Menu"
     EvaluatedDefinition="PUBLIC CLOUD">PUBLIC CLOUD</Variable>
   <Variable
@@ -85,7 +85,7 @@
     Comment="Menu"
     EvaluatedDefinition="KUBERNETES">KUBERNETES</Variable>
   <Variable
-    Name="Main Menu"
+    Name="MainMenu"
     Comment=""
     EvaluatedDefinition="Main Menu">Main Menu</Variable>
   <Variable
@@ -113,7 +113,7 @@
     Comment="Menu"
     EvaluatedDefinition="App Manager">App Manager</Variable>
   <Variable
-    Name="Tag Manager"
+    Name="TagManager"
     Comment="Menu"
     EvaluatedDefinition="Tag Manager">Tag Manager</Variable>
   <Variable
@@ -141,7 +141,67 @@
     Comment="Menu"
     EvaluatedDefinition="Nodes">Nodes</Variable>
   <Variable
-    Name="Network Policies"
-    Comment="Menu"
+    Name="NetworkPolicies"
+    Comment="Menu and title"
     EvaluatedDefinition="Network Policies">Network Policies</Variable>
+  <Variable
+    Name="Users"
+    Comment="Menu"
+    EvaluatedDefinition="Users">Users</Variable>
+  <Variable
+    Name="General"
+    Comment="Menu - Settings"
+    EvaluatedDefinition="General">General</Variable>
+  <Variable
+    Name="ServiceGraph"
+    Comment="Menu"
+    EvaluatedDefinition="Service Graph">Service Graph</Variable>
+  <Variable
+    Name="PrivilegedWorkloads"
+    Comment="Menu"
+    EvaluatedDefinition="Privileged Workloads">Privileged Workloads</Variable>
+  <Variable
+    Name="K8sVulnerabilities"
+    Comment="Menu"
+    EvaluatedDefinition="Kubernetes Vulnerabilities">Kubernetes Vulnerabilities</Variable>
+  <Variable
+    Name="Permissiveaccess"
+    Comment="Begin sentence"
+    EvaluatedDefinition="Permissive access">Permissive access</Variable>
+  <Variable
+    Name="PermissiveAccess"
+    Comment="Menu and title"
+    EvaluatedDefinition="Permissive Access">Permissive Access</Variable>
+  <Variable
+    Name="PolicyViolations"
+    Comment="Menu and title"
+    EvaluatedDefinition="Policy Violations">Policy Violations</Variable>
+  <Variable
+    Name="Policyviolations"
+    Comment="Begin sentence"
+    EvaluatedDefinition="Policy violations">Policy violations</Variable>
+  <Variable
+    Name="RiskyPorts"
+    Comment="Menu and title"
+    EvaluatedDefinition="Risky Ports">Risky Ports</Variable>
+  <Variable
+    Name="Riskyports"
+    Comment="Begin sentence"
+    EvaluatedDefinition="Risky ports">Risky ports</Variable>
+  <Variable
+    Name="MissingTags"
+    Comment="Menu and title"
+    EvaluatedDefinition="Assets Without Tags">Assets Without Tags</Variable>
+  <Variable
+    Name="ClusterResources"
+    Comment="Menu"
+    EvaluatedDefinition="Cluster Resources">Cluster Resources</Variable>
+  <Variable
+    Name="ClusterSettings"
+    Comment="Menu and title"
+    EvaluatedDefinition="Cluster Settings">Cluster Settings</Variable>
+  <Variable
+    Name="Applications"
+    Comment="Menu and title"
+    EvaluatedDefinition="Applications">Applications</Variable>
 </CatapultVariableSet>
