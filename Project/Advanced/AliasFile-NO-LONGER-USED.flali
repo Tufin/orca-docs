@@ -13,7 +13,7 @@
     <Map Name="AllowedConnections" Link="/Content/_Orca/AllowedConnections.htm" />
     <Map Name="KubernetesNetworkPolicies" Link="/Content/_Orca/KubernetesNetPolicies.htm" />
     <Map Name="FirewallTickets" Link="/Content/_Orca/FirewallTickets.htm" />
-    <Map Name="OverlyPermissiveRpt" Link="/Content/_Orca/OverlyPermissiveRpt.htm" />
+    <Map Name="OverlyPermissiveRpt" Link="/Content/_Orca/DEPRECATED_OverlyPermissiveRpt.htm" />
     <Map Name="SecurityScore" Link="/Content/_Orca/SecurityScore.htm" />
     <Map Name="FilteringGeneral" Link="/Content/_Orca/NavigatingOrca.htm" />
     <Map Name="DiscoveryEngine" Link="/Content/_Orca/Discovery.htm" />

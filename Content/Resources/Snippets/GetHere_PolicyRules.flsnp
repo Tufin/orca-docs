@@ -4,6 +4,7 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.PUBLICCLOUD" /> </span>- <span class="MenuItem"><MadCap:variable name="local.Cloud Policy" /> </span></p>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.Cloud Policy"></MadCap:variable></span>
+        </p>
     </body>
 </html>

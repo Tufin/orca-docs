@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local-iris.GlobalMap" /></span> &gt; <span class="MenuItem">double click on an application</span></p>
+        <p>or</p>
+        <p>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.Applications" /></span> &gt; <span class="MenuItem">select an application</span></p>
+    </body>
+</html>

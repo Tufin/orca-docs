@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.KUBERNETES" /> </span>- <span class="MenuItem"><MadCap:variable name="local.Settings" /></span> &gt; <span class="MenuItem"><MadCap:variable name="local.Notifications" /></span></p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.PUBLICCLOUD" /> </span>- <span class="MenuItem"><MadCap:variable name="local.Settings" /></span> &gt; <span class="MenuItem"><MadCap:variable name="local.Notifications" /></span></p>
     </body>
 </html>

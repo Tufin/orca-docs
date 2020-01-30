@@ -42,6 +42,6 @@
     EvaluatedDefinition="1.2.1">1.2.1</Variable>
   <Variable
     Name="ApplicationAssetMap"
-    Comment=""
-    EvaluatedDefinition="Application Asset Map">Application Asset Map</Variable>
+    Comment="I prefer application asset map but as long as the global map is called application graph, we'll follow suit"
+    EvaluatedDefinition="Asset Graph">Asset Graph</Variable>
 </CatapultVariableSet>
