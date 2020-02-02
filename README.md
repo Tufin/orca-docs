@@ -2,22 +2,12 @@
 
 ## In a Nutshell 
 
-This is the documentation repository for Tufin SecureCloud. If you are just looking to read the product documentation see [here](https://forum.tufin.com/support/kc/R_securecloud). 
+This is the documentation repository for Tufin SecureCloud. If you are just looking to read the product documentation see it [here](https://forum.tufin.com/support/kc/R_securecloud). 
 
 ## Context Sensitive Help Codes (CSH)
-The CSH system uses 2 files - AliasFile.flali and HeaderFile.h
+1. Look at the CSV file https://github.com/Tufin/orca-docs/blob/master/Project/Advanced/CSH/CloudAlias.csv. You need just 2 columns in the table - "Indentifier" and "Path". All other columns are for Docteam's use.
+2. First identify the page you need from the "Path" column.
+3. Then take the identifier from the "identifier" column.
+4. Insert the code as an argument to the URL "What can I do on this page" in the format (<URL>#cshid=SCL_SignUp)
 
-Method1 - using the CSH name string
-1. Look in the file [AliasFile.flali](Project/Advanced/AliasFile.flali)
-2. Identify the page you need from the "Link" property and note the "Name" property for the entry
-3. Display the page using the "Link" property (never use the path in the "Name" property - it will change). Use the format path#cshid=Name 
-e.g. https://forum.tufin.com/support/kc/R_Orca/Default.htm#cshid=Vulnerabilities
-
-Not all pages are designated for CSH. If the required page doesn't appear in the file, the doc team must add it via the Madcap Flare authoring tool
-
-Method 2 - using the CSH number 
-1. Get the name string as described above.
-2. Look at the file [HeaderFile.h](Project/Advanced/HeaderFile.h)
-3. Identify the name you noted above and note the number 
-4. Display the page using the URL in format path#cshid=number    
-e.g. https://forum.tufin.com/support/kc/R_Orca/Default.htm#cshid=1001 
+If the page you need doesn't appear in the file, get the doc team to add it.
