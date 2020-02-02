@@ -1,4 +1,4 @@
-Identifier (#cshid=SCL_SignUp),Ignore,Topic Current Location  (for docteam only),Targets,Path (dont use commas or semi-colons) (for docteam only)
+Identifier (example: #cshid=SCL_SignUp),Ignore (No-one uses this),Topic Current Location  (for docteam only),Targets (for docteam only),Path (dont use commas or semi-colons) 
 SCL_SignUp,5001,/Content/__SecureCloud/SignUp.htm,SCL,none
 SCL_WhatsNew,5002,/Content/__SecureCloud/WhatsNew.htm,SCL,none
 SCL_Dashboard,5003,/Content/__SecureCloud/Dashboard.htm,SCL,Main Menu > Dashboard
@@ -42,13 +42,11 @@ SCL_DiscoveryEngine,5041,/Content/_Orca/Discovery.htm,SCL,"From most screens, cl
 SCL_AddingConnection,5042,/Content/_Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
 SCL_Notifications,5043,/Content/_Orca/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
 ;,,,,
-;,,,,
-;,,,,
 SCL_Applications,5046,/Content/_Iris/Applications.htm,SCL,Main Menu > PUBLIC CLOUD -  Applications
 SCL_Assets,5047,/Content/_Iris/Assets.htm,SCL,Main Menu > PUBLIC CLOUD -  Assets 
 SCL_GlobalMap,5048,/Content/_Iris/GlobalMap.htm,SCL,Main Menu > PUBLIC CLOUD -  Application Graph
 SCL_TagManager,5049,/Content/_Iris/WorkingWithTagManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Tag Manager 
 SCL_CloudPolicy,5050,/Content/_Iris/PolicyRules.htm,SCL,Main Menu > PUBLIC CLOUD -  Cloud Policy
 SCL_CloudConfiguration,5051,/Content/_Iris/CloudConfiguration.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Configuration
-SCL_temp1,5052,/Content/_Iris/WorkingWithAppManager.htm,SCL,
-SCL_temp2,5053,/Content/_Iris/AccountManager.htm,SCL,
+SCL_WorkingWithAppManager,5052,/Content/_Iris/WorkingWithAppManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > App Manager
+SCL_AccountManager,5053,/Content/_Iris/AccountManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager

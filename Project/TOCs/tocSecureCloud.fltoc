@@ -11,9 +11,6 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/_Orca/Architecture.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/_Orca/Securing_Orca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    <TocEntry
       Title="Concepts">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
@@ -42,7 +39,7 @@
       Link="/Content/__SecureCloud/InitialSetup.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/_Orca/NavigatingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      Link="/Content/__SecureCloud/Navigation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   </TocEntry>
   <TocEntry
     Title="Reference Guide">
@@ -271,5 +268,8 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/_Orca/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/__SecureCloud/KeepingDataSafe.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
 </CatapultToc>

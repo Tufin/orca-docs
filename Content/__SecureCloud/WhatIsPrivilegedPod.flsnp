@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <p>A permissive pod security policy contains one or more of the following values set to true, giving the pod access to all devices on the host:</p>
+        <p>A privileged pod  has host access; one or more of the following values is set to true, giving the pod access to all devices on the host:</p>
         <ul>
             <li>
                 <p>HostPID: The pod's containers can share the host process ID namespace</p>
@@ -13,7 +13,7 @@
             </li>
             <li>
                 <p>HostNetwork: The pod can use the node network namespace</p>
-                <MadCap:snippetBlock src="WhatIsHostNetwork.flsnp" />
+                <MadCap:snippetBlock src="../_Orca/WhatIsHostNetwork.flsnp" />
             </li>
         </ul>
     </body>

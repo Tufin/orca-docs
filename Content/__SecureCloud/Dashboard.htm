@@ -18,7 +18,7 @@
         <p class="h3"><a name="detail"></a>Risk Detail</p>
         <p>Click on a <MadCap:variable name="local.Widget" /> to drill down to the relevant detail.</p>
         <p class="h4">Risky Ports</p>
-        <p>The Risky Ports <MadCap:variable name="local.Widget" /> shows the compliance score of your public cloud environment with respect to high-risk ports - the fewer   high-risk ports you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudRiskyPorts-by-App.htm">applications</a> that allow access through these ports.</p>
+        <p>The Risky Ports <MadCap:variable name="local.Widget" /> shows the state of your public cloud environment with respect to high-risk ports - the fewer   high-risk ports you have, the higher the percentage. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudRiskyPorts-by-App.htm">applications</a> that allow access through these ports.</p>
         <p style="font-weight: bold;">What are risky ports? </p>
         <MadCap:snippetBlock src="WhatIsRiskyPorts.flsnp" />
         <p style="font-weight: bold;">Recommended best practice: </p>
@@ -57,7 +57,7 @@
             <li>Use tags on all assets to define important asset characteristics such as application and environment, as described in <a href="../_Iris/Global_View.htm">Global Application Visibility</a>.</li>
         </ul>
         <p class="h4">Kubernetes Vulnerabilities</p>
-        <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to known vulnerabilities in your Kubernetes environment - the fewer vulnerabilities you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sVulnerabilities-by-Cluster.htm">clusters containing known Kubernetes vulnerabilities</a>.</p>
+        <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to known vulnerabilities in your Kubernetes environment - the fewer vulnerabilities you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sVulnerabilities-by-Cluster.htm">clusters containing known Kubernetes vulnerabilities</a>. </p>
         <p class="normal" style="font-weight: bold;">What are Kubernetes Vulnerabilities?</p>
         <ul>
             <li>
@@ -71,7 +71,7 @@
         <p class="h4">Privileged Workloads</p>
         <p>The Privileged Workload <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to privileged workloads - the fewer  privileged workloads you have, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sPrivilegedWorkloads-by-Cluster.htm">clusters containing privileged workloads</a>.</p>
         <p style="font-weight: bold;">
-            <p>What are Privileged Workloads?</p>
+            <p class="normal" style="font-weight: bold;">What are Privileged Workloads?</p>
             <MadCap:snippetBlock src="../_Orca/WhatIsK8sPrivilegedWorkload.flsnp" />
         </p>
         <p><b>Recommended best practice:</b> </p>
@@ -92,7 +92,7 @@
             <li>Scan containers for vulnerabilities  and address issues before deploying them.</li>
         </ul>
         <p class="h4">Permissive Policies</p>
-        <p>The <MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /> shows the compliance score of your Kubernetes clusters with respect to  <MadCap:variable name="local.permissivepolicies" />. The fewer the number of clusters with<MadCap:variable name="local.permissivepolicies" />, the higher the compliance score. Click on the <MadCap:variable name="local.Widget" /> to display all clusters that have <MadCap:variable name="local.permissivepolicies" />.</p>
+        <p>The <MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /> shows the state of your Kubernetes clusters with respect to  permissive Kubernetes network policies. The fewer clusters you have with <MadCap:variable name="local.permissivepolicies" />, the higher the percentage. Click on the <MadCap:variable name="local.Widget" /> to display all clusters that have <MadCap:variable name="local.permissivepolicies" />.</p>
         <p style="font-weight: bold;">What are <MadCap:variable name="local.PermissivePolicies" />?</p>
         <p>
             <MadCap:snippetBlock src="WhatIsK8sPermissivePolicies.flsnp" />

@@ -25,7 +25,7 @@
     Title="Working With Iris">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/_Iris/MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      Link="/Content/_Iris/DEPRECATED MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/_Iris/FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

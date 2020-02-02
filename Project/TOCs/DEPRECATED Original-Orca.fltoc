@@ -46,7 +46,7 @@
     Title="Working with Orca">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/_Orca/NavigatingOrca.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      Link="/Content/__SecureCloud/Navigation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="Visibility">
       <TocEntry
