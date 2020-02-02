@@ -3,7 +3,7 @@ SCL_SignUp,5001,/Content/__SecureCloud/SignUp.htm,SCL,none
 SCL_WhatsNew,5002,/Content/__SecureCloud/WhatsNew.htm,SCL,none
 SCL_Dashboard,5003,/Content/__SecureCloud/Dashboard.htm,SCL,Main Menu > Dashboard
 SCL_UserManagement,5004,/Content/__SecureCloud/UserManagement.htm,SCL,Main Menu > Users
-,5005,,,
+;,,,,
 SCL_K8sContainerVulnerabilities-by-Cluster,5006,/Content/__SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget
 SCL_K8sContainerVulnerabilities-by-Namespace,5007,/Content/__SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster
 SCL_K8sContainerVulnerabilities-by-Pod,5008,/Content/__SecureCloud/K8sContainerVulnerabilities-by-Pod.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster > select namespace
@@ -15,7 +15,7 @@ SCL_K8sPrivilegedWorkloads-by-Namespace,5013,/Content/__SecureCloud/K8sPrivilege
 SCL_K8sPrivilegedWorkloads-by-Pod,5014,/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget > select cluster > select namespace
 SCL_K8sVulnerabilities-by-Cluster,5015,/Content/__SecureCloud/K8sVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget
 SCL_K8sVulnerabilities-in-Cluster,5016,/Content/__SecureCloud/K8sVulnerabilities-in-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget > select cluster
-,5017,,SCL,
+;,,,,
 SCL_CloudPermissiveAccess-by-App,5018,/Content/__SecureCloud/CloudPermissiveAccess-by-App.htm,SCL,Main Menu > Dashboard > Permissive Access widget
 SCL_CloudPermissiveAccess-by-Asset,5019,/Content/__SecureCloud/CloudPermissiveAccess-by-Asset.htm,SCL,Main Menu > Dashboard > Permissive Access widget > select application
 SCL_CloudPolicyViolations-by-App,5020,/Content/__SecureCloud/CloudPolicyViolations-by-App.htm,SCL,Main Menu > Dashboard > Policy Violations widget
@@ -23,7 +23,7 @@ SCL_CloudPolicyViolations-by-Asset,5021,/Content/__SecureCloud/CloudPolicyViolat
 SCL_CloudRiskyPorts-by-App,5022,/Content/__SecureCloud/CloudRiskyPorts-by-App.htm,SCL,Main Menu > Dashboard > Risky Ports widget
 SCL_CloudRiskyPorts-by-Asset,5023,/Content/__SecureCloud/CloudRiskyPorts-by-Asset.htm,SCL,Main Menu > Dashboard > Risky Ports widget > select application
 SCL_CloudTagUsage-by-Asset,5024,/Content/__SecureCloud/CloudTagUsage-by-Asset.htm,SCL,Main Menu > Dashboard > Assets Without Tags widget
-,5025,,,
+;,,,,
 SCL_Deploy,5026,/Content/_Orca/DeployOrca.htm,SCL,none
 SCL_ServiceGraph,5027,/Content/_Orca/ServiceGraph.htm,SCL,Main Menu > KUBERNETES - Service Graph
 SCL_Pods,5028,/Content/_Orca/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Pods
@@ -36,17 +36,19 @@ SCL_Vulnerabilities,5034,/Content/_Orca/VulnerabilityDetails.htm,SCL,Main Menu >
 SCL_AllowedConnections,5035,/Content/_Orca/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
 SCL_KubernetesNetworkPolicies,5036,/Content/_Orca/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies
 SCL_FirewallTickets,5037,/Content/_Orca/FirewallTickets.htm,SCL,Main Menu > Policy > Firewall Tickets
-,,,,
 SCL_SecurityScore,5039,/Content/_Orca/SecurityScore.htm,SCL,none
 SCL_FilteringGeneral,5040,/Content/_Orca/NavigatingOrca.htm,SCL,none
 SCL_DiscoveryEngine,5041,/Content/_Orca/Discovery.htm,SCL,"From most screens, click on New Connections at the top of the screen."
 SCL_AddingConnection,5042,/Content/_Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
 SCL_Notifications,5043,/Content/_Orca/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
-,5044,,,
-SCL_AppManager,5045,/Content/_Iris/WorkingWithAppManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > App Manager 
+;,,,,
+;,,,,
+;,,,,
 SCL_Applications,5046,/Content/_Iris/Applications.htm,SCL,Main Menu > PUBLIC CLOUD -  Applications
 SCL_Assets,5047,/Content/_Iris/Assets.htm,SCL,Main Menu > PUBLIC CLOUD -  Assets 
-SCL_Global,5048,/Content/_Iris/GlobalMap.htm,SCL,Main Menu > PUBLIC CLOUD -  Application Graph
+SCL_GlobalMap,5048,/Content/_Iris/GlobalMap.htm,SCL,Main Menu > PUBLIC CLOUD -  Application Graph
 SCL_TagManager,5049,/Content/_Iris/WorkingWithTagManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Tag Manager 
 SCL_CloudPolicy,5050,/Content/_Iris/PolicyRules.htm,SCL,Main Menu > PUBLIC CLOUD -  Cloud Policy
-SCL_Notifications,5051,/Content/_Iris/NotificationSettings.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Notifications
+SCL_CloudConfiguration,5051,/Content/_Iris/CloudConfiguration.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Configuration
+SCL_temp1,5052,/Content/_Iris/WorkingWithAppManager.htm,SCL,
+SCL_temp2,5053,/Content/_Iris/AccountManager.htm,SCL,

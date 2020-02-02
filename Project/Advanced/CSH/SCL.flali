@@ -4,6 +4,7 @@
 	<Map Name="SCL_WhatsNew" Link="/Content/__SecureCloud/WhatsNew.htm" />
 	<Map Name="SCL_Dashboard" Link="/Content/__SecureCloud/Dashboard.htm" />
 	<Map Name="SCL_UserManagement" Link="/Content/__SecureCloud/UserManagement.htm" />
+	<Map Name="" Link="" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Cluster" Link="/Content/__SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Namespace" Link="/Content/__SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Pod" Link="/Content/__SecureCloud/K8sContainerVulnerabilities-by-Pod.htm" />
@@ -15,7 +16,6 @@
 	<Map Name="SCL_K8sPrivilegedWorkloads-by-Pod" Link="/Content/__SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm" />
 	<Map Name="SCL_K8sVulnerabilities-by-Cluster" Link="/Content/__SecureCloud/K8sVulnerabilities-by-Cluster.htm" />
 	<Map Name="SCL_K8sVulnerabilities-in-Cluster" Link="/Content/__SecureCloud/K8sVulnerabilities-in-Cluster.htm" />
-	<Map Name="" Link="" />
 	<Map Name="SCL_CloudPermissiveAccess-by-App" Link="/Content/__SecureCloud/CloudPermissiveAccess-by-App.htm" />
 	<Map Name="SCL_CloudPermissiveAccess-by-Asset" Link="/Content/__SecureCloud/CloudPermissiveAccess-by-Asset.htm" />
 	<Map Name="SCL_CloudPolicyViolations-by-App" Link="/Content/__SecureCloud/CloudPolicyViolations-by-App.htm" />
@@ -40,11 +40,12 @@
 	<Map Name="SCL_DiscoveryEngine" Link="/Content/_Orca/Discovery.htm" />
 	<Map Name="SCL_AddingConnection" Link="/Content/_Orca/AllowedConnections.htm#AddingFromNewConnectionsWindow" />
 	<Map Name="SCL_Notifications" Link="/Content/_Orca/OrcaSettingsNotifications.htm" />
-	<Map Name="SCL_AppManager" Link="/Content/_Iris/WorkingWithAppManager.htm" />
 	<Map Name="SCL_Applications" Link="/Content/_Iris/Applications.htm" />
 	<Map Name="SCL_Assets" Link="/Content/_Iris/Assets.htm" />
-	<Map Name="SCL_Global" Link="/Content/_Iris/GlobalMap.htm" />
+	<Map Name="SCL_GlobalMap" Link="/Content/_Iris/GlobalMap.htm" />
 	<Map Name="SCL_TagManager" Link="/Content/_Iris/WorkingWithTagManager.htm" />
 	<Map Name="SCL_CloudPolicy" Link="/Content/_Iris/PolicyRules.htm" />
-	<Map Name="SCL_Notifications" Link="/Content/_Iris/NotificationSettings.htm" />
+	<Map Name="SCL_CloudConfiguration" Link="/Content/_Iris/CloudConfiguration.htm" />
+	<Map Name="SCL_temp1" Link="/Content/_Iris/WorkingWithAppManager.htm" />
+	<Map Name="SCL_temp2" Link="/Content/_Iris/AccountManager.htm" />
 </CatapultAliasFile>

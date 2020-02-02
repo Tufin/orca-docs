@@ -204,4 +204,8 @@
     Name="Applications"
     Comment="Menu and title"
     EvaluatedDefinition="Applications">Applications</Variable>
+  <Variable
+    Name="Configuration"
+    Comment=""
+    EvaluatedDefinition="Configuration">Configuration</Variable>
 </CatapultVariableSet>
