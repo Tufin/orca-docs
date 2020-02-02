@@ -2,7 +2,7 @@
 
 ## In a Nutshell 
 
-This is the documentation repository for Tufin Orca. If you are just looking to read the documentation you'll probably find it easier to go to the  [Tufin Orca Knowledge Center (Default.htm)](https://forum.tufin.com/support/kc/R_Orca/Default.htm). 
+This is the documentation repository for Tufin SecureCloud. If you are just looking to read the product documentation see [Tufin Orca Knowledge Center (Default.htm)](https://forum.tufin.com/support/kc/R_securecloud). 
 
 ## Context Sensitive Help Codes (CSH)
 The CSH system uses 2 files - AliasFile.flali and HeaderFile.h
