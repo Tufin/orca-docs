@@ -27,7 +27,7 @@
     <Map Name="SCL_Pods" Link="/Content/_Orca/Pods.htm" />
     <Map Name="SCL_Services" Link="/Content/_Orca/Services.htm" />
     <Map Name="SCL_Nodes" Link="/Content/_Orca/Nodes.htm" />
-    <Map Name="SCL_Policy" Link="/Content/_Orca/Policy.htm" />
+    <Map Name="SCL_Policy" Link="/Content/_Orca/Cloud Policy.htm" />
     <Map Name="SCL_Settings" Link="/Content/_Orca/OrcaSettingsGeneral.htm" />
     <Map Name="SCL_UnderstandingOrca" Link="/Content/_Orca/Architecture.htm" />
     <Map Name="SCL_Vulnerabilities" Link="/Content/_Orca/VulnerabilityDetails.htm" />
@@ -43,7 +43,7 @@
     <Map Name="SCL_Assets" Link="/Content/_Iris/Assets.htm" />
     <Map Name="SCL_GlobalMap" Link="/Content/_Iris/GlobalMap.htm" />
     <Map Name="SCL_TagManager" Link="/Content/_Iris/WorkingWithTagManager.htm" />
-    <Map Name="SCL_CloudPolicy" Link="/Content/_Iris/PolicyRules.htm" />
+    <Map Name="SCL_CloudPolicy" Link="/Content/_Iris/CloudPolicyRules.htm" />
     <Map Name="SCL_CloudConfiguration" Link="/Content/_Iris/CloudConfiguration.htm" />
     <Map Name="SCL_temp1" Link="/Content/_Iris/WorkingWithAppManager.htm" />
     <Map Name="SCL_temp2" Link="/Content/_Iris/AccountManager.htm" />

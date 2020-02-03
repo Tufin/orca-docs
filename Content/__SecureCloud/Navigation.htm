@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>Navigating <MadCap:variable name="local-orca.Product_S" /></h1>
         <p>Actions and functions that appear throughout <MadCap:variable name="local-orca.Product_S" />.</p>
         <ul>
-            <li><a href="#menu">Main Menu</a>
+            <li>
+                <MadCap:xref href="#menu">Main Menu</MadCap:xref>
             </li>
-            <li><a href="#Getting">Getting Help in the Application</a>
+            <li>
+                <MadCap:xref href="#loggingout">Logging out</MadCap:xref>
+            </li>
+            <li><a href="#Getting">Getting Help</a>
             </li>
             <li><a href="#Sorting">Sorting Tables</a>
             </li>
@@ -25,21 +30,94 @@
         <p>
             <img src="../__SecureCloud-Images/MainMenu.png" />
         </p>
-        <p>The main menu items are:</p>
+        <p>The menu items are:</p>
         <ul>
-            <li><a href="Dashboard.htm">Dashboard</a>
+            <li>
+                <MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref>
             </li>
-            <li><a href="../_Orca/ServiceGraph.htm">Service Graph</a>
+            <li>
+                <MadCap:xref href="UserManagement.htm">User Management</MadCap:xref>
             </li>
-            <li>Kubernetes: <a href="../_Orca/Pods.htm">Pods</a>, <a href="../_Orca/Services.htm">Services</a>, <a href="../_Orca/Nodes.htm">Nodes</a> and <a href="../_Orca/KubernetesNetPolicies.htm">Network Policies</a></li>
-            <li><a href="../_Orca/Policy.htm">Policy</a>
+            <li><MadCap:variable name="local.PUBLICCLOUD" />
+                <ul>
+                    <li>
+                        <MadCap:xref href="../_Iris/GlobalMap.htm">[%=local-iris.GlobalMap%]</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="../_Iris/Applications.htm">[%=local.Applications%]</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="../_Iris/Assets.htm">Assets</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="../_Iris/CloudPolicyRules.htm">[%=local.Cloud Policy%]</MadCap:xref>
+                    </li>
+                    <li><MadCap:variable name="local.Settings" />
+                        <ul>
+                            <li>
+                                <MadCap:xref href="../_Iris/AccountManager.htm"><MadCap:variable name="local.Account Manager" />
+                                </MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Iris/WorkingWithAppManager.htm">App Manager</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Iris/WorkingWithTagManager.htm">Tag Manager</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Iris/CloudConfiguration.htm">[%=local.Configuration%]</MadCap:xref>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
-            <li><a href="../_Orca/OrcaSettingsGeneral.htm">Settings</a>
+            <li><MadCap:variable name="local.KUBERNETES" />
+                <ul>
+                    <li>
+                        <MadCap:xref href="../_Orca/ServiceGraph.htm">Service Graph</MadCap:xref>
+                    </li>
+                    <li><MadCap:variable name="local.ClusterResources" />
+                        <ul>
+                            <li>
+                                <MadCap:xref href="../_Orca/KubernetesNetPolicies.htm">Kubernetes Network Policies</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Orca/Nodes.htm">Nodes</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Orca/Pods.htm">Pods</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../_Orca/Services.htm">Services</MadCap:xref>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><MadCap:variable name="local.Cluster Policy" />
+                <ul>
+                    <li>
+                        <MadCap:xref href="../_Orca/AllowedConnections.htm">Security Policy -  Allowed Connections</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="../_Orca/FirewallTickets.htm">Firewall Tickets</MadCap:xref>
+                    </li>
+                </ul>
+            </li>
+            <li><MadCap:variable name="local.Settings" />
+                <ul>
+                    <li>
+                        <MadCap:xref href="../_Orca/OrcaSettingsGeneral.htm">General Settings</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="../_Orca/OrcaSettingsNotifications.htm">Notifications and Alerts</MadCap:xref>
+                    </li>
+                </ul>
             </li>
         </ul>
-        <p class="h2"><a name="Domain,"></a>Logging out</p>
+        <p class="h2"><a name="loggingout"></a>Logging out</p>
         <p>Click on your user icon at the top of the screen and then click on <span class="ScreenObject">Log out</span> from the window displayed.</p>
-        <p class="h2"><a name="Getting"></a>Getting Help in the Application</p>
+        <p class="h2"><a name="Getting"></a>Getting Help</p>
         <p>The <span class="ScreenObject">?</span> help icon is displayed at the top of every screen; click on it to display the Help Menu. Options:</p>
         <ul>
             <li>
@@ -52,7 +130,7 @@
         <p class="h2"><a name="Refreshi"></a>Refreshing the Page</p>
         <p> While you are working in the <MadCap:variable name="local-orca.Product_S" /> application, the data displayed on the screen could become outdated due to external events such as Kubernetes network policy changes or actions of other <MadCap:variable name="local-orca.Product_S" /> users such as adding allowed connections. When moving from one screen to another the new screen is always refreshed with the latest data but if you remain on the same screen, these changes are not automatically reflected. </p>
         <p>The current page can however be refreshed manually by clicking on the Refresh icon <img src="../_Orca-Images/Icon_Sync.png" /> at the top of the screen at any time.</p>
-        <p class="h2"><a name="Sorting"></a>Sorting Table Columns</p>
+        <p class="h2"><a name="Sorting"></a>Sorting Tables</p>
         <p>Most tables can be sorted in ascending or descending order by one or more columns. Click on the column header of column to sort by the contents of that column. Click again to reverse the sort order.</p>
         <p class="h2"><a name="Resizing"></a>Resizing Columns</p>
         <p>Table column can be resized to make reading easier. Hover over a column divider in the header of a table, and drag the column separator bar right or left.</p>
@@ -60,13 +138,12 @@
             <img src="../_Orca-Images/TableColumn_Resize.png" />
         </p>
         <p class="h2"><a name="Filterin"></a>Filtering</p>
-        <p class="h3"><a name="Domain,"></a>View Filter - Domain, Project and Namespace</p>
-        <MadCap:snippetBlock src="../Resources/Snippets/DomainProjectNamespace.flsnp" />
-        <p class="h3">Filter by Domain and Project</p>
-        <p>One domain can be selected at a time. If you have multiple domains, click on the desired domain name to change the current selection.</p>
-        <p>One project can be selected at a time. If your domain has multiple projects, click on the desired project name to change the current selection.</p>
-        <p class="h3"><a name="Filter"></a>Filter by Namespace</p>
-        <p> Data displayed in <MadCap:variable name="local-orca.Product_S" /> is aggregated from all namespaces selected. Click on <span class="ScreenObject">Namespace</span> to change the selection. The filter icon <img src="../_Orca-Images/Icon_Filter.png" class="noborder" /> is displayed when not all namespaces are selected. By default, <MadCap:variable name="local-orca.Product_L" /> displays a filtered view of the aggregated data in your cluster that includes all application namespaces and excludes system namespaces. </p>
+        <p>The filtering options vary according to context:</p>
+        <p class="h3"><a name="k8sfilterning"></a><MadCap:variable name="local.Kubernetes" />
+        </p>
+        <p class="normal">The <MadCap:variable name="local.ServiceGraph" />, <MadCap:variable name="local.ClusterResources" />, <MadCap:variable name="local.Cluster Policy" /> and <MadCap:variable name="local.Settings" /> sections allow selection of cluster and namespaces (a cluster contains multiple namespaces).  The current selection is displayed in the top bar of the application and the data displayed is aggregated from all selected namespaces.</p>
+        <p class="h4"><a name="Filter"></a>Filter by Namespace</p>
+        <p>Click on <span class="ScreenObject">Namespace</span> to change the selection. The filter icon <img src="../_Orca-Images/Icon_Filter.png" class="noborder" /> is displayed when not all namespaces are selected. By default, <MadCap:variable name="local-orca.Product_L" /> displays a filtered view of the aggregated data in your cluster that includes all application namespaces and excludes system namespaces. </p>
         <p>
             <img src="../_Orca-Images/Window_Namespace_Select.png" class="ThumbnailPopup" />
         </p>
@@ -74,5 +151,128 @@
         <p>
             <img src="../_Orca-Images/Window_Discovery_Filtered.png" class="ThumbnailPopup" />
         </p>
+        <p class="h3"><a name="pubcloudfilterning"></a><MadCap:variable name="local.Public Cloud" />
+        </p>
+        <p>Click <span class="ScreenObject">Filter</span>  to specify filtering criteria - the fields available for filtering are specific to the screen displayed. When multiple fields are specified, only items matching all the criteria entered will be included (filtering using the AND&#160;operator).</p>
+        <p>Example:</p>
+        <p>
+            <img src="../_Iris-Images/Filtering_Dialog.png" class="OrcaThumbnail">
+            </img>
+        </p>
+        <p> Filter criteria can include any of the following:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 73px;">
+            </col>
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 81px;">
+            </col>
+            <col class="TableStyle-PatternedRows-Column-Regular">
+            </col>
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Criteria</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Type</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Internet connectivity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Network Peering</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">On-Premises Connectivity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Risk</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Check Boxes</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>Any</p>
+                        <p>Security Policy violations - assets or applications for which a.<MadCap:variable name="local-iris.ViolationDefinition"></MadCap:variable></p>
+                        <p>Risky Ports</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Cloud Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">List</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">All / AWS / Azure</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>App Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only applications with a name containing the text entered, or assets associated with them.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Asset Name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Display only assets with a name containing the text entered.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Load Balancer Name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only assets connected to a load balancer with a name containing the text entered.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Tags</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">text / list</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Display only assets or applications that have the tags listed. Tags can be both asset tags or custom <MadCap:variable name="local-iris.ProductName"></MadCap:variable> tags. When you start to type into the field, the list of defined tags will be displayed. Click on the desired tag to select or press Enter to select the text you have entered .</p>
+                        <p>Tags separated by a comma will be OR conditions. </p>
+                        <p>Repeat for additional tags as necessary.</p>
+                        <p>Tags separated by a new line will be AND&#160;conditions</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Reachable Networks</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>IP&#160;Address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only assets that can reach networks </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="NoteLight">Items will only be included in the filtering window if appropriate to the current screen. For example, Assets are not included in the filter for the Applications Screen.</div>
     </body>
 </html>

@@ -6,7 +6,8 @@
     Link="/Content/__SecureCloud/WhatIsSecureCloud.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/__SecureCloud/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/__SecureCloud/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+      conditions="General.Exclude" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/_Orca/Architecture.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
@@ -17,7 +18,7 @@
         Link="/Content/_Iris/Global_View.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/_Iris/Policy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/__SecureCloud/ConceptOfPolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/_Orca/Enforcement.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
@@ -137,7 +138,7 @@
       Title="[%=System.LinkedTitle%]"
       Link="/Content/__SecureCloud/UserManagement.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
-      Title="Public Cloud Functions">
+      Title="Public Cloud">
       <TocEntry
         Title="Visibility">
         <TocEntry
@@ -155,7 +156,7 @@
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/_Iris/PolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/CloudPolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Settings">
         <TocEntry
@@ -177,7 +178,7 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="Kubernetes Functions">
+      Title="Kubernetes">
       <TocEntry
         Title="Visibility">
         <TocEntry
@@ -204,14 +205,7 @@
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/_Orca/Policy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/_Orca/AllowedConnections.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/_Orca/KubernetesNetPolicies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
+        Link="/Content/_Orca/ClusterPolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/_Orca/Firewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">

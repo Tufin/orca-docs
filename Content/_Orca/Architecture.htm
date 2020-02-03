@@ -3,8 +3,7 @@
     <head>
     </head>
     <body>
-        <h1>Architecture</h1>
-        <p MadCap:conditions="General.Exclude">Currently Based only on k8s</p>
+        <h1>Cluster Architecture </h1>
         <p>
             <img src="../__SecureCloud-Images/SecureCloud_kubernetes.jpg" class="ThumbnailPopup" />
         </p>
@@ -25,7 +24,7 @@
         <p><MadCap:variable name="local-orca.Kite" /> is a pod that communicates between the <MadCap:variable name="local-orca.Agent" /> plugins and the <MadCap:variable name="local-orca.Product_S" /> application. It is installed on one node in the cluster, as determined by Kubernetes.</p>
         <p class="h3"><MadCap:variable name="local-orca.Product_S" /> DNS Plugin</p>
         <p>The <MadCap:variable name="local-orca.Product_S" /> DNS plugin identifies traffic in the cluster between services and to external services and  blocks DNS requests that are not part of the <MadCap:variable name="local-orca.Product_S" /> security policy.  It acts as a proxy, processing all DNS queries before passing them to the Kubernetes DNS pod.</p>
-        <p class="h3"><MadCap:variable name="local-orca.Product_S" /> Network Monitor (Previously  Conntrack)</p>
+        <p class="h3"><MadCap:variable name="local-orca.Product_S" /> Network Monitor</p>
         <p>The <MadCap:variable name="local-orca.Product_S" /> network monitor discovers IP and UDP connection requests, including IP ingress. It is deployed as a daemon set, on every node.</p>
         <p MadCap:conditions="General.Exclude" class="h3"><MadCap:variable name="local-orca.Product_S" /> Istio Plugin</p>
         <p MadCap:conditions="General.Exclude">Applies the <MadCap:variable name="local-orca.Product_S" /> security policy to the cluster through Istio. Istio must be installed prior to <MadCap:variable name="local-orca.Product_S" /> installation.</p>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is a collection of rules called <a href="AllowedConnections.htm">Allowed Connections</a>; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a 'from' and 'to' location, where location is defined by namespace alone or namespace with service. 'To' locations can additionally contain a domain name, which can be generic.</p>
+        <p> <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is separate from <a href="KubernetesNetPolicies.htm">Kubernetes network policies</a>, but you can enforce the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> in the cluster as  Kubernetes network policies. Additionally, <MadCap:variable name="local-orca.Product_S" /> provides visibility into your Kubernetes network policies, making them visually more intuitive, clearer and easier to understand than YAML code. </p>
+        <div class="Warning">
+            <MadCap:snippetText src="WhatIsHostNetwork.flsnp" />
+        </div>
+    </body>
+</html>
