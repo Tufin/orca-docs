@@ -3,7 +3,7 @@
   Version="1">
   <TocEntry
     Title="What is Iris"
-    Link="/Content/_Iris/WhatIs.htm"
+    Link="/Content/_Iris/DEPRECATED_WhatIs.htm"
     ReplaceMergeNode="false">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
