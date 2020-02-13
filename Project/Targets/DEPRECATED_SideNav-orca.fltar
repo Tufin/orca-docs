@@ -8,7 +8,7 @@
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/_Orca/DEPRECATED_WhatIsOrca.htm"
+  DefaultUrl="/Content/Kubernetes/DEPRECATED_WhatIsOrca.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "

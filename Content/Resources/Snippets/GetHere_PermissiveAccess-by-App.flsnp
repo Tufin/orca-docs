@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../__SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <a href="../../__SecureCloud-Images/Screen_Dashboard.png"><span class="MenuItem"><MadCap:variable name="local.PermissiveAccess" /> <MadCap:variable name="local.Widget" /></span></a></p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <a href="../../SecureCloud-Images/Screen_Dashboard.png"><span class="MenuItem"><MadCap:variable name="local.PermissiveAccess" /> <MadCap:variable name="local.Widget" /></span></a></p>
     </body>
 </html>

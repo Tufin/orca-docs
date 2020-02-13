@@ -7,7 +7,7 @@
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/__SecureCloud/WhatIsSecureCloud.htm"
+  DefaultUrl="/Content/SecureCloud/WhatIsSecureCloud.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "

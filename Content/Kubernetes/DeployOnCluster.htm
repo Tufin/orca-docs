@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Settings" />Deploy on Your Cluster</h1>
+        <p>These guidelines are for deploying <MadCap:variable name="local-orca.Product_S" /> on your first cluster, after you've <a href="SignUp.htm">signed up</a>. Before continuing, make sure you understand the <a href="#Deployme">Deployment Requirements</a>. If you are using an SSO solution such as AWS Okta, you must modify the command string to the required syntax and be signed in before running the command. This will work for <MadCap:snippetText src="Standard_Kubernetes.flsnp" />. For other implementations, <MadCap:xref href="ContactUs.htm">Contact us</MadCap:xref>. </p>
+        <p class="h2" MadCap:conditions="General.Exclude"><a name="Deploy"></a>On Standard Kubernetes Clusters</p>
+        <p class="h2">Run the Deployment Command</p>
+        <ol>
+            <li>
+                <p>In <MadCap:variable name="local.ProductName" /> display the 'Add Your Cluster' window  by either going to <MadCap:variable name="local.Dashboard" /> and clicking on the <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.Widget" /> or going to any menu item under <MadCap:variable name="local.KUBERNETES" />. The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the deployment commands is run.</p>
+                <p>
+                    <img src="../SecureCloud-Images/Screen_Dashboard_Clean.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>If you are the cluster admin, and you can proceed with the deployment on the cluster, copy the deployment command. Either way, you can send yourself an email with the command.</p>
+                <p>
+                    <img src="../SecureCloud-Images/AddYourCluster.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Open a terminal and point kubectl to your Kubernetes cluster.</p>
+            </li>
+            <li>Run the deployment command as cluster admin.</li>
+            <li MadCap:conditions="General.Exclude">
+                <p>Run the deployment command as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
+https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.domain" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
+                <p>where,</p>
+                <ul>
+                    <li>&lt;<MadCap:variable name="local.domain" />&gt; is your account name</li>
+                    <li>&lt;<MadCap:variable name="local.project" />&gt; is as provided by you when signing up</li>
+                    <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local-orca.Product_S" /></li>
+                    <li>
+                        <p>--dry-run true is an optional parameter to see what the installation script does without deploying anything to your cluster ”. It creates yaml files in directory: bash-kite-installer/deployment.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <div class="NoteLight" MadCap:conditions="General.Exclude">
+            <ul>
+                <li>The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the deployment commands is run.</li>
+                <li>If you are using an SSO solution such as AWS Okta, you must modify the command string to the required syntax and be signed in before running the command. </li>
+            </ul>
+        </div>
+        <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
+        <p MadCap:conditions="General.Exclude">Use the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described above for standard Kubernetes clusters.</p>
+        <p class="h2">What Next? </p>
+        <p>
+            <ol>
+                <li>Log in to <MadCap:variable name="local-orca.Product_S" />. </li>
+                <li>Go to <MadCap:xref href="Services.htm">Services</MadCap:xref>. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local-orca.Product_S" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show connections shortly after they are made in the cluster.</li>
+                <li>If you haven't already done it <a href="../PublicCloud/AccountManager.htm">setup your cloud accounts</a>.</li>
+                <li>Continue with <MadCap:xref href="../SecureCloud/HowToWorkWith.htm">How to Work With [%=local.ProductName%]</MadCap:xref>.</li>
+            </ol>
+        </p>
+        <p class="h2"><a name="Deployme"></a>Deployment Requirements</p>
+        <p class="h3">Supported Kubernetes Versions
+</p>
+        <ul>
+            <li>
+                <p>Any standard Kubernetes platform, version 1.9 and newer, including <MadCap:snippetText src="Standard_Kubernetes.flsnp" />.</p>
+                <p><MadCap:variable name="local-orca.Openshift" />, </p>
+            </li>
+            <li>
+                <p>Additional Kubernetes platforms can be supported on-demand.
+</p>
+            </li>
+        </ul>
+        <div class="Warning">Installation  changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53</div>
+        <p class="h3">Update Your Kubernetes Network Policy</p>
+        <p>If you use Kubernetes network policies to restrict access to the Kubernetes DNS pod (default port 53), you must change this restriction to port 54. This applies to all Kubernetes platforms except <MadCap:variable name="local-orca.Openshift" />.
+</p>
+        <p class="h3"><a name="outbound"></a>Outbound Connections</p>
+        <p>
+If you have a firewall between your Kubernetes cluster and the internet, allow the following connections:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Port</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Protocols</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Security</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">guru.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP/2</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">registry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">loginregistry.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">securecloud.tufin.io</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">443</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">HTTP 1.1</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">TLS</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h3">Installation Requires 'cluster-admin' Role</p>
+        <p>The deployment bash string must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
+        <p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</pre>
+        </p>
+        <p>where &lt;user&gt; is dependent on your Kubernetes environment. Below are some examples:</p>
+        <ul>
+            <li><MadCap:variable name="local-orca.GKE" /> (Google): <pre> --user $(gcloud config get-value account)</pre></li>
+            <li><MadCap:variable name="local-orca.EKS" />: (Amazon): <pre> --user $(aws sts get-caller-identity --query 'Arn' --output text)</pre></li>
+            <li><MadCap:variable name="local-orca.AKS" />: (Microsoft): <pre> --user  $(az account show --query user.name -o tsv)</pre></li>
+            <li><MadCap:variable name="local-orca.Openshift" />: <pre> --user $(oc whoami)</pre></li>
+        </ul>
+        <p class="h3">Connecting to Your Kubernetes Cluster</p>
+        <p>If you don't know how to connect to your Kubernetes Cluster, see:</p>
+        <ul>
+            <li><MadCap:variable name="local-orca.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl</a></li>
+            <li><MadCap:variable name="local-orca.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
+            <li><MadCap:variable name="local-orca.AKS" />: (Microsoft) <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough">https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough</a></li>
+            <li><MadCap:variable name="local-orca.Openshift" />: <a href="https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html">https://docs.openshift.com/dedicated/getting_started/dedicated_administrators.html</a></li>
+            <li><MadCap:variable name="local-orca.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
+            <li><MadCap:variable name="local-orca.pks" />: <a href="https://docs.pivotal.io/pks/1-3/control-plane.html">https://docs.pivotal.io/pks/1-3/control-plane.html</a> </li>
+        </ul>
+        <div class="NoteLight">
+            <h2><a name="Changes"></a>Changes in your Cluster</h2>
+            <p>Deployment makes changes to your Kubernetes cluster:</p>
+            <ol>
+                <li>Creates a new directory called <span class="Code">bash-kite-installer</span> in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="Uninstall.htm">remove <MadCap:variable name="local-orca.Product_S" /> from a cluster</a>.</li>
+                <li>Changes the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local-orca.Openshift" />). </li>
+                <li>Injects the <MadCap:variable name="local-orca.Product_S" /> DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local-orca.Openshift" />)</li>
+                <li>Adds a CRD for <MadCap:variable name="local-orca.Product_S" /> policies.</li>
+            </ol>
+        </div>
+    </body>
+</html>

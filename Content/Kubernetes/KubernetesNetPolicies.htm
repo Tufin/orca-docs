@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Kubernetes Network Policies</h1>
+        <p>In this document:</p>
+        <ul>
+            <li><a href="#Overview">Overview</a>
+            </li>
+            <li><a href="#Actions">Actions Available on this Screen</a>
+            </li>
+            <li><a href="#How">How to Get Here</a>
+            </li>
+        </ul>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>Kubernetes Network Policies is a read-only view of the network rules defined in your Kubernetes implementation. </p>
+        <p>
+            <img src="../Kubernetes-Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
+        </p>
+        <p>It will accurately represent the current definitions in Kubernetes at any point in time. However, it <span class="Bold">may or may not</span> represent the security policy you have defined in <MadCap:variable name="local-orca.Product_S"></MadCap:variable>. It will <span class="Bold">always</span> represent your <MadCap:variable name="local-orca.Product_S" /> security policy if:</p>
+        <ul>
+            <li>Policy mode is set to <span class="state">Enforce</span></li>
+            <li>AND your Kubernetes framework is not <MadCap:variable name="local-orca.Openshift" /></li>
+        </ul>
+        <p>This is because your <MadCap:variable name="local-orca.Product_S" /> security policy is continuously being applied to your Kubernetes network policy.</p>
+        <p>It <span class="Bold">might not</span> represent your <MadCap:variable name="local-orca.Product_S" /> security policy if:</p>
+        <ul>
+            <li>Policy mode is set to <span class="state">Learn</span></li>
+            <li>OR your Kubernetes framework is <MadCap:variable name="local-orca.Openshift" /></li>
+        </ul>
+        <p>This is because your <MadCap:variable name="local-orca.Product_S" /> security policy is <span class="Bold">not</span> continuously being applied to your Kubernetes network policy.</p>
+        <h2><a name="Actions"></a>Actions Available on this Screen</h2>
+        <ul class="Action">
+            <li>Viewing the displayed information</li>
+        </ul>
+        <h3>Viewing the Displayed Information</h3>
+        <p>The screen is split into two tabs, <span class="ScreenObject">Ingress</span> and <span class="ScreenObject">Egress</span>. Click on the appropriate tab to toggle between the two groups of rules.</p>
+        <p>Under the Ingress tab, the polices are displayed in a numbered list and show the following information:</p>
+        <p>
+            <img src="../Kubernetes-Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
+        </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">#</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Display Sequence </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Allow / disallow</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Policy Name </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Kubernetes policy containing the rule</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Target Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The Kubernetes cluster namespace to which traffic is destined</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The pods in the cluster namespace to which traffic  is destined</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The namespace outside the cluster from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The pods in the namespace  outside the cluster from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Subnet</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The subnet of the pods  outside the cluster from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Port</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">The ports of the pods  outside the cluster from which traffic originates</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Under the Egress tab, the policies are displayed in a numbered list and show the following information:</p>
+        <p>
+            <img src="../Kubernetes-Images/PolicyKubernetesNetworkPoliciesEgress.png" class="ThumbnailPopup" title="Kubernetes_Network_Policies_Egress" alt="Kubernetes_Network_Policies_Egress" />
+        </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 172px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">#</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Display Sequence </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Allow/disallow</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">Icon representing the type or status of the rule</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Policy Name </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Kubernetes policy containing the rule</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Target Namespace</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The namespace in the Kubernetes cluster from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Target Pods</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The pods in the namespace  from which traffic originates</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Destination Namespace</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">The namespace outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Destination Pods</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">The pods outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Subnet</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">The subnets outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Port</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">The ports outside the cluster to which traffic is destined</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="How"></a>How to Get Here</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_NetworkPolicies.flsnp" />
+    </body>
+</html>

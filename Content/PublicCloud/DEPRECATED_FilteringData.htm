@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Filtering Data</h1>
+        <p>Screens that can be filtered display <span class="ScreenObject">Filter</span> . Click <span class="ScreenObject">Filter</span>  to specify criteria - the fields available for filtering are specific to the screen displayed. If multiple fields are specified, only items matching all the criteria entered will be included (filtering using the AND&#160;operator).</p>
+        <p>Example:</p>
+        <p>
+            <img src="../PublicCloud-Images/Filtering_Dialog.png" class="OrcaThumbnail" />
+        </p>
+        <p> Filter criteria can include any of the following:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 73px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 81px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Criteria</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Type</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Internet connectivity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Network Peering</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">On-Premises Connectivity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Check Box</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Include if checked</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Risk</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Check Boxes</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>Any</p>
+                        <p>Security Policy violations - assets or applications for which a.<MadCap:variable name="local-iris.ViolationDefinition" /></p>
+                        <p>Risky Ports</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Cloud Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">List</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">All / AWS / Azure</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>App Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only applications with a name containing the text entered, or assets associated with them.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Asset Name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Display only assets with a name containing the text entered.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Load Balancer Name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only assets connected to a load balancer with a name containing the text entered.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Tags</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">text / list</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Display only assets or applications that have the tags listed. Tags can be both asset tags or custom <MadCap:variable name="local-iris.ProductName" /> tags. When you start to type into the field, the list of defined tags will be displayed. Click on the desired tag to select or press Enter to select the text you have entered .</p>
+                        <p>Tags separated by a comma will be OR conditions. </p>
+                        <p>Repeat for additional tags as necessary.</p>
+                        <p>Tags separated by a new line will be AND&#160;conditions</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Reachable Networks</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>IP&#160;Address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Display only assets that can reach networks </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="NoteLight">Items will only be included in the filtering window if appropriate to the current screen. For example, Assets are not included in the filter for the Applications Screen.</div>
+    </body>
+</html>

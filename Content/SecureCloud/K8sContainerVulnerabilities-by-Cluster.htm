@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.ContainerVulnerabilities" /> by Cluster</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>This screen displays all clusters containing <MadCap:variable name="local.containervulnerabilities" />.</p>
+        <p>
+            <img src="../SecureCloud-Images/Screen_K8s_ContainerVulnerabilities_by-Cluster.png" class="ThumbnailPopup" />
+        </p>
+        <p class="h3">What are <MadCap:variable name="local.Containervulnerabilities" />?</p>
+        <MadCap:snippetBlock src="WhatIsK8sContainerVulnerabilities.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p class="normal">The main screen section is a list of clusters showing:</p>
+        <ul>
+            <li>
+                <p><span class="ScreenObject">Cluster name</span>
+                </p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Total namespaces</span>. The number of namespaces in the cluster</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Affected namespaces</span>. The number of namespaces in the cluster with <MadCap:variable name="local.containervulnerabilities" /></p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Lowest Score</span>. The <MadCap:variable name="local-orca.TufinScore" /> of the most vulnerable container found</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p><b>Drill down</b> to <MadCap:xref href="K8sContainerVulnerabilities-by-Namespace.htm">[%=local.ContainerVulnerabilities%] by Namespace</MadCap:xref></p>
+                <p>- Click on the desired cluster. </p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ContainerVulnerabilities-by-Cluster.flsnp" />
+    </body>
+</html>
