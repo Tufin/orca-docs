@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.Cloud Policy" />
+        </h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>
+            <img src="../_Iris-Images/PolicyRules.png" class="ThumbnailPopup" /> </p>
+        <p>Policy rules define the whitelist used by <MadCap:variable name="local-iris.ProductName" /> to determine what communication should be allowed between source resources and destination resources. <MadCap:xref href="../__SecureCloud/ConceptOfPolicy.htm">What is [%=local.Cloud Policy%]?</MadCap:xref>. </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul>
+            <li>Add a policy rule </li>
+            <li>Remove a policy rule</li>
+            <li>Edit a policy rule</li>
+        </ul>
+        <p class="h3"><a name="Add"></a>Add a Policy Rule</p>
+        <p>
+            <ol>
+                <li>
+                    <p>Click <img src="../_Iris-Images/icon_Plus.png" class="noborder" /> to display the Add Rule Window.</p>
+                    <p>
+                        <img src="../_Iris-Images/PolicyRules_Add.png" class="ThumbnailPopup" />
+                    </p>
+                </li>
+                <li>
+                    <p>Enter fields. The fields that define a policy rule are:</p>
+                </li>
+                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-PatternedRows-Head-Header1">
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                                <p class="TableHeading">Field</p>
+                            </th>
+                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                                <p class="TableHeading">Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Scope</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Scope specifies whether traffic may originate from or be destined to servers outside of the application.<br /><ul class="IrisBullet1"><li>Application (default) - communication is allowed between a specific source asset and destination asset only within the same monitored application</li><li>Global -  communication is allowed between a specific source asset and destination asset, regardless of which monitored application it is currently running in</li></ul></td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><a name="Source"></a>Source (Type)</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                                     Source  specifies								a condition for receiving traffic from another location. First select the type.<ul><li><p>Any (default) - permit traffic from any source. No additional parameters required.</p></li><li><p>Tags - permit only traffic from specified tags. When you select this option, you must insert one or more tags. As you type, a pop-up window is displayed containing the list of tags matching the characters you have entered so far. The list can contain entries of tag key only, tag key with tag value or a combination of both. If there are one or more matches on the key part of the tag, a single entry of the tag key will be included. If there are matches on the value part of the tag, the full tag value and key will be included. Click on the appropriate item from the list to add it to your selection. If the item you have chosen is a tag key without the value, the pop-up window will be replaced with another containing all tag values for the selected tag key. Click on the appropriate tag value to add to your selection. Repeat as necessary for additional tags. Once added, the tag can be removed from the selection by clicking on the <img src="../_Iris-Images/Icon_Delete_In_Button.png" class="noborder" /> icon.</p><p>AND / OR: You can give multiple values for a tag key by separating values with a comma. These are considered 'OR' conditions. </p><p>Example: Tier: DB, App, Applic (the rule applies to source assets that have a tag with keyword 'Tier' and values of 'DB' or 'App' or 'Applic'.</p><p>If you add more than one tag keys, they are considered 'AND' conditions.</p><p>Example Tier:DB Env:Prod (the rule applies to source assets having tags Tier:DB and alsoEnv:Prod)</p></li><li><p>Subnet - permit only traffic from a specified subnet mask. Enter a subnet mask in IPv4 format. Type a single mask followed by Enter. Repeat as necessary for additional subnet masks. Once added, the mask can be removed from the selection by clicking on the <img src="../_Iris-Images/Icon_Delete_In_Button.png" class="noborder" /> icon.</p></li></ul></td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a name="Service"></a>Service (Type)</td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Service specifies the network service permitted by the rule. <ul class="IrisBullet1"><li>Any (default) - permit traffic using any service. No additional parameters required.</li><li><a name="Network"></a>Network Service - permit only traffic using specified network services. As you type, a pop-up window is displayed containing the list of network services matching the characters you have entered so far (the match can appear anywhere within the network service name). Click on the appropriate item from the list to add it to your selection. Type or select a value of <span class="StatusOrValue">Any</span> to include all services. Repeat as necessary for additional services. Once added, the service can be removed from the selection by clicking on the <img src="../_Iris-Images/Icon_Delete_In_Button.png" class="noborder" /> icon.</li><li>Cloud Action - permit only traffic using the specified cloud action. 2 actions are available - <span class="StatusOrValue">Storage: Read-Write</span> and <span class="StatusOrValue">Storage Read-Only</span>.  As you type, a pop-up window is displayed containing the list of actions matching the characters you have entered so far (the match can appear anywhere within the network service name). Click on the appropriate item from the list to add it to your selection. </li></ul></td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                                <p>Destination (Type)</p>
+                            </td>
+                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                                     Destination specifies								a condition for sending traffic to a remote location. Works the same way as <a href="#Source">source</a>.</td>
+                        </tr>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Description</td>
+                            <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">A description of the policy rule</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ol>
+        </p>
+        <p class="h3">Delete a Policy Rule</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../_Iris-Images/Button_Ellipsis.png" class="noborder" /> for the rule you want to remove. </li>
+            <li>Click <span class="ScreenObject">Remove Rule</span> from the pop-up menu.</li>
+        </ol>
+        <p class="h3">Edit a Policy Rule </p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../_Iris-Images/Button_Ellipsis.png" class="noborder" /> for the rule you want to change. </li>
+            <li>Click <span class="ScreenObject">Edit Rule</span> from the pop-up menu.</li>
+            <li>The Edit Rule Window will be  displayed. See <a href="#Add">Add a Policy Rule</a> for more information.</li>
+            <li>Make changes as necessary and click <span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_PolicyRules.flsnp" />
+    </body>
+</html>

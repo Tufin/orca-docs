@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Tag Manager</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>The tag manager lets you add, change and remove custom tags.</p>
+        <p>
+            <img src="../_Iris-Images/TagManager.png" class="ThumbnailPopup">
+            </img>
+        </p>
+        <MadCap:snippetBlock src="WhatIsCustomTags.flsnp">
+        </MadCap:snippetBlock>
+        <p>Tags are used to aggregate assets into  monitored applications.  Custom tags are treated by <MadCap:variable name="local-iris.ProductName" /> just like any other vendor-provided asset tag, </p>
+        <p>Custom tags are calculated values, based on a <a href="Regex.htm">regex condition</a> matching an <a href="AssetProperties.htm">asset property</a>. Therefore, a defined custom tag may change following any changes in the asset property on which it is based.</p>
+        <p class="h3"><a name="Matching"></a>Matching Properties of your Assets Using Regex</p>
+        <p>Before defining a custom tag you must know which asset property you want to base it on. Having chosen a property you next define how to identify it using a regular expression (regex). If you want to extract a substring from the matched value to place into your custom tag name, you can break up your regex expression into several. You can use any number of regex expressions to construct your match string; each must be placed within parentheses. Only if the entire construct matches the value of the selected property, will the tag be assigned to the asset.  Here are some examples:</p>
+        <ul>
+            <li>
+                <p>(^Sys-.*) - only if the property value starts with <span class="StatusOrValue">Sys-</span>. The entire property value will be available in parameter name $1, which you can use in you tag name.</p>
+            </li>
+            <li>
+                <p>(^Sys-)(.* ) - only if the property value starts with <span class="StatusOrValue">Sys-</span>. Additionally extract the text that follows <span class="StatusOrValue">Sys-. </span>The property value will be available in two parameters, one named $1 containing Sys- and the other named $2 containing the rest of the string. You can use these to construct your tag name as you wish.</p>
+            </li>
+        </ul>
+        <p class="h3"><a name="Custom"></a>Custom Tag Format</p>
+        <p>Like asset tags, custom tags follow the format key:value. When specifying your tag name you can use any combination of variables and constants to construct the final tag combination. The subject of variables is explained above in <a href="#Matching">Matching Properties of your Assets Using Regex</a>. Here are some examples: </p>
+        <ul>
+            <li>
+                <p>MyTagKey:MyTagValue - Both key and value are constants specified by you</p>
+            </li>
+            <li>
+                <p>$1:MyTagValue - The key will be constructed from the first regex expression, the value will be a constant</p>
+            </li>
+            <li>
+                <p>MyTagValue:$1 - The value will be constructed from the first regex expression, the key will be a constant</p>
+            </li>
+            <li>
+                <p>$2:MyTagValue - The key will be constructed from the second regex expression, the value will be a constant</p>
+            </li>
+            <li>
+                <p>$1:$2 - The key  will be constructed from the first regex expression and the value will be constructed from the second regex expression</p>
+            </li>
+            <li>
+                <p>$1-Device:$4: The key  will be constructed from the first regex expression concatenated with the constant <span class="StatusOrValue">-Device</span> and the value will be constructed from the second regex expression.</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p>Add a custom tag</p>
+            </li>
+            <li>
+                <p>Remove a custom tag </p>
+            </li>
+            <li>
+                <p>Edit a custom tag </p>
+            </li>
+        </ul>
+        <p class="h3"><a name="Add"></a>Add a Custom  Tag</p>
+        <ol>
+            <li>
+                <p>Click <img src="../_Iris-Images/icon_Plus.png" class="noborder" /> to display the Add Tag Window. </p>
+                <p>
+                    <img src="../_Iris-Images/Window_Add_Tag.png">
+                    </img>
+                </p>
+                <p>All fields are mandatory. Enter the fields as follows:</p>
+                <ul>
+                    <li>Tag: The key name for the new custom  tag, in the format key:value. See <a href="#Custom">Custom Tag Format</a>.</li>
+                    <li>Type: Select from  <span class="Emphasis"><span class="StatusOrValue">Virtual Machine</span> or <span class="StatusOrValue">Storage.</span></span></li>
+                    <li>When: The Asset Property to match. See <a href="AssetProperties.htm">Asset Properties</a>.</li>
+                    <li>Matches: The regular expression to use for pattern matching. See <a href="#Matching">Matching Properties of your Assets Using Regex</a>.</li>
+                </ul>
+            </li>
+            <li>Click <span class="ScreenObject">Add</span> to save.</li>
+        </ol>
+        <p class="h3">Remove a Custom Tag</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../_Iris-Images/Button_Ellipsis.png" class="noborder" /> for the tag you want to remove. </li>
+            <li>Click <span class="ScreenObject">Remove Rule</span> from the pop-up menu.</li>
+            <li>The tag will be removed from the display.</li>
+        </ol>
+        <p class="h3">Edit a Custom Tag</p>
+        <ol>
+            <li>Click on the Ellipsis button <img src="../_Iris-Images/Button_Ellipsis.png" class="noborder" /> for the tag you want to change. </li>
+            <li>Click <span class="ScreenObject">Edit Rule</span> from the pop-up menu.</li>
+            <li>The Edit Tag Window will be  displayed. See <a href="#Add">Add a Custom  Tag</a> for more information.</li>
+            <li>Make changes as necessary and click <span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_TagManager.flsnp" />
+    </body>
+</html>

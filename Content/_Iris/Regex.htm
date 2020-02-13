@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Regex</h1>
+        <h2>Regular Expressions</h2>
+        <p><MadCap:variable name="local-iris.ProductName" /> uses regular expressions based on the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html" target="_blank">Java 8.0 pattern class</a>. The regular expression can include explicit characters, predefined character classes, and custom character classes you define. See <a href="https://www.freeformatter.com/java-regex-tester.html">java-regex-tester.html</a> for a useful tool that will test regular expressions.</p>
+        <p>The following is a small sampling of some useful regular expression constructs: </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">x</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The character x</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td style="font-weight: normal;" class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">.</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Any character</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td style="font-weight: normal;" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">[abc]</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">a, b, or c (simple class)</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">[^abc]</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Any character except a, b, or c (negation)</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">[a-zA-Z]</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">through z or A through Z, inclusive (range)</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

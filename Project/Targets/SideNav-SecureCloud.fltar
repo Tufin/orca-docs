@@ -7,8 +7,8 @@
   ShowMadCapBacklink="false"
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 SideNav-iris.flskn"
-  MasterPage="/Content/Resources/MasterPages/Content-TopNav.flmsp"
-  DefaultUrl="/Content/SecureCloud/WhatIsSecureCloud.htm"
+  MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
+  DefaultUrl="/Content/__SecureCloud/WhatIsSecureCloud.htm"
   UseDeviceWidth="true"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
@@ -20,8 +20,7 @@
   MasterStylesheetOverride="true"
   EquationsOutputType="PNG"
   AliasFile="/Project/Advanced/CSH/SCL.flali"
-  SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs"
-  ResolveCssVariables="false">
+  SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

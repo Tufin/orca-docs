@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p style="font-weight: normal;">
+            <p>A privileged workload can refer to a pod or container:</p>
+            <p>A privileged container has its privileged security context  set to true.</p>
+            <MadCap:snippetBlock src="../__SecureCloud/WhatIsPrivilegedPod.flsnp" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Badges</h1>
+        <h2><a name="overview"></a>Overview</h2>
+        <p>In case you aren't too familiar with badges, Github explains it nicely. "Badges are a unified way to present condensed pieces of information about your projects. They consist of a small image and additionally a URL that the image points to. Examples for badges can be the pipeline status, test coverage, or ways to contact the project maintainers."</p>
+        <p><a href="https://docs.gitlab.com/ee/user/project/badges.html"><img src="../_Orca-Images/external_overview_badges.png" class="ThumbnailPopup" /></a>
+        </p>
+        <p>Read more <a href="https://docs.gitlab.com/ee/user/project/badges.html">https://docs.gitlab.com/ee/user/project/badges.html</a></p>
+        <p>Badges are typically displayed in a code repository project's readme file to indicate the status of a process, but they can also be implemented elsewhere using an http request.</p>
+        <h2><a name="The"></a>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.TufinScore" /> Badge</h2>
+        <p><MadCap:variable name="local-orca.Product_S" /> gives away badges too! An <MadCap:variable name="local-orca.Product_S" /> badge  shows the <MadCap:variable name="local-orca.Product_S" /><a href="SecurityScore.htm"> <MadCap:variable name="local-orca.TufinScore" /></a> of a single container image (by default, the image last scanned). Clicking on the badge displays any <a href="VulnerabilityDetails.htm">vulnerabilities</a> found for that image. You might want to insert the badges into the top of your code repository readme file something like this:</p>
+        <p>Image k8s.gcr.io/cluster-out64: <img src="../_Orca-Images/Icon_Badge_A_plus.png" class="noborder" /></p>
+        <p>Image k8s.gcr.io/event-exporter:05: <img src="../_Orca-Images/Icon_Badge_A.png" class="noborder" /></p>
+        <p>Image calyco-vpcva-amd64: <img src="../_Orca-Images/icon_Badge_F.png" /></p>
+        <h2>Live Example:</h2>
+        <p>You can see a live example of badges here:&#160;<a href="https://github.com/Tufin/orca-docs/blob/master/badges.md">https://github.com/Tufin/orca-docs/blob/master/badges.md</a></p>
+        <h2><a name="Implementing"></a>Implementing the Badge</h2>
+        <p>See <a href="WorkingWithBadges.htm">Implement Badges</a>.</p>
+    </body>
+</html>

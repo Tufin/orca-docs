@@ -45,7 +45,7 @@ two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.-->
             xml:lang="en">
             <tig
               id="newtid2">
-              <term>neilleigh1</term>
+              <term>Kubernetes</term>
               <termNote
                 type="administrativeStatus">preferredTerm-admn-sts</termNote>
             </tig>
@@ -57,7 +57,7 @@ two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.-->
             xml:lang="en">
             <tig
               id="newtid3">
-              <term>i_think_this_is_technically_a_nice_feature_but_much_less_useful_than_using_variables</term>
+              <term>cluster</term>
               <termNote
                 type="administrativeStatus">preferredTerm-admn-sts</termNote>
             </tig>

@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <a href="../../SecureCloud-Images/Screen_Dashboard.png"><span class="MenuItem"><MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /></span></a> &gt;  <span class="MenuItem"><a href="../../SecureCloud/K8sPermissivePolicies-by-Cluster.htm">select cluster</a></span> &gt; <span class="MenuItem"><a href="../../SecureCloud/K8sPermissivePolicies-by-Namespace.htm">select namespace</a></span></p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../__SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <a href="../../__SecureCloud-Images/Screen_Dashboard.png"><span class="MenuItem"><MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /></span></a> &gt;  <span class="MenuItem"><a href="../../__SecureCloud/K8sPermissivePolicies-by-Cluster.htm">select cluster</a></span> &gt; <span class="MenuItem"><a href="../../__SecureCloud/K8sPermissivePolicies-by-Namespace.htm">select namespace</a></span></p>
     </body>
 </html>

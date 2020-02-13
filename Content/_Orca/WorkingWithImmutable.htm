@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><a name="top"></a>Implement an Immutable Policy</h1>
+        <ul>
+            <li><a href="#overview">Overview</a>
+            </li>
+            <li><a href="#Implemen">Implementation</a>
+            </li>
+        </ul>
+        <h2><a name="overview"></a>Overview</h2>
+        <p>An approach to security in which you never modify an existing policy but rather replace it with a new one. See <a href="ImmutablePolicy.htm">Immutable Policy Concepts.</a></p>
+        <h2><a name="Implemen"></a>Implementation</h2>
+        <h3>Development and QA Phase</h3>
+        <ul>
+            <li>Develop and commit code as usual.</li>
+            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local-orca.Product_S" /> to create the list of allowed connections in the security policy. </li>
+        </ul>
+        <h3>Build Phase</h3>
+        <p>You can run these steps manually or build them into your CI/CD Pipeline. </p>
+        <ol>
+            <li>
+                <p>Check out your code</p>
+            </li>
+            <li>
+                <p>Build your code</p>
+            </li>
+            <li>
+                <p>Reset policy using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Run tests: unit, integration, system...</p>
+            </li>
+            <li>
+                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+            </li>
+            <li>
+                <p>Check policy for compliance</p>
+            </li>
+            <li>
+                <p>Deploy your app and the auto-generated policy to your run-time environment (staging or production)</p>
+            </li>
+        </ol>
+        <h2>Scripts</h2>
+        <p>Use these parameters:</p>
+        <p>{TOKEN}:&#160;<MadCap:variable name="local-orca.Product_S" /> &gt; Settings &gt; <a href="OrcaSettingsGeneral.htm#Viewing%20and%20Copying%20Tokens">API Tokens</a>: Use the value of any token with Scope=all, label=CI</p>
+        <p>{URL}: https://orca.tufin.io/api</p>
+        <p>{DOMAIN}: As displayed on most <MadCap:variable name="local-orca.Product_S" /> screens at the top of the screen</p>
+        <p>{PROJECT} As displayed on most <MadCap:variable name="custom.Theme" /> screens at the top of the screen</p>
+        <h3>Reset Policy </h3>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{DOMAIN}/{PROJECT}/scripts/reset-policy")</p>
+        <h3>Fetch Policy </h3>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{DOMAIN}/{PROJECT}/scripts/fetch-policy")</p>
+        <h3>Commit Policy</h3>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{DOMAIN}/{PROJECT}/scripts/commit-policy")</p>
+    </body>
+</html>

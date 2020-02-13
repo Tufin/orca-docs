@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>Kubernetes Vulnerabilities are known vulnerabilities in Kubernetes implementations. <MadCap:variable name="local.ProductName" /> monitors <MadCap:variable name="local-orca.GKE" />, <MadCap:variable name="local-orca.EKS" /> and vanilla implementations. The full list can be seen <a href="https://github.com/Tufin/kubernetes-vulnerabilities/blob/master/README.md">here on GitHub</a></p>
+    </body>
+</html>

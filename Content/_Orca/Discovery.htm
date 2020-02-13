@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Discover New Connections</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>The <MadCap:variable name="local-orca.Product_S" /> Discovery Engine is a continually-running process that monitors traffic within your cluster. This information will provide you with visibility into traffic flows in the cluster and will help you formulate and manage your security policy. The Discovery Engine runs independently of the Policy Mode. </p>
+        <p class="h3">What Type of Connections Does <MadCap:variable name="local-orca.Product_S" /> discover?</p>
+        <ul>
+            <li>TCP and UDP connections </li>
+            <li>Connections between service pods</li>
+            <li>Connections from ingress to service pods</li>
+            <li>Connections from service pods to external end-points</li>
+            <li>Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis</li>
+        </ul>
+        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in the New Connections Window, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
+        <p>
+            <img src="../_Orca-Images/Discovery_NewConnections.png" class="ThumbnailPopup" />
+        </p>
+        <p>The number of connections in the New Connections Window is displayed at the top of the screen. The window contains the following information:</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 88px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><span>The name of the service from which the connection was initiated plus its namespace, or 'ingress' if the connection was initiated from outside the cluster</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Destination</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
+                        <p>The name of the service to which the connection was made plus its namespace, or a domain/sub-domain name if the connection was made to a destination outside of the cluster</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h3">Connections - Allowed or Blocked?</p>
+        <p>When the <a href="../__SecureCloud/ConceptOfPolicy.htm#policymode">Policy Mode</a> is set to <span class="StatusOrValue">Learn</span>, all new connections listed in the New Connections window are allowed and when the <span class="StatusOrValue">Policy Mode</span> is set to <span class="StatusOrValue">Enforce </span>all new connections are blocked. </p>
+        <p class="h3">Notifications</p>
+        <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p>Turn a new connection into a policy rule (allowed connection). - Select one or more rules in the <span class="ScreenObject">New Connections List</span> and click <span class="ScreenObject">Add to Policy</span>.</p>
+            </li>
+        </ul>
+        <p class="h3">Turn a New Connection Into a Policy Rule</p>
+        <p> Any connections  discovered  that don't exist as allowed connections in your security policy, are considered new. The number of new connections is displayed  at the top of the screen. </p>
+        <ul>
+            <li>Select one or more new connections  and click <span class="ScreenObject">Add to Policy</span>.</li>
+        </ul>
+        <p>The selected rules will be added to your security policy and removed from the <span class="ScreenObject">New Connections Window</span>. The number of new connections displayed will be updated accordingly.</p>
+        <p class="h2">How do I get here?</p>
+        <p>From most screens, click <span class="Bold">on <span class="ScreenObject">New Connections</span> at the top of the screen.</span></p>
+    </body>
+</html>

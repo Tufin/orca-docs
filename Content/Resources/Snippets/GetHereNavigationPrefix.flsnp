@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p><span class="MenuItem"><a href="../../SecureCloud-Images/MainMenu.png"><MadCap:variable name="local.MainMenu" /></a></span> &gt;     </p>
+        <p><span class="MenuItem"><a href="../../__SecureCloud-Images/MainMenu.png"><MadCap:variable name="local.MainMenu" /></a></span> &gt;     </p>
     </body>
 </html>

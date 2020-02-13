@@ -1,18 +1,2 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultSearchFilterSet>
-  <SearchFilter
-    Name="Search Public Cloud"
-    Comment=""
-    Order="2"
-    Concepts="PublicCloud" />
-  <SearchFilter
-    Name="Search Kubernetes"
-    Comment=""
-    Order="0"
-    Concepts="Kubernetes" />
-  <SearchFilter
-    Name="Search Getting Started"
-    Comment=""
-    Order="1"
-    Concepts="Settings" />
-</CatapultSearchFilterSet>
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultSearchFilterSet></CatapultSearchFilterSet>

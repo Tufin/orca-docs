@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.ContainerVulnerabilities" /> by Namespace</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>This screen displays all  namespaces  in  a selected cluster with <MadCap:variable name="local.containervulnerabilities" />.</p>
+        <p>
+            <img src="../__SecureCloud-Images/Screen_K8s_ContainerVulnerabilities_by_Namespace.png" class="ThumbnailPopup" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p class="normal">The selected cluster's name appears at the top of the screen. The main screen section is a list of all namespaces in  the cluster that have <MadCap:variable name="local.containervulnerabilities" />, showing:</p>
+        <ul>
+            <li>
+                <p><span class="ScreenObject">Namespace name</span>
+                </p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Total pods</span>. The number of pods in the cluster</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Affected pods</span>. The number of pods in the cluster that have <MadCap:variable name="local.containervulnerabilities" /></p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Lowest Score</span>. The <MadCap:variable name="local-orca.TufinScore" /> of the most vulnerable container found</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p><b>Drill down</b> to see the <MadCap:xref href="K8sContainerVulnerabilities-by-Pod.htm">[%=local.ContainerVulnerabilities%] by Pod</MadCap:xref></p>
+            </li>
+            <li>
+                <p><span class="SpecialBold">Return</span> to <MadCap:xref href="K8sContainerVulnerabilities-by-Cluster.htm">[%=local.ContainerVulnerabilities%] by Cluster</MadCap:xref></p>
+                <p>- click on <img src="../__SecureCloud-Images/Icon_ReturnArrow.png" /> at the top of the screen</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ContainerVulnerabilities-by-Namespace.flsnp" />
+    </body>
+</html>

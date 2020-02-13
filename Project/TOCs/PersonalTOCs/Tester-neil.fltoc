@@ -3,5 +3,5 @@
   Version="1">
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    Link="/Content/__SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
 </CatapultToc>

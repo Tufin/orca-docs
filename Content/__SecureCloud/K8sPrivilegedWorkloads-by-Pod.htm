@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.PrivilegedWorkloads" /> by Pod</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>This screen displays all   pods  in a selected namespace with privileged workloads.</p>
+        <p>
+            <img src="../__SecureCloud-Images/Screen_K8s_PrivilegedWorkloads_by_Pod.png" class="ThumbnailPopup" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p class="normal">The selected cluster and namespace appear at the top of the screen. The main screen section is a list of all pods in  the namespace that have privileged workloads, showing:</p>
+        <ul>
+            <li>
+                <p><span class="ScreenObject">Pod</span>. The pod name</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Host Access</span>. One or more permissive pods security policy values:</p>
+                <MadCap:snippetBlock src="WhatIsPrivilegedPod.flsnp" />
+            </li>
+            <li>
+                <p><span class="ScreenObject">Labels</span>. One or more label key/values assigned to the pod.</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Containers</span>. The names of all containers in the pod, together with the their <a href="../_Orca/SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a>. </p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Privileged mode</span>:</p>
+                <p><span class="StatusOrValue">Privileged</span> - privileged parameter set to true</p>
+                <p><span class="StatusOrValue">blank</span> - privileged parameter set to false</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p><span class="SpecialBold">Return</span> to <span href="CloudRiskyPorts-by-App.htm" class="MenuItem"><MadCap:xref href="K8sPrivilegedWorkloads-by-Namespace.htm">Privileged Workloads by Namespace</MadCap:xref></span> </p>
+                <p>- click on <img src="../__SecureCloud-Images/Icon_ReturnArrow.png" /> at the top of the screen</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_PrivilegedWorkloads-by-Pod.flsnp" />
+    </body>
+</html>

@@ -3,79 +3,79 @@
   Version="1">
   <TocEntry
     Title="What is Iris"
-    Link="/Content/PublicCloud/DEPRECATED_WhatIs.htm"
+    Link="/Content/_Iris/DEPRECATED_WhatIs.htm"
     ReplaceMergeNode="false">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/DEPRECATED_WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/WhatsNew.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/DEPRECATED_GettingStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/DEPRECATED_GettingStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Concepts">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/Global_View.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/Global_View.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/SecureCloud/ConceptOfPolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/__SecureCloud/ConceptOfPolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
   <TocEntry
     Title="Working With Iris">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/DEPRECATED MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      Link="/Content/_Iris/DEPRECATED MainMenu.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/DEPRECATED_FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/DEPRECATED_FilteringData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="View Your Cloud">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/SUPERSEDED_Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/SUPERSEDED_Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        Link="/Content/_Iris/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/ApplicationAssetMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/ApplicationAssetMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="Configure Iris">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        Link="/Content/_Iris/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        Link="/Content/_Iris/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/_Iris/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/CloudPolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/CloudPolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/CloudConfiguration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/_Iris/CloudConfiguration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
   </TocEntry>
   <TocEntry
     Title="Help"
-    Link="/Content/PublicCloud/DEPRECATED_UsingHelp.htm">
+    Link="/Content/_Iris/UsingHelp.htm">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/DEPRECATED_UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/_Iris/UsingHelp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   </TocEntry>
 </CatapultToc>
