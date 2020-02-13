@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>The Concept of Policy</h1>
+        <p>Policy is a guide to how things should work. Specifically, security policies are sets of rules describing permitted and/or denied actions.</p>
+        <p class="h2"><MadCap:variable name="local.Public Cloud" /> Policy</p>
+        <p>The <MadCap:variable name="local-iris.ProductName" /> <MadCap:variable name="local.Cloud Policy" /> is a set of rules that define the connectivity you want to allow  to and from your assets. <MadCap:variable name="local-iris.ProductName" />'s <a href="../PublicCloud/Global_View.htm">global application visibility</a> presents your cloud environment as applications, so you can see compliance with policy  at the level of your business applications as well. Rules consist of source, destination and type of service, where source and destination are based on subnet, asset tags or other asset properties. Once your policy is defined in <MadCap:variable name="local-iris.ProductName" />, you have a security baseline against which your cloud asset and application connectivity can be compared. <MadCap:variable name="local-iris.ProductName" /> will report any violations of the policy after considering all the relevant security entities and network connectivity. <MadCap:snippetText src="../PublicCloud/WhatIsViolation.flsnp" /> </p>
+        <p>Example of applications on the <MadCap:variable name="local-iris.GlobalMap" /> with policy violations marked in red:</p>
+        <p>
+            <img src="../PublicCloud-Images/GlobalMap.png" class="ThumbnailPopup" />
+        </p>
+        <p>Example of violations in an asset, marked with a warning icon:</p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_EffectiveAccessHops.png" class="ThumbnailPopup" />
+        </p>
+        <p>Sample policy rules:</p>
+        <p>
+            <img src="../PublicCloud-Images/PolicyRules.png" class="ThumbnailPopup" />
+        </p>
+        <p>See how <a href="../PublicCloud/CloudPolicyRules.htm">policy rules are defined</a>. </p>
+        <p class="h2"><MadCap:variable name="local.Cluster Policy" />
+        </p>
+        <MadCap:snippetBlock src="../Kubernetes/WhatIsClusterPolicy.flsnp" />
+        <p class="h3"><a name="policymode"></a>Policy Mode</p>
+        <p><MadCap:variable name="local-orca.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers, so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the <MadCap:variable name="local-orca.Product_S" /> policy rules. The  monitoring and visibility capabilities  such as <a href="../Kubernetes/ServiceGraph.htm">Service Graph</a>, <a href="../Kubernetes/Pods.htm">Pods</a>, and <a href="../Kubernetes/Services.htm">Services</a> are always available, and are independent of the mode setting. </p>
+        <div class="NoteLight">Enforce mode is not currently supported for <MadCap:variable name="local-orca.Openshift" />.</div>
+        <ul>
+            <li>
+                <p>Use <span class="StatusOrValue">Learn</span> while you are building a policy for your organization</p>
+            </li>
+            <li>
+                <p> Switch to <span class="StatusOrValue">Enforce</span> when you are satisfied that the policy meets your enforcement criteria</p>
+            </li>
+            <li> Temporarily switch back to <span class="StatusOrValue">Learn</span>  to review all connection attempts made in a certain timeframe.</li>
+        </ul>
+        <p> Policy Mode can be changed in <a href="../Kubernetes/OrcaSettingsGeneral.htm">Settings</a>.</p>
+        <p>
+            <img src="../Kubernetes-Images/ButtonEnforceLearn.png" class="noborder" />
+        </p>
+        <p>When in <span class="StatusOrValue">Learn</span> mode, the <span class="ScreenObject">Enforce policy</span> button appears at the bottom of all <MadCap:variable name="local.Kubernetes" /> screens.</p>
+        <p> <img src="../Kubernetes-Images/ButtonEnforce.png" /></p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
+        <p class="h3">What Happens With Existing Kubernetes Network Policies?</p>
+        <p>If you have implemented Kubernetes network policies outside of <MadCap:variable name="local.ProductName" />, these will not be affected unless you specify otherwise. When Policy Mode is set to <span class="StatusOrValue">Enforce</span>, your existing policies work side by side with the policy of <MadCap:variable name="local.Allowed Connections" />. When Policy Mode is set to <span class="StatusOrValue">Learn</span>, which is meant to allow all connections and let you can see all the activity in the <MadCap:variable name="local.project" />, some connections will still be blocked due to the  Kubernetes network policies you've implemented. While this may be good from a protection point of view, the downside is that you cannot see all the connections attempted. <MadCap:variable name="local-orca.Product_S" /> gives you a way of temporarily bypassing those policies while  Policy Mode is set to <span class="StatusOrValue">Learn</span> and cancelling the bypass when  Policy Mode is set back to <span class="StatusOrValue">Enforce</span>. This is done in <a href="../Kubernetes/OrcaSettingsGeneral.htm">Settings</a> via <span class="StatusOrValue">Set Kubernetes Network Policy to Allow-All in Learn Mode</span>. When the setting is enabled  and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local-orca.Product_S" /> creates a temporary Any-Any-Allow Kubernetes network  policy (marked with a label), which allows all traffic, for each monitored namespace. These temporary policies are removed when Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the setting is disabled. </p>
+    </body>
+</html>

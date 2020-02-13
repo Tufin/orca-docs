@@ -11,7 +11,7 @@
   ResolveCssVariables="false"
   EquationsOutputType="PNG"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  DefaultUrl="/Content/_Iris/DEPRECATED_WhatIs.htm"
+  DefaultUrl="/Content/PublicCloud/DEPRECATED_WhatIs.htm"
   ConditionTagExpression="exclude[General.Exclude]"
   ExcludeUnreferencedContent="true"
   OutputFile="index.htm"

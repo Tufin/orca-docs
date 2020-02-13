@@ -181,11 +181,11 @@
     Comment="Begin sentence"
     EvaluatedDefinition="Policy violations">Policy violations</Variable>
   <Variable
-    Name="RiskyPorts"
+    Name="RiskyPorts (heading)"
     Comment="Menu and title"
     EvaluatedDefinition="Risky Ports">Risky Ports</Variable>
   <Variable
-    Name="Riskyports"
+    Name="Riskyports (Start sentence)"
     Comment="Begin sentence"
     EvaluatedDefinition="Risky ports">Risky ports</Variable>
   <Variable
@@ -212,4 +212,36 @@
     Name="Kubernetes"
     Comment=""
     EvaluatedDefinition="Kubernetes">Kubernetes</Variable>
+  <Variable
+    Name="public cloud"
+    Comment="mid-sentence"
+    EvaluatedDefinition="public cloud">public cloud</Variable>
+  <Variable
+    Name="Azure"
+    Comment=""
+    EvaluatedDefinition="Microsoft Azure">Microsoft Azure</Variable>
+  <Variable
+    Name="AWS"
+    Comment=""
+    EvaluatedDefinition="Amazon AWS">Amazon AWS</Variable>
+  <Variable
+    Name="risky ports (lower case)"
+    Comment="mid sentence"
+    EvaluatedDefinition="risky ports">risky ports</Variable>
+  <Variable
+    Name="Project"
+    Comment="Project used internally, cluster used externally"
+    EvaluatedDefinition="Cluster">Cluster</Variable>
+  <Variable
+    Name="project"
+    Comment=""
+    EvaluatedDefinition="cluster">cluster</Variable>
+  <Variable
+    Name="domain"
+    Comment=""
+    EvaluatedDefinition="account">account</Variable>
+  <Variable
+    Name="Domain"
+    Comment=""
+    EvaluatedDefinition="Account">Account</Variable>
 </CatapultVariableSet>

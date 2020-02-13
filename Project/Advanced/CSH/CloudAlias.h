@@ -1,5 +1,4 @@
 
-#define Identifier (example: #cshid=SCL_SignUp) Ignore (No-one uses this)
 #define SCL_Dashboard 5001
 #define SCL_UserManagement 5002
 #define SCL_K8sContainerVulnerabilities-by-Cluster 5003

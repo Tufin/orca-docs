@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Data Privacy</h1>
+        <p>Implicit measures that ensure the privacy of your data in <MadCap:variable name="local-orca.Product_S" />.</p>
+        <p class="h2">Hosted Environment</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> software runs on Google Cloud and uses the Google Security Model, the very same platform used by Google itself to secure its own cloud products. For more information: <a href="https://cloud.google.com/security/overview/" target="_blank">https://cloud.google.com/security/overview/.</a></p>
+        <p class="h2">What Data do We Collect?</p>
+        <p><MadCap:variable name="local-orca.Product_S" /> keeps the following data for the purpose of mapping your network and the traffic within it.</p>
+        <ul>
+            <li><MadCap:variable name="local.Kubernetes" /> namespaces</li>
+            <li><MadCap:variable name="local.Kubernetes" /> pod and service information including metadata, labels and definitions</li>
+            <li>Connections made to and from nodes in your <MadCap:variable name="local.Kubernetes" /> clusters</li>
+            <li>Node information including metadata, labels and definitions</li>
+            <li>Cloud vendor security definitions (security groups etc)</li>
+            <li>Container images</li>
+        </ul>
+        <p class="h2">Encryption</p>
+        <ul>
+            <li>All data is encrypted at rest i.e. in database</li>
+            <li>All traffic is encrypted in transit using HTTPS</li>
+        </ul>
+        <p class="h2">Vulnerability Checking </p>
+        <ul>
+            <li><MadCap:variable name="local-orca.Product_S" /> is vulnerability checked using <MadCap:variable name="local-orca.Product_S" /> itself</li>
+            <li>Sanity testing is performed as part of the <MadCap:variable name="local-orca.Product_S" /> CI/CD process</li>
+            <li><MadCap:variable name="local-orca.Product_S" /> is tested for all of the OWASP Top 10 application security risks using code review and penetration testing methods.</li>
+        </ul>
+        <p class="h2">Multi-Tenancy </p>
+        <ul>
+            <li>The <MadCap:variable name="local-orca.Product_S" /> database is multi-tenant.</li>
+        </ul>
+        <p class="h2">Retention Policy</p>
+        <ul>
+            <li>Data collected is retained until the user terminates their account.</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>
