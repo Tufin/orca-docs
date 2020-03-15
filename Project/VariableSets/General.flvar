@@ -169,10 +169,6 @@
     Comment=""
     EvaluatedDefinition="R17-1">R17-1</Variable>
   <Variable
-    Name="Version"
-    Comment=""
-    EvaluatedDefinition="R20-2">R20-2</Variable>
-  <Variable
     Name="VersionSibling"
     Comment="for when a TOS2 topic needs to reference a TOS1 topic"
     EvaluatedDefinition="" />
@@ -195,15 +191,11 @@
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
-  <Variable
-    Name="Version"
-    Comment=""
     EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
   <Variable
     Name="VersionSibling"
     Comment=""
@@ -219,7 +211,7 @@
   <Variable
     Name="VersionTufinOS"
     Comment=""
-    EvaluatedDefinition="2.19">2.19</Variable>
+    EvaluatedDefinition="2.20">2.20</Variable>
   <Variable
     Name="VersionTufinOS"
     Comment=""
@@ -253,11 +245,35 @@
     Comment=""
     EvaluatedDefinition="SecureApp 2.0">SecureApp 2.0</Variable>
   <Variable
-    Name="SecureTrackFreemium"
-    Comment=""
+    Name="STProductName"
+    Comment="In ST 2.0 Targets, this resolves to SecureTrack 2.0"
     EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
   <Variable
     Name="TOS"
     Comment=""
     EvaluatedDefinition="Tufin Orchestration Suite">Tufin Orchestration Suite</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="2.19">2.19</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="2.21">2.21</Variable>
+  <Variable
+    Name="STProductName"
+    Comment=""
+    EvaluatedDefinition="SecureTrack 2.0">SecureTrack 2.0</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-2LA">R20-2LA</Variable>
+  <Variable
+    Name="STProductName"
+    Comment=""
+    EvaluatedDefinition="SecureTrack">SecureTrack</Variable>
 </CatapultVariableSet>

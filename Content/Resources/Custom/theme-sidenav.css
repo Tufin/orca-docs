@@ -44,6 +44,13 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 }
 
 /* TOS2 */
+
+.theme-tos2 div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
+}
+
 .theme-tos2 nav.title-bar {
 	background-color: #EA7600;
 	background-image: url('Images/headerTos2_105px.jpg');
@@ -63,6 +70,14 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 }
 
 /* SecureCloud */
+
+.theme-securecloud div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
+	
+}
+
 .theme-securecloud nav.title-bar {
 	background-color: #074c7b;
 	background-image: url('Images/headerSecureCloud_105px.jpg');

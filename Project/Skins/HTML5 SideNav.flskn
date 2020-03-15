@@ -54,6 +54,17 @@
             Name="BackgroundColor">transparent</Property>
         </Properties>
       </Style>
+      <Style
+        Name="Header">
+        <Properties>
+          <Property
+            Name="BackgroundColor">transparent</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Logo">
+        <Properties></Properties>
+      </Style>
     </Styles>
   </Stylesheet>
   <Strings />

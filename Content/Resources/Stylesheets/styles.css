@@ -1,8 +1,6 @@
 ﻿/*<meta />*/
-
-:root
-{
-	--HeadColor: #00829C;
+:root {
+	
 }
 
 body
@@ -12,6 +10,10 @@ body
 	font-size: 14px;
 	line-height: 24px;
 	mc-hyphenate: never;
+
+	/* These default values are overridden in the theme-sidenav.css */
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
 }
 
 a
@@ -184,7 +186,7 @@ h3
 
 h4
 {
-	color: #666666;
+	color: #333333;
 	font-family: "Open Sans";
 	font-size: 1.2em;
 	font-weight: normal;
@@ -277,7 +279,7 @@ p.h3
 
 p.h4
 {
-	color: #666666;
+	color: #333333;
 	font-family: "Open Sans";
 	font-size: 1.2em;
 	font-weight: normal;
@@ -290,7 +292,7 @@ p.h4
 
 p.h5
 {
-	color: #333333;
+	color: #666666;
 	font-family: "Open Sans";
 	font-size: 1.2em;
 	font-weight: normal;
@@ -303,6 +305,7 @@ p.h5
 
 p.SubHead1
 {
+
 	color: var(--HeadColor);
 	font-family: "Open Sans";
 	font-size: 1.2em;
@@ -311,8 +314,9 @@ p.SubHead1
 	margin-top: 16px;
 	mc-next-tag: p;
 	mc-next-class: normal;
-	background-color: #DEE8EA;
+	background-color: var(--SubHeadColor);
 }
+
 /*
 p.SubHead1::before
 	{
@@ -321,6 +325,7 @@ p.SubHead1::before
 		font-size: 0.9em;
 	}
 */
+
 
 p.ProcedureIntro, p.procedureintro
 {
