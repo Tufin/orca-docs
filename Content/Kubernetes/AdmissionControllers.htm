@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Admission Controllers</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p><MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.AdmissionControllers" /> are plugins that intercept authenticated API requests. For more information see the <a href="https://kubernetes.io/docs/home/"><MadCap:variable name="local.Kubernetes" /> documentation</a>. Certain <MadCap:variable name="local.AdmissionControllers" /> are required for some services to run, but unknown or outdated <MadCap:variable name="local.AdmissionControllers" /> could pose a security threat if not disabled or removed. The information displayed here lists all installed <MadCap:variable name="local.AdmissionControllers" /> with recommendations for action.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>
+            <img src="../Kubernetes-Images/AdmissionControllers.png" class="ThumbnailPopup" />
+        </p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Column</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Name</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Name of the Admission Controller</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Current Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Enabled or Disabled</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Recommendation</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Recommended action - Disable or Enable</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Reason </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The source of the recommendation</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Description</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">A description of the purpose and  action taken by the <MadCap:variable name="local.AdmissionControllers" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>No actions</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_AdmissionControllers.flsnp" />
+    </body>
+</html>

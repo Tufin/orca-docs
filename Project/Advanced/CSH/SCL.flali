@@ -32,13 +32,14 @@
 	<Map Name="SCL_KubernetesNetworkPolicies" Link="/Content/Kubernetes/KubernetesNetPolicies.htm" />
 	<Map Name="SCL_Nodes" Link="/Content/Kubernetes/Nodes.htm" />
 	<Map Name="SCL_Pods" Link="/Content/Kubernetes/Pods.htm" />
+	<Map Name="SCL_AdmissionControllers" Link="/Content/Kubernetes/AdmissionControllers.htm" />
 	<Map Name="SCL_Services" Link="/Content/Kubernetes/Services.htm" />
 	<Map Name="SCL_AllowedConnections" Link="/Content/Kubernetes/AllowedConnections.htm" />
 	<Map Name="SCL_FirewallTickets" Link="/Content/Kubernetes/FirewallTickets.htm" />
 	<Map Name="SCL_Settings" Link="/Content/Kubernetes/OrcaSettingsGeneral.htm" />
 	<Map Name="SCL_Notifications" Link="/Content/Kubernetes/OrcaSettingsNotifications.htm" />
 	<Map Name="SCL_Vulnerabilities" Link="/Content/Kubernetes/VulnerabilityDetails.htm" />
-	<Map Name="SCL_DiscoveryEngine" Link="/Content/Kubernetes/Discovery.htm" />
+	<Map Name="SCL_DiscoveryEngine" Link="/Content/Kubernetes/NewConnections.htm" />
 	<Map Name="SCL_SecurityScore" Link="/Content/Kubernetes/SecurityScore.htm" />
 	<Map Name="SCL_Deploy" Link="/Content/Kubernetes/DeployOnCluster.htm" />
 	<Map Name="SCL_OrcaArchitecture" Link="/Content/Kubernetes/Architecture.htm" />

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>When the pod has  one or more of the following values set to true, it has  access to the host node:</p>
+        <ul>
+            <li>
+                <p>HostPID: The pod can use the host's process ID namespace</p>
+            </li>
+            <li>
+                <p>HostIPC: The pod can use the host's  IPC namespace </p>
+            </li>
+            <li>
+                <p>HostNetwork: The pod can use the host's  network namespace, bypassing all Kubernetes Network Policies. </p>
+                <MadCap:snippetBlock src="../Kubernetes/WhatIsHostNetwork.flsnp" />
+            </li>
+        </ul>
+    </body>
+</html>

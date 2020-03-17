@@ -34,16 +34,17 @@ SCL_ServiceGraph,5032,/Content/Kubernetes/ServiceGraph.htm,SCL,Main Menu > KUBER
 SCL_KubernetesNetworkPolicies,5033,/Content/Kubernetes/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies
 SCL_Nodes,5034,/Content/Kubernetes/Nodes.htm,SCL,Main Menu > KUBERNETES - Resources > Nodes
 SCL_Pods,5035,/Content/Kubernetes/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Pods
-SCL_Services,5036,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
-SCL_AllowedConnections,5037,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
-SCL_FirewallTickets,5038,/Content/Kubernetes/FirewallTickets.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Firewall Tickets
-SCL_Settings,5039,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KUBERNETES - Settings > General
-SCL_Notifications,5040,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
-SCL_Vulnerabilities,5041,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
-SCL_DiscoveryEngine,5042,/Content/Kubernetes/Discovery.htm,SCL,"From most screens, click on New Connections at the top of the screen"
-;,5043,,,
-SCL_SecurityScore,5044,/Content/Kubernetes/SecurityScore.htm,SCL,none
-SCL_Deploy,5045,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
-SCL_OrcaArchitecture,5046,/Content/Kubernetes/Architecture.htm,SCL,none
-SCL_SignUp,5047,/Content/SecureCloud/SignUp.htm,SCL,none
-SCL_WhatsNew,5048,/Content/SecureCloud/WhatsNew.htm,SCL,none
+SCL_AdmissionControllers,5036,/Content/Kubernetes/AdmissionControllers.htm,SCL,Main Menu > KUBERNETES - Resources > Admission Controllers
+SCL_Services,5037,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
+SCL_AllowedConnections,5038,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
+SCL_FirewallTickets,5039,/Content/Kubernetes/FirewallTickets.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Firewall Tickets
+SCL_Settings,5040,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KUBERNETES - Settings > General
+SCL_Notifications,5041,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
+SCL_Vulnerabilities,5042,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
+SCL_DiscoveryEngine,5043,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > KUBERNETES - New Connections
+;,5044,,,
+SCL_SecurityScore,5045,/Content/Kubernetes/SecurityScore.htm,SCL,none
+SCL_Deploy,5046,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
+SCL_OrcaArchitecture,5047,/Content/Kubernetes/Architecture.htm,SCL,none
+SCL_SignUp,5048,/Content/SecureCloud/SignUp.htm,SCL,none
+SCL_WhatsNew,5049,/Content/SecureCloud/WhatsNew.htm,SCL,none

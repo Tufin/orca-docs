@@ -244,4 +244,16 @@
     Name="Domain"
     Comment=""
     EvaluatedDefinition="Account">Account</Variable>
+  <Variable
+    Name="NewConnections"
+    Comment=""
+    EvaluatedDefinition="New Connections">New Connections</Variable>
+  <Variable
+    Name="Newconnections"
+    Comment=""
+    EvaluatedDefinition="New connections">New connections</Variable>
+  <Variable
+    Name="AdmissionControllers"
+    Comment=""
+    EvaluatedDefinition="Admission Controllers">Admission Controllers</Variable>
 </CatapultVariableSet>

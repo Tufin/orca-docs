@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>Kubernetes network policies don't apply to the host node's network, only to the virtual pod network. Therefore, pods running with hostNetwork set to true (<code>hostNetwork: true</code>)  can see all network interfaces of the host machine where the pod was initiated. The result is that Kubernetes network policies are bypassed for such pods and the application can communicate as if    running on the host node. </p>
+        <p>Kubernetes network policies apply only to the virtual pod network and not to the host node's network (i.e. the host machine on which the pod was initiated). Pods running with hostNetwork enabled (<code>hostNetwork: true</code>)  therefore bypass all <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.NetworkPolicies" />. Additionally they can see all network interfaces of the host  and the application can communicate as if    running on the host itself. </p>
     </body>
 </html>

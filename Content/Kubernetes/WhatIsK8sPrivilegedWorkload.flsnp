@@ -6,7 +6,7 @@
         <p style="font-weight: normal;">
             <p>A privileged workload can refer to a pod or container:</p>
             <p>A privileged container has its privileged security context  set to true.</p>
-            <MadCap:snippetBlock src="../SecureCloud/WhatIsPrivilegedPod.flsnp" />
+            <MadCap:snippetBlock src="../SecureCloud/WhatIsHostAccess.flsnp" />
         </p>
     </body>
 </html>

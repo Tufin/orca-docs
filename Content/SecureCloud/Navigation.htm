@@ -21,16 +21,15 @@
             </li>
             <li><a href="#Filterin">Filtering </a>
             </li>
-            <li><a href="../Kubernetes/Discovery.htm">New Connections</a>
+            <li><a href="../Kubernetes/NewConnections.htm">New Connections</a>
             </li>
         </ul>
         <p class="h2"><a name="menu"></a>Main Menu</p>
-        <p>The Main Menu of <MadCap:variable name="local-orca.Product_L" /> is located on the left panel. </p>
-        <p>Select a menu item to display the desired information. If a menu selection has additional options, they will appear as a submenu. </p>
+        <p>The Main Menu of <MadCap:variable name="local-orca.Product_L" /> is located on the left panel. Menu items with sub-menus display an arrow icon and when selected the sub-menu is shown.</p>
         <p>
             <img src="../SecureCloud-Images/MainMenu.png" />
         </p>
-        <p>The menu items are:</p>
+        <p>The full menu structure:</p>
         <ul>
             <li>
                 <MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref>
@@ -76,10 +75,15 @@
                     <li>
                         <MadCap:xref href="../Kubernetes/ServiceGraph.htm">Service Graph</MadCap:xref>
                     </li>
+                    <li><a href="../Kubernetes/NewConnections.htm">New Connections</a>
+                    </li>
                     <li><MadCap:variable name="local.ClusterResources" />
                         <ul>
                             <li>
-                                <MadCap:xref href="../Kubernetes/KubernetesNetPolicies.htm">Kubernetes Network Policies</MadCap:xref>
+                                <MadCap:xref href="../Kubernetes/AdmissionControllers.htm">Admission Controllers</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../Kubernetes/KubernetesNetPolicies.htm">Network Policies</MadCap:xref>
                             </li>
                             <li>
                                 <MadCap:xref href="../Kubernetes/Nodes.htm">Nodes</MadCap:xref>
@@ -97,7 +101,7 @@
             <li><MadCap:variable name="local.Cluster Policy" />
                 <ul>
                     <li>
-                        <MadCap:xref href="../Kubernetes/AllowedConnections.htm">Security Policy -  Allowed Connections</MadCap:xref>
+                        <MadCap:xref href="../Kubernetes/AllowedConnections.htm">Allowed Connections</MadCap:xref>
                     </li>
                     <li>
                         <MadCap:xref href="../Kubernetes/FirewallTickets.htm">Firewall Tickets</MadCap:xref>
@@ -107,10 +111,10 @@
             <li><MadCap:variable name="local.Settings" />
                 <ul>
                     <li>
-                        <MadCap:xref href="../Kubernetes/OrcaSettingsGeneral.htm">General Settings</MadCap:xref>
+                        <MadCap:xref href="../Kubernetes/OrcaSettingsGeneral.htm">General </MadCap:xref>
                     </li>
                     <li>
-                        <MadCap:xref href="../Kubernetes/OrcaSettingsNotifications.htm">Notifications and Alerts</MadCap:xref>
+                        <MadCap:xref href="../Kubernetes/OrcaSettingsNotifications.htm">Notifications</MadCap:xref>
                     </li>
                 </ul>
             </li>
@@ -147,10 +151,7 @@
         <p>
             <img src="../Kubernetes-Images/Window_Namespace_Select.png" class="ThumbnailPopup" />
         </p>
-        <p>The currently selected filter remains in effect as you navigate to different windows and a notification is displayed in the new connections window.</p>
-        <p>
-            <img src="../Kubernetes-Images/Window_Discovery_Filtered.png" class="ThumbnailPopup" />
-        </p>
+        <p>The currently selected filter remains in effect as you navigate to different windows </p>
         <p class="h3"><a name="pubcloudfilterning"></a><MadCap:variable name="local.Public Cloud" />
         </p>
         <p>Click <span class="ScreenObject">Filter</span>  to specify filtering criteria - the fields available for filtering are specific to the screen displayed; items will only be included in the filtering window if appropriate to the current screen. For example, Assets are not included in the filter for the Applications Screen. When multiple fields are specified, only items matching all the criteria entered will be included (filtering using the AND&#160;operator). </p>

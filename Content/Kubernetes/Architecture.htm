@@ -11,18 +11,13 @@
         <p>
             <MadCap:concept term="Kubernetes" />This is the cloud-based user interface you log into from your browser. It gives you a clear and easy to understand view of the cluster including workloads, network connectivity, vulnerabilities and Kubernetes network policies. Actions include switching the policy mode, adding policy rules, getting API tokens and exporting policy rules. </p>
         <p class="h2">The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /></p>
-        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, <a href="Discovery.htm">discovers new connections</a>, enforces your policy and communicates with the <MadCap:variable name="local-orca.Product_S" /> cloud application. <MadCap:variable name="local-orca.Product_S" /> services are deployed on your cluster in the Kube-System namespace and in a new namespace called Tufin-system, which is created in the installation process. No <MadCap:variable name="local-orca.Product_S" /> services are placed in user or application namespaces. The affected namespaces are illustrated below.</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> is installed on your Kubernetes cluster. It monitors traffic in the cluster, <a href="NewConnections.htm">discovers new connections</a>, enforces your policy and communicates with the <MadCap:variable name="local-orca.Product_S" /> cloud application. <MadCap:variable name="local-orca.Product_S" /> services are deployed on your cluster in the Kube-System namespace and in a new namespace called Tufin-system, which is created in the installation process. No <MadCap:variable name="local-orca.Product_S" /> services are placed in user or application namespaces. The affected namespaces are illustrated below.</p>
         <p>
-            <img src="../SecureCloud-Images/Diagram_Cluster_Namespaces.png" class="noborder" />
-        </p>
-        <p><span class="SpecialBold">SecureCloud on your Cluster - Namespaces</span>
+            <img src="../SecureCloud-Images/Diagram_Cluster_Namespaces2.jpg" class="noborder" />
         </p>
         <p>At installation time, Kubernetes determines the node on which to deploy the Kite pod and DNS&#160;proxy; it deploys the Network Monitor daemonset on every node in the cluster, where permissions allow. This is represented by the illustration below.</p>
         <p>
-            <img src="../SecureCloud-Images/Diagram_Cluster_VMs.png" class="noborder">
-            </img>
-        </p>
-        <p><span class="SpecialBold">SecureCloud on your Cluster - VM view</span>
+            <img src="../SecureCloud-Images/Diagram_Cluster_VMs2.jpg" class="noborder" />
         </p>
         <p>The <MadCap:variable name="local-orca.Agent" /> contains the following services:</p>
         <p class="h3"><MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Kite" /></p>

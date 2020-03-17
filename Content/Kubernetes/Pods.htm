@@ -33,45 +33,33 @@
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Namespace in which the pod is running </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Pod Security</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Host Access</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>If a value appears here, the pod has a permissive security policy, otherwise it will be blank.</p>
-                        <MadCap:snippetBlock src="../SecureCloud/WhatIsPrivilegedPod.flsnp" />
+                        <p>If a value appears here, the pod has access to the host - the node on which the pod was initiated</p>
+                        <MadCap:snippetBlock src="../SecureCloud/WhatIsHostAccess.flsnp" />
                     </td>
-                </tr>
-                <tr style="height: 33px;" class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Status</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <p>Status of the pod:</p>
-                        <ul>
-                            <li><span class="StatusOrValue">Running</span>
-                            </li>
-                            <li><span class="StatusOrValue">Not Running</span>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">IP</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">IP address of the pod</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Labels</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">All labels defined for the pod</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">IP</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">IP address of the pod</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Containers</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All containers in the pod, showing <a href="SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a>.</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Labels</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">All labels defined for the pod</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p class="TableBodyText">Privileged Containers</p>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Containers</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">All containers in the pod, showing <a href="SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a>.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Privileged Mode</p>
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p class="TableBodyText">When Privileged is set to true for the container (privileged=true), it has access to all devices on the host. Values:</p>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">When privileged mode is enabled for a container (privileged=true), it has access to all devices on the host and has nearly the same capabilities as processes running on the host. Values:</p>
                         <ul>
                             <li><span class="StatusOrValue">Privileged</span>: Container has privileged access</li>
-                            <li>Blank: Privileged does not have privileged access</li>
+                            <li>Blank: Container does not have privileged access</li>
                         </ul>
                     </td>
                 </tr>
