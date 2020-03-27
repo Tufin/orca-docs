@@ -22,7 +22,7 @@
                 </p>
             </li>
             <li>
-                <p>If you are the cluster admin, and you can proceed with the deployment on the cluster, copy the deployment command. Either way, you can send yourself an email with the command.</p>
+                <p>To deploy <MadCap:variable name="local.ProductName" /> on the cluster run the command string shown on the screen. You can send yourself an email containing the details.</p>
                 <p>
                     <img src="../SecureCloud-Images/AddYourCluster.png" class="ThumbnailPopup" />
                 </p>
@@ -30,7 +30,21 @@
             <li>
                 <p>Open a terminal and point kubectl to your Kubernetes cluster.</p>
             </li>
-            <li>Run the deployment command as cluster admin.</li>
+            <li>
+                <p>Run the deployment command as cluster admin. If you want to see what the command does without executing it, run it with the dry run parameter:</p>
+                <p class="CodeSegment1">&lt;deployment command&gt; --dry-run true</p>
+            </li>
+            <li>
+                <p>On completion of the command, a number of YAML  files are created that list the actions taken (or, if the dry run parameter is used, that would be taken), in the cluster. </p>
+                <p>The YAML files are:</p>
+                <ul>
+                    <li>
+                        <p>deployment/crd/crd.policy.yaml</p>
+                    </li>
+                    <li>deployment/dns/roles.yaml</li>
+                    <li>Several files in directory .tmp/</li>
+                </ul>
+            </li>
             <li MadCap:conditions="General.Exclude">
                 <p>Run the deployment command as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
 https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.domain" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
@@ -40,7 +54,7 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
                     <li>&lt;<MadCap:variable name="local.project" />&gt; is as provided by you when signing up</li>
                     <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local-orca.Product_S" /></li>
                     <li>
-                        <p>--dry-run true is an optional parameter to see what the installation script does without deploying anything to your cluster ”. It creates yaml files in directory: bash-kite-installer/deployment.</p>
+                        <p>--dry-run true is an optional parameter to see what the installation script does without deploying anything to your cluster ”. It creates YAML  files in directory: bash-kite-installer/deployment.</p>
                     </li>
                 </ul>
             </li>
