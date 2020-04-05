@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p><MadCap:variable name="local-orca.GKE" />, <MadCap:variable name="local-orca.AKS" />, <MadCap:variable name="local-orca.EKS" />, <MadCap:variable name="local-orca.Openshift" />, <MadCap:variable name="local-orca.Docker" /> and <MadCap:variable name="local-orca.pks" /> (VMware / Pivotal)</p>
+        <p>any <a href="https://www.cncf.io/certification/software-conformance/">certified Kubernetes platform</a> version 1.9 or higher including <MadCap:variable name="local-orca.GKE" />, <MadCap:variable name="local-orca.AKS" />, <MadCap:variable name="local-orca.EKS" />, <MadCap:variable name="local-orca.Openshift" />, <MadCap:variable name="local-orca.Docker" />, <MadCap:variable name="local.Kubernetes" /> vanilla and <MadCap:variable name="local-orca.pks" /> (VMware / Pivotal)</p>
     </body>
 </html>
