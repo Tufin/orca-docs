@@ -5,10 +5,12 @@
     </head>
     <body>
         <h1>Services</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>The services window displays all the services in your Kubernetes cluster from nodes to which <MadCap:variable name="local-orca.Product_S" /> has access:</p>
         <p>
             <img src="../Kubernetes-Images/WindowServices2.png" class="ThumbnailPopup" />
         </p>
-        <p>The services window displays all the services in your Kubernetes cluster from nodes to which <MadCap:variable name="local-orca.Product_S" /> has access:</p>
         <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -40,26 +42,34 @@
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">all endpoints exposed by the service that go through an ingress controller</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Ports</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Type</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>the service ports</p>
+                        <p>The type property in the service specification, which describes how the service is exposed: </p>
+                        <ul>
+                            <li>ClusterIP (default): The service is exposed through an internal IP in the cluster, making it accessible only within the cluster</li>
+                            <li>Nodeport:&#160;The service is exposed on each node's IP at a static port, making it accessible from outside the cluster</li>
+                            <li>LoadBalancer:&#160;The service is exposed through a loadbalancer  created in the current cloud with a fixed external IP assigned to it  </li>
+                            <li>ExternalName: The service is exposed via kube-dns as the name specified in the externalName property</li>
+                        </ul>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Public IPs</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">external IP addresses of the service </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Ports</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>the service ports</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">State</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">(not currently used)</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Public IPs</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">external IP addresses of the service </td>
                 </tr>
             </tbody>
         </table>
-        <h2><a name="Actions"></a>Actions Available on this Screen</h2>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
-            <li>None</li>
+            <li>Filter the display</li>
         </ul>
-        <h2><a name="How"></a>How to Get Here</h2>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Services.flsnp" />
     </body>
 </html>

@@ -11,7 +11,7 @@
             <li>Every time a container is deployed to your cluster. <MadCap:variable name="local-orca.Product_S" /> detects this event automatically.</li>
             <li>As part of your CI/CD pipeline. This requires the addition of <a href="ImageScansCICD.htm">commands</a> to the CI/CD script.</li>
         </ol>
-        <p>To perform the analysis, <MadCap:variable name="local-orca.Product_S" /> pulls the container images from their registry and the connection from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to the registry is just like any other new connection; it will show up in <MadCap:xref href="NewConnections.htm">New Connections</MadCap:xref> and you will need to add it to your policy to allow future pulls to work.</p>
+        <p>To perform the analysis, <MadCap:variable name="local-orca.Product_S" /> pulls the container images from their registry and the connection from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to the registry is just like any other new connection; it will show up in <MadCap:xref href="NewConnections.htm">New Connections</MadCap:xref> and you will need to add it to your policy to allow future pulls to work.  If you have a firewall, you must allow every cluster node   access to your container image registries.</p>
         <p>The <MadCap:variable name="local-orca.TufinScore" /> displayed is always for the last image scanned, regardless of what triggered the scan. Badges also refer to the last image scanned unless the image tag is included in the path.</p>
         <p class="h2"><MadCap:variable name="local-orca.TufinScore" /> Calculation</p>
         <ol>

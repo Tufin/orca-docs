@@ -7,15 +7,24 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <p><MadCap:variable name="local-orca.Product_S" /> continually monitors traffic in your cluster, providing you with visibility into traffic flow and discovering new connections and in doing so, helps you formulate your security policy. Monitoring takes place whatever the <a href="../SecureCloud/ConceptOfPolicy.htm#policymode">Policy Mode</a>. </p>
-        <p class="h3">What Type of Connections Does <MadCap:variable name="local-orca.Product_S" /> discover?</p>
+        <p class="normal"><MadCap:variable name="local.ProductName" /> monitors and detects:</p>
         <ul>
-            <li>TCP and UDP connections </li>
-            <li>Connections between service pods</li>
-            <li>Connections from ingress to service pods</li>
-            <li>Connections from service pods to external end-points</li>
-            <li>Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis</li>
+            <li>TCP / UDP network connections between service pods</li>
+            <li>TCP / UDP network connections from ingress to service pods</li>
+            <li>TCP / UDP network connections from service pods to external end-points</li>
+            <li>DNS lookup requests from the cluster</li>
+            <li MadCap:conditions="General.Exclude">Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis (Reuven Harrison)</li>
         </ul>
-        <p>Any traffic found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour. <MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies.</p>
+        <p>Together, these two mechanisms of detection - network connections and DNS lookups give the most complete picture of the connections being made in the cluster because there are cases where one or the other is prevented from working. Examples  are:</p>
+        <ul>
+            <li>When <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.NetworkPolicies" /> are in place and block the connection attempt before the <MadCap:variable name="local.ProductName" /> monitor ever gets to know about it. In this case the DNS container will detect the connection.</li>
+            <li>When the <MadCap:variable name="local.Kubernetes" /> implementation does not use KUBE-DNS or you have chosen to deploy <MadCap:variable name="local.ProductName" /> without this feature. In this case the network monitor will detect the connection.</li>
+        </ul>
+        <p>New connections that are detected by both network and DNS monitors are displayed only once.</p>
+        <p>Anything found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour.</p>
+        <p MadCap:conditions="General.Exclude"><MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies (Reuven Harrison)</p>
+        <p class="h3">Notifications</p>
+        <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
         <p>
             <img src="../SecureCloud-Images/Screen_NewConnections.png" class="ThumbnailPopup" />
         </p>
@@ -34,7 +43,7 @@
             <li>
                 <p><span class="SpecialBold">Destination</span>
                 </p>
-                <p>The name of the service to which the connection was made  or a domain/sub-domain name if the connection was made to a destination outside of the cluster</p>
+                <p>The IP address or name of the service&#160;to which the connection was made</p>
             </li>
             <li>
                 <p><span class="SpecialBold">Destination Namespace</span>
@@ -42,10 +51,6 @@
                 <p>The namespace containing the destination service</p>
             </li>
         </ul>
-        <p class="h3">Connections - Allowed or Blocked?</p>
-        <p>When the <a href="../SecureCloud/ConceptOfPolicy.htm#policymode">Policy Mode</a> is set to <span class="StatusOrValue">Learn</span>, all new connections listed are allowed and when the <span class="StatusOrValue">Policy Mode</span> is set to <span class="StatusOrValue">Enforce </span>all new connections are blocked. </p>
-        <p class="h3">Notifications</p>
-        <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>

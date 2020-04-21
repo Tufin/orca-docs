@@ -136,52 +136,13 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                         </tr>
                     </tbody>
                 </table>
-                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0" MadCap:conditions="General.Exclude">
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Port</th>
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Protocols</th>
-                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Security</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">guru.tufin.io</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP/2</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">registry.tufin.io</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">443</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">HTTP 1.1</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">TLS</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">loginregistry.tufin.io</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">443</td>
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">HTTP 1.1</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">TLS</td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">securecloud.tufin.io</td>
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">443</td>
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">HTTP 1.1</td>
-                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">TLS</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>In addition, if you want to enable <a href="SecurityScore.htm">scanning</a> of your container images for vulnerabilities, you must allow every cluster node   access to your docker image registries.</p>
             </li>
             <li>
                 <p>The deployment bash string must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
                 <p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</pre>
                 </p>
-                <p>where &lt;user&gt; is dependent on your Kubernetes environment. See more <MadCap:xref href="#binding">Examples of Cluster Role Binding Command</MadCap:xref>.</p>
+                <p>where &lt;user&gt; is dependent on your Kubernetes environment. See more <MadCap:xref href="#binding">Examples of Cluster Binding Command</MadCap:xref>.</p>
             </li>
         </ol>
         <p class="h2">Examples</p>
