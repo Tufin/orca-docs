@@ -34,9 +34,6 @@
             <li>
                 <MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref>
             </li>
-            <li MadCap:conditions="General.Exclude">
-                <MadCap:xref href="UserManagement.htm">User Management</MadCap:xref>
-            </li>
             <li><MadCap:variable name="local.PUBLICCLOUD" />
                 <ul>
                     <li>
@@ -73,9 +70,13 @@
             <li><MadCap:variable name="local.KUBERNETES" />
                 <ul>
                     <li>
-                        <MadCap:xref href="../Kubernetes/ServiceGraph.htm">Service Graph</MadCap:xref>
+                        <p>
+                            <MadCap:xref href="../Kubernetes/ServiceGraph.htm">Service Graph</MadCap:xref>
+                        </p>
                     </li>
-                    <li><a href="../Kubernetes/NewConnections.htm">New Connections</a>
+                    <li>
+                        <p><a href="../Kubernetes/NewConnections.htm">New Connections</a>
+                        </p>
                     </li>
                     <li><MadCap:variable name="local.ClusterResources" />
                         <ul>
@@ -96,25 +97,39 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <p><MadCap:variable name="local.Cluster Policy" />
+                        </p>
+                        <ul>
+                            <li>
+                                <MadCap:xref href="../Kubernetes/AllowedConnections.htm">Allowed Connections</MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../Kubernetes/FirewallTickets.htm">Firewall Tickets</MadCap:xref>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><MadCap:variable name="local.Settings" />
+                        </p>
+                        <ul>
+                            <li>
+                                <MadCap:xref href="../Kubernetes/OrcaSettingsGeneral.htm">General </MadCap:xref>
+                            </li>
+                            <li>
+                                <MadCap:xref href="../Kubernetes/OrcaSettingsNotifications.htm">Notifications</MadCap:xref>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
-            <li><MadCap:variable name="local.Cluster Policy" />
+            <li>
+                <p><MadCap:variable name="local.SystemManagement" />
+                </p>
                 <ul>
-                    <li>
-                        <MadCap:xref href="../Kubernetes/AllowedConnections.htm">Allowed Connections</MadCap:xref>
+                    <li><a href="Users.htm"><MadCap:variable name="local.Users" /></a>
                     </li>
-                    <li>
-                        <MadCap:xref href="../Kubernetes/FirewallTickets.htm">Firewall Tickets</MadCap:xref>
-                    </li>
-                </ul>
-            </li>
-            <li><MadCap:variable name="local.Settings" />
-                <ul>
-                    <li>
-                        <MadCap:xref href="../Kubernetes/OrcaSettingsGeneral.htm">General </MadCap:xref>
-                    </li>
-                    <li>
-                        <MadCap:xref href="../Kubernetes/OrcaSettingsNotifications.htm">Notifications</MadCap:xref>
+                    <li><a href="ActiveDirectory.htm"><MadCap:variable name="local.ActiveDirectory" /></a>
                     </li>
                 </ul>
             </li>

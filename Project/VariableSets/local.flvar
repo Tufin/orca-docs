@@ -256,4 +256,15 @@
     Name="AdmissionControllers"
     Comment=""
     EvaluatedDefinition="Admission Controllers">Admission Controllers</Variable>
+  <Variable
+    Name="Account Manager"
+    Comment="" />
+  <Variable
+    Name="SystemManagement"
+    Comment="Menu"
+    EvaluatedDefinition="System Management">System Management</Variable>
+  <Variable
+    Name="ActiveDirectory"
+    Comment="Menu"
+    EvaluatedDefinition="Active Directory">Active Directory</Variable>
 </CatapultVariableSet>

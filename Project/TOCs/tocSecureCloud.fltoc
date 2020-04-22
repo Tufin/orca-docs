@@ -30,6 +30,9 @@
       Link="/Content/SecureCloud/SignUp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
+      Link="/Content/SecureCloud/Login.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
       Link="/Content/SecureCloud/InitialSetup.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
@@ -136,9 +139,6 @@
           Link="/Content/SecureCloud/K8sPermissive-Policies-in-Namespace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
     </TocEntry>
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
-      Link="/Content/SecureCloud/UserManagement.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="Public Cloud">
       <TocEntry
@@ -259,7 +259,16 @@
         Link="/Content/Kubernetes/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
+      Title="System Settings">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/SecureCloud/ActiveDirectory.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/SecureCloud/Users.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/SecureCloud/KeepingDataSafe.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/SecureCloud/KeepingDataSafe.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
   </TocEntry>
 </CatapultToc>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /></h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>SSO - single signon is supported in <MadCap:variable name="local.ProductName" /> using <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> Configuration is required in both applications. Until this configuration is done, the screen appears without details.</p>
+        <p>
+            <img src="../SecureCloud-Images/Screen_ActiveDirectory_NotConfigured.png" />
+        </p>
+        <p>Once the settings have been configured they will be displayed on the screen and can be changed or deleted as required. </p>
+        <p>
+            <img src="../SecureCloud-Images/screen_ActiveDirectory_Configured.png" />
+        </p>
+        <p>A user can <a href="Login.htm">log in</a> to <MadCap:variable name="local.ProductName" /> using their <![CDATA[  ]]><MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> credentials only after all the appropriate settings have been made in your <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.Domain" /> and in <MadCap:variable name="local.ProductName" />. </p>
+        <p class="SubHead1">How do I set up <MadCap:variable name="local.Azure" /> for SSO to <MadCap:variable name="local.ProductName" />?</p>
+        <p class="normal">Set up your <MadCap:variable name="local.Azure" /> account to work with <MadCap:variable name="local.ProductName" /></p>
+        <ol>
+            <li>Log into your <MadCap:variable name="local.Azure" /> account</li>
+            <li>
+                <p>Create a new app registration with the following properties:</p>
+                <ul>
+                    <li>App registration name = <MadCap:variable name="local.ProductName" /></li>
+                    <li>Redirect URI = https://securecloud.tufin.io/auth/realms/&lt;<MadCap:variable name="local.Domain" />&gt;/broker/azure-ad/endpoint, where &lt;<MadCap:variable name="local.Domain" />&gt; is your account name</li>
+                </ul>
+            </li>
+            <li>Add a new client secret to the <MadCap:variable name="local.ProductName" /> app registration</li>
+            <li>Add a token configuration, new groups claim, specifying type security groups</li>
+            <li>
+                <p>You will need the following details from your <MadCap:variable name="local.Azure" /> account for configuring <MadCap:variable name="local.ProductName" />:</p>
+                <ul>
+                    <li>Directory (tenant) ID</li>
+                    <li>Application (client)&#160;ID, created in step 2 above</li>
+                    <li>Client secret value, created in step 3 above</li>
+                    <li>Group claim token value, created in step 4 above</li>
+                </ul>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p class="normal">Enable SSO using <MadCap:variable name="local.Azure" /></p>
+            </li>
+            <li>Disable SSO using <MadCap:variable name="local.Azure" /></li>
+        </ul>
+        <p class="h3">Enable SSO using <MadCap:variable name="local.Azure" /></p>
+        <ol>
+            <li>
+                <p>Click on <span class="ScreenObject">Edit</span>. The Azure details window appears.</p>
+                <p>
+                    <img src="../SecureCloud-Images/Window_AzureAD.png" />
+                </p>
+            </li>
+            <li>
+                <p>Enter the appropriate values:</p>
+                <ul>
+                    <li>Tenant ID - <span class="StatusOrValue">Directory (tenant) ID</span> from your <MadCap:variable name="local.Azure" /> account</li>
+                    <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> from your <MadCap:variable name="local.Azure" /> account</li>
+                    <li>Application Secret - <span class="StatusOrValue">Client secret value</span> from your <MadCap:variable name="local.Azure" /> account</li>
+                    <li>Groups - <span class="StatusOrValue">Group claim token value</span> from your <MadCap:variable name="local.Azure" /> account</li>
+                </ul>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ActiveDirectory.flsnp" />
+    </body>
+</html>

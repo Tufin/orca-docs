@@ -34,7 +34,7 @@
     Title="Getting Started">
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Kubernetes/SignUp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/Kubernetes/DEPRECATEDSignUp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Kubernetes/DeployOnCluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CatapultAliasFile>
 	<Map Name="SCL_Dashboard" Link="/Content/SecureCloud/Dashboard.htm" />
-	<Map Name="SCL_UserManagement" Link="/Content/SecureCloud/UserManagement.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Cluster" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Namespace" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Pod" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Pod.htm" />
@@ -40,6 +39,8 @@
 	<Map Name="SCL_Notifications" Link="/Content/Kubernetes/OrcaSettingsNotifications.htm" />
 	<Map Name="SCL_Vulnerabilities" Link="/Content/Kubernetes/VulnerabilityDetails.htm" />
 	<Map Name="SCL_DiscoveryEngine" Link="/Content/Kubernetes/NewConnections.htm" />
+	<Map Name="SCL_ActiveDirectory" Link="/Content/SecureCloud/UserManagement.htm" />
+	<Map Name="SCL_Users" Link="/Content/SecureCloud/UserManagement.htm" />
 	<Map Name="SCL_SecurityScore" Link="/Content/Kubernetes/SecurityScore.htm" />
 	<Map Name="SCL_Deploy" Link="/Content/Kubernetes/DeployOnCluster.htm" />
 	<Map Name="SCL_OrcaArchitecture" Link="/Content/Kubernetes/Architecture.htm" />
