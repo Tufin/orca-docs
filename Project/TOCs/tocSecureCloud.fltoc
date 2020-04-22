@@ -257,6 +257,15 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Kubernetes/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Cluster Policy">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Kubernetes/KubernetesNetPolicies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Kubernetes/AllowedConnections.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="System Settings">
