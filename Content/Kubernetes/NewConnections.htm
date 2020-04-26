@@ -15,7 +15,7 @@
             <li>DNS lookup requests from the cluster</li>
             <li MadCap:conditions="General.Exclude">Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis (Reuven Harrison)</li>
         </ul>
-        <p>Together, these two mechanisms of detection - network connections and DNS lookups give the most complete picture of the connections being made in the cluster because there are cases where one or the other is prevented from working. Examples  are:</p>
+        <p>Together, these two mechanisms of detection - network connections and DNS lookups - give the most complete picture of the connections being made in the cluster because there are cases where one or the other is prevented from working. Examples  are:</p>
         <ul>
             <li>When <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.NetworkPolicies" /> are in place and block the connection attempt before the <MadCap:variable name="local.ProductName" /> monitor ever gets to know about it. In this case the DNS container will detect the connection.</li>
             <li>When the <MadCap:variable name="local.Kubernetes" /> implementation does not use KUBE-DNS or you have chosen to deploy <MadCap:variable name="local.ProductName" /> without this feature. In this case the network monitor will detect the connection.</li>

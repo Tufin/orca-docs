@@ -27,6 +27,9 @@
                 </ul>
             </li>
             <li>Add a new client secret to the <MadCap:variable name="local.ProductName" /> app registration</li>
+            <li>
+                <p>Check that <MadCap:variable name="local.ProductName" /> App registration has the API permission 'User.Read'  (normally added automatically when creating the app registration) and if not, add it.</p>
+            </li>
             <li>Add a token configuration, new groups claim, specifying type security groups</li>
             <li>
                 <p>You will need the following details from your <MadCap:variable name="local.Azure" /> account for configuring <MadCap:variable name="local.ProductName" />:</p>
@@ -34,7 +37,9 @@
                     <li>Directory (tenant) ID</li>
                     <li>Application (client)&#160;ID, created in step 2 above</li>
                     <li>Client secret value, created in step 3 above</li>
-                    <li>Group claim token value, created in step 4 above</li>
+                    <li>
+                        <p>The object ID of the group you want to access securecloud</p>
+                    </li>
                 </ul>
             </li>
         </ol>
@@ -54,12 +59,12 @@
                 </p>
             </li>
             <li>
-                <p>Enter the appropriate values:</p>
+                <p>Enter the appropriate values, all from your <MadCap:variable name="local.Azure" /> account:</p>
                 <ul>
-                    <li>Tenant ID - <span class="StatusOrValue">Directory (tenant) ID</span> from your <MadCap:variable name="local.Azure" /> account</li>
-                    <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> from your <MadCap:variable name="local.Azure" /> account</li>
-                    <li>Application Secret - <span class="StatusOrValue">Client secret value</span> from your <MadCap:variable name="local.Azure" /> account</li>
-                    <li>Groups - <span class="StatusOrValue">Group claim token value</span> from your <MadCap:variable name="local.Azure" /> account</li>
+                    <li>Tenant ID - <span class="StatusOrValue">Directory (tenant) ID</span> </li>
+                    <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> </li>
+                    <li>Application Secret - <span class="StatusOrValue">Client secret value</span> </li>
+                    <li>Group - <span class="StatusOrValue">The object ID of the required group</span> </li>
                 </ul>
             </li>
         </ol>
