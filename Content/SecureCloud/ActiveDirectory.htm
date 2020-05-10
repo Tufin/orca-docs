@@ -12,9 +12,9 @@
         </p>
         <p>Once the settings have been configured they will be displayed on the screen and can be changed or deleted as required. </p>
         <p>
-            <img src="../SecureCloud-Images/screen_ActiveDirectory_Configured.png" />
+            <img src="../SecureCloud-Images/screen_ActiveDirectory_Configured.png" class="ThumbnailPopup" />
         </p>
-        <p>A user can <a href="Login.htm">log in</a> to <MadCap:variable name="local.ProductName" /> using their <![CDATA[  ]]><MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> credentials only after all the appropriate settings have been made in your <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.Domain" /> and in <MadCap:variable name="local.ProductName" />. </p>
+        <p>A user can <a href="Login.htm">log in</a> to <MadCap:variable name="local.ProductName" /> using their   <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> credentials only after all the appropriate settings have been made in your <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.Domain" /> and in <MadCap:variable name="local.ProductName" />. </p>
         <p class="SubHead1">How do I set up <MadCap:variable name="local.Azure" /> for SSO to <MadCap:variable name="local.ProductName" />?</p>
         <p class="normal">Set up your <MadCap:variable name="local.Azure" /> account to work with <MadCap:variable name="local.ProductName" /></p>
         <ol>
@@ -48,24 +48,30 @@
             <li>
                 <p class="normal">Enable SSO using <MadCap:variable name="local.Azure" /></p>
             </li>
-            <li>Disable SSO using <MadCap:variable name="local.Azure" /></li>
+            <li>Disable SSO using <MadCap:variable name="local.Azure" /> - click <img src="../PublicCloud-Images/icon_Delete.png" class="noborder" /></li>
         </ul>
-        <p class="h3">Enable SSO using <MadCap:variable name="local.Azure" /></p>
+        <p class="h3"><a name="enable"></a>Enable SSO using <MadCap:variable name="local.Azure" /></p>
         <ol>
             <li>
                 <p>Click on <span class="ScreenObject">Edit</span>. The Azure details window appears.</p>
-                <p>
-                    <img src="../SecureCloud-Images/Window_AzureAD.png" />
-                </p>
             </li>
             <li>
                 <p>Enter the appropriate values, all from your <MadCap:variable name="local.Azure" /> account:</p>
+                <p>
+                    <img src="../SecureCloud-Images/Window_AzureAD.png" class="ThumbnailPopup" />
+                </p>
                 <ul>
                     <li>Tenant ID - <span class="StatusOrValue">Directory (tenant) ID</span> </li>
                     <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> </li>
                     <li>Application Secret - <span class="StatusOrValue">Client secret value</span> </li>
-                    <li>Group - <span class="StatusOrValue">The object ID of the required group</span> </li>
+                    <li>Group ID- <span class="StatusOrValue">The object ID of the required group</span> </li>
                 </ul>
+            </li>
+            <li>
+                <p>Save the details</p>
+                <p>
+                    <img src="../SecureCloud-Images/screen_ActiveDirectory_Configured.png" class="ThumbnailPopup" />
+                </p>
             </li>
         </ol>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />

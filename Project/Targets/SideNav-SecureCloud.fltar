@@ -9,7 +9,7 @@
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
   DefaultUrl="/Content/SecureCloud/WhatIsSecureCloud.htm"
-  UseDeviceWidth="true"
+  UseDeviceWidth="false"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="exclude[General.Exclude] "
   OutputFile="index.htm"
