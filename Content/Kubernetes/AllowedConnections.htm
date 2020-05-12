@@ -8,12 +8,13 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <MadCap:snippetBlock src="WhatIsClusterPolicy.flsnp" />
-        <p>
-            <MadCap:concept term="Kubernetes" />IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local-orca.Product_S" /> and later used to create Kubernetes network policies.</p>
+        <p MadCap:conditions="General.Exclude">
+            <MadCap:concept term="Kubernetes" />[REMOVED BECAUSE WE DON'T EXPORT EGRESS POLICIES] IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local-orca.Product_S" /> and later used to create Kubernetes network policies.</p>
+        <p>What Can I See</p>
         <p>
             <img src="../Kubernetes-Images/ScreenPolicyAllowedConnections.png" class="ThumbnailPopup" />
         </p>
-        <p>Initially the list contains two allowed connections:</p>
+        <p>Initially the list contains the following allowed connections:</p>
         <ul>
             <li>
                 <p>From the <MadCap:variable name="local-orca.Kite" /> (Kite) to tufin.io</p>

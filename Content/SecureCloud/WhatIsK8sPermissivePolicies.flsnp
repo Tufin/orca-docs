@@ -4,6 +4,5 @@
     </head>
     <body>
         <p><MadCap:variable name="local.Permissivepolicies" /> are  Kubernetes network policy  specifications that permit ingress access from a wide range of  services, IP addresses or ports.</p>
-        <p>&#160;</p>
     </body>
 </html>

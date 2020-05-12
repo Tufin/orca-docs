@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.CISBenchmarkKubernetes" /> by <MadCap:variable name="local.Project" /></h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>This screen displays all your <MadCap:variable name="local.project" />s  with a summary of how each one stands up against the CIS Benchmarks.</p>
+        <p class="h3">What is the <MadCap:variable name="local.CISBenchmarkKubernetes" />?</p>
+        <MadCap:snippetBlock src="WhatIsCISk8s.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>
+            <img src="../SecureCloud-Images/Screen_K8s_CIS-by-Cluster.png" class="ThumbnailPopup" />
+        </p>
+        <p class="normal">The main screen section is a list of <MadCap:variable name="local.project" />s showing:</p>
+        <ul>
+            <li>
+                <p><span class="ScreenObject">Cluster</span> - the cluster name</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Kubernetes Version</span>
+                </p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Total tests</span> - the number of tests performed on the <MadCap:variable name="local.project" /></p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Failed tests</span>. The number of tests that did not meet the CIS requirement</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Failed</span>. The percentage of tests that failed</p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>
+                <p><b>Drill down</b> to view the <a href="k8sCIS-by-Test.htm">test results</a></p>
+                <p>by clicking on the desired <MadCap:variable name="local.project" />. </p>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_CIS-by-Cluster.flsnp" />
+    </body>
+</html>

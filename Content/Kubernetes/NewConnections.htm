@@ -21,7 +21,7 @@
             <li>When the <MadCap:variable name="local.Kubernetes" /> implementation does not use KUBE-DNS or you have chosen to deploy <MadCap:variable name="local.ProductName" /> without this feature. In this case the network monitor will detect the connection.</li>
         </ul>
         <p>New connections that are detected by both network and DNS monitors are displayed only once.</p>
-        <p>Anything found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one hour. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another hour.</p>
+        <p>Anything found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one day. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another day.</p>
         <p MadCap:conditions="General.Exclude"><MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies (Reuven Harrison)</p>
         <p class="h3">Notifications</p>
         <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
@@ -49,6 +49,11 @@
                 <p><span class="SpecialBold">Destination Namespace</span>
                 </p>
                 <p>The namespace containing the destination service</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Last hit</span>
+                </p>
+                <p>The date and time of the last connection</p>
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />

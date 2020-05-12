@@ -5,6 +5,36 @@
     </head>
     <body>
         <h1>What's New in <MadCap:variable name="local-iris.ProductName" /></h1>
+        <p class="SubHead1">12th May 2020</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 231px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col style="width: 305px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th style="font-weight: normal;" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Title</p>
+                    </th>
+                    <th style="font-weight: normal;" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading"><MadCap:variable name="Topic Templates.HowDoIgetHere" />
+                        </p>
+                    </th>
+                    <th style="font-weight: normal;" class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p class="TableHeading">Details</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">CIS Benchmarks</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_CIS-by-Account.flsnp" />
+                        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_CIS-by-Cluster.flsnp" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">CIS&#160;Benchmarks added to dashboard. More on <a href="CloudCIS-by-Account.htm"><MadCap:variable name="local.CISBenchmarkPublicCloud" /></a><p>More on <a href="k8sCIS-by-Cluster.htm"><MadCap:variable name="local.CISBenchmarkKubernetes" /></a></p></td>
+                </tr>
+            </tbody>
+        </table>
         <p class="SubHead1">10th May 2020</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col style="width: 231px;" class="TableStyle-PatternedRows-Column-Regular" />
@@ -26,6 +56,28 @@
             </thead>
             <tbody>
                 <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Last hit added to <MadCap:variable name="local.NewConnections" /></p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_NewConnections.flsnp" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The date and time of the last connection is kept updated on the screen - <a href="../Kubernetes/NewConnections.htm">more...</a></p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p><MadCap:variable name="local.Newconnections" /> kept for up to one day</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_NewConnections.flsnp" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p><MadCap:variable name="local.Newconnections" /> will be retained for one day if not added to the policy earlier - previously retained for one hour - <a href="../Kubernetes/NewConnections.htm">more...</a></p>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><MadCap:variable name="local.Users" />
                     </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
@@ -35,13 +87,13 @@
                 </tr>
                 <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p class="TableBodyText">SSO Single Signon</p>
+                        <p>SSO Single Signon</p>
                     </td>
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
                         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ActiveDirectory.flsnp" />
                     </td>
                     <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p class="TableBodyText">Login is now possible using <MadCap:variable name="local.Azure" /> Active Directory</p><a href="ActiveDirectory.htm">more...</a>
+                        <p>Login is now possible using <MadCap:variable name="local.Azure" /> Active Directory</p><a href="ActiveDirectory.htm">more...</a>
                     </td>
                 </tr>
             </tbody>

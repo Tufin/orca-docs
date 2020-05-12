@@ -267,4 +267,20 @@
     Name="ActiveDirectory"
     Comment="Menu"
     EvaluatedDefinition="Active Directory">Active Directory</Variable>
+  <Variable
+    Name="CISBenchmarkPublicCloud"
+    Comment=""
+    EvaluatedDefinition="CIS Benchmark for Public Cloud">CIS Benchmark for Public Cloud</Variable>
+  <Variable
+    Name="CISBenchmarkKubernetes"
+    Comment=""
+    EvaluatedDefinition="CIS Benchmark for Kubernetes">CIS Benchmark for Kubernetes</Variable>
+  <Variable
+    Name="CISRecommendation"
+    Comment=""
+    EvaluatedDefinition="Recommendation">Recommendation</Variable>
+  <Variable
+    Name="CISrecommendation"
+    Comment=""
+    EvaluatedDefinition="recommendation">recommendation</Variable>
 </CatapultVariableSet>

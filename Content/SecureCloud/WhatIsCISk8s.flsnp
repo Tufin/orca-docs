@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The <MadCap:variable name="local.CISBenchmarkKubernetes" />is a subset of the security controls developed by the  Center for Internet Security (CIS) and adapted for Kubernetes . These controls have gained widespread acceptance as a baseline for public cloud security and can be downloaded from the <a href="https://www.cisecurity.org/cis-benchmarks">CIS website</a>. <MadCap:variable name="local.ProductName" /> runs an automatic audit process on your <MadCap:variable name="local.project" />s, which checks each control and displays the status of the check together with guidance for remediation. </p>
+    </body>
+</html>

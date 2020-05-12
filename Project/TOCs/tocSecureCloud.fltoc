@@ -87,6 +87,17 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/SecureCloud/CloudTagUsage-by-Asset.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
+        Title="CIS Cloud Benchmark"
+        Link="/Content/SecureCloud/CloudCIS-by-Account.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        MarkAsNew="true">
+        <TocEntry
+          Title="By Cloud Account"
+          Link="/Content/SecureCloud/CloudCIS-by-Account.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+        <TocEntry
+          Title="By Recommendation"
+          Link="/Content/SecureCloud/CloudCIS-by-Test.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
         Title="Kubernetes Vulnerabilities"
         Link="/Content/SecureCloud/K8sVulnerabilities-by-Cluster.htm">
         <TocEntry
@@ -138,6 +149,16 @@
           Title="[%=System.LinkedTitle%]"
           Link="/Content/SecureCloud/K8sPermissive-Policies-in-Namespace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
+      <TocEntry
+        Title="CIS Kubernetes Benchmark"
+        Link="/Content/SecureCloud/k8sCIS-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="By Cluster"
+          Link="/Content/SecureCloud/k8sCIS-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="By Recommendation"
+          Link="/Content/SecureCloud/k8sCIS-by-Test.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="Public Cloud">
@@ -161,6 +182,9 @@
         Link="/Content/PublicCloud/CloudPolicyRules.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Settings">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/PublicCloud/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/PublicCloud/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
