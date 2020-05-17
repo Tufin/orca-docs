@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHere_CIS-by-Cluster.flsnp" /> &gt; <span class="MenuItem"><MadCap:variable name="local.CISRecommendation" /></span></p>
+            <MadCap:snippetText src="GetHere_CIS-by-Cluster.flsnp" /> &gt; <span class="MenuItem">Cluster</span></p>
     </body>
 </html>

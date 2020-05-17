@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
         <h1>
@@ -14,18 +13,25 @@
             <img src="../PublicCloud-Images/Screen_Account_Manager.png" class="ThumbnailPopup" />
         </p>
         <p>Each line under <span class="ScreenObject">Accounts</span> represents one cloud vendor account and displays account information with an indication of the synchronization status for that account. </p>
-        <p>Each line under <span class="ScreenObject">Credentials</span> represents one set of 'cross account' credentials that can be used by one or more accounts as an alternative to defining credentials at the account level.</p>
-        <p>You must make sure you have defined sufficient permissions in your cloud accounts so that <MadCap:variable name="local-iris.ProductName" /> can monitor them. These requirements could change with the addition of new features in the future.</p>
-        <p class="h4">What permissions are needed in my AWS Accounts?</p>
-        <ol>
+        <p>Each line under <span class="ScreenObject">Credentials</span> represents one set of user credentials that can assume a role to access  one or more accounts under <span class="ScreenObject">Accounts</span> as an alternative to defining credentials at the account level.</p>
+        <p>You must  define appropriate permissions in your cloud accounts to allow <MadCap:variable name="local-iris.ProductName" /> to monitor them. </p>
+        <p class="h3"><a name="awsprerequisites"></a>AWS Prerequisites</p>
+        <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName"></MadCap:variable> access your AWS account:</p>
+        <ul>
+            <li>Use the security credentials (access key id and secret) of a user in the account having the required permissions.</li>
+            <li>Give access to a user in another account via a role. Before using this option you must create a role in your AWS account and give the required permissions to the other account. You can optionally specify the requirement of an external key. MFA is not supported in <MadCap:variable name="local.ProductName" />.</li>
+            <li>Give access to Tufin's own AWS account, via a role. Before using this option you must create a role in your AWS account and give the required permissions to the AWS account number 977996679567.</li>
+        </ul>
+        <p>Whichever of the above methods you choose, the authorized user or role accounts must be given at least one of the following permissions:</p>
+        <ul>
             <li>
-                <p>A ReadOnlyAccess policy</p>
+                <p>ReadOnlyAccess policy</p>
             </li>
             <li>
-                <p>A SecurityAudit policy</p>
+                <p>SecurityAudit policy </p>
             </li>
             <li>
-                <p>A custom policy as defined below:</p><pre xml:space="preserve">
+                <p>Custom policy</p><pre xml:space="preserve">
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -48,7 +54,7 @@
 }</pre>
             </li>
             <li>
-                <p>A custom policy as defined below:</p><pre xml:space="preserve">
+                <p>Custom policy</p><pre xml:space="preserve">
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -90,24 +96,31 @@
     ]
 }</pre>
             </li>
-        </ol>
-        <p class="h4">What permissions are needed  in my Azure Accounts?</p>
+        </ul>
+        <p class="h3">What permissions are needed  in my Azure Accounts?</p>
+        <p>All of the following:&#160;(For more information on Azure authorizations, see <a href="https://docs.microsoft.com/he-il/azure/role-based-access-control/overview">What is role-based access control (RBAC) in Azure</a>)</p>
         <ol>
             <li>
                 <p>In Azure Active Directory create a new application registration where:</p>
-                <p>Name=&lt;Your name&gt;</p>
+                <p><span class="ScreenObject">Name</span>=<span class="StatusOrValue">&lt;Your AppReg name&gt;</span></p>
                 <p><span class="ScreenObject">Application Type</span> = <span class="StatusOrValue">Web app / API</span></p>
-                <p><span class="ScreenObject">Sign-on URL</span> = <span class="StatusOrValue">https://iris.tufin.io</span></p>
             </li>
             <li>
                 <p>For the required subscription, under Access control (IAM), add a role assignment to the application registration created in the previous step where:</p>
                 <p><span class="ScreenObject">Role</span>=<span class="StatusOrValue">Reader</span></p>
                 <p><span class="ScreenObject">Assign access to</span>=<span class="StatusOrValue">Azure AD user, group or service principal</span></p>
             </li>
-            <li>Add Directory.read.all permission to the Azure <MadCap:variable name="local.ActiveDirectory" /> Graph API</li>
-            <li>Grant admin consent for Default Directory to the Azure <MadCap:variable name="local.ActiveDirectory" /> Graph API<br /></li>
+            <li>
+                <p>To allow <MadCap:variable name="local.ProductName" /> to perform the CIS&#160;benchmark audit, you will also need to:</p>
+                <ul>
+                    <li>Add Azure Active Directory Graph API permission to the application registration</li>
+                    <li>Add Directory.read.all permission to the Azure <MadCap:variable name="local.ActiveDirectory" /> Graph API</li>
+                    <li>Grant the application registration admin consent for Default Directory </li>
+                </ul>
+            </li>
+            <li>Add a client secret</li>
         </ol>
-        <p>For additional information see <a href="https://docs.microsoft.com/he-il/azure/role-based-access-control/overview">What is role-based access control (RBAC) in Azure</a>.</p>
+        <p>&#160;</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#AddAnAccount">Add an account</a>
@@ -140,185 +153,62 @@
                     <img src="../PublicCloud-Images/Window_Add_AWS-Credentials.png" class="ThumbnailPopup" /> <img src="../PublicCloud-Images/Window_Add_Azure_Account.png" class="ThumbnailPopup" /></p>
             </li>
             <li>
-                <p>Enter Account Display Name. This is for your convenience only and can be any value you choose.</p>
+                <p>Enter Account Display Name. This is for your convenience only and can be any value you choose</p>
             </li>
             <li>
-                <p>Complete the information according to the account type - <MadCap:variable name="local.AWS" /> or <MadCap:variable name="local.Azure" /> and the type of credentials you want to provide: Options as follows:</p>
-                <ul>
-                    <li><a href="#Add_AWS_Account_With_Secret">AWS account using access key with secret</a>
-                    </li>
-                    <li><a href="#Add_AWS_Account_Using_Saved_Secret">AWS account using account ID and saved secret</a>
-                    </li>
-                    <li><a href="#Add_AWS_Using_Tufin">AWS account using a Tufin account</a>
-                    </li>
-                    <li><a href="#Add_Azure_Account_With_Secret">Azure account with secret</a>
-                    </li>
-                    <li><a href="#Add_Azure_Account_Using_Saved_Secret">Azure account using saved secret</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <p>Click <span class="ScreenObject">Add </span>to save. </p>
+                <p>Complete the information according to the account type - <a href="#addaws"><MadCap:variable name="local.AWS" /></a> or <a href="#addazure"><MadCap:variable name="local.Azure" /></a> and click <span class="ScreenObject">Add</span> to save</p>
             </li>
         </ol>
-        <p class="h4"><a name="Add_AWS_Account_With_Secret"></a>AWS Account Using Access Key ID With Secret</p>
-        <p>This option requires the access key information for the account to be added.</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Access key ID</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>From your AWS account details</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Secret Access Key</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your AWS account details</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4"><a name="Add_AWS_Account_Using_Saved_Secret"></a>AWS Account Using Account ID and Saved Secret</p>
-        <p>This option can only be used if you have previously added cross-account credentials appropriate to the account to be added.</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Account ID</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>From your AWS account details</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">ARN Role</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your AWS account details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                        <p>Credential Name</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>As defined in <MadCap:variable name="local-iris.ProductName" /> under credentials</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4"><a name="Add_AWS_Using_Tufin"></a>AWS Account Using a Tufin Account</p>
-        <p>This option can be used if  you have a policy that allows calling AssumeRole on the Amazon Resource Name (ARN) of the role in another account</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">ARN Role</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The Amazon Resource Name (ARN) of a role to assume.
+        <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
+        <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName" /> access your AWS account:</p>
+        <ul>
+            <li>Use the credentials of a user in the account</li>
+            <li>Give access to a user in another account via a role</li>
+            <li>Give access to <MadCap:variable name="local.ProductName" />'s own AWS account, via a role.</li>
+        </ul>
+        <p>All of the above methods have <a href="#awsprerequisites">prerequisites</a>.</p>
+        <p>To specify the credentials of a user in the account:</p>
+        <ol>
+            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
+            <li>Enter Access key ID and Secret Access Key for the designated user in your AWS account</li>
+        </ol>
+        <p>To specify credentials of a user in another account:</p>
+        <ol>
+            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
+            <li>Enter the ARN Role (Amazon Resource Name)  of the designated role in the target account that can be assumed by an authorized user from your other AWS account. 
+Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</li>
+            <li>Enter the external ID if specified in the role permissions for the account that will use the role </li>
+            <li>Select the Credential Name of the account that will use the role. This must be first saved - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
+        </ol>
+        <p>To specify Using <MadCap:variable name="local.ProductName" />'s own AWS account:</p>
+        <ol>
+            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Use Tufin Account</span></li>
+            <li>Enter the desired ARN Role Name.
 
-Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <p>External ID</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p>Optional. A unique identifier that is used by third parties when assuming roles in their customers' accounts. For each role that the third party can assume, they should instruct their customers to ensure the role's trust policy checks for the external ID that the third party generated. Each time the third party assumes the role, they should pass the customer's external ID.</p>
-                        <p><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html">http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html</a>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4">Azure Account With Secret</p>
-        <p>This option requires the access information for the account to be added.</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Subscription ID</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>From your Azure account details</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Tenant</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your Azure account details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Application ID</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>From your Azure account details</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Application Secret</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your Azure account details</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4"><a name="Add_Azure_Account_Using_Saved_Secret"></a>Azure Account Using Saved Secret</p>
-        <p>This option can only be used if you have already added cross-account credentials appropriate to the account to be added.</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Subscription ID</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>From your Azure account details</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Tenant</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">From your Azure account details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                        <p>Credential Name</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>As defined in <MadCap:variable name="local-iris.ProductName" /> under credentials</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</li>
+            <li>Enter the external ID if specified in the role permissions for the <MadCap:variable name="local.ProductName" /> account </li>
+        </ol>
+        <p class="h3"><a name="addazure"></a>Add a <MadCap:variable name="local.Azure" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
+        <p>There are two different ways you can specify the credentials needed by <MadCap:variable name="local-iris.ProductName" /> to access your account:</p>
+        <ul>
+            <li>With single account credentials</li>
+            <li>With cross-account credentials, if you have previously saved cross-account credentials appropriate to the account to be added</li>
+        </ul>
+        <p>To specify a single account secret:</p>
+        <ol>
+            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
+            <li>Enter your Azure Subscription ID </li>
+            <li>Enter Tenant from your Azure active directory</li>
+            <li>Enter Application ID from your application registration</li>
+            <li>Enter Application Secret - a client secret from your application registration</li>
+        </ol>
+        <p>To specify a cross-account secret:</p>
+        <ol>
+            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
+            <li>Enter Subscription ID from your Azure account </li>
+            <li>Enter Tenant from your Azure account</li>
+            <li>Select the desired Credential Name from the credentials you have saved previously - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
+        </ol>
         <p class="h3"><a name="RemoveAnAccount"></a>Remove an Account</p>
         <ol>
             <li>Click on the Ellipsis button <img src="../PublicCloud-Images/Button_Ellipsis.png" class="noborder" style="width: 10px;height: 13px;"></img> for the tag you want to remove. </li>
@@ -341,62 +231,24 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</td>
         </ol>
         <p class="h3"><a name="Add_a_Credential"></a>Add a Cross-Account Credential</p>
         <ol>
-            <li>Make sure the <span class="ScreenObject">Credentials Tab</span> is selected</li>
-            <li>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder" /> to display the Choose Vendor Window </li>
+            <li>Make sure the <span class="ScreenObject">Credentials Tab</span> is selected.</li>
+            <li>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder" /> to display the Choose Vendor Window.</li>
             <li>
                 <p>Click on the vendor for which the account is to be added. The Add Credential Window is displayed.</p>
             </li>
             <li>Enter Credentials Display Name. This is for convenience only and can be any value you choose.</li>
             <li>
-                <p>Enter the remaining fields according to your vendor.</p>
+                <p>Enter the remaining fields according to your vendor:</p>
                 <p class="h4">AWS</p>
-                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col class="TableStyle-PatternedRows-Column-Regular" style="width: 371px;" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Access key ID</td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                <p>From your AWS account details</p>
-                            </td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Secret Access Key</td>
-                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your AWS account details</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>Enter the Access key ID from your AWS account</li>
+                    <li>Enter the Secret Access Key from your AWS account</li>
+                </ul>
                 <p class="h4">Azure</p>
-                <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <thead>
-                        <tr class="TableStyle-PatternedRows-Head-Header1">
-                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                                <p>Application ID</p>
-                            </td>
-                            <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                                <p>From your Azure account details</p>
-                            </td>
-                        </tr>
-                        <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Application Secret</td>
-                            <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">From your Azure account details</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <ul>
+                    <li>Enter Application ID - the application ID of your Azure application registration</li>
+                    <li>Enter Application Secret - a client secret from your application registration</li>
+                </ul>
             </li>
             <li>Click <span class="ScreenObject">Add</span> to save.</li>
         </ol>

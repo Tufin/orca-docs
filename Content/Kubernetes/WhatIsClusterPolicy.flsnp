@@ -3,13 +3,13 @@
     <head>
     </head>
     <body>
-        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is a collection of rules called <a href="AllowedConnections.htm">Allowed Connections</a>; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a 'from' and 'to' location. 'From' locations can be:</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is a collection of rules called <a href="AllowedConnections.htm">Allowed Connections</a>; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a source and destination. Source can be:</p>
         <ul>
             <li>'Ingress' - a location outside the cluster</li>
             <li>A namespace in the cluster</li>
             <li>A Kubernetes service in the cluster and its namespace</li>
         </ul>
-        <p>'To' locations can be:</p>
+        <p>Destination can be:</p>
         <ul>
             <li>A namespace in the cluster</li>
             <li>A Kubernetes service in the cluster and its namespace</li>

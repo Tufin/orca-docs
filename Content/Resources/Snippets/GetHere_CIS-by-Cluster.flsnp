@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <a href="../../SecureCloud/k8sCIS-by-Cluster.htm"><span class="MenuItem"><MadCap:variable name="local.CISBenchmarkKubernetes" /> <MadCap:variable name="local.Widget" /></span></a></p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><a href="../../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a></span>  &gt; <span class="MenuItem"><MadCap:variable name="local.CISBenchmarkKubernetes" /> <MadCap:variable name="local.Widget" /></span></p>
     </body>
 </html>

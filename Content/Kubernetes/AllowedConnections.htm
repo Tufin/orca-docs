@@ -10,17 +10,17 @@
         <MadCap:snippetBlock src="WhatIsClusterPolicy.flsnp" />
         <p MadCap:conditions="General.Exclude">
             <MadCap:concept term="Kubernetes" />[REMOVED BECAUSE WE DON'T EXPORT EGRESS POLICIES] IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local-orca.Product_S" /> and later used to create Kubernetes network policies.</p>
-        <p>What Can I See</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
-            <img src="../Kubernetes-Images/ScreenPolicyAllowedConnections.png" class="ThumbnailPopup" />
+            <img src="../Kubernetes-Images/Screen_AllowedConnections.png" class="ThumbnailPopup" />
         </p>
-        <p>Initially the list contains the following allowed connections:</p>
+        <p>Until you add new ones, the list contains only the following allowed connections:</p>
         <ul>
             <li>
-                <p>From the <MadCap:variable name="local-orca.Kite" /> (Kite) to tufin.io</p>
+                <p>From source <MadCap:variable name="local-orca.Kite" />  to destination tufin.io</p>
             </li>
             <li>
-                <p>From all namespaces to the Kubernetes DNS</p>
+                <p>From source all namespaces to destination Kubernetes DNS</p>
             </li>
         </ul>
         <p>The <MadCap:variable name="local-orca.Kite" /> rule should not be deleted or changed. However, if deleted it can be recreated manually or selected from the <a href="NewConnections.htm">New Connections screen</a>. New allowed connections are added by selecting them from the new connections discovered or defined manually. </p>
@@ -76,11 +76,11 @@
                     </thead>
                     <tbody>
                         <tr class="TableStyle-PatternedRows-Body-LightRows">
-                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">From</td>
+                            <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Source</td>
                             <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Click in the field to display the list of available namespaces and then click on the required value</td>
                         </tr>
                         <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">To </td>
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Destination</td>
                             <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
                                 <p>Type a valid domain name (DNS). Optionally use the wildcard character on the left of the name. This will allow multiple protocols and/or sub-domains to be included in the same rule.</p>
                                 <p>Examples:&#160;api.example.io, *.example.com</p>
