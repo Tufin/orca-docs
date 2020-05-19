@@ -43,8 +43,8 @@ SCL_Notifications,5040,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Mai
 SCL_Vulnerabilities,5041,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
 SCL_DiscoveryEngine,5042,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > KUBERNETES - New Connections
 ;,5043,,,
-SCL_ActiveDirectory,5044,/Content/SecureCloud/UserManagement.htm,SCL,Main Menu > System Settings > Active Directory
-SCL_Users,5045,/Content/SecureCloud/UserManagement.htm,SCL,Main Menu > System Settings > Users
+SCL_ActiveDirectory,5044,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > System Settings > Active Directory
+SCL_Users,5045,/Content/SecureCloud/Users.htm,SCL,Main Menu > System Settings > Users
 ;,5046,,,
 ;,5047,,,
 ;,5048,,,

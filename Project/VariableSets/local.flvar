@@ -67,15 +67,15 @@
   <Variable
     Name="PermissivePolicies"
     Comment="Menu and title"
-    EvaluatedDefinition="Permissive Policies">Permissive Policies</Variable>
+    EvaluatedDefinition="Permissive Network Policies">Permissive Network Policies</Variable>
   <Variable
     Name="permissivepolicies"
     Comment="Mid sentence"
-    EvaluatedDefinition="permissive policies">permissive policies</Variable>
+    EvaluatedDefinition="permissive network policies">permissive network policies</Variable>
   <Variable
     Name="Permissivepolicies"
     Comment="Begin sentence"
-    EvaluatedDefinition="Permissive policies">Permissive policies</Variable>
+    EvaluatedDefinition="Permissive network policies">Permissive network policies</Variable>
   <Variable
     Name="PUBLICCLOUD"
     Comment="Menu"
@@ -276,11 +276,11 @@
     Comment=""
     EvaluatedDefinition="CIS Benchmark for Kubernetes">CIS Benchmark for Kubernetes</Variable>
   <Variable
-    Name="CISRecommendation"
+    Name="CISTest"
     Comment=""
-    EvaluatedDefinition="Recommendation">Recommendation</Variable>
+    EvaluatedDefinition="Test">Test</Variable>
   <Variable
-    Name="CISrecommendation"
+    Name="CIStest"
     Comment=""
-    EvaluatedDefinition="recommendation">recommendation</Variable>
+    EvaluatedDefinition="test">test</Variable>
 </CatapultVariableSet>

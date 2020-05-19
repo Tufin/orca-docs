@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <p>The <MadCap:variable name="local.CISBenchmarkPublicCloud" /> is a subset of the security controls developed by the  Center for Internet Security (CIS) and adapted for <MadCap:variable name="local.Azure" /> and <MadCap:variable name="local.AWS" />. These controls have gained widespread acceptance as a baseline for public cloud security and can be downloaded from the <a href="https://www.cisecurity.org/cis-benchmarks">CIS website</a>. <MadCap:variable name="local.ProductName" /> runs an automatic audit process on your monitored cloud accounts, which checks each control and displays the status of the check together with guidance for remediation. </p>
+        <p>The <MadCap:variable name="local.CISBenchmarkPublicCloud" /> is a subset of the security controls developed by the  Center for Internet Security (CIS) and adapted for <MadCap:variable name="local.Azure" /> and <MadCap:variable name="local.AWS" />. These controls have gained widespread acceptance as a baseline for public cloud security and can be downloaded from the <a href="https://www.cisecurity.org/cis-benchmarks">CIS website</a>. <MadCap:variable name="local.ProductName" /> runs an automatic audit process on your monitored cloud accounts, which tests each control and displays its status, together with guidance for remediation. </p>
     </body>
 </html>

@@ -91,10 +91,10 @@
         Link="/Content/SecureCloud/CloudCIS-by-Account.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
         MarkAsNew="true">
         <TocEntry
-          Title="By Cloud Account"
+          Title="Cloud Accounts"
           Link="/Content/SecureCloud/CloudCIS-by-Account.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
         <TocEntry
-          Title="By Recommendation"
+          Title="Tests"
           Link="/Content/SecureCloud/CloudCIS-by-Test.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
@@ -153,10 +153,10 @@
         Title="CIS Kubernetes Benchmark"
         Link="/Content/SecureCloud/k8sCIS-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
         <TocEntry
-          Title="By Cluster"
+          Title="Clusters"
           Link="/Content/SecureCloud/k8sCIS-by-Cluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
-          Title="By Recommendation"
+          Title="Tests"
           Link="/Content/SecureCloud/k8sCIS-by-Test.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
     </TocEntry>

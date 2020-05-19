@@ -3,7 +3,6 @@
     <head>
     </head>
     <body>
-        <p>
-            <MadCap:snippetText src="GetHere_CIS-by-Account.flsnp" /> &gt; <span class="MenuItem"><MadCap:variable name="local.CISTest" /></span></p>
+        <p>and displays the percentage of your clusters exposed to this risk</p>
     </body>
 </html>

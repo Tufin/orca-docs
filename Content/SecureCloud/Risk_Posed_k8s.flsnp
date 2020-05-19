@@ -3,7 +3,6 @@
     <head>
     </head>
     <body>
-        <p>
-            <MadCap:snippetText src="GetHere_CIS-by-Account.flsnp" /> &gt; <span class="MenuItem"><MadCap:variable name="local.CISTest" /></span></p>
+        <p>indicates the severity of risk posed to your Kubernetes environment due to</p>
     </body>
 </html>
