@@ -9,7 +9,7 @@
             <col class="TableStyle-PageLayout-Column-RightAligned" />
             <tbody>
                 <tr class="TableStyle-PageLayout-Body-Body1">
-                    <td class="TableStyle-PageLayout-BodyB-LeftAligned-Body1">Copyright 2003-2019, Tufin Software Technologies Ltd.</td>
+                    <td class="TableStyle-PageLayout-BodyB-LeftAligned-Body1">Copyright 2003-2020, Tufin Software Technologies Ltd.</td>
                     <td class="TableStyle-PageLayout-BodyA-RightAligned-Body1"><MadCap:variable name="System.PageNumber" />
                     </td>
                 </tr>

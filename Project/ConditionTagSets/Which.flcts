@@ -21,4 +21,8 @@
     BackgroundColor="#ff00bc"
     Name="STFree"
     Comment="Freemium (Firewall Change Tracker)" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="MarketPlace"
+    Comment="Marketplace product" />
 </CatapultConditionTagSet>

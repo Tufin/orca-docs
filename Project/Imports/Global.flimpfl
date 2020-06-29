@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2020-02-18T15:20:53.6614422+02:00">
+  LastImport="2020-06-29T15:36:22.5675928+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -255,6 +255,18 @@
     <Url
       Source="../../../Global/Content/Resources/Custom/Images/logoSecureCloud.png"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoSecureCloud.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/CoverMarketPlace.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/CoverMarketPlace.htm" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_MarketPlace.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_MarketPlace.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/TufinCoverPage1.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/TufinCoverPage1.png" />
+    <Url
+      Source="../../../Global/Project/VariableSets/Marketplace.flvar"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/VariableSets/Marketplace.flvar" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -264,237 +276,249 @@
   <GeneratedFiles>
     <Url
       Source="../../Content/Resources/PageLayouts/Chapters.flpgl"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/PageLayouts/FrontMatter.flpgl"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/styles.css"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TableStyles/PatternedRows.css"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../ConditionTagSets/General.flcts"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../Skins/HTML5 SideNav.flskn"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../Skins/HTML5 TopNav.flskn"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../Skins/HTML5 Tripane.flskn"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../Skins/SideMenu.flskn"
-      TimeStamp="10/4/2018 5:45:47 PM" />
+      TimeStamp="10/04/2018 17:45:47" />
     <Url
       Source="../Skins/TopicToolBar.flskn"
-      TimeStamp="10/4/2018 5:14:09 PM" />
+      TimeStamp="10/04/2018 17:14:09" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerIris.jpg"
-      TimeStamp="10/8/2018 2:49:18 PM" />
+      TimeStamp="10/08/2018 14:49:18" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca.jpg"
-      TimeStamp="10/8/2018 3:11:29 PM" />
+      TimeStamp="10/08/2018 15:11:29" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoIris.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoOrca.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconAction.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconNote.png"
-      TimeStamp="10/7/2018 2:28:02 PM" />
+      TimeStamp="10/07/2018 14:28:02" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconWarning.png"
-      TimeStamp="10/7/2018 2:28:11 PM" />
+      TimeStamp="10/07/2018 14:28:11" />
     <Url
       Source="../VariableSets/custom.flvar"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconExternalLink.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconNoteLight.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerTos2.jpg"
-      TimeStamp="11/11/2018 11:33:54 PM" />
+      TimeStamp="11/11/2018 23:33:54" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoTos2.png"
-      TimeStamp="11/11/2018 11:32:49 PM" />
+      TimeStamp="11/11/2018 23:32:49" />
     <Url
       Source="../Advanced/English (United States) Dictionary.mcdic"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/local.css"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/custom-topnav.css"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-topnav.js"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-tripane.css"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-tripane.js"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-topnav.css"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-tripane.css"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Cover.htm"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/TOC.htm"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureApp.png"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureChange.png"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureTrack.png"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-TopNav.flmsp"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-Tripane.flmsp"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/Footer.flsnp"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/Header.flsnp"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/PageLayout.css"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/TufinLogoforKC.png"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../ConditionTagSets/PageLayout.flcts"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default PDF.fltar"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default TopNav.fltar"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default Tripane.fltar"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default Word.fltar"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../VariableSets/General.flvar"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/TopicTemplates/H2_Actions.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/H2_Get_Here.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Back_to_Top.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WorkingWith.htm"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/BackToTop.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_Actions.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_GetHere.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_Overview.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/custom-sidenav.css"
-      TimeStamp="5/1/2019 2:51:52 PM" />
+      TimeStamp="05/01/2019 14:51:52" />
     <Url
       Source="../../Content/Resources/Custom/custom-sidenav.js"
-      TimeStamp="4/8/2019 3:32:21 PM" />
+      TimeStamp="04/08/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-sidenav.css"
-      TimeStamp="5/1/2019 2:51:47 PM" />
+      TimeStamp="05/01/2019 14:51:47" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerIris_105px.jpg"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca_105px.jpg"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca_84px.jpg"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerTos2_105px.jpg"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../Targets/Templates/Default SideNav.fltar"
-      TimeStamp="5/1/2019 3:18:31 PM" />
+      TimeStamp="05/01/2019 15:18:31" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-SideNav.flmsp"
-      TimeStamp="5/1/2019 3:11:28 PM" />
+      TimeStamp="05/01/2019 15:11:28" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_TufinOrchestrationSuite.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/icon_email16.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_Concepts.htm"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/HowDoI.docx"
-      TimeStamp="9/5/2019 2:18:27 PM" />
+      TimeStamp="09/05/2019 14:18:27" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_TufinOS.png"
-      TimeStamp="9/5/2019 2:18:27 PM" />
+      TimeStamp="09/05/2019 14:18:27" />
     <Url
       Source="../ConditionTagSets/Which.flcts"
-      TimeStamp="9/5/2019 2:18:27 PM" />
+      TimeStamp="09/05/2019 14:18:27" />
     <Url
       Source="../../Content/Resources/TableStyles/PatternedRows_3Col.css"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_Concepts-OLD.htm"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WhatCanIdo.htm"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WorkingWith-OLD.htm"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../VariableSets/Topic Templates.flvar"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerSecureCloud_105px.jpg"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoSecureCloud.png"
-      TimeStamp="1/1/0001 12:00:00 AM" />
+      TimeStamp="01/01/0001 0:00:00" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/CoverMarketPlace.htm"
+      TimeStamp="01/01/0001 0:00:00" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_MarketPlace.png"
+      TimeStamp="01/01/0001 0:00:00" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/TufinCoverPage1.png"
+      TimeStamp="01/01/0001 0:00:00" />
+    <Url
+      Source="../VariableSets/Marketplace.flvar"
+      TimeStamp="01/01/0001 0:00:00" />
   </GeneratedFiles>
 </CatapultProject>

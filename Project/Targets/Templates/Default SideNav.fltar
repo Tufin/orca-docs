@@ -8,7 +8,7 @@
   GlossaryTermConversion="marked"
   Skin="/Project/Skins/HTML5 SideNav.flskn"
   MasterPage="/Content/Resources/MasterPages/Content-SideNav.flmsp"
-  UseDeviceWidth="true"
+  UseDeviceWidth="false"
   ResolveCssVariables="false"
   ExcludeUnreferencedContent="true"
   ConditionTagExpression="include[General.Online] exclude[General.Exclude or General.PDF] ">

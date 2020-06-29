@@ -187,23 +187,23 @@
   <Variable
     Name="VersionSibling"
     Comment=""
-    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+    EvaluatedDefinition="R20-1P">R20-1P</Variable>
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
+    EvaluatedDefinition="R19-3P">R19-3P</Variable>
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
+    EvaluatedDefinition="R19-2P">R19-2P</Variable>
   <Variable
     Name="VersionSibling"
     Comment=""
-    EvaluatedDefinition="R19-2LA">R19-2LA</Variable>
+    EvaluatedDefinition="R19-2P">R19-2P</Variable>
   <Variable
     Name="VersionSibling"
     Comment=""
-    EvaluatedDefinition="R19-3LA">R19-3LA</Variable>
+    EvaluatedDefinition="R19-3P">R19-3P</Variable>
   <Variable
     Name="VersionTufinOS"
     Comment="Version of TufinOS - includes both 2.x and 3.x"
@@ -247,7 +247,7 @@
   <Variable
     Name="STProductName"
     Comment="In ST 2.0 Targets, this resolves to SecureTrack 2.0"
-    EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
+    EvaluatedDefinition="SecureTrack">SecureTrack</Variable>
   <Variable
     Name="TOS"
     Comment=""
@@ -267,13 +267,25 @@
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R20-1LA">R20-1LA</Variable>
+    EvaluatedDefinition="R20-1P">R20-1P</Variable>
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R20-2LA">R20-2LA</Variable>
+    EvaluatedDefinition="R20-2P">R20-2P</Variable>
   <Variable
     Name="STProductName"
     Comment=""
-    EvaluatedDefinition="SecureTrack">SecureTrack</Variable>
+    EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
+  <Variable
+    Name="Freemium"
+    Comment="Fixed"
+    EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
+  <Variable
+    Name="CoverPageImage"
+    Comment=""
+    EvaluatedDefinition="../FrontMatter/Images/product_MarketPlace.png">../FrontMatter/Images/product_MarketPlace.png</Variable>
+  <Variable
+    Name="VersionMarketPlace"
+    Comment=""
+    EvaluatedDefinition="" />
 </CatapultVariableSet>

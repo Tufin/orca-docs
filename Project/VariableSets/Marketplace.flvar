@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultVariableSet>
+  <Variable
+    Name="VaMP"
+    Comment="App Name"
+    EvaluatedDefinition="Vulnerability Mitigation App">Vulnerability Mitigation App</Variable>
+  <Variable
+    Name="Marketplace"
+    Comment="Brand name of portal"
+    EvaluatedDefinition="Marketplace">Marketplace</Variable>
+  <Variable
+    Name="RP_Short"
+    Comment="App Name"
+    EvaluatedDefinition="STRE">STRE</Variable>
+  <Variable
+    Name="ITSM"
+    Comment="App Name"
+    EvaluatedDefinition="Workflow Integrator">Workflow Integrator</Variable>
+  <Variable
+    Name="Tetration_Short"
+    Comment="App Name"
+    EvaluatedDefinition="CTAD">CTAD</Variable>
+  <Variable
+    Name="RP_Long"
+    Comment="App Name"
+    EvaluatedDefinition="SecureTrack Reporting Essentials">SecureTrack Reporting Essentials</Variable>
+  <Variable
+    Name="Tetration_Long"
+    Comment="App Name"
+    EvaluatedDefinition="Cisco Tetration Application Discovery">Cisco Tetration Application Discovery</Variable>
+  <Variable
+    Name="ITSM_Short"
+    Comment=""
+    EvaluatedDefinition="WI">WI</Variable>
+  <Variable
+    Name="VaMP_Short"
+    Comment=""
+    EvaluatedDefinition="VMP">VMP</Variable>
+</CatapultVariableSet>
