@@ -19,7 +19,7 @@
         </p>
         <p>The <MadCap:variable name="local-iris.GlobalMap" /> is a birds-eye view  of your cloud. It shows the topology across multiple cloud accounts, including connections between applications, to the internet and to data centers.</p>
         <p> <img src="../PublicCloud-Images/GlobalMap.png" class="ThumbnailPopup" /></p>
-        <p class="h4">Entities on the <MadCap:variable name="local-iris.GlobalMap" /></p>
+        <p class="h4">Nodes on the <MadCap:variable name="local-iris.GlobalMap" /></p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 288px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -58,31 +58,28 @@
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
                         <img src="../PublicCloud-Images/arrow_black.png" class="noborder" />
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">Permitted traffic flow. Single or dual directional</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">Permitted traffic. Single or dual directional</td>
                 </tr>
             </tbody>
         </table>
-        <p class="h3"><a name="violations"></a>View Policy Violations</p>
-        <p>If one or more assets used by the application violates a policy listed in <a href="CloudPolicyRules.htm">Policy Rules</a> the border and the directional communication arrow will be red.</p>
+        <p class="h3"><a name="violations"></a>
+        </p>
+        <p>If there are <a href="WhatIsViolation.htm">violations</a> in one or more assets used by the application, the icon and it's permitted traffic arrow will be red.</p>
         <p class="h2"><a name="whatcanido"></a><MadCap:variable name="Topic Templates.WhatCanIdo" />
         </p>
         <ul>
-            <li><a href="#repos">Reposition icons </a>
-            </li>
-            <li><a href="#node">View node information</a>
-            </li>
-            <li><a href="#assets">View assets</a>
-            </li>
-            <li>Drill down to an application - double click on the application icon</li>
+            <li><a href="#repos">Reposition icons</a> - drag any element on the screen</li>
+            <li><a href="#node">View node information</a> - click on an application</li>
+            <li><a href="AssetGraph.htm">View <MadCap:variable name="local-iris.ApplicationAssetMap" /></a> - double click on an application</li>
         </ul>
         <p class="h3"><a name="repos"></a>Reposition Icons</p>
         <p class="normal">To make viewing easier, icons can be moved around the screen using the mouse.
 The default layout is restored whenever the screen is redisplayed.</p>
         <p class="h3"><a name="node"></a>View Node Information</p>
-        <p>View details of an application or other node in your VPCs. Click on the desired item and its properties are displayed according to the type of node:</p>
+        <p>View details of an application or other node in your VPCs. Clicking on an item will display the properties window.</p>
         <ul>
             <li>
-                <p>For applications, details include warnings, network connectivity and tags defined for all its associated assets. </p>
+                <p>For applications, the information includes risky access, exposure to the internet and a list of all the tags defined for its associated assets. </p>
                 <p>
                     <img src="../PublicCloud-Images/Screen_Map_Application_Details.png" class="ThumbnailPopup" />
                 </p>
@@ -94,8 +91,6 @@ The default layout is restored whenever the screen is redisplayed.</p>
                 </p>
             </li>
         </ul>
-        <p class="h3"><a name="assets"></a>View Assets</p>
-        <p>If the application has warnings, click on <span class="ScreenObject">View asset list</span> from the <a href="#node">node information window</a> to view the assets with warnings.</p>
         <p class="h2"><a name="get_here"></a><MadCap:variable name="Topic Templates.HowDoIgetHere" />
         </p>
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_GlobalMap.flsnp" />

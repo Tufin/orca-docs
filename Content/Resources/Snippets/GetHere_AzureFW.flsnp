@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.CloudResources" /> - <MadCap:variable name="local.AzureFirewalls" /></span>
+        </p>
+    </body>
+</html>

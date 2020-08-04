@@ -169,13 +169,23 @@
           Link="/Content/PublicCloud/GlobalMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/PublicCloud/Applications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/AssetGraph.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+          <TocEntry
+            Title="Asset List"
+            Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
         <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/ApplicationAssetMap.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Title="Cloud Resources">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/AzureFirewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"

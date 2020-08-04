@@ -2,9 +2,9 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <h3>Service Details </h3>
-        <p>  The service details are displayed on the right panel when you click a specific service. The details displayed include the <MadCap:variable name="local-orca.TufinScore" />, namespace and port information, and a listing of all pods used by the service. For each pod, a listing of all containers and labels are displayed. Each container lists the name of the image and the <MadCap:variable name="local-orca.TufinScore" /> computed for that image. <a href="../../Kubernetes/SecurityScore.htm">How is the <MadCap:variable name="local-orca.TufinScore" /> calculated?</a></p>
+        <p>Click on a service in the <MadCap:variable name="local.ServiceGraph" /> to display the service details  panel. The details include detailed information about the service including its containers, <MadCap:variable name="local-orca.TufinScore" />, ports and labels. <a href="../../Kubernetes/SecurityScore.htm">How is the <MadCap:variable name="local-orca.TufinScore" /> calculated?</a></p>
         <p>
-            <img src="../../Kubernetes-Images/SubwindowServiceDetails.png" class="ThumbnailPopup" />
+            <img src="../../Kubernetes-Images/WindowServiceDetails.png" class="ThumbnailPopup" />
         </p>
     </body>
 </html>

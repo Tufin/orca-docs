@@ -16,6 +16,7 @@
         </ul>
         <p class="h2"><a name="overview"></a><MadCap:variable name="Topic Templates.Overview" />
         </p>
+        <p MadCap:conditions="General.Exclude">This page currently serves 2 purposes - a)&#160;all assets and b)&#160;assets for a selected application. It thus appears twice in the menu, each time with a different title. In the future, we'll break it up and turn it into 2 different topics using snippets</p>
         <p>
             <img src="../PublicCloud-Images/Screen_Assets.png" class="ThumbnailPopup" />
         </p>
@@ -29,6 +30,7 @@
             <li>The application associated with the asset. Click on the application name to display the application.</li>
             <li>The cloud vendor e.g. AWS, Azure</li>
             <li>If the asset is assigned to a load balancer, the load balancer name is displayed</li>
+            <li>'Internet exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity.</li>
             <li>Warning <img src="../PublicCloud-Images/icon_warning.png" class="noborder"></img> If present, indicates a <a href="WhatIsViolation.htm">violation</a></li>
         </ul>
         <p class="h2"><a name="whatcanido"></a><MadCap:variable name="Topic Templates.WhatCanIdo" />
@@ -38,19 +40,17 @@
                 <p><a href="#View">Filter the displayed assets</a> </p>
             </li>
             <li>
-                <p><a href="#AssetDetails">View asset details</a>
-                </p>
+                <p><a href="#AssetDetails">View asset details</a> </p>
             </li>
-            <li><a href="#Resolve">Resolve a violation</a>
+            <li>
+                <p>View the <MadCap:xref href="AssetGraph.htm">[%=local-iris.ApplicationAssetMap%]</MadCap:xref>/ Click on <MadCap:variable name="local-iris.ApplicationAssetMap" /> in the menu (only for assets shown for a selected <MadCap:variable name="local-iris.application" />)</p>
             </li>
         </ul>
         <p class="h3"><a name="View"></a>Filter the Displayed Assets</p>
         <p>The list can be <a href="../SecureCloud/Navigation.htm#pubcloudfilterning">filtered</a> on the following criteria:</p>
         <ul>
-            <li>Violations </li>
-            <li>Internet connectivity </li>
-            <li>Network peering</li>
-            <li>On-premises connectivity</li>
+            <li>Internet exposure</li>
+            <li>Risk<ul><li>Any risk</li><li><MadCap:variable name="local.Policyviolations" /></li><li><MadCap:variable name="local.Riskyports (Start sentence)" /></li><li><MadCap:variable name="local.Permissiveaccess" /></li></ul></li>
             <li>Cloud vendor</li>
             <li>Application name</li>
             <li>Asset name</li>
@@ -60,7 +60,7 @@
         </ul>
         <p>Click on an asset in the list to display <a href="#AssetDetails">details</a> of that asset.</p>
         <p class="h3"><a name="AssetDetails"></a>View Asset Details</p>
-        <p>When clicking on an asset from the <a href="#View">assets list</a>  or from other places in the system, the Asset Details Screen is displayed.</p>
+        <p>When selecting an asset from the <MadCap:variable name="local.Asset List" />, the Asset Details Screen is displayed.</p>
         <p>
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
@@ -71,19 +71,14 @@
                 <p>Properties of the asset including type, security entities, tags and VPC</p>
             </li>
             <li>
-                <p><a href="#Effective_Access">Effective Access</a>
-                </p>
-                <p>Inbound and outbound access considering both security entities and network connectivity</p>
-            </li>
-            <li>
                 <p><a href="#Security">Security Access</a>
                 </p>
-                <p>Access as defined by vendor security entities such as security groups and roles</p>
+                <p>Access as defined by vendor security entities such as security groups and roles. Here you can resolve</p>
             </li>
             <li>
-                <p><a href="#Network">Network Connectivity</a>
+                <p><a href="#Network">Network Configuration</a>
                 </p>
-                <p>Access as specified by vendor routing configuration</p>
+                <p>Displayed for VMs only - the means by which the VM <MadCap:variable name="local.asset" /> is defined to the network</p>
             </li>
             <li>
                 <p><a href="#AssetPolicy">Asset Policy</a>
@@ -96,19 +91,16 @@
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
         <p>This is the default view when displaying the asset; or click <span class="MenuItem">Overview</span> from the Asset Menu.</p>
-        <p>The information pertaining to the select asset is displayed in panels. At the top of the screen, basic information about the asset is shown followed by panels containing additional information.</p>
-        <p class="h4">Network - Gateway Access</p>
-        <p>The effective types of access possible to and from this asset: Highlighted if possible; Grayed-out if not possible:</p>
+        <p>The information pertaining to the select asset is displayed in panels. At the top of the screen, basic information about the asset is shown followed by panels containing additional information. When hovering over fields, the copy-to-clipboard icon is displayed to allow easy copy/paste of screen information.</p>
+        <p class="SubHead1">Exposure</p>
+        <p>Whether exposed to the internet. Two possible values:</p>
         <ul>
-            <li>Internet</li>
-            <li>Network peering</li>
-            <li>On-premises network</li>
+            <li>Internet exposed</li>
+            <li>No internet</li>
         </ul>
-        <p class="h4">Security Entities </p>
-        <p>Lists all security settings associated with the asset e.g. security groups, roles and bucket inline policy.</p>
-        <p class="h4">Tags </p>
-        <p>Lists all tags that apply to this server, in the format key:value or just key. There is no differentiation here between asset-defined tags and custom tags defined in <MadCap:variable name="local-iris.ProductName" />.</p>
-        <p class="h4">Server Properties Panel</p>
+        <p class="SubHead1">Security Control</p>
+        <p>Lists all the security groups, roles and bucket inline policies associated with the asset.</p>
+        <p class="SubHead1">Properties </p>
         <p>The panel title is either Virtual Machine or Storage, depending on the server type. A number of server properties and their values are displayed.</p>
         <p>For virtual machines the following properties are displayed:</p>
         <ul>
@@ -135,15 +127,22 @@
         <p>For more information see <a href="AssetProperties.htm">asset properties</a>. For a more detailed explanation, see the cloud vendor documentation.</p>
         <p><a href="#topofpage"><MadCap:variable name="Topic Templates.BackToTop" /></a>
         </p>
-        <p class="h4"><a name="Effective_Access"></a>Effective Access</p>
-        <p>Effective access is access to and from the asset considering both security entities and network connectivity.</p>
-        <p class="normal">Click <span class="MenuItem">Effective Access</span> from the Asset menu. </p>
+        <p class="SubHead1">Tags </p>
+        <p>Lists all tags that apply to this server, in the format key:value or just key. Includes both asset-defined tags and <a href="WhatIsCustomTags.htm">custom tags</a> defined in <MadCap:variable name="local-iris.ProductName" />.</p>
+        <p class="SubHead1">Issues</p>
+        <p>All security issues found for the <MadCap:variable name="local-iris.asset" /> are listed according to the type of issue:</p>
+        <ul>
+            <li>Risky Access<ul><li><MadCap:variable name="local.Policyviolations" /></li><li>Risky ports</li><li>Permissive sources</li><li>Permissive services</li></ul></li>
+            <li>Tag Usage - No tags</li>
+        </ul>
+        <p class="h4"><a name="Security"></a>Security Access</p>
+        <p>Security access is the access to and from the asset defined by vendor security controls such as security groups and roles.</p>
+        <p class="normal">Click <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
         <p class="normal">
-            <img src="../PublicCloud-Images/Screen_AssetEffectiveAccess.png" class="ThumbnailPopup" />
+            <img src="../PublicCloud-Images/Screen_AssetSecurityAccess.png" class="ThumbnailPopup" />
         </p>
-        <p>This screen has 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; select the appropriate tab. If no information is displayed, no access is allowed.</p>
-        <p>Effective Access Main Card</p>
-        <p>Each card in the list represents an end-to-end access route and includes:</p>
+        <p>This screen can have 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; <span class="ScreenObject">OutBound</span> is shown only if relevant. </p>
+        <p>Each item in the list includes:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular">
             </col>
@@ -157,285 +156,81 @@
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">+</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Expand. Click to display the security access definitions and network connectivity that define the effective access. When clicked, changes to <span class="ScreenObject">-</span> symbol. Click again to collapse.</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Effective Access Icon</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Effective access is allowed or</p>
+                        <p>Effective access is prevented via the network</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The point from which access can be initiated</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The source asset IP, subnet or name or the security control applied to the asset from which access can be initiated. Can be Any.</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Destination</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The point to which access is directed</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Destination </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The destination asset IP, subnet or name or the security control applied to the asset being accessed. Can be Any.</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
                         <p>Service</p>
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The communications service that can be used by the access, can be multiple values, can include port number</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The communications service that can be used by the access; can be multiple values, can include port number</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Warning</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Action</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsViolation.htm">violation</a></td>
+                        <p class="TableBodyText">Allow / Disallow</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Warning</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsViolation.htm">violation</a></td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
                         <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p> (for violations only)</p>
-                        <p>Click on the ellipses icon to view available options: </p>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Enabled only when warning icon shown above. Click on the ellipses icon to view available options: </p>
                         <ul>
-                            <li>Investigate: Display the policy rules that are being violated in this effective access.</li>
-                            <li>Add to Policy: See <a href="#Resolve">Resolve a violation</a></li>
+                            <li>Compare to policy - displays all policy rules pertaining to the asset, below the security access. The same policy details are shown as when clicking <a href="#AssetPolicy">Asset Policy</a>.</li>
+                            <li>
+                                <p>Add to security policy - add a <MadCap:variable name="local-iris.ProductName" /> policy rule</p>
+                                <p> The Add Rule window is displayed. Enter the appropriate details, explained in <a href="CloudPolicyRules.htm">Policy</a>.</p>
+                            </li>
+                            <li>
+                                <p>Delete access from cloud - remove the cloud security rule from the VPC</p>
+                            </li>
                         </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p>Click <span class="ScreenObject">+</span> to expand the card and display the security access definitions and network connectivity that collectively define the effective access; the <span class="ScreenObject">+</span> changes to <span class="ScreenObject">-</span>. Click again to collapse.</p>
-        <p>
-            <img src="../PublicCloud-Images/Screen_AssetEffectiveAccessExpand.png" class="ThumbnailPopup" />
+        <p class="h4" MadCap:conditions="General.Exclude"><a name="Network"></a>
         </p>
-        <p>When the asset's communication is via a non-transparent load balancer, the two stages or hops are listed separately - the first from the source to the load balancer and the second from the load balancer to the asset.</p>
-        <p>
-            <img src="../PublicCloud-Images/Screen_EffectiveAccessHops.png" class="ThumbnailPopup" />
-        </p>
-        <p>Effective Access Expansion Card - Security Access </p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Comments</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Type - icon</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Shield icon indicates a cloud security access setting</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The security entity containing the node from which access can be initiated or if storage asset, the asset name. Can be Any.</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Destination Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The security entity containing the node to which access is directed or, if storage asset, the asset name. Can be Any.</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
-                        <p>Service</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The communications service that can be used by the access; can be multiple values, can include port number</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Action</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">Allow / Disallow</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Control Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The name of the security group or role or other security entity controlling access</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Warning</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsViolation.htm">violation</a></td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
-                        <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
-                        <p>Click on the ellipses icon to view available options: </p>
-                        <p>View Asset Policy: See <a href="#AssetPolicy">Asset Policy</a>.</p>
-                        <p>Delete from cloud (for violations only): See <a href="#Resolve">Resolve a violation</a></p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p>Effective Access Expansion Card - Network Connectivity</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 230px;">
-            </col>
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Comments</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Type - icon</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Network icon indicates a cloud network access setting </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The point from which access can be initiated</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Connection Type</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Local, Internet connectivity, On-premise, Peering</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Destination</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The point to which access is directed</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                        <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>Click on the ellipses icon to view available options: </p>
-                        <p>View Asset Policy: See <a href="#AssetPolicy">Asset Policy</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4"><a name="Security"></a>Security Access</p>
-        <p>Security access is access to and from the asset defined by vendor security entities such as security groups and roles.</p>
-        <p class="normal">Click <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
+        <p class="h4"><a name="Resolve"></a>Network Configuration</p>
+        <p>Displayed for VMs only - the means by which the VM <MadCap:variable name="local.asset" /> is defined to the network, listed separately under peering and on-premise.</p>
         <p class="normal">
-            <img src="../PublicCloud-Images/Screen_AssetSecurityAccess.png" class="ThumbnailPopup" />
+            <img src="../PublicCloud-Images/Screen_AssetNetworkConfiguration.png" class="ThumbnailPopup" />
         </p>
-        <p>This screen has 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; select  the appropriate tab. If no information is displayed, no access is allowed.</p>
-        <p>Each item in the list includes:</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Comments</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Type - icon</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Shield icon indicates a cloud security access setting</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The security entity containing the node from which access can be initiated or if storage asset, the asset name. Can be Any.</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Destination Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The security entity containing the node to which access is directed or, if storage asset, the asset name. Can be Any.</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
-                        <p>Service</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The communications service that can be used by the access; can be multiple values, can include port number</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Action</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">Allow / Disallow</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Control Entity</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The name of the security group or role or other security entity controlling access</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                        <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>Click on the ellipses icon to view available options: </p>
-                        <p>View Asset Policy: See <a href="#AssetPolicy">Asset Policy</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h4"><a name="Network"></a>Network Connectivity</p>
-        <p>Network Connectivity is access to and from the asset defined by vendor routing configuration.</p>
-        <p class="normal">Click <span class="MenuItem">Network Connectivity</span> from the Asset menu. </p>
-        <p class="normal">
-            <img src="../PublicCloud-Images/Screen_AssetNetwork.png" class="ThumbnailPopup" />
-        </p>
-        <p>Each item in the list includes:</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <col class="TableStyle-PatternedRows-Column-Regular">
-            </col>
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Comments</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Type - icon</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Network icon indicates a cloud network access setting </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Source</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The point from which access can be initiated</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p>Connection Type</p>
-                    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Local, Internet connectivity, On-premise, Peering</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Destination</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">The point to which access is directed</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
-                        <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>Click on the ellipses icon to view available options: </p>
-                        <p>View Asset Policy: See <a href="#AssetPolicy">Asset Policy</a> .</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
         <p class="h4"><a name="AssetPolicy"></a>Asset Policy</p>
         <p class="normal">Lists all <MadCap:variable name="local-iris.ProductName" /> policy rules relevant to the current asset</p>
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AssetPolicys.png" class="ThumbnailPopup" />
         </p>
         <p>For a description of the fields, see <a href="CloudPolicyRules.htm">Policy</a>.</p>
-        <p class="h3"><a name="Resolve"></a>Resolve a Violation</p>
-        <p class="normal">
-            <MadCap:snippetText src="WhatIsViolation.flsnp" /> When there is violation, there are two ways it can be resolved:</p>
-        <ol>
-            <li>
-                <p>Add to policy - add a <MadCap:variable name="local-iris.ProductName" /> policy rule</p>
-                <p>Enabled for <span class="ScreenObject">effective access</span> cards with a warning. Click on the ellipses icon on the effective access card and then click on <span class="MenuItem">Add to policy</span>. The Add Rule window is displayed. Enter the appropriate details, explained in <a href="CloudPolicyRules.htm">Policy</a>.</p>
-            </li>
-            <li>
-                <p>Delete from cloud - remove the cloud security rule from the VPC</p>
-                <p>Enabled for <span class="ScreenObject">security access</span> cards with a warning, that have been expanded from an effective access card. Click on the ellipses icon and then click on <span class="MenuItem">Delete from cloud</span>.</p>
-            </li>
-        </ol>
+        <p class="h3"><a name="assetgraph"></a>
+        </p>
+        <p><MadCap:variable name="local-iris.ApplicationAssetMap" /> is a network diagram showing connectivity of assets for a selected <MadCap:variable name="local.application" />. It is only available via the application.</p>
         <p class="h2"><a name="get_here"></a><MadCap:variable name="Topic Templates.HowDoIgetHere" />
         </p>
         <ul>
             <li>
                 <MadCap:snippetText src="../Resources/Snippets/GetHere_Assets.flsnp" /> or</li>
-            <li>from the <a href="ApplicationAssetMap.htm"><MadCap:variable name="local-iris.ApplicationAssetMap" /></a>, click <span class="ScreenObject">All assets</span> or <span class="ScreenObject">Risky assets</span> (filtered view) or</li>
-            <li>from drilling down from a load balancer (filtered view)</li>
+            <li>Click on an <MadCap:variable name="local.application" style="font-weight: bold;" /> in <a href="Applications.htm"><MadCap:variable name="local.Applications" /></a> (filtered view) or</li>
+            <li>Click on a load balancer on the <MadCap:variable name="local-iris.ApplicationAssetMap" /> (filtered view)</li>
         </ul>
-        <p><a href="#topofpage"><MadCap:variable name="Topic Templates.BackToTop" /></a>
-        </p>
     </body>
 </html>

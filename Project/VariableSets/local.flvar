@@ -199,7 +199,7 @@
   <Variable
     Name="ClusterSettings"
     Comment="Menu and title"
-    EvaluatedDefinition="Cluster Settings">Cluster Settings</Variable>
+    EvaluatedDefinition="Settings">Settings</Variable>
   <Variable
     Name="Applications"
     Comment="Menu and title"
@@ -283,4 +283,28 @@
     Name="CIStest"
     Comment=""
     EvaluatedDefinition="test">test</Variable>
+  <Variable
+    Name="CloudResources"
+    Comment="Menu"
+    EvaluatedDefinition="Cloud Resources">Cloud Resources</Variable>
+  <Variable
+    Name="AzureFirewalls"
+    Comment="Menu"
+    EvaluatedDefinition="Azure Firewalls">Azure Firewalls</Variable>
+  <Variable
+    Name="SecurityAccess"
+    Comment="Menu"
+    EvaluatedDefinition="Security Access">Security Access</Variable>
+  <Variable
+    Name="Securityaccess"
+    Comment=""
+    EvaluatedDefinition="Security access">Security access</Variable>
+  <Variable
+    Name="securityaccess"
+    Comment=""
+    EvaluatedDefinition="security access">security access</Variable>
+  <Variable
+    Name="Asset List"
+    Comment="Menu"
+    EvaluatedDefinition="Asset List">Asset List</Variable>
 </CatapultVariableSet>

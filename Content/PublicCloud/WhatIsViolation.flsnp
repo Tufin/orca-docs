@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>A violation in <MadCap:variable name="local-iris.ProductName" /> is a case where access is allowed  by both security access and network connectivity but there is no appropriate <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
+        <p>A violation in <MadCap:variable name="local-iris.ProductName" /> is a case where access is allowed  while going against best practices or policy. Examples: Assets without tags, <MadCap:variable name="local.risky ports (lower case)" /> and access allowed by both security controls and network connectivity without an appropriate <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
     </body>
 </html>

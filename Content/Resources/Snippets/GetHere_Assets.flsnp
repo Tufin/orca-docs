@@ -4,7 +4,7 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.Assets" /></span>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.CloudResources" /> - <MadCap:variable name="local.Assets" /></span>
         </p>
     </body>
 </html>

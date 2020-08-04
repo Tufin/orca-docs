@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Azure Firewalls</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>"Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources" - <a href="https://docs.microsoft.com/en-us/azure/firewall/overview"><MadCap:variable name="local.Azure" /> official documentation</a>. <MadCap:variable name="local.ProductName" /> locates and displays Azure firewalls from all your monitored accounts.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>
+            <img src="../PublicCloud-Images/Screen_AzureFirewalls.png" class="ThumbnailPopup" />
+        </p>
+        <p>The screen displays a list of all Azure firewalls found in your monitored accounts. It contains the following details:</p>
+        <ul>
+            <li>Name - the name of the firewall</li>
+            <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
+            <li>Region - the geographical region of the firewall</li>
+            <li>Vnet - the network on which the firewall is deployed</li>
+            <li>Public IP - One or more IP addresses at which the firewall can be accessed from the internet</li>
+            <li>Private IP - The IP address of the firewall on the Vnet</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>View firewall details  - click on the desired firewall from the <a href="#whatcaniseehere">list</a>.</li>
+        </ul>
+        <p class="h3"><a name="view"></a>View Firewall Details</p>
+        <ol>
+            <li>
+                <p>Click on the desired firewall from the <a href="#whatcaniseehere">list</a>. The Overview screen appears. When hovering over fields, the copy-to-clipboard icon is displayed to allow easy copy/paste of screen information.</p>
+                <p>
+                    <img src="../PublicCloud-Images/Screen_AzureFirewallOverview.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>You can switch between the Overview and Rules screens by clicking on <span class="ScreenObject">Overview</span> or <span class="ScreenObject">Rules</span> in the side menu.</p>
+                <p>
+                    <img src="../PublicCloud-Images/Menu_Firewall.png" />
+                </p>
+            </li>
+        </ol>
+        <p class="h3"><a name="fwoverview"></a>Overview </p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_AzureFirewallOverview.png" class="ThumbnailPopup" />
+        </p>
+        <p>Account is the account name defined in <MadCap:variable name="local.ProductName" /> and all other properties and the tags are as specified for the firewall in your <MadCap:variable name="local.Azure" /> account. When hovering over a pro</p>
+        <ul>
+            <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
+            <li>Name - the name of the firewall</li>
+            <li>ID - unique identifier</li>
+            <li>Private IP - The IP address of the firewall on the Vnet</li>
+            <li>Public IP - One or more IP addresses that can be accessed from the internet</li>
+            <li>Vnet - the network on which the firewall is deployed</li>
+            <li>Subnet - the subnet on which the firewall is deployed</li>
+            <li>Resource group</li>
+            <li>Region - the geographical region of the firewall's Vnet </li>
+            <li>Availability zone </li>
+            <li>Vendor - 'Azure'</li>
+        </ul>
+        <p class="h3"><a name="fwrules"></a>Rules</p>
+        <p>
+            <img src="../PublicCloud-Images/screen_azureFirewallRules.png" class="ThumbnailPopup" />
+        </p>
+        <p>The displayed rules are ordered by priority and can be filtered.</p>
+        <p>The screen is split into NAT rules, network rules and application rules - click on the desired type of rule to switch between them.</p>
+        <p class="normal">
+            <img src="../PublicCloud-Images/Screen_AzureFirewallRuleType.png" class="ThumbnailPopup" />
+        </p>
+        <p>The rule details are displayed as specified on the firewall, as follows:</p>
+        <ul>
+            <li>Priority </li>
+            <li>Name</li>
+            <li>Source</li>
+            <li>Destination</li>
+            <li>Translated Destination (for NAT rules only)</li>
+            <li>Service </li>
+            <li>Translated Service (for NAT rules only)</li>
+            <li>Action (for network and application rules only)</li>
+            <li>Collection</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <ul>
+            <li>
+                <MadCap:snippetText src="../Resources/Snippets/GetHere_AzureFW.flsnp" />
+            </li>
+        </ul>
+    </body>
+</html>

@@ -21,7 +21,8 @@
             </li>
             <li><a href="#Filterin">Filtering </a>
             </li>
-            <li><a href="../Kubernetes/NewConnections.htm">New Connections</a>
+            <li>
+                <MadCap:xref href="#copypaste">Copy / Paste Fields on the Screen</MadCap:xref>
             </li>
         </ul>
         <p class="h2"><a name="menu"></a>Main Menu</p>
@@ -43,7 +44,14 @@
                         <MadCap:xref href="../PublicCloud/Applications.htm">[%=local.Applications%]</MadCap:xref>
                     </li>
                     <li>
-                        <MadCap:xref href="../PublicCloud/Assets.htm">Assets</MadCap:xref>
+                        <p><MadCap:variable name="local.CloudResources" /><![CDATA[                        ]]></p>
+                        <ul>
+                            <li>
+                                <MadCap:xref href="../PublicCloud/Assets.htm">Assets</MadCap:xref>
+                            </li>
+                            <li><MadCap:variable name="local.AzureFirewalls" />
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <MadCap:xref href="../PublicCloud/CloudPolicyRules.htm">[%=local.Cloud Policy%]</MadCap:xref>
@@ -127,6 +135,7 @@
                 <p><MadCap:variable name="local.SystemManagement" />
                 </p>
                 <ul>
+                    <li><MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Domain" /></li>
                     <li><a href="Users.htm"><MadCap:variable name="local.Users" /></a>
                     </li>
                     <li><a href="ActiveDirectory.htm"><MadCap:variable name="local.ActiveDirectory" /></a>
@@ -278,5 +287,7 @@
                 </tr>
             </tbody>
         </table>
+        <p class="h2"><a name="copypaste"></a>Copy / Paste Fields on the Screen</p>
+        <p>A number of screens e.g. <MadCap:xref href="../PublicCloud/Assets.htm">Assets</MadCap:xref>, <MadCap:xref href="../PublicCloud/AzureFirewalls.htm">Azure Firewalls</MadCap:xref>, display the copy-to-clipboard icon when hovering over a field to allow easy copy/paste of screen information.</p>
     </body>
 </html>
