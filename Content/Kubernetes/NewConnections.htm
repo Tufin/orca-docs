@@ -25,6 +25,7 @@
         <p MadCap:conditions="General.Exclude"><MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies (Reuven Harrison)</p>
         <p class="h3">Notifications</p>
         <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
             <img src="../SecureCloud-Images/Screen_NewConnections.png" class="ThumbnailPopup" />
         </p>
@@ -33,12 +34,7 @@
             <li>
                 <p><span class="SpecialBold">Source</span>
                 </p>
-                <p>The name of the service from which the connection was initiated, or 'ingress' if the connection was initiated from outside the cluster</p>
-            </li>
-            <li>
-                <p><span class="SpecialBold">Source Namespace</span>
-                </p>
-                <p>The namespace containing the source service</p>
+                <li>The location from which the connection will be made. Can be Ingress, Any or namespace. If namespace, it may include Kubernetes service, container and process</li>
             </li>
             <li>
                 <p><span class="SpecialBold">Destination</span>
@@ -46,9 +42,9 @@
                 <p>The IP address or name of the service&#160;to which the connection was made</p>
             </li>
             <li>
-                <p><span class="SpecialBold">Destination Namespace</span>
+                <p><span class="SpecialBold">Port</span>
                 </p>
-                <p>The namespace containing the destination service</p>
+                <p>The port through which the connection is made</p>
             </li>
             <li>
                 <p><span class="ScreenObject">Last hit</span>
@@ -59,9 +55,13 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p><span class="SpecialBold">Turn new connections into policy rules (allowed connections)</span>
+                <p><span class="SpecialBold">Turn a new connection into a policy rule</span>
                 </p>
-                <p>Select one or more new connections and click <span class="ScreenObject">Add to Policy</span>. The selected rules will be added to your security policy and removed from the current display and the number of new connections displayed will be updated accordingly.</p>
+                <p>Hover over a new connection and click <img src="../Kubernetes-Images/IconAddLearning.png" alt="" title="" class="noborder" />. The rule will be added to your security policy and removed from the current display and the number of new connections displayed will be updated accordingly.</p>
+            </li>
+            <li>
+                <p>Turn all new connections to policy rules</p>
+                <p>Click <span class="ScreenObject">Add to Policy</span>. </p>
             </li>
         </ul>
         <p class="h2">How do I get here?</p>

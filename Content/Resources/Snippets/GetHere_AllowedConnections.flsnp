@@ -4,6 +4,6 @@
     </head>
     <body>
         <p>
-            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.KUBERNETES" /> </span>- <span class="MenuItem"><MadCap:variable name="local.Cluster Policy" /></span> &gt; <span class="MenuItem"><MadCap:variable name="local.Allowed Connections" /></span></p>
+            <MadCap:snippetText src="GetHereNavigationPrefix.flsnp" /><span class="MenuItem"><MadCap:variable name="local.KUBERNETES" /> </span>- <span class="MenuItem"><MadCap:variable name="local.Cluster Policy" /></span> </p>
     </body>
 </html>

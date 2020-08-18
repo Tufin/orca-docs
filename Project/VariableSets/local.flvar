@@ -262,7 +262,7 @@
   <Variable
     Name="SystemManagement"
     Comment="Menu"
-    EvaluatedDefinition="System Management">System Management</Variable>
+    EvaluatedDefinition="Configuration">Configuration</Variable>
   <Variable
     Name="ActiveDirectory"
     Comment="Menu"
@@ -307,4 +307,20 @@
     Name="Asset List"
     Comment="Menu"
     EvaluatedDefinition="Asset List">Asset List</Variable>
+  <Variable
+    Name="clusterpolicyrule"
+    Comment=""
+    EvaluatedDefinition="cluster policy rule">cluster policy rule</Variable>
+  <Variable
+    Name="RiskConfiguration"
+    Comment="Menu"
+    EvaluatedDefinition="Risk Configuration">Risk Configuration</Variable>
+  <Variable
+    Name="Riskconfiguration"
+    Comment="Begin sentence"
+    EvaluatedDefinition="Risk configuration">Risk configuration</Variable>
+  <Variable
+    Name="riskconfiguration"
+    Comment="Mid sentence"
+    EvaluatedDefinition="risk configuration">risk configuration</Variable>
 </CatapultVariableSet>

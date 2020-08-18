@@ -3,18 +3,15 @@
     <head>
     </head>
     <body>
-        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is a collection of rules called <a href="AllowedConnections.htm">Allowed Connections</a>; it is whitelist policy, containing only allow rules and no deny rules. Each allowed connection consists of a source and destination. Source can be:</p>
+        <p>The <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is a collection of rules specifying connections that should be allowed to the cluster. It is whitelist policy and therefore has  no 'deny' rules. Each rule consists of a source and destination that can be:</p>
         <ul>
+            <li>Any </li>
             <li>'Ingress' - a location outside the cluster</li>
             <li>A namespace in the cluster</li>
-            <li>A Kubernetes service in the cluster and its namespace</li>
-        </ul>
-        <p>Destination can be:</p>
-        <ul>
-            <li>A namespace in the cluster</li>
-            <li>A Kubernetes service in the cluster and its namespace</li>
+            <li>A Kubernetes service in the cluster </li>
+            <li>An external service</li>
             <li>A specific or generic domain name</li>
         </ul>
-        <p><MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> is separate from <a href="KubernetesNetPolicies.htm">Kubernetes network policies</a>, but you can enforce the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Cluster Policy" /> in the cluster as  Kubernetes network policies. Additionally, <MadCap:variable name="local-orca.Product_S" /> provides visibility into your Kubernetes network policies, making them visually more intuitive, clearer and easier to understand than YAML code. </p>
+        <p><MadCap:variable name="local-orca.Product_S" /><MadCap:variable name="local.Cluster Policy" /> is a part of <MadCap:variable name="local.ProductName" /> and is separate from <a href="KubernetesNetPolicies.htm">Kubernetes network policies</a>, which are a part of <MadCap:variable name="local.Kubernetes" />. <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.NetworkPolicies" /> can however be viewed in <MadCap:variable name="local-orca.Product_S" /> in a clear and intuitive way (much easier to understand than YAML code). You can enforce your <MadCap:variable name="local-orca.Product_S" /><MadCap:variable name="local.Cluster Policy" /> in the cluster as  Kubernetes network policies and also by switching the policy mode from <span class="StatusOrValue">Learn</span> to <span class="StatusOrValue">Enforce</span>. </p>
     </body>
 </html>
