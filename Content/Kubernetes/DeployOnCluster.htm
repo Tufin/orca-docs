@@ -30,9 +30,12 @@
                 <p>Open a terminal and point kubectl to your Kubernetes cluster (see <MadCap:xref href="#examplesconnecting">Examples of Connecting to Your Cluster</MadCap:xref>).</p>
             </li>
             <li>
-                <p>Run the deployment command as cluster admin. If you want to see what the command does without executing it, run it with the dry run parameter:</p>
+                <p>Run the deployment command as cluster admin. </p>
+                <p>If you want to see what the command does without executing it, run it with the dry run parameter:</p>
                 <p class="CodeSegment1">&lt;deployment command&gt; --dry-run true</p>
                 <p>If you are using an SSO solution such as AWS Okta, you must modify the command string to the required syntax and be signed in before running the command. </p>
+                <p>There is also an option to install <MadCap:variable name="local-iris.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. If not installed, switching Policy Mode to Enforce will have no effect and Enforce will behave the same as Learn mode. To specify installation without the DNS&#160;sidecar, precede the deployment command with TUFIN_INSTALL_DNS=false, as shown below:</p>
+                <p class="CodeSegment1">TUFIN_INSTALL_DNS=false &lt;deployment command&gt; </p>
             </li>
             <li>
                 <p>On completion of the command, a number of YAML  files are created that list the actions taken (or, if the dry run parameter is used, that would be taken), in the cluster. </p>

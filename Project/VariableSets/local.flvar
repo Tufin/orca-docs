@@ -323,4 +323,8 @@
     Name="riskconfiguration"
     Comment="Mid sentence"
     EvaluatedDefinition="risk configuration">risk configuration</Variable>
+  <Variable
+    Name="MyAccount"
+    Comment="Menu"
+    EvaluatedDefinition="SecureCloud Account">SecureCloud Account</Variable>
 </CatapultVariableSet>

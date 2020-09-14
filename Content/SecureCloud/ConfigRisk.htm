@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>
+            <MadCap:concept term="Settings" /><MadCap:variable name="local.RiskConfiguration" />
+        </h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>
+            <img src="../SecureCloud-Images/Screen_ConfigureRisk.png" class="ThumbnailPopup" />
+        </p>
+        <p>Define your own risk criteria for your <MadCap:variable name="local.ProductName" /> reports</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>Specify high risk ports in <MadCap:variable name="local.public cloud" /> </li>
+            <li>Specify overly permissive <MadCap:variable name="local.public cloud" /> network permissions</li>
+            <li>Specify the <MadCap:variable name="local.Kubernetes" /> workloads to want to report as risks</li>
+        </ul>
+        <p class="h3"><a name="publiccloudports"></a>Specify High Risk Ports in <MadCap:variable name="local.Public Cloud" /></p>
+        <p>Manage the list of ports you want reported as risks when exposed to the internet.</p>
+        <ul>
+            <li>Enable / disable using the toggle</li>
+            <li>
+                <p>To add ports</p>
+                <ol>
+                    <li>Click <span class="ScreenObject">Add Ports</span></li>
+                    <li>Enter one or more ports in the format &lt;[TCP][UDP]&gt;: &lt;port&gt;, separating each port with a comma, e.g. TCP: 23, UDP: 67-68</li>
+                    <li>Click <span class="ScreenObject">Add</span></li>
+                </ol>
+            </li>
+            <li>Remove by clicking on the delete icon</li>
+        </ul>
+        <p class="h3"><a name="publiccloudnetwork"></a>Specify Overly Permissive <MadCap:variable name="local.Public Cloud" /> Network Permissions</p>
+        <p>Specify the network permissions you consider as overly permissive. This is defined by two parameters:</p>
+        <ul>
+            <li>Source subnet:&#160;Any, Larger than class A, Larger than class B, None</li>
+            <li>Services: Any, Any and TCP/UDP 0-65535, None</li>
+        </ul>
+        <p>Enable / disable using the toggle.</p>
+        <p>
+            <p>To change values:</p>
+            <ol>
+                <li>Click on the edit icon</li>
+                <li>Select the appropriate source and service</li>
+                <li>Click <span class="ScreenObject">Save</span></li>
+            </ol>
+        </p>
+        <p class="h3"><a name="k8sworkloads"></a>Specify <MadCap:variable name="local.Kubernetes" /> Workload Security Risks</p>
+        <p>Specify the security contexts you want reported as risks.</p>
+        <p>A fixed list of pod and container security contexts is displayed. You cannot add additional security contexts.</p>
+        <p>Enable / disable using the toggle.</p>
+        <p>When enabled, mark/unmark the checkboxes as required.</p>
+        <p>
+            <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+            <MadCap:snippetBlock src="../Resources/Snippets/GetHere_ConfigureRisk.flsnp" />
+        </p>
+    </body>
+</html>

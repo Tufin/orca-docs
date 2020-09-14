@@ -213,7 +213,7 @@
     <TocEntry
       Title="Kubernetes">
       <TocEntry
-        Title="Visibility">
+        Title="Cluster Visibility">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/ServiceGraph.htm"></TocEntry>
@@ -223,6 +223,9 @@
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/AdmissionControllers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Kubernetes/KubernetesNetPolicies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/Nodes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
@@ -240,14 +243,8 @@
           Link="/Content/Kubernetes/SecurityScore.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
       <TocEntry
-        Title="Cluster Policy">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/Kubernetes/KubernetesNetPolicies.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/Kubernetes/AllowedConnections.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Kubernetes/AllowedConnections.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Settings">
         <TocEntry
@@ -303,13 +300,19 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
-      Title="System Settings">
+      Title="[%=local.Configuration%]">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/SecureCloud/MyAccount.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/SecureCloud/Users.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/SecureCloud/ActiveDirectory.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/SecureCloud/Users.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/SecureCloud/ConfigRisk.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"

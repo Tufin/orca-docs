@@ -123,7 +123,9 @@
         <p>&#160;</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
-            <li><a href="#AddAnAccount">Add an account</a>
+            <li><a href="#addaws">Add an AWS account</a>
+            </li>
+            <li><a href="#addazure">Add an Azure account</a>
             </li>
             <li><a href="#RemoveAnAccount">Remove an account</a>
             </li>
@@ -138,76 +140,99 @@
             <li><a href="#Edit_a_Credential">Edit a cross-account credential</a>
             </li>
         </ul>
-        <p class="h3"><a name="AddAnAccount"></a>Add an Account</p>
+        <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
         <p>The required account must already exist on the cloud environment. </p>
         <ol>
             <li>
                 <p>Make sure the <span class="ScreenObject">Accounts Tab</span> is selected</p>
             </li>
             <li>
-                <p>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder" /> to display the Choose Vendor Window </p>
+                <p>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder" />. </p>
             </li>
             <li>
-                <p>Select the vendor for which the account is to be added. The Add Account Window is displayed according to the vendor selected.</p>
-                <p>
-                    <img src="../PublicCloud-Images/Window_Add_AWS-Credentials.png" class="ThumbnailPopup" /> <img src="../PublicCloud-Images/Window_Add_Azure_Account.png" class="ThumbnailPopup" /></p>
+                <p>Select AWS</p>
             </li>
             <li>
                 <p>Enter Account Display Name. This is for your convenience only and can be any value you choose</p>
+                <p>
+                    <img src="../PublicCloud-Images/Window_Add_AWS-Credentials.png" class="ThumbnailPopup" />
+                </p>
             </li>
             <li>
-                <p>Complete the information according to the account type - <a href="#addaws"><MadCap:variable name="local.AWS" /></a> or <a href="#addazure"><MadCap:variable name="local.Azure" /></a> and click <span class="ScreenObject">Add</span> to save</p>
-            </li>
-        </ol>
-        <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
-        <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName" /> access your AWS account:</p>
-        <ul>
-            <li>Use the credentials of a user in the account</li>
-            <li>Give access to a user in another account via a role</li>
-            <li>Give access to <MadCap:variable name="local.ProductName" />'s own AWS account, via a role.</li>
-        </ul>
-        <p>All of the above methods have <a href="#awsprerequisites">prerequisites</a>.</p>
-        <p>To specify the credentials of a user in the account:</p>
-        <ol>
-            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
-            <li>Enter Access key ID and Secret Access Key for the designated user in your AWS account</li>
-        </ol>
-        <p>To specify credentials of a user in another account:</p>
-        <ol>
-            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
-            <li>Enter the ARN Role (Amazon Resource Name)  of the designated role in the target account that can be assumed by an authorized user from your other AWS account. 
+                <p>Select the connection type</p>
+                <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName" /> access your AWS account:</p>
+                <ul>
+                    <li>Use the credentials of a user in the account</li>
+                    <li>Give access to a user in another account via a role</li>
+                    <li>Give access to <MadCap:variable name="local.ProductName" />'s own AWS account, via a role</li>
+                </ul>
+                <p>All of the above methods have <a href="#awsprerequisites">prerequisites</a>.</p>
+                <p>To specify the credentials of a user in the account:</p>
+                <ul>
+                    <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
+                    <li>Enter Access key ID and Secret Access Key for the designated user in your AWS account</li>
+                </ul>
+                <p>To specify credentials of a user in another account:</p>
+                <ul>
+                    <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
+                    <li>Enter the ARN Role (Amazon Resource Name)  of the designated role in the target account that can be assumed by an authorized user from your other AWS account. 
 Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</li>
-            <li>Enter the external ID if specified in the role permissions for the account that will use the role </li>
-            <li>Select the Credential Name of the account that will use the role. This must be first saved - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
-        </ol>
-        <p>To specify Using <MadCap:variable name="local.ProductName" />'s own AWS account:</p>
-        <ol>
-            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Use Tufin Account</span></li>
-            <li>Enter the desired ARN Role Name.
+                    <li>Enter the external ID if specified in the role permissions for the account that will use the role </li>
+                    <li>Select the Credential Name of the account that will use the role. This must be first saved - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
+                </ul>
+                <p>To specify Using <MadCap:variable name="local.ProductName" />'s own AWS account:</p>
+                <ul>
+                    <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Use Tufin Account</span></li>
+                    <li>Enter the desired ARN Role Name.
 
 Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</li>
-            <li>Enter the external ID if specified in the role permissions for the <MadCap:variable name="local.ProductName" /> account </li>
+                    <li>Enter the external ID if specified in the role permissions for the <MadCap:variable name="local.ProductName" /> account </li>
+                </ul>
+            </li>
+            <li>Click <span class="ScreenObject">Add</span> to save</li>
         </ol>
         <p class="h3"><a name="addazure"></a>Add a <MadCap:variable name="local.Azure" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
-        <p>There are two different ways you can specify the credentials needed by <MadCap:variable name="local-iris.ProductName" /> to access your account:</p>
-        <ul>
-            <li>With single account credentials</li>
-            <li>With cross-account credentials, if you have previously saved cross-account credentials appropriate to the account to be added</li>
-        </ul>
-        <p>To specify a single account secret:</p>
+        <p>The required account must already exist on the cloud environment. </p>
         <ol>
-            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
-            <li>Enter your Azure Subscription ID </li>
-            <li>Enter Tenant from your Azure active directory</li>
-            <li>Enter Application ID from your application registration</li>
-            <li>Enter Application Secret - a client secret from your application registration</li>
-        </ol>
-        <p>To specify a cross-account secret:</p>
-        <ol>
-            <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
-            <li>Enter your Azure Subscription ID </li>
-            <li>Enter Tenant from your Azure active directory</li>
-            <li>Select the desired Credential Name from the credentials you have saved previously - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
+            <li>
+                <p>Make sure the <span class="ScreenObject">Accounts Tab</span> is selected</p>
+            </li>
+            <li>
+                <p>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder"></img> to display the Choose Vendor Window </p>
+            </li>
+            <li>
+                <p>Select Azure.</p>
+            </li>
+            <li>
+                <p>Enter Account Display Name. This is for your convenience only and can be any value you choose</p>
+                <p>
+                    <img src="../PublicCloud-Images/Window_Add_Azure_Account.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Select the connection type</p>
+                <p>There are two different ways you can specify the credentials needed by <MadCap:variable name="local-iris.ProductName" /> to access your account:</p>
+                <ul>
+                    <li>With single account credentials</li>
+                    <li>With cross-account credentials, if you have previously saved cross-account credentials appropriate to the account to be added</li>
+                </ul>
+                <p>To specify a single account secret:</p>
+                <ul>
+                    <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
+                    <li>Enter your Azure Subscription ID </li>
+                    <li>Enter Tenant from your Azure active directory</li>
+                    <li>Enter Application ID from your application registration</li>
+                    <li>Enter Application Secret - a client secret from your application registration</li>
+                </ul>
+                <p>To specify a cross-account secret:</p>
+                <ul>
+                    <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Cross-Account Credentials </span></li>
+                    <li>Enter your Azure Subscription ID </li>
+                    <li>Enter Tenant from your Azure active directory</li>
+                    <li>Select the desired Credential Name from the credentials you have saved previously - see <MadCap:xref href="#Add_a_Credential">Add a Cross-Account Credential</MadCap:xref>.</li>
+                </ul>
+            </li>
+            <li>Click <span class="ScreenObject">Add</span> to save</li>
         </ol>
         <p class="h3"><a name="RemoveAnAccount"></a>Remove an Account</p>
         <ol>
