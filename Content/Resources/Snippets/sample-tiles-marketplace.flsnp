@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div class="row-of-three-tiles">
+            <div class="mp-tile-container">
+                <div class="mp-tile-item">
+                    <h2><MadCap:variable name="Marketplace.Tetration_Long" />
+                    </h2>
+                    <p>Integrate Cisco Tetration Analytics to Tufin Orchestration Suite's SecureApp</p>
+                    <div class="mp-tile-links">
+                        <p><a href="">What's New</a>
+                        </p>
+                    </div>
+                    <div class="mp-tile-category">
+                        <p>Reporting</p>
+                    </div>
+                    <div class="mp-tile-learn-more">
+                        <p><a href="/index.htm#cshid=VMP_Latest">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mp-tile-item">
+                    <h2><MadCap:variable name="Marketplace.ITSM" />
+                    </h2>
+                    <p>Simplify SecureChange integrations to third party solutions with the REST integration solution</p>
+                    <div class="mp-tile-category">
+                        <p>Reporting</p>
+                    </div>
+                    <div class="mp-tile-learn-more">
+                        <p><a href="/index.htm#cshid=VMP_Latest">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mp-tile-item">
+                    <h2><MadCap:variable name="Marketplace.RP_Long" />
+                    </h2>
+                    <p>SecureTrack Reporting Essentials provides additional reports and delivery capabilities</p>
+                    <div class="mp-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                    </div>
+                    <div class="mp-tile-category">
+                        <p>Reporting</p>
+                    </div>
+                    <div class="mp-tile-learn-more">
+                        <p><a href="/index.htm#cshid=VMP_Latest">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mp-tile-item">
+                    <h2><MadCap:variable name="Marketplace.VaMP" />
+                    </h2>
+                    <p>Correlate exploitable vulnerabilities to access in SecureTrack and mitigate through SecureChange</p>
+                    <div class="mp-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                        <p><a href="">Link 3</a>
+                        </p>
+                    </div>
+                    <div class="mp-tile-category">
+                        <p>Reporting</p>
+                    </div>
+                    <div class="mp-tile-learn-more">
+                        <p><a href="/index.htm#cshid=VMP_Latest">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

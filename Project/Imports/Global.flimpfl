@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2020-06-29T15:36:22.5675928+03:00">
+  LastImport="2020-09-15T07:52:40.7171355+03:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -226,9 +226,6 @@
       Source="../../../Global/Content/Resources/TopicTemplates/Template_Concepts.htm"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/TopicTemplates/Template_Concepts.htm" />
     <Url
-      Source="../../../Global/Content/HowDoI.docx"
-      AbsoluteSource="file:///C:/TufinDocs/Global/Content/HowDoI.docx" />
-    <Url
       Source="../../../Global/Content/Resources/FrontMatter/Images/product_TufinOS.png"
       AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_TufinOS.png" />
     <Url
@@ -267,6 +264,147 @@
     <Url
       Source="../../../Global/Project/VariableSets/Marketplace.flvar"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/VariableSets/Marketplace.flvar" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/custom-tiles.css"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/custom-tiles.css" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/logoDocteam.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/logoDocteam.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn45-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn45-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn45-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn45-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn46-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn46-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn46-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn46-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn65-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn65-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn65-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn65-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn66-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn66-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn66-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn66-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn75-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn75-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn75-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn75-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn76-webfont.woff"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn76-webfont.woff" />
+    <Url
+      Source="../../../Global/Content/Resources/Fonts/ftn76-webfont.woff2"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Fonts/ftn76-webfont.woff2" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Cover2020.htm"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Cover2020.htm" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureApp2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureApp2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureChange2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureChange2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureCloud2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureCloud2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_SecureTrack2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_SecureTrack2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/Product_TOS2_2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/Product_TOS2_2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/Product_TOS_2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/Product_TOS_2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/product_TufinOS2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/product_TufinOS2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/ReleaseNotes2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/ReleaseNotes2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/FrontMatter/Images/WhatsNew2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/FrontMatter/Images/WhatsNew2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_RN.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_RN.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_SApp.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_SApp.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_SChange.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_SChange.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_SCloud.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_SCloud.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_STrack.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_STrack.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_TufinOS.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_TufinOS.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Cover2020_WhatsNew.flpgl"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Cover2020_WhatsNew.flpgl" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundRN.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundRN.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundRN_full.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundRN_full.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundSApp.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundSApp.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundSChange.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundSChange.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundSCloud.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundSCloud.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundSTrack.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundSTrack.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundTufinOS.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundTufinOS.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundTufinOS_full.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundTufinOS_full.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundWhatsNew.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundWhatsNew.png" />
+    <Url
+      Source="../../../Global/Content/Resources/PageLayouts/Assets/BackgroundWhatsNew_full.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/PageLayouts/Assets/BackgroundWhatsNew_full.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Snippets/MiniTOC.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Snippets/MiniTOC.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/Snippets/sample-tiles-marketplace.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Snippets/sample-tiles-marketplace.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/Snippets/sample-tiles-otherinfo.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Snippets/sample-tiles-otherinfo.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/Snippets/sample-tiles-product.flsnp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Snippets/sample-tiles-product.flsnp" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/Arrow-Down.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/Arrow-Down.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Stylesheets/Images/Arrow-Right.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Stylesheets/Images/Arrow-Right.png" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -276,64 +414,64 @@
   <GeneratedFiles>
     <Url
       Source="../../Content/Resources/PageLayouts/Chapters.flpgl"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/PageLayouts/FrontMatter.flpgl"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/styles.css"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TableStyles/PatternedRows.css"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../ConditionTagSets/General.flcts"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../Skins/HTML5 SideNav.flskn"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../Skins/HTML5 TopNav.flskn"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../Skins/HTML5 Tripane.flskn"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../Skins/SideMenu.flskn"
-      TimeStamp="10/04/2018 17:45:47" />
+      TimeStamp="04/10/2018 17:45:47" />
     <Url
       Source="../Skins/TopicToolBar.flskn"
-      TimeStamp="10/04/2018 17:14:09" />
+      TimeStamp="04/10/2018 17:14:09" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerIris.jpg"
-      TimeStamp="10/08/2018 14:49:18" />
+      TimeStamp="08/10/2018 14:49:18" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca.jpg"
-      TimeStamp="10/08/2018 15:11:29" />
+      TimeStamp="08/10/2018 15:11:29" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoIris.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoOrca.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconAction.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconNote.png"
-      TimeStamp="10/07/2018 14:28:02" />
+      TimeStamp="07/10/2018 14:28:02" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconWarning.png"
-      TimeStamp="10/07/2018 14:28:11" />
+      TimeStamp="07/10/2018 14:28:11" />
     <Url
       Source="../VariableSets/custom.flvar"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconExternalLink.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/Images/iconNoteLight.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerTos2.jpg"
       TimeStamp="11/11/2018 23:33:54" />
@@ -342,183 +480,321 @@
       TimeStamp="11/11/2018 23:32:49" />
     <Url
       Source="../Advanced/English (United States) Dictionary.mcdic"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Stylesheets/local.css"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/custom-topnav.css"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-topnav.js"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-tripane.css"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/custom-tripane.js"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-topnav.css"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-tripane.css"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Cover.htm"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/TOC.htm"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureApp.png"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureChange.png"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_SecureTrack.png"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-TopNav.flmsp"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-Tripane.flmsp"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/Footer.flsnp"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/Header.flsnp"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/PageLayout.css"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/TufinLogoforKC.png"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../ConditionTagSets/PageLayout.flcts"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default PDF.fltar"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default TopNav.fltar"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default Tripane.fltar"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../Targets/Templates/Default Word.fltar"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../VariableSets/General.flvar"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/TopicTemplates/H2_Actions.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/H2_Get_Here.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Back_to_Top.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WorkingWith.htm"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/BackToTop.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_Actions.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_GetHere.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/H2_Overview.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Collateral/UL_Contents.flsnp"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/custom-sidenav.css"
-      TimeStamp="05/01/2019 14:51:52" />
+      TimeStamp="01/05/2019 14:51:52" />
     <Url
       Source="../../Content/Resources/Custom/custom-sidenav.js"
-      TimeStamp="04/08/2019 15:32:21" />
+      TimeStamp="08/04/2019 15:32:21" />
     <Url
       Source="../../Content/Resources/Custom/theme-sidenav.css"
-      TimeStamp="05/01/2019 14:51:47" />
+      TimeStamp="01/05/2019 14:51:47" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerIris_105px.jpg"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca_105px.jpg"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerOrca_84px.jpg"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerTos2_105px.jpg"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../Targets/Templates/Default SideNav.fltar"
-      TimeStamp="05/01/2019 15:18:31" />
+      TimeStamp="01/05/2019 15:18:31" />
     <Url
       Source="../../Content/Resources/MasterPages/Content-SideNav.flmsp"
-      TimeStamp="05/01/2019 15:11:28" />
+      TimeStamp="01/05/2019 15:11:28" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_TufinOrchestrationSuite.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/icon_email16.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_Concepts.htm"
-      TimeStamp="01/01/0001 0:00:00" />
-    <Url
-      Source="../../Content/HowDoI.docx"
-      TimeStamp="09/05/2019 14:18:27" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_TufinOS.png"
-      TimeStamp="09/05/2019 14:18:27" />
+      TimeStamp="05/09/2019 14:18:27" />
     <Url
       Source="../ConditionTagSets/Which.flcts"
-      TimeStamp="09/05/2019 14:18:27" />
+      TimeStamp="05/09/2019 14:18:27" />
     <Url
       Source="../../Content/Resources/TableStyles/PatternedRows_3Col.css"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_Concepts-OLD.htm"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WhatCanIdo.htm"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/TopicTemplates/Template_WorkingWith-OLD.htm"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../VariableSets/Topic Templates.flvar"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/headerSecureCloud_105px.jpg"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/Custom/Images/logoSecureCloud.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/FrontMatter/CoverMarketPlace.htm"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/FrontMatter/Images/product_MarketPlace.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../../Content/Resources/PageLayouts/Assets/TufinCoverPage1.png"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
     <Url
       Source="../VariableSets/Marketplace.flvar"
-      TimeStamp="01/01/0001 0:00:00" />
+      TimeStamp="01/01/0001 00:00:00" />
+    <Url
+      Source="../../Content/Resources/Custom/custom-tiles.css"
+      TimeStamp="10/09/2020 16:46:35" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/logoDocteam.png"
+      TimeStamp="24/08/2020 18:37:18" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn45-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn45-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn46-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn46-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn65-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn65-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn66-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn66-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn75-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn75-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn76-webfont.woff"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Fonts/ftn76-webfont.woff2"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Cover2020.htm"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureApp2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureChange2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureCloud2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_SecureTrack2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/Product_TOS2_2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/Product_TOS_2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/product_TufinOS2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/ReleaseNotes2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/FrontMatter/Images/WhatsNew2020.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_RN.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_SApp.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_SChange.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_SCloud.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_STrack.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_TufinOS.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Cover2020_WhatsNew.flpgl"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundRN.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundRN_full.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundSApp.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundSChange.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundSCloud.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundSTrack.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundTufinOS.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundTufinOS_full.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundWhatsNew.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Assets/BackgroundWhatsNew_full.png"
+      TimeStamp="23/08/2020 16:06:58" />
+    <Url
+      Source="../../Content/Resources/Snippets/MiniTOC.flsnp"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Snippets/sample-tiles-marketplace.flsnp"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Snippets/sample-tiles-otherinfo.flsnp"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Snippets/sample-tiles-product.flsnp"
+      TimeStamp="01/09/2020 11:02:09" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/Arrow-Down.png"
+      TimeStamp="03/09/2020 10:18:01" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Images/Arrow-Right.png"
+      TimeStamp="03/09/2020 10:18:01" />
   </GeneratedFiles>
 </CatapultProject>

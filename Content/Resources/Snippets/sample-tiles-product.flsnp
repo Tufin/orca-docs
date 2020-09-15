@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <div class="row-of-three-tiles">
+            <div class="pd-tile-container">
+                <div class="pd-tile-item">
+                    <div class="pd-tile-header">
+                        <p>
+                            <img src="../../Resources/FrontMatter/Images/product_TufinOS2020.png" class="noborder" />
+                        </p>
+                    </div>
+                    <div class="pd-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                        <p><a href="">Link 3</a>
+                        </p>
+                        <p><a href="">Link 4</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pd-tile-item">
+                    <div class="pd-tile-header">
+                        <p>
+                            <img src="../../Resources/FrontMatter/Images/product_SecureApp2020.png" class="noborder" />
+                        </p>
+                    </div>
+                    <div class="pd-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                        <p><a href="">Link 3</a>
+                        </p>
+                        <p><a href="">Link 4</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pd-tile-item">
+                    <div class="pd-tile-header">
+                        <p>
+                            <img src="../../Resources/FrontMatter/Images/product_SecureChange2020.png" class="noborder" />
+                        </p>
+                    </div>
+                    <div class="pd-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                        <p><a href="">Link 3</a>
+                        </p>
+                        <p><a href="">Link 4</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pd-tile-item">
+                    <div class="pd-tile-header">
+                        <p>
+                            <img src="../../Resources/FrontMatter/Images/product_TOS2_2020.png" class="noborder" />
+                        </p>
+                    </div>
+                    <div class="pd-tile-links">
+                        <p><a href="">Release Notes</a>
+                        </p>
+                        <p><a href="">What's New</a>
+                        </p>
+                        <p><a href="">Link 3</a>
+                        </p>
+                        <p><a href="">Link 4</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

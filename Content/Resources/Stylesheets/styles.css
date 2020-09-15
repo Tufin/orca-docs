@@ -3,6 +3,110 @@
 	
 }
 
+/* Fonts and styles listed below match the Tufin web site, per Marketing July 2020 */
+
+/*Futura PT Heavy.*/
+
+@font-face 
+{
+	font-family: 'futura-pt-heavy';
+	src: url(../Fonts/ftn75-webfont.woff2) format('woff2'), url(../Fonts/ftn75-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-pt-heavy
+{
+	font-family: 'futura-pt-heavy';
+	font-weight: 500;
+}
+
+/*Futura PT Heavy Italic.*/
+
+@font-face 
+{
+	font-family: 'futura-pt-heavy-italic';
+	src: url(../Fonts/ftn76-webfont.woff2) format('woff2'), url(../Fonts/ftn76-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-pt-heavy-italic
+{
+	font-family: 'futura-pt-heavy-italic';
+	font-weight: 500;
+}
+
+/*Futura PT Demi.*/
+
+@font-face 
+{
+	font-family: 'futura-pt-demi';
+	src: url(../Fonts/ftn65-webfont.woff2) format('woff2'), url(../Fonts/ftn65-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-pt-demi
+{
+	font-family: 'futura-pt-demi';
+}
+
+/*Futura PT Demi Italic.*/
+
+@font-face 
+{
+	font-family: 'futura-pt-demi-italic';
+	src: url(../Fonts/ftn66-webfont.woff2) format('woff2'), url(../Fonts/ftn66-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-pt-demi-italic
+{
+	font-family: 'futura-pt-demi-italic';
+}
+
+/*Futura PT Medium.*/
+
+.futura-pt-medium
+{
+	font-family: 'futura-pt-book';
+	font-weight: 500;
+}
+
+.futura-pt-medium-italic
+{
+	font-family: 'futura-pt-book-italic';
+	font-weight: 500;
+}
+
+/*Futura PT Book.*/
+
+@font-face 
+{
+	font-family: 'futura-pt-book';
+	src: url(../Fonts/ftn45-webfont.woff2) format('woff2'), url(../Fonts/ftn45-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.futura-pt-book
+{
+	font-family: 'futura-pt-book';
+}
+
+/* Futura PT Book Italic. */
+
+@font-face 
+{
+	font-family: 'futura-pt-book-italic';
+	src: url(../Fonts/ftn46-webfont.woff2) format('woff2'), url(../Fonts/ftn46-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 body
 {
 	color: #555555;
@@ -205,7 +309,7 @@ li
 MadCap|breadcrumbsProxy
 {
 	border-bottom: none;
-	font-size: .7em;
+	font-size: .9em;
 	font-style: italic;
 	mc-breadcrumbs-prefix: 'You are here: ';
 }
@@ -524,6 +628,34 @@ p.TableBodyText
 		text-align: center;
 	}
 
+	p.Manual2020Title1
+	{
+		font-family: 'Century Gothic';
+		font-size: 36pt;
+		line-height: 100%;
+		text-align: center;
+	}
+
+	p.Manual2020Title2
+	{
+		/* font-size: 36px;
+		font-weight: bolder: 
+		color: #bed230;*/
+		font-family: 'Century Gothic';
+		font-size: 22pt;
+		line-height: 100%;
+		text-align: center;
+	}
+
+	p.Manual2020VersionNumber
+	{
+		color: #b3b3b3;
+		font-family: 'Century Gothic';
+		font-size: 16pt;
+		line-height:100%;
+		text-align: center;
+	}
+
 	p.TOC1
 	{
 		font-size: 12pt;
@@ -565,6 +697,42 @@ img.ThumbnailMed
 	height: auto;
 	max-height: 400;
 	max-width: 400;
+}
+
+/* adds  box around searh filter contents dropdown, to prevent white-on-white - (JHK) July 27, 2020 */ 
+.search-filter-content {
+
+	/* border: 5px solid red;*/
+	border: 1px solid #bfbfbf;
+	border-radius: 13px 13px 13px 13px;
+}
+
+span.SearchHighlight {
+	background: yellow;
+}
+
+span.SearchHighlight.SearchHighlight1 {
+	background: yellow;
+}
+
+span.SearchHighlight.SearchHighlight2 {
+	background: #ccff00; 
+}
+
+span.SearchHighlight.SearchHighlight3 {
+	background: #1cff00; 
+}
+
+span.SearchHighlight.SearchHighlight4 {
+	background: #00e8ff;
+}
+
+span.SearchHighlight.SearchHighlight5 {
+	background: #ef00ff;
+}
+
+span.SearchHighlight.SearchHighlight6 {
+	background: #ff0018;
 }
 
 span.Code
@@ -663,12 +831,15 @@ ul.Action
 
 MadCap|dropDown
 {
-	
+	mc-closed-image: url('Images/Arrow-Right.png');
+	mc-open-image: url('Images/Arrow-Down.png');
 }
 
 MadCap|dropDownBody
 {
-	border: solid 2px #520f0f;
+	border: 1.5px solid #CBCBCB;
+	padding-left: 1em;
+    padding-right: 1em;
 }
 
 MadCap|dropDownHead
@@ -702,7 +873,7 @@ p.MiniTOC1
 		font-weight: normal;
 		mc-auto-number-offset: 0pt;
 		margin: 4pt;
-		margin-left: 0pt;
+		margin-left: 15pt;
 		color: #0000ff;
 	}
 	
@@ -760,3 +931,15 @@ p.MiniTOC1
 		color: #0000ff;
 	/*	Level 4 Header and lower are not currently supported */
 	}
+
+/* Added by Rivka Teller (tech-tav) for home page tiles - 08/2020 */
+.row-of-three-tiles,
+.row-of-two-tiles
+{
+	display: block;
+}
+
+.mp-tile-item img, .pd-tile-item img, .oi-tile-item img 
+{
+	max-width: 100%;
+}

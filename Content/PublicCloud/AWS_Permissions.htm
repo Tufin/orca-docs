@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>AWS Permissions</h1>
+        <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName"></MadCap:variable> access your AWS account:</p>
+        <ul>
+            <li>Use the security credentials (access key id and secret) of a user in the account having the required permissions.</li>
+            <li>Give access to a user in another account via a role. Before using this option you must create a role in your AWS account and give the required permissions to the other account. You can optionally specify the requirement of an external key. MFA is not supported in <MadCap:variable name="local.ProductName" />.</li>
+            <li>Give access to Tufin's own AWS account, via a role. Before using this option you must create a role in your AWS account and give the required permissions to the AWS account number 977996679567.</li>
+        </ul>
+        <p>Whichever of the above methods you choose, the authorized user or role accounts must be given at least one of the following permissions:</p>
+        <ul>
+            <li>
+                <p>ReadOnlyAccess policy</p>
+            </li>
+            <li>
+                <p>SecurityAudit policy </p>
+            </li>
+            <li>
+                <p>Custom policy</p><pre xml:space="preserve">
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*",
+                "elasticloadbalancing:Describe*",
+                "iam:List*",
+                "iam:Get*",
+                "iam:Generate*",
+                "s3:Get*",
+                "s3:List*",
+                "cloudtrail:Describe*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}</pre>
+            </li>
+            <li>
+                <p>Custom policy</p><pre xml:space="preserve">
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeRegions",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeVpcPeeringConnections",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeRouteTables",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeListeners",
+                "elasticloadbalancing:DescribeTargetHealth",
+                "elasticloadbalancing:DescribeTargetGroups",
+                "iam:ListInstanceProfiles",
+                "iam:GetAccountAuthorizationDetails",
+                "iam:GetAccountPasswordPolicy",
+                "iam:GenerateCredentialReport",
+                "iam:GetCredentialReport",
+                "iam:GetAccountSummary",
+                "iam:ListVirtualMFADevices",
+                "s3:GetBucketTagging",
+                "s3:GetBucketWebsite",
+                "s3:GetBucketLogging",
+                "s3:GetBucketVersioning",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:GetEncryptionConfiguration",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketLocation",
+                "cloudtrail:DescribeTrails"
+            ],
+            "Resource": "*"
+        }
+    ]
+}</pre>
+            </li>
+        </ul>
+    </body>
+</html>

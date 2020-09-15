@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Azure Permissions</h1>
+        <p>For <MadCap:variable name="local.ProductName" /> to monitor Azure subscriptions follow the step below. For more information on Azure authorizations, see <a href="https://docs.microsoft.com/he-il/azure/role-based-access-control/overview">What is role-based access control (RBAC) in Azure</a></p>
+        <ol>
+            <li>
+                <p>In Azure Active Directory create a new application registration where:</p>
+                <p><span class="ScreenObject">Name</span>=<span class="StatusOrValue">&lt;Your AppReg name&gt;</span></p>
+                <p><span class="ScreenObject">Application Type</span> = <span class="StatusOrValue">Web app / API</span></p>
+            </li>
+            <li>
+                <p>For the required subscription, under Access control (IAM), add a role assignment to the application registration created in the previous step where:</p>
+                <p><span class="ScreenObject">Role</span>=<span class="StatusOrValue">Reader</span></p>
+                <p><span class="ScreenObject">Assign access to</span>=<span class="StatusOrValue">Azure AD user, group or service principal</span></p>
+            </li>
+            <li>
+                <p>To allow <MadCap:variable name="local.ProductName" /> to perform the CIS&#160;benchmark audit, you will also need to:</p>
+                <ul>
+                    <li>Add Azure Active Directory Graph API permission to the application registration</li>
+                    <li>Add Directory.read.all permission to the Azure <MadCap:variable name="local.ActiveDirectory" /> Graph API</li>
+                    <li>Grant the application registration admin consent for Default Directory </li>
+                </ul>
+            </li>
+            <li>Add a client secret</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
   <Variable
-    Comment="DocTYpe - for use on print cover page"
+    Comment="(print) DocType - can be left blank"
     Name="ContentType"
     EvaluatedDefinition=""></Variable>
   <Variable
@@ -14,7 +14,7 @@
     EvaluatedDefinition="User's Guide">User's Guide</Variable>
   <Variable
     Name="CoverPageImage"
-    Comment="images for use on print cover page"
+    Comment="(print) Use EITHER CoverPageImage or CoverPageProduct, not both"
     EvaluatedDefinition=""></Variable>
   <Variable
     Name="CoverPageImage"
@@ -288,4 +288,40 @@
     Name="VersionMarketPlace"
     Comment=""
     EvaluatedDefinition="" />
+  <Variable
+    Name="CoverPageProduct"
+    Comment="(print) Use EITHER CoverPageImage or CoverPageProduct, not both"
+    EvaluatedDefinition="" />
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="3.20">3.20</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="3.21">3.21</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-3P">R20-3P</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-2">R20-2</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R20-3">R20-3</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R20-2">R20-2</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R20-3">R20-3</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R20-2P">R20-2P</Variable>
 </CatapultVariableSet>

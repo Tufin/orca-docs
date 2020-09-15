@@ -1,0 +1,351 @@
+/*  Custom Tiles - Added by Rivka Teller - 08/2020 */
+
+/* General Tile Sizing - MarketPlace and Product Tiles */
+
+.row-of-three-tiles .mp-tile-container, .row-of-three-tiles .pd-tile-container,  .row-of-three-tiles .oi-tile-container
+{
+    max-width: 1280px;
+}
+
+.row-of-two-tiles .mp-tile-container,  .row-of-two-tiles .pd-tile-container,  .row-of-two-tiles .oi-tile-container
+{
+    max-width: 840px;
+}
+
+.row-of-three-tiles .mp-tile-item, .row-of-three-tiles .pd-tile-item
+{
+    flex-basis: calc(33% - 14px);
+}
+
+.row-of-two-tiles .mp-tile-item, .row-of-two-tiles .pd-tile-item
+{
+    flex-basis: calc(50% - 14px);
+}
+
+/* MarketPlace Tiles */
+
+.mp-tile-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: -7px;
+    margin-top: 30px;
+}
+
+.mp-tile-item
+{
+    align-self: stretch;
+    background: white;
+    border-radius: 13px;
+    border: 1.5px solid #CBCBCB;
+    margin-bottom: 14px;
+    margin-left: 7px;
+    margin-right: 7px;
+    min-height: 235px;
+    min-height: 235px;
+    min-width: 340px;
+    overflow: hidden;
+    padding: 23px 36px;
+    position: relative;
+}
+
+.mp-tile-item h2
+{
+    color: #333333;
+    font-family: 'futura-pt-heavy', sans-serif;
+    font-size: 22px;
+    height: 48px;
+    line-height: 22px;
+    margin-top: 4px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.mp-tile-item > p
+{
+    min-height: 48px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0;
+    margin-right: 24px;
+    padding-bottom: 80px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-family: 'futura-pt-book', sans-serif;
+}
+
+.mp-tile-links
+{
+    bottom: 75px;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 36px;
+    padding-right: 36px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mp-tile-item .mp-tile-links p
+{
+    display: inline;
+}
+
+.mp-tile-links p:before
+{
+    color: #DDDDDD;
+    content: " | ";
+    display: inline;
+    padding: 0 10px;
+}
+
+.mp-tile-links p:first-child:before
+{
+    display: none;
+}
+
+.mp-tile-links a,
+.mp-tile-links a:link,
+.mp-tile-links a:active,
+.mp-tile-links a:focus,
+.mp-tile-links a:hover,
+.mp-tile-links a:visited
+{
+    color: #08869E;
+    font: 14px / 23px 'futura-pt-book', sans-serif;
+    text-decoration: none;
+}
+
+.mp-tile-category
+{
+    border-radius: 31px;
+    border: 1px solid #999999;
+    bottom: 25px;
+    color: #777777;
+    font-family: 'futura-pt-book', sans-serif;
+    font-size: 12px;
+    left: 36px;
+    line-height: 22px;
+    padding: 3px 13px;
+    position: absolute;
+    /* text-transform: uppercase; */
+}
+
+.mp-tile-category p
+{
+    display: inline;
+}
+
+.mp-tile-learn-more
+{
+    bottom: 29px;
+    color: #EC7700;
+    position: absolute;
+    right: 30px;
+}
+
+.mp-tile-learn-more p
+{
+    display: inline;
+    text-align: right;
+}
+
+.mp-tile-learn-more a,
+.mp-tile-learn-more a:link,
+.mp-tile-learn-more a:active,
+.mp-tile-learn-more a:focus,
+.mp-tile-learn-more a:hover,
+.mp-tile-learn-more a:visited
+{
+    color: #EC7700;
+    font: normal normal normal 12px / 23px 'futura-pt-book', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mp-tile-learn-more a:after
+{
+    content: '\2192';
+    font: normal normal normal 21px/23px TufinFont;
+    padding-left: 7px;
+	position: relative;
+	top: 2px;
+}
+
+/* Product Tiles */
+
+.pd-tile-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 20px 0px 20px -7px;
+}
+
+.pd-tile-item
+{
+    align-self: stretch;
+    background: white;
+    border-radius: 13px;
+    border: 1px solid #CBCBCB;
+    margin-bottom: 14px;
+    margin-left: 7px;
+    margin-right: 7px;
+    min-height: 235px;
+    min-width: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pd-tile-header {
+	/* original 
+    height: 90px;
+    margin: 20px 20px 10px 20px;
+    position: relative;
+	*/ 
+	/*  center text horizontally and vertically (from Rivka - aug 30) */ 
+	 display: table;
+	 height: 60px;
+	 margin: 10px 20px;
+	 position: relative;
+	 width: calc(100% - 40px);
+}
+
+.pd-tile-header > p
+{
+	/* original 
+    font-family: 'futura-pt-heavy', sans-serif;
+    font-size: 22pt;
+    left: 0;
+    margin: 0;
+	max-height: 50px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+	*/	
+	/*  center text horizontally and vertically (from Rivka - aug 30) */
+	 display: table-cell;
+	 font-family: 'futura-pt-heavy', sans-serif;
+	 font-size: 22pt;
+	 margin: 0;
+	 max-height: 50px;
+	 text-align: center;
+	 vertical-align: middle;
+	 width: 100%;
+}
+
+.pd-tile-item div > p > img
+{
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+.pd-tile-links
+{
+    border-top: 1px solid #CBCBCB;
+	/* jeff - added it to make it same font size as an href */
+	font: 14px / 23px 'futura-pt-book', sans-serif;
+    line-height: 18px;
+    padding: 16px 20px;
+}
+
+.pd-tile-links p
+{
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.pd-tile-links a,
+.pd-tile-links a:link,
+.pd-tile-links a:active,
+.pd-tile-links a:focus,
+.pd-tile-links a:visited
+{
+    color: #08869E;
+    font: 14px / 23px 'futura-pt-book', sans-serif;
+    text-decoration: none;
+}
+
+/* jeff aug 30*/
+.pd-tile-links a:hover {
+	font-size: 110%;
+}
+
+
+/* Other Info Tiles */
+
+.oi-tile-container
+{
+    background: #f5f5f5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: -7px;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.oi-tile-item
+{
+    align-self: stretch;
+    border-radius: 13px;
+    border: 1px solid #CBCBCB;
+    flex: auto;
+    margin: 30px 7px 14px 7px;
+    min-width: 0;
+    padding: 20px;
+}
+
+.oi-tile-item h2
+{
+    margin: -32px 0 10px 0;
+    font-size: 14px;
+    color: #333333;
+    font-family: 'futura-pt-heavy', sans-serif;
+    /* text-transform: uppercase; */
+}
+
+span.oi-heading
+{
+    background: #f5f5f5;
+    padding: 0px 10px;
+}
+
+.oi-tile-item img {
+    margin: auto;
+}
+
+.oi-tile-item a,
+.oi-tile-item a:link,
+.oi-tile-item a:active,
+.oi-tile-item a:focus,
+.oi-tile-item a:visited
+{
+    color: #08869E;
+    font: 14px / 23px 'futura-pt-book', sans-serif;
+    text-decoration: none;
+}
+
+/* jeff Aug 30 */
+.oi-tile-item a:hover {
+	font-size: 110%;
+}
+
+
+/* Tile Resize for Smaller Screens */
+
+@media tablet
+{
+	.row-of-three-tiles .mp-tile-item, .row-of-three-tiles .pd-tile-item
+	{
+		flex-basis: 340px;
+	}
+}

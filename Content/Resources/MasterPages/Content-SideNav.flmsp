@@ -27,7 +27,11 @@
                 <MadCap:bodyProxy />
             </div>
         </div>
-        <div style="display:none;"><MadCap:variable id="var-theme" name="custom.Theme" /><MadCap:variable id="var-version" name="custom.IncludeVersionDropdown" /><div id="header-title"><MadCap:variable name="custom.HeaderCaption" /></div>
+        <div style="display:none;"><MadCap:variable id="var-theme" name="custom.Theme" /><MadCap:variable id="var-version" name="custom.IncludeVersionDropdown" />
+            <div id="header-title"><MadCap:variable name="custom.HeaderCaption" />
+            </div>
+            <div style="display:none;"><MadCap:variable id="var-filename" name="custom.AlexanderFilename" />
+            </div>
         </div>
     </body>
 </html>

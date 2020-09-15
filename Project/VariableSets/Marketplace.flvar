@@ -30,10 +30,18 @@
     EvaluatedDefinition="Cisco Tetration Application Discovery">Cisco Tetration Application Discovery</Variable>
   <Variable
     Name="ITSM_Short"
-    Comment=""
+    Comment="App name"
     EvaluatedDefinition="WI">WI</Variable>
   <Variable
     Name="VaMP_Short"
+    Comment="App Name"
+    EvaluatedDefinition="VMA">VMA</Variable>
+  <Variable
+    Name="IPAM"
     Comment=""
-    EvaluatedDefinition="VMP">VMP</Variable>
+    EvaluatedDefinition="IPAM Sync App">IPAM Sync App</Variable>
+  <Variable
+    Name="IPAM_Short"
+    Comment="App Name"
+    EvaluatedDefinition="IPAM">IPAM</Variable>
 </CatapultVariableSet>

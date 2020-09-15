@@ -14,8 +14,10 @@ $(function() { //jQuery ready function
 
 // Supporting functions
 function addVersionDropdown() {
-  var urlPrefix = (location.href.indexOf('localhost') !== -1) ? '/xampp' : '';
-  $.get(urlPrefix+'/support/kc/alexander.htm', null, function(data, status) {
+	var urlPrefix = (location.href.indexOf('localhost') !== -1) ? '/xampp' : '';
+	var theFile = $('#var-filename').text();
+		// $.get(urlPrefix+'/support/kc/alexander.htm', null, function(data, status) {
+	$.get(urlPrefix+'/support/kc/' + theFile, null, function(data, status) {
     $version = $(data).filter('.version-data');
     $version[0].removeAttribute('style');
     $('<div class="version-dropdown"></div>')

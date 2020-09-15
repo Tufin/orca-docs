@@ -8,7 +8,7 @@
   EnableResponsiveOutput="True"
   AutoSyncTOC="true">
   <WebHelpOptions
-    NavigationPanePosition="Right"
+    NavigationPanePosition="Left"
     OffCanvasMenuStyle="Accordion"
     MainMenuPosition="Left"
     EnableSticky="All" />
@@ -65,7 +65,61 @@
         Name="Logo">
         <Properties></Properties>
       </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Navigation Panel">
+          <Properties>
+            <Property
+              Name="BackgroundColor">var(--PanelColor)</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Navigation Panel Item (hover)">
+          <Properties>
+            <Property
+              Name="BackgroundColor">var(--PanelElementHover)</Property>
+          </Properties>
+          <Classes>
+            <StyleClass
+              Name="Expander Icon">
+              <Properties>
+                <Property
+                  Name="ExpanderBorderWidth">8px</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+        <Style
+          Name="Navigation Panel Item">
+          <Classes>
+            <StyleClass
+              Name="Expander Icon">
+              <Properties>
+                <Property
+                  Name="ExpanderBorderColor">var(--PanelElementExpander)</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
     </Styles>
+    <Stylesheet></Stylesheet>
   </Stylesheet>
-  <Strings />
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Search Filter">
+            <Properties>
+              <Property
+                Name="Label">All</Property>
+            </Properties>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
 </CatapultSkin>

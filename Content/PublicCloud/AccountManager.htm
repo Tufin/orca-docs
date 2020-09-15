@@ -14,113 +14,7 @@
         </p>
         <p>Each line under <span class="ScreenObject">Accounts</span> represents one cloud vendor account and displays account information with an indication of the synchronization status for that account. </p>
         <p>Each line under <span class="ScreenObject">Credentials</span> represents one set of user credentials that can assume a role to access  one or more accounts under <span class="ScreenObject">Accounts</span> as an alternative to defining credentials at the account level.</p>
-        <p>You must  define appropriate permissions in your cloud accounts to allow <MadCap:variable name="local-iris.ProductName" /> to monitor them. </p>
-        <p class="h3"><a name="awsprerequisites"></a>AWS Prerequisites</p>
-        <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName"></MadCap:variable> access your AWS account:</p>
-        <ul>
-            <li>Use the security credentials (access key id and secret) of a user in the account having the required permissions.</li>
-            <li>Give access to a user in another account via a role. Before using this option you must create a role in your AWS account and give the required permissions to the other account. You can optionally specify the requirement of an external key. MFA is not supported in <MadCap:variable name="local.ProductName" />.</li>
-            <li>Give access to Tufin's own AWS account, via a role. Before using this option you must create a role in your AWS account and give the required permissions to the AWS account number 977996679567.</li>
-        </ul>
-        <p>Whichever of the above methods you choose, the authorized user or role accounts must be given at least one of the following permissions:</p>
-        <ul>
-            <li>
-                <p>ReadOnlyAccess policy</p>
-            </li>
-            <li>
-                <p>SecurityAudit policy </p>
-            </li>
-            <li>
-                <p>Custom policy</p><pre xml:space="preserve">
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Statement1",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:Describe*",
-                "elasticloadbalancing:Describe*",
-                "iam:List*",
-                "iam:Get*",
-                "iam:Generate*",
-                "s3:Get*",
-                "s3:List*",
-                "cloudtrail:Describe*"
-            ],
-            "Resource": "*"
-        }
-    ]
-}</pre>
-            </li>
-            <li>
-                <p>Custom policy</p><pre xml:space="preserve">
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Statement1",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:DescribeInstances",
-                "ec2:DescribeRegions",
-                "ec2:DescribeSecurityGroups",
-                "ec2:DescribeVpcs",
-                "ec2:DescribeVpcPeeringConnections",
-                "ec2:DescribeSubnets",
-                "ec2:DescribeRouteTables",
-                "elasticloadbalancing:DescribeLoadBalancers",
-                "elasticloadbalancing:DescribeListeners",
-                "elasticloadbalancing:DescribeTargetHealth",
-                "elasticloadbalancing:DescribeTargetGroups",
-                "iam:ListInstanceProfiles",
-                "iam:GetAccountAuthorizationDetails",
-                "iam:GetAccountPasswordPolicy",
-                "iam:GenerateCredentialReport",
-                "iam:GetCredentialReport",
-                "iam:GetAccountSummary",
-                "iam:ListVirtualMFADevices",
-                "s3:GetBucketTagging",
-                "s3:GetBucketWebsite",
-                "s3:GetBucketLogging",
-                "s3:GetBucketVersioning",
-                "s3:GetBucketAcl",
-                "s3:GetBucketPolicy",
-                "s3:GetEncryptionConfiguration",
-                "s3:ListAllMyBuckets",
-                "s3:GetBucketLocation",
-                "cloudtrail:DescribeTrails"
-            ],
-            "Resource": "*"
-        }
-    ]
-}</pre>
-            </li>
-        </ul>
-        <p class="h3">What permissions are needed  in my Azure Accounts?</p>
-        <p>All of the following:&#160;(For more information on Azure authorizations, see <a href="https://docs.microsoft.com/he-il/azure/role-based-access-control/overview">What is role-based access control (RBAC) in Azure</a>)</p>
-        <ol>
-            <li>
-                <p>In Azure Active Directory create a new application registration where:</p>
-                <p><span class="ScreenObject">Name</span>=<span class="StatusOrValue">&lt;Your AppReg name&gt;</span></p>
-                <p><span class="ScreenObject">Application Type</span> = <span class="StatusOrValue">Web app / API</span></p>
-            </li>
-            <li>
-                <p>For the required subscription, under Access control (IAM), add a role assignment to the application registration created in the previous step where:</p>
-                <p><span class="ScreenObject">Role</span>=<span class="StatusOrValue">Reader</span></p>
-                <p><span class="ScreenObject">Assign access to</span>=<span class="StatusOrValue">Azure AD user, group or service principal</span></p>
-            </li>
-            <li>
-                <p>To allow <MadCap:variable name="local.ProductName" /> to perform the CIS&#160;benchmark audit, you will also need to:</p>
-                <ul>
-                    <li>Add Azure Active Directory Graph API permission to the application registration</li>
-                    <li>Add Directory.read.all permission to the Azure <MadCap:variable name="local.ActiveDirectory" /> Graph API</li>
-                    <li>Grant the application registration admin consent for Default Directory </li>
-                </ul>
-            </li>
-            <li>Add a client secret</li>
-        </ol>
-        <p>&#160;</p>
+        <p>You must  define appropriate permissions in your cloud accounts to allow <MadCap:variable name="local-iris.ProductName" /> to monitor them. See <a href="AWS_Permissions.htm">AWS Permissions</a>, <a href="AzurePermissions.htm">Azure Permissions</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#addaws">Add an AWS account</a>
@@ -141,7 +35,7 @@
             </li>
         </ul>
         <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
-        <p>The required account must already exist on the cloud environment. </p>
+        <p>The required account must already exist on the cloud environment and have the required <a href="AWS_Permissions.htm">permissions</a>. </p>
         <ol>
             <li>
                 <p>Make sure the <span class="ScreenObject">Accounts Tab</span> is selected</p>
@@ -166,7 +60,6 @@
                     <li>Give access to a user in another account via a role</li>
                     <li>Give access to <MadCap:variable name="local.ProductName" />'s own AWS account, via a role</li>
                 </ul>
-                <p>All of the above methods have <a href="#awsprerequisites">prerequisites</a>.</p>
                 <p>To specify the credentials of a user in the account:</p>
                 <ul>
                     <li>Select <span class="ScreenObject">Integration Method</span> = <span class="StatusOrValue">Credentials </span></li>
@@ -192,7 +85,7 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin</li>
             <li>Click <span class="ScreenObject">Add</span> to save</li>
         </ol>
         <p class="h3"><a name="addazure"></a>Add a <MadCap:variable name="local.Azure" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
-        <p>The required account must already exist on the cloud environment. </p>
+        <p>The required account must already exist on the cloud environment and have the required <a href="AzurePermissions.htm">permissions</a>. </p>
         <ol>
             <li>
                 <p>Make sure the <span class="ScreenObject">Accounts Tab</span> is selected</p>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PageStyles>
+    <Page Width="7in" Height="9in" Padding="1in" PageSize="A4" PaddingLeft="0.5in" PaddingRight="0.5in" PaddingTop="1in" PaddingBottom="0.75in" PageType="title" Name="Title" Orientation="portrait" BleedLeft="0.25in" BleedRight="0.25in" BleedTop="0.25in" BleedBottom="0.25in" BackgroundPositionX="left" BackgroundPositionY="top" BackgroundRepeat="no-repeat" BackgroundImage="Assets/BackgroundTufinOS.png">
+        <Frame Flow="body" ColumnCount="1" ColumnGap="0.25in" ColumnDivider="Solid 1pt Black" Width="698px" Height="955px" X="0px" Y="0px" Anchors="Left,Right,Top,Bottom" Right="0px" Bottom="0px" BackgroundRepeat="no-repeat" BackgroundPositionY="bottom" BackgroundPositionX="center">
+        </Frame>
+        <Frame X="242px" Y="879px" Width="214px" Height="107px" Flow="decoration0" Right="242px" Bottom="-31px" BackgroundImage="Assets/TufinCoverPage1.png" BackgroundRepeat="stretch" />
+    </Page>
+</PageStyles>

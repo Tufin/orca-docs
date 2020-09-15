@@ -1,11 +1,20 @@
 ﻿/* Version: 1.0 */
 
-/* Default */
+/* theme: Default (all!) */ 
 ul.menu._Skins_SideMenu.mc-component li > a {
     border-left: solid 3px transparent;
 }
 
-/* Orca */
+/* theme: Orca */
+.theme-orca div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
+	--PanelColor: #6D7372;
+	--PanelElementHover: #B1B5B4;
+	--PanelElementExpander: #333333;
+}
+
 .theme-orca nav.title-bar {
 	background-color: #762a5b;
 	background-image: url('Images/headerOrca_105px.jpg');
@@ -13,6 +22,7 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 .theme-orca .title-bar-layout a.logo {
 	background-image: url('Images/logoOrca.png');
 }
+
 .theme-orca .search-bar.search-bar-container .search-submit {
 	/* background-color: #9f6a8d; */
 	background-color: transparent;
@@ -24,7 +34,15 @@ ul.menu._Skins_SideMenu.mc-component li > a {
     border-left-color: #762a5b;
 }
 
-/* Iris */
+/* theme: Iris */
+.theme-iris div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
+	--PanelColor: #6D7372;
+	--PanelElementHover: #B1B5B4;
+	--PanelElementExpander: #333333;
+}
 .theme-iris nav.title-bar {
 	background-color: #074c7b;
 	background-image: url('Images/headerIris_105px.jpg');
@@ -43,12 +61,14 @@ ul.menu._Skins_SideMenu.mc-component li > a {
     border-left-color: #0d4d7a;
 }
 
-/* TOS2 */
-
+/* theme: TOS2 */
 .theme-tos2 div {
 	/*The default colors are set in styles.css, but can be overridden per theme here*/
 	--HeadColor: #00829b;
 	--SubHeadColor: #f4f5f4; 
+	--PanelColor: #6D7372;
+	--PanelElementHover: #B1B5B4;
+	--PanelElementExpander: #333333;
 }
 
 .theme-tos2 nav.title-bar {
@@ -71,13 +91,14 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 	border-left-color: #DE621A;
 }
 
-/* SecureCloud */
-
+/* theme: SecureCloud */
 .theme-securecloud div {
 	/*The default colors are set in styles.css, but can be overridden per theme here*/
 	--HeadColor: #00829b;
 	--SubHeadColor: #f4f5f4; 
-	
+	--PanelColor: #6D7372;
+	--PanelElementHover: #B1B5B4;
+	--PanelElementExpander: #333333;
 }
 
 .theme-securecloud nav.title-bar {
@@ -99,7 +120,37 @@ ul.menu._Skins_SideMenu.mc-component li > a {
     border-left-color: #0d4d7a;
 }
 
+.theme-securecloud a
+{
+	color: #005566;
+}
 
 
+/* test - this theme used for TW Training (DocTeam) docs */
+.theme-test div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #00829b;
+	--SubHeadColor: #f4f5f4; 
+	--PanelColor: #800080;
+	--PanelElementHover: #ffc0cb;
+	--PanelElementExpander: #a52a2a;
+}
 
-/* Test */
+.theme-test nav.title-bar {
+	background-color: #762a5b;
+	background-image: url('Images/headerOrca_105px.jpg');
+}
+.theme-test .title-bar-layout a.logo {
+	background-image: url('Images/logoDocteam.png');
+}
+
+.theme-test .search-bar.search-bar-container .search-submit {
+	/* background-color: #9f6a8d; */
+	background-color: transparent;
+}
+.theme-test ul.menu._Skins_SideMenu.mc-component {
+	border-top-color: #762a5b;
+}
+.theme-test ul.menu._Skins_SideMenu.mc-component li > a.selected {
+    border-left-color: #762a5b;
+}

@@ -32,4 +32,8 @@
     Name="Theme"
     Comment=""
     EvaluatedDefinition="securecloud">securecloud</Variable>
+  <Variable
+    Name="AlexanderFilename"
+    Comment="custom &quot;alexander&quot; file for versionDropdown; use lower case filenames only"
+    EvaluatedDefinition="alexander.htm">alexander.htm</Variable>
 </CatapultVariableSet>
