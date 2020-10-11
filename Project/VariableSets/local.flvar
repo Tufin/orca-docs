@@ -159,7 +159,7 @@
   <Variable
     Name="PrivilegedWorkloads"
     Comment="Menu"
-    EvaluatedDefinition="Privileged Workloads">Privileged Workloads</Variable>
+    EvaluatedDefinition="Workload Security">Workload Security</Variable>
   <Variable
     Name="K8sVulnerabilities"
     Comment="Menu"
@@ -327,4 +327,12 @@
     Name="MyAccount"
     Comment="Menu"
     EvaluatedDefinition="SecureCloud Account">SecureCloud Account</Variable>
+  <Variable
+    Name="Exceptions"
+    Comment="Menu"
+    EvaluatedDefinition="Exceptions">Exceptions</Variable>
+  <Variable
+    Name="permissiveaccess"
+    Comment="Mid sentence"
+    EvaluatedDefinition="permissive access">permissive access</Variable>
 </CatapultVariableSet>

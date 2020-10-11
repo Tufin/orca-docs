@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>is an indication of risk posed to your  Kubernetes environment due to </p>
+        <p>It displays the number of assets at risk along with the total number of assets monitored. </p>
     </body>
 </html>

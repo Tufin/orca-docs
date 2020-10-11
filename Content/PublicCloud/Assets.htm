@@ -73,7 +73,7 @@
             <li>
                 <p><a href="#Security">Security Access</a>
                 </p>
-                <p>Access as defined by vendor security entities such as security groups and roles. Here you can resolve</p>
+                <p>Access as defined by vendor security entities such as security groups and roles.</p>
             </li>
             <li>
                 <p><a href="#Network">Network Configuration</a>
@@ -86,7 +86,7 @@
                 <p>Policy rules relevant to the current asset</p>
             </li>
         </ul>
-        <p class="h4">Asset Overview</p>
+        <p class="h4"><a name="asset overview"></a>Asset Overview</p>
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
@@ -193,24 +193,32 @@
                     <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
                         <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
                     <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
-                        <p>Enabled only when warning icon shown above. Click on the ellipses icon to view available options: </p>
+                        <p>Enabled only when warning icon shown above. Click on the options icon to view available options: </p>
                         <ul>
                             <li>Compare to policy - displays all policy rules pertaining to the asset, below the security access. The same policy details are shown as when clicking <a href="#AssetPolicy">Asset Policy</a>.</li>
                             <li>
-                                <p>Add to security policy - add a <MadCap:variable name="local-iris.ProductName" /> policy rule</p>
+                                <p>Add to security policy (for policy violations only) - add a <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
                                 <p> The Add Rule window is displayed. Enter the appropriate details, explained in <a href="CloudPolicyRules.htm">Policy</a>.</p>
                             </li>
                             <li>
-                                <p>Delete access from cloud - remove the cloud security rule from the VPC</p>
+                                <p>Add exception (for <MadCap:variable name="local.risky ports (lower case)" /> and <MadCap:variable name="local.Permissiveaccess" /> violations only) - add an exception that will no longer report this kind of access as a violation. </p>
+                                <p>The Add Exception window is displayed. Enter the appropriate details</p>
+                            </li>
+                            <li>
+                                <p>Delete access from cloud - remove the cloud security rule from the VPC.</p>
                             </li>
                         </ul>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p class="h4" MadCap:conditions="General.Exclude"><a name="Network"></a>
+        <p class="h4"><a name="add exception"></a>Add Exception</p>
+        <p class="normal">Adding an exception is a way to tell <MadCap:variable name="local.ProductName" /> not to report certain types of access definition as violations. <MadCap:variable name="local.ProductName" /> considers an access definition a security violation if you have specified it in <a href="../SecureCloud/ConfigRisk.htm"><MadCap:variable name="local.riskconfiguration" /></a>, or if it falls under the built-in definitions of risk, described in <a href="../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a>. An exception defines a more specific case of the <MadCap:variable name="local.riskconfiguration" /> setting and excludes it from violations. </p>
+        <p class="normal">add an exception When the <span class="MenuItem">Security Access</span> is selected and the options icon <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> action menu there is a violation, , </p>
+        <p class="normal">
+            <img src="../SecureCloud-Images/Window_AddException.png" />
         </p>
-        <p class="h4"><a name="Resolve"></a>Network Configuration</p>
+        <p class="h4"><a name="Network"></a>Network Configuration</p>
         <p>Displayed for VMs only - the means by which the VM <MadCap:variable name="local.asset" /> is defined to the network, listed separately under peering and on-premise.</p>
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AssetNetworkConfiguration.png" class="ThumbnailPopup" />

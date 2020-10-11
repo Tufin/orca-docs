@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>It displays the number of your <MadCap:variable name="local.project" />s exposed to this risk along with the total number of <MadCap:variable name="local.project" />s monitored. </p>
+    </body>
+</html>

@@ -3,7 +3,8 @@
     <head>
     </head>
     <body>
-        <p>Ports 23, 110, 135-139, 445 and 3389 are considered high risk  and allowing traffic to reach your assets via these ports could leave them open to attack. Brief summary below:</p>
+        <p>There are ports  that are considered high risk  and allowing traffic to reach your assets through them could leave them open to attack. The list of <MadCap:variable name="local.risky ports (lower case)" /> can be managed in <a href="ConfigRisk.htm"><MadCap:variable name="local.Configuration" /></a> and the scope of reporting them further refined in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. </p>
+        <p>A default list is included when you install <MadCap:variable name="local.ProductName" />, which you can modify to your requirements:</p>
         <ul>
             <li>Port 23 - Telnet: Data is plain text and so open to injection</li>
             <li>Port 110 - POP3: Plain text</li>

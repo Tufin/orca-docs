@@ -6,11 +6,11 @@
         <h1>Dashboard</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>The <MadCap:variable name="local-iris.ProductName" /> dashboard is a snapshot of your compliance with security policy and best practices  in your cloud account settings and <MadCap:variable name="local.Kubernetes" /> clusters. It is made up of <MadCap:variable name="local.Widget" />s representing common risks, each showing a compliance score that indicates your robustness with respect to the risk. </p>
+        <p>The <MadCap:variable name="local-iris.ProductName" /> dashboard is a snapshot of your compliance with security policy and best practices  in your cloud account settings and <MadCap:variable name="local.Kubernetes" /> clusters. It is made up of <MadCap:variable name="local.Widget" />s representing common risks, each showing the number of items (assets, pods etc) found at risk along with the total number monitored. </p>
         <p>
             <img src="../SecureCloud-Images/Screen_Dashboard.png" class="ThumbnailPopup" />
         </p>
-        <p>Dashboard <MadCap:variable name="local.public cloud" /> information will be available after you have specified public cloud accounts and <MadCap:variable name="local.Kubernetes" /> information will be available after you have deployed <MadCap:variable name="local.ProductName" /> on at least one <MadCap:variable name="local.project" /> (see <MadCap:xref href="InitialSetup.htm">Initial Setup</MadCap:xref>). Until this has been done, the dashboard will display the relevant 'start' <MadCap:variable name="local.Widget" />s instead of the info <MadCap:variable name="local.Widget" />s.</p>
+        <p>Information for <MadCap:variable name="local.public cloud" /> will be available after you have specified public cloud accounts and <MadCap:variable name="local.Kubernetes" /> information will be available after you have deployed <MadCap:variable name="local.ProductName" /> on at least one <MadCap:variable name="local.project" /> (see <MadCap:xref href="InitialSetup.htm">Initial Setup</MadCap:xref>). Until this has been done, the dashboard will display the relevant 'start' <MadCap:variable name="local.Widget" />s instead of the info <MadCap:variable name="local.Widget" />s.</p>
         <p>
             <img src="../SecureCloud-Images/Screen_Dashboard_Clean.png" class="ThumbnailPopup" />
         </p>
@@ -22,7 +22,7 @@
         <p class="h3"><a name="publiccloud"></a>Public Cloud Detail</p>
         <p>Click on a <MadCap:variable name="local.Widget" /> to drill down to the relevant detail.</p>
         <p class="h4">Risky Ports</p>
-        <p>The Risky Ports <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> high-risk ports, <MadCap:snippetText src="PercentageOfApplications.flsnp" />.  Click on the <MadCap:variable name="local.Widget" /> to display <MadCap:xref href="CloudRiskyPorts-by-App.htm">[%=local.RiskyPorts (heading)%] by Application</MadCap:xref>.</p>
+        <p>The Risky Ports <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> high-risk ports. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudRiskyPorts-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.RiskyPorts (heading)" /></a>.</p>
         <p style="font-weight: bold;">What are risky ports? </p>
         <MadCap:snippetBlock src="WhatIsRiskyPorts.flsnp" />
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
@@ -31,7 +31,7 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.PermissiveAccess" />
         </p>
-        <p>The <MadCap:variable name="local.PermissiveAccess" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> overly permissive ingress access, <MadCap:snippetText src="PercentageOfApplications.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display <MadCap:xref href="CloudPermissiveAccess-by-App.htm">[%=local.PermissiveAccess%] by Application</MadCap:xref>. </p>
+        <p>The <MadCap:variable name="local.PermissiveAccess" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> overly permissive ingress access. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudPermissiveAccess-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.PermissiveAccess" /></a>.</p>
         <p style="font-weight: bold;">What is permissive access? </p>
         <MadCap:snippetBlock src="WhatIsPermissiveAccess.flsnp" />
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
@@ -39,7 +39,7 @@
             <li>In your cloud account security definitions, avoid the use of unlimited ranges; allow traffic to assets only through well-defined ports and IP addresses.</li>
         </ul>
         <p class="h4">Policy Violations</p>
-        <p>The policy violations <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> your cloud vendor security definitions being out of line with your security policy, <MadCap:snippetText src="PercentageOfApplications.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all <MadCap:xref href="CloudPolicyViolations-by-App.htm">[%=local.PolicyViolations%] by Application</MadCap:xref>.</p>
+        <p>The policy violations <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> your cloud vendor security definitions being out of line with your security policy. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudPolicyViolations-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.PolicyViolations" /></a></p>
         <p><span class="SpecialBold">What is a policy violation?</span>
         </p>
         <ul>
@@ -51,7 +51,7 @@
             <li>Review your applications and assets and <a href="../PublicCloud/Assets.htm#Resolve">resolve</a> all violations.</li>
         </ul>
         <p class="h4">Tag Usage</p>
-        <p>The Tag Usage <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> assets without tags, and displays the percentage of your <MadCap:variable name="local.asset" />s exposed to this risk. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudTagUsage-by-Asset.htm">assets that  have no tags</a>.</p>
+        <p>The Tag Usage <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" />assets without tags. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudTagUsage-by-Asset.htm">assets without tags</a>.</p>
         <p><span class="SpecialBold">What are Tags?</span>
         </p>
         <ul>
@@ -65,12 +65,12 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.CISBenchmarkPublicCloud" />
         </p>
-        <p>The <MadCap:variable name="local.CISBenchmarkPublicCloud" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> your cloud vendor security definitions that are not compliant with the <MadCap:variable name="local.CISBenchmarkPublicCloud" />, and displays the percentage of your cloud accounts that failed. </p>
+        <p>The <MadCap:variable name="local.CISBenchmarkPublicCloud" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" />your cloud vendor security definitions that are not compliant with the <MadCap:variable name="local.CISBenchmarkPublicCloud" />. It displays the number of <MadCap:variable name="local.CIStest" />s that failed and the total number of tests performed. </p>
         <MadCap:snippetBlock src="WhatIsCISPublicCloud.flsnp" />
-        <p>The dashboard score is calculated based on the number of your monitored public cloud accounts that pass all the <MadCap:variable name="local.CIStest" />s. Only accounts that pass all their <MadCap:variable name="local.CIStest" />s are considered as passing the CIS benchmark. Click on the <MadCap:variable name="local.Widget" /> to display your <a href="CloudCIS-by-Account.htm">monitored cloud accounts</a> and their CIS status.</p>
+        <p>Click on the <MadCap:variable name="local.Widget" /> to display your <a href="CloudCIS-by-Account.htm">monitored cloud accounts</a> and their CIS test status.</p>
         <p class="h3"><a name="kubernetes"></a><MadCap:variable name="local.Kubernetes" /> Risks</p>
         <p class="h4">Kubernetes Vulnerabilities</p>
-        <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" /> known vulnerabilities in your Kubernetes environment, <MadCap:snippetText src="PercentageOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sVulnerabilities-by-Cluster.htm">clusters containing known Kubernetes vulnerabilities</a>. </p>
+        <p class="normal">The Kubernetes Vulnerabilities <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />known vulnerabilities in your Kubernetes environment. <MadCap:snippetText src="NumberOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sVulnerabilities-by-Cluster.htm">clusters containing known Kubernetes vulnerabilities</a>. </p>
         <p class="normal" style="font-weight: bold;">What are Kubernetes Vulnerabilities?</p>
         <ul>
             <li>
@@ -81,10 +81,11 @@
         <ul>
             <li>Regularly review the Kubernetes vulnerabilities in your environment and make sure you have the latest patches in place.</li>
         </ul>
-        <p class="h4">Privileged Workloads</p>
-        <p>The <MadCap:variable name="local.PrivilegedWorkloads" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" /> privileged workloads, <MadCap:snippetText src="PercentageOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sPrivilegedWorkloads-by-Cluster.htm">clusters containing privileged workloads</a>.</p>
+        <p class="h4"><MadCap:variable name="local.PrivilegedWorkloads" />
+        </p>
+        <p>The <MadCap:variable name="local.PrivilegedWorkloads" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />pods or containers with a security context. <MadCap:snippetText src="NumberOfPods.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sPrivilegedWorkloads-by-Pod.htm">pods with workload security risks</a>.</p>
         <p style="font-weight: bold;">
-            <p class="normal" style="font-weight: bold;">What are Privileged Workloads?</p>
+            <p class="normal" style="font-weight: bold;">What are Workload Security Risks?</p>
             <MadCap:snippetBlock src="../Kubernetes/WhatIsK8sPrivilegedWorkload.flsnp" />
         </p>
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
@@ -93,12 +94,11 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.ContainerVulnerabilities" />
         </p>
-        <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" /> the  vulnerabilities found in your containers, <MadCap:snippetText src="PercentageOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all clusters with <a href="K8sContainerVulnerabilities-by-Cluster.htm"><MadCap:variable name="local.Containervulnerabilities" /></a>. </p>
+        <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />vulnerabilities found in your container images. <MadCap:snippetText src="NumberOfPods.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sContainerVulnerabilities-by-Pod.htm">pods with <MadCap:variable name="local.containervulnerabilities" /></a>. </p>
         <p style="font-weight: bold;">What are container vulnerabilities?</p>
         <ul>
             <li>
-                <MadCap:snippetText src="WhatIsK8sContainerVulnerabilities.flsnp" />
-            </li>
+                <MadCap:snippetText src="WhatIsK8sContainerVulnerabilities.flsnp" />A container with a <MadCap:variable name="local-orca.TufinScore" />of B, C, D, E or F is considered vulnerable.</li>
         </ul>
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
         <ul>
@@ -106,7 +106,7 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.PermissivePolicies" />
         </p>
-        <p>The <MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /><![CDATA[   ]]><MadCap:snippetText src="Risk_Posed_k8s.flsnp" /> overly permissive Kubernetes network policies, <MadCap:snippetText src="PercentageOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all clusters that have <MadCap:variable name="local.permissivepolicies" />.</p>
+        <p>The <MadCap:variable name="local.PermissivePolicies" /> <MadCap:variable name="local.Widget" /><![CDATA[   ]]><MadCap:snippetText src="Risk_Posed_k8s.flsnp" />overly permissive Kubernetes network policies. <MadCap:snippetText src="NumberOfClusters.flsnp" />. Click on the <MadCap:variable name="local.Widget" /> to display all clusters that have <MadCap:variable name="local.permissivepolicies" />.</p>
         <p style="font-weight: bold;">What are <MadCap:variable name="local.PermissivePolicies" />?</p>
         <p>
             <MadCap:snippetBlock src="WhatIsK8sPermissivePolicies.flsnp" />
@@ -117,10 +117,10 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.CISBenchmarkKubernetes" />
         </p>
-        <p class="FrameFooterText">The <MadCap:variable name="local.CISBenchmarkKubernetes" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" /> your cluster security definitions that are not compliant with the <MadCap:variable name="local.CISBenchmarkKubernetes" />, <MadCap:snippetText src="PercentageOfClusters.flsnp" />. </p>
+        <p class="FrameFooterText">The <MadCap:variable name="local.CISBenchmarkKubernetes" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />your cluster security definitions that are not compliant with the <MadCap:variable name="local.CISBenchmarkKubernetes" />, <MadCap:snippetText src="NumberOfClusters.flsnp" />. </p>
         <MadCap:snippetBlock src="WhatIsCISk8s.flsnp">
         </MadCap:snippetBlock>
-        <p>The dashboard score is calculated based on the number of your monitored <MadCap:variable name="local.project" />s that pass all the <MadCap:variable name="local.CIStest" />s. Only clusters that pass all their <MadCap:variable name="local.CIStest" />s.are considered as passing the CIS benchmark. Click on the <MadCap:variable name="local.Widget" /> to display your <a href="k8sCIS-by-Cluster.htm">monitored clusters</a> and their CIS status.</p>
+        <p> Click on the <MadCap:variable name="local.Widget" /> to display your <a href="k8sCIS-by-Cluster.htm">monitored clusters</a> and their CIS status.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
         </MadCap:snippetBlock>
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Dashboard.flsnp" />

@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p><MadCap:variable name="local.ProductName" /> scans your containers and gives each one a <a href="../Kubernetes/SecurityScore.htm">security score</a> from A to F, according to the number and type of software vulnerabilities found, where A - the best score - represents the lowest risk and F - the worst score - represents the highest risk.</p>
+        <p><MadCap:variable name="local.ProductName" /> scans your container images and gives each one a <a href="../Kubernetes/SecurityScore.htm">security score</a> from A+ to F, according to the number and type of software vulnerabilities found, where A+ - the best score - represents the lowest risk and F - the worst score - represents the highest risk.</p>
     </body>
 </html>

@@ -4,9 +4,70 @@
     </head>
     <body>
         <p style="font-weight: normal;">
-            <p>A privileged workload can refer to a pod or container:</p>
-            <p>A privileged container has its privileged security context  set to true.</p>
-            <MadCap:snippetBlock src="../SecureCloud/WhatIsHostAccess.flsnp" />
+            <p><MadCap:variable name="local.Kubernetes" /> workloads can be granted special privileges through security contexts, some of which could pose a security risk. <MadCap:variable name="local.ProductName" /> monitors the following security contexts:</p>
+            <p>Container Security Contexts</p>
+            <ul>
+                <li>Privileged. The container has its privileged security context  set to true. Processes running in privileged containers have permissions equivalent to root on the host.</li>
+                <li>
+                    <p>Privileged escalation. Process in this container can gain more privileges than their parent process. This should be prevented by setting 'allowPrivilegeEscalation: false'.</p>
+                </li>
+                <li>
+                    <p>Capability SYS_ADMIN. Container has full root privileges</p>
+                </li>
+                <li>
+                    <p>Capability NET_RAW. Allows forging of packets, including faking senders, sending malformed packets, etc., this also allows to bind to any address (associated to the ability to fake a sender this allows to impersonate a device, legitimately used for \"transparent proxying\" as per the manpage but from an attacker point-of-view this term is a synonym for Man-in-The-Middle). This should be prevented by dropping the NET_RAW capability.</p>
+                </li>
+                <li>
+                    <p>Capability NET_ADMIN. Allows various network-related operations including interface configuration, administration of IP firewall, modifying routing tables and more.</p>
+                </li>
+                <li>
+                    <p>Unmasked ProcMount. Container has full access to host's /proc</p>
+                </li>
+                <li>
+                    <p>Root allowed. Process in this container can run as root. This should be prevented by setting 'runAsNonRoot: true' and providing a non-zero runAsUser value or a USER value in the Dockerfile. It is advisable to select a value greater than 10000, as this reduces the likelihood that this value is already taken on the host system.</p>
+                </li>
+                <li>
+                    <p>Running as root. Process in this container run with UID 0 (root).</p>
+                </li>
+                <li>
+                    <p>Writable root filesystem. Container has a writable root filesystem. An immutable root filesystem can prevent malicious binaries being added to PATH and increase attack cost. This should be prevented by setting 'readOnlyRootFilesystem: true'</p>
+                </li>
+                <li>
+                    <p>Read-only OS mount. Container can read from a host OS volume</p>
+                </li>
+                <li>
+                    <p>Writable OS mount. Container can read and write to a host OS volume</p>
+                </li>
+                <li>
+                    <p>CPU unlimited. The Container has no upper bound on the CPU resources it can use. The Container could use all of the CPU resources available on the Node where it is running. This should be prevented by setting the CPU limit at the container level or through a LimitRange at the namespace level.</p>
+                </li>
+                <li>
+                    <p>Memory unlimited. The Container has no upper bound on the amount of memory it uses. The Container could use all of the memory available on the Node where it is running which in turn could invoke the OOM Killer. Further, in case of an OOM Kill, a container with no resource limits will have a greater chance of being killed. This should be prevented by setting the memory limit at the container level or through a LimitRange at the namespace level.</p>
+                </li>
+            </ul>
+            <p>Pod Security Contexts</p>
+            <ul>
+                <li>Unsafe sysctls. The pod can use unsafe sysctls. You should only allow unsafe sysctls for very special situations such as high-performance or real-time application tuning.</li>
+                <li>
+                    <p>HostIPC: The pod can use the host's  IPC namespace </p>
+                </li>
+                <li MadCap:conditions="General.Exclude">
+                    <p>HostNetwork: The pod can use the host's  network namespace, bypassing all Kubernetes Network Policies. </p>
+                </li>
+                <li>
+                    <p>HostNetwork: The pod can use the host's network namespace. This gives the pod access to the loopback device, services listening on localhost, and could be used to snoop on network activity of other pods on the same node. </p>
+                </li>
+                <li>
+                    <p>HostPID: The pod can use the host's process ID namespace. When paired with ptrace this can be used to escalate privileges outside of the container (ptrace is forbidden by default)</p>
+                </li>
+            </ul>
+            <ul>
+                <li MadCap:conditions="General.Exclude">A container that has its privileged security context  set to true</li>
+                <li>
+                    <p MadCap:conditions="General.Exclude">A pod with HostPID, HostIPC or HostNetwork set to true</p>
+                    <MadCap:snippetBlock src="../SecureCloud/WhatIsHostAccess.flsnp" MadCap:conditions="General.Exclude" />
+                </li>
+            </ul>
         </p>
     </body>
 </html>
