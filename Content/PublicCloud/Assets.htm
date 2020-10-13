@@ -31,7 +31,7 @@
             <li>The cloud vendor e.g. AWS, Azure</li>
             <li>If the asset is assigned to a load balancer, the load balancer name is displayed</li>
             <li>'Internet exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity.</li>
-            <li>Warning <img src="../PublicCloud-Images/icon_warning.png" class="noborder"></img> If present, indicates a <a href="WhatIsViolation.htm">violation</a></li>
+            <li>Warning <img src="../PublicCloud-Images/icon_warning.png" class="noborder"></img> If present, indicates a <a href="WhatIsCloudViolation.htm">violation</a></li>
         </ul>
         <p class="h2"><a name="whatcanido"></a><MadCap:variable name="Topic Templates.WhatCanIdo" />
         </p>
@@ -42,6 +42,7 @@
             <li>
                 <p><a href="#AssetDetails">View asset details</a> </p>
             </li>
+            <li><a href="#add exception">Add exceptions</a> so that certain violations are suppressed</li>
             <li>
                 <p>View the <MadCap:xref href="AssetGraph.htm">[%=local-iris.ApplicationAssetMap%]</MadCap:xref>/ Click on <MadCap:variable name="local-iris.ApplicationAssetMap" /> in the menu (only for assets shown for a selected <MadCap:variable name="local-iris.application" />)</p>
             </li>
@@ -137,7 +138,7 @@
         </ul>
         <p class="h4"><a name="Security"></a>Security Access</p>
         <p>Security access is the access to and from the asset defined by vendor security controls such as security groups and roles.</p>
-        <p class="normal">Click <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
+        <p class="normal">Select <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AssetSecurityAccess.png" class="ThumbnailPopup" />
         </p>
@@ -187,7 +188,7 @@
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Warning</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsViolation.htm">violation</a></td>
+                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsCloudViolation.htm">violation</a></td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
@@ -213,11 +214,33 @@
             </tbody>
         </table>
         <p class="h4"><a name="add exception"></a>Add Exception</p>
-        <p class="normal">Adding an exception is a way to tell <MadCap:variable name="local.ProductName" /> not to report certain types of access definition as violations. <MadCap:variable name="local.ProductName" /> considers an access definition a security violation if you have specified it in <a href="../SecureCloud/ConfigRisk.htm"><MadCap:variable name="local.riskconfiguration" /></a>, or if it falls under the built-in definitions of risk, described in <a href="../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a>. An exception defines a more specific case of the <MadCap:variable name="local.riskconfiguration" /> setting and excludes it from violations. </p>
-        <p class="normal">add an exception When the <span class="MenuItem">Security Access</span> is selected and the options icon <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> action menu there is a violation, , </p>
-        <p class="normal">
-            <img src="../SecureCloud-Images/Window_AddException.png" />
-        </p>
+        <p class="normal">Adding an exception is a way to tell <MadCap:variable name="local.ProductName" /> not to report certain types of access definition as violations. <MadCap:variable name="local.ProductName" /> considers an access definition a security violation if you have specified it in <a href="../SecureCloud/ConfigRisk.htm"><MadCap:variable name="local.riskconfiguration" /></a>, or if it falls under the built-in definitions of risk, described in <a href="../SecureCloud/Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a>. An exception defines a more specific case of the <MadCap:variable name="local.riskconfiguration" /> setting and excludes it from violations. Exceptions you have defined  can be viewed in <a href="../SecureCloud/Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a> where they can be deleted if required.</p>
+        <p class="normal">To add an exception:</p>
+        <ol>
+            <li>
+                <p>Select <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
+            </li>
+            <li>
+                <p>Click the options icon <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> on the access line that has the violation. The action menu appears. </p>
+                <p>If the access has one or more violations due to <MadCap:variable name="local.risky ports (lower case)" /> or <MadCap:variable name="local.permissiveaccess" />, <span class="MenuItem">Add exception</span> will appear in the action menu and if the access has one or more <MadCap:variable name="local.policyviolations" />, <span class="MenuItem">Add to policy</span> will appear in the menu.</p>
+            </li>
+            <li>
+                <p>Select <span class="MenuItem">Add exception</span> from the options menu</p>
+            </li>
+            <li>
+                <p>Complete the exception details.</p>
+                <p class="normal">
+                    <img src="../SecureCloud-Images/Window_AddException.png" class="ThumbnailPopup" />
+                </p>
+                <p><span class="SpecialBold">Exception Name:</span> A name of your choice.</p>
+                <p><span class="SpecialBold">Violation Type:</span> Risky port, Permissive source, Permissive service. If more than one type of violation exists for the selected access then select the type of exception you are defining. If only one type of violation exists for the access, it cannot be changed.</p>
+                <p><span class="SpecialBold">Violation Details:</span> The ports, sources or services identified as violations. If more than one violation exists for the selected violation type and access, then select all those appropriate for the exception you are defining. If only one violation exists for this violation type and access, it cannot be changed.</p>
+                <p><span class="SpecialBold">Scope:</span> The assets to be included in the exception. Select one from:&#160;security control, cloud account or all cloud accounts.</p>
+                <p><span class="SpecialBold">Description:</span> Optional text of your choice.</p>
+            </li>
+            <li> click <span class="ScreenObject">Add</span> to save.</li>
+        </ol>
+        <p>Once added, exceptions  can be viewed in <a href="../SecureCloud/Exceptions.htm"><MadCap:variable name="local.Exceptions" />,</a> where they can be deleted if desired.</p>
         <p class="h4"><a name="Network"></a>Network Configuration</p>
         <p>Displayed for VMs only - the means by which the VM <MadCap:variable name="local.asset" /> is defined to the network, listed separately under peering and on-premise.</p>
         <p class="normal">

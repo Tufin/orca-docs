@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CatapultAliasFile>
 	<Map Name="SCL_Dashboard" Link="/Content/SecureCloud/Dashboard.htm" />
+	<Map Name="SCL_Exceptions" Link="/Content/SecureCloud/Exceptions.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Cluster" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Namespace" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm" />
 	<Map Name="SCL_K8sContainerVulnerabilities-by-Pod" Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Pod.htm" />
@@ -12,11 +13,8 @@
 	<Map Name="SCL_K8sPrivilegedWorkloads-by-Pod" Link="/Content/SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm" />
 	<Map Name="SCL_K8sVulnerabilities-by-Cluster" Link="/Content/SecureCloud/K8sVulnerabilities-by-Cluster.htm" />
 	<Map Name="SCL_K8sVulnerabilities-in-Cluster" Link="/Content/SecureCloud/K8sVulnerabilities-in-Cluster.htm" />
-	<Map Name="SCL_CloudPermissiveAccess-by-App" Link="/Content/SecureCloud/CloudPermissiveAccess-by-App.htm" />
 	<Map Name="SCL_CloudPermissiveAccess-by-Asset" Link="/Content/SecureCloud/CloudPermissiveAccess-by-Asset.htm" />
-	<Map Name="SCL_CloudPolicyViolations-by-App" Link="/Content/SecureCloud/CloudPolicyViolations-by-App.htm" />
 	<Map Name="SCL_CloudPolicyViolations-by-Asset" Link="/Content/SecureCloud/CloudPolicyViolations-by-Asset.htm" />
-	<Map Name="SCL_CloudRiskyPorts-by-App" Link="/Content/SecureCloud/CloudRiskyPorts-by-App.htm" />
 	<Map Name="SCL_CloudRiskyPorts-by-Asset" Link="/Content/SecureCloud/CloudRiskyPorts-by-Asset.htm" />
 	<Map Name="SCL_CloudTagUsage-by-Asset" Link="/Content/SecureCloud/CloudTagUsage-by-Asset.htm" />
 	<Map Name="SCL_GlobalMap" Link="/Content/PublicCloud/GlobalMap.htm" />
@@ -39,11 +37,13 @@
 	<Map Name="SCL_Notifications" Link="/Content/Kubernetes/OrcaSettingsNotifications.htm" />
 	<Map Name="SCL_Vulnerabilities" Link="/Content/Kubernetes/VulnerabilityDetails.htm" />
 	<Map Name="SCL_DiscoveryEngine" Link="/Content/Kubernetes/NewConnections.htm" />
-	<Map Name="SCL_ActiveDirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />
-	<Map Name="SCL_Users" Link="/Content/SecureCloud/Users.htm" />
-	<Map Name="SCL_SecurityScore" Link="/Content/Kubernetes/SecurityScore.htm" />
-	<Map Name="SCL_Deploy" Link="/Content/Kubernetes/DeployOnCluster.htm" />
-	<Map Name="SCL_OrcaArchitecture" Link="/Content/Kubernetes/Architecture.htm" />
-	<Map Name="SCL_SignUp" Link="/Content/SecureCloud/SignUp.htm" />
-	<Map Name="SCL_WhatsNew" Link="/Content/SecureCloud/WhatsNew.htm" />
+	<Map Name="SCL_myaccount" Link="/Content/SecureCloud/MyAccount.htm" />
+	<Map Name="SCL_users" Link="/Content/SecureCloud/Users.htm" />
+	<Map Name="SCL_activedirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />
+	<Map Name="SCL_configrisk" Link="/Content/SecureCloud/ConfigRisk.htm" />
+	<Map Name="SCL_securityscore" Link="/Content/Kubernetes/SecurityScore.htm" />
+	<Map Name="SCL_deploy" Link="/Content/Kubernetes/DeployOnCluster.htm" />
+	<Map Name="SCL_orcaarchitecture" Link="/Content/Kubernetes/Architecture.htm" />
+	<Map Name="SCL_signup" Link="/Content/SecureCloud/SignUp.htm" />
+	<Map Name="SCL_whatsnew" Link="/Content/SecureCloud/WhatsNew.htm" />
 </CatapultAliasFile>

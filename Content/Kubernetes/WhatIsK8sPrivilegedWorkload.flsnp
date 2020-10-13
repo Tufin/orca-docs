@@ -5,7 +5,25 @@
     <body>
         <p style="font-weight: normal;">
             <p><MadCap:variable name="local.Kubernetes" /> workloads can be granted special privileges through security contexts, some of which could pose a security risk. <MadCap:variable name="local.ProductName" /> monitors the following security contexts:</p>
-            <p>Container Security Contexts</p>
+            <p class="pd-tile-item"><span class="SpecialBold">Pod Security Contexts</span>
+            </p>
+            <ul>
+                <li>Unsafe sysctls. The pod can use unsafe sysctls. You should only allow unsafe sysctls for very special situations such as high-performance or real-time application tuning.</li>
+                <li>
+                    <p>HostIPC: The pod can use the host's  IPC namespace </p>
+                </li>
+                <li MadCap:conditions="General.Exclude">
+                    <p>HostNetwork: The pod can use the host's  network namespace, bypassing all Kubernetes Network Policies. </p>
+                </li>
+                <li>
+                    <p>HostNetwork: The pod can use the host's network namespace. This gives the pod access to the loopback device, services listening on localhost, and could be used to snoop on network activity of other pods on the same node. </p>
+                </li>
+                <li>
+                    <p>HostPID: The pod can use the host's process ID namespace. When paired with ptrace this can be used to escalate privileges outside of the container (ptrace is forbidden by default)</p>
+                </li>
+            </ul>
+            <p><span class="SpecialBold">Container Security Contexts</span>
+            </p>
             <ul>
                 <li>Privileged. The container has its privileged security context  set to true. Processes running in privileged containers have permissions equivalent to root on the host.</li>
                 <li>
@@ -43,22 +61,6 @@
                 </li>
                 <li>
                     <p>Memory unlimited. The Container has no upper bound on the amount of memory it uses. The Container could use all of the memory available on the Node where it is running which in turn could invoke the OOM Killer. Further, in case of an OOM Kill, a container with no resource limits will have a greater chance of being killed. This should be prevented by setting the memory limit at the container level or through a LimitRange at the namespace level.</p>
-                </li>
-            </ul>
-            <p>Pod Security Contexts</p>
-            <ul>
-                <li>Unsafe sysctls. The pod can use unsafe sysctls. You should only allow unsafe sysctls for very special situations such as high-performance or real-time application tuning.</li>
-                <li>
-                    <p>HostIPC: The pod can use the host's  IPC namespace </p>
-                </li>
-                <li MadCap:conditions="General.Exclude">
-                    <p>HostNetwork: The pod can use the host's  network namespace, bypassing all Kubernetes Network Policies. </p>
-                </li>
-                <li>
-                    <p>HostNetwork: The pod can use the host's network namespace. This gives the pod access to the loopback device, services listening on localhost, and could be used to snoop on network activity of other pods on the same node. </p>
-                </li>
-                <li>
-                    <p>HostPID: The pod can use the host's process ID namespace. When paired with ptrace this can be used to escalate privileges outside of the container (ptrace is forbidden by default)</p>
                 </li>
             </ul>
             <ul>

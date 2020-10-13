@@ -335,4 +335,12 @@
     Name="permissiveaccess"
     Comment="Mid sentence"
     EvaluatedDefinition="permissive access">permissive access</Variable>
+  <Variable
+    Name="policyviolations"
+    Comment=""
+    EvaluatedDefinition="policy violations">policy violations</Variable>
+  <Variable
+    Name="privilegedworkloads"
+    Comment="mid sentence"
+    EvaluatedDefinition="workload security">workload security</Variable>
 </CatapultVariableSet>

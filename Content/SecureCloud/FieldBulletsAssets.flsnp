@@ -3,17 +3,18 @@
     <head>
     </head>
     <body>
-            <li>
-                <p><span class="ScreenObject">Asset name</span>
-                </p>
-            </li>
-            <li>
-                <p><span class="ScreenObject">Account</span>. The name of the cloud account with the vendor's icon e.g. AWS, Azure</p>
-            </li>
-            <li>
-                <p><span class="ScreenObject">Internet access</span>:</p>
-                <p><span class="StatusOrValue">Exposed</span>-the asset has access to the internet</p>
-                <p><span class="StatusOrValue">blank</span>-the asset doesn't have access to the internet</p>
-            </li>
+        <li>
+            <p><span class="ScreenObject">Asset name</span>
+            </p>
+        </li>
+        <li><span class="ScreenObject">Application</span>. The application with which the asset is associated</li>
+        <li>
+            <p><span class="ScreenObject">Account</span>. The name of the cloud account with the vendor's icon e.g. AWS, Azure</p>
+        </li>
+        <li>
+            <p><span class="ScreenObject">Internet access</span>:</p>
+            <p><span class="StatusOrValue">Exposed</span>-the asset has access to the internet</p>
+            <p><span class="StatusOrValue">blank</span>-the asset doesn't have access to the internet</p>
+        </li>
     </body>
 </html>

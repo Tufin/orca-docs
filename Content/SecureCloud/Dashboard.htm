@@ -39,12 +39,12 @@
             <li>In your cloud account security definitions, avoid the use of unlimited ranges; allow traffic to assets only through well-defined ports and IP addresses.</li>
         </ul>
         <p class="h4">Policy Violations</p>
-        <p>The policy violations <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> your cloud vendor security definitions being out of line with your security policy. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudPolicyViolations-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.PolicyViolations" /></a></p>
+        <p>The policy violations <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> your cloud vendor security definitions being out of line with your <a href="../PublicCloud/CloudPolicyRules.htm">security policy</a>. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudPolicyViolations-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.PolicyViolations" /></a></p>
         <p><span class="SpecialBold">What is a policy violation?</span>
         </p>
         <ul>
             <li>
-                <MadCap:snippetText src="../PublicCloud/WhatIsViolation.flsnp" /> </li>
+                <MadCap:snippetText src="../PublicCloud/WhatIsCloudPolicyViolation.flsnp" /> </li>
         </ul>
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
         <ul>
@@ -96,10 +96,9 @@
         </p>
         <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />vulnerabilities found in your container images. <MadCap:snippetText src="NumberOfPods.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sContainerVulnerabilities-by-Pod.htm">pods with <MadCap:variable name="local.containervulnerabilities" /></a>. </p>
         <p style="font-weight: bold;">What are container vulnerabilities?</p>
-        <ul>
-            <li>
-                <MadCap:snippetText src="WhatIsK8sContainerVulnerabilities.flsnp" />A container with a <MadCap:variable name="local-orca.TufinScore" />of B, C, D, E or F is considered vulnerable.</li>
-        </ul>
+        <p>
+            <MadCap:snippetText src="WhatIsK8sContainerVulnerabilities.flsnp" />
+        </p>
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
         <ul>
             <li>Scan containers for vulnerabilities  and address issues before deploying them.</li>

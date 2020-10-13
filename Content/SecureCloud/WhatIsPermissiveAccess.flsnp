@@ -4,8 +4,8 @@
     </head>
     <body>
         <p>
-            <p><MadCap:variable name="local.Permissiveaccess" /> in <MadCap:variable name="local.ProductName" /> refers to ingress access to an asset that is overly permissive; it is reported in the <a href="Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a> and <a href="../PublicCloud/Assets.htm#Security">Asset Security Access</a>. The criteria defining <MadCap:variable name="local.permissiveaccess" />( can vary from one situation to another, even in the same organization. In <MadCap:variable name="local.ProductName" /> you can define <MadCap:variable name="local.permissiveaccess" />  in <a href="ConfigRisk.htm"><MadCap:variable name="local.RiskConfiguration" /></a> and  further refine the scope of reporting in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. </p>
-            <p>Two parameters are used to define <MadCap:variable name="local.permissiveaccess" /> - source subnet and services:</p>
+            <p><MadCap:variable name="local.Permissiveaccess" /> in <MadCap:variable name="local.ProductName" /> refers to ingress access to an asset that is overly permissive; it is reported in the <a href="Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a> and <a href="../PublicCloud/Assets.htm#Security">Asset Security Access</a>. The criteria defining <MadCap:variable name="local.permissiveaccess" /> can vary from one situation to another, even in the same organization. In <MadCap:variable name="local.ProductName" /> you can define <MadCap:variable name="local.permissiveaccess" />  in <a href="ConfigRisk.htm"><MadCap:variable name="local.RiskConfiguration" /></a> and  further refine the scope of reporting in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. </p>
+            <p>You can set one or both of two independent parameters  to define <MadCap:variable name="local.permissiveaccess" /> - source subnet and services. If the actual access specified in the vendor's security controls is equal to or more permissive than any of these settings, it will be considered a violation of best practices.</p>
             <p>Possible values for source subnet:</p>
             <ul>
                 <li>Any - only when the cloud account's definition allows access from Any source IP, will the access be considered too permissive</li>
@@ -15,8 +15,8 @@
             </ul>
             <p>Possible values for services:</p>
             <ul>
-                <li>Any (default) - only when Any is specified, will the access be considered too permissive</li>
-                <li>Any and TCP/UDP:0-65535 - only when Any is specified and the port , will the access be considered too permissive</li>
+                <li>Any (default) - only when Any is specified will the access be considered too permissive</li>
+                <li>Any and TCP/UDP:0-65535 - only when Any, TPC:0-65535 or UDP:0-65535 are specified will the access be considered too permissive</li>
                 <li>None - the service is not taken into account when determining whether permitted access is too permissive</li>
             </ul>
             <p MadCap:conditions="General.Exclude">Permissive access is where UDP&#160;or TCP ingress is allowed in any of the following circumstances:</p>

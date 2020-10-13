@@ -1,57 +1,56 @@
 ;Identifier (example: #cshid=SCL_SignUp),Ignore (No-one uses this),Topic Current Location  (for docteam only),Targets (for docteam only),Path (dont use commas or semi-colons) 
 SCL_Dashboard,5001,/Content/SecureCloud/Dashboard.htm,SCL,Main Menu > Dashboard
-,,,,
-SCL_K8sContainerVulnerabilities-by-Cluster,5002,/Content/SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget
-SCL_K8sContainerVulnerabilities-by-Namespace,5003,/Content/SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster
-SCL_K8sContainerVulnerabilities-by-Pod,5004,/Content/SecureCloud/K8sContainerVulnerabilities-by-Pod.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster > select namespace
-SCL_K8sPermissivePolicies-by-Cluster,5005,/Content/SecureCloud/K8sPermissivePolicies-by-Cluster.htm,SCL,Main Menu > Dashboard > Permissive Policies widget 
-SCL_K8sPermissivePolicies-by-Namespace,5006,/Content/SecureCloud/K8sPermissivePolicies-by-Namespace.htm,SCL,Main Menu > Dashboard > Permissive Policies widget > select cluster
-SCL_K8sPermissive-Policies-in-Namespace,5007,/Content/SecureCloud/K8sPermissive-Policies-in-Namespace.htm,SCL,Main Menu > Dashboard > Permissive Policies widget > select cluster > select namespace
-SCL_K8sPrivilegedWorkloads-by-Cluster,5008,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Cluster.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget
-SCL_K8sPrivilegedWorkloads-by-Namespace,5009,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Namespace.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget > select cluster
-SCL_K8sPrivilegedWorkloads-by-Pod,5010,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget > select cluster > select namespace
-SCL_K8sVulnerabilities-by-Cluster,5011,/Content/SecureCloud/K8sVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget
-SCL_K8sVulnerabilities-in-Cluster,5012,/Content/SecureCloud/K8sVulnerabilities-in-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget > select cluster
-;,5013,,,
-SCL_CloudPermissiveAccess-by-App,5014,/Content/SecureCloud/CloudPermissiveAccess-by-App.htm,SCL,Main Menu > Dashboard > Permissive Access widget
+SCL_Exceptions,5002,/Content/SecureCloud/Exceptions.htm,SCL,Main Menu > Exceptions
+SCL_K8sContainerVulnerabilities-by-Cluster,5003,/Content/SecureCloud/K8sContainerVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget
+SCL_K8sContainerVulnerabilities-by-Namespace,5004,/Content/SecureCloud/K8sContainerVulnerabilities-by-Namespace.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster
+SCL_K8sContainerVulnerabilities-by-Pod,5005,/Content/SecureCloud/K8sContainerVulnerabilities-by-Pod.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget > select cluster > select namespace
+SCL_K8sPermissivePolicies-by-Cluster,5006,/Content/SecureCloud/K8sPermissivePolicies-by-Cluster.htm,SCL,Main Menu > Dashboard > Permissive Policies widget 
+SCL_K8sPermissivePolicies-by-Namespace,5007,/Content/SecureCloud/K8sPermissivePolicies-by-Namespace.htm,SCL,Main Menu > Dashboard > Permissive Policies widget > select cluster
+SCL_K8sPermissive-Policies-in-Namespace,5008,/Content/SecureCloud/K8sPermissive-Policies-in-Namespace.htm,SCL,Main Menu > Dashboard > Permissive Policies widget > select cluster > select namespace
+SCL_K8sPrivilegedWorkloads-by-Cluster,5009,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Cluster.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget
+SCL_K8sPrivilegedWorkloads-by-Namespace,5010,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Namespace.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget > select cluster
+SCL_K8sPrivilegedWorkloads-by-Pod,5011,/Content/SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm,SCL,Main Menu > Dashboard > Privileged Workloads widget > select cluster > select namespace
+SCL_K8sVulnerabilities-by-Cluster,5012,/Content/SecureCloud/K8sVulnerabilities-by-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget
+SCL_K8sVulnerabilities-in-Cluster,5013,/Content/SecureCloud/K8sVulnerabilities-in-Cluster.htm,SCL,Main Menu > Dashboard > Kubernetes Vulnerabilities widget > select cluster
+;,5014,,,
 SCL_CloudPermissiveAccess-by-Asset,5015,/Content/SecureCloud/CloudPermissiveAccess-by-Asset.htm,SCL,Main Menu > Dashboard > Permissive Access widget > select application
-SCL_CloudPolicyViolations-by-App,5016,/Content/SecureCloud/CloudPolicyViolations-by-App.htm,SCL,Main Menu > Dashboard > Policy Violations widget
-SCL_CloudPolicyViolations-by-Asset,5017,/Content/SecureCloud/CloudPolicyViolations-by-Asset.htm,SCL,Main Menu > Dashboard > Policy Violations widget > select application
-SCL_CloudRiskyPorts-by-App,5018,/Content/SecureCloud/CloudRiskyPorts-by-App.htm,SCL,Main Menu > Dashboard > Risky Ports widget
-SCL_CloudRiskyPorts-by-Asset,5019,/Content/SecureCloud/CloudRiskyPorts-by-Asset.htm,SCL,Main Menu > Dashboard > Risky Ports widget > select application
-SCL_CloudTagUsage-by-Asset,5020,/Content/SecureCloud/CloudTagUsage-by-Asset.htm,SCL,Main Menu > Dashboard > Assets Without Tags widget
-;,5021,,,
-SCL_GlobalMap,5022,/Content/PublicCloud/GlobalMap.htm,SCL,Main Menu > PUBLIC CLOUD -  Application Graph
-SCL_Applications,5023,/Content/PublicCloud/Applications.htm,SCL,Main Menu > PUBLIC CLOUD -  Applications
-SCL_Assets,5024,/Content/PublicCloud/Assets.htm,SCL,Main Menu > PUBLIC CLOUD -  Assets 
-SCL_CloudPolicy,5025,/Content/PublicCloud/CloudPolicyRules.htm,SCL,Main Menu > PUBLIC CLOUD -  Cloud Policy
-SCL_TagManager,5026,/Content/PublicCloud/WorkingWithTagManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Tag Manager 
-SCL_CloudConfiguration,5027,/Content/PublicCloud/CloudConfiguration.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Configuration
-SCL_WorkingWithAppManager,5028,/Content/PublicCloud/WorkingWithAppManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > App Manager
-SCL_AccountManager,5029,/Content/PublicCloud/AccountManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager
-;,5030,,,
-SCL_ServiceGraph,5031,/Content/Kubernetes/ServiceGraph.htm,SCL,Main Menu > KUBERNETES - Service Graph
-SCL_KubernetesNetworkPolicies,5032,/Content/Kubernetes/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies
-SCL_Nodes,5033,/Content/Kubernetes/Nodes.htm,SCL,Main Menu > KUBERNETES - Resources > Nodes
-SCL_Pods,5034,/Content/Kubernetes/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Pods
-SCL_AdmissionControllers,5035,/Content/Kubernetes/AdmissionControllers.htm,SCL,Main Menu > KUBERNETES - Resources > Admission Controllers
-SCL_Services,5036,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
-SCL_AllowedConnections,5037,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
-SCL_FirewallTickets,5038,/Content/Kubernetes/FirewallTickets.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Firewall Tickets
-SCL_Settings,5039,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KUBERNETES - Settings > General
-SCL_Notifications,5040,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
-SCL_Vulnerabilities,5041,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
-SCL_DiscoveryEngine,5042,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > KUBERNETES - New Connections
-;,5043,,,
-SCL_ActiveDirectory,5044,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > System Settings > Active Directory
-SCL_Users,5045,/Content/SecureCloud/Users.htm,SCL,Main Menu > System Settings > Users
+SCL_CloudPolicyViolations-by-Asset,5016,/Content/SecureCloud/CloudPolicyViolations-by-Asset.htm,SCL,Main Menu > Dashboard > Policy Violations widget > select application
+SCL_CloudRiskyPorts-by-Asset,5017,/Content/SecureCloud/CloudRiskyPorts-by-Asset.htm,SCL,Main Menu > Dashboard > Risky Ports widget > select application
+SCL_CloudTagUsage-by-Asset,5018,/Content/SecureCloud/CloudTagUsage-by-Asset.htm,SCL,Main Menu > Dashboard > Assets Without Tags widget
+;,5019,,,
+SCL_GlobalMap,5020,/Content/PublicCloud/GlobalMap.htm,SCL,Main Menu > PUBLIC CLOUD -  Application Graph
+SCL_Applications,5021,/Content/PublicCloud/Applications.htm,SCL,Main Menu > PUBLIC CLOUD -  Applications
+SCL_Assets,5022,/Content/PublicCloud/Assets.htm,SCL,Main Menu > PUBLIC CLOUD -  Assets 
+SCL_CloudPolicy,5023,/Content/PublicCloud/CloudPolicyRules.htm,SCL,Main Menu > PUBLIC CLOUD -  Cloud Policy
+SCL_TagManager,5024,/Content/PublicCloud/WorkingWithTagManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Tag Manager 
+SCL_CloudConfiguration,5025,/Content/PublicCloud/CloudConfiguration.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Configuration
+SCL_WorkingWithAppManager,5026,/Content/PublicCloud/WorkingWithAppManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > App Manager
+SCL_AccountManager,5027,/Content/PublicCloud/AccountManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager
+;,5028,,,
+SCL_ServiceGraph,5029,/Content/Kubernetes/ServiceGraph.htm,SCL,Main Menu > KUBERNETES - Service Graph
+SCL_KubernetesNetworkPolicies,5030,/Content/Kubernetes/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies
+SCL_Nodes,5031,/Content/Kubernetes/Nodes.htm,SCL,Main Menu > KUBERNETES - Resources > Nodes
+SCL_Pods,5032,/Content/Kubernetes/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Pods
+SCL_AdmissionControllers,5033,/Content/Kubernetes/AdmissionControllers.htm,SCL,Main Menu > KUBERNETES - Resources > Admission Controllers
+SCL_Services,5034,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
+SCL_AllowedConnections,5035,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
+SCL_FirewallTickets,5036,/Content/Kubernetes/FirewallTickets.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Firewall Tickets
+SCL_Settings,5037,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KUBERNETES - Settings > General
+SCL_Notifications,5038,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
+SCL_Vulnerabilities,5039,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
+SCL_DiscoveryEngine,5040,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > KUBERNETES - New Connections
+;,5041,,,
+SCL_myaccount ,5042,/Content/SecureCloud/MyAccount.htm,SCL,Main Menu > Configuration > Active Directory
+SCL_users,5043,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Users
+SCL_activedirectory,5044,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
+SCL_configrisk,5045,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Users
 ;,5046,,,
 ;,5047,,,
 ;,5048,,,
-SCL_SecurityScore,5049,/Content/Kubernetes/SecurityScore.htm,SCL,none
-SCL_Deploy,5050,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
-SCL_OrcaArchitecture,5051,/Content/Kubernetes/Architecture.htm,SCL,none
-SCL_SignUp,5052,/Content/SecureCloud/SignUp.htm,SCL,none
-SCL_WhatsNew,5053,/Content/SecureCloud/WhatsNew.htm,SCL,none
-;,,,,
-;,,,,
+SCL_securityscore,5049,/Content/Kubernetes/SecurityScore.htm,SCL,none
+SCL_deploy,5050,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
+SCL_orcaarchitecture,5051,/Content/Kubernetes/Architecture.htm,SCL,none
+SCL_signup,5052,/Content/SecureCloud/SignUp.htm,SCL,none
+SCL_whatsnew,5053,/Content/SecureCloud/WhatsNew.htm,SCL,none
+;,5054,,,
+;,5055,,,
