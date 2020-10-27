@@ -8,8 +8,6 @@
         <ul>
             <li>Port 23 - Telnet: Data is plain text and so open to injection</li>
             <li>Port 110 - POP3: Plain text</li>
-            <li>Port 135 allows the remote computer to make COM calls to the target </li>
-            <li>Port 136 profile naming system - no longer used</li>
             <li>Port 137-9 NetBIOS meant for file and printer sharing - can be used to obtain system information such as domain, workgroup and system names</li>
             <li>Port 445 SMB over IP - can be used to obtain system information </li>
             <li>Port 3389 - RDP - could be breached by brute-force methods for trying username and password combinations</li>

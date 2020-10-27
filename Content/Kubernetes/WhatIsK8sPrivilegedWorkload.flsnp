@@ -5,7 +5,7 @@
     <body>
         <p style="font-weight: normal;">
             <p><MadCap:variable name="local.Kubernetes" /> workloads can be granted special privileges through security contexts, some of which could pose a security risk. <MadCap:variable name="local.ProductName" /> monitors the following security contexts:</p>
-            <p class="pd-tile-item"><span class="SpecialBold">Pod Security Contexts</span>
+            <p><span class="SpecialBold">Pod Security Contexts</span>
             </p>
             <ul>
                 <li>Unsafe sysctls. The pod can use unsafe sysctls. You should only allow unsafe sysctls for very special situations such as high-performance or real-time application tuning.</li>

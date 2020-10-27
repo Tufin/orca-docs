@@ -123,6 +123,9 @@
       </TocEntry>
     </TocEntry>
     <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/SecureCloud/Exceptions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
       Title="Public Cloud">
       <TocEntry
         Title="Visibility">

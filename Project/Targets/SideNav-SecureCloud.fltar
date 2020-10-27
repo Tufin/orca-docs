@@ -29,7 +29,7 @@
     GenerateGlossaryProxy="true" />
   <Variables>
     <Variable
-      Name="custom/IncludeVersionDropdown">true</Variable>
+      Name="custom/IncludeVersionDropdown">false</Variable>
     <Variable
       Name="custom/Theme">securecloud</Variable>
   </Variables>
