@@ -4,7 +4,7 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Navigate <MadCap:variable name="local-orca.Product_S" /></h1>
+        <h1>Navigating <MadCap:variable name="local-orca.Product_S" /></h1>
         <p>Actions and functions that appear throughout <MadCap:variable name="local-orca.Product_S" />.</p>
         <ul>
             <li>
@@ -23,6 +23,8 @@
             </li>
             <li>
                 <MadCap:xref href="#copypaste">Copy / Paste Fields on the Screen</MadCap:xref>
+            </li>
+            <li><a href="#csv">Download as CSV File</a>
             </li>
         </ul>
         <p class="h2"><a name="menu"></a>Main Menu</p>
@@ -100,7 +102,8 @@
                                 <MadCap:xref href="../Kubernetes/Nodes.htm">Nodes</MadCap:xref>
                             </li>
                             <li>
-                                <MadCap:xref href="../Kubernetes/Pods.htm">Pods</MadCap:xref>
+                                <MadCap:xref href="../Kubernetes/Workloads.htm"><MadCap:variable name="local.Workloads" />
+                                </MadCap:xref>
                             </li>
                             <li>
                                 <MadCap:xref href="../Kubernetes/Services.htm">Services</MadCap:xref>
@@ -139,6 +142,8 @@
                     <li><a href="ActiveDirectory.htm"><MadCap:variable name="local.ActiveDirectory" /></a>
                     </li>
                     <li><a href="ConfigRisk.htm"><MadCap:variable name="local.RiskConfiguration" /></a>
+                    </li>
+                    <li><a href="Reports.htm"><MadCap:variable name="local.Reports" /></a>
                     </li>
                 </ul>
             </li>
@@ -288,6 +293,8 @@
             </tbody>
         </table>
         <p class="h2"><a name="copypaste"></a>Copy / Paste Fields on the Screen</p>
-        <p>A number of screens e.g. <MadCap:xref href="../PublicCloud/Assets.htm">Assets</MadCap:xref>, <MadCap:xref href="../PublicCloud/AzureFirewalls.htm">Azure Firewalls</MadCap:xref>, display the copy-to-clipboard icon when hovering over a field to allow easy copy/paste of screen information.</p>
+        <p>A number of screens e.g. <a href="../PublicCloud/Assets.htm#asset%20overview">asset overview</a>, <MadCap:xref href="../PublicCloud/AzureFirewalls.htm">azure firewalls</MadCap:xref>, display the copy-to-clipboard icon when hovering over a field to allow easy copy/paste of screen information.</p>
+        <p class="h2"><a name="csv"></a>Download as CSV File</p>
+        <p class="normal">Some screens such as <MadCap:variable name="local.PermissiveAccess" /> by Asset, and <MadCap:variable name="local.K8sVulnerabilities" /> have the option of exporting and downloading the information displayed as a CSV file, which can be viewed using Excel and other CSV readers. When available, the CSV icon <img src="../SecureCloud-Images/Icon_CSV.png" />  appears on the screen.</p>
     </body>
 </html>

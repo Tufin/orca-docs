@@ -63,7 +63,7 @@
         Link="/Content/Kubernetes/ServiceGraph.htm"></TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Kubernetes/Pods.htm" />
+        Link="/Content/Kubernetes/Workloads.htm" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Kubernetes/Services.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>

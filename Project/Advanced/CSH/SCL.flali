@@ -28,7 +28,7 @@
 	<Map Name="SCL_ServiceGraph" Link="/Content/Kubernetes/ServiceGraph.htm" />
 	<Map Name="SCL_KubernetesNetworkPolicies" Link="/Content/Kubernetes/KubernetesNetPolicies.htm" />
 	<Map Name="SCL_Nodes" Link="/Content/Kubernetes/Nodes.htm" />
-	<Map Name="SCL_Pods" Link="/Content/Kubernetes/Pods.htm" />
+	<Map Name="SCL_Workloads" Link="/Content/Kubernetes/Pods.htm" />
 	<Map Name="SCL_AdmissionControllers" Link="/Content/Kubernetes/AdmissionControllers.htm" />
 	<Map Name="SCL_Services" Link="/Content/Kubernetes/Services.htm" />
 	<Map Name="SCL_AllowedConnections" Link="/Content/Kubernetes/AllowedConnections.htm" />

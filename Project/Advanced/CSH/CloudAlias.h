@@ -27,7 +27,7 @@
 #define SCL_ServiceGraph 5029
 #define SCL_KubernetesNetworkPolicies 5030
 #define SCL_Nodes 5031
-#define SCL_Pods 5032
+#define SCL_Workloads 5032
 #define SCL_AdmissionControllers 5033
 #define SCL_Services 5034
 #define SCL_AllowedConnections 5035

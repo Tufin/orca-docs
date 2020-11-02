@@ -133,9 +133,9 @@
     Comment="Menu"
     EvaluatedDefinition="Services">Services</Variable>
   <Variable
-    Name="Pods"
+    Name="Workloads"
     Comment="Menu"
-    EvaluatedDefinition="Pods">Pods</Variable>
+    EvaluatedDefinition="Workloads">Workloads</Variable>
   <Variable
     Name="Nodes"
     Comment="Menu"
@@ -343,4 +343,12 @@
     Name="privilegedworkloads"
     Comment="mid sentence"
     EvaluatedDefinition="workload security">workload security</Variable>
+  <Variable
+    Name="workload"
+    Comment="Mid sentence"
+    EvaluatedDefinition="workload">workload</Variable>
+  <Variable
+    Name="Reports"
+    Comment="Menu"
+    EvaluatedDefinition="Reports">Reports</Variable>
 </CatapultVariableSet>

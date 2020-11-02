@@ -235,7 +235,13 @@
                 <p><span class="SpecialBold">Exception Name:</span> A name of your choice.</p>
                 <p><span class="SpecialBold">Violation Type:</span> Risky port, Permissive source, Permissive service. If more than one type of violation exists for the selected access then select the type of exception you are defining. If only one type of violation exists for the access, it cannot be changed.</p>
                 <p><span class="SpecialBold">Violation Details:</span> The ports, sources or services identified as violations. If more than one violation exists for the selected violation type and access, then select all those appropriate for the exception you are defining. If only one violation exists for this violation type and access, it cannot be changed.</p>
-                <p><span class="SpecialBold">Scope:</span> The assets to be included in the exception. Select one from:&#160;security control, cloud account or all cloud accounts.</p>
+                <p><span class="SpecialBold">Asset Scope:</span> The assets to be included in the exception. Select one:&#160;</p>
+                <ul>
+                    <li><b>Security control</b> - all assets to which access is permitted by the security control allowing this access</li>
+                    <li><b>Asset tags</b> - all assets having the exact same tags as this asset</li>
+                    <li><b>Cloud account</b> - all assets in the cloud account in which this asset is located</li>
+                    <li><b>All cloud accounts</b> - all cloud accounts monitored by SecureCloud</li>
+                </ul>
                 <p><span class="SpecialBold">Description:</span> Optional text of your choice.</p>
             </li>
             <li> click <span class="ScreenObject">Add</span> to save.</li>

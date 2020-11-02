@@ -30,7 +30,7 @@ SCL_AccountManager,5027,/Content/PublicCloud/AccountManager.htm,SCL,Main Menu > 
 SCL_ServiceGraph,5029,/Content/Kubernetes/ServiceGraph.htm,SCL,Main Menu > KUBERNETES - Service Graph
 SCL_KubernetesNetworkPolicies,5030,/Content/Kubernetes/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies
 SCL_Nodes,5031,/Content/Kubernetes/Nodes.htm,SCL,Main Menu > KUBERNETES - Resources > Nodes
-SCL_Pods,5032,/Content/Kubernetes/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Pods
+SCL_Workloads,5032,/Content/Kubernetes/Pods.htm,SCL,Main Menu > KUBERNETES - Resources > Workloads
 SCL_AdmissionControllers,5033,/Content/Kubernetes/AdmissionControllers.htm,SCL,Main Menu > KUBERNETES - Resources > Admission Controllers
 SCL_Services,5034,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
 SCL_AllowedConnections,5035,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
