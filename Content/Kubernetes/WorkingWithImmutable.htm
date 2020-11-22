@@ -50,13 +50,13 @@
         <p>Use these parameters:</p>
         <p>{TOKEN}:&#160;<MadCap:variable name="local-orca.Product_S" /> &gt; Settings &gt; <a href="OrcaSettingsGeneral.htm#Viewing%20and%20Copying%20Tokens">API Tokens</a>: Use the value of any token with Scope=all, label=CI</p>
         <p>{URL}: https://securecloud.tufin.io/api</p>
-        <p>{<MadCap:variable name="local.Domain" />}: Your <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.domain" /></p>
+        <p>{<MadCap:variable name="local.SecurecloudAccount" />}: Your <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Securecloudaccount" /></p>
         <p>{<MadCap:variable name="local.Project" />} The monitored <MadCap:variable name="local.project" /></p>
         <h3>Reset Policy </h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.Domain" />}/{<MadCap:variable name="local.Project" />}/scripts/reset-policy")</p>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/reset-policy")</p>
         <h3>Fetch Policy </h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.Domain" />}/{<MadCap:variable name="local.Project" />}/scripts/fetch-policy")</p>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/fetch-policy")</p>
         <h3>Commit Policy</h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.Domain" />}/{<MadCap:variable name="local.Project" />}/scripts/commit-policy")</p>
+        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${TOKEN}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/commit-policy")</p>
     </body>
 </html>

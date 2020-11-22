@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.GoogleCloudPlatform" /> Permissions</h1>
+        <p>To allow <MadCap:variable name="local.ProductName" /> to monitor <MadCap:variable name="local.GoogleCloudPlatform" /> projects, you must grant the appropriate permissions. For more information, see the <a href="https://cloud.google.com/iam/docs/granting-changing-revoking-access">official <MadCap:variable name="local.GoogleCloudPlatform" /> documentation</a>. </p>
+        <ol>
+            <li>In the Cloud Console, go to the IAM page.</li>
+            <li>Add a new member, SecureCloud’s service account - <MadCap:variable name="local.SecureCloudGCPAccount" /></li>
+            <li>
+                <p>Assign roles <span class="StatusOrValue">compute viewer</span> and <span class="StatusOrValue">security reviewer</span></p>
+            </li>
+        </ol>
+    </body>
+</html>

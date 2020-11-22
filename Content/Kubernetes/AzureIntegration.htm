@@ -67,9 +67,9 @@
             </li>
             <li>
                 <p>Add a tag on the firewall for every  <MadCap:variable name="local.project" /> that needs to update the firewall policy. Use the format:</p>
-                <p class="CodeSegment1">key=tufin, value=orca.&lt;<MadCap:variable name="local.Domain" />&gt;.&lt;<MadCap:variable name="local.Project" />&gt; </p>
+                <p class="CodeSegment1">key=tufin, value=orca.&lt;<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;<MadCap:variable name="local.Project" />&gt; </p>
                 <p>where &lt;account&gt; and &lt;cluster&gt; are your <MadCap:variable name="local-orca.Product_S" /> account name and the monitored cluster. If the same firewall is associated with more than one cluster  add a separate tag for each  e.g.</p>
-                <p class="CodeSegment1">orca.&lt;my<MadCap:variable name="local.Domain" />&gt;.&lt;my<MadCap:variable name="local.Project" />1&gt;,orca.&lt;my<MadCap:variable name="local.Domain" />&gt;.&lt;my<MadCap:variable name="local.Project" />2&gt;</p>
+                <p class="CodeSegment1">orca.&lt;my<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;my<MadCap:variable name="local.Project" />1&gt;,orca.&lt;my<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;my<MadCap:variable name="local.Project" />2&gt;</p>
                 <p>Repeat for all required firewalls.</p>
             </li>
         </ol>

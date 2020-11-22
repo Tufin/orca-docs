@@ -50,10 +50,10 @@
             </li>
             <li MadCap:conditions="General.Exclude">
                 <p>Run the deployment command as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
-https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.domain" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
+https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.Securecloudaccount" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
                 <p>where,</p>
                 <ul>
-                    <li>&lt;<MadCap:variable name="local.domain" />&gt; is your account name</li>
+                    <li>&lt;<MadCap:variable name="local.Securecloudaccount" />&gt; is your account name</li>
                     <li>&lt;<MadCap:variable name="local.project" />&gt; is as provided by you when signing up</li>
                     <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local-orca.Product_S" /></li>
                     <li>

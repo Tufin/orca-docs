@@ -237,12 +237,12 @@
     Comment=""
     EvaluatedDefinition="cluster">cluster</Variable>
   <Variable
-    Name="domain"
-    Comment=""
+    Name="Securecloudaccount"
+    Comment="The securecloud account not the cloud vendor account"
     EvaluatedDefinition="account">account</Variable>
   <Variable
-    Name="Domain"
-    Comment=""
+    Name="SecurecloudAccount"
+    Comment="The securecloud account not the cloud vendor account"
     EvaluatedDefinition="Account">Account</Variable>
   <Variable
     Name="NewConnections"
@@ -351,4 +351,28 @@
     Name="Reports"
     Comment="Menu"
     EvaluatedDefinition="Reports">Reports</Variable>
+  <Variable
+    Name="GoogleCloudPlatform"
+    Comment=""
+    EvaluatedDefinition="Google Cloud Platform">Google Cloud Platform</Variable>
+  <Variable
+    Name="SecureCloudGCPAccount"
+    Comment=""
+    EvaluatedDefinition="securecloud-client@tufin-securecloud-prod.iam.gserviceaccount.com">securecloud-client@tufin-securecloud-prod.iam.gserviceaccount.com</Variable>
+  <Variable
+    Name="CloudAccounts"
+    Comment="menu"
+    EvaluatedDefinition="Cloud Accounts">Cloud Accounts</Variable>
+  <Variable
+    Name="Credentials"
+    Comment="Menu"
+    EvaluatedDefinition="Credentials">Credentials</Variable>
+  <Variable
+    Name="Vendoraccount"
+    Comment="The cloud vendor account / subscription / project"
+    EvaluatedDefinition="account">account</Variable>
+  <Variable
+    Name="PublicCloudVendors"
+    Comment="no and/or used to cover both cases"
+    EvaluatedDefinition="Amazon AWS, Microsoft Azure, Google Cloud Platform">Amazon AWS, Microsoft Azure, Google Cloud Platform</Variable>
 </CatapultVariableSet>

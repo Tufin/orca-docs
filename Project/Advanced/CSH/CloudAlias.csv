@@ -25,7 +25,10 @@ SCL_CloudPolicy,5023,/Content/PublicCloud/CloudPolicyRules.htm,SCL,Main Menu > P
 SCL_TagManager,5024,/Content/PublicCloud/WorkingWithTagManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Tag Manager 
 SCL_CloudConfiguration,5025,/Content/PublicCloud/CloudConfiguration.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Configuration
 SCL_WorkingWithAppManager,5026,/Content/PublicCloud/WorkingWithAppManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > App Manager
-SCL_AccountManager,5027,/Content/PublicCloud/AccountManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager
+SCL_AccountManager,5027,/Content/PublicCloud/AccountManager.htm,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager 
+SCL_AccountManager_AddAWS,5027,/Content/PublicCloud/AccountManager.htm#addaws,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager > Add Account > AWS
+SCL_AccountManager_AddAzure,5027,/Content/PublicCloud/AccountManager.htm#addazure,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager > Add Account > Azure
+SCL_AccountManager_AddGCP,5027,/Content/PublicCloud/AccountManager.htm#addgoogle,SCL,Main Menu > PUBLIC CLOUD - Settings > Account Manager > Add Account > Google Cloud
 ;,5028,,,
 SCL_ServiceGraph,5029,/Content/Kubernetes/ServiceGraph.htm,SCL,Main Menu > KUBERNETES - Service Graph
 SCL_KubernetesNetworkPolicies,5030,/Content/Kubernetes/KubernetesNetPolicies.htm,SCL,Main Menu > KUBERNETES - Resources > Network Policies

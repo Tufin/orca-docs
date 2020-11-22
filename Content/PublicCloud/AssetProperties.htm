@@ -15,102 +15,160 @@
         </p>
         <p><a href="#Azure_Storage">Azure Storage Properties</a>
         </p>
+        <p><a href="#GCP_VM"><MadCap:variable name="local.GoogleCloudPlatform" /> Virtual Machine Properties</a>
+        </p>
+        <p><a href="#GCP_Storage"><MadCap:variable name="local.GoogleCloudPlatform" /> Bucket Properties</a>
+        </p>
         <p class="h2"><a name="AWS_VM"></a>AWS Virtual Machine Properties</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 134px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 166px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <thead>
                 <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Property</span>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Asset Screen</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
                     </th>
                     <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
                     </th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Value</span>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">vnetName</p>
+                        <p class="TableBodyText">As shown in title bar</p>
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
-                        <p class="TableBodyText">Name of the vnet that holds this virtual machine</p>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the instance in Amazon Resource Name (ARN) format</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Web Server.1<br />See <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">aws-arns-and-namespaces.html</a> for more details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
                     </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>sales-vnet</p>
-                    </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">vpcName</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Name of the VPC that holds this virtual machine</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">CRM:Prod-Vpc</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">iamInstanceProfile</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Contains identity access management role information </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">arn:aws:iam::977996673237:instance-profile/Demo-S3AccessInstanceProfile-1N714ZQL6T573</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">instanceId</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">unique ID&#160;of this instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">i-078ff1a474f52fd82</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">privateIpAddress</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">IP address of the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">10.100.0.227</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">region</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">name of the region that holds this instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">EU (Ireland)   <br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">state</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">state of the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">stopped, running<br />Other Instance states are not sufficiently persistent for monitoring purposes</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">name</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">name of the instance in Amazon Resource Name (ARN) format</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Web Server.1<br />See <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">aws-arns-and-namespaces.html</a> for more details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">keyName</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the SSH key bound to the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">myKeyPair</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">accountId</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">account ID of the instance</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">123567554215</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Avl. Zone</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">availabilityZone</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">availability zone of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">eu-west-1a<br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details<br /></td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">instanceId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">unique ID&#160;of this instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">i-078ff1a474f52fd82</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Private IP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">privateIpAddress</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">IP address of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">10.100.0.227</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Public IP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">publicIpAddress</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"> public IP of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">77.33.44.55</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">region</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the region that holds this instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">EU (Ireland)   <br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Subnet</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">vnetName</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Name of the vnet that holds this virtual machine</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>sales-vnet</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Type</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">instanceType</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Instance type</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">t2.small<br />See <a href="https://aws.amazon.com/ec2/instance-types/">instance-types</a> for more details</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">imageId</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">image ID used for the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">ami-3bfab942</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">none</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">On screen only</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">AWS</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">publicDnsName</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">public DNS name assigned to the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">VPC</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">vpcName</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Name of the VPC that holds this virtual machine</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">CRM:Prod-Vpc</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">availabilityZone</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">availability zone of the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">eu-west-1a<br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details<br /></td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Not shown</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">iamInstanceProfile</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Contains identity access management role information </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">arn:aws:iam::977996673237:instance-profile/Demo-S3AccessInstanceProfile-1N714ZQL6T573</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">publicIpAddress</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"> public IP of the instance</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">77.33.44.55</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Not shown</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">state</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">state of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">stopped, running<br />Other Instance states are not sufficiently persistent for monitoring purposes</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Not shown</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">keyName</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">name of the SSH key bound to the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">myKeyPair</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Not shown</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">imageId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">image ID used for the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">ami-3bfab942</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Not shown</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">publicDnsName</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">public DNS name assigned to the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">&#160;</td>
                 </tr>
             </tbody>
         </table>
@@ -118,68 +176,113 @@
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 416px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <thead>
                 <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Property</span>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Asset Screen</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
                     </th>
                     <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
                     </th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Value</span>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">versioning</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">If the bucket versioning is enabled</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">true, false</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">website</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">If the bucket static website feature is enabled</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true, false</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">region</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the region that holds this bucket</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">EU (Ireland)   <br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">serverLogging</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">If the server access logging feature is enabled</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true, false</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">encryption</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">If the bucket is encrypted</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">true, false</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">creationDate</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">date the bucket was created</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Thu Jun 14 09:54:19 UTC 2018</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">As shown in title bar</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the bucket</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">crm.data</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">accountId</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">account ID of the bucke</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">123567554215</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">accountId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">account ID of the bucket</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">123567554215</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Creation Date</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">creationDate</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">date the bucket was created</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Thu Jun 14 09:54:19 UTC 2018</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Encryption</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">encryption</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">If the bucket is encrypted</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true, false</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">region</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name of the region that holds this bucket</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">EU (Ireland)   <br />See <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html">using-regions-availability-zones.html</a> for more details</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Server Logging</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">serverLogging</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Server access logging feature is enabled</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true, false</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">none</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">On screen only</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">AWS</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Versioning</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">versioning</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Bucket versioning is enabled</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true, false</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Website </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">website</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Bucket static website feature is enabled</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">true, false</td>
                 </tr>
             </tbody>
         </table>
         <p class="h2"><a name="Azure_VM"></a>Azure Virtual Machine Properties</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 220px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 220px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 415px;" />
             <col class="TableStyle-PatternedRows-Column-Regular" />
             <thead>
                 <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Property</span>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">&#160;</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
                     </th>
                     <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
                     </th>
@@ -189,82 +292,534 @@
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">As shown in title bar</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The server name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The VM name</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">server1</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">virtualMachineId</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">UUID format  </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">1951f671-b9f3-44ab-b1f0-e025f792d005</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>accountId</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">The name of the account under which the instance was created</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">myaccount</p>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">instanceType</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Size  of the virtual machine</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Standard_DS1</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">virtualMachineId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">VM ID&#160;in UUID format  </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">1951f671-b9f3-44ab-b1f0-e025f792d005</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Private IP</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">privateIpAddress</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">IP address of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Internal IP address of the instance</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">    1.1.1.1</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">resourceGroup</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The name of the resource group attached to the storage account</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Group1</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Public IP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">publicIpAddress</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">External IP address of the instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">    1.1.1.1</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">imageId</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">{image offer}:{image sku}    </td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">UbuntuServer:18.04-LTS</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">region</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">The name of the region that holds this storage account</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">westus</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="h2"><a name="Azure_Storage"></a>Azure Storage Properties</p>
-        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <col class="TableStyle-PatternedRows-Column-Regular" />
-            <thead>
-                <tr class="TableStyle-PatternedRows-Head-Header1">
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Property</span>
-                    </th>
-                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
-                    </th>
-                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The name of the storage account</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">storageaccount</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">resourceGroup</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The name of the resource group attached to the storage account</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Group1 </td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">creationDate</td>
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">date the storage account was created</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">19-Nov 2018</td>
-                </tr>
-                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">region</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The name of the region that holds this storage account</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">westus</td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">encryption</td>
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">If the bucket is encrypted(always true)</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">true</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subnet</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>subnetName</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">The name of the subnet on which the instance is deployed</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>privateSubnet</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Resource Group</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">resourceGroup</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The name of the resource group attached to the storage account</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Group1</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Type </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">instanceType</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Size  of the virtual machine</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Standard_DS1</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">the cloud service provider</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">azure</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">VNET</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>vnetName</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">The name of the vnet on which the instance is deployed</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>my-vnet</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p class="TableBodyText">Not shown</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">imageId</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Image ID in format {image offer}:{image sku}    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">UbuntuServer:18.04-LTS</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h2"><a name="Azure_Storage"></a>Azure Storage Properties</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 219px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 219px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 414px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Asset Screen</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">As shown in title bar</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The storage instance name</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">server1</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>accountId</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">The name of the account under which the storage instance was created</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">myaccount</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Creation Date</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">creationDate</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Date the storage account was created</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">19-Nov 2018</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Encryption</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">encryption</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The bucket is encrypted (always true)</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">true</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">region</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The name of the region that holds this storage account</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">westus</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Resource Group</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">resourceGroup</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The name of the resource group attached to the storage account</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Group1 </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">the cloud service provider</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">Azure</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Not shown</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>defaultDenyAccess</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Not shown</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>trustAzureServices</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="TableBodyText">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h2"><a name="GCP_VM"></a>GCP Virtual Machine Properties</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 212px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 208px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 281px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Asset Screen</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">As shown in title bar</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The VM name</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">App Server</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">accountId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The name of the account</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">prod_project</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">virtualMachineId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The unique ID of the VM</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">4507200796405716841</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Networkk Tags</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>networkTags</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">tags assigned to the VM</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>http-servers</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Private IP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>privateIpAddress</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Private or internal IP address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>10.132.0.2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Public IP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>publicIpAddress</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Public or external IP address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>35.205.154.232</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Geographical region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>europe-west2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Service Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>serviceAccount</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Service account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>compute-instance-admin@tufincloud.iam.gserviceaccount.com</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subnet</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>subnetName</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Subnet name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>dev-subnet</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">instanceType</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Type of instance</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">n1-highmem-2</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">vendor</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The cloud service provider</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Google Cloud</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">VPC</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">vpcName</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">VPC name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>dev-vpc</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="TableBodyText">Zone</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">zone</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Geographical area </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">europe-west2-c</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="h2"><a name="GCP_Storage"></a>GCP Storage Properties</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 213px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 210px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 279px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Asset Screen</th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Vendor Property</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1"><span class="Emphasis">Description</span>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1"><span class="Emphasis">Example Values</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">As shown in title bar</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">name</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">The name of the storage account (bucket)</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">crm.data</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">accountId</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">name of the account (project)</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">prod_project</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Creation Date</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">creationDate</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Creation date</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">26-Mar-2020</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Default Storage Class</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>defaultStorageClass</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Default storage class</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p>Standard</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Encryption Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>encryptionType</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Type of encryption</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Google-managed key</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Region</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">region</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Region </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">US-CENTRAL1</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>regionType</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Region type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>multi-region</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Vendor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">vendor</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">The cloud service provider</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">Google Cloud</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Versioning</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>versioning</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Is versioning used?</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>false</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">Website</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p>website</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
+                        <p class="TableBodyText">Is a website used?</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
+                        <p>false</p>
+                    </td>
                 </tr>
             </tbody>
         </table>

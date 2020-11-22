@@ -9,7 +9,7 @@
         </li>
         <li><span class="ScreenObject">Application</span>. The application with which the asset is associated</li>
         <li>
-            <p><span class="ScreenObject">Account</span>. The name of the cloud account with the vendor's icon e.g. AWS, Azure</p>
+            <p><span class="ScreenObject">Account</span>. The name of the cloud account with the vendor's icon - <MadCap:variable name="local.PublicCloudVendors" /></p>
         </li>
         <li>
             <p><span class="ScreenObject">Internet access</span>:</p>
