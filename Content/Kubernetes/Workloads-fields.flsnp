@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <p><span class="ScreenObject">Name</span>: Name of the <MadCap:variable name="local.workload" /></p>
+            </li>
+            <li>
+                <p><b>Type</b>: Type of workload. Can be any one of:</p>
+                <ul>
+                    <li>deployment</li>
+                    <li>deamon set</li>
+                    <li>cron job</li>
+                    <li>stateful set</li>
+                    <li>replica set</li>
+                    <li>job</li>
+                </ul>
+            </li>
+            <li MadCap:conditions="General.Exclude"><b>Cluster</b>: Cluster  to which the workload is applied</li>
+            <li><b>Namespace</b>:&#160;Namespace to which the workload is applied</li>
+            <li>
+                <p><span class="ScreenObject">Pod Labels</span>: The labels assigned to the workload's pods</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Pod Security Context</span>: The <a href="WhatIsK8sPrivilegedWorkload.htm">security contexts</a> assigned to the workload's pods</p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Container Image</span>: Names of all containers in the pod, showing <a href="SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a></p>
+            </li>
+            <li>
+                <p><span class="ScreenObject">Container Security Context</span>: The <a href="WhatIsK8sPrivilegedWorkload.htm">security contexts</a> assigned to the workload's containers</p>
+            </li>
+        </ul>
+    </body>
+</html>

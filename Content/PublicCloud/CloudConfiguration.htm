@@ -11,31 +11,19 @@
         <p>
             <img src="../PublicCloud-Images/Screen_NotificationSettings.png" class="ThumbnailPopup" />
         </p>
-        <p>Configure <MadCap:variable name="local-iris.ProductName" /> to send notifications via:</p>
-        <ul>
-            <li>
-                <p>email - Enter a single email username.</p>
-            </li>
-            <li>
-                <p>Slack - Enter a Slack incoming Webhook URL,&#160;to send the notification to an individual or group.</p>
-                <p>See <a href="https://api.slack.com/incoming-webhooks">Slack documentation for incoming webhooks</a> for additional details.</p>
-            </li>
-        </ul>
+        <p>Set the frequency at which <MadCap:variable name="local-iris.ProductName" /> syncs with your cloud vendor accounts.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
-            <li>
-                <p>Enable or disable notifications</p>
-                <p>
-                    <img src="../PublicCloud-Images/ButtonToggle_on.png" class="noborder" />Enabled</p>
-                <p>
-                    <img src="../PublicCloud-Images/ButtonToggle_Off.png" class="noborder" /> Disabled</p>
+            <li><a href="#polling">Change the polling interval </a>
             </li>
-            <li>
-                <p>Edit a recipient <img src="../PublicCloud-Images/icon_Edit.png" class="noborder" /></p>
-                <p>- add or edit a single valid email address</p>
-            </li>
-            <li>Change the polling interval - the time between checking the status of your cloud accounts</li>
         </ul>
+        <p class="h3"><a name="polling"></a>Change the Polling Interval</p>
+        <p>The polling interval is the time between checking the status of your cloud accounts and receiving an updated picture of their assets.</p>
+        <ol>
+            <li>Click <img src="../PublicCloud-Images/icon_Edit.png" class="noborder" />. </li>
+            <li>Select a polling frequency from the drop-down list</li>
+            <li>Click <span class="ScreenObject">Submit</span> to save.</li>
+        </ol>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_CloudConfiguration.flsnp" />
     </body>

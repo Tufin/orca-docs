@@ -3,6 +3,8 @@
     <head>
     </head>
     <body>
-        <p>An <MadCap:variable name="local.Vendoraccount" /> or Cloud account in <MadCap:variable name="local-iris.ProductName" /> is a cloud vendor account - <MadCap:variable name="local.PublicCloudVendors" /> - that you have allowed <MadCap:variable name="local-iris.ProductName" /> to monitor the account  providing visibility and other functions. For more information, see <MadCap:variable name="local.Account Manager" />.</p>
+        <p>An account  in <MadCap:variable name="local-iris.ProductName" /> can be either your <MadCap:variable name="local.ProductName" /> account that gives you access to <MadCap:variable name="local.ProductName" />'s functionality, or a cloud vendor account  - <MadCap:variable name="local.PublicCloudVendors" /> - that you can allow <MadCap:variable name="local-iris.ProductName" /> to monitor, providing you with visibility and other functions. </p>
+        <p>For more information about <MadCap:variable name="local.ProductName" /> and your cloud vendor accounts, see <a href="AccountManager.htm"><MadCap:variable name="local.Account Manager" /></a> </p>
+        <p>For more information about managing your <MadCap:variable name="local.ProductName" /> account, see <a href="../SecureCloud/SignUp.htm">Sign Up</a> and <a href="../SecureCloud/Users.htm"><MadCap:variable name="local.Users" /></a></p>
     </body>
 </html>

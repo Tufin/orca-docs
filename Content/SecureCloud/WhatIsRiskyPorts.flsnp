@@ -3,7 +3,7 @@
     <head>
     </head>
     <body>
-        <p>There are ports  that are considered high risk  and allowing traffic to reach your assets through them could leave them open to attack. The list of <MadCap:variable name="local.risky ports (lower case)" /> can be managed in <a href="ConfigRisk.htm"><MadCap:variable name="local.Configuration" /></a> and the scope of reporting them further refined in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. </p>
+        <p>In <MadCap:variable name="local.ProductName" />, <MadCap:variable name="local.risky ports (lower case)" /> are <MadCap:snippetText src="WhatIsRiskyPortsShort.flsnp" />. They are therefore considered high risk  and could leave your <MadCap:variable name="local.asset" />s open to attack. The list of <MadCap:variable name="local.risky ports (lower case)" /> can be managed in <a href="ConfigRisk.htm"><MadCap:variable name="local.Configuration" /></a> and the scope of reporting them further refined in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. </p>
         <p>A default list is included when you install <MadCap:variable name="local.ProductName" />, which you can modify to your requirements:</p>
         <ul>
             <li>Port 23 - Telnet: Data is plain text and so open to injection</li>

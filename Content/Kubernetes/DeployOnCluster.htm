@@ -139,13 +139,22 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                         </tr>
                     </tbody>
                 </table>
-                <p>In addition, if you want to enable <a href="SecurityScore.htm">scanning</a> of your container images for vulnerabilities, you must allow every cluster node   access to your docker image registries.</p>
+                <p>In addition, if you want to enable <a href="SecurityScore.htm">scanning</a> of your container images for vulnerabilities (recommended), you must give every cluster node   access to your docker image registries.</p>
             </li>
             <li>
                 <p>The deployment bash string must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
                 <p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</pre>
                 </p>
                 <p>where &lt;user&gt; is dependent on your Kubernetes environment. See more <MadCap:xref href="#binding">Examples of Cluster Binding Command</MadCap:xref>.</p>
+            </li>
+            <li>
+                <p>The Kubernetes API server should be configured to allow privileged containers (default is to disallow). Follow the steps below on the master node:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Edit file /lib/systemd/system/kube-apiserver.service</li>
+                    <li>In the file, locate the text “--allow-privileged”</li>
+                    <li>Change to: --allow-privileged=true</li>
+                    <li>Restart kube-apiserver using command   <span class="SpanCodeSegment1">systemctl restart kube-apiserver</span></li>
+                </ol>
             </li>
         </ol>
         <p class="h2">Examples</p>

@@ -21,8 +21,9 @@
         </ul>
         <p class="h3"><a name="publiccloud"></a>Public Cloud Detail</p>
         <p>Click on a <MadCap:variable name="local.Widget" /> to drill down to the relevant detail. Most reports can be downloaded as a CSV file, which can contain additional information not shown on the screen.</p>
-        <p class="h4">Risky Ports</p>
-        <p>The Risky Ports <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> high-risk ports. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudRiskyPorts-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.RiskyPorts (heading)" /></a>.</p>
+        <p class="h4"><MadCap:variable name="local.RiskyPorts (heading)" />
+        </p>
+        <p>The Risky Ports <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed.flsnp" /> <MadCap:snippetText src="WhatIsRiskyPortsShort.flsnp" />. <MadCap:snippetText src="NumberOfAssets.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="CloudRiskyPorts-by-Asset.htm"><MadCap:variable name="local.asset" />s with <MadCap:variable name="local.RiskyPorts (heading)" /></a>.</p>
         <p style="font-weight: bold;">What are risky ports? </p>
         <MadCap:snippetBlock src="WhatIsRiskyPorts.flsnp" />
         <p><span class="SpecialBold">Recommended best practice:</span>&#160;</p>
@@ -83,7 +84,7 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.PrivilegedWorkloads" />
         </p>
-        <p>The <MadCap:variable name="local.PrivilegedWorkloads" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />pods or containers with a security context. <MadCap:snippetText src="NumberOfPods.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sPrivilegedWorkloads-by-Pod.htm">pods with workload security risks</a>.</p>
+        <p>The <MadCap:variable name="local.PrivilegedWorkloads" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />pods or containers with a security context that violates your policy. <MadCap:snippetText src="NumberOfWorkloads.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sPrivilegedWorkloads.htm"><MadCap:variable name="local.Workloads" /> with violations</a>.</p>
         <p style="font-weight: bold;">
             <p class="normal" style="font-weight: bold;">What are Workload Security Risks?</p>
             <MadCap:snippetBlock src="../Kubernetes/WhatIsK8sPrivilegedWorkload.flsnp" />
@@ -94,7 +95,7 @@
         </ul>
         <p class="h4"><MadCap:variable name="local.ContainerVulnerabilities" />
         </p>
-        <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />vulnerabilities found in your container images. <MadCap:snippetText src="NumberOfPods.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sContainerVulnerabilities-by-Pod.htm">pods with <MadCap:variable name="local.containervulnerabilities" /></a>. </p>
+        <p>The <MadCap:variable name="local.ContainerVulnerabilities" /> <MadCap:variable name="local.Widget" /> <MadCap:snippetText src="Risk_Posed_k8s.flsnp" />vulnerabilities found in your container images. <MadCap:snippetText src="NumberOfWorkloads.flsnp" />Click on the <MadCap:variable name="local.Widget" /> to display all <a href="K8sContainerVulnerabilties.htm">workloads with <MadCap:variable name="local.containervulnerabilities" /></a>. </p>
         <p style="font-weight: bold;">What are container vulnerabilities?</p>
         <p>
             <MadCap:snippetText src="WhatIsK8sContainerVulnerabilities.flsnp" />

@@ -36,19 +36,6 @@
       Link="/Content/SecureCloud/InitialSetup.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/PublicCloud/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/AWS_Permissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/AzurePermissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/PublicCloud/GCPPermissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="[%=System.LinkedTitle%]"
       Link="/Content/Kubernetes/DeployOnCluster.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
@@ -97,10 +84,10 @@
       </TocEntry>
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/SecureCloud/K8sPrivilegedWorkloads-by-Pod.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/SecureCloud/K8sPrivilegedWorkloads.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/SecureCloud/K8sContainerVulnerabilities-by-Pod.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/SecureCloud/K8sContainerVulnerabilties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Permissive Policies"
         Link="/Content/SecureCloud/K8sPermissivePolicies-by-Cluster.htm">
@@ -152,6 +139,9 @@
             Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
           <TocEntry
             Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
             Link="/Content/PublicCloud/AzureFirewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
       </TocEntry>
@@ -162,17 +152,23 @@
         Title="Settings">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/PublicCloud/AccountManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/AWS_Permissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/AzurePermissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="[%=System.LinkedTitle%]"
+            Link="/Content/PublicCloud/GCPPermissions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/PublicCloud/WorkingWithAppManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/PublicCloud/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-          <TocEntry
-            Title="[%=System.LinkedTitle%]"
-            Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        </TocEntry>
+          Link="/Content/PublicCloud/WorkingWithTagManager.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/PublicCloud/CloudConfiguration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

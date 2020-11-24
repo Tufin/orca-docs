@@ -374,5 +374,5 @@
   <Variable
     Name="PublicCloudVendors"
     Comment="no and/or used to cover both cases"
-    EvaluatedDefinition="Amazon AWS, Microsoft Azure, Google Cloud Platform">Amazon AWS, Microsoft Azure, Google Cloud Platform</Variable>
+    EvaluatedDefinition="Amazon AWS, Microsoft Azure, Google Cloud">Amazon AWS, Microsoft Azure, Google Cloud</Variable>
 </CatapultVariableSet>

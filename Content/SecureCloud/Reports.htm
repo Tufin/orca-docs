@@ -6,7 +6,7 @@
         <h1>Reports</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p><MadCap:variable name="local.ProductName" /> contains a number of built-in reports that can be automatically sent by email to keep you constantly updated of any security changes and risks in your <MadCap:variable name="local.public cloud" /> and <MadCap:variable name="local.Kubernetes" /> environments. You can select the reports to deliver, the subscribers that will receive them additionally set up notifications  of <MadCap:variable name="local.public cloud" /> <MadCap:variable name="local.policyviolations" /></p>
+        <p><MadCap:variable name="local.ProductName" /> contains a number of built-in reports that can be automatically sent by email to keep you constantly updated of any security changes and risks in your <MadCap:variable name="local.public cloud" /> and <MadCap:variable name="local.Kubernetes" /> environments. You can select the reports to deliver, the subscribers that will receive them and additionally set up notifications  of <MadCap:variable name="local.public cloud" /> <MadCap:variable name="local.policyviolations" /></p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#selectreports">Select the reports to be sent </a>
@@ -17,15 +17,27 @@
             </li>
         </ul>
         <p class="h3"><a name="selectreports"></a>Select the Reports to be Sent</p>
-        <p class="normal">Mark one or more of the reports to be sent automatically to the selected subscribers. The reports are:</p>
-        <p class="h4">Security Posture</p>
         <p>
             <img src="../SecureCloud-Images/Screen_Report_Selection.png" class="ThumbnailPopup" />
         </p>
+        <p class="normal">Mark one or more of the reports to be sent automatically to the selected subscribers. The reports are:</p>
+        <ul>
+            <li><a href="#securityposture">Security Posture</a>
+            </li>
+            <li><a href="#newaccount">New Account Assessment</a>
+            </li>
+            <li><a href="#publiccloudpolicyviolations">Public Cloud Violations</a>
+            </li>
+            <li><a href="#newcluster">New Cluster Assessment</a>
+            </li>
+        </ul>
+        <p class="h4"><a name="securityposture"></a>Security Posture</p>
         <p class="normal">A weekly report for <MadCap:variable name="local.public cloud" />  and <MadCap:variable name="local.Kubernetes" />security posture that includes the most important categories of information from the <MadCap:variable name="local.Dashboard" />. Once selected, this report will be sent every Tuesday at the time of day and to the subscribers you specify. </p>
-        <p class="h4"><MadCap:variable name="local.Public Cloud" /> <MadCap:variable name="local.PolicyViolations" /></p>
+        <p class="h4"><a name="newaccount"></a>New Account Assessment Report</p>
+        <p class="normal">A one-time report sent when a new <MadCap:variable name="local.public cloud" /> account is added.</p>
+        <p class="h4"><a name="publiccloudpolicyviolations"></a><MadCap:variable name="local.Public Cloud" /> <MadCap:variable name="local.PolicyViolations" /></p>
         <p>A daily report sent 7 days a week containing new <MadCap:variable name="local.policyviolations" /> in your assets at the time of day and to the subscribers you specify. </p>
-        <p class="h4">New Cluster Assessment</p>
+        <p class="h4"><a name="newcluster"></a>New Cluster Assessment</p>
         <p class="normal">A report sent after you connect a new <MadCap:variable name="local.Kubernetes" /> cluster to <MadCap:variable name="local.ProductName" /> that contains an analysis of the cluster security including <MadCap:variable name="local.CISBenchmarkKubernetes" />, <MadCap:variable name="local.privilegedworkloads" />, <MadCap:variable name="local.K8sVulnerabilities" /> and image vulnerabilities. After you have connected your first cluster, subsequent clusters can only be connected with the help of <MadCap:variable name="local.ProductName" /> support.</p>
         <p class="h3"><a name="scheduling"></a>Specify Scheduling Details</p>
         <p>Select the time to send and the subscribers to which the reports will be sent. The same setting applies to all the selected reports. The subscribers can only be selected from existing <a href="Users.htm">users</a> of the current <MadCap:variable name="local.MyAccount" />.</p>

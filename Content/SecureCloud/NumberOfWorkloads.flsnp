@@ -3,7 +3,6 @@
     <head>
     </head>
     <body>
-        <h1>What is an Account?</h1>
-        <MadCap:snippetBlock src="WhatIsAccount.flsnp" />
+        <p>It displays the number of your workloads exposed to this risk along with the total number of workloads monitored. </p>
     </body>
 </html>
