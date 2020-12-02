@@ -39,9 +39,9 @@
   <Variable
     Name="IPAM"
     Comment=""
-    EvaluatedDefinition="IPAM Sync App">IPAM Sync App</Variable>
+    EvaluatedDefinition="IPAM Security Policy App">IPAM Security Policy App</Variable>
   <Variable
     Name="IPAM_Short"
     Comment="App Name"
-    EvaluatedDefinition="IPAM">IPAM</Variable>
+    EvaluatedDefinition="ISPA">ISPA</Variable>
 </CatapultVariableSet>

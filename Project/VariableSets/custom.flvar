@@ -27,7 +27,7 @@
   <Variable
     Name="HeaderCaption"
     Comment=""
-    EvaluatedDefinition="" />
+    EvaluatedDefinition=""></Variable>
   <Variable
     Name="Theme"
     Comment=""
@@ -36,4 +36,20 @@
     Name="AlexanderFilename"
     Comment="custom &quot;alexander&quot; file for versionDropdown; use lower case filenames only"
     EvaluatedDefinition="alexander.htm">alexander.htm</Variable>
+  <Variable
+    Name="Theme"
+    Comment=""
+    EvaluatedDefinition="marketplace">marketplace</Variable>
+  <Variable
+    Name="HeaderCaption2"
+    Comment=""
+    EvaluatedDefinition=""></Variable>
+  <Variable
+    Name="IncludeTufinFont"
+    Comment=""
+    EvaluatedDefinition="true">true</Variable>
+  <Variable
+    Name="IncludeTufinFont"
+    Comment=""
+    EvaluatedDefinition="false">false</Variable>
 </CatapultVariableSet>

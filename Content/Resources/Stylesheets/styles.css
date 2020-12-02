@@ -106,6 +106,15 @@
 	font-style: normal;
 }
 
+/* Added by Rivka Teller (tech-tav)- 11/2020 */
+
+@font-face 
+{
+	font-family: 'TufinFont';
+	src: url(../Fonts/tufinfont.woff2) format('woff2'), url(../Fonts/tufinfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 body
 {
@@ -168,20 +177,29 @@ a[href^="http"]::after
 	width: 16px;
 }
 
+/* RT 2020 */
+
 a.MCBreadcrumbsLink
 {
-	font-style: italic;
-	text-decoration: underline;
+	color: #08869E;
+	font-family: 'futura-pt-book', sans-serif;
+	text-decoration: none;
+	/* font-style: italic;
+	text-decoration: underline; */
 }
+
+/* RT 2020 */
 
 a.MCBreadcrumbsLink:visited
 {
-	color: #000000;
+	color: #08869E;
 }
+
+/* RT 2020 */
 
 a.MCBreadcrumbsLink:hover
 {
-	color: #BED230;
+	color: #08869E;
 }
 
 code
@@ -306,12 +324,15 @@ li
 	widows: 2;
 }
 
+/* Added by Rivka Teller (tech-tav)- 11/2020 */
+
 MadCap|breadcrumbsProxy
 {
 	border-bottom: none;
-	font-size: .9em;
-	font-style: italic;
-	mc-breadcrumbs-prefix: 'You are here: ';
+	color: #666666;
+	font-size: 13px;
+	/* font-style: italic; */
+	mc-breadcrumbs-prefix: ' ';
 }
 
 MadCap|glossaryProxy
@@ -851,7 +872,6 @@ MadCap|dropDownHotspot
 {
 	
 }
-
 
 
 /* Mini-Toc (Added By Michael Sedley, 13-Jan-2020) */

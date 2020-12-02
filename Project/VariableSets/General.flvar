@@ -311,7 +311,7 @@
   <Variable
     Name="Version"
     Comment=""
-    EvaluatedDefinition="R20-3">R20-3</Variable>
+    EvaluatedDefinition="R21-1P">R21-1P</Variable>
   <Variable
     Name="VersionSibling"
     Comment=""
@@ -324,4 +324,20 @@
     Name="VersionSibling"
     Comment=""
     EvaluatedDefinition="R20-2P">R20-2P</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R21-1">R21-1</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R21-1P">R21-1P</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="3.30">3.30</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R21-1">R21-1</Variable>
 </CatapultVariableSet>
