@@ -140,6 +140,11 @@ ul.sidenav ul > li > a.selected:before {
 	width: 2px;
 }
 
+/* added the following to prevent long indent before H5 in TOC */
+ul.sidenav ul ul ul ul > li > a
+{
+	margin-left: 15mm;
+}
 /* side menu arrows */
 
 .submenu-toggle-container[aria-expanded='true'] > span.submenu-toggle,

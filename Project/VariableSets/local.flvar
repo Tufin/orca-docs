@@ -354,7 +354,7 @@
   <Variable
     Name="GoogleCloudPlatform"
     Comment=""
-    EvaluatedDefinition="Google Cloud Platform">Google Cloud Platform</Variable>
+    EvaluatedDefinition="Google Cloud">Google Cloud</Variable>
   <Variable
     Name="SecureCloudGCPAccount"
     Comment=""
