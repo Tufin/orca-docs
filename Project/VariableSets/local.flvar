@@ -375,4 +375,12 @@
     Name="PublicCloudVendors"
     Comment="no and/or used to cover both cases"
     EvaluatedDefinition="Amazon AWS, Microsoft Azure, Google Cloud">Amazon AWS, Microsoft Azure, Google Cloud</Variable>
+  <Variable
+    Name="Audit"
+    Comment="Menu"
+    EvaluatedDefinition="Audit">Audit</Variable>
+  <Variable
+    Name="audit"
+    Comment="Mid sentence"
+    EvaluatedDefinition="audit">audit</Variable>
 </CatapultVariableSet>

@@ -3,16 +3,18 @@
 @import url('custom-sidenav.css');
 
 
+/* 
 body.tufin-font {
 	font-family: TufinFont, sans-serif;
 }
+*/
 
 /* custom svg header logo */
 
 .title-bar-layout a.logo {
 	background-image: url('Images/tufin-header-logo.svg');
 	background-size: contain;
-	margin-left: calc(14px - 1em);
+	margin-left: calc(32px - 1em);
 	width: 217px;
 }
 
@@ -32,6 +34,8 @@ body.tufin-font {
 	font-size: 50px;
 	font-family: 'futura-pt-heavy', sans-serif;
 	line-height: 38px;
+	margin-bottom: 8px;
+	margin-top: 8px;
 }
 
 #second-header img {
@@ -209,6 +213,20 @@ select.version-data
 }
 
 @media tablet {
+	
+	/* removes arrow from hamburger TOC, so new UX one can be used */
+	span.submenu-toggle {
+		border: none!important;
+	}
+
+	span.submenu-toggle:after {
+		display: none;	
+	}
+
+	.is-accordion-submenu-parent > a > span > span.submenu-toggle:after {
+		display: block;
+		right: 4px;
+	}
 
 	nav.title-bar.tab-bar.sticky.is-at-top.is-stuck {
 		padding-top: 22.5px;

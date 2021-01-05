@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>In <MadCap:variable name="local.ProductName" />, an exception is a user-defined definition that causes <MadCap:variable name="local.ProductName" /> to ignore or accept selected policy violations. The existence of an exception can change the statistical data displayed on the <a href="Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a> and also suppress warnings from appearing elsewhere in the product, such as screen elements appearing in red and warning icons on assets. In other cases, properties that would have constituted a violation are displayed in a strike-through font to indicate they are currently not considered violations of policy. The change in behavior caused by the exception is canceled if the exception is deleted.</p>
+    </body>
+</html>

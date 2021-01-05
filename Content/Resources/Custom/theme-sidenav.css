@@ -1,5 +1,15 @@
 ﻿/* Version: 1.0 */
 
+/* explanations: 
+for sidenav2020 and sidenav
+	--HeadColor: color for used in h1 and h2
+	--SubHeadColor: background color of p.subhead1
+these are NOT used in sidenav2020
+	--PanelColor: TOC colors for sidenav
+	--PanelElementHover: TOC colors for sidenav
+	--PanelElementExpander: TOC colors for sidenav
+*/
+
 /* theme: Default (all!) */ 
 ul.menu._Skins_SideMenu.mc-component li > a {
     border-left: solid 3px transparent;
@@ -153,4 +163,12 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 }
 .theme-test ul.menu._Skins_SideMenu.mc-component li > a.selected {
     border-left-color: #762a5b;
+}
+
+
+/* KC2.0 theme: none (default theme) */
+.theme-none div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #e66700; 
+	--SubHeadColor: #f4f5f4; 
 }

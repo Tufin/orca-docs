@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>
+            <MadCap:snippetText src="WhatIsException.flsnp" /> A single exception can define only a simple set of criteria. However, you can create as many exceptions as you like. </p>
+        <p>To create an exception, hover over the desired workload and click on <img src="../SecureCloud-Images/Icon_add_exception.png" class="noborder" />. The Add Exception window appears. </p>
+        <p>
+            <img src="../SecureCloud-Images/Window_AddException_k8s.png" class="ThumbnailPopup" />
+        </p>
+        <p>Complete the exception details and click <b>Add</b> to save.</p>
+        <p>When an exception exists  for pod security contexts, container security contexts or <MadCap:variable name="local.containervulnerabilities" />, the excepted violations are displayed in strike-through font and in the case of <MadCap:variable name="local.containervulnerabilities" /> the <MadCap:variable name="local-orca.TufinScore" /> is grayed out.</p>
+        <p>Exceptions can only be deleted from <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>.</p>
+        <p class="h4">Exception Details</p>
+        <p><span class="SpecialBold">Exception Name:</span> Name of the exception</p>
+        <p><span class="SpecialBold">Violation Type:</span> Select one: Pod security context, Container security context or Container image vulnerability</p>
+        <p><span class="SpecialBold">Violation Details:</span> The violations to be included in the exception, dependent on violation type. </p>
+        <ul>
+            <li>For Pod security context - select one or more pod security contexts or</li>
+            <li>For Container security context - select one or more container security contexts or</li>
+            <li>For Container image vulnerability - select one  <MadCap:variable name="local-orca.TufinScore" /> from one or more possible container <MadCap:variable name="local-orca.TufinScore" />'s. found for the <MadCap:variable name="local.workload" />. Format: "Score x and better", where x is the lowest or worst container <MadCap:variable name="local-orca.TufinScore" />  in the pod. Any <MadCap:variable name="local-orca.TufinScore" /> better than the one displayed will always be included in the exception as well.</li>
+        </ul>
+        <p><span class="SpecialBold">Resource Scope:</span> The scope of resources to be included in the exception. Select one of the following:</p>
+        <ul>
+            <li>The workload that triggered the violation</li>
+            <li>All workloads having the same container image that triggered the violation</li>
+            <li>All workloads that contain one or more of the pod labels in the workload that caused the violation. In this case, you must select one or more pod labels</li>
+            <li>All workloads</li>
+        </ul>
+        <p><span class="SpecialBold">Cluster Scope:</span> The namespaces and clusters to which the exception will apply. Select one of the following:</p>
+        <ul>
+            <li>The namespace that triggered the violation</li>
+            <li>The cluster that triggered the violation</li>
+            <li>All clusters</li>
+        </ul>
+        <p><span class="SpecialBold">Description:</span> Optional</p>
+    </body>
+</html>

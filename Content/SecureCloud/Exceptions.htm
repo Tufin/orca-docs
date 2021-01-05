@@ -6,21 +6,54 @@
         <h1>Exceptions</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>The <MadCap:variable name="local.Dashboard" /> displays key areas of risk in your <MadCap:variable name="local.public cloud" /> and <MadCap:variable name="local.Kubernetes" /> environments, based on built-in and self-defined criteria, explained in <a href="Dashboard.htm"><MadCap:variable name="local.Dashboard" /></a> and <a href="ConfigRisk.htm"><MadCap:variable name="local.RiskConfiguration" /></a>. Some potential risks can be excluded from the risk reporting by defining exceptions.</p>
-        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
-            <img src="../SecureCloud-Images/Screen_Exceptions.png" class="ThumbnailPopup" />
+            <MadCap:snippetText src="WhatIsException.flsnp" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>The screen is divided into separate tabs for <MadCap:variable name="local.public cloud" /> and <MadCap:variable name="local.Kubernetes" /></p>
+        <p>
+            <img src="../SecureCloud-Images/screen_exceptions_cloud.png" class="ThumbnailPopup" /> <img src="../SecureCloud-Images/screen_exceptions_k8s.png" class="ThumbnailPopup" style="width: 553px;height: 100px;" /></p>
+        <p class="h3"><MadCap:variable name="local.Public Cloud" />
         </p>
         <p>All exceptions you have created in <a href="../PublicCloud/Assets.htm#Security"><MadCap:variable name="local.SecurityAccess" /></a> are listed.</p>
         <p><span class="SpecialBold">Exception Name:</span> As entered when creating the exception</p>
         <p><span class="SpecialBold">Violation Type:</span> Risky port, Permissive source, Permissive service</p>
-        <p><span class="SpecialBold">Violation Details:</span> The ports, sources or services that pose a risk</p>
+        <p><span class="SpecialBold">Violation Details:</span> The ports, sources or services to which the exception applies</p>
         <p><span class="SpecialBold">Scope:</span> The scope of assets to be included in the exception - a named security control, named cloud account or all cloud accounts</p>
         <p><span class="SpecialBold">Created:</span> The user that created the exception with date and time created </p>
         <p><span class="SpecialBold">Description:</span> As entered when creating the exception</p>
+        <p class="h3"><MadCap:variable name="local.Kubernetes" />
+        </p>
+        <p>All exceptions you have created in <a href="K8sPrivilegedWorkloads.htm"><MadCap:variable name="local.PrivilegedWorkloads" /></a> and <a href="K8sContainerVulnerabilties.htm"><MadCap:variable name="local.ContainerVulnerabilities" /></a> are listed.</p>
+        <p><span class="SpecialBold">Exception Name:</span> As entered when creating the exception</p>
+        <p><span class="SpecialBold">Violation Type:</span> Can be: Pod security context, Container security context or Container image vulnerability</p>
+        <p><span class="SpecialBold">Violation Details:</span> The violations included in the exception, dependent on violation type. </p>
+        <ul>
+            <li>For Pod security context - one or more pod security contexts</li>
+            <li>For Container security context - one or more container security contexts</li>
+            <li>For Container image vulnerability - a <MadCap:variable name="local-orca.TufinScore" />. Any <MadCap:variable name="local-orca.TufinScore" /> that is better than the one displayed will always be included in the exception as well.</li>
+        </ul>
+        <p><span class="SpecialBold">Resource Scope:</span> The scope of resources (workloads)&#160;included in the exception. Can be:</p>
+        <ul>
+            <li>The workload that caused the violation</li>
+            <li>All workloads having the specified container image </li>
+            <li>All workloads that contain the specified pod labels </li>
+            <li>All workloads</li>
+        </ul>
+        <p><span class="SpecialBold">Cluster Scope:</span> A single namespace, a single cluster or all clusters</p>
+        <p><span class="SpecialBold">Created:</span> The user that created the exception with date and time created </p>
+        <p><span class="SpecialBold">Description:</span> As entered when creating the exception</p>
+        <p>&#160;</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
-            <li>Delete an exception - click on <img src="../PublicCloud-Images/icon_Delete.png" class="noborder" /> when hovering over the exception</li>
+            <li>
+                <p>Delete an exception - hover over the exception then <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" /> &gt; <span class="MenuItem">Delete exception</span></p>
+                <p>Once an exception is deleted, the affected assets or properties will again be marked as violating policy.</p>
+            </li>
+            <li>
+                <p>View affected assets (<MadCap:variable name="local.public cloud" /> exceptions only) -  hover over the exception then <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" /> &gt; <span class="MenuItem">View affected assets</span></p>
+                <p>A list of all assets affected by this exception is displayed.</p>
+            </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Exceptions.flsnp" />

@@ -6,7 +6,7 @@
         <h1>Dashboard</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>The <MadCap:variable name="local-iris.ProductName" /> dashboard is a snapshot of your compliance with security policy and best practices  in your cloud account settings and <MadCap:variable name="local.Kubernetes" /> clusters. It is made up of <MadCap:variable name="local.Widget" />s representing common risks, each showing the number of items (assets, pods etc) found at risk along with the total number monitored. </p>
+        <p>The <MadCap:variable name="local-iris.ProductName" /> dashboard is a snapshot of your compliance with security policy and best practices  in your cloud account settings and <MadCap:variable name="local.Kubernetes" /> clusters. It is made up of <MadCap:variable name="local.Widget" />s representing common risks, each showing the number of items (assets, pods etc) found in violation of your policy along with the total number monitored. </p>
         <p>
             <img src="../SecureCloud-Images/Screen_Dashboard.png" class="ThumbnailPopup" />
         </p>
@@ -18,6 +18,7 @@
         <ul class="Action">
             <li MadCap:conditions="General.Exclude">Filter the display - click <span class="ScreenObject">All</span>, <span class="ScreenObject"><MadCap:variable name="local.Public Cloud" /></span> or <span class="ScreenObject">Kubernetes </span></li>
             <li>Drill down to see details of the <a href="#publiccloud">public cloud</a> or <a href="#kubernetes"><MadCap:variable name="local.Kubernetes" /></a> risks by clicking on the desired <MadCap:variable name="local.Widget" /></li>
+            <li>Download an on-demand Security Posture Report - click on <span class="ScreenObject">PDF Report</span> (<a href="SecurityPostureReport_sample.pdf">example</a>)</li>
         </ul>
         <p class="h3"><a name="publiccloud"></a>Public Cloud Detail</p>
         <p>Click on a <MadCap:variable name="local.Widget" /> to drill down to the relevant detail. Most reports can be downloaded as a CSV file, which can contain additional information not shown on the screen.</p>
@@ -121,6 +122,7 @@
         <MadCap:snippetBlock src="WhatIsCISk8s.flsnp">
         </MadCap:snippetBlock>
         <p> Click on the <MadCap:variable name="local.Widget" /> to display your <a href="k8sCIS-by-Cluster.htm">monitored clusters</a> and their CIS status.</p>
+        <p>Sec</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
         </MadCap:snippetBlock>
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Dashboard.flsnp" />
