@@ -45,6 +45,7 @@
 	<Map Name="SCL_activedirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />
 	<Map Name="SCL_configrisk" Link="/Content/SecureCloud/ConfigRisk.htm" />
 	<Map Name="SCL_reports" Link="/Content/SecureCloud/Reports.htm" />
+	<Map Name="SCL_audit" Link="/Content/SecureCloud/Audit.htm" />
 	<Map Name="SCL_securityscore" Link="/Content/Kubernetes/SecurityScore.htm" />
 	<Map Name="SCL_deploy" Link="/Content/Kubernetes/DeployOnCluster.htm" />
 	<Map Name="SCL_orcaarchitecture" Link="/Content/Kubernetes/Architecture.htm" />

@@ -48,7 +48,7 @@ SCL_users,5046,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Us
 SCL_activedirectory,5047,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
 SCL_configrisk,5048,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Users
 SCL_reports,5049,/Content/SecureCloud/Reports.htm,SCL,Main Menu > Configuration > Reports
-;,5050,,,
+SCL_audit,5049,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Reports
 ;,5051,,,
 SCL_securityscore,5052,/Content/Kubernetes/SecurityScore.htm,SCL,none
 SCL_deploy,5053,/Content/Kubernetes/DeployOnCluster.htm,SCL,none

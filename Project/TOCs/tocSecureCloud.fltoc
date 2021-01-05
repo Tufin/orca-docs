@@ -87,7 +87,7 @@
         Link="/Content/SecureCloud/K8sPrivilegedWorkloads.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/SecureCloud/K8sContainerVulnerabilties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/SecureCloud/K8sContainerVulnerabilities.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Permissive Policies"
         Link="/Content/SecureCloud/K8sPermissivePolicies-by-Cluster.htm">

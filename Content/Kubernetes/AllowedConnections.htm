@@ -82,14 +82,14 @@
         </ol>
         <p>All rules can be deleted in a single action:</p>
         <ol>
-            <li>Click on <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" />- the action menu is displayed</li>
+            <li>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed</li>
             <li>Select <span class="ScreenObject">Remove all rules</span> </li>
         </ol>
         <p class="h3"><a name="Locking"></a><a name="Resettin"></a><a name="Export"></a>Export as Kubernetes Network Policies</p>
         <p class="normal">The security policy will be exported for the namespaces specified in the current namespace filter. A file named &lt;<MadCap:variable name="local.Securecloudaccount" />&gt;-&lt;<MadCap:variable name="local.project" />&gt;.yml will be downloaded via the browser. See <MadCap:xref href="Enforcement.htm">[%=local.Kubernetes%] Policy Enforcement</MadCap:xref>.</p>
         <ol>
             <li>
-                <p>Click on <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" />- the action menu is displayed.</p>
+                <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed.</p>
             </li>
             <li>
                 <p>Select <span class="ScreenObject">Export as network policies </span>from the menu. </p>
@@ -106,8 +106,8 @@
         <p>After the apply on firewalls process is initiated, the tickets created can be seen on the <a href="FirewallTickets.htm">Firewall Tickets Screen</a>, together with their status. </p>
         <ol>
             <li>
-                <p>Click on <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" />- the action menu is displayed.</p>
-                <p><MadCap:variable name="local-orca.Product_S" /> recognizes whether the integration is set up. If there is no integration, the <span class="MenuItem">Apply on Firewalls</span> option in the menu will be greyed out and unclickable, and it will show as <span class="MenuItem">Apply on Firewalls (Disabled)</span>. </p>
+                <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />The action menu is displayed.</p>
+                <p><MadCap:variable name="local-orca.Product_S" /> recognizes whether the integration is set up. If there is no integration, the <span class="MenuItem">Apply on Firewalls</span> option in the menu will be disabled. </p>
             </li>
             <li>
                 <p>Select <span class="ScreenObject">Apply on Firewalls</span> from the menu. This will initiate the process and change the option in the <span class="ScreenObject">Actions Menu</span> to be greyed out and show as <span class="MenuItem">Apply on Firewalls (in-progress)</span>. This status will remain until all requests (tickets) have been resolved and implemented or deleted in the network policy change management system. You cannot initiate the process again while there are requests still in progress.  A separate request (ticket) will be submitted for each namespace in your current filter (see <a href="../SecureCloud/Navigation.htm#Filter">Filter by Namespace</a>). Requests that have been submitted cannot be deleted within <MadCap:variable name="local-orca.Product_S" />. </p>

@@ -44,6 +44,7 @@
 #define SCL_activedirectory 5047
 #define SCL_configrisk 5048
 #define SCL_reports 5049
+#define SCL_audit 5049
 #define SCL_securityscore 5052
 #define SCL_deploy 5053
 #define SCL_orcaarchitecture 5054
