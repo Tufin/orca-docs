@@ -24,8 +24,8 @@
         <p><span class="SpecialBold">Resource Scope:</span> The scope of resources to be included in the exception. Select one of the following:</p>
         <ul>
             <li>The workload that triggered the violation</li>
-            <li>All workloads having the same container image that triggered the violation</li>
-            <li>All workloads that contain one or more of the pod labels in the workload that caused the violation. In this case, you must select one or more pod labels</li>
+            <li>All workloads having the same container image that triggered the violation (option available only when container violations are present)</li>
+            <li>All workloads that contain all the selected pod labels - select one or more pod labels from the workload that caused the violation</li>
             <li>All workloads</li>
         </ul>
         <p><span class="SpecialBold">Cluster Scope:</span> The namespaces and clusters to which the exception will apply. Select one of the following:</p>

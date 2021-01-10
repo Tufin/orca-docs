@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>It displays the number of your workloads exposed to this risk along with the total number of workloads monitored. </p>
+        <p>It displays the number of your workloads in violation of policy, along with the total number of workloads monitored. </p>
     </body>
 </html>

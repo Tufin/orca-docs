@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>It displays the number of your <MadCap:variable name="local.project" />s exposed to this risk along with the total number of <MadCap:variable name="local.project" />s monitored. </p>
+        <p>It displays the number of <MadCap:variable name="local.project" />s in violation of policy, along with the total number of <MadCap:variable name="local.project" />s monitored.</p>
     </body>
 </html>

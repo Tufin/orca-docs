@@ -4,7 +4,7 @@
     </head>
     <body>
         <p style="font-weight: normal;">
-            <p><MadCap:variable name="local.Kubernetes" /> workloads can be granted special privileges through security contexts, some of which could pose a security risk. <MadCap:variable name="local.ProductName" /> monitors the following security contexts:</p>
+            <p><MadCap:variable name="local.Kubernetes" /> workloads can be granted special privileges through security contexts, some of which could pose a security risk. You can define your workload policy by selecting the security contexts and further refine the scope of reporting in <a href="../SecureCloud/Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>. <MadCap:variable name="local.ProductName" /> monitors the following security contexts:</p>
             <p><span class="SpecialBold"><a name="podsecuritycontexts"></a>Pod Security Contexts</span>
             </p>
             <ul>

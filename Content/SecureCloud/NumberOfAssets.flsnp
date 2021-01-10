@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>It displays the number of assets at risk along with the total number of assets monitored. </p>
+        <p>It displays the number of assets that violate policy, along with the total number of assets monitored. </p>
     </body>
 </html>
