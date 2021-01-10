@@ -71,9 +71,9 @@ ingress:
             </img>
         </p>
         <p>See full <a href="KubernetesNetworkPolicyExample_Excl_Egress.txt">Example</a>. </p>
-        <p class="h3">DNS</p>
+        <p class="h3"><a name="dns"></a>DNS</p>
         <p>Enforced when <span class="StatusOrValue">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>.</p>
-        <p>At installation time, the  DNS&#160;Plugin is installed in the Kubernetes DNS&#160;pod, which then acts as a proxy, processing all DNS queries before passing them to the Kubernetes DNS. When <MadCap:variable name="local-orca.Product_S" /> is set to <span class="StatusOrValue">Enforce</span>, any DNS query that is not defined in <MadCap:variable name="local-orca.Product_S" /> as an allowed connection returns an NX domain (non-existent domain). This enforcement method is not active when <MadCap:variable name="local-orca.Product_S" /> is set to <span class="StatusOrValue">Learn</span>.</p>
+        <p>At installation time, the  DNS&#160;Plugin is installed in the Kubernetes DNS&#160;pod, which then acts as a proxy, processing all DNS queries before passing them to the Kubernetes DNS. When <MadCap:variable name="local-orca.Product_S" /> is set to <span class="StatusOrValue">Enforce</span>, any DNS query that is not defined in <MadCap:variable name="local-orca.Product_S" /> as a <MadCap:variable name="local.clusterpolicyrule" /> returns an NX domain (non-existent domain). This enforcement method is not active when <MadCap:variable name="local-orca.Product_S" /> is set to <span class="StatusOrValue">Learn</span>.</p>
         <p>Enforcement by DNS&#160;works for all supported Kubernetes implementations except <MadCap:variable name="local-orca.Openshift" />, because it does not have a Kubernetes DNS.</p>
         <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
         <p class="h3">Apply on Firewalls</p>

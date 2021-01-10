@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
-        <div class="Warning">About Enforce: <ul><li>Be aware that your application could fail after you switch to Enforce due to blocking of connections outside of your policy</li><li>Test your application extensively after Enforce has been applied</li><li>Container image scans  will only take place after you have allowed the connection between <MadCap:variable name="local-orca.Kite" /> and the image registry.</li></ul></div>
+        <div class="Warning">About Enforce: <ul><li>Be aware that your application could fail after you switch to Enforce due to blocking of connections outside of your policy.</li><li>Connections made directly to a node's IP address (i.e. not via DNS) are not blocked.</li><li>When enforce is active, the port in the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.clusterpolicyrule" />s is ignored, therefore all ports for the specified source and destination will be allowed.</li><li MadCap:conditions="General.Exclude">Connections matching <MadCap:variable name="local.clusterpolicyrule" />s will only be allowed when no pod labels are defined for them.</li><li>Test your application extensively after Enforce has been applied.</li><li>Container image scans  will only take place after you have allowed the connection between <MadCap:variable name="local-orca.Kite" /> and the image registry.</li></ul></div>
     </body>
 </html>

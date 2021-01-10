@@ -42,24 +42,20 @@ SCL_Settings,5040,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KU
 SCL_Notifications,5041,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
 SCL_Vulnerabilities,5042,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
 SCL_DiscoveryEngine,5043,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > KUBERNETES - New Connections
-;,5044,,,
-SCL_myaccount ,5045,/Content/SecureCloud/MyAccount.htm,SCL,Main Menu > Configuration > Active Directory
-SCL_users,5046,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Users
-SCL_activedirectory,5047,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
-SCL_configrisk,5048,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Users
-SCL_reports,5049,/Content/SecureCloud/Reports.htm,SCL,Main Menu > Configuration > Reports
-SCL_audit,5049,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Reports
-;,5051,,,
-SCL_securityscore,5052,/Content/Kubernetes/SecurityScore.htm,SCL,none
-SCL_deploy,5053,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
-SCL_orcaarchitecture,5054,/Content/Kubernetes/Architecture.htm,SCL,none
-SCL_signup,5055,/Content/SecureCloud/SignUp.htm,SCL,none
-SCL_whatsnew,5056,/Content/SecureCloud/WhatsNew.htm,SCL,none
-;,5057,,,
-;,5058,,,
-,5059,,,
-,5060,,,
-,5061,,,
-,5062,,,
-,5063,,,
-,5064,,,
+SCL_k8senforce,5044,/Content/Kubernetes/Enforcement.htm,SCL,Main Menu > KUBERNETES - New Connections
+SCL_k8senforce_dns,5045,/Content/Kubernetes/Enforcement.htm#dns,SCL,Main Menu > KUBERNETES - New Connections
+;,5046,,,
+SCL_myaccount ,5047,/Content/SecureCloud/MyAccount.htm,SCL,Main Menu > Configuration > Active Directory
+SCL_users,5048,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Users
+SCL_activedirectory,5049,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
+SCL_configrisk,5050,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Users
+SCL_reports,5051,/Content/SecureCloud/Reports.htm,SCL,Main Menu > Configuration > Reports
+SCL_audit,5052,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Reports
+;,5053,,,
+SCL_securityscore,5054,/Content/Kubernetes/SecurityScore.htm,SCL,none
+SCL_deploy,5055,/Content/Kubernetes/DeployOnCluster.htm,SCL,none
+SCL_orcaarchitecture,5056,/Content/Kubernetes/Architecture.htm,SCL,none
+SCL_signup,5057,/Content/SecureCloud/SignUp.htm,SCL,none
+SCL_whatsnew,5058,/Content/SecureCloud/WhatsNew.htm,SCL,none
+;,,,,
+;,,,,
