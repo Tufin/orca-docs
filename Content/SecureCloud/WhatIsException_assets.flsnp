@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p class="normal">In the context of assets, an exception defines a more specific case of a definition made in <a href="ConfigRisk.htm"><MadCap:variable name="local.riskconfiguration"></MadCap:variable></a>, or a built-in definition of risk in the <a href="Dashboard.htm"><MadCap:variable name="local.Dashboard"></MadCap:variable></a> to be excluded from being considered a violation.</p>
+    </body>
+</html>

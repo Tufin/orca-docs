@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MicroContentSet Comment="Default micro content set.">
+    <MicroContent id="what-is-an-application">
+        <MicroContentPhrase>What is an application</MicroContentPhrase>
+        <MicroContentPhrase>Application</MicroContentPhrase>
+        <MicroContentPhrase>iris application</MicroContentPhrase>
+        <MicroContentPhrase>application in iris</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/WhatIsApplication.htm" />
+    </MicroContent>
+    <MicroContent id="what-is-a-custom-tag">
+        <MicroContentPhrase>What is a custom tag</MicroContentPhrase>
+        <MicroContentPhrase>custom tags</MicroContentPhrase>
+        <MicroContentPhrase>iris custom tags</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/WhatIsCustomTags.flsnp" />
+    </MicroContent>
+    <MicroContent id="what-is-an-asset">
+        <MicroContentPhrase>What is an asset</MicroContentPhrase>
+        <MicroContentPhrase>asset</MicroContentPhrase>
+        <MicroContentPhrase>asset in iris</MicroContentPhrase>
+        <MicroContentPhrase>iris asset</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/WhatIsAsset.htm" />
+    </MicroContent>
+    <MicroContent id="violation">
+        <MicroContentPhrase>Violation</MicroContentPhrase>
+        <MicroContentPhrase>risk</MicroContentPhrase>
+        <MicroContentPhrase>warning</MicroContentPhrase>
+        <MicroContentPhrase>policy violation</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/WhatIsCloudViolation.htm" />
+    </MicroContent>
+    <MicroContent id="tags">
+        <MicroContentPhrase>tags</MicroContentPhrase>
+        <MicroContentPhrase>what are tags</MicroContentPhrase>
+        <MicroContentPhrase>iris tags</MicroContentPhrase>
+        <MicroContentPhrase>tags in iris</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/WhatIsTags.htm" />
+    </MicroContent>
+    <MicroContent id="what-is-an-account">
+        <MicroContentPhrase>What is an account</MicroContentPhrase>
+        <MicroContentPhrase>cloud account</MicroContentPhrase>
+        <MicroContentPhrase>account</MicroContentPhrase>
+        <MicroContentPhrase>amazon</MicroContentPhrase>
+        <MicroContentPhrase>aws</MicroContentPhrase>
+        <MicroContentPhrase>monitoring</MicroContentPhrase>
+        <MicroContentResponse href="../../PublicCloud/Whatis_Account.htm" />
+    </MicroContent>
+    <MicroContent id="what-is-immutable-policy">
+        <MicroContentPhrase>What is immutable policy?</MicroContentPhrase>
+        <MicroContentPhrase>What is meant by immutable</MicroContentPhrase>
+        <MicroContentPhrase>What is an immutable policy</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:body>
+                    <xhtml:h1>Immutable Policy </xhtml:h1>
+                    <xhtml:p>Automated application of your defined policy on newly-built container objects as part of your CI/CD pipeline. </xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+    <MicroContent id="exception">
+        <MicroContentPhrase>Exception</MicroContentPhrase>
+        <MicroContentResponse href="../WhatIsException.htm" />
+    </MicroContent>
+    <MicroContent id="new-phrase">
+        <MicroContentPhrase>New Phrase</MicroContentPhrase>
+        <MicroContentResponse>
+            <xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml">
+                <xhtml:body>
+                    <xhtml:p>&#160;</xhtml:p>
+                </xhtml:body>
+            </xhtml:html>
+        </MicroContentResponse>
+    </MicroContent>
+</MicroContentSet>

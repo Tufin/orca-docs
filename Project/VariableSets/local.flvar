@@ -383,4 +383,12 @@
     Name="audit"
     Comment="Mid sentence"
     EvaluatedDefinition="audit">audit</Variable>
+  <Variable
+    Name="risky port"
+    EvaluatedDefinition="risky port"
+    Comment="mid sentence">risky port</Variable>
+  <Variable
+    Name="Risky port"
+    EvaluatedDefinition="Risky port"
+    Comment="Begin sentence">Risky port</Variable>
 </CatapultVariableSet>

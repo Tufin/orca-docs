@@ -17,17 +17,47 @@
         <ul>
             <MadCap:snippetBlock src="FieldBulletsAssets.flsnp" />
             <li>
-                <p><span class="ScreenObject">Risky ports</span>. A list of all <MadCap:variable name="local.risky ports (lower case)"></MadCap:variable> identified in the asset</p>
+                <p><span class="ScreenObject"><MadCap:variable name="local.RiskyPorts (Start sentence)" /></span>. A list of all <MadCap:variable name="local.risky ports (lower case)" /> identified in the asset</p>
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
+            <li><a href="#addexception">Add an exception</a>
+            </li>
             <li>
                 <p>
                     <MadCap:snippetText src="DownloadCSV.flsnp" />
                 </p>
             </li>
         </ul>
+        <p class="h3"><a name="addexception"></a>Add an Exception</p>
+        <MadCap:snippetBlock src="WhatIsException.flsnp" />
+        <p class="normal">A <MadCap:variable name="local.risky port" /> exception defines a more specific case of a definition made in <a href="ConfigRisk.htm"><MadCap:variable name="local.riskconfiguration" /></a> to be excluded from being considered a violation.</p>
+        <p class="normal">To add an exception:</p>
+        <ol>
+            <li>
+                <p>Hover over the desired asset and click on <img src="../SecureCloud-Images/Icon_add_exception.png" class="noborder" /> <span class="ScreenObject">Add exception</span>. The Add Exception window appears.</p>
+            </li>
+            <li>
+                <p>Complete the exception details.</p>
+                <p class="normal">
+                    <img src="../SecureCloud-Images/Window_AddException.png" class="ThumbnailPopup" />
+                </p>
+                <p><span class="SpecialBold">Exception Name:</span> A name of your choice.</p>
+                <p><span class="SpecialBold">Violation Type:</span> <MadCap:variable name="local.Risky port" />. This cannot be changed.</p>
+                <p><span class="SpecialBold">Violation Details:</span> All ports identified as violations are shown and selected by default. If there is more than one port, you can unselect any ports you don't want to include in the exception. If only one port is shown, it cannot be unselected.  Press Escape to continue. </p>
+                <p><span class="SpecialBold">Asset Scope:</span> The assets to be included in the exception. Select one:&#160;</p>
+                <ul>
+                    <li><b>Asset tags</b> - all assets having the exact same tags as this asset</li>
+                    <li><b>Cloud account</b> - all assets in the cloud account in which this asset is located</li>
+                    <li><b>All cloud accounts</b> - all cloud accounts monitored by SecureCloud</li>
+                </ul>
+                <p>You can click on <span class="ScreenObject">View all assets in scope</span> to view all assets that will be affected by this exception</p>
+                <p><span class="SpecialBold">Description:</span> Optional text of your choice.</p>
+            </li>
+            <li> click <span class="ScreenObject">Add</span> to save.</li>
+        </ol>
+        <p>Once added, exceptions  can be viewed in <a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" />,</a> where they can be deleted if desired.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp">
         </MadCap:snippetBlock>
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_RiskyPorts-by-Asset.flsnp" />
