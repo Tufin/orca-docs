@@ -45,12 +45,12 @@ SCL_DiscoveryEngine,5043,/Content/Kubernetes/NewConnections.htm,SCL,Main Menu > 
 SCL_k8senforce,5044,/Content/Kubernetes/Enforcement.htm,SCL,Main Menu > KUBERNETES - New Connections
 SCL_k8senforce_dns,5045,/Content/Kubernetes/Enforcement.htm#dns,SCL,Main Menu > KUBERNETES - New Connections
 ;,5046,,,
-SCL_myaccount ,5047,/Content/SecureCloud/MyAccount.htm,SCL,Main Menu > Configuration > Active Directory
+SCL_myaccount ,5047,/Content/SecureCloud/MyAccount.htm,SCL,Main Menu > Configuration > Accounts
 SCL_users,5048,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Users
 SCL_activedirectory,5049,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
-SCL_configrisk,5050,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Users
+SCL_configrisk,5050,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Risk Configuration
 SCL_reports,5051,/Content/SecureCloud/Reports.htm,SCL,Main Menu > Configuration > Reports
-SCL_audit,5052,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Reports
+SCL_audit,5052,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Audit
 ;,5053,,,
 SCL_securityscore,5054,/Content/Kubernetes/SecurityScore.htm,SCL,none
 SCL_deploy,5055,/Content/Kubernetes/DeployOnCluster.htm,SCL,none

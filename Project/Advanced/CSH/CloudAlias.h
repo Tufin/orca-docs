@@ -39,20 +39,16 @@
 #define SCL_Notifications 5041
 #define SCL_Vulnerabilities 5042
 #define SCL_DiscoveryEngine 5043
-#define SCL_myaccount 5045
-#define SCL_users 5046
-#define SCL_activedirectory 5047
-#define SCL_configrisk 5048
-#define SCL_reports 5049
-#define SCL_audit 5049
-#define SCL_securityscore 5052
-#define SCL_deploy 5053
-#define SCL_orcaarchitecture 5054
-#define SCL_signup 5055
-#define SCL_whatsnew 5056
-#define  5059
-#define  5060
-#define  5061
-#define  5062
-#define  5063
-#define  5064
+#define SCL_k8senforce 5044
+#define SCL_k8senforce_dns 5045
+#define SCL_myaccount 5047
+#define SCL_users 5048
+#define SCL_activedirectory 5049
+#define SCL_configrisk 5050
+#define SCL_reports 5051
+#define SCL_audit 5052
+#define SCL_securityscore 5054
+#define SCL_deploy 5055
+#define SCL_orcaarchitecture 5056
+#define SCL_signup 5057
+#define SCL_whatsnew 5058

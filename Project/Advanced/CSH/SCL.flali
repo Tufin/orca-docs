@@ -40,6 +40,8 @@
 	<Map Name="SCL_Notifications" Link="/Content/Kubernetes/OrcaSettingsNotifications.htm" />
 	<Map Name="SCL_Vulnerabilities" Link="/Content/Kubernetes/VulnerabilityDetails.htm" />
 	<Map Name="SCL_DiscoveryEngine" Link="/Content/Kubernetes/NewConnections.htm" />
+	<Map Name="SCL_k8senforce" Link="/Content/Kubernetes/Enforcement.htm" />
+	<Map Name="SCL_k8senforce_dns" Link="/Content/Kubernetes/Enforcement.htm#dns" />
 	<Map Name="SCL_myaccount" Link="/Content/SecureCloud/MyAccount.htm" />
 	<Map Name="SCL_users" Link="/Content/SecureCloud/Users.htm" />
 	<Map Name="SCL_activedirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />

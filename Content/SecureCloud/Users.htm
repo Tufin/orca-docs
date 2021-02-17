@@ -6,9 +6,17 @@
         <h1>Users</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p> See the users assigned to your <MadCap:variable name="local.ProductName" /> account, invite new users, view pending users (users that have been invited to join the account but not yet joined) and edit or delete existing users. The user that created the account is marked as the primary user and cannot be deleted.</p>
+        <p> See the users assigned to your <MadCap:variable name="local.ProductName" /> account, invite new users, view pending users (users that have been invited to join the account but not yet joined) and edit or delete existing users. The user that created the account is marked as the primary user <img src="../SecureCloud-Images/Icon_Primary-user.png" class="noborder" /> and cannot be deleted.</p>
         <p>
-            <img src="../SecureCloud-Images/Screen_Users.png" />i</p>
+            <img src="../SecureCloud-Images/Screen_Users.png" class="ThumbnailPopup" />
+        </p>
+        <p class="h3"><a name="roles"></a>Roles</p>
+        <p>A <MadCap:variable name="local.ProductName" /> user can have one of the following roles:</p>
+        <ul>
+            <li>Global Admin - unlimited access to all <MadCap:variable name="local.ProductName" /> functions</li>
+            <li>Global Viewer - view-only access to all <MadCap:variable name="local.ProductName" /> functions</li>
+            <li>Cloud Account Viewer - view-only access to specific <MadCap:variable name="local.public cloud" /> <MadCap:variable name="local.Vendoraccount" />s only</li>
+        </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul>
             <li><a href="#add">Invite a user</a>
@@ -24,28 +32,32 @@
         <p class="normal">To invite a user:</p>
         <ol>
             <li>
-                <p>Click <img src="../PublicCloud-Images/icon_Plus.png" class="noborder" />. </p>
-                <p>The Invite Teammate window appears:</p>
+                <p>Click <span class="ScreenObject">Invite user</span>. The Invite User window appears:</p>
                 <p>
-                    <img src="../SecureCloud-Images/Window_InviteUsers.png" />
+                    <img src="../SecureCloud-Images/Window_InviteUsers.png" class="ThumbnailPopup" />
                 </p>
             </li>
             <li>
                 <p>Enter the email of the user you want to add to the account.</p>
             </li>
             <li>
-                <p>Click <span class="ScreenObject">Send</span>. </p>
+                <p>Select a role </p>
+                <p>If role Cloud <span class="StatusOrValue">Account Viewer</span> is selected, you must specify at least one account to which the user will have access or specify <span class="StatusOrValue">All accounts</span>.</p>
+            </li>
+            <li>
+                <p>Click <span class="ScreenObject">Invite</span>. </p>
                 <p>An email invitation will be sent to the user containing instructions for joining the account. When the user receives your invitation to join the account, they can click <span class="ScreenObject">Join</span> in the email message, enter their name and password and then log in</p>
             </li>
         </ol>
         <p class="h3"><a name="pending"></a>Manage Pending Users</p>
         <p>The invitee will appear under the <span class="ScreenObject">Pending Users</span> tab until they sign up or their invitation is revoked. </p>
         <p>
-            <img src="../SecureCloud-Images/Screen_Users_Pending.png" />
+            <img src="../SecureCloud-Images/Screen_Users_Pending.png" class="ThumbnailPopup" />
         </p>
         <p>To resend an invite, click resend.<img src="../SecureCloud-Images/Icon_Resend.png" class="noborder" /></p>
         <p>To revoke the invitation, click <img src="../PublicCloud-Images/icon_Delete.png" class="noborder" />.</p>
         <p class="h3"><a name="edit"></a>Edit a User</p>
+        <p>All properties of the user can be changed, except the email. </p>
         <ul>
             <li>Click on edit <img src="../PublicCloud-Images/icon_Edit.png" class="noborder" /> for the user you want to edit. </li>
             <li>Make changes and click <span class="ScreenObject">Save</span>.</li>

@@ -9,35 +9,32 @@
         <MadCap:snippetBlock src="WhatIsClusterPolicy.flsnp" />
         <p MadCap:conditions="General.Exclude">
             <MadCap:concept term="Kubernetes" />[REMOVED BECAUSE WE DON'T EXPORT EGRESS POLICIES] IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local-orca.Product_S" /> and later used to create Kubernetes network policies.</p>
+        <p>Rules can be created from the <a href="NewConnections.htm">New Connections screen</a> or defined manually.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
             <img src="../Kubernetes-Images/Screen_AllowedConnections.png" class="ThumbnailPopup" />
         </p>
+        <p>Cluster policy is per cluster per namespace and rules are only displayed that apply to the cluster and namespace in the current filter.</p>
         <ul>
-            <li><span class="SpecialBold">Source</span>: The location from which the connection will be made. Can be Ingress, Any or namespace. If namespace, it may include Kubernetes service, container and process</li>
-            <li><span class="SpecialBold">Destination</span>: The location to which the connection will be made. Can be:&#160;External service, domain or namespace. If namespace, it may include Kubernetes service, container and process</li>
-            <li><span class="SpecialBold">Port</span>: The pod port to which the connection is addressed</li>
+            <li><span class="SpecialBold">Source and Namespace</span>: The location from which the connection will be made. It can be one or more namespaces <img src="../SecureCloud-Images/Icon_Namespace.png" /> or any namespace <img src="../SecureCloud-Images/Icon_Any.png" class="noborder" />, a pod label in a namespace e.g. <img src="../Kubernetes-Images/Icon_PodLabel.png" class="noborder" />, one or more Kubernetes services <img src="../SecureCloud-Images/Icon_k8s_service.png" class="noborder" /> (or any service <img src="../SecureCloud-Images/Icon_Any.png" class="noborder" />) in a namespace or <MadCap:variable name="local.Kubernetes" /> Ingress <img src="../SecureCloud-Images/Icon_k8s_ingress.png" class="noborder" />.</li>
+            <li><span class="SpecialBold">Destination and Namespace</span>: The location to which the connection will be made. It can be one or more namespaces <img src="../SecureCloud-Images/Icon_Namespace.png" /> or any namespace <img src="../SecureCloud-Images/Icon_Any.png" class="noborder" />, a pod label  in a namespace, one or more Kubernetes services <img src="../SecureCloud-Images/Icon_k8s_service.png" class="noborder" /> (or any service <img src="../SecureCloud-Images/Icon_Any.png" class="noborder" />) in a namespace, one or more domain names or one or more subnets outside the cluster.</li>
+            <li><span class="SpecialBold">Port</span>: The pod port <img src="../SecureCloud-Images/Icon_port.png" class="noborder" /> to which the connection is addressed</li>
             <li><span class="SpecialBold">Last Hit</span>:&#160;The last time a matching connection was made</li>
             <li><span class="SpecialBold">Description</span>:&#160;Optional for manually added rules</li>
         </ul>
-        <p>Until you add new rules, the list contains only these allowed connections:</p>
+        <p class="h3">Default Rules</p>
+        <p> The following rules are present by default:</p>
         <ul>
-            <li>
-                <p>From source service <MadCap:variable name="local-orca.Kite" />  to destination tufin.io</p>
-            </li>
-            <li>
-                <p>From source all namespaces to destination Kubernetes DNS</p>
-            </li>
+            <li>From source service <MadCap:variable name="local-orca.Kite" />  to destination tufin.io</li>
+            <li>From source all namespaces to destination Kubernetes DNS</li>
         </ul>
-        <p>The <MadCap:variable name="local-orca.Kite" /> rule should not be deleted or changed. However, if deleted it can be recreated manually or selected from the <a href="NewConnections.htm">New Connections screen</a>. New allowed connections are added by selecting them from the new connections discovered or defined manually. </p>
-        <p>Your policy will always be in one of two Policy Modes - <span class="StatusOrValue">Learn</span> or <span class="StatusOrValue">Enforce</span> . When in <span class="StatusOrValue">Learn</span> mode, <MadCap:variable name="local-orca.Product_S" /> will not apply any limitations on traffic in the cluster. When in <span class="StatusOrValue">Enforce</span> mode, <MadCap:variable name="local-orca.Product_S" /> will apply limitations on the traffic. Switching modes is done in <a href="OrcaSettingsGeneral.htm">Settings</a>. </p>
+        <p>The <MadCap:variable name="local-orca.Kite" /> rule should not be deleted or changed. However, if deleted it can be recreated manually or selected from the <a href="NewConnections.htm">New Connections screen</a>. </p>
         <p class="h3">Why Manage Policy in <MadCap:variable name="local-orca.Product_S" />?</p>
         <ol>
             <li>To have a clear and documented set of security rules for your cluster that you can review and present whenever needed.</li>
             <li>To apply your security rules to your cluster as Kubernetes network policies.</li>
-            <li>To know about connections made that you haven't accounted for; you can get instant alerts too.</li>
+            <li>To know about connections made that you haven't accounted for. You can also set up alerts for this if desired.</li>
         </ol>
-        <p>Adding rules can also be done  in <a href="NewConnections.htm">New Connections</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#Adding_an_Allowed_Connection_Manually">Add a rule</a>
@@ -52,40 +49,75 @@
         <p><a name="Adding_an_Allowed_Connection_Manually"></a>
         </p>
         <p class="h3">Add a Rule</p>
-        <p>To specify an allowed connection from a namespace in your cluster to a domain outside of the cluster. </p>
+        <p>Adding rules can also be done  in <a href="NewConnections.htm">New Connections</a>, based on selected connections made in the cluster. Here you can manually add new policy rules to allow connections into, out of or within the cluster. A rule consists of source, destination, port(s) and optionally a description.</p>
+        <p>The source of the connection can be any one of:</p>
+        <ul>
+            <li>Namespace - one, more than one or any namespace  in the cluster</li>
+            <li>Service - one or more services for a selected namespace  in the cluster</li>
+            <li>Pod label - pods in a selected namespace  in the cluster, with a specified pod label </li>
+            <li><MadCap:variable name="local.Kubernetes" /> ingress - anywhere outside the cluster</li>
+        </ul>
+        <p>The destination of the connection can be an one of:</p>
+        <ul>
+            <li>Namespace - one, more than one or any namespace in the cluster</li>
+            <li>Service - one or more services for a selected namespace  in the cluster</li>
+            <li>Pod label - pods in a selected namespace  in the cluster, with a specified pod label </li>
+            <li> Domain - one or more domain names (DNS) outside the cluster</li>
+            <li>Subnet - one or more IP addresses or CIDR blocks outside the cluster</li>
+        </ul>
+        <p>To create a new rule:</p>
         <ol>
             <li>
                 <p>Click on <span class="ScreenObject">Add Rule</span>. The <span class="ScreenObject">Add Rule</span> window is displayed. </p>
                 <p>
-                    <img src="../Kubernetes-Images/WindowAddAllowedConnection.png" class="ThumbnailPopup" />
+                    <img src="../Kubernetes-Images/WindowAddk8sRule.png" class="ThumbnailPopup" />
                 </p>
             </li>
             <li>
-                <p>Enter the details:</p>
+                <p>Enter the details for the allowed connection:</p>
                 <ul>
                     <li>
-                        <p>Source - Select a namespace from the list, or select All</p>
+                        <p><span class="ScreenObject">Source</span>
+                        </p>
+                        <p>Source Type  - select one: Namespace, Service, Pod label or <MadCap:variable name="local.Kubernetes" /> ingress.</p>
+                        <p>If namespace is selected,  you must also select one or more namespaces from the list, or select <span class="StatusOrValue">Any namespace</span>.</p>
+                        <p>If service is selected, you must also specify a single namespace followed by one or more services that run in it.</p>
+                        <p>If pod label is selected, you must also specify a single namespace and then select a single pod label that exists in it.</p>
                     </li>
                     <li>
-                        <p>Destination - Enter a valid domain name (DNS). Optionally use the wildcard character on the left of the name to include multiple protocols and/or sub-domains</p>
-                        <p>Examples:&#160;api.example.io, *.example.com</p>
+                        <p><span class="ScreenObject">Destination</span>
+                        </p>
+                        <p>Source Type  - select one: Namespace, Service, Pod label, Domain or Subnet.</p>
+                        <p>If namespace is selected,  you must also select one or more namespaces from the list, or select <span class="StatusOrValue">Any namespace</span>.</p>
+                        <p>If service is selected, you must also specify a single namespace followed by one or more services that run in it.</p>
+                        <p>If pod label is selected, you must also specify a single namespace and then select a single pod label that exists in it.</p>
+                        <p>If domain is selected, you must also enter a valid domain name (DNS). Optionally use the wildcard character on the left of the name to include multiple protocols and/or sub-domains - e.g. api.example.io, *.example.com</p>
+                        <p>If subnet is selected, you must also enter one or more IP addresses or CIDR blocks e.g. 10.21.31.64, 192.157.0.0/24</p>
                     </li>
-                    <li>Description - optional</li>
+                    <li>
+                        <p><span class="ScreenObject">Port</span>
+                        </p>
+                        <p>Enter one or more ports or 'Any' to allow all ports e.g. TCP: 80, UDP: 53. Port ranges cannot be entered.</p>
+                    </li>
+                    <li>
+                        <p>Description</p>
+                        <p> Optional</p>
+                    </li>
                 </ul>
             </li>
-            <li>Click <span class="ScreenObject">Add Rule</span> . The rule will be added to the list</li>
+            <li>Click <span class="ScreenObject">Add Rule</span>. The rule will be added to the list</li>
         </ol>
         <p class="h3"><a name="Deleting"></a>Delete Rules</p>
         <p>Rules can be deleted from the security policy one at a time:</p>
         <ol>
             <li>Hover over the line for the appropriate rule and click <img src="../Kubernetes-Images/IconRemove.png" class="noborder" /> when it appears.</li>
         </ol>
-        <p>All rules can be deleted in a single action:</p>
+        <p>All rules in the current filter can be deleted in a single action:</p>
         <ol>
-            <li>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed</li>
-            <li>Select <span class="ScreenObject">Remove all rules</span> </li>
+            <li>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed.</li>
+            <li>Select <span class="ScreenObject">Remove rules</span>.</li>
         </ol>
-        <p class="h3"><a name="Locking"></a><a name="Resettin"></a><a name="Export"></a>Export as Kubernetes Network Policies</p>
+        <p class="h3"><a name="Export"></a>Export as Kubernetes Network Policies</p>
         <p class="normal">The security policy will be exported for the namespaces specified in the current namespace filter. A file named &lt;<MadCap:variable name="local.Securecloudaccount" />&gt;-&lt;<MadCap:variable name="local.project" />&gt;.yml will be downloaded via the browser. See <MadCap:xref href="Enforcement.htm">[%=local.Kubernetes%] Policy Enforcement</MadCap:xref>.</p>
         <ol>
             <li>
