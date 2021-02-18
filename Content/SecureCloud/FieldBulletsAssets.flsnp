@@ -4,8 +4,7 @@
     </head>
     <body>
         <li>
-            <p><span class="ScreenObject">Asset name</span>
-            </p>
+            <p><span class="ScreenObject">Asset</span>. The asset's name</p>
         </li>
         <li><span class="ScreenObject">Application</span>. The application with which the asset is associated</li>
         <li>
