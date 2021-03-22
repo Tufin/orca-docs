@@ -15,6 +15,37 @@ ul.menu._Skins_SideMenu.mc-component li > a {
     border-left: solid 3px transparent;
 }
 
+/* new images for toolbar buttons - March 18 2020 */
+._Skins_TopicToolBar_sidenav2020.mc-component .button.collapse-all-button
+{
+	background: url('Images/collapse2020.png') no-repeat center center;
+}
+
+._Skins_TopicToolBar_sidenav2020.mc-component .button.expand-all-button
+{
+	background: url('Images/expand2020.png')no-repeat center center;
+}
+
+._Skins_TopicToolBar_sidenav2020.mc-component .button.next-topic-button
+{
+	background: url('Images/navigate-next2020.png')no-repeat center center;
+}
+
+._Skins_TopicToolBar_sidenav2020.mc-component .button.previous-topic-button
+{
+	background: url('Images/navigate-previous2020.png') no-repeat center center;
+}
+
+._Skins_TopicToolBar_sidenav2020.mc-component .button.print-button
+{
+	background: url('Images/printer2020.png') no-repeat center center;
+}
+
+._Skins_TopicToolBar_sidenav2020.mc-component .button.tufin-feedback-button
+{
+	background: url('Images/email2020.png') no-repeat center center;
+}
+
 /* theme: Orca */
 .theme-orca div {
 	/*The default colors are set in styles.css, but can be overridden per theme here*/
@@ -168,6 +199,21 @@ ul.menu._Skins_SideMenu.mc-component li > a {
 
 /* KC2.0 theme: none (default theme) */
 .theme-none div {
+	/*The default colors are set in styles.css, but can be overridden per theme here*/
+	--HeadColor: #e66700; 
+	--SubHeadColor: #f4f5f4; 
+}
+
+/* mkt-parent - this theme is used for the parent homepage of the new marketplace KC */
+.theme-mkt-parent .sidenav-container
+{
+	display: none;
+}
+.theme-mkt-parent .sidenav-wrapper
+{
+	width: 0px;
+}
+.theme-mkt-parent div {
 	/*The default colors are set in styles.css, but can be overridden per theme here*/
 	--HeadColor: #e66700; 
 	--SubHeadColor: #f4f5f4; 

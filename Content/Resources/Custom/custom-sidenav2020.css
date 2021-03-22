@@ -9,31 +9,39 @@ body.tufin-font {
 }
 */
 
+
+
 /* custom svg header logo */
 
+nav.title-bar {
+	padding-top: 3.5px;
+}
+
+/* Jan 13 */
 .title-bar-layout a.logo {
 	background-image: url('Images/tufin-header-logo.svg');
 	background-size: contain;
-	margin-left: calc(32px - 1em);
-	width: 217px;
+	margin-left: calc(17px - 1em); /* originally 32px to balance with right side */
+		width: 195px; /* originally 217 */
 }
 
 /* second header bar */
 
 #second-header {
-	height: 160px;
+	/* remove excess whitespace */
+	height: 116px; /* originally 160 */  
 	background-color: #EEEEEE;
 	border-bottom: 1px solid #DDDDDD;
 	border-top: 1px solid #DDDDDD;
-	padding: 27px 0 27px 14%;
+	padding: 18px 0 27px 14%; /* originally 27px 0 27px 14%; */
 	position: relative;
 }
 
 #second-header p {
 	color: #555555;
-	font-size: 50px;
+	font-size: 36px; /* originally 50px */
 	font-family: 'futura-pt-heavy', sans-serif;
-	line-height: 38px;
+	line-height: 28px; /* originally 38px */
 	margin-bottom: 8px;
 	margin-top: 8px;
 }
@@ -43,7 +51,7 @@ body.tufin-font {
     top: -1px;
     border: none;
     right: 9%;
-    height: 212px;
+    height: 132px; /* originally 170 */
 }
 
 /* particles */
@@ -86,6 +94,7 @@ span.MCBreadcrumbsDivider:after {
 
 /* custom search submit button */
 
+/* Jan 13 */
 .search-bar.search-bar-container .search-submit:after {
 	color: #FFFFFF;
 	font-family: 'futura-pt-book', sans-serif;
@@ -94,7 +103,7 @@ span.MCBreadcrumbsDivider:after {
 	display: inline-block;
 	left: 23px;
 	position: absolute;
-	top: 7px;
+	top: 4px; /* origianlly 7 */
 }
 
 .search-bar.search-bar-container .search-submit {
@@ -114,16 +123,22 @@ span.MCBreadcrumbsDivider:after {
 	border-color: #555555;
 }
 
+/* Jan 13 */
+.search-bar .search-field {
+	height: 32px;
+}
+
+
 /* page padding */
 
 .body-container {
 	padding-left: 55px;
-	padding-top: 40px;
+	padding-top: 30px; /* originally 40px */
 	padding-right: calc(50% - 600px);
 }                     
 
 .off-canvas-wrapper-inner nav.title-bar .outer-row {
-	padding-bottom: 22.5px;
+	padding-bottom: 3.5px; /* originally 22.5 */
 	padding-right: 40px;
 	/* padding-right: calc(50% - 600px + 1em); */
 }
@@ -182,27 +197,30 @@ span.submenu-toggle-container:focus {
 
 /* version menu styles */
 
+/* Jan 13 */
 .version-dropdown
 {
 	background: #fefefe;
 	border-radius: 14px;
-	margin-top: -18px;
+	margin-top: -15px; /* originally 18 */
 	padding: 0 10px;
 	border: 1px solid #DDDDDD;
 	border-radius: 169px;
 	position: absolute;
 	right: 345px;
-	height: 38px;
+	height: 32px; /* originally 38 */
 	top: 48%;
 	width: 147px;
 }
 
+/* Jan 13 */
+/* set details of the arrow for the Version Dropdown */
 select.version-data
 {
 	background: transparent;
 	border: none;
 	color: #666666;
-	height: 36px;
+	height: 32px; /* originally 36 */
 	width: 123px;
 	font-family: 'futura-pt-book', sans-serif;
 	font-size: 14px;
@@ -210,6 +228,12 @@ select.version-data
 
 .search-version {
 	right: 0px;
+}
+
+/* jan 13  - heght of search bar button*/
+.search-bar .search-submit
+{
+	height: 32px;
 }
 
 @media tablet {
@@ -229,7 +253,7 @@ select.version-data
 	}
 
 	nav.title-bar.tab-bar.sticky.is-at-top.is-stuck {
-		padding-top: 22.5px;
+		padding-top: 3.5px; /* originally 22.5px */
 	}
 
 	nav.title-bar .menu-icon {
@@ -270,7 +294,7 @@ select.version-data
 		top: -1px;
 		border: none;
 		right: 0;
-		height: 212px;
+		height: 132px;
 	}
 
 	.off-canvas-wrapper-inner nav.title-bar .outer-row {
@@ -281,14 +305,18 @@ select.version-data
 @media mobile {
 
 	#second-header {
-		height: 164px;
-		padding: 26px 0 26px 1em;
+		/* original values 
+			height: 164px;
+			padding: 26px 0 25px 1em; 
+		*/ 
+		height: 95px;
+		padding: 9px 0 25px 1em;
 		}
 	
 	#second-header p {
 		color: #555555;
-		font-size: 45px;
-		line-height: 30px;
+		font-size: 34px; /* originally 45px*/
+		line-height: 25px; /* originally 30px*/
 	}
 
 	#second-header img {

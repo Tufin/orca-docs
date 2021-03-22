@@ -23,10 +23,8 @@
         <!-- End Google Analytics --><title></title>
     </head>
     <body>
-        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" data-mc-skin="/Project/Skins/TopicToolBar_sidenav2020.flskn" />
         <div id="contentBody">
             <div>
-                <MadCap:breadcrumbsProxy />
                 <MadCap:bodyProxy />
             </div>
         </div>

@@ -7,7 +7,7 @@
   <Variable
     Comment="TOS versions"
     Name="Version"
-    EvaluatedDefinition=""></Variable>
+    EvaluatedDefinition="TOS version">TOS version</Variable>
   <Variable
     Name="ContentType"
     Comment=""
@@ -157,18 +157,6 @@
     Comment=""
     EvaluatedDefinition="R18-1">R18-1</Variable>
   <Variable
-    Name="Version"
-    Comment=""
-    EvaluatedDefinition="R17-3">R17-3</Variable>
-  <Variable
-    Name="Version"
-    Comment=""
-    EvaluatedDefinition="R17-2">R17-2</Variable>
-  <Variable
-    Name="Version"
-    Comment=""
-    EvaluatedDefinition="R17-1">R17-1</Variable>
-  <Variable
     Name="VersionSibling"
     Comment="for when a TOS2 topic needs to reference a TOS1 topic"
     EvaluatedDefinition="" />
@@ -233,21 +221,9 @@
     Comment=""
     EvaluatedDefinition="SecureApp">SecureApp</Variable>
   <Variable
-    Name="SecureTrack 2"
-    Comment=""
-    EvaluatedDefinition="SecureTrack 2.0">SecureTrack 2.0</Variable>
-  <Variable
-    Name="SecureChange2"
-    Comment=""
-    EvaluatedDefinition="SecureChange 2.0">SecureChange 2.0</Variable>
-  <Variable
-    Name="SecureApp2"
-    Comment=""
-    EvaluatedDefinition="SecureApp 2.0">SecureApp 2.0</Variable>
-  <Variable
     Name="STProductName"
-    Comment="In ST 2.0 Targets, this resolves to SecureTrack 2.0"
-    EvaluatedDefinition="SecureTrack">SecureTrack</Variable>
+    EvaluatedDefinition="TOS Aurora"
+    Comment="Variable to allow FCT targets to replace product name with FCT instead of TOS">TOS Aurora</Variable>
   <Variable
     Name="TOS"
     Comment=""
@@ -261,10 +237,6 @@
     Comment=""
     EvaluatedDefinition="2.21">2.21</Variable>
   <Variable
-    Name="STProductName"
-    Comment=""
-    EvaluatedDefinition="SecureTrack 2.0">SecureTrack 2.0</Variable>
-  <Variable
     Name="Version"
     Comment=""
     EvaluatedDefinition="R20-1P">R20-1P</Variable>
@@ -274,7 +246,7 @@
     EvaluatedDefinition="R20-2P">R20-2P</Variable>
   <Variable
     Name="STProductName"
-    Comment=""
+    Comment="Only used in FCT targets"
     EvaluatedDefinition="Firewall Change Tracker">Firewall Change Tracker</Variable>
   <Variable
     Name="Freemium"
@@ -340,4 +312,36 @@
     Name="VersionSibling"
     Comment=""
     EvaluatedDefinition="R21-1">R21-1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R21-1">R21-1</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R21-2">R21-2</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="3.50">3.50</Variable>
+  <Variable
+    Name="VersionTufinOS"
+    Comment=""
+    EvaluatedDefinition="2.23">2.23</Variable>
+  <Variable
+    Name="Version"
+    Comment=""
+    EvaluatedDefinition="R21-2P">R21-2P</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R21-2P">R21-2P</Variable>
+  <Variable
+    Name="VersionSibling"
+    Comment=""
+    EvaluatedDefinition="R21-2">R21-2</Variable>
+  <Variable
+    Name="STProductName"
+    Comment=""
+    EvaluatedDefinition="TOS Classic">TOS Classic</Variable>
 </CatapultVariableSet>

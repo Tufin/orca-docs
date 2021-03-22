@@ -13,7 +13,7 @@
   DeleteStale="true"
   DeleteUnreferenced="false"
   AutoSync="false"
-  LastImport="2021-01-04T00:03:20.4234676+02:00">
+  LastImport="2021-03-21T16:51:57.8569311+02:00">
   <Files>
     <Url
       Source="..\..\..\Global\Global.flprj"
@@ -450,6 +450,30 @@
     <Url
       Source="../../../Global/Project/Skins/HTML5 SideNav2020.flskn"
       AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/HTML5 SideNav2020.flskn" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/collapse2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/collapse2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/email2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/email2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/expand2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/expand2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/navigate-next2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/navigate-next2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/navigate-previous2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/navigate-previous2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/Custom/Images/printer2020.png"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/Custom/Images/printer2020.png" />
+    <Url
+      Source="../../../Global/Content/Resources/MasterPages/Content-SideNav2020-homepage.flmsp"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Content/Resources/MasterPages/Content-SideNav2020-homepage.flmsp" />
+    <Url
+      Source="../../../Global/Project/Skins/TopicToolBar_sidenav2020.flskn"
+      AbsoluteSource="file:///C:/TufinDocs/Global/Project/Skins/TopicToolBar_sidenav2020.flskn" />
   </CollectedSourceFiles>
   <SkippedSourceFiles>
     <Url
@@ -886,5 +910,29 @@
     <Url
       Source="../Skins/HTML5 SideNav2020.flskn"
       TimeStamp="02-Dec-20 6:52:11 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/collapse2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/email2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/expand2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/navigate-next2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/navigate-previous2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/Custom/Images/printer2020.png"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/Content-SideNav2020-homepage.flmsp"
+      TimeStamp="04-Mar-21 12:04:53 PM" />
+    <Url
+      Source="../Skins/TopicToolBar_sidenav2020.flskn"
+      TimeStamp="21-Mar-21 4:19:22 PM" />
   </GeneratedFiles>
 </CatapultProject>

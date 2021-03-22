@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Toolbar skin"
+  ComponentType="TopicToolbar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Toolbar">
+        <Properties>
+          <Property
+            Name="MarginBottom">33px</Property>
+          <Property
+            Name="MarginRight">-4px</Property>
+          <Property
+            Name="Float">right</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="ToolbarItem">
+        <Classes>
+          <StyleClass
+            Name="TufinFeedback"
+            Custom="true">
+            <Properties>
+              <Property
+                Name="BackgroundRepeat">no-repeat</Property>
+              <Property
+                Name="BackgroundPosition">center center</Property>
+              <Property
+                Name="Click">document.location.href="mailto:Docs@tufin.com?subject=Feedback (Topic: "+document.title+")&amp;body=File: "+ location.pathname + "%0A%0AComments:%0A%0A";</Property>
+            </Properties>
+          </StyleClass>
+        </Classes>
+      </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="TufinFeedback">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Toolbar">
+          <Properties>
+            <Property
+              Name="Display">none</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="ToolbarItem">
+          <Classes>
+            <StyleClass
+              Name="TufinFeedback">
+              <Properties>
+                <Property
+                  Name="BackgroundRepeat">no-repeat</Property>
+                <Property
+                  Name="BackgroundPosition">center center</Property>
+              </Properties>
+            </StyleClass>
+          </Classes>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+    <Resources>
+      <Resource
+        Name="email2020.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0gIgzMEGJOU//08EUpwFHpHFDAx8R0CYcao2nzRQkL3E09eV/SmzkJiiMuO+OjawkGtEiWNpSUZ+EcPKdWc8gEI8ICGX1OLkosyCksz8PAZhTkVloDgXSNw5v6CyKDM9o4RhDf8ZK6AoH1i0KDURpFShJDM3lcH0Oz8nyAkgmeD8tJLyxKJUhtiC/yDl3GDDM4uTcxKBSosYth/Y0g8U5gAJhycW5WXmpTMckH7WDnNacH5pUXIqw9f/za9hypzzc3NT80oYvp2Zth8oxgYSC8ksyUllWPHukjpQ5Keni2OIRe/SYEM/ZkOBOY6aL/omxQcEBcxZ0CgfMG9KUkxQ0ydGF9faaIUKN60Wl8P+C7hTVy3cOFHYT3F5dGbq+VPG3/qubenVLDTo5G2YpGabGGYmWJj+O3F99Em/S8YTojs6nBl8vU6qzJY90vZEuMFMqa+ONWd9rr7SI69LXSnWDnYTtzB9SKvO+129uFVni0qlzsvJT/a+dVW7z7DjXHocm+0Kl30MBkp5wV5HH7gzPK+9v/7/F9WT2wynMPgxxuRdPZe1p5gvp/5GXJhdyaR7nmVLt31XSA0y3K6rtFjt4rc9ce6cObvjP/AwaG03V1KKy43/s9xGi7HE9NmV93+YM3L2OsUXLJcFBgKDp6ufyzqnhCYAxKAiwS4CAAA=</Resource>
+    </Resources>
+  </Stylesheet>
+  <TopicToolbar
+    EnableCustomLayout="true"
+    Buttons="PreviousTopic|NextTopic|Separator|TufinFeedback|Print|Separator|RemoveHighlight|ExpandAll" />
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="ToolbarItem">
+            <Classes>
+              <StyleClass
+                Name="NextTopic">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Next topic</Property>
+                  <Property
+                    Name="AltText">Next topic</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="PreviousTopic">
+                <Properties>
+                  <Property
+                    Name="AltText">Previous topic</Property>
+                  <Property
+                    Name="Tooltip">Previous topic</Property>
+                </Properties>
+              </StyleClass>
+              <StyleClass
+                Name="TufinFeedback">
+                <Properties>
+                  <Property
+                    Name="Tooltip">Send us feedback</Property>
+                </Properties>
+              </StyleClass>
+            </Classes>
+          </Style>
+        </Styles>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

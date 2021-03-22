@@ -1506,8 +1506,8 @@ window.particlesJS = function(tag_id, params){
   canvas_el.className = pJS_canvas_class;
 
   /* set size canvas */
-  canvas_el.style.width = "327px";
-  canvas_el.style.height = "160px";
+  canvas_el.style.width = "175px"; /* was 327px */ 
+  canvas_el.style.height = "115px"; /* was 160px */
 
   /* append canvas */
   var canvas = document.getElementById(tag_id).appendChild(canvas_el);

@@ -38,10 +38,54 @@
     EvaluatedDefinition="VMA">VMA</Variable>
   <Variable
     Name="IPAM"
-    Comment=""
+    Comment="App name"
     EvaluatedDefinition="IPAM Security Policy App">IPAM Security Policy App</Variable>
   <Variable
     Name="IPAM_Short"
     Comment="App Name"
     EvaluatedDefinition="ISPA">ISPA</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="Cisco Tetration Application Discovery">Cisco Tetration Application Discovery</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="IPAM Security Policy App">IPAM Security Policy App</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="SecureTrack Reporting Essentials">SecureTrack Reporting Essentials</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="Workflow Integrator">Workflow Integrator</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="Vulnerability Mitigation App">Vulnerability Mitigation App</Variable>
+  <Variable
+    Name="ERAA"
+    Comment="App name"
+    EvaluatedDefinition="Vulnerability-based Change Automation App">Vulnerability-based Change Automation App</Variable>
+  <Variable
+    Name="ERAA_Short"
+    Comment="App name"
+    EvaluatedDefinition="VCA">VCA</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="Vulnerability-based Change Automation App">Vulnerability-based Change Automation App</Variable>
+  <Variable
+    Name="AAA_Long"
+    Comment="App Name"
+    EvaluatedDefinition="Policy Change Automation for Cisco ACI">Policy Change Automation for Cisco ACI</Variable>
+  <Variable
+    Name="AAA_Short"
+    Comment=""
+    EvaluatedDefinition="PCA">PCA</Variable>
+  <Variable
+    Name="WhichApp"
+    Comment=""
+    EvaluatedDefinition="Policy Change Automation App for Cisco ACI">Policy Change Automation App for Cisco ACI</Variable>
 </CatapultVariableSet>

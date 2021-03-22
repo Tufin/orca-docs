@@ -39,6 +39,8 @@
         <ul class="Action">
             <li><a href="#Adding_an_Allowed_Connection_Manually">Add a rule</a>
             </li>
+            <li><a href="#edit">Edit a rule</a>
+            </li>
             <li><a href="#Deleting">Delete rules</a>
             </li>
             <li><a href="#Export">Export as Kubernetes network policies</a>
@@ -49,7 +51,7 @@
         <p><a name="Adding_an_Allowed_Connection_Manually"></a>
         </p>
         <p class="h3">Add a Rule</p>
-        <p>Adding rules can also be done  in <a href="NewConnections.htm">New Connections</a>, based on selected connections made in the cluster. Here you can manually add new policy rules to allow connections into, out of or within the cluster. A rule consists of source, destination, port(s) and optionally a description.</p>
+        <p>Manually add a new policy rule to allow connections into, out of or within the cluster. Adding rules can also be done  in <a href="NewConnections.htm">New Connections</a>, based on selected connections that have already been made in the cluster. A rule consists of source, destination, port(s) and optionally a description.</p>
         <p>The source of the connection can be any one of:</p>
         <ul>
             <li>Namespace - one, more than one or any namespace  in the cluster</li>
@@ -107,14 +109,18 @@
             </li>
             <li>Click <span class="ScreenObject">Add Rule</span>. The rule will be added to the list</li>
         </ol>
-        <p class="h3"><a name="Deleting"></a>Delete Rules</p>
-        <p>Rules can be deleted from the security policy one at a time:</p>
+        <p class="h3"><a name="edit"></a>Edit a Rule</p>
         <ol>
-            <li>Hover over the line for the appropriate rule and click <img src="../Kubernetes-Images/IconRemove.png" class="noborder" /> when it appears.</li>
+            <li>Hover over the  appropriate rule, click <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" style="width: 17px;height: 17px;" />then <span class="MenuItem">Edit rule</span>.</li>
+            <li>Make changes as required and click <span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <p class="h3"><a name="Deleting"></a>Delete Rules</p>
+        <ol>
+            <li>Hover over the  appropriate rule, click <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" style="width: 17px;height: 17px;" />&gt; Delete rule.</li>
         </ol>
         <p>All rules in the current filter can be deleted in a single action:</p>
         <ol>
-            <li>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed.</li>
+            <li>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />at the top of the screen. The action menu appears.</li>
             <li>Select <span class="ScreenObject">Remove rules</span>.</li>
         </ol>
         <p class="h3"><a name="Export"></a>Export as Kubernetes Network Policies</p>
