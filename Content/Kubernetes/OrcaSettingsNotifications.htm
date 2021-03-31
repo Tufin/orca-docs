@@ -7,7 +7,7 @@
             <MadCap:concept term="Settings" />Notifications and Alerts</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p> Get notifications via Slack when <a href="NewConnections.htm">new connections</a> are discovered, with no more than one message an hour.</p>
+        <p> Get notifications via a social network when <a href="NewConnections.htm">new connections</a> are discovered. A maximum of one message will be sent every hour.</p>
         <p>
             <img src="../Kubernetes-Images/Screen_Notifications.png" class="ThumbnailPopup" />
         </p>
@@ -18,11 +18,12 @@
         <p class="h3"><a name="Slack"></a>Configure a New Connection Alert</p>
         <ol>
             <li>
-                <p> Enable / disable the alert on or off using the toggle switch.</p>
+                <p> Enable / disable the alert on or off using the toggle switch. <MadCap:variable name="local-orca.Product_S" /> remembers the URLs you have entered below, even when disabled.</p>
             </li>
             <li>
-                <p>When the alert is enabled, enter the Slack URL of an individual or group to receive notifications - see <a href="https://api.slack.com/incoming-webhooks">Slack documentation</a>. <MadCap:variable name="local-orca.Product_S" /> remembers the URL when disabled.</p>
+                <p>If you want to notify via Slack, when the alert is enabled, enter the Slack URL of an individual or group to receive notifications - see <a href="https://api.slack.com/incoming-webhooks">Slack documentation</a>.</p>
             </li>
+            <li>If you want to notify via Microsoft Teams, enter the connector URL of an individual or team to receive notifications - see <a href="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook">Microsoft documentation</a>. </li>
         </ol>
         <p>
             <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />

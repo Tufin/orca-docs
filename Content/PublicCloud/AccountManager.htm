@@ -130,7 +130,8 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin.</li>
             <li>Click <span class="ScreenObject">Add</span> to save.</li>
         </ol>
         <p class="h3"><a name="addgoogle"></a>Add a <MadCap:variable name="local.GoogleCloudPlatform" /> Account to <MadCap:variable name="local.ProductName" /></p>
-        <p>The required project must already exist on the cloud environment and have the required <a href="GCPPermissions.htm">permissions</a>. </p>
+        <p>If your project is a shared VPC, i.e. a service project attached to a host project, you must repeat the steps below for both the service and host projects. Otherwise, <MadCap:variable name="local.ProductName" /> will not have access to all the information in the VPC.</p>
+        <p>The required project must already exist on the cloud environment and have the required <a href="GCPPermissions.htm">permissions</a>. In the case of a shared VPC, this applies to  both the service and host projects. </p>
         <ol>
             <li>
                 <p>Make sure <span class="MenuItem"><MadCap:variable name="local.CloudAccounts" /></span> is selected in the menu.</p>

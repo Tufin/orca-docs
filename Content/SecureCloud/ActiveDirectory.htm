@@ -35,10 +35,10 @@
                 <p>Make sure that the <MadCap:variable name="local.ProductName" /> app registration has the API permission 'User.Read'. This might be added automatically when creating the app registration, but if not, add it manually.</p>
             </li>
             <li>
-                <p>Create one or more groups to access <MadCap:variable name="local.ProductName" />. For each group, add a token configuration groups claim, specifying type <b>security groups</b>. You will need the object ID(s) of the group(s) when configuring <MadCap:variable name="local.ProductName" /></p>
+                <p>Add a token configuration groups claim to the <MadCap:variable name="local.ProductName" /> app registration, specifying type <b>security groups</b>. </p>
             </li>
-            <li>Assign the appropriate users to the group(s).</li>
         </ol>
+        <p>For each group you want to give access to <MadCap:variable name="local.ProductName" />, you will need the group's object ID when configuring <MadCap:variable name="local.ProductName" /></p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
