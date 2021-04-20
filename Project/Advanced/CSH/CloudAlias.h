@@ -1,6 +1,7 @@
 
 #define SCL_Dashboard 5001
 #define SCL_Exceptions 5002
+#define SCL_Ticketing 5002
 #define SCL_K8sContainerVulnerabilities 5003
 #define SCL_K8sPermissivePolicies-by-Cluster 5004
 #define SCL_K8sPermissivePolicies-by-Namespace 5005
@@ -44,6 +45,7 @@
 #define SCL_myaccount 5047
 #define SCL_users 5048
 #define SCL_activedirectory 5049
+#define SCL_AccessKeys 5002
 #define SCL_configrisk 5050
 #define SCL_reports 5051
 #define SCL_audit 5052

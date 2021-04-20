@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li>Global Admin - unlimited access to all <MadCap:variable name="local.ProductName" /> functions</li>
+            <li>Global Viewer - view-only access to all <MadCap:variable name="local.ProductName" /> functions</li>
+            <li>Cloud Account Viewer - view-only access to all or selected <MadCap:variable name="local.public cloud" /><MadCap:variable name="local.Vendoraccount" />s </li>
+            <li>Cluster Owner - full management access to all or selected <MadCap:variable name="local.Kubernetes" /><MadCap:variable name="local.project" />s</li>
+            <li>Cluster Viewer - view-only access to all or selected <MadCap:variable name="local.Kubernetes" /><MadCap:variable name="local.project" />s</li>
+        </ul>
+    </body>
+</html>

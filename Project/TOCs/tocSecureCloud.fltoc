@@ -245,9 +245,6 @@
         Title="APIs and Scripts">
         <TocEntry
           Title="[%=System.LinkedTitle%]"
-          Link="/Content/Kubernetes/Tokens.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/Docker_Image_Scanning.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
@@ -255,9 +252,6 @@
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/ImageScansCICD.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/Kubernetes/WorkingWithBadges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="[%=System.LinkedTitle%]"
           Link="/Content/Kubernetes/Uninstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
@@ -274,6 +268,9 @@
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/SecureCloud/ActiveDirectory.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/SecureCloud/APIAccessKeys.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/SecureCloud/ConfigRisk.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

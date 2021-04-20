@@ -45,6 +45,7 @@
 	<Map Name="SCL_myaccount" Link="/Content/SecureCloud/MyAccount.htm" />
 	<Map Name="SCL_users" Link="/Content/SecureCloud/Users.htm" />
 	<Map Name="SCL_activedirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />
+	<Map Name="SCL_AccessKeys" Link="/Content/SecureCloud/APIAccessKeys.htm" />
 	<Map Name="SCL_configrisk" Link="/Content/SecureCloud/ConfigRisk.htm" />
 	<Map Name="SCL_reports" Link="/Content/SecureCloud/Reports.htm" />
 	<Map Name="SCL_audit" Link="/Content/SecureCloud/Audit.htm" />

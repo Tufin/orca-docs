@@ -7,18 +7,13 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <p> See the users assigned to your <MadCap:variable name="local.ProductName" /> account, invite new users, view pending users (users that have been invited to join the account but not yet joined) and edit or delete existing users. The user that created the account is marked as the primary user <img src="../SecureCloud-Images/Icon_Primary-user.png" class="noborder" /> and cannot be deleted.</p>
+        <p>This function is available only to users with the Global Admin role.</p>
         <p>
             <img src="../SecureCloud-Images/Screen_Users.png" class="ThumbnailPopup" />
         </p>
         <p class="h3"><a name="roles"></a>Roles</p>
-        <p>A <MadCap:variable name="local.ProductName" /> user can have one of the following roles:</p>
-        <ul>
-            <li>Global Admin - unlimited access to all <MadCap:variable name="local.ProductName" /> functions</li>
-            <li>Global Viewer - view-only access to all <MadCap:variable name="local.ProductName" /> functions</li>
-            <li>Cloud Account Viewer - view-only access to all or selected <MadCap:variable name="local.public cloud" /> <MadCap:variable name="local.Vendoraccount" />s </li>
-            <li>Cluster Owner - full management access to all or selected <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.project" />s</li>
-            <li>Cluster Viewer - view-only access to all or selected <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.project" />s</li>
-        </ul>
+        <p>A <MadCap:variable name="local.ProductName" /> user can have one or more of the following roles:</p>
+        <MadCap:snippetBlock src="../Resources/Snippets/Roles.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul>
             <li><a href="#add">Invite a user</a>
@@ -44,8 +39,7 @@
             </li>
             <li>
                 <p>Select a role </p>
-                <p>If role <b>Cloud </b><span class="StatusOrValue">Account Viewer</span> is selected, you must specify at least one account to which the user will have access or specify <span class="StatusOrValue">All accounts</span>.</p>
-                <p>If roles <span class="StatusOrValue">Cluster Viewer</span> or <span class="StatusOrValue">Cluster Owner</span> are selected, you must specify at least one <MadCap:variable name="local.project" /> to which the user will have access or specify <span class="StatusOrValue">All clusters</span>.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Roles-assigning.flsnp" />
             </li>
             <li>
                 <p>Click <span class="ScreenObject">Invite</span>. </p>

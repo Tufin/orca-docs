@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>API Access Keys</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>API&#160;access keys are unique identifiers created in <MadCap:variable name="local-orca.Product_S" /> that allow other applications to connect to it. All keys are in the JSON web token format and once created, they can no longer be viewed in <MadCap:variable name="local.ProductName" />. You must therefore save the key immediately on creating it.</p>
+        <p>This function is available only to users with the Global Admin role.</p>
+        <p>The actions allowed and information provided through the API&#160;connection made will be dependent on the roles given to the API access key.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>
+            <img src="../SecureCloud-Images/APIAccessKeys.png" class="ThumbnailPopup" />
+        </p>
+        <ul>
+            <li>Name - the name given to the access key when it was created. It is unique and cannot be changed.</li>
+            <li>Role - roles that have been assigned to the key</li>
+            <li>Created - date and time the key was added</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li><a href="#add"><b>Add</b> an access key</a>
+            </li>
+            <li><b>Edit</b> an access key - hover over the key, click on  <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" /> and select <span class="ScreenObject">Edit access key</span></li>
+            <li><b>Remove</b> an access key - hover over the key, click on  <img src="../SecureCloud-Images/Icon_3dots.png" class="noborder" /> and select <span class="ScreenObject">Remove access key</span></li>
+        </ul>
+        <p class="h3"><a name="add"></a>Add an Access Key</p>
+        <ol>
+            <li>
+                <p>Click on <span class="ScreenObject">Add access key</span>. The Add Access Key window appears.</p>
+                <p>
+                    <img src="../SecureCloud-Images/Window_AddAPIAccessKey.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>Enter a unique name for the access key. </li>
+            <li>
+                <p>Assign a role. One of the following:</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Roles.flsnp" />
+                <MadCap:snippetBlock src="../Resources/Snippets/Roles-assigning.flsnp" />
+                <p>Example:</p>
+                <p>
+                    <img src="../SecureCloud-Images/Window_AddAPIAccessKeyFilled.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Click <span class="ScreenObject">Add</span>. The access key details window appears. Do not close it or click on the <MadCap:variable name="local.ProductName" /> screen outside of the window until you have saved both the access key name and the JSON web token to a safe location. Once the window is closed, <MadCap:variable name="local.ProductName" /> will no longer be able retrieve the JSON web token, so if you have not saved it, the key will be useless.</p>
+                <p>
+                    <img src="../SecureCloud-Images/Window_AddAPIAccessKeyJWT.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>To save the access key name, hover over it and click on the copy icon <img src="../SecureCloud-Images/Icon_Clipboard.png" class="noborder" />, then paste to a safe location. This name will not be used in the API calls but you will need it if you need to identify the key in case other keys have been added.</li>
+            <li>To save the JSON web token, hover over it and click on the copy icon <img src="../SecureCloud-Images/Icon_Clipboard.png" class="noborder" />, then paste to a safe location.</li>
+            <li>Close the access key details window. The newly added key will appear in the list.</li>
+        </ol>
+        <p>
+            <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+            <MadCap:snippetBlock src="../Resources/Snippets/GetHere_APIAccessKeys.flsnp" />
+        </p>
+    </body>
+</html>

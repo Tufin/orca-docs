@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>If role <b>Cloud </b><span class="StatusOrValue">Account Viewer</span> is selected, you must specify at least one account to which access is granted or specify <span class="StatusOrValue">All accounts</span>.</p>
+        <p>If roles <span class="StatusOrValue">Cluster Viewer</span> or <span class="StatusOrValue">Cluster Owner</span> are selected, you must specify at least one <MadCap:variable name="local.project" /> to which access is granted or specify <span class="StatusOrValue">All clusters</span>.</p>
+        <p>Additional roles can be added - click <span class="ScreenObject">Add another role</span>.</p>
+    </body>
+</html>

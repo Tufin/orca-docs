@@ -391,4 +391,8 @@
     Name="Risky port"
     EvaluatedDefinition="Risky port"
     Comment="Begin sentence">Risky port</Variable>
+  <Variable
+    Name="APIAccessKeys"
+    Comment="Menu"
+    EvaluatedDefinition="API Access Keys">API Access Keys</Variable>
 </CatapultVariableSet>
