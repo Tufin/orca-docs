@@ -10,53 +10,43 @@
             <li><a href="#Implemen">Implementation</a>
             </li>
         </ul>
-        <h2><a name="overview"></a>Overview</h2>
+        <p class="h2"><a name="overview"></a>Overview</p>
         <p>An approach to security in which you never modify an existing policy but rather replace it with a new one. See <a href="ImmutablePolicy.htm">Immutable Policy Concepts.</a></p>
-        <h2><a name="Implemen"></a>Implementation</h2>
-        <h3>Development and QA Phase</h3>
+        <p class="h2"><a name="Implemen"></a>Implementation</p>
+        <p class="h3">Development and QA Phase</p>
         <ul>
             <li>Develop and commit code as usual.</li>
-            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local-orca.Product_S" /> to create the list of allowed connections in the security policy. </li>
+            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local-orca.Product_S" />to create the list of allowed connections in the security policy. </li>
         </ul>
-        <h3>Build Phase</h3>
+        <p class="h3">Build Phase</p>
         <p>You can run these steps manually or build them into your CI/CD Pipeline. </p>
+        <p class="h4">Parameters Used in the scripts below</p>
+        <p>{APIKEY}:&#160;Create an <a href="../SecureCloud/APIAccessKeys.htm">API access key</a>.</p>
+        <p>{URL}: https://securecloud.tufin.io/api</p>
+        <p>{<MadCap:variable name="local.SecurecloudAccount" />}: Your <MadCap:variable name="local-orca.Product_S" /><MadCap:variable name="local.Securecloudaccount" /></p>
+        <p>{<MadCap:variable name="local.Project" />} The monitored <MadCap:variable name="local.project" /></p>
         <ol>
             <li>
-                <p>Check out your code</p>
+                <p>Check out your code.</p>
             </li>
             <li>
-                <p>Build your code</p>
+                <p>Build your code.</p>
             </li>
             <li>
-                <p>Reset policy using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+                <p>Reset your policy.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer [APIKEY]" "https://[Account].securecloud.tufin.io}/api/orca/model/clusters/[Cluster]/scripts/reset-policy")"</pre>
             </li>
             <li>
                 <p>Run tests: unit, integration, system...</p>
             </li>
             <li>
-                <p>Fetch auto-generated policy  using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+                <p>Generate <MadCap:variable name="local-orca.Product_S" /> cluster policy,  based on automatic connectivity found by <MadCap:variable name="local-orca.Product_S" />.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/api/orca/model/clusters/${Cluster}/scripts/commit-policy")</pre>
             </li>
             <li>
-                <p>Commit auto-generated policy to github as YAML, using provided <MadCap:variable name="local-orca.Product_S" /> script</p>
+                <p>Create network policy YAML from <MadCap:variable name="local-orca.Product_S" /> cluster policy.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/api/orca/model/clusters/${Cluster}/scripts/commit-policy")</pre>
             </li>
             <li>
-                <p>Check policy for compliance</p>
-            </li>
-            <li>
-                <p>Deploy your app and the auto-generated policy to your run-time environment (staging or production)</p>
+                <p>Use GitHub or other tool to commit the network policy to your pipeline.</p>
             </li>
         </ol>
-        <h2>Scripts</h2>
-        <p>Use these parameters:</p>
-        <p>{APIKEY}:&#160;Create an <a href="../SecureCloud/APIAccessKeys.htm">API access key</a>.</p>
-        <p>{URL}: https://securecloud.tufin.io/api</p>
-        <p>{<MadCap:variable name="local.SecurecloudAccount" />}: Your <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Securecloudaccount" /></p>
-        <p>{<MadCap:variable name="local.Project" />} The monitored <MadCap:variable name="local.project" /></p>
-        <h3>Reset Policy </h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/reset-policy")</p>
-        <h3>Fetch Policy </h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/fetch-policy")</p>
-        <h3>Commit Policy</h3>
-        <p class="CodeSegment1">bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/{<MadCap:variable name="local.SecurecloudAccount" />}/{<MadCap:variable name="local.Project" />}/scripts/commit-policy")</p>
     </body>
 </html>
