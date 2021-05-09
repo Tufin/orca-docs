@@ -21,10 +21,9 @@
         <p class="h3">Build Phase</p>
         <p>You can run these steps manually or build them into your CI/CD Pipeline. </p>
         <p class="h4">Parameters Used in the scripts below</p>
-        <p>{APIKEY}:&#160;Create an <a href="../SecureCloud/APIAccessKeys.htm">API access key</a>.</p>
-        <p>{URL}: https://securecloud.tufin.io/api</p>
-        <p>{<MadCap:variable name="local.SecurecloudAccount" />}: Your <MadCap:variable name="local-orca.Product_S" /><MadCap:variable name="local.Securecloudaccount" /></p>
-        <p>{<MadCap:variable name="local.Project" />} The monitored <MadCap:variable name="local.project" /></p>
+        <p>${<b>APIKey</b>}:&#160;As created in <a href="../SecureCloud/APIAccessKeys.htm">API access key</a></p>
+        <p>${<MadCap:variable name="local.SecurecloudAccount" style="font-weight: bold;" />}: Your <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Securecloudaccount" /> name</p>
+        <p>${<MadCap:variable name="local.Project" style="font-weight: bold;" />} Your monitored <MadCap:variable name="local.project" /> name</p>
         <ol>
             <li>
                 <p>Check out your code.</p>
@@ -33,19 +32,19 @@
                 <p>Build your code.</p>
             </li>
             <li>
-                <p>Reset your policy.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer [APIKEY]" "https://[Account].securecloud.tufin.io}/api/orca/model/clusters/[Cluster]/scripts/reset-policy")"</pre>
+                <p>Reset your policy.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${<b>APIKey</b>}" "https://${<MadCap:variable name="local.SecurecloudAccount" style="font-weight: bold;" />}.securecloud.tufin.io/api/orca/model/clusters/${<MadCap:variable name="local.Project" style="font-weight: bold;" />}/scripts/reset-policy")"</pre>
             </li>
             <li>
                 <p>Run tests: unit, integration, system...</p>
             </li>
             <li>
-                <p>Generate <MadCap:variable name="local-orca.Product_S" /> cluster policy,  based on automatic connectivity found by <MadCap:variable name="local-orca.Product_S" />.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/api/orca/model/clusters/${Cluster}/scripts/commit-policy")</pre>
+                <p>Generate <MadCap:variable name="local-orca.Product_S" /> cluster policy,  based on automatic connectivity found by <MadCap:variable name="local-orca.Product_S" />.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${<b>APIKEY</b>}" "https://${<MadCap:variable name="local.SecurecloudAccount" style="font-weight: bold;" />}.securecloud.tufin.io/api/orca/model/clusters/${<MadCap:variable name="local.Project" style="font-weight: bold;" />}/scripts/commit-policy")"</pre>
             </li>
             <li>
-                <p>Create network policy YAML from <MadCap:variable name="local-orca.Product_S" /> cluster policy.</p><pre xml:space="preserve">"bash &lt;(curl -s -H "Authorization: Bearer ${APIKEY}" "${URL}/api/orca/model/clusters/${Cluster}/scripts/commit-policy")</pre>
+                <p>Create network policy YAML from <MadCap:variable name="local-orca.Product_S" /> cluster policy.</p><pre xml:space="preserve">curl -s -H "Authorization: Bearer ${<b>APIKEY</b>}" "https://${<MadCap:variable name="local.SecurecloudAccount" style="font-weight: bold;" />}.securecloud.tufin.io/api/orca/model/clusters/${<MadCap:variable name="local.Project" style="font-weight: bold;" />}/rules-network-policies.yaml?namespaces=__all__" --output &lt;local-filename&gt;</pre>
             </li>
             <li>
-                <p>Use GitHub or other tool to commit the network policy to your pipeline.</p>
+                <p>Commit the network policy to your pipeline, using GitHub or other appropriate tool. </p>
             </li>
         </ol>
     </body>
