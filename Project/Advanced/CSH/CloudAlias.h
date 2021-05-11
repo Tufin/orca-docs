@@ -1,7 +1,6 @@
 
 #define SCL_Dashboard 5001
 #define SCL_Exceptions 5002
-#define SCL_Ticketing 5002
 #define SCL_K8sContainerVulnerabilities 5003
 #define SCL_K8sPermissivePolicies-by-Cluster 5004
 #define SCL_K8sPermissivePolicies-by-Namespace 5005
@@ -35,7 +34,7 @@
 #define SCL_AdmissionControllers 5036
 #define SCL_Services 5037
 #define SCL_AllowedConnections 5038
-#define SCL_FirewallTickets 5039
+#define  
 #define SCL_Settings 5040
 #define SCL_Notifications 5041
 #define SCL_Vulnerabilities 5042
@@ -47,6 +46,7 @@
 #define SCL_activedirectory 5049
 #define SCL_AccessKeys 5002
 #define SCL_configrisk 5050
+#define SCL_Ticketing 5002
 #define SCL_reports 5051
 #define SCL_audit 5052
 #define SCL_securityscore 5054

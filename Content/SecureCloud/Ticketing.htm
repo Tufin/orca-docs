@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Ticketing</h1>
+        <ul>
+            <li><a href="#overview">Overview</a>
+            </li>
+            <li><a href="#actions">What Can I Do Here?</a>
+            </li>
+            <li><a href="#prerequisites">Prerequisites</a>
+            </li>
+            <li><a href="#get_here">How Do I Get Here?</a>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p><MadCap:variable name="local.ProductName" /> can be integrated with <MadCap:variable name="local-orca.SecureChange" /> to let you submit  egress tickets from your <MadCap:variable name="local.clusterpolicy" />. This section describes how to  install the <MadCap:variable name="local.ProductName" /> connector  on the <MadCap:variable name="General.SecureChange" /> server and how to define the <MadCap:variable name="General.SecureChange" /> connection parameters.</p>
+        <p>When fully set up, the <MadCap:variable name="local.ticketing" /> status OK icon is shown and you will be able to open tickets, as described in <a href="../Kubernetes/AllowedConnections.htm#ApplyOnFW"><MadCap:variable name="local.OpenEgressTicket" /></a></p>
+        <p>
+            <img src="../Kubernetes-Images/Window_Ticketing_Set_Up.png" class="ThumbnailPopup" />
+        </p>
+        <p class="h2"><a name="prerequisites"></a>Prerequisites</p>
+        <ul>
+            <li><MadCap:variable name="General.SecureChange" /> fully set up on TOS Classic (not yet available on <MadCap:variable name="General.STProductName" />) with an access request workflow that can be used for the ticket.</li>
+            <li>
+                <p>Allow the following outbound connection from your <MadCap:variable name="General.SecureChange" /> server.</p>
+                <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <thead>
+                        <tr class="TableStyle-PatternedRows-Head-Header1">
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Port</th>
+                            <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Protocols</th>
+                            <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Security</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="TableStyle-PatternedRows-Body-LightRows">
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">*.tufin.io</td>
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">443</td>
+                            <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">HTTP 1.1, HTTP/2</td>
+                            <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">TLS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>Install the <MadCap:variable name="local.ProductName" /> connector on <MadCap:variable name="General.SecureChange" /></li>
+            <li>Enter the <MadCap:variable name="General.SecureChange" /> workflow details in <MadCap:variable name="local.ProductName" /></li>
+            <li>Clear <MadCap:variable name="General.SecureChange" /> workflow details - click <img src="../SecureCloud-Images/Icon-X.png" class="noborder" /></li>
+            <li>Uninstall the <MadCap:variable name="local.ProductName" /> connector from <MadCap:variable name="General.SecureChange" /></li>
+        </ul>
+        <p>Before any setup steps have been taken, the <MadCap:variable name="local.ticketing" /> screen will appear as follows:</p>
+        <p>
+            <img src="../Kubernetes-Images/Screen_TicketingNot Setup.png" class="ThumbnailPopup" />
+        </p>
+        <p class="h2"><a name="connector"></a>Install the <MadCap:variable name="local.ProductName" /> Connector on <MadCap:variable name="General.SecureChange" /></p>
+        <ol>
+            <li>Click on <span class="ScreenObject">View install script</span> and then click on the copy icon <img src="../SecureCloud-Images/Icon_Clipboard.png" style="width: 19px; height: 19px;" class="noborder" />. The script will be copied to the clipboard.</li>
+            <li>On the <MadCap:variable name="General.SecureChange" /> server, log in to the console.</li>
+            <li>Paste the script copied above from <MadCap:variable name="local.ProductName" /> to the <MadCap:variable name="General.SecureChange" /> console and run the script.</li>
+            <li>After the script has completed running on the <MadCap:variable name="General.SecureChange" /> server, refresh the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Ticketing" /> screen - <MadCap:snippetText src="../Resources/Snippets/GetHere_Ticketing.flsnp" /> .</li>
+            <li>
+                <p>If the script has been successfully installed,  the <MadCap:variable name="local.ticketing" /> screen will appear as follows:</p>
+                <p>
+                    <img src="../Kubernetes-Images/Screen_TicketingSCInstalled.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+        </ol>
+        <p class="h2"><a name="workflow"></a>Enter the <MadCap:variable name="General.SecureChange" /> Workflow Details in <MadCap:variable name="local.ProductName" /></p>
+        <ol>
+            <li>
+                <p>Click Edit <img src="../SecureCloud-Images/Icon_Edit.png" class="noborder" />. The Configure SecureChange Integration window appears.</p>
+                <p>
+                    <img src="../Kubernetes-Images/Window_Ticketing_Workflow.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>Enter an existing user name, password and workflow defined in <MadCap:variable name="General.SecureChange" />. </li>
+            <li><span class="ScreenObject">Save</span>.</li>
+        </ol>
+        <p class="h2"><a name="uninstall"></a>Uninstall the <MadCap:variable name="local.ProductName" /> Connector From <MadCap:variable name="General.SecureChange" /></p>
+        <ol>
+            <li>Click on <span class="ScreenObject">View install script</span> and then click on the copy icon <img src="../SecureCloud-Images/Icon_Clipboard.png" style="width: 19px; height: 19px;" class="noborder" />. The script will be copied to the clipboard.</li>
+            <li>On the  <MadCap:variable name="General.SecureChange" /> server, log in to the console.</li>
+            <li>Paste the script copied above from <MadCap:variable name="local.ProductName" /> to the <MadCap:variable name="General.SecureChange" /> console.</li>
+            <li>In the script change the text "install-connector" to "uninstall-connector".</li>
+            <li>Run the script.</li>
+        </ol>
+        <p>
+            <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+            <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Ticketing.flsnp" />
+        </p>
+    </body>
+</html>

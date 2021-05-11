@@ -6,69 +6,51 @@
     <body><a name="topofpage"></a>
         <h1>
             <MadCap:concept term="PublicCloud" />Assets</h1>
-        <ul>
-            <li><a href="#overview"><MadCap:variable name="Topic Templates.Overview" /></a>
-            </li>
-            <li><a href="#whatcanido"><MadCap:variable name="Topic Templates.WhatCanIdo" /></a>
-            </li>
-            <li><a href="#get_here"><MadCap:variable name="Topic Templates.HowDoIgetHere" /></a>
-            </li>
-        </ul>
-        <p class="h2"><a name="overview"></a><MadCap:variable name="Topic Templates.Overview" />
-        </p>
-        <p MadCap:conditions="General.Exclude">This page currently serves 2 purposes - a)&#160;all assets and b)&#160;assets for a selected application. It thus appears twice in the menu, each time with a different title. In the future, we'll break it up and turn it into 2 different topics using snippets</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <MadCap:snippetBlock src="WhatIsAsset.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
             <img src="../PublicCloud-Images/Screen_Assets.png" class="ThumbnailPopup" />
         </p>
-        <MadCap:snippetBlock src="WhatIsAsset.flsnp" />
-        <p>The screen lists the assets in your cloud accounts, their properties, accessibility and whether they are at risk. The list may be filtered when displayed, depending on <a href="#get_here">how you got here</a>.</p>
+        <p>A list of assets in your cloud accounts, their properties, accessibility and whether they are at risk. The list may be filtered when displayed, depending on <a href="#get_here">how you got here</a>.</p>
         <p>The list of assets shows the following information:</p>
         <ul>
             <li>Sequence of item in the list</li>
             <li>Asset Type Icon - <img src="../PublicCloud-Images/Icon_storage.png" class="noborder" />-Storage,<img src="../PublicCloud-Images/Icon_vm.png" class="noborder" />-VM</li>
-            <li>The asset name, taken from the tag 'Name', instance id or the name of the object in the vendor account, depending on the type of asset</li>
-            <li>The application associated with the asset. Click on the application name to display the application.</li>
-            <li>The cloud vendor - <MadCap:variable name="local.PublicCloudVendors" /></li>
-            <li>If the asset is assigned to a load balancer, the load balancer name is displayed</li>
-            <li>'Internet exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity.</li>
+            <li>Asset name, taken from the tag 'Name', instance id or the name of the object in the vendor account, depending on the type of asset</li>
+            <li>Application associated with the asset. Click on the application name to display the application</li>
+            <li>Cloud vendor type - <MadCap:variable name="local.PublicCloudVendors" /></li>
+            <li>Account name, as defined in <MadCap:variable name="local.ProductName" /></li>
+            <li>Internet access - 'Exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity</li>
+            <li>Load balancer name, if the asset is assigned to a load balancer</li>
             <li>Warning <img src="../PublicCloud-Images/icon_warning.png" class="noborder"></img> If present, indicates a <a href="WhatIsCloudViolation.htm">violation</a></li>
         </ul>
-        <p class="h2"><a name="whatcanido"></a><MadCap:variable name="Topic Templates.WhatCanIdo" />
-        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p><a href="#View">Filter the displayed assets</a> </p>
+                <p>Filter the displayed assets - click <img src="../PublicCloud-Images/AddFilter.png" class="noborder" /> </p>
             </li>
             <li>
-                <p><a href="#AssetDetails">View asset details</a> </p>
+                <p><a href="#AssetDetails">View asset details</a> for a selected <MadCap:variable name="local.asset" /></p>
             </li>
-            <li><a href="#add exception">Add exceptions</a> so that certain violations are suppressed</li>
+            <li><a href="#add exception">Add exceptions</a> for a selected <MadCap:variable name="local.asset" />.</li>
             <li>
-                <p>View the <MadCap:xref href="AssetGraph.htm">[%=local-iris.ApplicationAssetMap%]</MadCap:xref>/ Click on <MadCap:variable name="local-iris.ApplicationAssetMap" /> in the menu (only for assets shown for a selected <MadCap:variable name="local-iris.application" />)</p>
+                <p>View the <a href="AssetGraph.htm"><MadCap:variable name="local-iris.ApplicationAssetMap" /></a> - click on <MadCap:variable name="local-iris.ApplicationAssetMap" /> in the menu (only for assets shown for a selected <MadCap:variable name="local-iris.application" />)</p>
             </li>
         </ul>
-        <p class="h3"><a name="View"></a>Filter the Displayed Assets</p>
-        <p>The list can be <a href="../SecureCloud/Navigation.htm#pubcloudfilterning">filtered</a> on the following criteria:</p>
-        <ul>
-            <li>Internet exposure</li>
-            <li>Risk<ul><li>Any risk</li><li><MadCap:variable name="local.Policyviolations" /></li><li><MadCap:variable name="local.Riskyports (Start sentence)" /></li><li><MadCap:variable name="local.Permissiveaccess" /></li></ul></li>
-            <li>Cloud vendor</li>
-            <li>Application name</li>
-            <li>Asset name</li>
-            <li>Load balancer name (the load balancer associated with the asset)</li>
-            <li>Tags</li>
-            <li>Reachable networks</li>
-        </ul>
-        <p>Click on an asset in the list to display <a href="#AssetDetails">details</a> of that asset.</p>
         <p class="h3"><a name="AssetDetails"></a>View Asset Details</p>
-        <p>When selecting an asset, the Asset Details Screen is displayed.</p>
+        <p>Select an asset from the list. The overview screen appears.</p>
         <p>
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
-        <p>Select the required information by clicking on the Assets Menu:</p>
+        <p>Switch information displayed by clicking on the Assets Menu:</p>
+        <p MadCap:conditions="General.Exclude">
+            <img src="../PublicCloud-Images/Menu_Asset.png" />
+        </p>
         <ul>
             <li>
-                <p><a href="#AssetDetails">Asset Overview</a> (default)</p>
+                <p><a href="#AssetDetails">Overview</a> (default)</p>
                 <p>Properties of the asset including type, security entities, tags and VPC</p>
             </li>
             <li>
@@ -91,7 +73,7 @@
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
-        <p>This is the default view when displaying the asset; or click <span class="MenuItem">Overview</span> from the Asset Menu.</p>
+        <p>This is the default view when displaying the asset. Click <span class="MenuItem">Overview</span> from the Asset Menu.</p>
         <p>The information pertaining to the select asset is displayed in panels. At the top of the screen, basic information about the asset is shown followed by panels containing additional information. When hovering over fields, the copy-to-clipboard icon is displayed to allow easy copy/paste of screen information.</p>
         <p class="SubHead1">Exposure</p>
         <p>Whether exposed to the internet. Two possible values:</p>
@@ -118,7 +100,7 @@
             <img src="../PublicCloud-Images/Screen_AssetSecurityAccess.png" class="ThumbnailPopup" />
         </p>
         <p>This screen can have 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; <span class="ScreenObject">OutBound</span> is shown only if relevant. </p>
-        <p>Each item in the list includes:</p>
+        <p>Each line represents an access entry and entries are grouped by the vendor security control in which they are defined. Each item in the list includes:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular">
             </col>
@@ -177,7 +159,7 @@
                                 <p> The Add Rule window is displayed. Enter the appropriate details, explained in <a href="CloudPolicyRules.htm">Policy</a>.</p>
                             </li>
                             <li>
-                                <p>Add exception (for <MadCap:variable name="local.risky ports (lower case)" /> and <MadCap:variable name="local.Permissiveaccess" /> violations only) - add an exception that will no longer report this kind of access as a violation. </p>
+                                <p>Add exception (for <MadCap:variable name="local.riskyports (lower case)" /> and <MadCap:variable name="local.Permissiveaccess" /> violations only) - add an exception that will no longer report this kind of access as a violation. </p>
                                 <p>The Add Exception window is displayed. Enter the appropriate details</p>
                             </li>
                             <li>
@@ -198,7 +180,7 @@
             </li>
             <li>
                 <p>Click the options icon <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> on the access line that has the violation. The action menu appears. </p>
-                <p>If the access has one or more violations due to <MadCap:variable name="local.risky ports (lower case)" /> or <MadCap:variable name="local.permissiveaccess" />, <span class="MenuItem">Add exception</span> will appear in the action menu and if the access has one or more <MadCap:variable name="local.policyviolations" />, <span class="MenuItem">Add to policy</span> will appear in the menu.</p>
+                <p>If the access has one or more violations due to <MadCap:variable name="local.riskyports (lower case)" /> or <MadCap:variable name="local.permissiveaccess" />, <span class="MenuItem">Add exception</span> will appear in the action menu and if the access has one or more <MadCap:variable name="local.policyviolations" />, <span class="MenuItem">Add to policy</span> will appear in the menu.</p>
             </li>
             <li>
                 <p>Select <span class="MenuItem">Add exception</span> from the options menu</p>
@@ -238,8 +220,7 @@
         <p class="h3"><a name="assetgraph"></a>
         </p>
         <p><MadCap:variable name="local-iris.ApplicationAssetMap" /> is a network diagram showing connectivity of assets for a selected <MadCap:variable name="local.application" />. It is only available via the application.</p>
-        <p class="h2"><a name="get_here"></a><MadCap:variable name="Topic Templates.HowDoIgetHere" />
-        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <ul>
             <li>
                 <MadCap:snippetText src="../Resources/Snippets/GetHere_Assets.flsnp" /> or</li>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Tickets</h1>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p>View change tickets that have been submitted to <MadCap:variable name="local-orca.SC" /> using the <a href="../Kubernetes/AllowedConnections.htm#ApplyOnFW"><MadCap:variable name="local.Openegressticket" /></a> function in your <a href="../Kubernetes/AllowedConnections.htm#ApplyOnFW"><MadCap:variable name="local.clusterpolicy" /></a>.</p>
+        <p>See also <MadCap:xref href="Ticketing.htm">Ticketing</MadCap:xref>.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
+        <p>
+            <img src="../Kubernetes-Images/Screen_Tickets.png" class="ThumbnailPopup" />
+        </p>
+        <ul>
+            <li><b>Name</b>: The name given to the ticket when creating it from the <MadCap:variable name="local.clusterpolicy" /></li>
+            <li><b>Origin</b>: The location to which the access refers e.g. a particular <MadCap:variable name="local.Kubernetes" /> cluster</li>
+            <li><b>Status</b>: The status based on the response from <MadCap:variable name="General.SecureChange" />. There are 3 possible values:<ul><li>In progress</li><li>Done</li><li>Failed to create</li></ul></li>
+            <li><b>Message</b>: A message returned by <MadCap:variable name="General.SecureChange" /> in the event of a failure</li>
+            <li><b>Ticket Reference</b>: A unique number created in <MadCap:variable name="local.ProductName" /> and not passed to <MadCap:variable name="General.SecureChange" /></li>
+            <li><b>Created By</b>: The <MadCap:variable name="local.ProductName" /> user that opened the ticket</li>
+            <li><b>Created On</b>: Date and time of ticket creation in <MadCap:variable name="local.ProductName" /></li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li>No actions</li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <MadCap:snippetBlock src="../Resources/Snippets/GetHere_Tickets.flsnp" />
+    </body>
+</html>

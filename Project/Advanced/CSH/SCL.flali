@@ -35,7 +35,6 @@
 	<Map Name="SCL_AdmissionControllers" Link="/Content/Kubernetes/AdmissionControllers.htm" />
 	<Map Name="SCL_Services" Link="/Content/Kubernetes/Services.htm" />
 	<Map Name="SCL_AllowedConnections" Link="/Content/Kubernetes/AllowedConnections.htm" />
-	<Map Name="SCL_FirewallTickets" Link="/Content/Kubernetes/FirewallTickets.htm" />
 	<Map Name="SCL_Settings" Link="/Content/Kubernetes/OrcaSettingsGeneral.htm" />
 	<Map Name="SCL_Notifications" Link="/Content/Kubernetes/OrcaSettingsNotifications.htm" />
 	<Map Name="SCL_Vulnerabilities" Link="/Content/Kubernetes/VulnerabilityDetails.htm" />
@@ -47,6 +46,7 @@
 	<Map Name="SCL_activedirectory" Link="/Content/SecureCloud/ActiveDirectory.htm" />
 	<Map Name="SCL_AccessKeys" Link="/Content/SecureCloud/APIAccessKeys.htm" />
 	<Map Name="SCL_configrisk" Link="/Content/SecureCloud/ConfigRisk.htm" />
+	<Map Name="SCL_Ticketing" Link="/Content/SecureCloud/Ticketing.htm" />
 	<Map Name="SCL_reports" Link="/Content/SecureCloud/Reports.htm" />
 	<Map Name="SCL_audit" Link="/Content/SecureCloud/Audit.htm" />
 	<Map Name="SCL_securityscore" Link="/Content/Kubernetes/SecurityScore.htm" />

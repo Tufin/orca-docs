@@ -45,7 +45,7 @@
             </li>
             <li><a href="#Export">Export as Kubernetes network policies</a>
             </li>
-            <li><a href="#ApplyOnFW">Apply on firewalls</a>
+            <li><a href="#ApplyOnFW"><MadCap:variable name="local.Openegressticket" /></a>
             </li>
         </ul>
         <p><a name="Adding_an_Allowed_Connection_Manually"></a>
@@ -139,16 +139,20 @@
         <div class="Warning">
              This mechanism uses the namespace selector in combination with podSelector. Therefore, for the export action to work:
             <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>
-        <p class="h3"><a name="ApplyOnFW"></a>Apply on Firewalls</p>
-        <p>Apply on firewalls applies your <MadCap:variable name="local-orca.Product_S" /> security policy to any firewalls you have integrated previously with <MadCap:variable name="local-orca.Product_S" /> (see <a href="Firewalls.htm">Firewalls</a>). Currently, <MadCap:variable name="local-orca.SC" /> and Microsoft Azure are the only supported applications and Microsoft Azure only works for egress rules. </p>
-        <p>After the apply on firewalls process is initiated, the tickets created can be seen on the <a href="FirewallTickets.htm">Firewall Tickets Screen</a>, together with their status. </p>
+        <p class="h3"><a name="ApplyOnFW"></a><MadCap:variable name="local.OpenEgressTicket" />
+        </p>
+        <p>Create a network change request (egress ticket)&#160;based on your <MadCap:variable name="local.clusterpolicy" /> and automatically submit it to <MadCap:variable name="local-orca.SC" />. Once issued, tickets created can be seen in  <a href="../SecureCloud/Tickets.htm"><MadCap:variable name="local.Tickets" /></a>, together with their status. This feature replaces the older features 'Firewalls' and 'Firewall Tickets'. The connection with <MadCap:variable name="local-orca.SC" /> must first be set up as described in <a href="../SecureCloud/Ticketing.htm"><MadCap:variable name="local.Ticketing" /></a>. </p>
+        <p class="h3">What <MadCap:variable name="local.clusterpolicyrule"></MadCap:variable>s are included in the egress ticket?</p>
+        <p>All egress rules that have not been included in prior tickets, or have since changed.
+The <MadCap:variable name="local.clusterpolicyrule" />s cannot be selected individually. </p>
+        <p>To open an egress ticket:</p>
         <ol>
             <li>
                 <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />The action menu is displayed.</p>
-                <p><MadCap:variable name="local-orca.Product_S" /> recognizes whether the integration is set up. If there is no integration, the <span class="MenuItem">Apply on Firewalls</span> option in the menu will be disabled. </p>
+                <p>If the connection with <MadCap:variable name="local-orca.SC" /> has not been set up, the <span class="MenuItem"><MadCap:variable name="local.Openegressticket" /></span> option in the menu will be disabled. </p>
             </li>
             <li>
-                <p>Select <span class="ScreenObject">Apply on Firewalls</span> from the menu. This will initiate the process and change the option in the <span class="ScreenObject">Actions Menu</span> to be greyed out and show as <span class="MenuItem">Apply on Firewalls (in-progress)</span>. This status will remain until all requests (tickets) have been resolved and implemented or deleted in the network policy change management system. You cannot initiate the process again while there are requests still in progress.  A separate request (ticket) will be submitted for each namespace in your current filter (see <a href="../SecureCloud/Navigation.htm#Filter">Filter by Namespace</a>). Requests that have been submitted cannot be deleted within <MadCap:variable name="local-orca.Product_S" />. </p>
+                <p>Select  the <span class="MenuItem"><MadCap:variable name="local.Openegressticket" /></span> option from the menu. This will initiate the process and submit a request to <MadCap:variable name="General.SecureChange" />.  Namespace is not included in the ticket because namespaces cannot be handled by firewalls. Therefore, if two or more similar <MadCap:variable name="local.clusterpolicyrule" />s exist in <MadCap:variable name="local.ProductName" />, differing only in the namespace they refer to, the same access request will appear multiple times in the ticket submitted.</p>
             </li>
         </ol>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />

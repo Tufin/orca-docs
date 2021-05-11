@@ -25,7 +25,7 @@
       Link="/Content/Kubernetes/DEPRECATEDBadges.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Kubernetes/CiCDpipeline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      Link="/Content/Kubernetes/DEPRECATED_CiCDpipeline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     <TocEntry
       Title="[%=System.LinkedTitle%]"
       Link="/Content/Kubernetes/ImmutablePolicy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
@@ -86,16 +86,16 @@
     </TocEntry>
     <TocEntry
       Title="[%=System.LinkedTitle%]"
-      Link="/Content/Kubernetes/Firewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+      Link="/Content/Kubernetes/DEPRECATED_MIGHT_BE_REUSED_Firewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Kubernetes/FirewallTickets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Kubernetes/DEPRECATED_FirewallTickets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Kubernetes/AzureIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Kubernetes/DEPRECATED_FOR_NOW_AzureIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Kubernetes/SecureChangeIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Kubernetes/DEPRECATED_SecureChangeIntegration.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
     </TocEntry>
     <TocEntry
       Title="Configuration">

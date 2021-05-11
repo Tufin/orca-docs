@@ -35,9 +35,12 @@
         <p>The full menu structure:</p>
         <ul>
             <li>
-                <MadCap:xref href="Dashboard.htm">Dashboard</MadCap:xref>
+                <MadCap:xref href="Dashboard.htm"><MadCap:variable name="local.Dashboard" />
+                </MadCap:xref>
             </li>
-            <li><a href="Exceptions.htm">Exceptions</a>
+            <li><a href="Exceptions.htm"><MadCap:variable name="local.Exceptions" /></a>
+            </li>
+            <li><a href="Tickets.htm"><MadCap:variable name="local.Tickets" /></a>
             </li>
             <li><MadCap:variable name="local.PUBLICCLOUD" />
                 <ul>
@@ -111,11 +114,8 @@
                         </ul>
                     </li>
                     <li>
-                        <p><a href="../Kubernetes/AllowedConnections.htm"><MadCap:variable name="local.Cluster Policy" /></a>
+                        <p><a href="../Kubernetes/AllowedConnections.htm"><MadCap:variable name="local.ClusterPolicy" /></a>
                         </p>
-                    </li>
-                    <li>
-                        <MadCap:xref href="../Kubernetes/FirewallTickets.htm">Firewall Tickets</MadCap:xref>
                     </li>
                     <li>
                         <p><MadCap:variable name="local.Settings" />
@@ -144,6 +144,8 @@
                     <li><a href="APIAccessKeys.htm"><MadCap:variable name="local.APIAccessKeys" /></a>
                     </li>
                     <li><a href="ConfigRisk.htm"><MadCap:variable name="local.RiskConfiguration" /></a>
+                    </li>
+                    <li><a href="Ticketing.htm"><MadCap:variable name="local.Ticketing" /></a>
                     </li>
                     <li><a href="Reports.htm"><MadCap:variable name="local.Reports" /></a>
                     </li>
@@ -178,14 +180,14 @@
         <p>The filtering options vary according to context:</p>
         <p class="h3"><a name="k8sfilterning"></a><MadCap:variable name="local.Kubernetes" />
         </p>
-        <p class="normal">The <MadCap:variable name="local.ServiceGraph" />, <MadCap:variable name="local.ClusterResources" />, <MadCap:variable name="local.Cluster Policy" /> and <MadCap:variable name="local.Settings" /> sections allow selection of cluster and namespaces (a cluster contains multiple namespaces).  The current selection is displayed in the top bar of the application and the data displayed is aggregated from all selected namespaces.</p>
+        <p class="normal">The <MadCap:variable name="local.ServiceGraph" />, <MadCap:variable name="local.ClusterResources" />, <MadCap:variable name="local.ClusterPolicy" /> and <MadCap:variable name="local.Settings" /> sections allow selection of cluster and namespaces (a cluster contains multiple namespaces).  The current selection is displayed in the top bar of the application and the data displayed is aggregated from all selected namespaces.</p>
         <p class="h4"><a name="Filter"></a>Filter by Namespace</p>
         <p>Click on <span class="ScreenObject">Namespace</span> to change the selection. The filter icon <img src="../Kubernetes-Images/Icon_Filter.png" class="noborder" /> is displayed when not all namespaces are selected. By default, <MadCap:variable name="local-orca.Product_L" /> displays a filtered view of the aggregated data in your cluster that includes all application namespaces and excludes system namespaces. </p>
         <p>
             <img src="../Kubernetes-Images/Window_Namespace_Select.png" class="ThumbnailPopup" />
         </p>
         <p>The currently selected filter remains in effect as you navigate to different windows </p>
-        <p class="h3"><a name="pubcloudfilterning"></a><MadCap:variable name="local.Public Cloud" />
+        <p class="h3"><a name="pubcloudfilterning"></a><MadCap:variable name="local.PublicCloud" />
         </p>
         <p>Click <span class="ScreenObject">Filter</span>  to specify filtering criteria - the fields available for filtering are specific to the screen displayed; items will only be included in the filtering window if appropriate to the current screen. For example, Assets are not included in the filter for the Applications Screen. When multiple fields are specified, only items matching all the criteria entered will be included (filtering using the AND&#160;operator). </p>
         <p>Example:</p>

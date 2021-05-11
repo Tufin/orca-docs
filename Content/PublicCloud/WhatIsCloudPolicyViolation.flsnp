@@ -3,6 +3,6 @@
     <head>
     </head>
     <body>
-        <p>A <MadCap:variable name="local.public cloud" /> policy violation in <MadCap:variable name="local-iris.ProductName" /> is a case where  access allowed by both vendor security controls and network connectivity but there is no matching <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
+        <p>A <MadCap:variable name="local.publiccloud" /> policy violation in <MadCap:variable name="local-iris.ProductName" /> is a case where  access allowed by both vendor security controls and network connectivity but there is no matching <MadCap:variable name="local-iris.ProductName" /> policy rule.</p>
     </body>
 </html>

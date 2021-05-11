@@ -1,7 +1,6 @@
 ;Identifier (example: #cshid=SCL_SignUp),Ignore (No-one uses this),Topic Current Location  (for docteam only),Targets (for docteam only),Path (dont use commas or semi-colons) 
 SCL_Dashboard,5001,/Content/SecureCloud/Dashboard.htm,SCL,Main Menu > Dashboard
 SCL_Exceptions,5002,/Content/SecureCloud/Exceptions.htm,SCL,Main Menu > Exceptions
-SCL_Ticketing,5002,/Content/SecureCloud/Exceptions.htm,,
 SCL_K8sContainerVulnerabilities ,5003,/Content/SecureCloud/K8sContainerVulnerabilities.htm,SCL,Main Menu > Dashboard > Container Vulnerabilities widget
 SCL_K8sPermissivePolicies-by-Cluster,5004,/Content/SecureCloud/K8sPermissivePolicies-by-Cluster.htm,SCL,Main Menu > Dashboard > Permissive Policies widget 
 SCL_K8sPermissivePolicies-by-Namespace,5005,/Content/SecureCloud/K8sPermissivePolicies-by-Namespace.htm,SCL,Main Menu > Dashboard > Permissive Policies widget > select cluster
@@ -38,7 +37,7 @@ SCL_Workloads,5035,/Content/Kubernetes/Workloads.htm,SCL,Main Menu > KUBERNETES 
 SCL_AdmissionControllers,5036,/Content/Kubernetes/AdmissionControllers.htm,SCL,Main Menu > KUBERNETES - Resources > Admission Controllers
 SCL_Services,5037,/Content/Kubernetes/Services.htm,SCL,Main Menu > KUBERNETES - Resources > Services
 SCL_AllowedConnections,5038,/Content/Kubernetes/AllowedConnections.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Allowed Connections
-SCL_FirewallTickets,5039,/Content/Kubernetes/FirewallTickets.htm,SCL,Main Menu > KUBERNETES - Cluster Policy > Firewall Tickets
+,,,,
 SCL_Settings,5040,/Content/Kubernetes/OrcaSettingsGeneral.htm,SCL,Main Menu > KUBERNETES - Settings > General
 SCL_Notifications,5041,/Content/Kubernetes/OrcaSettingsNotifications.htm,SCL,Main Menu > KUBERNETES - Settings > Notifications
 SCL_Vulnerabilities,5042,/Content/Kubernetes/VulnerabilityDetails.htm,SCL,Main Menu > KUBERNETES - Service Graph > Security Score icon
@@ -51,6 +50,7 @@ SCL_users,5048,/Content/SecureCloud/Users.htm,SCL,Main Menu > Configuration > Us
 SCL_activedirectory,5049,/Content/SecureCloud/ActiveDirectory.htm,SCL,Main Menu > Configuration > Active Directory
 SCL_AccessKeys,5002,/Content/SecureCloud/APIAccessKeys.htm,SCL,Main Menu > Configuration > API Access keys
 SCL_configrisk,5050,/Content/SecureCloud/ConfigRisk.htm,SCL,Main Menu > Configuration > Risk Configuration
+SCL_Ticketing,5002,/Content/SecureCloud/Ticketing.htm,SCL,Main Menu > Configuration > Ticketing
 SCL_reports,5051,/Content/SecureCloud/Reports.htm,SCL,Main Menu > Configuration > Reports
 SCL_audit,5052,/Content/SecureCloud/Audit.htm,SCL,Main Menu > Configuration > Audit
 ;,5053,,,

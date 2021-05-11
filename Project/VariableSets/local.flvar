@@ -45,7 +45,7 @@
     Comment=""
     EvaluatedDefinition="Application Asset Map">Application Asset Map</Variable>
   <Variable
-    Name="Public Cloud"
+    Name="PublicCloud"
     Comment=""
     EvaluatedDefinition="Public Cloud">Public Cloud</Variable>
   <Variable
@@ -117,7 +117,7 @@
     Comment="Menu"
     EvaluatedDefinition="Tag Manager">Tag Manager</Variable>
   <Variable
-    Name="Cluster Policy"
+    Name="ClusterPolicy"
     Comment="Menu"
     EvaluatedDefinition="Cluster Policy">Cluster Policy</Variable>
   <Variable
@@ -213,7 +213,7 @@
     Comment=""
     EvaluatedDefinition="Kubernetes">Kubernetes</Variable>
   <Variable
-    Name="public cloud"
+    Name="publiccloud"
     Comment="mid-sentence"
     EvaluatedDefinition="public cloud">public cloud</Variable>
   <Variable
@@ -225,7 +225,7 @@
     Comment=""
     EvaluatedDefinition="Amazon AWS">Amazon AWS</Variable>
   <Variable
-    Name="risky ports (lower case)"
+    Name="riskyports (lower case)"
     Comment="mid sentence"
     EvaluatedDefinition="risky ports">risky ports</Variable>
   <Variable
@@ -384,15 +384,43 @@
     Comment="Mid sentence"
     EvaluatedDefinition="audit">audit</Variable>
   <Variable
-    Name="risky port"
+    Name="riskyport"
     EvaluatedDefinition="risky port"
     Comment="mid sentence">risky port</Variable>
   <Variable
-    Name="Risky port"
+    Name="Riskyport"
     EvaluatedDefinition="Risky port"
     Comment="Begin sentence">Risky port</Variable>
   <Variable
     Name="APIAccessKeys"
     Comment="Menu"
     EvaluatedDefinition="API Access Keys">API Access Keys</Variable>
+  <Variable
+    Name="Ticketing"
+    Comment="Menu and Title"
+    EvaluatedDefinition="Ticketing">Ticketing</Variable>
+  <Variable
+    Name="ticketing"
+    Comment="Mid sentence"
+    EvaluatedDefinition="ticketing">ticketing</Variable>
+  <Variable
+    Name="OpenEgressTicket"
+    Comment="Menu"
+    EvaluatedDefinition="Open Egress Ticket">Open Egress Ticket</Variable>
+  <Variable
+    Name="Openegressticket"
+    Comment="pop up menu item"
+    EvaluatedDefinition="Open egress ticket">Open egress ticket</Variable>
+  <Variable
+    Name="Tickets"
+    Comment="menu"
+    EvaluatedDefinition="Tickets">Tickets</Variable>
+  <Variable
+    Name="tickets"
+    Comment="Mid sentence"
+    EvaluatedDefinition="tickets">tickets</Variable>
+  <Variable
+    Name="clusterpolicy"
+    Comment="Mid sentence"
+    EvaluatedDefinition="cluster policy">cluster policy</Variable>
 </CatapultVariableSet>
