@@ -26,10 +26,6 @@
     Type="DateTime"
     LastUpdated="2019-02-28T12:50:46.8315752+02:00" />
   <Variable
-    Name="Product_S"
-    Comment=""
-    EvaluatedDefinition="SecureCloud">SecureCloud</Variable>
-  <Variable
     Name="AKS"
     Comment="Azure Kubernetes service"
     EvaluatedDefinition="Microsoft AKS">Microsoft AKS</Variable>

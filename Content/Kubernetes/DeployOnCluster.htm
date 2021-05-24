@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -10,7 +10,7 @@
     <body>
         <h1>
             <MadCap:concept term="Settings" />Deploy on Your Cluster</h1>
-        <p>Deploy <MadCap:variable name="local-orca.Product_S" /> on your first cluster after <a href="../SecureCloud/SignUp.htm">signing up</a>. First make sure you have read and understood <MadCap:xref href="#changes">Changes to Your System</MadCap:xref> and <MadCap:xref href="#prerequisites">Prerequisites</MadCap:xref>.</p>
+        <p>Deploy <MadCap:variable name="local.ProductName" /> on your first cluster after <a href="../SecureCloud/SignUp.htm">signing up</a>. First make sure you have read and understood <MadCap:xref href="#changes">Changes to Your System</MadCap:xref> and <MadCap:xref href="#prerequisites">Prerequisites</MadCap:xref>.</p>
         <p class="h2" MadCap:conditions="General.Exclude">On Standard Kubernetes Clusters</p>
         <p class="h2"><a name="Deploy"></a>Run the Deployment Command</p>
         <ol>
@@ -41,7 +41,7 @@
                         <p class="CodeSegment1">&lt;deployment command&gt; --dry-run true</p>
                     </li>
                     <li>
-                        <p>No enforce - install <MadCap:variable name="local-iris.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will have no effect and Enforce will behave the same as Learn mode.</p>
+                        <p>No enforce - install <MadCap:variable name="local.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will have no effect and Enforce will behave the same as Learn mode.</p>
                         <p class="CodeSegment1">&lt;deployment command&gt; -di false</p>
                     </li>
                     <li>
@@ -72,7 +72,7 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
                 <ul>
                     <li>&lt;<MadCap:variable name="local.Securecloudaccount" />&gt; is your account name</li>
                     <li>&lt;<MadCap:variable name="local.project" />&gt; is as provided by you when signing up</li>
-                    <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local-orca.Product_S" /></li>
+                    <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local.ProductName" /></li>
                     <li>
                         <p>--dry-run true is an optional parameter to see what the installation script does without deploying anything to your cluster ”. It creates YAML  files in directory: bash-kite-installer/deployment.</p>
                     </li>
@@ -86,12 +86,12 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
             </ul>
         </div>
         <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
-        <p MadCap:conditions="General.Exclude">Use the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described above for standard Kubernetes clusters.</p>
+        <p MadCap:conditions="General.Exclude">Use the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described above for standard Kubernetes clusters.</p>
         <p class="h2">What Next? </p>
         <p>
             <ol>
-                <li>Log in to <MadCap:variable name="local-orca.Product_S" />. </li>
-                <li>Go to <MadCap:xref href="Services.htm">Services</MadCap:xref>. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local-orca.Product_S" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show connections shortly after they are made in the cluster.</li>
+                <li>Log in to <MadCap:variable name="local.ProductName" />. </li>
+                <li>Go to <MadCap:xref href="Services.htm">Services</MadCap:xref>. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local.ProductName" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show connections shortly after they are made in the cluster.</li>
                 <li>If you haven't already done it <a href="../PublicCloud/AccountManager.htm">setup your cloud accounts</a>.</li>
                 <li>Continue with <MadCap:xref href="../SecureCloud/HowToWorkWith.htm">How to Work With [%=local.ProductName%]</MadCap:xref>.</li>
             </ol>
@@ -101,8 +101,8 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
         <p class="normal">Installing <MadCap:variable name="local.ProductName" /> on your cluster will:</p>
         <ol>
             <li>Change the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local-orca.Openshift" />)</li>
-            <li>Inject the <MadCap:variable name="local-orca.Product_S" /> DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local-orca.Openshift" />)</li>
-            <li>Add a CRD for <MadCap:variable name="local-orca.Product_S" /> policies</li>
+            <li>Inject the <MadCap:variable name="local.ProductName" /> DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local-orca.Openshift" />)</li>
+            <li>Add a CRD for <MadCap:variable name="local.ProductName" /> policies</li>
             <li>
                 <p>Add a daemonset to monitor the traffic in the cluster</p>
             </li>
@@ -118,7 +118,7 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
             </li>
         </ol>
         <p class="h3">Changes on Your PC</p>
-        <p class="normal">A new directory called <span class="Code">bash-kite-installer</span> will be created in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="Uninstall.htm">remove <MadCap:variable name="local-orca.Product_S" /> from a cluster</a>.</p>
+        <p class="normal">A new directory called <span class="Code">bash-kite-installer</span> will be created in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="Uninstall.htm">remove <MadCap:variable name="local.ProductName" /> from a cluster</a>.</p>
         <p class="h2"><a name="prerequisites"></a>Prerequisites </p>
         <ol>
             <li>

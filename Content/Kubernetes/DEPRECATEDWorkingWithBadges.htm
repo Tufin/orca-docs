@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -18,9 +18,9 @@
             </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p class="ManualTitle1">An <MadCap:variable name="local-orca.Product_S" /> badge  shows the <MadCap:variable name="local-orca.Product_S" /> <a href="SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a> of a single container  image in real time.  See <a href="DEPRECATEDBadges.htm">Badge Concepts</a>.</p>
+        <p class="ManualTitle1">An <MadCap:variable name="local.ProductName" /> badge  shows the <MadCap:variable name="local.ProductName" /> <a href="SecurityScore.htm"><MadCap:variable name="local-orca.TufinScore" /></a> of a single container  image in real time.  See <a href="DEPRECATEDBadges.htm">Badge Concepts</a>.</p>
         <p class="h2"><a name="Implementing"></a>Implementing the Badge</p>
-        <p>Inserting badges into repository readme files is a popular and  convenient way of making the <MadCap:variable name="local-orca.TufinScore" /> available in a prominent position. Just enter the <MadCap:variable name="local-orca.Product_S" /> API string with the appropriate parameters.</p>
+        <p>Inserting badges into repository readme files is a popular and  convenient way of making the <MadCap:variable name="local-orca.TufinScore" /> available in a prominent position. Just enter the <MadCap:variable name="local.ProductName" /> API string with the appropriate parameters.</p>
         <p class="SubHead1">Format:</p>
         <p class="CodeSegment1">![Tufin](https://securecloud.tufin.io/api/&lt;<MadCap:variable name="local.SecurecloudAccount" />&gt;/&lt;<MadCap:variable name="local.Project" />&gt;/badges/security-score?image=&lt;pod-image-name&gt;:&lt;image-tag&gt;&amp;token=&lt;view token&gt;)](https://securecloud.tufin.io/ui/#/&lt;<MadCap:variable name="local.SecurecloudAccount" />&gt;/&lt;<MadCap:variable name="local.Project" />&gt;/grid/scans?image=&lt;pod-image name&gt;:&lt;image-tag&gt;)</p>
         <p>Where,</p>
@@ -36,7 +36,7 @@
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">&lt;<MadCap:variable name="local.SecurecloudAccount" />&gt;</td>
-                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Your <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local.Securecloudaccount" /></td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Your <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Securecloudaccount" /></td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">&lt;<MadCap:variable name="local.Project" />&gt;</td>
@@ -52,7 +52,7 @@
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">&lt;view token&gt;</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows"><MadCap:variable name="local-orca.Product_S" /> &gt; Settings &gt;&#160;API&#160;Tokens &gt;&#160;Token value for [Scope=view Label=badge]</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows"><MadCap:variable name="local.ProductName" /> &gt; Settings &gt;&#160;API&#160;Tokens &gt;&#160;Token value for [Scope=view Label=badge]</td>
                 </tr>
             </tbody>
         </table>

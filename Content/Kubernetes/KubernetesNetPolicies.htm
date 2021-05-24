@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -19,18 +19,18 @@
         <p>
             <img src="../Kubernetes-Images/PolicyKubernetesNetworkPolicies.png" class="ThumbnailPopup" title="Kubernetes Network Policies - Ingress" alt="Kubernetes Network Policies - Ingress" />
         </p>
-        <p>It will accurately represent the current definitions in Kubernetes at any point in time. However, it <span class="Bold">may or may not</span> represent the security policy you have defined in <MadCap:variable name="local-orca.Product_S"></MadCap:variable>. It will <span class="Bold">always</span> represent your <MadCap:variable name="local-orca.Product_S" /> security policy if:</p>
+        <p>It will accurately represent the current definitions in Kubernetes at any point in time. However, it <span class="Bold">may or may not</span> represent the security policy you have defined in <MadCap:variable name="local.ProductName"></MadCap:variable>. It will <span class="Bold">always</span> represent your <MadCap:variable name="local.ProductName" /> security policy if:</p>
         <ul>
             <li>Policy mode is set to <span class="state">Enforce</span></li>
             <li>AND your Kubernetes framework is not <MadCap:variable name="local-orca.Openshift" /></li>
         </ul>
-        <p>This is because your <MadCap:variable name="local-orca.Product_S" /> security policy is continuously being applied to your Kubernetes network policy.</p>
-        <p>It <span class="Bold">might not</span> represent your <MadCap:variable name="local-orca.Product_S" /> security policy if:</p>
+        <p>This is because your <MadCap:variable name="local.ProductName" /> security policy is continuously being applied to your Kubernetes network policy.</p>
+        <p>It <span class="Bold">might not</span> represent your <MadCap:variable name="local.ProductName" /> security policy if:</p>
         <ul>
             <li>Policy mode is set to <span class="state">Learn</span></li>
             <li>OR your Kubernetes framework is <MadCap:variable name="local-orca.Openshift" /></li>
         </ul>
-        <p>This is because your <MadCap:variable name="local-orca.Product_S" /> security policy is <span class="Bold">not</span> continuously being applied to your Kubernetes network policy.</p>
+        <p>This is because your <MadCap:variable name="local.ProductName" /> security policy is <span class="Bold">not</span> continuously being applied to your Kubernetes network policy.</p>
         <p>
             <MadCap:snippetText src="WhatIsHostNetwork.flsnp" />
         </p>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -10,11 +10,11 @@
             </li>
             <li><a href="#Using Orca API Tokens"><a href="#Default Tokens">Default Tokens</a></a>
             </li>
-            <li><a href="#Using Orca API Tokens">Using <MadCap:variable name="local-orca.Product_S" /> API Tokens</a>
+            <li><a href="#Using Orca API Tokens">Using <MadCap:variable name="local.ProductName" /> API Tokens</a>
             </li>
         </ul>
         <h2><a name="Overview"></a>Overview</h2>
-        <p>API&#160;tokens are unique identifiers used by <MadCap:variable name="local-orca.Product_S" /> to give other applications access to it. <MadCap:variable name="local-orca.Product_S" /> will accept a request from another application only if the request is made with a token that matches that stored by <MadCap:variable name="local-orca.Product_S" />. Some tokens are created for you automatically; others must be created manually. The list of defined tokens appears in <a href="OrcaSettingsGeneral.htm">Settings.</a></p>
+        <p>API&#160;tokens are unique identifiers used by <MadCap:variable name="local.ProductName" /> to give other applications access to it. <MadCap:variable name="local.ProductName" /> will accept a request from another application only if the request is made with a token that matches that stored by <MadCap:variable name="local.ProductName" />. Some tokens are created for you automatically; others must be created manually. The list of defined tokens appears in <a href="OrcaSettingsGeneral.htm">Settings.</a></p>
         <p>Tokens have three properties - scope, label and token value</p>
         <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -29,9 +29,9 @@
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Scope</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>VIEW - used for getting the information needed to display the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.TufinScore" /> badge in your git repository </p>
-                        <p>AGENT - used only by <MadCap:variable name="local-orca.Product_S" /> modules. Currently the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> and <MadCap:variable name="local-orca.Product_S" /> SecureTrack integration</p>
-                        <p>ALL - used to make all other API requests to <MadCap:variable name="local-orca.Product_S" />. Contact <MadCap:variable name="local-orca.Product_S" /> support for more information</p>
+                        <p>VIEW - used for getting the information needed to display the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.TufinScore" /> badge in your git repository </p>
+                        <p>AGENT - used only by <MadCap:variable name="local.ProductName" /> modules. Currently the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /> and <MadCap:variable name="local.ProductName" /> SecureTrack integration</p>
+                        <p>ALL - used to make all other API requests to <MadCap:variable name="local.ProductName" />. Contact <MadCap:variable name="local.ProductName" /> support for more information</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
@@ -70,7 +70,7 @@
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">agent / kite</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">Authentication token used by the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> pod</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">Authentication token used by the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /> pod</td>
                 </tr>
             </tbody>
         </table>
@@ -98,7 +98,7 @@
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">bash &lt;(curl -s https://securecloud.tufin.io/api/<span class="Bold">[<MadCap:variable name="local.SecurecloudAccount" />]/[<MadCap:variable name="local.Project" />]</span>/scripts/deploy-orca -H "Authorization: Bearer [TOKEN VALUE]")</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
                         <p>bash &lt;(curl -s https://securecloud.tufin.io/api/My<MadCap:variable name="local.SecurecloudAccount" /><span class="Bold">/My<MadCap:variable name="local.Project" /></span>/scripts/deploy-orca -H "Authorization: Bearer <span class="Bold">4210d55d-97a9-47a8-421b-20960cf14a12</span>")</p>
-                        <p>See <a href="DeployOnCluster.htm">Deploy <MadCap:variable name="local-orca.Product_S" /></a> for more information.</p>
+                        <p>See <a href="DeployOnCluster.htm">Deploy <MadCap:variable name="local.ProductName" /></a> for more information.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">

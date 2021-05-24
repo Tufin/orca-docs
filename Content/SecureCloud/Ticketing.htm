@@ -54,7 +54,7 @@
         <ul class="Action">
             <li>Install the <MadCap:variable name="local.ProductName" /> connector on <MadCap:variable name="General.SecureChange" /></li>
             <li>Enter the <MadCap:variable name="General.SecureChange" /> workflow details in <MadCap:variable name="local.ProductName" /></li>
-            <li>Clear <MadCap:variable name="General.SecureChange" /> workflow details - click <img src="../SecureCloud-Images/Icon-X.png" class="noborder" /></li>
+            <li>Clear <MadCap:variable name="General.SecureChange" /> workflow details - click <img src="../SecureCloud-Images/Icon_X.png" class="noborder" /></li>
             <li>Uninstall the <MadCap:variable name="local.ProductName" /> connector from <MadCap:variable name="General.SecureChange" /></li>
         </ul>
         <p>Before any setup steps have been taken, the <MadCap:variable name="local.ticketing" /> screen will appear as follows:</p>
@@ -64,11 +64,16 @@
         <p class="h2"><a name="connector"></a>Install the <MadCap:variable name="local.ProductName" /> Connector on <MadCap:variable name="General.SecureChange" /></p>
         <ol>
             <li>Click on <span class="ScreenObject">View install script</span> and then click on the copy icon <img src="../SecureCloud-Images/Icon_Clipboard.png" style="width: 19px; height: 19px;" class="noborder" />. The script will be copied to the clipboard.</li>
-            <li>On the <MadCap:variable name="General.SecureChange" /> server, log in to the console.</li>
-            <li>Paste the script copied above from <MadCap:variable name="local.ProductName" /> to the <MadCap:variable name="General.SecureChange" /> console and run the script.</li>
-            <li>After the script has completed running on the <MadCap:variable name="General.SecureChange" /> server, refresh the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Ticketing" /> screen - <MadCap:snippetText src="../Resources/Snippets/GetHere_Ticketing.flsnp" /> .</li>
+            <li>On the <MadCap:variable name="General.SecureChange" /> server, log in to the console with a user having root privileges.</li>
             <li>
-                <p>If the script has been successfully installed,  the <MadCap:variable name="local.ticketing" /> screen will appear as follows:</p>
+                <p>If logged in as user other than root, assume root user privileges.</p><pre xml:space="preserve"># sudo su -</pre>
+            </li>
+            <li>Paste the script copied above from <MadCap:variable name="local.ProductName" /> to the <MadCap:variable name="General.SecureChange" /> console and run the script. Wait for the script to finish running before continuing. On completion, the <MadCap:variable name="local.ProductName" /> connector service <span class="SpanCodeSegment1">/lib/systemd/system/tufin-securecloud-securechange-connector.service</span> will be installed and evoked.</li>
+            <li>
+                <p>Check the status of the SecureCloud connector service on the <MadCap:variable name="General.SecureChange" /> server. </p><pre xml:space="preserve"># systemctl status tufin-securecloud-securechange-connector.service</pre>
+            </li>
+            <li>
+                <p>Refresh the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Ticketing" /> screen - <MadCap:snippetText src="../Resources/Snippets/GetHere_Ticketing.flsnp" /> . If the script has been successfully installed,  the <MadCap:variable name="local.ticketing" /> screen will appear as follows:</p>
                 <p>
                     <img src="../Kubernetes-Images/Screen_TicketingSCInstalled.png" class="ThumbnailPopup" />
                 </p>
@@ -82,7 +87,7 @@
                     <img src="../Kubernetes-Images/Window_Ticketing_Workflow.png" class="ThumbnailPopup" />
                 </p>
             </li>
-            <li>Enter an existing user name, password and workflow defined in <MadCap:variable name="General.SecureChange" />. </li>
+            <li>Enter the following:<ul><li>Name and password of an existing <MadCap:variable name="General.SecureChange" /> user with 'security administrator' permissions</li><li> Name of an active <MadCap:variable name="General.SecureChange" /> access request workflow</li></ul></li>
             <li><span class="ScreenObject">Save</span>.</li>
         </ol>
         <p class="h2"><a name="uninstall"></a>Uninstall the <MadCap:variable name="local.ProductName" /> Connector From <MadCap:variable name="General.SecureChange" /></p>

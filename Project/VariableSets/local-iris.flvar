@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultVariableSet>
   <Variable
-    Name="ProductName"
-    Comment="Excluding company name"
-    EvaluatedDefinition="SecureCloud">SecureCloud</Variable>
-  <Variable
     Name="ProductName_Long"
     Comment="Including company name"
     EvaluatedDefinition="Tufin SecureCloud">Tufin SecureCloud</Variable>

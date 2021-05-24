@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -12,11 +12,11 @@
                 <p><a href="AllowedConnections.htm">Security Policy</a> - building and maintaining the policy, add or remove allowed connections</p>
             </li>
             <li>
-                <p><a href="DEPRECATED_FirewallTickets.htm">Firewall Tickets</a> - see any currently open <MadCap:variable name="local-orca.SecureChange" /> tickets previously submitted from <MadCap:variable name="local-orca.Product_S" />.</p>
+                <p><a href="DEPRECATED_FirewallTickets.htm">Firewall Tickets</a> - see any currently open <MadCap:variable name="local-orca.SecureChange" /> tickets previously submitted from <MadCap:variable name="local.ProductName" />.</p>
             </li>
         </ul>
         <p class="h2"><a name="policymode"></a>Policy Mode</p>
-        <p><MadCap:variable name="local-orca.Product_S" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the <MadCap:variable name="local-orca.Product_S" /> policy rules. The  monitoring and visibility capabilities  such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Workloads.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="OrcaSettingsGeneral.htm">Settings</a>.</p>
+        <p><MadCap:variable name="local.ProductName" /> has 2 modes of operation or <span class="ScreenObject">Policy Modes</span> - <span class="StatusOrValue">Learn</span> and <span class="StatusOrValue">Enforce</span>. <span class="StatusOrValue">Learn</span> mode lets you monitor your application without blocking traffic between services or containers so you can learn about the traffic connections between the services used in your Kubernetes cluster. Enforce applies your policy to the traffic in the cluster, allowing only traffic defined by the <MadCap:variable name="local.ProductName" /> policy rules. The  monitoring and visibility capabilities  such as <a href="ServiceGraph.htm">Service Graph</a>, <a href="Workloads.htm">Pods</a>, and <a href="Services.htm">Services</a> are always available, and are independent of the mode setting. Policy Mode can be changed in <a href="OrcaSettingsGeneral.htm">Settings</a>.</p>
         <div class="Note">Enforce mode is not currently supported for <MadCap:variable name="local-orca.Openshift" />.</div>
         <ul>
             <li>
@@ -27,13 +27,13 @@
                 <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
             </li>
         </ul>
-        <p><MadCap:variable name="local-orca.Product_S" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local-orca.Product_S" /> theme is colored  and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored .</p>
+        <p><MadCap:variable name="local.ProductName" /> employs a theme color specific to the current mode selected, which affects the top toolbar and some screen elements such as buttons. When in <span class="StatusOrValue">Learn</span> mode, the <MadCap:variable name="local.ProductName" /> theme is colored  and  when in <span class="StatusOrValue">Enforce</span> mode, the theme is colored .</p>
         <p>&#160;</p>
         <p>
             <img src="../Kubernetes-Images/ScreenLearn.png" />
         </p>
         <p class="h2">Kubernetes Network Policy and Learn Mode</p>
-        <p><MadCap:variable name="local-orca.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled (<a href="OrcaSettingsGeneral.htm">Settings</a>) and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local-orca.Product_S" /> creates an Any-Any-Allow Kubernetes network  policy (marked with a label), which allows all traffic, for each monitored namespace. These policies are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. </p>
+        <p><MadCap:variable name="local.ProductName" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. When this option is enabled (<a href="OrcaSettingsGeneral.htm">Settings</a>) and Policy Mode is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.ProductName" /> creates an Any-Any-Allow Kubernetes network  policy (marked with a label), which allows all traffic, for each monitored namespace. These policies are removed if Policy Mode is set to <span class="StatusOrValue">Enforce</span> or the option is disabled. </p>
         <p class="h2">How do I get here?</p>
         <p>
             <li>Click <span class="ScreenObject">Policy</span> from the main menu.</li>

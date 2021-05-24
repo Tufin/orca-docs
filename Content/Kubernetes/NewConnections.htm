@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -6,14 +6,14 @@
         <h1>New Connections</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p><MadCap:variable name="local-orca.Product_S" /> continually monitors traffic in your cluster, providing you with visibility into traffic flow and discovering new connections and in doing so, helps you formulate your security policy. Monitoring takes place whatever the <a href="../SecureCloud/ConceptOfPolicy.htm#policymode">Policy Mode</a>. </p>
+        <p><MadCap:variable name="local.ProductName" /> continually monitors traffic in your cluster, providing you with visibility into traffic flow and discovering new connections and in doing so, helps you formulate your security policy. Monitoring takes place whatever the <a href="../SecureCloud/ConceptOfPolicy.htm#policymode">Policy Mode</a>. </p>
         <p class="normal"><MadCap:variable name="local.ProductName" /> monitors and detects:</p>
         <ul>
             <li>TCP / UDP network connections between service pods</li>
             <li>TCP / UDP network connections from ingress to service pods</li>
             <li>TCP / UDP network connections from service pods to external end-points</li>
             <li>DNS lookup requests from the cluster</li>
-            <li MadCap:conditions="General.Exclude">Connections from the <MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis (Reuven Harrison)</li>
+            <li MadCap:conditions="General.Exclude">Connections from the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /> to pull your container images for analysis (Reuven Harrison)</li>
         </ul>
         <p>Together, these two mechanisms of detection - network connections and DNS lookups - give the most complete picture of the connections being made in the cluster because there are cases where one or the other is prevented from working. Examples  are:</p>
         <ul>
@@ -21,8 +21,8 @@
             <li>When the <MadCap:variable name="local.Kubernetes" /> implementation does not use KUBE-DNS or you have chosen to deploy <MadCap:variable name="local.ProductName" /> without this feature. In this case the network monitor will detect the connection.</li>
         </ul>
         <p>New connections that are detected by both network and DNS monitors are displayed only once.</p>
-        <p>Anything found that is not already listed as an allowed connection in your <MadCap:variable name="local-orca.Product_S" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one day. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another day.</p>
-        <p MadCap:conditions="General.Exclude"><MadCap:variable name="local-orca.Product_S" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies (Reuven Harrison)</p>
+        <p>Anything found that is not already listed as an allowed connection in your <MadCap:variable name="local.ProductName" /> policy  is automatically displayed in <MadCap:variable name="local.NewConnections" />, where it will remain  for up to one day. Only one occurrence of a connection made between two points will be listed at any one time; if additional occurrences are discovered for a connection currently listed in the window, the time to keep it will be reset to another day.</p>
+        <p MadCap:conditions="General.Exclude"><MadCap:variable name="local.ProductName" /> stores the IP addresses for sources of inbound connections (ingress) and destinations of outbound connections (egress). These IPs are used when generating Kubernetes network policies (Reuven Harrison)</p>
         <p class="h3">Notifications</p>
         <p>A notification can be sent whenever a new connection is discovered. See <a href="OrcaSettingsNotifications.htm">Notifications and Alerts</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />

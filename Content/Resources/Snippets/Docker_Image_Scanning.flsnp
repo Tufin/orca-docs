@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <div>
-            <p>To enable <MadCap:variable name="local-orca.Product_S" /> vulnerability scans when a new docker image is deployed to the cluster, you need to:</p>
+            <p>To enable <MadCap:variable name="local.ProductName" /> vulnerability scans when a new docker image is deployed to the cluster, you need to:</p>
             <ol>
                 <li>
                     <p>Create a new user under Docker Trusted Registry/users (enable “Trusted Registry Admin” switch).</p>

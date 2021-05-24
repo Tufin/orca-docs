@@ -4,8 +4,8 @@
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
     </head>
     <body>
-        <h1>Navigating <MadCap:variable name="local-orca.Product_S" /></h1>
-        <p>Actions and functions that appear throughout <MadCap:variable name="local-orca.Product_S" />.</p>
+        <h1>Navigating <MadCap:variable name="local.ProductName" /></h1>
+        <p>Actions and functions that appear throughout <MadCap:variable name="local.ProductName" />.</p>
         <ul>
             <li>
                 <MadCap:xref href="#menu">Main Menu</MadCap:xref>
@@ -158,16 +158,21 @@
         <p>Click on your user icon at the top of the screen and then click on <span class="ScreenObject">Log out</span> from the window displayed.</p>
         <p class="h2"><a name="Getting"></a>Getting Help</p>
         <p>The <span class="ScreenObject">?</span> help icon is displayed at the top of every screen; click on it to display the Help Menu. Options:</p>
+        <p>
+            <img src="../SecureCloud-Images/Menu_Help.png" />
+        </p>
         <ul>
             <li>
                 <p>Help center - takes you to the start page of the  online help</p>
             </li>
+            <li>API documentation - lists all the <MadCap:variable name="local.ProductName" /> <a href="APIs.htm">API calls</a> available.</li>
             <li MadCap:conditions="General.Exclude">What can I do here? - takes you to the topic specific to the current screen</li>
-            <li>What's new - takes you to the help topic that lists changes in the product</li>
-            <li>Contact us - opens a new email message for you to send to support</li>
+            <li>What's new - see the latest changes in <MadCap:variable name="local.ProductName" /></li>
+            <li>Take a tour - a brief look at the main functions you need to get started with <MadCap:variable name="local.ProductName" /></li>
+            <li>Contact us - links to the Tufin customer portal</li>
         </ul>
         <p class="h2"><a name="Refreshi"></a>Refreshing the Page</p>
-        <p> While you are working in the <MadCap:variable name="local-orca.Product_S" /> application, the data displayed on the screen could become outdated due to external events such as Kubernetes network policy changes or actions of other <MadCap:variable name="local-orca.Product_S" /> users such as adding allowed connections. When moving from one screen to another the new screen is always refreshed with the latest data but if you remain on the same screen, these changes are not automatically reflected. </p>
+        <p> While you are working in the <MadCap:variable name="local.ProductName" /> application, the data displayed on the screen could become outdated due to external events such as Kubernetes network policy changes or actions of other <MadCap:variable name="local.ProductName" /> users such as adding allowed connections. When moving from one screen to another the new screen is always refreshed with the latest data but if you remain on the same screen, these changes are not automatically reflected. </p>
         <p>The current page can however be refreshed manually by clicking on the Refresh icon <img src="../Kubernetes-Images/Icon_Sync.png" /> at the top of the screen at any time.</p>
         <p class="h2"><a name="Sorting"></a>Sorting Tables</p>
         <p>Most tables can be sorted in ascending or descending order by one or more columns. Click on the column header of column to sort by the contents of that column. Click again to reverse the sort order.</p>
@@ -283,7 +288,7 @@
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Tags</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">text / list</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>Display only assets or applications that have the tags listed. Tags can be both asset tags or custom <MadCap:variable name="local-iris.ProductName"></MadCap:variable> tags. When you start to type into the field, the list of defined tags will be displayed. Click on the desired tag to select or press Enter to select the text you have entered .</p>
+                        <p>Display only assets or applications that have the tags listed. Tags can be both asset tags or custom <MadCap:variable name="local.ProductName"></MadCap:variable> tags. When you start to type into the field, the list of defined tags will be displayed. Click on the desired tag to select or press Enter to select the text you have entered .</p>
                         <p>Tags separated by a comma will be OR conditions. </p>
                         <p>Repeat for additional tags as necessary.</p>
                         <p>Tags separated by a new line will be AND&#160;conditions</p>

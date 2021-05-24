@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
-        <p>Tags are a cloud native mechanism of assigning values to your assets in order to identify them and group them with other assets using similar tags. <MadCap:variable name="local-iris.ProductName" /> uses these tag values to identify your applications and additionally has its own mechanism of creating custom tags that can be used instead of or in addition to the native asset tags.</p>
+        <p>Tags are a cloud native mechanism of assigning values to your assets in order to identify them and group them with other assets using similar tags. <MadCap:variable name="local.ProductName" /> uses these tag values to identify your applications and additionally has its own mechanism of creating custom tags that can be used instead of or in addition to the native asset tags.</p>
     </body>
 </html>

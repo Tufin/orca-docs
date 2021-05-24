@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1><MadCap:variable name="local.ProductName" /> APIs</h1>
+        <ul>
+            <li><a href="#overview">Overview</a>
+            </li>
+            <li><a href="#actions">What Can I Do Here?</a>
+            </li>
+        </ul>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p><MadCap:variable name="local.ProductName" /> provides a means of modifying your definitions outside of the product UI through REST APIs. These API calls require a valid <a href="APIAccessKeys.htm">API access key</a> with sufficient permissions for the operation requested and appropriate parameters where required.</p>
+        <p>To see the structure of the APIs, click on the <span class="ScreenObject">?</span> help icon displayed at the top of every screen &gt; <span class="MenuItem">API documentation</span>. </p>
+        <p>
+            <img src="../SecureCloud-Images/Menu_Help.png" class="ThumbnailPopup" />
+        </p>
+        <p>Alternatively, edit your   <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Securecloudaccount" /> URL, replacing everything after 'tufin.io/' with 'api-documentation' and paste it in a new browser tab/window </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <p class="h3">Cluster Management</p>
+        <p> Actions related to the Kubernetes clusters monitored by <MadCap:variable name="local.ProductName" /></p>
+        <ul>
+            <li>Return a list of all clusters defined to <MadCap:variable name="local.ProductName" /> including their status</li>
+            <li>Define a new cluster to <MadCap:variable name="local.ProductName" /></li>
+            <li>Return the status of a cluster defined to <MadCap:variable name="local.ProductName" /></li>
+            <li>Remove a cluster definition from <MadCap:variable name="local.ProductName" />  and delete data collected by <MadCap:variable name="local.ProductName" /></li>
+            <li>Retrieve the bash command needed to start monitoring of a cluster by SecureCloud</li>
+        </ul>
+        <p class="h3">Traffic Monitoring and Network Policy</p>
+        <ul>
+            <li>Change policy mode - switch between enforce or learn</li>
+            <li>Create cluster policy rules to allow connections discovered during the last 24 hours</li>
+            <li>Delete all cluster policy rules for a <MadCap:variable name="local.project" /></li>
+            <li>Export cluster policy rules</li>
+        </ul>
+        <p class="h3">Cloud <MadCap:variable name="local.SecurecloudAccount" />s</p>
+        <ul>
+            <li>Return a list of all cloud <MadCap:variable name="local.Securecloudaccount" />s monitored by <MadCap:variable name="local.ProductName" /></li>
+            <li>Define a new cloud <MadCap:variable name="local.Securecloudaccount" /> to <MadCap:variable name="local.ProductName" /></li>
+            <li>Change a cloud <MadCap:variable name="local.Securecloudaccount" /> definition in <MadCap:variable name="local.ProductName" /></li>
+            <li>Delete a cloud <MadCap:variable name="local.Securecloudaccount" /> definition from <MadCap:variable name="local.ProductName" /></li>
+            <li>Return a list of all cloud <MadCap:variable name="local.Securecloudaccount" /> credentials defined in <MadCap:variable name="local.ProductName" /></li>
+            <li>Define a new set of cloud <MadCap:variable name="local.Securecloudaccount" /> credentials to <MadCap:variable name="local.ProductName" /></li>
+        </ul>
+    </body>
+</html>

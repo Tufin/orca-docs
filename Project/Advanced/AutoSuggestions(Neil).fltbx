@@ -28,11 +28,11 @@ two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.-->
     <text>
       <body>
         <termEntry
-          id="neweid1">
+          id="newneweid1">
           <langSet
             xml:lang="en">
             <tig
-              id="newtid1">
+              id="newnewtid1">
               <term>neilleigh</term>
               <termNote
                 type="administrativeStatus">preferredTerm-admn-sts</termNote>
@@ -40,11 +40,11 @@ two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.-->
           </langSet>
         </termEntry>
         <termEntry
-          id="neweid2">
+          id="newneweid2">
           <langSet
             xml:lang="en">
             <tig
-              id="newtid2">
+              id="newnewtid2">
               <term>neilleigh1</term>
               <termNote
                 type="administrativeStatus">preferredTerm-admn-sts</termNote>
@@ -52,12 +52,24 @@ two lines (6 and 7), and comment-out the DOCTYPE statement on line 2.-->
           </langSet>
         </termEntry>
         <termEntry
-          id="neweid3">
+          id="newneweid3">
           <langSet
             xml:lang="en">
             <tig
-              id="newtid3">
+              id="newnewtid3">
               <term>i_think_this_is_technically_a_nice_feature_but_much_less_useful_than_using_variables</term>
+              <termNote
+                type="administrativeStatus">preferredTerm-admn-sts</termNote>
+            </tig>
+          </langSet>
+        </termEntry>
+        <termEntry
+          id="newneweid4">
+          <langSet
+            xml:lang="en-us">
+            <tig
+              id="newnewtid4">
+              <term>Next</term>
               <termNote
                 type="administrativeStatus">preferredTerm-admn-sts</termNote>
             </tig>

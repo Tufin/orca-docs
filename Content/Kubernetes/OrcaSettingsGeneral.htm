@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -20,8 +20,8 @@
             <li><a href="#Kubernet">Set Allow All Rule in Kubernetes network policies</a>
             </li>
         </ul>
-        <p class="h3"><a name="Agent"></a><MadCap:variable name="local-orca.Product_S" /> <MadCap:variable name="local-orca.Agent" /> Installation Command</p>
-        <p>You can view the command line string needed for deploying <MadCap:variable name="local-orca.Product_S" /> on your cluster by clicking <span class="ScreenObject"><img src="../Kubernetes-Images/IconCode.png" style="width: 2%; height: 2%;" class="noborder" /></span> <span class="ScreenObject">Copy command line</span>. Copy to the clipboard by clicking the <span class="SpecialBold">copy</span> icon that appears when hovering over the text. Click <span class="ScreenObject">OK</span> to close the window.</p>
+        <p class="h3"><a name="Agent"></a><MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /> Installation Command</p>
+        <p>You can view the command line string needed for deploying <MadCap:variable name="local.ProductName" /> on your cluster by clicking <span class="ScreenObject"><img src="../Kubernetes-Images/IconCode.png" style="width: 2%; height: 2%;" class="noborder" /></span> <span class="ScreenObject">Copy command line</span>. Copy to the clipboard by clicking the <span class="SpecialBold">copy</span> icon that appears when hovering over the text. Click <span class="ScreenObject">OK</span> to close the window.</p>
         <p class="h3"><a name="LearningMode"></a>Policy Mode</p>
         <p>Click on the desired mode to switch between <a href="../SecureCloud/ConceptOfPolicy.htm#policymode">policy modes</a> - <span class="StatusOrValue">Enforce mode</span> and <span class="StatusOrValue">Learn Mode</span>.</p>
         <p>
@@ -29,8 +29,8 @@
         </p>
         <MadCap:snippetBlock src="../Resources/Snippets/Warning Enforce.flsnp" />
         <p class="h3"><a name="Kubernet"></a>Kubernetes Network Policies</p>
-        <p><MadCap:variable name="local-orca.Product_S" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. This is controlled by the <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch.</p>
-        <p>Enable or disable <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch. When set to enabled and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local-orca.Product_S" /> automatically creates an Any-Any-Allow Kubernetes network  policy that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local-orca.Product_S" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
+        <p><MadCap:variable name="local.ProductName" /> can prevent the Kubernetes network policies from blocking traffic and interfering with the learning process. This is controlled by the <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch.</p>
+        <p>Enable or disable <span class="ScreenObject">Set Kubernetes Network Policy to Allow-All in Learn Mode</span> using the toggle switch. When set to enabled and <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Learn</span>, <MadCap:variable name="local.ProductName" /> automatically creates an Any-Any-Allow Kubernetes network  policy that allows all traffic, for each namespace. The purpose of this is to permit all traffic through the cluster and facilitate learning. An appropriate rule will be added for any new namespaces created while  set to <span class="StatusOrValue">Learn</span>. These <MadCap:variable name="local.ProductName" />-created rules will be removed if the appropriate namespace is removed or when <span class="ScreenObject">Policy Mode</span> is set to <span class="StatusOrValue">Enforce</span>. No other Kubernetes network rules will be touched.</p>
         <p>
             <img src="../Kubernetes-Images/Screen_Settings_Allow_All_Rule.png" class="ThumbnailPopup" />
         </p>

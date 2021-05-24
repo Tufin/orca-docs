@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -6,26 +6,26 @@
         <h1>App Manager</h1>
         <MadCap:snippetBlock src="../WhatIsAppManager.flsnp" />
         <MadCap:snippetBlock src="../WhatIsApplication.flsnp" />
-        <h3>How <MadCap:variable name="local-iris.ProductName" /> Uses Tags</h3>
-        <p>Applications are identified by <MadCap:variable name="local-iris.ProductName" /> from the tags allocated to your assets. These may be asset-specific tags defined in your cloud environment or custom tags created by you in <MadCap:variable name="local-iris.ProductName" />. </p>
-        <p>There are two requirements that need to be fulfilled for <MadCap:variable name="local-iris.ProductName" /> to be able to identify applications in your cloud environments.</p>
+        <h3>How <MadCap:variable name="local.ProductName" /> Uses Tags</h3>
+        <p>Applications are identified by <MadCap:variable name="local.ProductName" /> from the tags allocated to your assets. These may be asset-specific tags defined in your cloud environment or custom tags created by you in <MadCap:variable name="local.ProductName" />. </p>
+        <p>There are two requirements that need to be fulfilled for <MadCap:variable name="local.ProductName" /> to be able to identify applications in your cloud environments.</p>
         <ul>
             <li>One or more tags need to exist for each asset that is part of an application.</li>
             <li>The tags needed to identify applications must be specified. There is only one such set of tags in the system and this is defined here in the App Manager.</li>
         </ul>
-        <p><MadCap:variable name="local-iris.ProductName" /> identifies an application by one or more assets having one or more of the tags specified in the App Manager. If there are assets that do not have any of the specified tags, an additional application named Default will be added to the list of applications and will contain those assets.
-<MadCap:variable name="local-iris.ProductName" /> names the applications it identified according to the tag values found on your assets.</p>
+        <p><MadCap:variable name="local.ProductName" /> identifies an application by one or more assets having one or more of the tags specified in the App Manager. If there are assets that do not have any of the specified tags, an additional application named Default will be added to the list of applications and will contain those assets.
+<MadCap:variable name="local.ProductName" /> names the applications it identified according to the tag values found on your assets.</p>
         <h3>Specifying a Single Tag</h3>
-        <p>When a single tag is specified in the App Manager, <MadCap:variable name="local-iris.ProductName" /> will identify an application for every different tag value for that tag key found on your assets. The total number of applications identified will be the number of different values in use for that tag on your assets, plus the default application if needed.</p>
-        <p>For example, a single tag key named App is specified in the App Manager and three different tag values for this key are found on your assets - hr, crm, ticketing, <MadCap:variable name="local-iris.ProductName" /> will identify that you have three different applications named hr, crm and ticketing.</p>
+        <p>When a single tag is specified in the App Manager, <MadCap:variable name="local.ProductName" /> will identify an application for every different tag value for that tag key found on your assets. The total number of applications identified will be the number of different values in use for that tag on your assets, plus the default application if needed.</p>
+        <p>For example, a single tag key named App is specified in the App Manager and three different tag values for this key are found on your assets - hr, crm, ticketing, <MadCap:variable name="local.ProductName" /> will identify that you have three different applications named hr, crm and ticketing.</p>
         <h3>Specifying Multiple Tags</h3>
-        <p>When you specify more than one tag, <MadCap:variable name="local-iris.ProductName" /> identifies applications in two ways:</p>
+        <p>When you specify more than one tag, <MadCap:variable name="local.ProductName" /> identifies applications in two ways:</p>
         <ol>
             <li>One or more assets are found having any one of the tags specified - just like when a single tag is specified.</li>
             <li>One or more assets are found having more than one of the specified tags. </li>
         </ol>
         <h3>Application Naming Convention</h3>
-        <li>Applications in <MadCap:variable name="local-iris.ProductName" /> are named automatically from the values of the tags specified in the App Manager. When a single tag is specified or one or more assets are found having any one of the tags specified, the application is named according to the value of one tag only. When multiple tags are specified, the application is named using all of the tag values found, separated by colon characters e.g. TagValue1:TagValue2:TagValue3.</li>
+        <li>Applications in <MadCap:variable name="local.ProductName" /> are named automatically from the values of the tags specified in the App Manager. When a single tag is specified or one or more assets are found having any one of the tags specified, the application is named according to the value of one tag only. When multiple tags are specified, the application is named using all of the tag values found, separated by colon characters e.g. TagValue1:TagValue2:TagValue3.</li>
         <li>See also <a href="../WorkingWithAppManager.htm">Working With App Manager</a>.</li>
     </body>
 </html>

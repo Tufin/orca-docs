@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -8,13 +8,13 @@
         </h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>The <MadCap:variable name="local.CloudAccounts" /> screen displays the cloud service provider accounts  <MadCap:variable name="local-iris.ProductName" /> is currently monitoring, and their credentials. The information is separated into <MadCap:variable name="local.CloudAccounts" /> and <MadCap:variable name="local.Credentials" />.</p>
+        <p>The <MadCap:variable name="local.CloudAccounts" /> screen displays the cloud service provider accounts  <MadCap:variable name="local.ProductName" /> is currently monitoring, and their credentials. The information is separated into <MadCap:variable name="local.CloudAccounts" /> and <MadCap:variable name="local.Credentials" />.</p>
         <p>
             <img src="../PublicCloud-Images/Screen_Account_Manager.png" class="ThumbnailPopup" />
         </p>
         <p>Each line under <span class="ScreenObject">Accounts</span> represents one cloud vendor account and displays account information with an indication of the synchronization status for that account. </p>
         <p>Each line under <span class="ScreenObject">Credentials</span> represents one set of user credentials that can assume a role to access  one or more accounts under <span class="ScreenObject">Accounts</span> as an alternative to defining credentials at the account level.</p>
-        <p>You must  define appropriate permissions in your cloud accounts to allow <MadCap:variable name="local-iris.ProductName" /> to monitor them. See <a href="AWS_Permissions.htm">AWS Permissions</a>, <a href="AzurePermissions.htm">Azure Permissions</a>, <a href="GCPPermissions.htm"><MadCap:variable name="local.GoogleCloudPlatform" /> Permissions</a>.</p>
+        <p>You must  define appropriate permissions in your cloud accounts to allow <MadCap:variable name="local.ProductName" /> to monitor them. See <a href="AWS_Permissions.htm">AWS Permissions</a>, <a href="AzurePermissions.htm">Azure Permissions</a>, <a href="GCPPermissions.htm"><MadCap:variable name="local.GoogleCloudPlatform" /> Permissions</a>.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li><a href="#addaws">Add an AWS account</a>
@@ -36,7 +36,7 @@
             <li><a href="#Edit_a_Credential">Edit a cross-account credential</a>
             </li>
         </ul>
-        <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
+        <p class="h3"><a name="addaws"></a>Add an <MadCap:variable name="local.AWS" /> Account to <MadCap:variable name="local.ProductName" /></p>
         <p>The required account must already exist on the cloud environment and have the required <a href="AWS_Permissions.htm">permissions</a>. </p>
         <ol>
             <li>
@@ -56,7 +56,7 @@
             </li>
             <li>
                 <p>Set up the connection method.</p>
-                <p>There are three different ways you can give <MadCap:variable name="local-iris.ProductName" /> access to your AWS account:</p>
+                <p>There are three different ways you can give <MadCap:variable name="local.ProductName" /> access to your AWS account:</p>
                 <ul>
                     <li>Use the credentials of a user in the account</li>
                     <li>Give access to a user in another account via a role</li>
@@ -86,7 +86,7 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin.</li>
             </li>
             <li>Click <span class="ScreenObject">Add</span> to save.</li>
         </ol>
-        <p class="h3"><a name="addazure"></a>Add a <MadCap:variable name="local.Azure" /> Account to <MadCap:variable name="local-iris.ProductName" /></p>
+        <p class="h3"><a name="addazure"></a>Add a <MadCap:variable name="local.Azure" /> Account to <MadCap:variable name="local.ProductName" /></p>
         <p>The required subscription must already exist on the cloud environment and have the required <a href="AzurePermissions.htm">permissions</a>. </p>
         <ol>
             <li>
@@ -106,7 +106,7 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin.</li>
             </li>
             <li>
                 <p>Set up the connection method</p>
-                <p>There are two different ways you can specify the credentials needed by <MadCap:variable name="local-iris.ProductName" /> to access your Azure subscription:</p>
+                <p>There are two different ways you can specify the credentials needed by <MadCap:variable name="local.ProductName" /> to access your Azure subscription:</p>
                 <ol style="list-style-type: lower-alpha;">
                     <li>Enter the application credentials</li>
                     <li>Specify previously saved  credentials</li>
@@ -148,7 +148,7 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin.</li>
             <li>Enter Account Display Name. This is for your convenience only and can be any value you choose.</li>
             <li>
                 <p>Set up the connection method.</p>
-                <p>There are three different ways you can specify the credentials needed by <MadCap:variable name="local-iris.ProductName" /> to  access to your <MadCap:variable name="local.GoogleCloudPlatform" /> account:</p>
+                <p>There are three different ways you can specify the credentials needed by <MadCap:variable name="local.ProductName" /> to  access to your <MadCap:variable name="local.GoogleCloudPlatform" /> account:</p>
                 <ul>
                     <li>Enter the credentials of your service account. </li>
                     <li>Specify previously saved  credentials of your service account.</li>
@@ -190,7 +190,7 @@ Example: arn:aws:iam::006755140343:role/AssumRoleAdmin.</li>
             <li>Make changes as necessary and click <span class="ScreenObject">Save</span>.</li>
         </ol>
         <p class="h3"><a name="Sync_an_Account"></a>Sync an Account</p>
-        <p>The sync function brings up-to-date cloud environment information for a specific account into <MadCap:variable name="local-iris.ProductName" />.</p>
+        <p>The sync function brings up-to-date cloud environment information for a specific account into <MadCap:variable name="local.ProductName" />.</p>
         <ol>
             <li>Click on options <img src="../PublicCloud-Images/Button_Ellipsis.png" class="noborder" /> for the <MadCap:variable name="local.Vendoraccount" />you want to sync. </li>
             <li>Select <span class="ScreenObject">Sync account</span> from the pop-up menu.</li>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -8,7 +8,7 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
         <MadCap:snippetBlock src="WhatIsClusterPolicy.flsnp" />
         <p MadCap:conditions="General.Exclude">
-            <MadCap:concept term="Kubernetes" />[REMOVED BECAUSE WE DON'T EXPORT EGRESS POLICIES] IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local-orca.Product_S" /> and later used to create Kubernetes network policies.</p>
+            <MadCap:concept term="Kubernetes" />[REMOVED BECAUSE WE DON'T EXPORT EGRESS POLICIES] IP addresses cannot be specified manually but those identified from the discovered connections are remembered by <MadCap:variable name="local.ProductName" /> and later used to create Kubernetes network policies.</p>
         <p>Rules can be created from the <a href="NewConnections.htm">New Connections screen</a> or defined manually.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
@@ -29,7 +29,7 @@
             <li>From source all namespaces to destination Kubernetes DNS</li>
         </ul>
         <p>The <MadCap:variable name="local-orca.Kite" /> rule should not be deleted or changed. However, if deleted it can be recreated manually or selected from the <a href="NewConnections.htm">New Connections screen</a>. </p>
-        <p class="h3">Why Manage Policy in <MadCap:variable name="local-orca.Product_S" />?</p>
+        <p class="h3">Why Manage Policy in <MadCap:variable name="local.ProductName" />?</p>
         <ol>
             <li>To have a clear and documented set of security rules for your cluster that you can review and present whenever needed.</li>
             <li>To apply your security rules to your cluster as Kubernetes network policies.</li>
@@ -141,19 +141,48 @@
             <ol><li>You must be on Kubernetes 1.11 or higher</li><li>You must assign an explicit name label to your cluster namespace in the format: "namespace : &lt; namespace name &gt;"</li></ol></div>
         <p class="h3"><a name="ApplyOnFW"></a><MadCap:variable name="local.OpenEgressTicket" />
         </p>
-        <p>Create a network change request (egress ticket)&#160;based on your <MadCap:variable name="local.clusterpolicy" /> and automatically submit it to <MadCap:variable name="local-orca.SC" />. Once issued, tickets created can be seen in  <a href="../SecureCloud/Tickets.htm"><MadCap:variable name="local.Tickets" /></a>, together with their status. This feature replaces the older features 'Firewalls' and 'Firewall Tickets'. The connection with <MadCap:variable name="local-orca.SC" /> must first be set up as described in <a href="../SecureCloud/Ticketing.htm"><MadCap:variable name="local.Ticketing" /></a>. </p>
-        <p class="h3">What <MadCap:variable name="local.clusterpolicyrule"></MadCap:variable>s are included in the egress ticket?</p>
-        <p>All egress rules that have not been included in prior tickets, or have since changed.
-The <MadCap:variable name="local.clusterpolicyrule" />s cannot be selected individually. </p>
+        <p>Create a network change request (egress ticket)&#160;based on your <MadCap:variable name="local.clusterpolicy" /> and submit it to <MadCap:variable name="local-orca.SC" />. A single ticket initially includes all egress rules that:</p>
+        <ul>
+            <li>Appear in the current filter and</li>
+            <li>Have not been included in prior tickets that are in progress or done unless they have since changed and</li>
+            <li>Do not include a wildcard in the destination</li>
+        </ul>
+        <p>When creating the ticket, the <MadCap:variable name="local.clusterpolicyrule" />s to be included will be displayed and you can remove selected rules, as required.</p>
+        <p>Namespace is not included in the ticket because namespaces cannot be handled by firewalls. Therefore, if two or more similar <MadCap:variable name="local.clusterpolicyrule" />s exist in <MadCap:variable name="local.ProductName" />, differing only in the namespace they refer to, the same access request will appear multiple times in the ticket submitted.</p>
+        <p>After a ticket has been issued, the included <MadCap:variable name="local.clusterpolicyrule" />s will display the ticket icon  <img src="../SecureCloud-Images/Icon_Ticket.png" class="noborder" />. The icon will be colored according the status of the ticket in <MadCap:variable name="General.SecureChange" />:&#160;Green-Done; Blue- In progress; Red: Failed to create. Click on the icon to display the ticket details. Example:</p>
+        <p>
+            <img src="../PublicCloud-Images/Window_ClusterPolicyRuleTicketInfo.png" class="ThumbnailPopup" />
+        </p>
+        <MadCap:snippetBlock src="../SecureCloud/NewSnippet.flsnp" />
+        <p>Additionally, tickets created can be seen in  <a href="../SecureCloud/Tickets.htm"><MadCap:variable name="local.Tickets" /></a>.</p>
+        <p>Before egress tickets can be opened, the connection with <MadCap:variable name="local-orca.SC" /> must be set up as described in <a href="../SecureCloud/Ticketing.htm"><MadCap:variable name="local.Ticketing" /></a>. </p>
         <p>To open an egress ticket:</p>
         <ol>
             <li>
-                <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />The action menu is displayed.</p>
+                <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />. The action menu is displayed.</p>
                 <p>If the connection with <MadCap:variable name="local-orca.SC" /> has not been set up, the <span class="MenuItem"><MadCap:variable name="local.Openegressticket" /></span> option in the menu will be disabled. </p>
             </li>
             <li>
-                <p>Select  the <span class="MenuItem"><MadCap:variable name="local.Openegressticket" /></span> option from the menu. This will initiate the process and submit a request to <MadCap:variable name="General.SecureChange" />.  Namespace is not included in the ticket because namespaces cannot be handled by firewalls. Therefore, if two or more similar <MadCap:variable name="local.clusterpolicyrule" />s exist in <MadCap:variable name="local.ProductName" />, differing only in the namespace they refer to, the same access request will appear multiple times in the ticket submitted.</p>
+                <p>Select  the <span class="MenuItem"><MadCap:variable name="local.Openegressticket" /></span> option from the menu. The Open Egress Ticket - Access Requests screen appears, showing all <MadCap:variable name="local.clusterpolicyrule" />s that will be included in the ticket.</p>
+                <p>
+                    <img src="../PublicCloud-Images/Screen_OpenEgressTicket.png" class="ThumbnailPopup" />
+                </p>
             </li>
+            <li>
+                <p>Enter a name for the ticket.</p>
+            </li>
+            <li>Remove any <MadCap:variable name="local.clusterpolicyrule" />s  from the ticket, as required, by hovering over the rule and clicking <img src="../SecureCloud-Images/Icon_X.png" class="noborder" />.</li>
+            <li>
+                <p>Click <span class="ScreenObject">Next</span>. The Open Egress Ticket - Ticket Details screen appears containing mandatory fields taken from the <MadCap:variable name="General.SecureChange" /> workflow definition. You may need to consult with the <MadCap:variable name="General.SecureChange" /> admin for further explanation of these fields. Example below:</p>
+                <p><MadCap:variable name="General.SecureChange" /> Workflow Screens</p>
+                <p>
+                    <img src="../SecureCloud-Images/Screen_SecureChangeWorkflowFields.png" class="ThumbnailPopup" /> <img src="../SecureCloud-Images/Screen_SecureChangeWorkflowFieldsMore.png" class="ThumbnailPopup" /></p>
+                <p>SecureCloud Ticket Details Screen</p>
+                <p>
+                    <img src="../Kubernetes-Images/Screen_OpenEgressTicketDetails.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>Complete the ticket details and click <span class="ScreenObject">Create ticket</span>. This will initiate the process and submit a request to <MadCap:variable name="General.SecureChange" />.  </li>
         </ol>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_AllowedConnections.flsnp" />

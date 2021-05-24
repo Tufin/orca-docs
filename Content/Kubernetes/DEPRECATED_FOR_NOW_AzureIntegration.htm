@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -6,7 +6,7 @@
     <body>
         <h1>
             <MadCap:concept term="Kubernetes" />Azure Firewall</h1>
-        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local-orca.Product_S" /> to modify your Azure firewall with the <MadCap:variable name="local-orca.Product_S" /> security policy. <a href="DEPRECATED_MIGHT_BE_REUSED_Firewalls.htm">Why should I let <MadCap:variable name="local-orca.Product_S" /> modify my firewalls?</a></p>
+        <p>These steps are a one-time setup needed to allow <MadCap:variable name="local.ProductName" /> to modify your Azure firewall with the <MadCap:variable name="local.ProductName" /> security policy. <a href="DEPRECATED_MIGHT_BE_REUSED_Firewalls.htm">Why should I let <MadCap:variable name="local.ProductName" /> modify my firewalls?</a></p>
         <ol>
             <li>
                 <p>Log in to Azure as Azure subscription owner:</p>
@@ -35,7 +35,7 @@
                 <p>where &lt;appId&gt; is taken from the service principal creation output above.</p>
             </li>
             <li>
-                <p>Contact the <MadCap:variable name="local-orca.Product_S" /> integration team (<MadCap:variable name="local-orca.OrcaEmail" />) and request <MadCap:variable name="local-orca.Product_S" />-Azure integration. Provide four parameters:</p>
+                <p>Contact the <MadCap:variable name="local.ProductName" /> integration team (<MadCap:variable name="local-orca.OrcaEmail" />) and request <MadCap:variable name="local.ProductName" />-Azure integration. Provide four parameters:</p>
                 <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
                     <col class="TableStyle-PatternedRows-Column-Regular" />
                     <col class="TableStyle-PatternedRows-Column-Regular" />
@@ -68,7 +68,7 @@
             <li>
                 <p>Add a tag on the firewall for every  <MadCap:variable name="local.project" /> that needs to update the firewall policy. Use the format:</p>
                 <p class="CodeSegment1">key=tufin, value=orca.&lt;<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;<MadCap:variable name="local.Project" />&gt; </p>
-                <p>where &lt;account&gt; and &lt;cluster&gt; are your <MadCap:variable name="local-orca.Product_S" /> account name and the monitored cluster. If the same firewall is associated with more than one cluster  add a separate tag for each  e.g.</p>
+                <p>where &lt;account&gt; and &lt;cluster&gt; are your <MadCap:variable name="local.ProductName" /> account name and the monitored cluster. If the same firewall is associated with more than one cluster  add a separate tag for each  e.g.</p>
                 <p class="CodeSegment1">orca.&lt;my<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;my<MadCap:variable name="local.Project" />1&gt;,orca.&lt;my<MadCap:variable name="local.SecurecloudAccount" />&gt;.&lt;my<MadCap:variable name="local.Project" />2&gt;</p>
                 <p>Repeat for all required firewalls.</p>
             </li>
