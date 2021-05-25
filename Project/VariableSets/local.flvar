@@ -217,11 +217,11 @@
     Comment="mid-sentence"
     EvaluatedDefinition="public cloud">public cloud</Variable>
   <Variable
-    Name="Azure"
+    Name="MicrosoftAzure"
     Comment=""
     EvaluatedDefinition="Microsoft Azure">Microsoft Azure</Variable>
   <Variable
-    Name="AWS"
+    Name="Amazon AWS"
     Comment=""
     EvaluatedDefinition="Amazon AWS">Amazon AWS</Variable>
   <Variable
@@ -288,9 +288,9 @@
     Comment="Menu"
     EvaluatedDefinition="Cloud Resources">Cloud Resources</Variable>
   <Variable
-    Name="AzureFirewalls"
+    Name="Firewalls"
     Comment="Menu"
-    EvaluatedDefinition="Azure Firewalls">Azure Firewalls</Variable>
+    EvaluatedDefinition="Firewalls">Firewalls</Variable>
   <Variable
     Name="SecurityAccess"
     Comment="Menu"

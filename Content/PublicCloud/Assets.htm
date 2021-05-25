@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -17,14 +17,14 @@
         <p>The list of assets shows the following information:</p>
         <ul>
             <li>Sequence of item in the list</li>
-            <li>Asset Type Icon - <img src="../PublicCloud-Images/Icon_storage.png" class="noborder" />-Storage,<img src="../PublicCloud-Images/Icon_vm.png" class="noborder" />-VM</li>
+            <li>Asset Type Icon - <img src="../PublicCloud-Images/Icon_storage.png" class="noborder" /> Storage,<img src="../PublicCloud-Images/Icon_vm.png" class="noborder" /> VM</li>
             <li>Asset name, taken from the tag 'Name', instance id or the name of the object in the vendor account, depending on the type of asset</li>
             <li>Application associated with the asset. Click on the application name to display the application</li>
             <li>Cloud vendor type - <MadCap:variable name="local.PublicCloudVendors" /></li>
             <li>Account name, as defined in <MadCap:variable name="local.ProductName" /></li>
             <li>Internet access - 'Exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity</li>
             <li>Load balancer name, if the asset is assigned to a load balancer</li>
-            <li>Warning <img src="../PublicCloud-Images/icon_warning.png" class="noborder"></img> If present, indicates a <a href="WhatIsCloudViolation.htm">violation</a></li>
+            <li>Warning  <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> indicates a <a href="WhatIsCloudViolation.htm">violation</a></li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
@@ -45,8 +45,8 @@
             <img src="../PublicCloud-Images/Screen_AssetOverview.png" class="ThumbnailPopup" />
         </p>
         <p>Switch information displayed by clicking on the Assets Menu:</p>
-        <p MadCap:conditions="General.Exclude">
-            <img src="../PublicCloud-Images/Menu_Asset.png" />
+        <p>
+            <img src="../PublicCloud-Images/Menu_Asset.png" class="ThumbnailPopup" />
         </p>
         <ul>
             <li>
@@ -54,9 +54,9 @@
                 <p>Properties of the asset including type, security entities, tags and VPC</p>
             </li>
             <li>
-                <p><a href="#Security">Security Access</a>
+                <p><a href="#Security">Rules</a>
                 </p>
-                <p>Access as defined by vendor security entities such as security groups and roles.</p>
+                <p>Access as defined by vendor security entities such as security groups and roles</p>
             </li>
             <li>
                 <p><a href="#Network">Network Configuration</a>
@@ -81,8 +81,8 @@
             <li>Internet exposed</li>
             <li>No internet</li>
         </ul>
-        <p class="SubHead1">Security Control</p>
-        <p>Lists all the objects that control access to this asset:&#160;Security groups, roles, <MadCap:variable name="local.AzureFirewalls" />, bucket inline policies, VPC firewall rules and project IAM.</p>
+        <p class="SubHead1">Security Controls</p>
+        <p>Lists all the objects that control access to this asset:&#160;Security groups, roles, <MadCap:variable name="local.Firewalls" />, bucket inline policies, VPC firewall rules and project IAM. Click on a security control to see more information.</p>
         <p class="SubHead1">Properties </p>
         <p>The properties shown vary from one vendor to another and are different for VMs and storage devices. See <a href="AssetProperties.htm">asset properties</a> for details of each type of instance and see the appropriate cloud vendor documentation for further explanation. </p>
         <p class="SubHead1">Tags </p>
@@ -93,14 +93,14 @@
             <li>Risky Access<ul><li><MadCap:variable name="local.Policyviolations" /></li><li>Risky ports</li><li>Permissive sources</li><li>Permissive services</li></ul></li>
             <li>Tag Usage - No tags</li>
         </ul>
-        <p class="h4"><a name="Security"></a>Security Access</p>
-        <p>Security access is the access to and from the asset defined by vendor security controls such as security groups and roles.</p>
-        <p class="normal">Select <span class="MenuItem">Security Access</span> from the Asset Menu. </p>
-        <p class="normal">
-            <img src="../PublicCloud-Images/Screen_AssetSecurityAccess.png" class="ThumbnailPopup" />
+        <p class="h4"><a name="Security"></a>Rules</p>
+        <p>Rules shows access to and from the asset defined by vendor security controls such as security groups and roles.</p>
+        <p class="normal">Select <span class="MenuItem">Rules</span> from the Asset Menu. </p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_AssetRules.png" class="ThumbnailPopup" />
         </p>
         <p>This screen can have 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; <span class="ScreenObject">OutBound</span> is shown only if relevant. </p>
-        <p>Each line represents an access entry and entries are grouped by the vendor security control in which they are defined. Each item in the list includes:</p>
+        <p>Each line represents one rule and rules are grouped by the vendor security control in which they are defined. Each item in the list includes:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular">
             </col>
@@ -116,8 +116,18 @@
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Effective Access Icon</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>Effective access is allowed or</p>
-                        <p>Effective access is prevented via the network</p>
+                        <p>Indicates the access allowed when taking the physical network connectivity into account.</p>
+                        <ul>
+                            <li>No icon - the rule can be fully applied</li>
+                            <li>
+                                <img src="../SecureCloud-Images/Icon_EffectiveAccessNone/.png" class="noborder" /> - the rule cannot be applied. Access is prevented due to no network connectivity</li>
+                            <li>
+                                <p>
+                                    <img src="../SecureCloud-Images/Icon_EffectiveAccessPartial.png" class="noborder" /> - the rule can be applied only partially. Access is limited due to partial network connectivity. Click on this icon to display the effective access. </p>
+                                <p>Example:</p>
+                                <p> <img src="../PublicCloud-Images/Window_AssetRuleEffectiveAccess.png" /></p>
+                            </li>
+                        </ul>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
@@ -145,7 +155,7 @@
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
                     <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Warning</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <img src="../PublicCloud-Images/icon_warning.png" class="noborder" /> If present, indicates a <a href="WhatIsCloudViolation.htm">violation</a></td>
+                        <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> indicates a <a href="WhatIsCloudViolation.htm">violation</a></td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
                     <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">

@@ -145,7 +145,7 @@
             Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
           <TocEntry
             Title="[%=System.LinkedTitle%]"
-            Link="/Content/PublicCloud/AzureFirewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            Link="/Content/PublicCloud/Firewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
       </TocEntry>
       <TocEntry

@@ -3,14 +3,14 @@
     <head>
     </head>
     <body>
-        <h1><MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /></h1>
+        <h1><MadCap:variable name="local.MicrosoftAzure" /> <MadCap:variable name="local.ActiveDirectory" /></h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p>SSO - single signon is supported in <MadCap:variable name="local.ProductName" /> using <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> Configuration is required in both applications. A user can <a href="Login.htm">log in</a> to <MadCap:variable name="local.ProductName" /> using their   <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> credentials only after all the appropriate settings have been made in your <a href="#setupazure"><MadCap:variable name="local.Azure" /> <MadCap:variable name="local.SecurecloudAccount" /></a> and in <MadCap:variable name="local.ProductName" />. </p>
+        <p>SSO - single signon is supported in <MadCap:variable name="local.ProductName" /> using <MadCap:variable name="local.MicrosoftAzure" /> <MadCap:variable name="local.ActiveDirectory" /> Configuration is required in both applications. A user can <a href="Login.htm">log in</a> to <MadCap:variable name="local.ProductName" /> using their   <MadCap:variable name="local.MicrosoftAzure" /> <MadCap:variable name="local.ActiveDirectory" /> credentials only after all the appropriate settings have been made in your <a href="#setupazure"><MadCap:variable name="local.MicrosoftAzure" /> <MadCap:variable name="local.SecurecloudAccount" /></a> and in <MadCap:variable name="local.ProductName" />. </p>
         <p>The screen is split into two tabs:</p>
         <ul>
-            <li> Groups (the default selection) - <MadCap:variable name="local.Azure" /> groups that contain users permitted to log into <MadCap:variable name="local.ProductName" />. Groups can be added only after you have entered valid credentials under the Configuration tab.</li>
-            <li>Configuration - the credentials needed by <MadCap:variable name="local.ProductName" /> to access your <MadCap:variable name="local.Azure" /> <MadCap:variable name="local.ActiveDirectory" /> </li>
+            <li> Groups (the default selection) - <MadCap:variable name="local.MicrosoftAzure" /> groups that contain users permitted to log into <MadCap:variable name="local.ProductName" />. Groups can be added only after you have entered valid credentials under the Configuration tab.</li>
+            <li>Configuration - the credentials needed by <MadCap:variable name="local.ProductName" /> to access your <MadCap:variable name="local.MicrosoftAzure" /> <MadCap:variable name="local.ActiveDirectory" /> </li>
         </ul>
         <p>Initially, the Groups tab is empty and the Configuration tab appears without credentials.</p>
         <p>
@@ -20,9 +20,9 @@
         <p>
             <img src="../SecureCloud-Images/screen_ActiveDirectory_Configured.png" class="ThumbnailPopup" />
         </p>
-        <p class="h3"><a name="setupazure"></a>Set up <MadCap:variable name="local.Azure" /> to work with <MadCap:variable name="local.ProductName" /></p>
+        <p class="h3"><a name="setupazure"></a>Set up <MadCap:variable name="local.MicrosoftAzure" /> to work with <MadCap:variable name="local.ProductName" /></p>
         <ol>
-            <li>Log into your <MadCap:variable name="local.Azure" /> account.</li>
+            <li>Log into your <MadCap:variable name="local.MicrosoftAzure" /> account.</li>
             <li>
                 <p>Create a new app registration with the following properties:</p>
                 <ul>
@@ -42,28 +42,28 @@
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p class="normal"><a href="#config">Specify <MadCap:variable name="local.Azure" /> credentials</a>
+                <p class="normal"><a href="#config">Specify <MadCap:variable name="local.MicrosoftAzure" /> credentials</a>
                 </p>
             </li>
-            <li>Delete <MadCap:variable name="local.Azure" /> credentials - click <img src="../PublicCloud-Images/icon_Delete.png" class="noborder" /></li>
+            <li>Delete <MadCap:variable name="local.MicrosoftAzure" /> credentials - click <img src="../PublicCloud-Images/icon_Delete.png" class="noborder" /></li>
             <li><a href="#group">Add a group</a>
             </li>
         </ul>
-        <p class="h3"><a name="config"></a>Specify  <MadCap:variable name="local.Azure" /> Credentials</p>
+        <p class="h3"><a name="config"></a>Specify  <MadCap:variable name="local.MicrosoftAzure" /> Credentials</p>
         <ol>
             <li>Make sure the Configuration tab is selected</li>
             <li>
                 <p>Click on <span class="ScreenObject">Edit</span>. The Azure credentials window appears.</p>
             </li>
             <li>
-                <p>Enter the appropriate values from your <MadCap:variable name="local.Azure" /> account:</p>
+                <p>Enter the appropriate values from your <MadCap:variable name="local.MicrosoftAzure" /> account:</p>
                 <p>
                     <img src="../SecureCloud-Images/Window_AzureAD.png" class="ThumbnailPopup" />
                 </p>
                 <ul>
                     <li>Tenant ID - <span class="StatusOrValue">Directory (tenant) ID</span> </li>
-                    <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> created in <a href="#setupazure">Set up <MadCap:variable name="local.Azure" /> to work with <MadCap:variable name="local.ProductName" /></a> step 2 </li>
-                    <li>Application Secret - <span class="StatusOrValue">Client secret value</span> created in <a href="#setupazure">Set up <MadCap:variable name="local.Azure"></MadCap:variable> to work with <MadCap:variable name="local.ProductName"></MadCap:variable></a> step 3 </li>
+                    <li>Application ID - <span class="StatusOrValue">Application (client)&#160;ID</span> created in <a href="#setupazure">Set up <MadCap:variable name="local.MicrosoftAzure" /> to work with <MadCap:variable name="local.ProductName" /></a> step 2 </li>
+                    <li>Application Secret - <span class="StatusOrValue">Client secret value</span> created in <a href="#setupazure">Set up <MadCap:variable name="local.MicrosoftAzure"></MadCap:variable> to work with <MadCap:variable name="local.ProductName"></MadCap:variable></a> step 3 </li>
                 </ul>
             </li>
             <li>
@@ -81,7 +81,7 @@
                 <p>Enter the appropriate information to identify the group:</p>
                 <ul>
                     <li>Group Name - for your own convenience, used only in <MadCap:variable name="local.ProductName" /></li>
-                    <li>Group ID - The object ID of the required group from your <MadCap:variable name="local.Azure" /> account</li>
+                    <li>Group ID - The object ID of the required group from your <MadCap:variable name="local.MicrosoftAzure" /> account</li>
                 </ul>
             </li>
             <li>
