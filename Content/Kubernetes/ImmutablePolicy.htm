@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -6,16 +6,13 @@
         <h1>Immutable Policy</h1>
         <p><a href="#overview">Overview</a>
         </p>
-        <p><a href="#Advantages">Advantages</a>
-        </p>
-        <p><a href="#Related Concepts">Related Concepts</a>
-        </p>
         <p><a href="#CI/CD Implementation">Implementation</a>
         </p>
-        <h2><a name="overview"></a>Overview</h2>
+        <p class="h2"><a name="overview"></a>Overview</p>
         <p><MadCap:variable name="local.ProductName" /> provides you with a way to implement your security policy automatically using a mechanism called immutable security policy. Immutable means fixed and unchangeable; that doesn't mean the fast-changing threat landscape isn't going to be met by equally rapid changes to your security rules, it just means that instead of modifying your existing security policy, you replace it with a new one. </p>
         <p>You introduce a new improved policy then dispose of the old one, keeping a copy in history for future reference.</p>
-        <h2><a name="Advantages"></a>Advantages of an Immutable Security Policy</h2>
+        <p>See the video <a href="https://www.tufin.com/resources/webinars/automate-security-policies-accelerate-ci-cd">How to Automate Security Policies to Further Accelerate CI/CD</a>. </p>
+        <p class="h3"><a name="Advantages"></a>Advantages of an Immutable Security Policy</p>
         <p>Allows you to better control your security policy by reducing configuration errors, speeding up deployment of that policy, viewing previous configurations and allowing rollback to them. All this is facilitated by the following characteristics:</p>
         <ol>
             <li>Can be created automatically based on  traffic discovered in the cluster.</li>
@@ -24,12 +21,12 @@
             <li>Provides version control for security policy. Copies of decomissioned policies can be kept for comparison and rollback.</li>
             <li>By building a new policy each time from scratch, based only on desired traffic, old and forgotten rules that might constitute a risk today are eliminated.</li>
         </ol>
-        <h2><a name="Related Concepts"></a>Related Concepts</h2>
+        <p class="h3"><a name="Related Concepts"></a>Related Concepts</p>
         <p>This basic concept of immutability, replacement and disposal is central to automating a security policy but there are other related processes that should be understood.</p>
         <ol>
             <li>
                 <p>Infrastructure as code (IaC)</p>
-                <p>Despite its name, the infrastructure itself doesn't really reside in code, but rather what is needed to build the infrastructure as part of an automated process. The code may be in the form of scripts, definitions, markup language, data serialization language and other means in a repository where it can used in an automated build process. Code that defines your security policy can be kept in your application source code repository and deployed along with the application.</p>
+                <p>This is code that defines resources to be created in an automated process. The code may be in the form of scripts, definitions, markup language, data serialization language and other means in a repository where it can used in an automated build process. Code that defines your security policy can be kept in your application source code repository and deployed along with the application.</p>
             </li>
             <li>
                 <p>Immutable infrastructure</p>
@@ -44,6 +41,39 @@
             </li>
         </ol>
         <h2><a name="CI/CD Implementation"></a>Implementation</h2>
-        <p>See <a href="WorkingWithImmutable.htm">Implementing an Immutable Policy</a></p>
+        <p class="h3">Development and QA Phase</p>
+        <ul>
+            <li>Develop and commit code as usual.</li>
+            <li>Write tests to run all the functionally in your application, if not already done as part of your QA process. The significance of 'all functionality' is to initiate connections between every source and destination pod in the app that will be required at some stage of running the application. These connections will be used by <MadCap:variable name="local.ProductName"></MadCap:variable>to create the list of allowed connections in the security policy. </li>
+        </ul>
+        <p class="h3">Build Phase</p>
+        <p>You can run these steps manually or build them into your CI/CD Pipeline. You can also test them in the <a href="../SecureCloud/APIs.htm"><MadCap:variable name="local.ProductName"></MadCap:variable> API homepage</a>.</p>
+        <p class="h4">Parameters Used in the scripts below</p>
+        <p>${<b>APIKey</b>}:&#160;As created in <a href="../SecureCloud/APIAccessKeys.htm">API access key</a></p>
+        <p>${<MadCap:variable name="local.SecurecloudAccount" style="font-weight: bold;"></MadCap:variable>}: Your <MadCap:variable name="local.ProductName"></MadCap:variable><MadCap:variable name="local.Securecloudaccount"></MadCap:variable> name</p>
+        <p>${<MadCap:variable name="local.Project" style="font-weight: bold;"></MadCap:variable>} Your monitored <MadCap:variable name="local.project"></MadCap:variable> name</p>
+        <ol>
+            <li>
+                <p>Check out your code.</p>
+            </li>
+            <li>
+                <p>Build your code.</p>
+            </li>
+            <li>
+                <p>Reset your policy.</p><pre xml:space="preserve">bash &lt;(curl -s -X 'DELETE' 'https://${Account}.securecloud.tufin.io/api/v1/orca/conf/clusters/${Cluster}/rules' -H 'accept: */*' -H 'Authorization: Bearer ${APIKey}')</pre>
+            </li>
+            <li>
+                <p>Run tests: unit, integration, system...</p>
+            </li>
+            <li>
+                <p>Generate <MadCap:variable name="local.ProductName"></MadCap:variable> cluster policy,  based on automatic connectivity found by <MadCap:variable name="local.ProductName"></MadCap:variable>.</p><pre xml:space="preserve">bash &lt;(curl -s -X 'POST' 'https://${Account}.securecloud.tufin.io/api/v1/orca/conf/clusters/${Cluster}/rules-from-connections' -H 'accept: */*' -H 'Authorization: Bearer ${APIKey}' -d '')</pre>
+            </li>
+            <li>
+                <p>Create network policy YAML from <MadCap:variable name="local.ProductName"></MadCap:variable> cluster policy.</p><pre xml:space="preserve">bash &lt;(curl -s -X 'GET' 'https://${Account}.securecloud.tufin.io/api/v1/orca/conf/clusters/${Cluster}/k8s-network-policies' -H 'accept: application/json' -H 'Authorization: Bearer ${APIKey}')</pre>
+            </li>
+            <li>
+                <p>Commit the network policy to your pipeline, using GitHub or other appropriate tool. </p>
+            </li>
+        </ol>
     </body>
 </html>

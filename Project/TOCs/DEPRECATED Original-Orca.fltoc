@@ -116,7 +116,7 @@
         Link="/Content/Kubernetes/DEPRECATED_Docker_Image_Scanning.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
-        Link="/Content/Kubernetes/WorkingWithImmutable.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/Kubernetes/DEPRECATEDWorkingWithImmutable.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Kubernetes/DEPRECATED_TEMPORARILY_ImageScansCICD.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />

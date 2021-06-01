@@ -10,13 +10,13 @@
             <li>Give access to a user in another account via a role. Before using this option you must create a role in your AWS account and give the required permissions to the other account. You can optionally specify the requirement of an external key. MFA is not supported in <MadCap:variable name="local.ProductName" />.</li>
             <li>Give access to Tufin's own AWS account, via a role. Before using this option you must create a role in your AWS account and give the required permissions to the AWS account number 977996679567.</li>
         </ul>
-        <p>Whichever of the above methods you choose, the authorized user or role accounts must have one of the following permissions:</p>
-        <ul>
+        <p>Whichever of the above methods you choose, the authorized user or role accounts must have one of the following permissions settings. The settings are listed from the most permissive to the least. Additional permissions may be required in the future if new functionality is added. </p>
+        <ol>
             <li>
-                <p>ReadOnlyAccess policy</p>
+                <p>Predefined policy <b>ReadOnlyAccess</b> (the most permissive setting)</p>
             </li>
             <li>
-                <p>SecurityAudit policy plus the following custom policy for <MadCap:variable name="local.Firewalls" />:</p><pre xml:space="preserve">
+                <p>Predefined policy <b>SecurityAudit</b> plus the following custom policy for AWS network firewalls:</p><pre xml:space="preserve">
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -24,8 +24,8 @@
             "Sid": "Statement1",
             "Effect": "Allow",
             "Action": [
-                "network-firewall:Describe*",
-                "network-firewall:List*"
+            "network-firewall:Describe*",
+            "network-firewall:List*"
             ],
             "Resource": "*"
         }
@@ -49,8 +49,8 @@
                 "s3:Get*",
                 "s3:List*",
                 "cloudtrail:Describe*",
-  	  	 "network-firewall:Describe*",
- 	 	 "network-firewall:List*"
+                "network-firewall:Describe*",
+                "network-firewall:List*"
             ],
             "Resource": "*"
         }
@@ -58,7 +58,7 @@
 }</pre>
             </li>
             <li>
-                <p>Custom policy 3</p><pre xml:space="preserve">
+                <p>Custom policy 3  (the least permissive setting)</p><pre xml:space="preserve">
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -94,21 +94,21 @@
                "s3:ListAllMyBuckets",
                "s3:GetBucketLocation",
                "cloudtrail:DescribeTrails",
-		"network-firewall:DescribeRuleGroup",
-		"network-firewall:ListTagsForResource",
-		"network-firewall:DescribeFirewallPolicy",
-		"network-firewall:DescribeLoggingConfiguration",
-		"network-firewall:ListFirewalls",
-		"network-firewall:DescribeResourcePolicy",
-		"network-firewall:DescribeFirewall",
-		"network-firewall:ListFirewallPolicies",
-		"network-firewall:ListRuleGroups"
+               "network-firewall:DescribeRuleGroup",
+               "network-firewall:ListTagsForResource",
+               "network-firewall:DescribeFirewallPolicy",
+               "network-firewall:DescribeLoggingConfiguration",
+               "network-firewall:ListFirewalls",
+               "network-firewall:DescribeResourcePolicy",
+               "network-firewall:DescribeFirewall",
+               "network-firewall:ListFirewallPolicies",
+               "network-firewall:ListRuleGroups"
             ],
             "Resource": "*"
         }
     ]
 }</pre>
             </li>
-        </ul>
+        </ol>
     </body>
 </html>

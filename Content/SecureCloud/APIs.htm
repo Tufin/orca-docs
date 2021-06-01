@@ -4,21 +4,19 @@
     </head>
     <body>
         <h1><MadCap:variable name="local.ProductName" /> APIs</h1>
-        <ul>
-            <li><a href="#overview">Overview</a>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
+        <p><MadCap:variable name="local.ProductName" /> provides a means of modifying your definitions outside of the product UI through REST APIs. They can be run interactively from the API homepage, or from any other source. When run interactively, the API call requires a valid <a href="APIAccessKeys.htm">API access key</a> or user/password that have sufficient permissions for the operation requested and appropriate parameters where required. When run from any other source, the API access key is the only method available.</p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
+        <ul class="Action">
+            <li><a href="#view">View the API structure</a>
             </li>
-            <li><a href="#actions">What Can I Do Here?</a>
+            <li><a href="#run">Run APIs</a>
             </li>
         </ul>
-        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p><MadCap:variable name="local.ProductName" /> provides a means of modifying your definitions outside of the product UI through REST APIs. These API calls require a valid <a href="APIAccessKeys.htm">API access key</a> with sufficient permissions for the operation requested and appropriate parameters where required.</p>
-        <p>To see the structure of the APIs, click on the <span class="ScreenObject">?</span> help icon displayed at the top of every screen &gt; <span class="MenuItem">API documentation</span>. </p>
-        <p>
-            <img src="../SecureCloud-Images/Menu_Help.png" class="ThumbnailPopup" />
-        </p>
-        <p>Alternatively, edit your   <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.Securecloudaccount" /> URL, replacing everything after 'tufin.io/' with 'api-documentation' and paste it in a new browser tab/window </p>
-        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
-        <p class="h3">Cluster Management</p>
+        <p class="h3"><a name="view"></a>View the API&#160;Structure</p>
+        <p>The APIs are grouped by functionality. Click on the desired API&#160;to view its structure.</p>
+        <p class="h4">Cluster Management</p>
         <p> Actions related to the Kubernetes clusters monitored by <MadCap:variable name="local.ProductName" /></p>
         <ul>
             <li>Return a list of all clusters defined to <MadCap:variable name="local.ProductName" /> including their status</li>
@@ -27,14 +25,16 @@
             <li>Remove a cluster definition from <MadCap:variable name="local.ProductName" />  and delete data collected by <MadCap:variable name="local.ProductName" /></li>
             <li>Retrieve the bash command needed to start monitoring of a cluster by SecureCloud</li>
         </ul>
-        <p class="h3">Traffic Monitoring and Network Policy</p>
+        <p class="h4">Cluster Traffic Monitoring and Network Policy</p>
+        <p>Actions related to your <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.clusterpolicy" /> - see examples of use in <MadCap:xref href="../Kubernetes/ImmutablePolicy.htm">Immutable Policy</MadCap:xref></p>
         <ul>
-            <li>Change policy mode - switch between enforce or learn</li>
+            <li>Change cluster policy mode - switch between enforce and learn</li>
             <li>Create cluster policy rules to allow connections discovered during the last 24 hours</li>
             <li>Delete all cluster policy rules for a <MadCap:variable name="local.project" /></li>
-            <li>Export cluster policy rules</li>
+            <li>Export cluster policy rules as <MadCap:variable name="local.Kubernetes" /> network policy YAML file</li>
         </ul>
-        <p class="h3">Cloud <MadCap:variable name="local.SecurecloudAccount" />s</p>
+        <p class="h4">Cloud <MadCap:variable name="local.SecurecloudAccount" />s</p>
+        <p>Actions related to your <MadCap:variable name="local.ProductName" /> public cloud accounts</p>
         <ul>
             <li>Return a list of all cloud <MadCap:variable name="local.Securecloudaccount" />s monitored by <MadCap:variable name="local.ProductName" /></li>
             <li>Define a new cloud <MadCap:variable name="local.Securecloudaccount" /> to <MadCap:variable name="local.ProductName" /></li>
@@ -43,5 +43,91 @@
             <li>Return a list of all cloud <MadCap:variable name="local.Securecloudaccount" /> credentials defined in <MadCap:variable name="local.ProductName" /></li>
             <li>Define a new set of cloud <MadCap:variable name="local.Securecloudaccount" /> credentials to <MadCap:variable name="local.ProductName" /></li>
         </ul>
+        <p class="h3"><a name="run"></a>Run APIs</p>
+        <p>Before you can run any APIs interactively, you need to authenticate using either an <a href="APIAccessKeys.htm">API Access Key</a> or a user/password that have the permissions required to execute the action specified by the API. Once authenticated, you can run any API that the API access key allows, without authenticating again. Using user/password will time out after a period of inactivity. </p>
+        <p class="procedureintro">To authenticate:</p>
+        <ol>
+            <li>Go to your API homepage - <a href="#get_here"><MadCap:variable name="Topic Templates.HowDoIgetHere" /></a></li>
+            <li>
+                <p>In Account, enter the name your <MadCap:variable name="local.ProductName" /> account, When you are logged in, it appears in your current URL as indicated by {Account}  below.</p>
+                <p>
+                    <img src="../PublicCloud-Images/Screen_api_home.png" class="ThumbnailPopup" />
+                </p>
+            </li>
+            <li>
+                <p>Click on the <span class="ScreenObject">Authorize</span> button. The Available Authorizations window appears. There are two ways to authenticate - using an API access key or user/password:</p>
+                <p class="procedureintro">To authenticate using an API access key</p>
+                <p>
+                    <img src="../PublicCloud-Images/Window_Authorization_JWT.png" class="ThumbnailPopup" />
+                </p>
+                <ul>
+                    <li>Paste your API access key in <span class="ScreenObject">Value</span> and click on <span class="ScreenObject">Authorize</span>. If the authentication is successful, the status 'Authorized' appears and the <span class="ScreenObject">Authorize</span> button changes to <span class="ScreenObject">Logout</span>. </li>
+                    <li>Click the <span class="ScreenObject">Close</span> button to return to the API homepage. You can return and log out whenever you need by clicking again on the <span class="ScreenObject">Authorize</span> button from the API homepage.</li>
+                </ul>
+                <p class="procedureintro">To authenticate using user/password</p>
+                <p>
+                    <img src="../PublicCloud-Images/Window_API_Authorization_JWT.png" class="ThumbnailPopup" />
+                </p>
+                <ul>
+                    <li>Enter user name (email)&#160;and password and click on <span class="ScreenObject">Authorize</span>. If the authentication is successful, the status 'Authorized' appears and the <span class="ScreenObject">Authorize</span> button changes to <span class="ScreenObject">Logout</span>. </li>
+                    <li>Click the <span class="ScreenObject">Close</span> button to return to the API homepage. You can return and log out whenever you need by clicking again on the <span class="ScreenObject">Authorize</span> button from the API homepage.</li>
+                    <li>Ignore the fields Client credentials location, client_id, client_secret.</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="procedureintro">To test the API in the API&#160;homepage:</p>
+        <p>If the API you want to run is for a specific resource,  you will need to first run the API that list all the resources and identify the appropriate resource ID, name or other identifier(s) from the list.</p>
+        <ol>
+            <li>Click on the desired API.</li>
+            <li>Click on the button <span class="ScreenObject">Try it out</span>.</li>
+            <li>If the API is for a specific resource (e.g. update, delete operations), enter the desired resource ID or other required identifier(s) obtained previously from the list of all resources.</li>
+            <li>If the API requires parameters (e.g. add, update operations), modify the parameter values displayed under Request body.</li>
+            <li>Click on <span class="ScreenObject">Execute</span>.  The curl command, request URL and the server response are displayed.</li>
+        </ol>
+        <p class="h3">Running the API From a Program or Command Line </p>
+        <p>When making the API call from anywhere outside of the <MadCap:variable name="local.ProductName" /> API homepage, a valid API access key is required. This can be a permanent key created in <MadCap:xref href="APIAccessKeys.htm">API Access Keys</MadCap:xref> or a temporary one created as described below.</p>
+        <p class="procedureintro">To create a temporary API access key:</p>
+        <ul>
+            <li>
+                <p>Make the following API call</p>
+                <p>POST https://{Account}.securecloud.tufin.io/api/rome/token </p>
+                <p>with body property x-www-form-urlencoded and</p>
+                <p> with parameters:</p>
+                <ul>
+                    <li>username: Your <MadCap:variable name="local.ProductName" /> user name (email)</li>
+                    <li>password: The password for the above username</li>
+                    <li>grant_type: password (fixed value, as written)</li>
+                    <li>client_id: express  (fixed value, as written)</li>
+                </ul>
+                <p>Example:</p>
+                <p>
+                    <img src="../PublicCloud-Images/Screen_API_GetAccessKey.png" class="ThumbnailPopup" />
+                </p>
+                <p>The response will be received in key, in the parameter 'access-token'</p>
+            </li>
+        </ul>
+        <p class="procedureintro">To run the API from a program or command line:</p>
+        <ul>
+            <li>
+                <p>Make the API call with header 'Authorization: Bearer $(APIAccessKey}', where APIAccessKey is the temporary access key created above or a permanent access key created in the UI.</p>
+                <p>Example using Postman:</p>
+                <p>
+                    <img src="../PublicCloud-Images/Screen_API_Postman.png" class="ThumbnailPopup" />
+                </p>
+                <p>Example with command line</p><pre xml:space="preserve">curl -X 'GET' \
+  'https://generic-bank.securecloud.tufin.io/api/v1/orca/conf/clusters' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer iOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ...-H 'accept: application/json' \</pre>
+            </li>
+        </ul>
+        <p>When you make the API call in the API&#160;homepage, the curl command is shown in the output. You can copy/paste it to the desired location.</p>
+        <p>Example:</p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_API_curl.png" class="ThumbnailPopup" />
+        </p>
+        <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
+        <p>
+            <MadCap:snippetBlock src="../Resources/Snippets/GetHere_api.flsnp" />
+        </p>
     </body>
 </html>

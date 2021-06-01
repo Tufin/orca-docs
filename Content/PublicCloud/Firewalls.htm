@@ -6,7 +6,7 @@
         <h1>Firewalls</h1>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/UL_Contents.flsnp" />
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Overview.flsnp" />
-        <p><MadCap:variable name="local.ProductName" /> locates and displays firewalls from all your monitored <MadCap:variable name="local.MicrosoftAzure" /> and <MadCap:variable name="local.Amazon AWS" /> accounts.</p>
+        <p><MadCap:variable name="local.ProductName" /> locates and displays all  <MadCap:variable name="local.MicrosoftAzure" /> and <MadCap:variable name="local.Amazon AWS" /> firewalls in your cloud accounts.</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H3_SeeHere.flsnp" />
         <p>
             <img src="../PublicCloud-Images/Screen_Firewalls.png" class="ThumbnailPopup" />
@@ -47,29 +47,39 @@
         <p>For Azure</p>
         <ul>
             <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
-            <li>Name - the name of the firewall as configured in your cloud account</li>
-            <li>ID - unique identifier</li>
-            <li>Private IP - The IP address of the firewall on the Vnet</li>
-            <li>Public IP - One or more IP addresses that can be accessed from the internet</li>
-            <li>Vnet - the network on which the firewall is deployed</li>
-            <li>Subnet - the subnet on which the firewall is deployed</li>
-            <li>Resource group</li>
-            <li>Region - the geographical region of the firewall's Vnet </li>
-            <li>Availability zone </li>
+            <li>
+                <p>Properties of the firewall as configured in your cloud account</p>
+                <ul>
+                    <li>Name</li>
+                    <li>ID</li>
+                    <li>Private IP </li>
+                    <li>Public IP </li>
+                    <li>Vnet </li>
+                    <li>Subnet</li>
+                    <li>Resource group</li>
+                    <li>Region </li>
+                    <li>Availability zone </li>
+                </ul>
+            </li>
             <li>Vendor - 'Azure'</li>
         </ul>
         <p>For AWS</p>
         <ul>
             <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
-            <li>Name - the name of the firewall as configured in your cloud account</li>
-            <li>Description</li>
-            <li>Policy Name</li>
-            <li>Policy Description</li>
-            <li>VPC</li>
-            <li>Region</li>
-            <li>Subnet(s) - the subnet(s) on which the firewall is deployed</li>
-            <li>Availability zone(s)</li>
-            <li>Endpoint ID(s)</li>
+            <li>
+                <p>Properties of the firewall as configured in your cloud account</p>
+                <ul>
+                    <li>Name </li>
+                    <li>Description</li>
+                    <li>Policy Name</li>
+                    <li>Policy Description</li>
+                    <li>VPC</li>
+                    <li>Region</li>
+                    <li>Subnet(s)</li>
+                    <li>Availability zone(s)</li>
+                    <li>Endpoint ID(s)</li>
+                </ul>
+            </li>
             <li>Vendor - 'AWS'</li>
         </ul>
         <p class="h3"><a name="fwrules"></a>Rules</p>
