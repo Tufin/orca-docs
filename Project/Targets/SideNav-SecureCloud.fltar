@@ -14,14 +14,16 @@
   OutputFile="index.htm"
   MasterToc="/Project/TOCs/tocSecureCloud.fltoc"
   EnableSitemap="true"
-  SitemapWebUrl="https://forum.tufin.com/support/kc/Orca/Content/Orca/"
+  SitemapWebUrl="https://forum.tufin.com/support/kc/securecloud/"
   MasterStylesheet="/Content/Resources/Stylesheets/styles.css"
   MasterStylesheetOverride="true"
   EquationsOutputType="PNG"
   AliasFile="/Project/Advanced/CSH/SCL.flali"
   SearchFilterSet="/Project/Advanced/SearchFilterSet.flsfs"
   ResolveCssVariables="false"
-  MasterPage="/Content/Resources/MasterPages/Content-SideNav2020.flmsp">
+  MasterPage="/Content/Resources/MasterPages/Content-SideNav2020.flmsp"
+  PartialWordSearch="true"
+  ResultsPerPage="20">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

@@ -33,7 +33,8 @@
                 </p>
             </li>
             <li>
-                <p>(Azure only) You can switch between the Overview and Rules screens by clicking on <span class="ScreenObject">Overview</span> or <span class="ScreenObject">Rules</span> in the side menu.</p>
+                <p>&#160;</p>
+                <p>Switch between the Overview and Rules screens by clicking on <span class="ScreenObject">Overview</span> or <span class="ScreenObject">Rules</span> in the side menu.</p>
                 <p>
                     <img src="../PublicCloud-Images/Menu_Firewall.png" />
                 </p>
@@ -43,8 +44,8 @@
         <p>
             <img src="../PublicCloud-Images/Screen_AzureFirewallOverview.png" class="ThumbnailPopup" />
         </p>
-        <p>Account is the account name defined in <MadCap:variable name="local.ProductName" /> and all other properties and the tags are as specified for the firewall in your cloud account. When hovering over a property, the copy to clipboard icon appears - click to copy the value.</p>
-        <p>For Azure</p>
+        <p>The overview screen shows the  tags assigned to the firewall device plus  properties of the firewall that are not rule-specifc. When hovering over a property, the copy to clipboard icon appears - click to copy the value.</p>
+        <p class="h4">Azure </p>
         <ul>
             <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
             <li>
@@ -63,7 +64,7 @@
             </li>
             <li>Vendor - 'Azure'</li>
         </ul>
-        <p>For AWS</p>
+        <p class="h4">AWS</p>
         <ul>
             <li>Account - the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
             <li>
@@ -83,16 +84,15 @@
             <li>Vendor - 'AWS'</li>
         </ul>
         <p class="h3"><a name="fwrules"></a>Rules</p>
-        <p>For Azure only.</p>
+        <p class="h4">Azure Firewall Rules</p>
         <p>
             <img src="../PublicCloud-Images/screen_azureFirewallRules.png" class="ThumbnailPopup" />
         </p>
-        <p>The displayed rules are ordered by priority and can be filtered.</p>
         <p>The screen is split into NAT rules, network rules and application rules - click on the desired type of rule to switch between them.</p>
         <p class="normal">
             <img src="../PublicCloud-Images/Screen_AzureFirewallRuleType.png" class="ThumbnailPopup" />
         </p>
-        <p>The rule details are displayed as specified on the firewall, as follows:</p>
+        <p>The displayed rules are ordered by priority and the rule details displayed are as configured in your cloud account</p>
         <ul>
             <li>Priority </li>
             <li>Name</li>
@@ -103,6 +103,44 @@
             <li>Translated Service (for NAT rules only)</li>
             <li>Action (for network and application rules only)</li>
             <li>Collection</li>
+        </ul>
+        <p class="h4">AWS Firewall Rules</p>
+        <p>The screen is split into stateless and stateful rules. Switch between the two by clicking on the appropriate tab <span class="ScreenObject">Stateless</span> or <span class="ScreenObject">Stateful</span>. The <a href="https://docs.aws.amazon.com/network-firewall/latest/developerguide/rule-groups.html">AWS official documentation</a> explains: "Network Firewall rule groups are either stateless or stateful. Stateless rule groups evaluate packets in isolation, while stateful rule groups evaluate them in the context of their traffic flow".</p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_FirewallRules_aws_stateless.png" class="ThumbnailPopup" />
+        </p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_FirewallRules_aws_stateful.png" class="ThumbnailPopup" />
+        </p>
+        <p>Rule details displayed are as configured in your cloud account.</p>
+        <ul>
+            <li>
+                <p>Group (stateless only - the priority of the rule group) </p>
+            </li>
+            <li>
+                <p>Rule (stateless only)</p>
+            </li>
+            <li>
+                <p>Rule Group</p>
+            </li>
+            <li>
+                <p>Source</p>
+            </li>
+            <li>
+                <p>Destination</p>
+            </li>
+            <li>
+                <p>Service</p>
+            </li>
+            <li>
+                <p>Action</p>
+            </li>
+            <li>
+                <p>Direction (stateful only)</p>
+            </li>
+            <li>
+                <p>Rule Group Description</p>
+            </li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <ul>

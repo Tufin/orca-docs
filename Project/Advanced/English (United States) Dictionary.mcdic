@@ -4,5 +4,6 @@
     <Word Comment="">Orca</Word>
     <Word Comment="">Kubernetes</Word>
     <Word Comment="">namespace</Word>
-    <Word>Resize</Word>
+    <Word Comment="">Resize</Word>
+    <Word>Stateful</Word>
 </SpellingDictionary>
