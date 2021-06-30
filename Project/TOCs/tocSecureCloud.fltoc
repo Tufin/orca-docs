@@ -139,13 +139,14 @@
           Title="Cloud Resources">
           <TocEntry
             Title="[%=System.LinkedTitle%]"
-            Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+            Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+            <TocEntry
+              Title="[%=System.LinkedTitle%]"
+              Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          </TocEntry>
           <TocEntry
             Title="[%=System.LinkedTitle%]"
-            Link="/Content/PublicCloud/AssetProperties.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-          <TocEntry
-            Title="[%=System.LinkedTitle%]"
-            Link="/Content/PublicCloud/Firewalls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            Link="/Content/PublicCloud/SecurityControls.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
       </TocEntry>
       <TocEntry

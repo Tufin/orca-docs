@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
-        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
@@ -11,8 +10,22 @@
         <h1>
             <MadCap:concept term="Settings" />Deploy on Your Cluster</h1>
         <p>Deploy <MadCap:variable name="local.ProductName" /> on your first cluster after <a href="../SecureCloud/SignUp.htm">signing up</a>. First make sure you have read and understood <MadCap:xref href="#changes">Changes to Your System</MadCap:xref> and <MadCap:xref href="#prerequisites">Prerequisites</MadCap:xref>.</p>
-        <p class="h2" MadCap:conditions="General.Exclude">On Standard Kubernetes Clusters</p>
-        <p class="h2"><a name="Deploy"></a>Run the Deployment Command</p>
+        <ul>
+            <li><a href="#Deploy">Installing, updating and uninstalling with the Bash Command</a>
+            </li>
+            <li><a href="#prerequisites">Prerequisites</a>
+            </li>
+            <li><a href="#whatnext">What Next?</a>
+            </li>
+            <li><a href="#changes">Changes to Your System</a>
+            </li>
+            <li><a href="#examplesconnecting">Examples of Connecting to Your Cluster</a>
+            </li>
+            <li><a href="#binding">Examples of Cluster Role Binding Command</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="h2"><a name="Deploy"></a>Installing, updating and uninstalling with the Bash Command</p>
         <ol>
             <li>
                 <p>In <MadCap:variable name="local.ProductName" /> display the 'Add Your Cluster' window  by either going to <MadCap:variable name="local.Dashboard" /> and clicking on the <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.Widget" /> or going to any menu item under <MadCap:variable name="local.KUBERNETES" />. The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the deployment commands is run.</p>
@@ -37,25 +50,64 @@
                         <p class="CodeSegment1">&lt;deployment command&gt; -h</p>
                     </li>
                     <li>
-                        <p>Dry run - see what the command does without executing it.</p>
+                        <p>Dry run --dry-run</p>
+                        <ul>
+                            <li>
+                                <p>false (default):&#160;Execute the command</p>
+                            </li>
+                            <li>
+                                <p>true: Show what the command will do when executed</p>
+                            </li>
+                        </ul>
                         <p class="CodeSegment1">&lt;deployment command&gt; --dry-run true</p>
                     </li>
                     <li>
-                        <p>No enforce - install <MadCap:variable name="local.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will have no effect and Enforce will behave the same as Learn mode.</p>
+                        <p>DNS install - di</p>
+                        <ul>
+                            <li>
+                                <p>true (default):&#160; Install <MadCap:variable name="local.ProductName" /> with the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will apply <MadCap:variable name="local.ProductName" /> enforcement of the <MadCap:variable name="local.clusterpolicy" /> via DNS.</p>
+                            </li>
+                            <li>
+                                <p>false: Install <MadCap:variable name="local.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will have no effect and Enforce mode will behave the same as Learn mode.</p>
+                            </li>
+                        </ul>
                         <p class="CodeSegment1">&lt;deployment command&gt; -di false</p>
                     </li>
                     <li>
-                        <p>Yes to all - answer yes to all prompts (both for install and uninstall).</p>
+                        <p>Installer mode -i or --installer-mode</p>
+                        <ul>
+                            <li>
+                                <p>install (default):&#160;First-time installation of the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /> on the cluster</p>
+                            </li>
+                            <li>
+                                <p>upgrade: Upgrade existing installation on the cluster with the latest version</p>
+                            </li>
+                            <li>
+                                <p>restart:&#160;Restart the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Agent" /></p>
+                            </li>
+                            <li>
+                                <p>uninstall: Remove <MadCap:variable name="local.ProductName" /> from the cluster</p>
+                            </li>
+                        </ul>
+                        <p>Examples</p>
+                        <p class="CodeSegment1">&lt;deployment command&gt; -i upgrade</p>
+                    </li>
+                    <li>
+                        <p>Quiet mode -q </p>
+                        <ul>
+                            <li>false (default): Issue prompts as necessary</li>
+                            <li>true: Suppress all prompts and use default values</li>
+                        </ul>
                         <p class="CodeSegment1">&lt;deployment command&gt; -q true</p>
                     </li>
                     <li>
-                        <p>Install Kite behind a proxy.</p>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -hp &lt;proxy-address:port&gt; -a &lt;repo-image/kite image:tag&gt; -bi &lt;repo-image/benchmark image:tag&gt;-c &lt;repo-image/coredns image:tag&gt;-mi &lt;repo-image/monitor image:tag&gt;</p>
+                        <p>Install behind a proxy</p>
+                        <p class="CodeSegment1">&lt;deployment command&gt; -hp &lt;proxy-address:port&gt; -a &lt;repo-image/kite image:tag&gt; -bi &lt;repo-image/benchmark image:tag&gt; -c &lt;repo-image/coredns image:tag&gt; -mi &lt;repo-image/monitor image:tag&gt;</p>
                     </li>
                 </ul>
             </li>
             <li>
-                <p>On completion of the command, a number of YAML  files are created that list the actions taken (or would be taken,  if the dry run parameter is used), in the cluster. </p>
+                <p>On completion of the command, a number of YAML  files are created that list the actions taken (or <i>would</i> be taken,  in case the dry run parameter is used), in the cluster. </p>
                 <p>The YAML files are:</p>
                 <ul>
                     <li>
@@ -87,58 +139,30 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
         </div>
         <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
         <p MadCap:conditions="General.Exclude">Use the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described above for standard Kubernetes clusters.</p>
-        <p class="h2">What Next? </p>
-        <p>
-            <ol>
-                <li>Log in to <MadCap:variable name="local.ProductName" />. </li>
-                <li>Go to <MadCap:xref href="Services.htm">Services</MadCap:xref>. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local.ProductName" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show connections shortly after they are made in the cluster.</li>
-                <li>If you haven't already done it <a href="../PublicCloud/AccountManager.htm">setup your cloud accounts</a>.</li>
-                <li>Continue with <MadCap:xref href="../SecureCloud/HowToWorkWith.htm">How to Work With [%=local.ProductName%]</MadCap:xref>.</li>
-            </ol>
-        </p>
-        <p class="h2"><a name="changes"></a>Changes to Your System</p>
-        <p class="h3">Changes in Your Kubernetes Cluster:</p>
-        <p class="normal">Installing <MadCap:variable name="local.ProductName" /> on your cluster will:</p>
-        <ol>
-            <li>Change the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local-orca.Openshift" />)</li>
-            <li>Inject the <MadCap:variable name="local.ProductName" /> DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local-orca.Openshift" />)</li>
-            <li>Add a CRD for <MadCap:variable name="local.ProductName" /> policies</li>
-            <li>
-                <p>Add a daemonset to monitor the traffic in the cluster</p>
-            </li>
-            <li>
-                <p>Add  a pod (kite) to communicate with the SecureCloud service</p>
-            </li>
-            <li>
-                <p>Add an additional container in the k8s DNS pods that acts as a proxy for DNS requests</p>
-            </li>
-            <li>Create a new namespace tufin-system</li>
-            <li>
-                <p>Assign roles to allow the other resources to function such as secrets and configmaps</p>
-            </li>
-        </ol>
-        <p class="h3">Changes on Your PC</p>
-        <p class="normal">A new directory called <span class="Code">bash-kite-installer</span> will be created in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="Uninstall.htm">remove <MadCap:variable name="local.ProductName" /> from a cluster</a>.</p>
         <p class="h2"><a name="prerequisites"></a>Prerequisites </p>
         <ol>
             <li>
-                <p>Your <MadCap:variable name="local.Kubernetes" /> implementation can be <MadCap:snippetText src="Standard_Kubernetes.flsnp" />. Additional Kubernetes platforms can be supported on-demand.</p>
+                <p>Your <MadCap:variable name="local.Kubernetes"></MadCap:variable> implementation can be <MadCap:snippetText src="Standard_Kubernetes.flsnp"></MadCap:snippetText>. Additional Kubernetes platforms can be supported on-demand.</p>
             </li>
             <li>
                 <p>Add port 54 as a second listening port to the Kubernetes DNS pod (Kube-DNS) in addition to the default port 53.</p>
             </li>
             <li>
-                <p>If you use Kubernetes network policies to restrict access to Kube-DNS via port 53, change this restriction to port 54 instead (except <MadCap:variable name="local-orca.Openshift" />).
+                <p>If you use Kubernetes network policies to restrict access to Kube-DNS via port 53, change this restriction to port 54 instead (except <MadCap:variable name="local-orca.Openshift"></MadCap:variable>).
 </p>
             </li>
             <li>
                 <p>Outbound Connections. 
 If you have a firewall between your Kubernetes cluster and the internet, allow the following connection:</p>
                 <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
-                    <col class="TableStyle-PatternedRows-Column-Regular" />
+                    <col class="TableStyle-PatternedRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-PatternedRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-PatternedRows-Column-Regular">
+                    </col>
+                    <col class="TableStyle-PatternedRows-Column-Regular">
+                    </col>
                     <thead>
                         <tr class="TableStyle-PatternedRows-Head-Header1">
                             <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Endpoint</th>
@@ -174,8 +198,39 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                 </ol>
             </li>
         </ol>
-        <p class="h2">Examples</p>
-        <p class="h3"><a name="examplesconnecting"></a>Examples of Connecting to Your Cluster</p>
+        <p class="h2"><a name="whatnext"></a>What Next? </p>
+        <p>
+            <ol>
+                <li>Log in to <MadCap:variable name="local.ProductName" />. </li>
+                <li>Go to <MadCap:xref href="Services.htm">Services</MadCap:xref>. If services appear, you're all set! If not, there may be a connectivity issue between your cluster and <MadCap:variable name="local.ProductName" /> - verify that all the ports listed in <a href="#outbound">Outbound Connections </a>are allowed. The service graph will show connections shortly after they are made in the cluster.</li>
+                <li>If you haven't already done it <a href="../PublicCloud/AccountManager.htm">setup your cloud accounts</a>.</li>
+                <li>Continue with <MadCap:xref href="../SecureCloud/HowToWorkWith.htm">How to Work With [%=local.ProductName%]</MadCap:xref>.</li>
+            </ol>
+        </p>
+        <p class="h2"><a name="changes"></a>Changes to Your System</p>
+        <p class="h3">Changes in Your Kubernetes Cluster:</p>
+        <p class="normal">Installing <MadCap:variable name="local.ProductName" /> on your cluster will:</p>
+        <ol>
+            <li>Change the Kubernetes DNS pod to listen on port 54 instead of the default port 53 (except <MadCap:variable name="local-orca.Openshift" />)</li>
+            <li>Inject the <MadCap:variable name="local.ProductName" /> DNS plugin container to the KubeDNS pod (except <MadCap:variable name="local-orca.Openshift" />)</li>
+            <li>Add a CRD for <MadCap:variable name="local.ProductName" /> policies</li>
+            <li>
+                <p>Add a daemonset to monitor the traffic in the cluster</p>
+            </li>
+            <li>
+                <p>Add  a pod (kite) to communicate with the SecureCloud service</p>
+            </li>
+            <li>
+                <p>Add an additional container in the k8s DNS pods that acts as a proxy for DNS requests</p>
+            </li>
+            <li>Create a new namespace tufin-system</li>
+            <li>
+                <p>Assign roles to allow the other resources to function such as secrets and configmaps</p>
+            </li>
+        </ol>
+        <p class="h3">Changes on Your PC</p>
+        <p class="normal">A new directory called <span class="Code">bash-kite-installer</span> will be created in your current working directory. Retain the name of the directory in which you run the  installation script, because it will be needed if you want to <a href="Uninstall.htm">remove <MadCap:variable name="local.ProductName" /> from a cluster</a>.</p>
+        <p class="h2"><a name="examplesconnecting"></a>Examples of Connecting to Your Cluster</p>
         <ul>
             <li><MadCap:variable name="local-orca.GKE" /> (Google): <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl">https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl</a></li>
             <li><MadCap:variable name="local-orca.EKS" />: (Amazon) <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html">https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html</a></li>
@@ -184,7 +239,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             <li><MadCap:variable name="local-orca.Docker" />: <a href="https://docs.docker.com/ee/ucp/user-access/cli/">https://docs.docker.com/ee/ucp/user-access/cli/</a></li>
             <li><MadCap:variable name="local-orca.pks" />: <a href="https://docs.pivotal.io/pks/1-3/control-plane.html">https://docs.pivotal.io/pks/1-3/control-plane.html</a></li>
         </ul>
-        <p class="h3"><a name="binding"></a>Examples of Cluster Role Binding Command</p>
+        <p class="h2"><a name="binding"></a>Examples of Cluster Role Binding Command</p>
         <ul>
             <li><MadCap:variable name="local-orca.GKE" /> (Google): <pre> --user $(gcloud config get-value account)</pre></li>
             <li><MadCap:variable name="local-orca.EKS" />: (Amazon): <pre> --user $(aws sts get-caller-identity --query 'Arn' --output text)</pre></li>

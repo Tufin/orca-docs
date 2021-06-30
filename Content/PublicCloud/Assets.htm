@@ -82,7 +82,9 @@
             <li>No internet</li>
         </ul>
         <p class="SubHead1">Security Controls</p>
-        <p>Lists all the objects that control access to this asset:&#160;Security groups, roles, <MadCap:variable name="local.Firewalls" />, bucket inline policies, VPC firewall rules and project IAM. Click on a security control to see more information.</p>
+        <p>Lists all the <MadCap:variable name="local.securitycontrols" /> and  bucket inline policies that control access to this asset, including:</p>
+        <MadCap:snippetBlock src="SecurityControls.flsnp" />
+        <p>Click on a security control to see more information.</p>
         <p class="SubHead1">Properties </p>
         <p>The properties shown vary from one vendor to another and are different for VMs and storage devices. See <a href="AssetProperties.htm">asset properties</a> for details of each type of instance and see the appropriate cloud vendor documentation for further explanation. </p>
         <p class="SubHead1">Tags </p>
@@ -120,7 +122,7 @@
                         <ul>
                             <li>No icon - access is possible as there is full network connectivity</li>
                             <li>
-                                <img src="../SecureCloud-Images/Icon_EffectiveAccessNone/.png" class="noborder" /> - access is prevented due to no network connectivity</li>
+                                <img src="../SecureCloud-Images/Icon_EffectiveAccessNone.png" class="noborder" /> - access is prevented due to no network connectivity</li>
                             <li>
                                 <p>
                                     <img src="../SecureCloud-Images/Icon_EffectiveAccessPartial.png" class="noborder" /> - access is limited due to partial network connectivity. Click on this icon to display the effective access</p>

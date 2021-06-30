@@ -423,4 +423,31 @@
     Name="clusterpolicy"
     Comment="Mid sentence"
     EvaluatedDefinition="cluster policy">cluster policy</Variable>
+  <Variable
+    Name="SecurityControls"
+    Comment="Menu"
+    EvaluatedDefinition="Security Controls">Security Controls</Variable>
+  <Variable
+    Name="Securitycontrols"
+    Comment=""
+    EvaluatedDefinition="Securitycontrols">Securitycontrols</Variable>
+  <Variable
+    Name="securitycontrols"
+    Comment=""
+    EvaluatedDefinition="security controls">security controls</Variable>
+  <Variable
+    Name="securitycontrol"
+    Comment="singular mid sentence"
+    EvaluatedDefinition="security control">security control</Variable>
+  <Variable
+    Name="SecurityControl"
+    Comment="singular menu"
+    EvaluatedDefinition="Security Control">Security Control</Variable>
+  <Variable
+    Name="Securitycontrol"
+    Comment="singular beginning of sentence"
+    EvaluatedDefinition="Security control">Security control</Variable>
+  <Variable
+    Name="NewVariable"
+    Comment="" />
 </CatapultVariableSet>

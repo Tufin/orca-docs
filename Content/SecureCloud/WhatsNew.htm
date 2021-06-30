@@ -5,7 +5,94 @@
     </head>
     <body>
         <h1>What's New in <MadCap:variable name="local.ProductName" /></h1>
-        <p>Have you installed the new cluster module? A new cluster module was released on 11th May 2021. If you installed the cluster module on your cluster before this date, you must reinstall by running the new install script that now appears in General Settings. The old cluster module will not be supported beyond 1st October 2021 and it will not be able to communicate with SecureCloud after this date.</p>
+        <div class="Note">Have you installed the new cluster module that was released on 11th May 2021? If you installed the cluster module on your cluster before this date, you must reinstall by running the new install script that now appears in <a href="../Kubernetes/OrcaSettingsGeneral.htm">Kubernetes General Settings</a>. The old cluster module will not be supported beyond 1st October 2021 and it will not be able to communicate with SecureCloud after this date.</div>
+        <p class="SubHead1">28th June 2021</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 209px;" MadCap:conditions="" />
+            <col class="TableStyle-PatternedRows-Column-Regular" MadCap:conditions="" style="width: 333px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" MadCap:conditions="" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1" style="font-weight: normal;">
+                        <p class="TableHeading">Title</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="TableHeading">Documentation Links</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1" style="font-weight: normal;">
+                        <p class="TableHeading">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Public APIs</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <MadCap:xref href="APIs.htm">[%=local.ProductName%] APIs</MadCap:xref>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">New APIs added for <MadCap:variable name="local.publiccloud" /> assets, applications and  policy, and <MadCap:variable name="local.Kubernetes" /> cluster resources and traffic monitoring</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows"><MadCap:variable name="local.SecurityControls" />
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p>
+                            <MadCap:xref href="../PublicCloud/SecurityControls.htm"><MadCap:variable name="local.SecurityControls" />
+                            </MadCap:xref>
+                        </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">New <MadCap:variable name="local.publiccloud" /> resource, <MadCap:variable name="local.SecurityControls" />, incorporates  firewalls, security groups and roles</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Google GCP VPC Firewall Support</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText"> <a href="../PublicCloud/SecurityControls.htm"><MadCap:variable name="local.SecurityControls" /></a></p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBodyText">Google Cloud GCP VPC Firewall now monitored</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">AWS Firewall Visibility</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p> <a href="../PublicCloud/SecurityControls.htm"><MadCap:variable name="local.SecurityControls" /></a></p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText"> AWS&#160;stateless and stateful rules now monitored</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><MadCap:variable name="local.Firewalls" /> Replaced</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows"><a href="../PublicCloud/SecurityControls.htm"><MadCap:variable name="local.SecurityControls" /></a>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows"> <MadCap:variable name="local.Firewalls" /> dropped from <MadCap:variable name="local.publiccloud" /> resources in menu and replaced by <MadCap:variable name="local.SecurityControls" /></td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText">Install Command </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">
+                        <p class="TableBodyText"><a href="../Kubernetes/DeployOnCluster.htm">Deploy on <MadCap:variable name="local.Project" /></a>
+                        </p>
+                        <p><a href="../Kubernetes/Uninstall.htm">Uninstalling</a>
+                        </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
+                        <p class="TableBodyText">New installer mode parameter for installing, upgrading, restarting and uninstalling</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Cluster module Connectivity Status</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><a href="../Kubernetes/OrcaSettingsGeneral.htm">Kubernetes General Settings</a>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Connectivity status and version now shown on Kubernetes settings screen</td>
+                </tr>
+            </tbody>
+        </table>
         <p class="SubHead1">30th May 2021</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular" style="width: 209px;" MadCap:conditions="" />
@@ -43,7 +130,7 @@
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">AWS Firewall</td>
                     <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>
-                            <MadCap:xref href="../PublicCloud/Firewalls.htm">Firewalls</MadCap:xref>
+                            <MadCap:xref href="../PublicCloud/SecurityControls.htm">[%=local.SecurityControls%]</MadCap:xref>
                         </p>
                         <p><a href="../PublicCloud/AWS_Permissions.htm">AWS Permissions</a>
                         </p>
@@ -646,7 +733,7 @@
                         <MadCap:snippetBlock src="../Resources/Snippets/GetHere_AzureFW.flsnp" />
                     </td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p class="TableBodyText">Azure firewalls are now monitored by <MadCap:variable name="local.ProductName" />. <a href="../PublicCloud/Firewalls.htm">More...</a></p>
+                        <p class="TableBodyText">Azure firewalls are now monitored by <MadCap:variable name="local.ProductName" />. <a href="../PublicCloud/SecurityControls.htm">More...</a></p>
                     </td>
                 </tr>
                 <tr MadCap:conditions="" class="TableStyle-PatternedRows-Body-DarkRows">

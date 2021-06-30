@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <img src="../PublicCloud-Images/Icon_Firewall.png" class="noborder" /> Firewall (AWS firewall, Azure firewall, GCP&#160;VPC&#160;firewall)</li>
+            <li>
+                <img src="../PublicCloud-Images/Icon_Role.png" class="noborder" /> Role (AWS role, GCP&#160;IAM)</li>
+            <li>
+                <img src="../PublicCloud-Images/Icon_SecurityGroup.png" class="noborder" /> Security group (AWS security group, Azure NSG)</li>
+        </ul>
+    </body>
+</html>

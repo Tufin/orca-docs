@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
         <h1>Removing <MadCap:variable name="local.ProductName" /> From a Cluster</h1>
-        <p>To remove <MadCap:variable name="local-orca.Product_L" /> from your Kubernetes cluster:</p>
+        <p>To uninstall <MadCap:variable name="local.ProductName" /> from your Kubernetes cluster:</p>
         <ol>
+            <li>Log in to your Kubernetes cluster</li>
+            <li>If you don't have the install command available, get it from <a href="OrcaSettingsGeneral.htm">Kubernetes General Settings</a>.</li>
             <li>
-                <p>Log in to your Kubernetes cluster</p>
-            </li>
-            <li>
-                <p>Run the same bash script you used to install <MadCap:variable name="local.ProductName" /> on the cluster. </p>
+                <p>Run the install command with the -i parameter as follows: </p><pre xml:space="preserve">&lt;install command&gt; -i uninstall</pre>
             </li>
         </ol>
-        <p MadCap:conditions="General.Exclude">(replace <span class="Code">&lt;install_dir&gt;</span> with the directory in which you installed <MadCap:variable name="local-orca.Product_L"></MadCap:variable>):</p><pre MadCap:conditions="General.Exclude">cd &lt;install_dir&gt;/bash-kite-installer<br />./bash/deploy_orca.sh --uninstall-orca true</pre>
     </body>
 </html>
