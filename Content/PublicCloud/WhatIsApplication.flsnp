@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
     <body>
-        <p>An application in <MadCap:variable name="local.ProductName" /> is a logical entity defined by its assets. <MadCap:variable name="local.ProductName" /> identifies your applications through the tags you have assigned to your assets.  These may be native asset  tags defined in your cloud environment or custom tags created by you in  the <a href="WorkingWithTagManager.htm">Tag Manager</a>. </p>
+        <p>An application in <MadCap:variable name="local.ProductName" /> is a logical entity defined by its assets. <MadCap:variable name="local.ProductName" /> identifies your applications through the tags you have assigned to your assets.  These may be native asset  tags defined in your cloud environment or custom tags created  in  the <MadCap:variable name="local.ProductName" /> <a href="WorkingWithTagManager.htm">Tag Manager</a>. </p>
         <p>For <MadCap:variable name="local.ProductName" /> to identify your applications, you need to:</p>
         <ul>
             <li>Define tags directly on your assets and / or define custom tags, which are identifiers based on asset properties.</li>
