@@ -257,9 +257,6 @@
     Comment=""
     EvaluatedDefinition="Admission Controllers">Admission Controllers</Variable>
   <Variable
-    Name="Account Manager"
-    Comment="" />
-  <Variable
     Name="SystemManagement"
     Comment="Menu"
     EvaluatedDefinition="Configuration">Configuration</Variable>
@@ -450,4 +447,16 @@
   <Variable
     Name="NewVariable"
     Comment="" />
+  <Variable
+    Name="AssociatedResources"
+    Comment="Menu"
+    EvaluatedDefinition="Associated Resources">Associated Resources</Variable>
+  <Variable
+    Name="associatedresources"
+    Comment="mid sentence"
+    EvaluatedDefinition="associated resources">associated resources</Variable>
+  <Variable
+    Name="Associatedresources"
+    Comment="beginning of sentence"
+    EvaluatedDefinition="Associated resources">Associated resources</Variable>
 </CatapultVariableSet>

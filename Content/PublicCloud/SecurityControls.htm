@@ -23,17 +23,19 @@
         </ul>
         <ul>
             <li>Name - the name of the <MadCap:variable name="local.securitycontrol" /></li>
-            <li>Account - the cloud vendor icon and the name of the account as configured in <MadCap:variable name="local.ProductName" /></li>
+            <li>Account - the cloud vendor icon and the name of the account as defined in <MadCap:variable name="local.ProductName" /></li>
             <li>Warning icon <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" />, shown only if violations exist in at least one of the assets affected by the <MadCap:variable name="local.securitycontrol" /></li>
         </ul>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
-            <li>View a specific <MadCap:variable name="local.securitycontrol" />'s overview - click on the desired line</li>
-            <li>View summary of violations for the <MadCap:variable name="local.securitycontrol" /> - click on the appropriate warning icon <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> .</li>
-            <li>View rules defined in a <MadCap:variable name="local.securitycontrol" /> - click on the desired line and then click <span class="MenuItem">Rules</span></li>
+            <li>Filter the displayed <MadCap:variable name="local.securitycontrols" /></li>
+            <li><a href="#overview">View overview</a> for a specific <MadCap:variable name="local.securitycontrol" /> - select by clicking on the desired line</li>
+            <li><a href="#violations">View  violations</a> for the <MadCap:variable name="local.securitycontrol" /> - click on the appropriate warning icon <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /></li>
+            <li><a href="#resources">View resources</a> associated with a <MadCap:variable name="local.securitycontrol" /> - select the desired line and then select <span class="MenuItem">Associated Resources</span></li>
+            <li><a href="#rules">View rules</a> defined in a <MadCap:variable name="local.securitycontrol" /> - select the desired line and then select <span class="MenuItem">Rules</span></li>
         </ul>
         <p class="h3"><a name="overview"></a>Security Control Overview</p>
-        <p>When clicking on a <MadCap:variable name="local.securitycontrol" /> in the <a href="#whatcaniseehere">main screen, </a>the overview appears, containing:</p>
+        <p>When selecting a <MadCap:variable name="local.securitycontrol" /> in the <a href="#whatcaniseehere">main screen,</a> the overview appears, containing:</p>
         <ul>
             <li>
                 <p>Type of security control - Icon</p>
@@ -42,11 +44,12 @@
                 </p>
             </li>
             <li>Name defined in your cloud vendor account</li>
-            <li>Account - the name of the  cloud vendor account as configured in <MadCap:variable name="local.ProductName" /></li>
+            <li>Account - the name of the  cloud vendor account as defined in <MadCap:variable name="local.ProductName" /></li>
             <li>Vendor - the cloud service provider</li>
             <li>Additional properties, according to type of <MadCap:variable name="local.securitycontrol" /> and cloud vendor</li>
             <li>Tags for some types of <MadCap:variable name="local.securitycontrol" /> and cloud vendor</li>
-            <li>Violations</li>
+            <li><a href="#violations">Violations</a>
+            </li>
         </ul>
         <p>The information shown will vary from one type of <MadCap:variable name="local.securitycontrol" /> to another and from one cloud vendor to another. </p>
         <p>Examples</p>
@@ -57,12 +60,51 @@
             <img src="../PublicCloud-Images/Screen_SecurityControlOverview-2.png" class="ThumbnailPopup" />
         </p>
         <p> When hovering over a property, the copy to clipboard icon <img src="../SecureCloud-Images/Icon_Clipboard.png" class="noborder" /> appears - click to copy the value.</p>
-        <p>Click <span class="ScreenObject">Rules</span> in the menu to display the <MadCap:variable name="local.securitycontrol" />'s rules.</p>
+        <p>Select <span class="MenuItem"><MadCap:variable name="local.AssociatedResources" /></span> in the menu to display all resources affected by the <MadCap:variable name="local.securitycontrol" />. </p>
+        <p>Select <span class="ScreenObject">Rules</span> in the menu to display the <MadCap:variable name="local.securitycontrol" />'s rules.</p>
         <p>
-            <img src="../PublicCloud-Images/Menu_Firewall.png" />
+            <img src="../PublicCloud-Images/Menu_SecurityControl.png" class="ThumbnailPopup" />
         </p>
-        <p class="h4"><MadCap:variable name="local.SecurityControl" /> Rules</p>
-        <p>Display all rules defined by the <MadCap:variable name="local.securitycontrol" />. The information shown will vary from one type of <MadCap:variable name="local.securitycontrol" /> to another and from one cloud vendor to another. The listed rules may be split into separate tabs according to rule type, such as inbound/outbound, NAT/network/application and/or stateless/stateful, depending on <MadCap:variable name="local.securitycontrol" /> type and vendor.</p>
+        <p class="h3"><a name="violations"></a>Violations</p>
+        <p>The violations window appears when clicking on a Warning icon <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> on the <a href="#whatcaniseehere">main screen</a> and is also a fixed part of the <a href="#overview"><MadCap:variable name="Topic Templates.Overview" /></a>. If there are no violations, an appropriate message is shown. </p>
+        <p>Violations are not a characteristic of the <MadCap:variable name="local.securitycontrol" /> itself. The violations shown for a <MadCap:variable name="local.securitycontrol" /> are all those found for its associated assets.</p>
+        <p>
+            <img src="../PublicCloud-Images/Window_SecurityControlsViolations.png" class="ThumbnailPopup" />
+        </p>
+        <p class="h3"><a name="resources"></a><MadCap:variable name="local.AssociatedResources" />
+        </p>
+        <p>Display the <MadCap:variable name="local.asset" />s, subnets and load balancers affected by the <MadCap:variable name="local.securitycontrol" />. </p>
+        <p class="h4">What Can I See Here?</p>
+        <p>
+            <img src="../PublicCloud-Images/Screen_SecurityControls_AssociatedResources.png" class="ThumbnailPopup" />
+        </p>
+        <ul>
+            <li>
+                <p>Resource type icon</p>
+                <ul>
+                    <li>
+                        <img src="../SecureCloud-Images/Icon_VM.png" class="noborder" /> VM asset
+					</li>
+                    <li>
+                        <img src="../SecureCloud-Images/Icon_storage.png" class="noborder" /> Storage asset
+                    </li>
+                    <li>
+                        <img src="../SecureCloud-Images/Icon_LB.png" class="noborder" /> Load balancer<![CDATA[	]]></li>
+                    <li>
+                        <img src="../SecureCloud-Images/Icon_subnet.png" class="noborder" /> Subnet</li>
+                </ul>
+            </li>
+            <li>
+                <p>Resource name</p>
+            </li>
+            <li>Account - the cloud vendor icon and the name of the account as defined in <MadCap:variable name="local.ProductName" /></li>
+        </ul>
+        <p class="h3"><a name="rules"></a><MadCap:variable name="local.SecurityControl" /> Rules</p>
+        <p>Display all rules defined by the <MadCap:variable name="local.securitycontrol" />. </p>
+        <p>
+            <img src="../PublicCloud-Images/screen_azureFirewallRules.png" class="ThumbnailPopup" />
+        </p>
+        <p>The information shown will vary from one type of <MadCap:variable name="local.securitycontrol" /> to another and from one cloud vendor to another. The listed rules may be split into separate tabs according to rule type, such as inbound/outbound, NAT/network/application and/or stateless/stateful, depending on <MadCap:variable name="local.securitycontrol" /> type and vendor.</p>
         <p>Examples:</p>
         <p>
             <img src="../PublicCloud-Images/screen_azureFirewallRules.png" class="ThumbnailPopup" />
@@ -72,10 +114,6 @@
         </p>
         <p>
             <img src="../PublicCloud-Images/screen_securityControlRulesGCP-FW.png" class="ThumbnailPopup" />
-        </p>
-        <p>Click <span class="MenuItem">Overview</span> in the menu to return to the overview screen.</p>
-        <p>
-            <img src="../PublicCloud-Images/Menu_Firewall.png" />
         </p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_GetHere.flsnp" />
         <ul>
