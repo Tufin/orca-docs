@@ -450,4 +450,8 @@
   <Variable
     Name="NewVariable"
     Comment="" />
+  <Variable
+    Name="InstallScript"
+    Comment=""
+    EvaluatedDefinition="installation script">installation script</Variable>
 </CatapultVariableSet>
