@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <div>
@@ -29,7 +29,7 @@
 </pre>
                 </li>
                 <li>
-                    <p>Edit the deployment script as follows:</p>
+                    <p>Edit the <MadCap:variable name="local.InstallScript" /> as follows:</p>
                     <p>Amend the secret under volumes</p><pre xml:space="preserve">volumes:
 - name: reg
   secret:
@@ -41,7 +41,7 @@
 </pre>
                 </li>
                 <li>
-                    <p>Save the updated deployment script.</p>
+                    <p>Save the updated <MadCap:variable name="local.InstallScript" />.</p>
                 </li>
             </ol>
         </div>
