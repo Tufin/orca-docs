@@ -454,4 +454,8 @@
     Name="InstallScript"
     Comment=""
     EvaluatedDefinition="installation script">installation script</Variable>
+  <Variable
+    Name="InstallScriptCaps"
+    Comment="For titles and tables"
+    EvaluatedDefinition="Installation Script">Installation Script</Variable>
 </CatapultVariableSet>
