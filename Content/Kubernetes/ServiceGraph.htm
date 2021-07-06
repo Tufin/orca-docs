@@ -9,30 +9,26 @@
         <p>
             <img src="../Kubernetes-Images/WindowServiceGraph.png" class="ThumbnailPopup" />
         </p>
-        <p>The <MadCap:variable name="local.ServiceGraph" /> graphically displays all the connections made between the services used in your web application and external services outside the cluster. The specific time frame that traffic is treated as active is configurable. If no connections are made to a service during the time frame selected, it will not appear in the <MadCap:variable name="local.ServiceGraph" />. Every service displayed has an associated <MadCap:variable name="local-orca.TufinScore" />.</p>
+        <p>The <MadCap:variable name="local.ServiceGraph" /> graphically displays all the connections made between services within and outside the cluster, in a specific time frame. If no connections are made to a service during the time frame selected, it will not appear in the <MadCap:variable name="local.ServiceGraph" />. Every service displayed has an associated <MadCap:variable name="local-orca.TufinScore" />.</p>
+        <p>Services that are outside the currently selected <a href="../SecureCloud/Navigation.htm#k8sfilterning">namespace filter</a> are marked with 'Ext' (external).</p>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
             <li>
-                <p>View Service Details - Click on a service to view details about a specific service. </p>
-            </li>
-            <li>View <MadCap:variable name="local-orca.TufinScore" /> details - Click on the <MadCap:variable name="local-orca.TufinScore" /> of a service for expanded details about known vulnerabilities for that service.</li>
-            <li>View reputation information for external end-points</li>
-            <li>
-                <p>Configure traffic time frame - Select the desired  to traffic time frame.</p>
+                <p>Filter the displayed services - click <a href="../SecureCloud/Navigation.htm#generalfiltering">Add a Filter</a></p>
             </li>
             <li>
-                <p>Refresh - Click <img src="../Kubernetes-Images/iconRefresh.png" /> to for a refresh of the Service Graph.</p>
+                <p>View service details - click on a service to view details about a specific service and zoom in to show its connectivity with other services</p>
+            </li>
+            <li>View vulnerabilities - click on the <MadCap:variable name="local-orca.TufinScore" /> of a service for expanded details about known <a href="VulnerabilityDetails.htm">vulnerabilities</a> for that service</li>
+            <li>View reputation information for external end-points - click on the end-point</li>
+            <li>
+                <p>Change traffic timeframe</p>
             </li>
             <li>
-                <p><a href="../SecureCloud/Navigation.htm">General actions</a>
-                </p>
+                <p>Refresh - Click <img src="../Kubernetes-Images/iconRefresh.png" /> to refresh of the Service Graph.</p>
             </li>
         </ul>
-        <h3><a name="SecurityScore"></a><a name="ServiceDetails"></a>
-        </h3>
         <MadCap:snippetBlock src="../Resources/Snippets/ServiceDetails - whatIs.flsnp" />
-        <h3><MadCap:variable name="local-orca.TufinScore" /> Details</h3>
-        <p>Clicking on a <MadCap:variable name="local-orca.TufinScore" /> displays the <a href="VulnerabilityDetails.htm">Vulnerabilities</a> page, which gives a list of vulnerabilities associated with that service.</p><a name="ServiceDetails"></a>
         <h3>View Reputation Information </h3>
         <p>Clicking on an external end-point will display an analysis of the site's reputation including information about the domain and a high-level vulnerability summary.</p>
         <p>The analysis information is provided through a 3rd party called Reposify. If Reposify doesn't have data for the site, you will be automatically redirected to the appropriate page on the Talos reputation website (<a href="http://www.talosintelligence.com/">www.talosintelligence.com</a>).</p>

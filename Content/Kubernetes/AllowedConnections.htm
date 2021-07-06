@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
     </head>
@@ -37,6 +37,9 @@
         </ol>
         <MadCap:snippetBlock src="../Resources/TopicTemplates/Collateral/H2_Actions.flsnp" />
         <ul class="Action">
+            <li>
+                <p>Filter the policy rules by type - click <a href="../SecureCloud/Navigation.htm#generalfiltering">Add a Filter</a></p>
+            </li>
             <li><a href="#Adding_an_Allowed_Connection_Manually">Add a rule</a>
             </li>
             <li><a href="#edit">Edit a rule</a>
@@ -124,7 +127,7 @@
             <li>Select <span class="ScreenObject">Remove rules</span>.</li>
         </ol>
         <p class="h3"><a name="Export"></a>Export as Kubernetes Network Policies</p>
-        <p class="normal">The security policy will be exported for the namespaces specified in the current namespace filter. A file named &lt;<MadCap:variable name="local.Securecloudaccount" />&gt;-&lt;<MadCap:variable name="local.project" />&gt;.yml will be downloaded via the browser. See <MadCap:xref href="Enforcement.htm">[%=local.Kubernetes%] Policy Enforcement</MadCap:xref>.</p>
+        <p class="normal">The <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local.clusterpolicy" /> will be exported for rules included in the currently selected filter, for the namespaces specified in the current namespace filter. A file named &lt;<MadCap:variable name="local.Securecloudaccount" />&gt;-&lt;<MadCap:variable name="local.project" />&gt;.yml will be downloaded via the browser. See <MadCap:xref href="Enforcement.htm">[%=local.Kubernetes%] Policy Enforcement</MadCap:xref>.</p>
         <ol>
             <li>
                 <p>Click on <img src="../SecureCloud-Images/Icon_Kabab.png" class="noborder" />- the action menu is displayed.</p>
@@ -149,7 +152,7 @@
         </ul>
         <p>When creating the ticket, the <MadCap:variable name="local.clusterpolicyrule" />s to be included will be displayed and you can remove selected rules, as required.</p>
         <p>Namespace is not included in the ticket because namespaces cannot be handled by firewalls. Therefore, if two or more similar <MadCap:variable name="local.clusterpolicyrule" />s exist in <MadCap:variable name="local.ProductName" />, differing only in the namespace they refer to, the same access request will appear multiple times in the ticket submitted.</p>
-        <p>After a ticket has been issued, the included <MadCap:variable name="local.clusterpolicyrule" />s will display the ticket icon  <img src="../SecureCloud-Images/Icon_Ticket.png" class="noborder" />. The icon will be colored according the status of the ticket in <MadCap:variable name="General.SecureChange" />:&#160;Green-Done; Blue- In progress; Red: Failed to create. Click on the icon to display the ticket details. Example:</p>
+        <p>After a ticket has been issued, the included <MadCap:variable name="local.clusterpolicyrule" />s will display the ticket icon  <img src="../SecureCloud-Images/Icon_Ticket.png" class="noborder" />. The icon will be colored according the status of the ticket in <MadCap:variable name="General.SecureChange" />:&#160;Green-Done; Blue-In progress; Red-Failed to create. Click on the icon to display the ticket details. Example:</p>
         <p>
             <img src="../PublicCloud-Images/Window_ClusterPolicyRuleTicketInfo.png" class="ThumbnailPopup" />
         </p>
