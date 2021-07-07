@@ -39,9 +39,7 @@
     <Variable
       Name="custom/HeaderCaption2">Knowledge Center</Variable>
   </Variables>
-  <PostBuild>copy "$(OutputDirectory)\index.htm" "$(OutputDirectory)\Default.htm"
-cd $(OutputDirectory)
-7z a docbuild.zip *</PostBuild>
+  <PostBuild></PostBuild>
   <PreBuild>cd $(ProjectDirectory)\Project\Advanced\CSH\
 node "$(ProjectDirectory)\Content\InternalOnly\splitit.js" CloudAlias SCL SCL</PreBuild>
 </CatapultTarget>
