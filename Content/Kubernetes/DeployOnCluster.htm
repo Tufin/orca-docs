@@ -11,7 +11,7 @@
             <MadCap:concept term="Settings" />Deploy on Your Cluster</h1>
         <p>Deploy <MadCap:variable name="local.ProductName" /> on your first cluster after <a href="../SecureCloud/SignUp.htm">signing up</a>. First make sure you have read and understood <MadCap:xref href="#changes">Changes to Your System</MadCap:xref> and <MadCap:xref href="#prerequisites">Prerequisites</MadCap:xref>.</p>
         <ul>
-            <li><a href="#Deploy">Installing, updating and uninstalling with the Bash Command</a>
+            <li><a href="#Deploy">Installing, updating, and uninstalling with the <MadCap:variable name="local.InstallScriptCaps" /></a>
             </li>
             <li><a href="#prerequisites">Prerequisites</a>
             </li>
@@ -25,10 +25,10 @@
             </li>
         </ul>
         <p>&#160;</p>
-        <p class="h2"><a name="Deploy"></a>Installing, updating and uninstalling with the Bash Command</p>
+        <p class="h2"><a name="Deploy"></a>Installing, updating, and uninstalling with the <MadCap:variable name="local.InstallScriptCaps" /></p>
         <ol>
             <li>
-                <p>In <MadCap:variable name="local.ProductName" /> display the 'Add Your Cluster' window  by either going to <MadCap:variable name="local.Dashboard" /> and clicking on the <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.Widget" /> or going to any menu item under <MadCap:variable name="local.KUBERNETES" />. The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the deployment commands is run.</p>
+                <p>In <MadCap:variable name="local.ProductName" />, display the 'Add Your Cluster' window  by either going to <MadCap:variable name="local.Dashboard" /> and clicking on the <MadCap:variable name="local.Kubernetes" /> <MadCap:variable name="local.Widget" /> or going to any menu item under <MadCap:variable name="local.KUBERNETES" />. The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the <MadCap:variable name="local.InstallScript" /> is run.</p>
                 <p>
                     <img src="../SecureCloud-Images/Screen_Dashboard_Clean.png" class="ThumbnailPopup" />
                 </p>
@@ -43,11 +43,11 @@
                 <p>Open a terminal and point kubectl to your Kubernetes cluster (see <MadCap:xref href="#examplesconnecting">Examples of Connecting to Your Cluster</MadCap:xref>).</p>
             </li>
             <li>
-                <p>Run the deployment command as cluster admin. The are several optional flags available:</p>
+                <p>Run the <MadCap:variable name="local.InstallScript" /> as cluster admin. The are several optional flags available:</p>
                 <ul>
                     <li>
                         <p>Help - display all options</p>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -h</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -h</p>
                     </li>
                     <li>
                         <p>Dry run --dry-run</p>
@@ -59,7 +59,7 @@
                                 <p>true: Show what the command will do when executed</p>
                             </li>
                         </ul>
-                        <p class="CodeSegment1">&lt;deployment command&gt; --dry-run true</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; --dry-run true</p>
                     </li>
                     <li>
                         <p>DNS install - di</p>
@@ -71,7 +71,7 @@
                                 <p>false: Install <MadCap:variable name="local.ProductName" /> without the <MadCap:variable name="local.ProductName" /> DNS sidecar. In this case, switching Policy Mode to Enforce will have no effect and Enforce mode will behave the same as Learn mode.</p>
                             </li>
                         </ul>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -di false</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -di false</p>
                     </li>
                     <li>
                         <p>Installer mode -i or --installer-mode</p>
@@ -90,7 +90,7 @@
                             </li>
                         </ul>
                         <p>Examples</p>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -i upgrade</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -i upgrade</p>
                     </li>
                     <li>
                         <p>Quiet mode -q </p>
@@ -98,11 +98,11 @@
                             <li>false (default): Issue prompts as necessary</li>
                             <li>true: Suppress all prompts and use default values</li>
                         </ul>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -q true</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -q true</p>
                     </li>
                     <li>
                         <p>Install behind a proxy</p>
-                        <p class="CodeSegment1">&lt;deployment command&gt; -hp &lt;proxy-address:port&gt; -a &lt;repo-image/kite image:tag&gt; -bi &lt;repo-image/benchmark image:tag&gt; -c &lt;repo-image/coredns image:tag&gt; -mi &lt;repo-image/monitor image:tag&gt;</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -hp &lt;proxy-address:port&gt; -a &lt;repo-image/kite image:tag&gt; -bi &lt;repo-image/benchmark image:tag&gt; -c &lt;repo-image/coredns image:tag&gt; -mi &lt;repo-image/monitor image:tag&gt;</p>
                     </li>
                 </ul>
             </li>
@@ -118,7 +118,7 @@
                 </ul>
             </li>
             <li MadCap:conditions="General.Exclude">
-                <p>Run the deployment command as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
+                <p>Run the <MadCap:variable name="local.InstallScript" /> as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
 https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.Securecloudaccount" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
                 <p>where,</p>
                 <ul>
@@ -133,8 +133,8 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
         </ol>
         <div class="NoteLight" MadCap:conditions="General.Exclude">
             <ul>
-                <li>The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the deployment commands is run.</li>
-                <li>If you are using an SSO solution such as AWS Okta, you must modify the command string to the required syntax and be signed in before running the command. </li>
+                <li>The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the <MadCap:variable name="local.InstallScript" /> is run.</li>
+                <li>If you are using an SSO solution such as AWS Okta, you must modify the <MadCap:variable name="local.InstallScript" /> to the required syntax and be signed in before running the command. </li>
             </ul>
         </div>
         <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
@@ -183,7 +183,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                 <p>In addition, if you want to enable <a href="SecurityScore.htm">scanning</a> of your container images for vulnerabilities (recommended), you must give every cluster node   access to your docker image registries.</p>
             </li>
             <li>
-                <p>The deployment bash string must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
+                <p>The <MadCap:variable name="local.InstallScript" /> must be run as Kubernetes cluster administrator. This requires creating a cluster role binding using the Kubernetes command line as shown below:</p>
                 <p><pre>kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user &lt;user&gt;</pre>
                 </p>
                 <p>where &lt;user&gt; is dependent on your Kubernetes environment. See more <MadCap:xref href="#binding">Examples of Cluster Binding Command</MadCap:xref>.</p>
