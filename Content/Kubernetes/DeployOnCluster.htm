@@ -34,7 +34,7 @@
                 </p>
             </li>
             <li>
-                <p>The Add Your Cluster window shows you the command string you need to run to deploy <MadCap:variable name="local.ProductName" />. You can send yourself an email containing the details.</p>
+                <p>The Add Your Cluster window shows you the <MadCap:variable name="local.InstallScript" /> you need to run to deploy <MadCap:variable name="local.ProductName" />. You can send yourself an email containing the details.</p>
                 <p>
                     <img src="../SecureCloud-Images/AddYourCluster.png" class="ThumbnailPopup" />
                 </p>
@@ -53,10 +53,10 @@
                         <p>Dry run --dry-run</p>
                         <ul>
                             <li>
-                                <p>false (default):&#160;Execute the command</p>
+                                <p>false (default):&#160;Execute the script</p>
                             </li>
                             <li>
-                                <p>true: Show what the command will do when executed</p>
+                                <p>true: Show what the script will do when executed</p>
                             </li>
                         </ul>
                         <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; --dry-run true</p>
@@ -107,7 +107,7 @@
                 </ul>
             </li>
             <li>
-                <p>On completion of the command, a number of YAML  files are created that list the actions taken (or <i>would</i> be taken,  in case the dry run parameter is used), in the cluster. </p>
+                <p>On completion of the script, a number of YAML  files are created that list the actions taken (or <i>would</i> be taken,  in case the dry run parameter is used), in the cluster. </p>
                 <p>The YAML files are:</p>
                 <ul>
                     <li>
@@ -134,7 +134,7 @@ https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="l
         <div class="NoteLight" MadCap:conditions="General.Exclude">
             <ul>
                 <li>The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the <MadCap:variable name="local.InstallScript" /> is run.</li>
-                <li>If you are using an SSO solution such as AWS Okta, you must modify the <MadCap:variable name="local.InstallScript" /> to the required syntax and be signed in before running the command. </li>
+                <li>If you are using an SSO solution such as AWS Okta, you must modify the <MadCap:variable name="local.InstallScript" /> to the required syntax and be signed in before running the script. </li>
             </ul>
         </div>
         <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
