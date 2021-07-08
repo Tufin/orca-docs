@@ -7,6 +7,6 @@
             <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local-iris.GlobalMap" /></span> &gt; <span class="MenuItem">double click on an application</span></p>
         <p>or</p>
         <p>
-            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.Applications" /></span> &gt; <span class="MenuItem">select an application</span></p>
+            <MadCap:snippetText src="GetHere_Prefix_Cloud.flsnp" /><span class="MenuItem"><MadCap:variable name="local.Applications" /></span> &gt; <span class="MenuItem">select an application</span> &gt; <span class="MenuItem"><MadCap:variable name="local-iris.ApplicationAssetMap" /></span></p>
     </body>
 </html>
