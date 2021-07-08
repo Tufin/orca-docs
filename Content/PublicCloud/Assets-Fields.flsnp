@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>The list of assets shows the following information:</p>
+        <ul>
+            <li>Sequence of item in the list</li>
+            <li>Asset Type Icon - <img src="../PublicCloud-Images/Icon_storage.png" class="noborder" /> Storage,<img src="../PublicCloud-Images/Icon_vm.png" class="noborder" /> VM</li>
+            <li>Asset name, taken from the tag 'Name', instance id or the name of the object in the vendor account, depending on the type of asset</li>
+            <li>Application associated with the asset. Click on the application name to display the application</li>
+            <li>Cloud vendor type - <MadCap:variable name="local.PublicCloudVendors" /></li>
+            <li>Account name, as defined in <MadCap:variable name="local.ProductName" /></li>
+            <li>Internet access - 'Exposed' if asset can be reached from the internet, considering both the security controls and the network connectivity</li>
+            <li>Load balancer name, if the asset is assigned to a load balancer</li>
+            <li>Warning  <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> indicates a <a href="WhatIsCloudViolation.htm">violation</a></li>
+        </ul>
+    </body>
+</html>

@@ -131,9 +131,6 @@
           <TocEntry
             Title="[%=System.LinkedTitle%]"
             Link="/Content/PublicCloud/AssetGraph.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-          <TocEntry
-            Title="Asset List"
-            Link="/Content/PublicCloud/Assets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </TocEntry>
         <TocEntry
           Title="Cloud Resources">
