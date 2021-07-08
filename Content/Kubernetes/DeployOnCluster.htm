@@ -15,6 +15,10 @@
             </li>
             <li><a href="#prerequisites">Prerequisites</a>
             </li>
+            <li><a href="#proxy">Proxy Considerations</a>
+            </li>
+            <li><a href="#docker">Docker Considerations</a>
+            </li>
             <li><a href="#whatnext">What Next?</a>
             </li>
             <li><a href="#changes">Changes to Your System</a>
@@ -101,8 +105,42 @@
                         <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -q true</p>
                     </li>
                     <li>
-                        <p>Install behind a proxy</p>
-                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -hp &lt;proxy-address:port&gt; -a &lt;repo-image/kite image:tag&gt; -bi &lt;repo-image/benchmark image:tag&gt; -c &lt;repo-image/coredns image:tag&gt; -mi &lt;repo-image/monitor image:tag&gt;</p>
+                        <p>Cluster behind a single proxy -hp.</p>
+                        <p>First see <a href="#proxy">Proxy Considerations</a>. Provide the IP and port of your proxy in format &lt;IPv4&gt;:&lt;Port&gt;. Example:</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -hp 11.22.33.44:60 </p>
+                        <p>See related flags -mhp and -mp</p>
+                    </li>
+                    <li>
+                        <p>Cluster behind two proxies  -mhp</p>
+                        <p>First see <a href="#proxy">Proxy Considerations</a>. Your cluster is behind 2 proxies, one for communicating with <MadCap:variable name="local.ProductName" /> and the other for your own pod traffic. Flag -mhp must be the proxy receiving traffic from your pods and flag -hp must also be specified for communicating with <MadCap:variable name="local.ProductName" />. Provide the IP and port of your pod proxy in format &lt;IPv4&gt;:&lt;Port&gt;. Example:</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -hp 11.22.33.44:60 -mhp 11.22.33.55:60</p>
+                        <p>See related flags -hp and -mp.</p>
+                    </li>
+                    <li>
+                        <p>Monitor proxy  -mp</p>
+                        <p>First see <a href="#proxy">Proxy Considerations</a>. Analyze traffic received at proxy to determine endpoint destination. This can be considered an on/off switch and is relevant only when flags -hp or -mhp are used. </p>
+                        <ul>
+                            <li>false (default): Do not analyze the packets to determine destination - the proxy itself will appear as the destination for traffic in <MadCap:variable name="local.ProductName" />.</li>
+                            <li>true: Analyze the packets to determine destination</li>
+                        </ul>
+                        <p>Example:</p>
+                        <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -mp true</p>
+                        <p>See related flags -hp and -mhp.</p>
+                    </li>
+                    <li>
+                        <p>Local image location -bi, -c, -mi, -a</p>
+                        <p>First see <a href="#docker">Docker Considerations</a>. Specify the location of the <MadCap:variable name="local.ProductName" /> Docker images you have previously downloaded.</p><pre xml:space="preserve">
+&lt;<MadCap:variable name="local.InstallScript" />&gt; 
+   -a  &lt;repo-image/kite image:tag&gt; 
+   -bi &lt;repo-image/benchmark image:tag&gt; 
+   -c  &lt;repo-image/coredns image:tag&gt; 
+   -mi &lt;repo-image/monitor image:tag&gt;</pre>
+                        <p>Example (images previously downloaded to local repo myrepo.net/tufin)</p><pre xml:space="preserve">
+&lt;<MadCap:variable name="local.InstallScript" />&gt; 
+   -a  myrepo.net/tufin/kite:production
+   -bi myrepo.net/tufin/benchmark:production 
+   -c  myrepo.net/tufin/coredns:production 
+   -mi myrepo.net/tufin/monitor:production</pre>
                     </li>
                 </ul>
             </li>
@@ -117,28 +155,7 @@
                     <li>Several files in directory .tmp/</li>
                 </ul>
             </li>
-            <li MadCap:conditions="General.Exclude">
-                <p>Run the <MadCap:variable name="local.InstallScript" /> as cluster admin.</p><pre xml:space="preserve">bash &lt;(curl -s -H "Authorization: Bearer <span class="Bold">&lt;deploy_token&gt;</span>"
-https://securecloud.tufin.io/api/<span class="Bold">&lt;<MadCap:variable name="local.Securecloudaccount" />&gt;/&lt;<MadCap:variable name="local.project" />&gt;</span>/scripts/deploy-orca) [--dry-run true]</pre>
-                <p>where,</p>
-                <ul>
-                    <li>&lt;<MadCap:variable name="local.Securecloudaccount" />&gt; is your account name</li>
-                    <li>&lt;<MadCap:variable name="local.project" />&gt; is as provided by you when signing up</li>
-                    <li>&lt;deploy_token&gt; is an authentication token that will allow your cluster to communicate with <MadCap:variable name="local.ProductName" /></li>
-                    <li>
-                        <p>--dry-run true is an optional parameter to see what the installation script does without deploying anything to your cluster ”. It creates YAML  files in directory: bash-kite-installer/deployment.</p>
-                    </li>
-                </ul>
-            </li>
         </ol>
-        <div class="NoteLight" MadCap:conditions="General.Exclude">
-            <ul>
-                <li>The  'Add Your Cluster' window will be displayed every time you select a <MadCap:variable name="local.ProductName" /> Kubernetes function until the <MadCap:variable name="local.InstallScript" /> is run.</li>
-                <li>If you are using an SSO solution such as AWS Okta, you must modify the <MadCap:variable name="local.InstallScript" /> to the required syntax and be signed in before running the script. </li>
-            </ul>
-        </div>
-        <p class="h2" MadCap:conditions="General.Exclude">On <MadCap:variable name="local-orca.Openshift" /> Clusters</p>
-        <p MadCap:conditions="General.Exclude">Use the <MadCap:variable name="local.ProductName" /> <MadCap:variable name="local-orca.Openshift" /> operator as documented on <a href="https://github.com/Tufin/orca-operator/blob/master/README.md">https://github.com/Tufin/orca-operator/blob/master/README.md</a>. Alternatively, you can install using the command line as described above for standard Kubernetes clusters.</p>
         <p class="h2"><a name="prerequisites"></a>Prerequisites </p>
         <ol>
             <li>
@@ -198,6 +215,27 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
                 </ol>
             </li>
         </ol>
+        <p class="h2"><a name="proxy"></a>Proxy Considerations</p>
+        <p>If your cluster is behind a proxy, the destination of egress connections will be seen as the proxy address rather than the intended destination, unless additional steps are taken when running the <MadCap:variable name="local.InstallScript" />. <MadCap:variable name="local.ProductName" /> provides a solution to this by analyzing the packet to determine the specified destination of the request. There are two scenarios that can be addressed:</p>
+        <ol>
+            <li>
+                <p>All egress traffic is routed via a single proxy</p>
+                <p>To monitor traffic in this case, use the flag -hp with the <MadCap:variable name="local.InstallScript" /> as described in <a href="#Deploy">Installing</a>.</p>
+            </li>
+            <li>
+                <p>All egress traffic is routed via one proxy, except for communications with <MadCap:variable name="local.ProductName" />, which are routed via a different proxy</p>
+                <p> To monitor traffic in this case, use two flags  with the <MadCap:variable name="local.InstallScript" />, -hp and -mhp, as described in <a href="#Deploy">Installing</a>.</p>
+            </li>
+        </ol>
+        <p>If you set the flags to address either of the above scenarios, there is an additional flag that turns the packet analysis on or off,  -mp, described  in <a href="#Deploy">Installing</a>.</p>
+        <p class="h2"><a name="docker"></a> Docker Considerations</p>
+        <p>Unless specified otherwise, the <MadCap:variable name="local.InstallScript" /> will download <MadCap:variable name="local.ProductName" /> images from Docker Hub. If you want to prevent access to Docker from the cluster, you can download the images to a local repo and then specify at installation time the location of your repo.</p>
+        <p>To download the <MadCap:variable name="local.ProductName" /> images from Docker,</p><pre xml:space="preserve">
+docker pull tufin/monitor
+docker pull tufin/kite
+docker pull tufin/benchmark
+docker pull tufin/coredns</pre>
+        <p>To Take the images from your local repo, use flags -a, -bi, -c, -mi, with the <MadCap:variable name="local.InstallScript" />, as described in <a href="#Deploy">Installing</a>.</p>
         <p class="h2"><a name="whatnext"></a>What Next? </p>
         <p>
             <ol>
