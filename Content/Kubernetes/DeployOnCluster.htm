@@ -112,12 +112,14 @@
                     </li>
                     <li>
                         <p>Cluster behind two proxies  -mhp</p>
-                        <p>First see <a href="#proxy">Proxy Considerations</a>. Your cluster is behind 2 proxies, one for communicating with <MadCap:variable name="local.ProductName" /> and the other for your own pod traffic. Flag -mhp must be the proxy receiving traffic from your pods and flag -hp must also be specified for communicating with <MadCap:variable name="local.ProductName" />. Provide the IP and port of your pod proxy in format &lt;IPv4&gt;:&lt;Port&gt;. Example:</p>
+                        <p>This feature is currently still in beta and we recommend contacting support for further guidance.</p>
+                        <p>First see <a href="#proxy">Proxy Considerations</a>. Your cluster is behind 2 proxies, one for communicating with <MadCap:variable name="local.ProductName" /> and the other for cluster traffic. Flag -mhp must be the proxy receiving traffic from your pods and flag -hp must also be specified for communicating with <MadCap:variable name="local.ProductName" />. Provide the IP and port of your cluster proxy in format &lt;IPv4&gt;:&lt;Port&gt;. Example:</p>
                         <p class="CodeSegment1">&lt;<MadCap:variable name="local.InstallScript" />&gt; -hp 11.22.33.44:60 -mhp 11.22.33.55:60</p>
                         <p>See related flags -hp and -mp.</p>
                     </li>
                     <li>
                         <p>Monitor proxy  -mp</p>
+                        <p>This feature is currently still in beta and we recommend contacting support for further guidance.</p>
                         <p>First see <a href="#proxy">Proxy Considerations</a>. Analyze traffic received at proxy to determine endpoint destination. This can be considered an on/off switch and is relevant only when flags -hp or -mhp are used. </p>
                         <ul>
                             <li>false (default): Do not analyze the packets to determine destination - the proxy itself will appear as the destination for traffic in <MadCap:variable name="local.ProductName" />.</li>
@@ -216,6 +218,7 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
             </li>
         </ol>
         <p class="h2"><a name="proxy"></a>Proxy Considerations</p>
+        <p>This feature is currently still in beta and we recommend contacting support for further guidance.</p>
         <p>If your cluster is behind a proxy, the destination of egress connections will be seen as the proxy address rather than the intended destination, unless additional steps are taken when running the <MadCap:variable name="local.InstallScript" />. <MadCap:variable name="local.ProductName" /> provides a solution to this by analyzing the packet to determine the specified destination of the request. There are two scenarios that can be addressed:</p>
         <ol>
             <li>
@@ -229,13 +232,14 @@ If you have a firewall between your Kubernetes cluster and the internet, allow t
         </ol>
         <p>If you set the flags to address either of the above scenarios, there is an additional flag that turns the packet analysis on or off,  -mp, described  in <a href="#Deploy">Installing</a>.</p>
         <p class="h2"><a name="docker"></a> Docker Considerations</p>
-        <p>Unless specified otherwise, the <MadCap:variable name="local.InstallScript" /> will download <MadCap:variable name="local.ProductName" /> images from Docker Hub. If you want to prevent access to Docker from the cluster, you can download the images to a local repo and then specify at installation time the location of your repo.</p>
-        <p>To download the <MadCap:variable name="local.ProductName" /> images from Docker,</p><pre xml:space="preserve">
+        <p>Unless specified otherwise, the <MadCap:variable name="local.InstallScript" /> will download 4 <MadCap:variable name="local.ProductName" /> images from Docker Hub <a href="https://hub.docker.com/u/tufin">https://hub.docker.com/u/tufin</a> named monitor, kite, benchmark and coredns. If you want to prevent access to Docker from the cluster, you can download the images to a local repo and then specify the location of your repo  at installation time.</p>
+        <p>To download the <MadCap:variable name="local.ProductName" /> images from Docker, run the commands:</p><pre xml:space="preserve">
 docker pull tufin/monitor
 docker pull tufin/kite
 docker pull tufin/benchmark
 docker pull tufin/coredns</pre>
-        <p>To Take the images from your local repo, use flags -a, -bi, -c, -mi, with the <MadCap:variable name="local.InstallScript" />, as described in <a href="#Deploy">Installing</a>.</p>
+        <p>By default, the commands above will download the latest version of each image, however you can download a specific version (tag) if desired. View available tags for an image by selecting the appropriate image and then clicking on the Tags tab e.g. <a href="https://hub.docker.com/r/tufin/monitor/tags?page=1&amp;ordering=last_updated">https://hub.docker.com/r/tufin/monitor/tags?page=1&amp;ordering=last_updated</a>. The exact download syntax is shown beside each tag.</p>
+        <p>Once downloaded, you will need to modify the <MadCap:variable name="local.InstallScript" /> to take the images from your local repo, using flags -a, -bi, -c, -mi, as described in <a href="#Deploy">Installing</a>.</p>
         <p class="h2"><a name="whatnext"></a>What Next? </p>
         <p>
             <ol>
