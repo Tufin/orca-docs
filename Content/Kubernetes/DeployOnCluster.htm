@@ -131,7 +131,7 @@
                     </li>
                     <li>
                         <p>Local image location -bi, -c, -mi, -a</p>
-                        <p>First see <a href="#docker">Docker Considerations</a>. Specify the location of the <MadCap:variable name="local.ProductName" /> Docker images you have previously downloaded.</p><pre xml:space="preserve">
+                        <p>First see <a href="#docker">Docker Considerations</a>. Specify the location of the <MadCap:variable name="local.ProductName" /> Docker images you have previously downloaded. Note that you will need to specify the tag as well.</p><pre xml:space="preserve">
 &lt;<MadCap:variable name="local.InstallScript" />&gt; 
    -a  &lt;repo-image/kite image:tag&gt; 
    -bi &lt;repo-image/benchmark image:tag&gt; 
@@ -238,8 +238,7 @@ docker pull tufin/monitor
 docker pull tufin/kite
 docker pull tufin/benchmark
 docker pull tufin/coredns</pre>
-        <p>By default, the commands above will download the default version of each image, however you can download a specific version (tag) if desired. View available tags for an image by selecting the appropriate image and then clicking on the Tags tab e.g. <a href="https://hub.docker.com/r/tufin/monitor/tags?page=1&amp;ordering=last_updated">https://hub.docker.com/r/tufin/monitor/tags?page=1&amp;ordering=last_updated</a>. The exact download syntax is shown beside each tag.</p>
-        <p>Once downloaded, you will need to modify the <MadCap:variable name="local.InstallScript" /> to take the images from your local repo, using flags -a, -bi, -c, -mi, as described in <a href="#Deploy">Installing</a>.</p>
+        <p>Note the tag name of each downloaded image, which can be seen in the messages issued while running the docker pull command. You will need to modify the <MadCap:variable name="local.InstallScript" /> to take the images from your local repo, using flags -a, -bi, -c, -mi, as described in <a href="#Deploy">Installing</a>.</p>
         <p class="h2"><a name="whatnext"></a>What Next? </p>
         <p>
             <ol>
