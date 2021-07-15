@@ -87,7 +87,7 @@
         <p>
             <img src="../PublicCloud-Images/Screen_AssetRules.png" class="ThumbnailPopup" />
         </p>
-        <p>This screen can have 2 tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; <span class="ScreenObject">OutBound</span> is shown only if relevant. </p>
+        <p>This screen can have two tabs - <span class="ScreenObject">Inbound</span> and <span class="ScreenObject">Outbound</span>; <span class="ScreenObject">OutBound</span> is shown only if relevant. </p>
         <p>Each line represents one rule and rules are grouped by the vendor security control in which they are defined. Each item in the list includes:</p>
         <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <col class="TableStyle-PatternedRows-Column-Regular">
@@ -102,20 +102,11 @@
             </thead>
             <tbody>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Effective Access Icon</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="TableBodyText">Security Control</p>
+                    </td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
-                        <p>Indicates the access allowed when taking the physical network connectivity into account.</p>
-                        <ul>
-                            <li>No icon - access is possible as there is full network connectivity</li>
-                            <li>
-                                <img src="../SecureCloud-Images/Icon_EffectiveAccessNone.png" class="noborder" /> - access is prevented due to no network connectivity</li>
-                            <li>
-                                <p>
-                                    <img src="../SecureCloud-Images/Icon_EffectiveAccessPartial.png" class="noborder" /> - access is limited due to partial network connectivity. Click on this icon to display the effective access</p>
-                                <p>Example:</p>
-                                <p> <img src="../PublicCloud-Images/Window_AssetRuleEffectiveAccess.png" /></p>
-                            </li>
-                        </ul>
+                        <p class="TableBodyText">Cloud-vendor mechanisms that allow or restrict network traffic.</p>
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
@@ -141,14 +132,32 @@
                     </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-DarkRows">
-                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Warning</td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkRows">Effective Access Icon</td>
                     <td class="TableStyle-PatternedRows-BodyD-Regular-DarkRows">
-                        <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> indicates a <a href="WhatIsCloudViolation.htm">violation</a></td>
+                        <p>Indicates the access allowed when considering the physical network connectivity.</p>
+                        <ul>
+                            <li>No icon - Access is possible as there is full network connectivity.</li>
+                            <li>
+                                <img src="../SecureCloud-Images/Icon_NoNetwork.png" class="noborder" /> - Access is prevented due to no network connectivity.</li>
+                            <li>
+                                <p>
+                                    <img src="../SecureCloud-Images/Icon_EffectiveAccess.png" class="noborder" /> - Access is limited due to partial network connectivity. Click this icon to display the effective access.</p>
+                                <p>Example:</p>
+                                <p> <img src="../PublicCloud-Images/Window_AssetRuleEffectiveAccess.png" /></p>
+                                <p>Click the pin icon to pin this panel. This is useful if you want to view the original configuration and the analysis/details together. </p>
+                            </li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr class="TableStyle-PatternedRows-Body-LightRows">
-                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Warning</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <img src="../SecureCloud-Images/Icon_Warning_Red.png" class="noborder" /> indicates a <a href="WhatIsCloudViolation.htm">violation</a></td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkRows">
                         <img src="../PublicCloud-Images/Icon_Ellipsis.png" class="noborder" /> Options</td>
-                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkRows">
                         <p>Enabled only when warning icon shown above. Click on the options icon to view available options: </p>
                         <ul>
                             <li>Compare to policy - displays all policy rules pertaining to the asset, below the security access. The same policy details are shown as when clicking <a href="#AssetPolicy">Asset Policy</a>.</li>
